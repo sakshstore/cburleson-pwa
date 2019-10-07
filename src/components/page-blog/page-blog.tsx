@@ -1,16 +1,16 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'app-home',
-  styleUrl: 'app-home.css'
+  tag: 'page-blog',
+  styleUrl: 'page-blog.css'
 })
-export class AppHome {
+export class PageBlog {
 
   render() {
     return [
       <ion-header>
         <ion-toolbar color="primary">
-          <ion-title>Home</ion-title>
+          <ion-title>Blog</ion-title>
         </ion-toolbar>
       </ion-header>,
 
@@ -22,7 +22,6 @@ export class AppHome {
           check out our docs on <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
 
-        <ion-button href="/profile/ionic" expand="block">Profile page</ion-button>
       </ion-content>
     ];
   }

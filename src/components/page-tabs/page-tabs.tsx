@@ -15,35 +15,32 @@ export class PageTabs {
   render() {
     return [
       <ion-tabs>
-        <ion-tab tab="tab-home">
+        <ion-tab tab="tab-blog">
           <ion-nav></ion-nav>
         </ion-tab>
         <ion-tab tab="tab-books">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab tab="tab-art" component="page-art"></ion-tab>
-        <ion-tab tab="tab-technology" component="page-technology"></ion-tab>
+        <ion-tab tab="tab-art">
+          <ion-nav></ion-nav>
+        </ion-tab>
         <ion-tab tab="tab-about" component="page-about"></ion-tab>
 
         <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="tab-home">
-            <ion-icon name="calendar"></ion-icon>
-            <ion-label>Home</ion-label>
+          <ion-tab-button tab="tab-blog">
+            <ion-icon name="ios-megaphone"></ion-icon>
+            <ion-label>Blog</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="tab-books">
-            <ion-icon name="map"></ion-icon>
+            <ion-icon name="ios-book"></ion-icon>
             <ion-label>Books</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="tab-art">
-            <ion-icon name="map"></ion-icon>
+            <ion-icon name="ios-easel"></ion-icon>
             <ion-label>Art</ion-label>
           </ion-tab-button>
-          <ion-tab-button tab="tab-technology">
-            <ion-icon name="map"></ion-icon>
-            <ion-label>Technology</ion-label>
-          </ion-tab-button>
           <ion-tab-button tab="tab-about">
-            <ion-icon name="information-circle"></ion-icon>
+            <ion-icon name="ios-information-circle"></ion-icon>
             <ion-label>About</ion-label>
           </ion-tab-button>
         </ion-tab-bar>

@@ -8,45 +8,41 @@ export class AppRoot {
 
   appPages = [
     {
-      title: 'Home',
-      url: '/home',
-      icon: 'calendar'
+      title: 'Blog',
+      url: '/blog',
+      icon: 'ios-megaphone'
     },
     {
       title: 'Books',
       url: '/books',
-      icon: 'contacts'
+      icon: 'ios-book'
     },
     {
       title: 'Art',
       url: '/art',
-      icon: 'technology'
-    },
-    {
-      title: 'Technology',
-      url: '/technology',
-      icon: 'technology'
+      icon: 'ios-easel'
     },
     {
       title: 'About',
       url: '/about',
-      icon: 'information-circle'
+      icon: 'ios-information-circle'
     }
   ];
 
   renderRouter() {
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to='/home' />
+        <ion-route-redirect from="/" to='/blog' />
         <ion-route component="page-tabs">
-          <ion-route url="/home" component="tab-home">
-            <ion-route component="page-home"></ion-route>
+          <ion-route url="/blog" component="tab-blog">
+            <ion-route component="page-blog"></ion-route>
           </ion-route>
           <ion-route url="/books" component="tab-books">
             <ion-route component="page-books"></ion-route>
           </ion-route>
-          <ion-route url="/art" component="tab-art"></ion-route>
-          <ion-route url="/technology" component="tab-technology"></ion-route>
+          <ion-route url="/art" component="tab-art">
+            <ion-route component="page-art"></ion-route>
+          </ion-route>
           <ion-route url="/about" component="tab-about"></ion-route>
         </ion-route>
       </ion-router>

@@ -9,33 +9,24 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
-  interface AppHome {}
-  interface AppProfile {
-    'name': string;
-  }
   interface AppRoot {}
+  interface PageBlog {}
   interface PageTabs {}
 }
 
 declare global {
 
 
-  interface HTMLAppHomeElement extends Components.AppHome, HTMLStencilElement {}
-  var HTMLAppHomeElement: {
-    prototype: HTMLAppHomeElement;
-    new (): HTMLAppHomeElement;
-  };
-
-  interface HTMLAppProfileElement extends Components.AppProfile, HTMLStencilElement {}
-  var HTMLAppProfileElement: {
-    prototype: HTMLAppProfileElement;
-    new (): HTMLAppProfileElement;
-  };
-
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
+  var HTMLPageBlogElement: {
+    prototype: HTMLPageBlogElement;
+    new (): HTMLPageBlogElement;
   };
 
   interface HTMLPageTabsElement extends Components.PageTabs, HTMLStencilElement {}
@@ -44,25 +35,20 @@ declare global {
     new (): HTMLPageTabsElement;
   };
   interface HTMLElementTagNameMap {
-    'app-home': HTMLAppHomeElement;
-    'app-profile': HTMLAppProfileElement;
     'app-root': HTMLAppRootElement;
+    'page-blog': HTMLPageBlogElement;
     'page-tabs': HTMLPageTabsElement;
   }
 }
 
 declare namespace LocalJSX {
-  interface AppHome {}
-  interface AppProfile {
-    'name'?: string;
-  }
   interface AppRoot {}
+  interface PageBlog {}
   interface PageTabs {}
 
   interface IntrinsicElements {
-    'app-home': AppHome;
-    'app-profile': AppProfile;
     'app-root': AppRoot;
+    'page-blog': PageBlog;
     'page-tabs': PageTabs;
   }
 }
@@ -73,9 +59,8 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
-      'app-home': LocalJSX.AppHome & JSXBase.HTMLAttributes<HTMLAppHomeElement>;
-      'app-profile': LocalJSX.AppProfile & JSXBase.HTMLAttributes<HTMLAppProfileElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
     }
   }
