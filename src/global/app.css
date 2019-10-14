@@ -29,3 +29,8 @@
   More info about color theming using Ionic:
   https://ionicframework.com/docs/theming/color-generator
 */
+
+
+* {
+  line-height: 1.3em;
+}

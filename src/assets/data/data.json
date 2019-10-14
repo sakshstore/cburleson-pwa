@@ -1,0 +1,23 @@
+{
+  "topics": [
+    {
+      "slug":"memoir",
+      "label":"memoir"
+    },
+    {
+      "slug":"zbrush",
+      "label":"zbrush"
+    }
+  ],
+
+  "content": [
+    {
+      "id": "/zbrush-keyboard-shortcuts",
+      "title": "ZBrush Keyboard Shortcuts",
+      "teaser": "Find ZBrush keyboard shortcuts quickly on this consolidated page.",
+      "icon": "clipboard",
+      "datePublished": "July 4, 2018",
+      "dateModified": "April 17, 2019"
+    }
+  ]
+}

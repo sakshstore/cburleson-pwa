@@ -1,0 +1,15 @@
+.responsive {
+    width: 100%;
+    height: auto;
+}
+.leftImageContainer {
+    max-width: 225px;
+}
+@media (min-width: 450px) {
+    .leftImageContainer {
+        max-width: 225px;
+        /*display: inline;*/
+        float: left;
+        margin-right: 1.5em;
+    }
+}

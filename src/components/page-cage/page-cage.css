@@ -1,0 +1,12 @@
+.requiredFieldText {
+    color: red; font-size: 75%;
+}
+.clear {
+    clear: both
+}
+.mailchimpHidden {
+    position: absolute; left: -5000px;
+}
+.hidden {
+    display: none
+}

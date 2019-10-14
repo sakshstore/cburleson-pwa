@@ -24,7 +24,9 @@ export class PageTabs {
         <ion-tab tab="tab-art">
           <ion-nav></ion-nav>
         </ion-tab>
-        <ion-tab tab="tab-about" component="page-about"></ion-tab>
+        <ion-tab tab="tab-about">
+          <ion-nav></ion-nav>
+        </ion-tab>
 
         <ion-tab-bar slot="bottom">
           <ion-tab-button tab="tab-blog">
