@@ -46,13 +46,13 @@ export class AppRoot {
           <ion-route url="/about" component="tab-about">
             <ion-route component="page-about"></ion-route>
           </ion-route>
-          <ion-route url="/books/cage" component="tab-books">
+          <ion-route url="/cage" component="tab-books">
             <ion-route component="page-cage"></ion-route>
           </ion-route>
-          <ion-route url="/books/cage/beaver-cage-command-chron" component="tab-books">
+          <ion-route url="/beaver-cage-command-chron" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>
           </ion-route>
-          <ion-route url="/books/cage/d-1-3-weapons-platoon" component="tab-books">
+          <ion-route url="/d-1-3-weapons-platoon" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>
           </ion-route>
         </ion-route>

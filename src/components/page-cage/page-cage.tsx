@@ -10,7 +10,7 @@ export class PageCage {
 
     items = [
         {
-          id: "/books/cage/beaver-cage-command-chron",
+          id: "/beaver-cage-command-chron",
           title: "Operation Beaver Cage - Command Chronology",
           teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
@@ -18,7 +18,7 @@ export class PageCage {
           dateModified: "February 6, 2019"
         },
         {
-          id: "/books/cage/d-1-3-weapons-platoon",
+          id: "/d-1-3-weapons-platoon",
           title: "Weapons Platoon - D 1/3 Marines, Vietnam",
           teaser: "Photograph of Delta Co Weapons Platoon with most individuals identified.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/delta-weapons-plt-thumb.jpg",
@@ -26,7 +26,7 @@ export class PageCage {
           dateModified: ""
         },
         {
-          id: "/story/curt-bruce-photos",
+          id: "/curt-bruce-photos",
           title: "Tour of Duty Photos from Curt Bruce",
           teaser: "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-curt-bruce-thumb.jpg",
@@ -34,7 +34,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/story/gary-culp-photos",
+          id: "/gary-culp-photos",
           title: "Tour of Duty Photos from Gary Culp",
           teaser: "Photographs from Gary Culp (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-gary-culp-thumb.jpg",
@@ -42,7 +42,7 @@ export class PageCage {
           dateModified: "Oct 3, 2019"
         },
         {
-          id: "/story/jack-depope-photos",
+          id: "/jack-depope-photos",
           title: "Tour of Duty Photos from Jack DePope",
           teaser: "Photographs from Jack &quot;Doc&quot; DePope (a Corpsman in Delta Co) taken during his 1966 – 1967 tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jack-depope-thumb.jpg",
@@ -50,7 +50,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/story/james-haight-photos",
+          id: "/james-haight-photos",
           title: "Tour of Duty Photos from James Haight",
           teaser: "Photographs from James Haight (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-james-haight-thumb.jpg",
@@ -58,7 +58,7 @@ export class PageCage {
           dateModified: ""
         },
         {
-          id: "/story/jim-shipp-photos",
+          id: "/jim-shipp-photos",
           title: "Tour of Duty Photos from Jim Shipp",
           teaser: "Photograph from Jim Shipp (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jim-shipp-thumb.jpg",
@@ -66,7 +66,7 @@ export class PageCage {
           dateModified: "Oct 7, 2019"
         },
         {
-          id: "/story/ken-hicks-photos",
+          id: "/ken-hicks-photos",
           title: "Tour of Duty Photos from Ken Hicks",
           teaser: "Photographs from Ken Hicks (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ken-hicks-thumb.jpg",
@@ -74,7 +74,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/story/ray-kelley-photos",
+          id: "/ray-kelley-photos",
           title: "Tour of Duty Photos from Ray Kelley",
           teaser: "Photographs from Ray &quot;Machine Gun&quot; Kelley (a Machine Gunner in Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ray-kelley-thumb.jpg",
@@ -82,7 +82,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/story/stanley-hall-photos",
+          id: "/stanley-hall-photos",
           title: "Tour of Duty Photos from Stanley Hall",
           teaser: "Photographs from Stanley &quot;Doc&quot; Hall (a Corpsman in Delta Co) taken during his tour of duty (around April 1967).",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-stanley-hall-thumb.jpg",
@@ -112,7 +112,7 @@ export class PageCage {
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="8">
                             <h1>{this.title}</h1>
                             
-                            <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book, which is about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during the research. These resources will remain online as companions to the forthcoming book.</p>
+                            <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during the research. These resources will remain online as companions to the forthcoming book.</p>
 
                             <h2>Companion Resources</h2>
 
