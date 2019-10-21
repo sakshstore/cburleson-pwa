@@ -4,8 +4,7 @@ import { Component, Element, State , h } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
 
 @Component({
-  tag: 'page-blog-filter',
-  styleUrl: 'page-blog-filter.css',
+  tag: 'page-blog-filter'
 })
 export class PageBlogFilter {
   

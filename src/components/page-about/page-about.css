@@ -5,7 +5,7 @@
 .leftImageContainer {
     max-width: 225px;
 }
-@media (min-width: 450px) {
+@media (min-width: 480px) {
     .leftImageContainer {
         max-width: 225px;
         /*display: inline;*/
