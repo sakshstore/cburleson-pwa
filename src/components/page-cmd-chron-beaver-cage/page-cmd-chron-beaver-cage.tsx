@@ -48,7 +48,7 @@ export class PageCmdChronBeaverCage {
                             </ul>
 
                             <p><em>Last modified: February 6, 2019</em></p>
-                            <p>Source: <a href="/assets/files/cmd-chrons/00002531_67-01-04-to-67-05-13_beaver-cage.pdf">00002531_67-01-04-to-67-05-13_beaver-cage.pdf</a></p>
+                            <p>Source: <a href="https://codyburleson.com/assets/files/1201039031.pdf" target="_blank">1201039031.pdf</a></p>
 
                             <div id="command-chronology">
 
@@ -1227,7 +1227,7 @@ export class PageCmdChronBeaverCage {
                                                     <li>(5) D-Day – 28 April 1967 (to be announced).</li>
                                                     <li>(6) L-Hour – 0700, H-Hour 0800.</li>
                                                     <li>(7) AOA for operation is the land area contained within a ten nautical mile arc
-                                                centered on Grid Coordinates 299379, <a href="/assets/files/vietnam-map-series-L7014-6640-I.pdf">AMS
+                                                centered on Grid Coordinates 299379, <a href="https://codyburleson.com/assets/files/vietnam-map-series-L7014-6640-I.pdf">AMS
                                                     Series L7014, Sheet 6640I</a>. The seaward extension of the AOA is contained
                                                     in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
                                                     and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
