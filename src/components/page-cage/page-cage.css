@@ -11,18 +11,4 @@
     display: none
 }
 
-ion-thumbnail {
-    --size: 100px;
-    width: var(--size);
-    height: var(--size);
-}
 
-/* When it is anything up to 414px wide, do this; otherwise default to 
-anything defined above. */
-@media (max-width: 414px) {
-    ion-thumbnail {
-        --size: 100px;
-        width: var(--size);
-        height: var(--size);
-    }
-}

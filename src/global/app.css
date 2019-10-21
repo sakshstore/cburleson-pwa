@@ -34,3 +34,9 @@
 * {
   line-height: 1.3em;
 }
+
+ion-thumbnail {
+    --size: 100px;
+    width: var(--size);
+    height: var(--size);
+}
