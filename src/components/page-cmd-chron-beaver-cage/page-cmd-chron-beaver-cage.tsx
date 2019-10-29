@@ -17,7 +17,7 @@ export class PageCmdChronBeaverCage {
             <ion-header>
                 <ion-toolbar color="primary">
                     <ion-buttons slot="start">
-                        <ion-back-button defaultHref="/books/cage" />
+                        <ion-back-button defaultHref="/cage" />
                     </ion-buttons>
                     <ion-title>The Cage - Vietnam</ion-title>
                 </ion-toolbar>
@@ -48,7 +48,10 @@ export class PageCmdChronBeaverCage {
                             </ul>
 
                             <p><em>Last modified: February 6, 2019</em></p>
-                            <p>Source: <a href="https://codyburleson.com/assets/files/1201039031.pdf" target="_blank">1201039031.pdf</a></p>
+                            <p>
+                                Source:<br/>
+                                COMMAND CHRONOLOGY [BLT 1/3], 01 April 1967, Box __, Folder 039, US Marine Corps History Division Vietnam War Documents Collection, Vietnam Center and Archive, Texas Tech University, <a href="https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031" target="_blank">https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031</a>, Accessed 22 Oct 2019.
+                            </p>
 
                             <div id="command-chronology">
 
@@ -1227,7 +1230,7 @@ export class PageCmdChronBeaverCage {
                                                     <li>(5) D-Day – 28 April 1967 (to be announced).</li>
                                                     <li>(6) L-Hour – 0700, H-Hour 0800.</li>
                                                     <li>(7) AOA for operation is the land area contained within a ten nautical mile arc
-                                                centered on Grid Coordinates 299379, <a href="https://codyburleson.com/assets/files/vietnam-map-series-L7014-6640-I.pdf">AMS
+                                                centered on Grid Coordinates 299379, <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-1.pdf">AMS
                                                     Series L7014, Sheet 6640I</a>. The seaward extension of the AOA is contained
                                                     in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
                                                     and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
@@ -1375,13 +1378,13 @@ export class PageCmdChronBeaverCage {
 
                                 <p>Encl:</p>
                                 <ol>
-                                    <li><a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">Map Sheet 6640 II</a></li>
-                                    <li><a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">Map Sheet 6640 II</a></li>
-                                    <li><a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">Map Sheet 6640 II</a></li>
-                                    <li><a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">Map Sheet 6640 II</a></li>
-                                    <li>Map Sheet <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">6640 II</a> and <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-III.pdf">6640 III</a></li>
-                                    <li>Map Sheet <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">6640 II</a> and <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-III.pdf">6640 III</a></li>
-                                    <li>Map Sheet <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-II.pdf">6640 II</a> and <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/maps/map-series-L7014-6640-III.pdf">6640 III</a></li>
+                                    <li><a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">Map Sheet 6640 II</a></li>
+                                    <li><a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">Map Sheet 6640 II</a></li>
+                                    <li><a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">Map Sheet 6640 II</a></li>
+                                    <li><a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">Map Sheet 6640 II</a></li>
+                                    <li>Map Sheet <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">6640 II</a> and <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-3.pdf">6640 III</a></li>
+                                    <li>Map Sheet <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">6640 II</a> and <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-3.pdf">6640 III</a></li>
+                                    <li>Map Sheet <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-2.pdf">6640 II</a> and <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-3.pdf">6640 III</a></li>
                                 </ol>
 
                                 <h4>Name of Operation</h4>

@@ -16,7 +16,7 @@ export class PagePhotosWeaponsPlatoon {
             <ion-header>
                 <ion-toolbar color="primary">
                     <ion-buttons slot="start">
-                        <ion-back-button defaultHref="/" />
+                        <ion-back-button defaultHref="/cage" />
                     </ion-buttons>
                     <ion-title>The Cage - Vietnam</ion-title>
                 </ion-toolbar>

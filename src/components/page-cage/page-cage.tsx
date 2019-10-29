@@ -26,7 +26,7 @@ export class PageCage {
           dateModified: ""
         },
         {
-          id: "/curt-bruce-photos",
+          id: "/photos/curt-bruce",
           title: "Tour of Duty Photos from Curt Bruce",
           teaser: "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-curt-bruce-thumb.jpg",
@@ -34,7 +34,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/gary-culp-photos",
+          id: "/photos/gary-culp",
           title: "Tour of Duty Photos from Gary Culp",
           teaser: "Photographs from Gary Culp (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-gary-culp-thumb.jpg",
@@ -74,6 +74,14 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
+          id: "/kevin-brooks-photos",
+          title: "Tour of Duty Photos from Kevin Brooks",
+          teaser: "Photographs from Kevin Brooks (Charlie Co) taken during his tour of duty.",
+          thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-kevin-brooks-thumb.jpg",
+          datePublished: "",
+          dateModified: "Oct 21, 2019"
+        },
+        {
           id: "/ray-kelley-photos",
           title: "Tour of Duty Photos from Ray Kelley",
           teaser: "Photographs from Ray &quot;Machine Gun&quot; Kelley (a Machine Gunner in Delta Co) taken during his tour of duty.",
@@ -102,7 +110,7 @@ export class PageCage {
                     <ion-buttons slot="start">
                         <ion-back-button defaultHref="/books"></ion-back-button>
                     </ion-buttons>
-                    <ion-title>The Cage</ion-title>
+                    <ion-title>The Cage - Vietnam</ion-title>
                 </ion-toolbar>
             </ion-header>,
 

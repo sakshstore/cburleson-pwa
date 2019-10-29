@@ -9,6 +9,10 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppPhotoCard {
+    'imagePath': string;
+    'item': any;
+  }
   interface AppRoot {}
   interface PageAbout {}
   interface PageArt {}
@@ -17,6 +21,9 @@ export namespace Components {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PagePhotos {
+    'name': string;
+  }
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
   interface PageZbrushShortcuts {}
@@ -24,6 +31,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppPhotoCardElement extends Components.AppPhotoCard, HTMLStencilElement {}
+  var HTMLAppPhotoCardElement: {
+    prototype: HTMLAppPhotoCardElement;
+    new (): HTMLAppPhotoCardElement;
+  };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
   var HTMLAppRootElement: {
@@ -73,6 +86,12 @@ declare global {
     new (): HTMLPageCmdChronBeaverCageElement;
   };
 
+  interface HTMLPagePhotosElement extends Components.PagePhotos, HTMLStencilElement {}
+  var HTMLPagePhotosElement: {
+    prototype: HTMLPagePhotosElement;
+    new (): HTMLPagePhotosElement;
+  };
+
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -91,6 +110,7 @@ declare global {
     new (): HTMLPageZbrushShortcutsElement;
   };
   interface HTMLElementTagNameMap {
+    'app-photo-card': HTMLAppPhotoCardElement;
     'app-root': HTMLAppRootElement;
     'page-about': HTMLPageAboutElement;
     'page-art': HTMLPageArtElement;
@@ -99,6 +119,7 @@ declare global {
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-photos': HTMLPagePhotosElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-tabs': HTMLPageTabsElement;
     'page-zbrush-shortcuts': HTMLPageZbrushShortcutsElement;
@@ -106,6 +127,10 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppPhotoCard {
+    'imagePath'?: string;
+    'item'?: any;
+  }
   interface AppRoot {}
   interface PageAbout {}
   interface PageArt {}
@@ -114,11 +139,15 @@ declare namespace LocalJSX {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PagePhotos {
+    'name'?: string;
+  }
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
   interface PageZbrushShortcuts {}
 
   interface IntrinsicElements {
+    'app-photo-card': AppPhotoCard;
     'app-root': AppRoot;
     'page-about': PageAbout;
     'page-art': PageArt;
@@ -127,6 +156,7 @@ declare namespace LocalJSX {
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-photos': PagePhotos;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-tabs': PageTabs;
     'page-zbrush-shortcuts': PageZbrushShortcuts;
@@ -139,6 +169,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
@@ -147,6 +178,7 @@ declare module "@stencil/core" {
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-photos': LocalJSX.PagePhotos & JSXBase.HTMLAttributes<HTMLPagePhotosElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-zbrush-shortcuts': LocalJSX.PageZbrushShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushShortcutsElement>;
