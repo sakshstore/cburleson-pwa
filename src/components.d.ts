@@ -14,6 +14,7 @@ export namespace Components {
     'item': any;
   }
   interface AppRoot {}
+  interface AppZbrushShortcuts {}
   interface PageAbout {}
   interface PageArt {}
   interface PageBlog {}
@@ -21,11 +22,13 @@ export namespace Components {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageKillingKittens {}
   interface PagePhotos {
     'name': string;
   }
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
+  interface PageTemplatePage {}
   interface PageZbrushShortcuts {}
 }
 
@@ -42,6 +45,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLAppZbrushShortcutsElement extends Components.AppZbrushShortcuts, HTMLStencilElement {}
+  var HTMLAppZbrushShortcutsElement: {
+    prototype: HTMLAppZbrushShortcutsElement;
+    new (): HTMLAppZbrushShortcutsElement;
   };
 
   interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
@@ -86,6 +95,12 @@ declare global {
     new (): HTMLPageCmdChronBeaverCageElement;
   };
 
+  interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
+  var HTMLPageKillingKittensElement: {
+    prototype: HTMLPageKillingKittensElement;
+    new (): HTMLPageKillingKittensElement;
+  };
+
   interface HTMLPagePhotosElement extends Components.PagePhotos, HTMLStencilElement {}
   var HTMLPagePhotosElement: {
     prototype: HTMLPagePhotosElement;
@@ -104,6 +119,12 @@ declare global {
     new (): HTMLPageTabsElement;
   };
 
+  interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
+  var HTMLPageTemplatePageElement: {
+    prototype: HTMLPageTemplatePageElement;
+    new (): HTMLPageTemplatePageElement;
+  };
+
   interface HTMLPageZbrushShortcutsElement extends Components.PageZbrushShortcuts, HTMLStencilElement {}
   var HTMLPageZbrushShortcutsElement: {
     prototype: HTMLPageZbrushShortcutsElement;
@@ -112,6 +133,7 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-root': HTMLAppRootElement;
+    'app-zbrush-shortcuts': HTMLAppZbrushShortcutsElement;
     'page-about': HTMLPageAboutElement;
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
@@ -119,9 +141,11 @@ declare global {
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-photos': HTMLPagePhotosElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-tabs': HTMLPageTabsElement;
+    'page-template-page': HTMLPageTemplatePageElement;
     'page-zbrush-shortcuts': HTMLPageZbrushShortcutsElement;
   }
 }
@@ -132,6 +156,7 @@ declare namespace LocalJSX {
     'item'?: any;
   }
   interface AppRoot {}
+  interface AppZbrushShortcuts {}
   interface PageAbout {}
   interface PageArt {}
   interface PageBlog {}
@@ -139,16 +164,19 @@ declare namespace LocalJSX {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageKillingKittens {}
   interface PagePhotos {
     'name'?: string;
   }
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
+  interface PageTemplatePage {}
   interface PageZbrushShortcuts {}
 
   interface IntrinsicElements {
     'app-photo-card': AppPhotoCard;
     'app-root': AppRoot;
+    'app-zbrush-shortcuts': AppZbrushShortcuts;
     'page-about': PageAbout;
     'page-art': PageArt;
     'page-blog': PageBlog;
@@ -156,9 +184,11 @@ declare namespace LocalJSX {
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-killing-kittens': PageKillingKittens;
     'page-photos': PagePhotos;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-tabs': PageTabs;
+    'page-template-page': PageTemplatePage;
     'page-zbrush-shortcuts': PageZbrushShortcuts;
   }
 }
@@ -171,6 +201,7 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'app-zbrush-shortcuts': LocalJSX.AppZbrushShortcuts & JSXBase.HTMLAttributes<HTMLAppZbrushShortcutsElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
@@ -178,9 +209,11 @@ declare module "@stencil/core" {
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-photos': LocalJSX.PagePhotos & JSXBase.HTMLAttributes<HTMLPagePhotosElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
+      'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-zbrush-shortcuts': LocalJSX.PageZbrushShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushShortcutsElement>;
     }
   }

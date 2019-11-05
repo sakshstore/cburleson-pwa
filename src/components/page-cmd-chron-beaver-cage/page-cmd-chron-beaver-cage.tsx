@@ -49,7 +49,7 @@ export class PageCmdChronBeaverCage {
 
                             <p><em>Last modified: February 6, 2019</em></p>
                             <p>
-                                Source:<br/>
+                                Source:<br />
                                 COMMAND CHRONOLOGY [BLT 1/3], 01 April 1967, Box __, Folder 039, US Marine Corps History Division Vietnam War Documents Collection, Vietnam Center and Archive, Texas Tech University, <a href="https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031" target="_blank">https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031</a>, Accessed 22 Oct 2019.
                             </p>
 
@@ -60,8 +60,7 @@ export class PageCmdChronBeaverCage {
                                 <p class="ion-text-center">
                                     HEADQUARTERS<br /> Battalion Landing Team 1/3<br /> Regimental Landing Team-26<br /> 9th Marine Amphibious
                                     Brigade, F[?]F
-                            <br /> FPO, San Francisco 96602
-                        </p>
+                                    <br /> FPO, San Francisco 96602</p>
 
                                 <p class="ion-text-right">
                                     1/swd<br /> 5750
@@ -85,10 +84,7 @@ export class PageCmdChronBeaverCage {
                                     <li>Downgrade at 3 year intervals; declassified after 12 years.</li>
                                 </ol>
 
-
-                                <p class="ion-text-right">
-                                    <img src="/assets/files/cmd-chrons/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE
-                        </p>
+                                <p class="ion-text-right"><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE</p>
 
                                 <p><strong>INDEX</strong></p>
 
@@ -1232,9 +1228,9 @@ export class PageCmdChronBeaverCage {
                                                     <li>(7) AOA for operation is the land area contained within a ten nautical mile arc
                                                 centered on Grid Coordinates 299379, <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-1.pdf">AMS
                                                     Series L7014, Sheet 6640I</a>. The seaward extension of the AOA is contained
-                                                    in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
-                                                    and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
-                                                    feet mean sea level and tunnels for the passage of civil air traffic will be
+                                                        in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
+                                                        and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
+                                                        feet mean sea level and tunnels for the passage of civil air traffic will be
                                                 promulgated by NOTAM as directed by COMUSMAVC.</li>
                                                     <li>(8) Fire support coordination IAW reference (c) and as modified below:</li>
                                                     <li>(9) Code name of Operation is “BEAVER CAGE”</li>
@@ -1354,7 +1350,7 @@ export class PageCmdChronBeaverCage {
 
 
                                 <p class="ion-text-right">
-                                    <img src="/assets/files/cmd-chrons/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE<br />                        Lieutenant
+                                    <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE<br />                        Lieutenant
                             Colonel U. S. Marine Corps<br /> Commanding
                         </p>
 
@@ -1826,7 +1822,7 @@ export class PageCmdChronBeaverCage {
                                         operations were then conduoted from both LZ's and Red Beach, on order.
                             </li>
                                     <li>Chronological sequence of events from 271620 April 1967 through 121900 May 1967:
-    
+
                                     <ion-list>
                                             <ion-item>
                                                 <ion-label text-wrap>
@@ -3007,7 +3003,7 @@ export class PageCmdChronBeaverCage {
                                         </ion-list>
                                     </li>
                                     <li>Recapitulation of major moves by helicopter of BLT 1/3 during Operation Beaver Cage.
-    
+
                                     <ion-list>
                                             <ion-item>
                                                 <ion-label text-wrap>
@@ -3221,7 +3217,7 @@ export class PageCmdChronBeaverCage {
                                         Son BT0334 and a very few individual able-bodies males who were able to obtain sanctuary with
                                         a rifle unit nothing constructive was offered nor was feasible. No CA/PsyWar objectives were
                                         set forth.
-    
+
                             </li>
                                 </ol>
 
@@ -3429,11 +3425,11 @@ export class PageCmdChronBeaverCage {
                                 </ol>
 
                                 <p class="ion-text-right">
-                                    <img src="/assets/files/cmd-chrons/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE
+                                    <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/p-a-wickwire-signature.png" alt="P.A. Wickwire signature" /><br /> P. A. WICKWIRE
                         </p>
 
                                 <p class="ion-text-center">
-                                    <img src="/assets/files/cmd-chrons/op-overlay-2-encl-2.jpg" alt="Operation Overlay Diagram" />
+                                    <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/op-overlay-2-encl-2.jpg" alt="Operation Overlay Diagram" />
                                 </p>
 
 

@@ -10,14 +10,15 @@ export class AppPhotoCard {
     @Prop() item: any;
 
     createSubTitle(item) {
+        // innerHTML used so that HTML encoded chars get rendered...
         if (item.subtitle) {
-            return <ion-card-subtitle>{item.subtitle}</ion-card-subtitle>;
+            return <ion-card-subtitle innerHTML={item.subtitle}></ion-card-subtitle>;
         }
     }
 
     createTitle(item) {
         if (item.title) {
-            return <ion-card-title>{item.title}</ion-card-title>;
+            return <ion-card-title innerHTML={item.title}></ion-card-title>;
         }
     }
 
@@ -34,9 +35,9 @@ export class AppPhotoCard {
                     {this.createTitle(this.item)}
                 </ion-card-header>
                 <ion-card-content>
-                    {this.item.content}
-                    <a href={hiResImagePath} class="button">View hi-res image...</a><br/>
-                    ID: {this.item.id}
+                    <div innerHTML={this.item.content}></div>
+                    <p><a href={hiResImagePath} class="button">View hi-res image...</a></p>
+                    <p>ID: {this.item.id}</p>
                 </ion-card-content>
             </ion-card>
         );

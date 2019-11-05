@@ -37,6 +37,7 @@ export class AppRoot {
           <ion-route url="/blog" component="tab-blog">
             <ion-route component="page-blog"></ion-route>
           </ion-route>
+          
           <ion-route url="/books" component="tab-books">
             <ion-route component="page-books"></ion-route>
           </ion-route>
@@ -57,6 +58,13 @@ export class AppRoot {
           </ion-route>
           <ion-route url="/photos" component="tab-books">
             <ion-route url="/:name" component="page-photos"></ion-route>
+          </ion-route>
+
+          <ion-route url="/killing-kittens/" component="tab-blog">
+            <ion-route component="page-killing-kittens"></ion-route>
+          </ion-route>
+          <ion-route url="/zbrush-keyboard-shortcuts/" component="tab-blog">
+            <ion-route component="page-zbrush-shortcuts"></ion-route>
           </ion-route>
         </ion-route>
         

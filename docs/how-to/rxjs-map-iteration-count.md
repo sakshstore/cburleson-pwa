@@ -1,0 +1,6 @@
+Map can be given an iteration parameter if you need the count...
+    
+```
+row.items.map((item, index)...
+<p>Index is: {index}</p>
+```

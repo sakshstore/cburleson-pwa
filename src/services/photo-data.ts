@@ -8,7 +8,7 @@ class PhotoDataService {
 
     async load(name: string) {
         console.log('> PhotoDataService > load(%s)',name);
-        if (this.data) {
+        if (this.data && this.data.id === name) {
             return this.data;
         } else {
             const rsp = await fetch('/assets/data/photos-' + name + '.json');

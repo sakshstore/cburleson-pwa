@@ -29,4 +29,11 @@ Features
 - Fast Startup
 - Native ES Modules
 - CSS Variables
-- Shadow DOM 
+- Shadow DOM
+
+## Deployment
+
+Commits to Github master branch automatically get deployed to netlify, currently at:
+
+https://serene-saha-07d9e0.netlify.com
+

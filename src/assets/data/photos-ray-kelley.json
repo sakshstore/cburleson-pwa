@@ -1,0 +1,34 @@
+{
+    "id": "ray-kelley",
+    "pageTitle": "Vietnam Tour of Duty Photographs from Ray Kelley",
+    "pageIntro": "<p>A collection of photographs from Ray Kelley (Delta Company, 1st Battalion, 3rd Marines) taken during his tour of duty in the Vietnam War.</p><p><em>Photographs &copy; 1967-2019 Raymond Kelley; published with permission as compliments to <a href=\"/cage\">The Cage</a>, an in-progress book project.</em></p>",
+    "lastModified": "December 18, 2018",
+    "imagesURL": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-ray-kelley/",
+    "photos": [
+        {
+            "id": "d-13-marines",
+            "subtitle": "Delta Company, 1/3 Marines",
+            "content": "From Left to Right: Marty Cavazos, Bob LeBarge, Ron Marinucci, Bob Gallo, Dennis Mannion"
+        },
+        {
+            "id": "jim-shipp",
+            "subtitle": "Jim Shipp",
+            "content": ""
+        },
+        {
+            "id": "don-hollingsworth",
+            "subtitle": "PFC Don Ray Hollingsworth",
+            "content": "Casualty was on May 4, 1967 during Operation Beaver Cage.<br/><a href=\"http://thewall-usa.com/info.asp?recid=23790\">Panel 19E - Line 37</a>"
+        },
+        {
+            "id": "martin-cavazos",
+            "subtitle": "CPL Martin Cavazos",
+            "content": "Casualty was on May 5, 1967 during Operation Beaver Cage.<br/><a href=\"http://thewall-usa.com/info.asp?recid=8505\">Panel 19E - Line 42"
+        },
+        {
+            "id": "frank-cuozzo",
+            "subtitle": "PFC Frank Xavier Cuozzo",
+            "content": "Casualty was on May 10, 1967 during Operation Beaver Cage.<br/><a href=\"http://thewall-usa.com/info.asp?recid=11516\">Panel 19E - Line 79</a>"
+        }
+    ]
+}

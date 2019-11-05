@@ -42,15 +42,15 @@ export class PageCage {
           dateModified: "Oct 3, 2019"
         },
         {
-          id: "/jack-depope-photos",
+          id: "/photos/jack-depope",
           title: "Tour of Duty Photos from Jack DePope",
           teaser: "Photographs from Jack &quot;Doc&quot; DePope (a Corpsman in Delta Co) taken during his 1966 – 1967 tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jack-depope-thumb.jpg",
           datePublished: "",
-          dateModified: "July 6, 2019"
+          dateModified: "July 31, 2019"
         },
         {
-          id: "/james-haight-photos",
+          id: "/photos/james-haight",
           title: "Tour of Duty Photos from James Haight",
           teaser: "Photographs from James Haight (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-james-haight-thumb.jpg",
@@ -58,7 +58,7 @@ export class PageCage {
           dateModified: ""
         },
         {
-          id: "/jim-shipp-photos",
+          id: "/photos/jim-shipp",
           title: "Tour of Duty Photos from Jim Shipp",
           teaser: "Photograph from Jim Shipp (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jim-shipp-thumb.jpg",
@@ -66,7 +66,7 @@ export class PageCage {
           dateModified: "Oct 7, 2019"
         },
         {
-          id: "/ken-hicks-photos",
+          id: "/photos/ken-hicks",
           title: "Tour of Duty Photos from Ken Hicks",
           teaser: "Photographs from Ken Hicks (Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ken-hicks-thumb.jpg",
@@ -74,7 +74,7 @@ export class PageCage {
           dateModified: "July 6, 2019"
         },
         {
-          id: "/kevin-brooks-photos",
+          id: "/photos/kevin-brooks",
           title: "Tour of Duty Photos from Kevin Brooks",
           teaser: "Photographs from Kevin Brooks (Charlie Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-kevin-brooks-thumb.jpg",
@@ -82,20 +82,20 @@ export class PageCage {
           dateModified: "Oct 21, 2019"
         },
         {
-          id: "/ray-kelley-photos",
+          id: "/photos/ray-kelley",
           title: "Tour of Duty Photos from Ray Kelley",
           teaser: "Photographs from Ray &quot;Machine Gun&quot; Kelley (a Machine Gunner in Delta Co) taken during his tour of duty.",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ray-kelley-thumb.jpg",
           datePublished: "",
-          dateModified: "July 6, 2019"
+          dateModified: "Dec 18, 2018"
         },
         {
-          id: "/stanley-hall-photos",
+          id: "/photos/stanley-hall",
           title: "Tour of Duty Photos from Stanley Hall",
           teaser: "Photographs from Stanley &quot;Doc&quot; Hall (a Corpsman in Delta Co) taken during his tour of duty (around April 1967).",
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-stanley-hall-thumb.jpg",
           datePublished: "",
-          dateModified: "July 6, 2019"
+          dateModified: "Dec 18, 2018"
         },
     ]
 

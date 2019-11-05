@@ -1,9 +1,9 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'page-zbrush-shortcuts',
+  tag: 'app-zbrush-shortcuts',
 })
-export class PageZbrushShortcuts {
+export class AppZbrushShortcuts {
 
   title = 'ZBrush Keyboard Shortcuts';
 
@@ -18,7 +18,7 @@ export class PageZbrushShortcuts {
           <ion-buttons slot="start">
             <ion-back-button defaultHref="/" />
           </ion-buttons>
-          <ion-title>Blog</ion-title>
+          <ion-title>Art - ZBrush</ion-title>
         </ion-toolbar>
       </ion-header>,
 

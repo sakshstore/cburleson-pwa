@@ -10,6 +10,27 @@ export class PageBlog {
 
   @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
 
+
+  items = [
+    {
+      id: "/zbrush-keyboard-shortcuts/",
+      title: "ZBrush Keyboard Shortcuts",
+      teaser: "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      datePublished: "",
+      dateModified: "Apr 17, 2019"
+    },
+    {
+      id: "/killing-kittens/",
+      title: "Killing Kittens",
+      teaser: "A memory of Mom, a .45 pistol, and a litter of kittens.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      datePublished: "Mar 9, 2019",
+      dateModified: "Jun 10, 2019"
+    }
+  ]
+
+
   componentWillLoad() {
       document.title = this.title;
   }
@@ -48,6 +69,23 @@ export class PageBlog {
           README for everything that comes in this starter out of the box and
           check out our docs on <a href="https://stenciljs.com">stenciljs.com</a> to get started.
         </p>
+
+
+        <ion-list>
+        {this.items.map((item) =>
+            <ion-item href={item.id}>
+              <ion-thumbnail slot="start">
+                <img src={item.thumbnail}/>
+              </ion-thumbnail>
+              <ion-label text-wrap>
+              {item.title}
+              <p innerHTML={item.teaser}></p>
+              </ion-label>
+            </ion-item>
+        )}
+        </ion-list>
+
+
 
       </ion-content>
     ];

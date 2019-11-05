@@ -4,7 +4,8 @@ import { Component, Prop, h } from '@stencil/core';
 import { PhotoData } from '../../services/photo-data';
 
 @Component({
-    tag: 'page-photos'
+    tag: 'page-photos',
+    styleUrl: 'page-photos.css',
 })
 export class PagePhotos {
 
