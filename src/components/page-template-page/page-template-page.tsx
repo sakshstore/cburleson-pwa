@@ -18,7 +18,7 @@ export class AppTemplatePage {
                     <ion-buttons slot="start">
                         <ion-back-button defaultHref="/" />
                     </ion-buttons>
-                    <ion-title>Page</ion-title>
+                    <ion-title>Blog</ion-title>
                 </ion-toolbar>
             </ion-header>,
 

@@ -60,6 +60,9 @@ export class AppRoot {
             <ion-route url="/:name" component="page-photos"></ion-route>
           </ion-route>
 
+          <ion-route url="/format-currency-in-angular/" component="tab-blog">
+            <ion-route component="page-format-currency-in-angular"></ion-route>
+          </ion-route>
           <ion-route url="/killing-kittens/" component="tab-blog">
             <ion-route component="page-killing-kittens"></ion-route>
           </ion-route>

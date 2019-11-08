@@ -22,6 +22,7 @@ export namespace Components {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageFormatCurrencyInAngular {}
   interface PageKillingKittens {}
   interface PagePhotos {
     'name': string;
@@ -95,6 +96,12 @@ declare global {
     new (): HTMLPageCmdChronBeaverCageElement;
   };
 
+  interface HTMLPageFormatCurrencyInAngularElement extends Components.PageFormatCurrencyInAngular, HTMLStencilElement {}
+  var HTMLPageFormatCurrencyInAngularElement: {
+    prototype: HTMLPageFormatCurrencyInAngularElement;
+    new (): HTMLPageFormatCurrencyInAngularElement;
+  };
+
   interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
   var HTMLPageKillingKittensElement: {
     prototype: HTMLPageKillingKittensElement;
@@ -141,6 +148,7 @@ declare global {
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-photos': HTMLPagePhotosElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
@@ -164,6 +172,7 @@ declare namespace LocalJSX {
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageFormatCurrencyInAngular {}
   interface PageKillingKittens {}
   interface PagePhotos {
     'name'?: string;
@@ -184,6 +193,7 @@ declare namespace LocalJSX {
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-killing-kittens': PageKillingKittens;
     'page-photos': PagePhotos;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
@@ -209,6 +219,7 @@ declare module "@stencil/core" {
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-photos': LocalJSX.PagePhotos & JSXBase.HTMLAttributes<HTMLPagePhotosElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;

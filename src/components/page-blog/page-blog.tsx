@@ -10,26 +10,32 @@ export class PageBlog {
 
   @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
 
-
   items = [
-    {
-      id: "/zbrush-keyboard-shortcuts/",
-      title: "ZBrush Keyboard Shortcuts",
-      teaser: "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "",
-      dateModified: "Apr 17, 2019"
-    },
     {
       id: "/killing-kittens/",
       title: "Killing Kittens",
       teaser: "A memory of Mom, a .45 pistol, and a litter of kittens.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "Mar 9, 2019",
-      dateModified: "Jun 10, 2019"
+      datePublished: "2019/03/09",
+      dateModified: "2019/06/10"
+    },
+    {
+      id: "/zbrush-keyboard-shortcuts/",
+      title: "ZBrush Keyboard Shortcuts",
+      teaser: "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      datePublished: "2018/07/04",
+      dateModified: "2019/04/17"
+    },
+    {
+      id: "/format-currency-in-angular/",
+      title: "Format Currency in Angular",
+      teaser: "How format a number into currency with the Angular currency pipe.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      datePublished: "2016/04/29",
+      dateModified: "2018/09/25"
     }
   ]
-
 
   componentWillLoad() {
       document.title = this.title;
@@ -80,12 +86,11 @@ export class PageBlog {
               <ion-label text-wrap>
               {item.title}
               <p innerHTML={item.teaser}></p>
+              <p><em>{new Date(item.datePublished).toDateString()}</em></p>
               </ion-label>
             </ion-item>
         )}
         </ion-list>
-
-
 
       </ion-content>
     ];

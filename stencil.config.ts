@@ -8,5 +8,9 @@ export const config: Config = {
     serviceWorker: null
   }],
   globalScript: 'src/global/app.ts',
-  globalStyle: 'src/global/app.css'
+  globalStyle: 'src/global/app.css',
+  copy: [{
+    src: '../node_modules/prismjs/themes/prism-okaidia.css',
+    dest: 'assets/prismjs/prism.css'
+  }]
 };

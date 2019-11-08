@@ -2,6 +2,7 @@
 
 To run:
 
+- `npm install` - Run this first to install the dependencies defined in `package,json`
 - `npm start` - Starts the development server.
 - `npm run build` - Builds your components/app in production mode.
 - `npm test` - Starts the test runner.
