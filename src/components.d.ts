@@ -16,6 +16,7 @@ export namespace Components {
   interface AppRoot {}
   interface AppZbrushShortcuts {}
   interface PageAbout {}
+  interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
   interface PageBlogFilter {}
@@ -30,7 +31,7 @@ export namespace Components {
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
   interface PageTemplatePage {}
-  interface PageZbrushShortcuts {}
+  interface PageZbrushKeyboardShortcuts {}
 }
 
 declare global {
@@ -58,6 +59,12 @@ declare global {
   var HTMLPageAboutElement: {
     prototype: HTMLPageAboutElement;
     new (): HTMLPageAboutElement;
+  };
+
+  interface HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement extends Components.PageApplyDifferentMaterialsToSubtoolsInZbrush, HTMLStencilElement {}
+  var HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement: {
+    prototype: HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
+    new (): HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
   };
 
   interface HTMLPageArtElement extends Components.PageArt, HTMLStencilElement {}
@@ -132,16 +139,17 @@ declare global {
     new (): HTMLPageTemplatePageElement;
   };
 
-  interface HTMLPageZbrushShortcutsElement extends Components.PageZbrushShortcuts, HTMLStencilElement {}
-  var HTMLPageZbrushShortcutsElement: {
-    prototype: HTMLPageZbrushShortcutsElement;
-    new (): HTMLPageZbrushShortcutsElement;
+  interface HTMLPageZbrushKeyboardShortcutsElement extends Components.PageZbrushKeyboardShortcuts, HTMLStencilElement {}
+  var HTMLPageZbrushKeyboardShortcutsElement: {
+    prototype: HTMLPageZbrushKeyboardShortcutsElement;
+    new (): HTMLPageZbrushKeyboardShortcutsElement;
   };
   interface HTMLElementTagNameMap {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-root': HTMLAppRootElement;
     'app-zbrush-shortcuts': HTMLAppZbrushShortcutsElement;
     'page-about': HTMLPageAboutElement;
+    'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
     'page-blog-filter': HTMLPageBlogFilterElement;
@@ -154,7 +162,7 @@ declare global {
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
-    'page-zbrush-shortcuts': HTMLPageZbrushShortcutsElement;
+    'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
   }
 }
 
@@ -166,6 +174,7 @@ declare namespace LocalJSX {
   interface AppRoot {}
   interface AppZbrushShortcuts {}
   interface PageAbout {}
+  interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
   interface PageBlogFilter {}
@@ -180,13 +189,14 @@ declare namespace LocalJSX {
   interface PagePhotosWeaponsPlatoon {}
   interface PageTabs {}
   interface PageTemplatePage {}
-  interface PageZbrushShortcuts {}
+  interface PageZbrushKeyboardShortcuts {}
 
   interface IntrinsicElements {
     'app-photo-card': AppPhotoCard;
     'app-root': AppRoot;
     'app-zbrush-shortcuts': AppZbrushShortcuts;
     'page-about': PageAbout;
+    'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
     'page-blog': PageBlog;
     'page-blog-filter': PageBlogFilter;
@@ -199,7 +209,7 @@ declare namespace LocalJSX {
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
-    'page-zbrush-shortcuts': PageZbrushShortcuts;
+    'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
   }
 }
 
@@ -213,6 +223,7 @@ declare module "@stencil/core" {
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'app-zbrush-shortcuts': LocalJSX.AppZbrushShortcuts & JSXBase.HTMLAttributes<HTMLAppZbrushShortcutsElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
+      'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-blog-filter': LocalJSX.PageBlogFilter & JSXBase.HTMLAttributes<HTMLPageBlogFilterElement>;
@@ -225,7 +236,7 @@ declare module "@stencil/core" {
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
-      'page-zbrush-shortcuts': LocalJSX.PageZbrushShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushShortcutsElement>;
+      'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
     }
   }
 }

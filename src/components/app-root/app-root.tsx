@@ -1,10 +1,14 @@
 import { Component, h } from '@stencil/core';
 
+import { BlogData } from '../../services/blog-data';
+
 @Component({
   tag: 'app-root',
   styleUrl: 'app-root.css'
 })
 export class AppRoot {
+
+  data: any;
 
   appPages = [
     {
@@ -28,6 +32,11 @@ export class AppRoot {
       icon: 'ios-information-circle'
     }
   ];
+
+  async componentWillLoad() {
+    console.log('>> AppRoot.componentWillLoad()');
+    this.data = await BlogData.load();
+  }
 
   renderRouter() {
     return (
@@ -60,15 +69,12 @@ export class AppRoot {
             <ion-route url="/:name" component="page-photos"></ion-route>
           </ion-route>
 
-          <ion-route url="/format-currency-in-angular/" component="tab-blog">
-            <ion-route component="page-format-currency-in-angular"></ion-route>
-          </ion-route>
-          <ion-route url="/killing-kittens/" component="tab-blog">
-            <ion-route component="page-killing-kittens"></ion-route>
-          </ion-route>
-          <ion-route url="/zbrush-keyboard-shortcuts/" component="tab-blog">
-            <ion-route component="page-zbrush-shortcuts"></ion-route>
-          </ion-route>
+          {this.data.content.map((item) =>
+            <ion-route url={'/' + item.id + '/'} component="tab-blog" >
+              <ion-route component={'page-' + item.id}></ion-route>
+            </ion-route>
+          )}
+
         </ion-route>
         
       </ion-router>

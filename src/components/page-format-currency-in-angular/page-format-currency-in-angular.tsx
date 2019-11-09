@@ -19,6 +19,11 @@ export class PageFormatCurrencyInAngular {
         document.title = this.title;
     }
 
+    componentDidLoad() {
+        console.log('>> PageFormatCurrencyInAngular > componentDidLoad()');
+        setTimeout(() => Prism.highlightAll(), 0)
+    }
+
     render() {
         return [
             <ion-header>
@@ -34,6 +39,11 @@ export class PageFormatCurrencyInAngular {
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
                             <h1>{this.title}</h1>
+
+                            <div class="entry-meta">
+                                <span class="posted-on">Posted on <time class="entry-date published" datetime="2016-04-29T23:02:20-06:00">April 29, 2016</time> (last modified <time class="updated" datetime="2018-09-25T07:21:20-06:00"> September 25, 2018 </time>)</span>
+                            </div>
+
                             <p>In Angular, to format a currency, use the currency pipe on a number as shown here.</p>
                             <pre><code class="language-html">{code}</code></pre>
                             <ul>
@@ -43,7 +53,7 @@ export class PageFormatCurrencyInAngular {
                             </ul>
                             <p>Note, however, that the currency pipe relies on the Internationalization API, which is not available in all browsers. See <a class="external-link" href="http://caniuse.com/#search=intl" rel="nofollow">current browser support for Internationalization API</a>.</p>
                             <p>Here’s a visual example of what the example shown above renders when used on a decimal number:</p>
-                            <p><img class="size-full wp-image-73 alignnone" src="https://codyburleson.com/wp-content/uploads/2018/07/angularFormatCurrencyExample.jpg" alt="" width="395" height="577" /></p>
+                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/angularFormatCurrencyExample.jpg" alt="" width="395" height="577" /></p>
                         </ion-col>
                     </ion-row>
                 </ion-grid>
@@ -53,4 +63,4 @@ export class PageFormatCurrencyInAngular {
 }
 
 // Call the Prism.js API here
-setTimeout(() => Prism.highlightAll(), 0)
+// setTimeout(() => Prism.highlightAll(), 0)

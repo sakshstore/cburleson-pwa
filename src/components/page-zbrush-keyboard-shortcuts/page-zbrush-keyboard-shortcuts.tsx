@@ -1,9 +1,9 @@
 import { Component, h } from '@stencil/core';
 
 @Component({
-  tag: 'page-zbrush-shortcuts',
+  tag: 'page-zbrush-keyboard-shortcuts',
 })
-export class PageZbrushShortcuts {
+export class PageZbrushKeyboardShortcuts {
 
   title = 'ZBrush Keyboard Shortcuts';
 

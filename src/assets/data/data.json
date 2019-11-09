@@ -12,12 +12,39 @@
 
   "content": [
     {
-      "id": "/zbrush-keyboard-shortcuts",
+      "id": "killing-kittens",
+      "title": "Killing Kittens",
+      "teaser": "A memory of Mom, a .45 pistol, and a litter of kittens.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2019/03/09",
+      "dateModified": "2019/06/10"
+    },
+    {
+      "id": "zbrush-keyboard-shortcuts",
       "title": "ZBrush Keyboard Shortcuts",
-      "teaser": "Find ZBrush keyboard shortcuts quickly on this consolidated page.",
-      "icon": "clipboard",
-      "datePublished": "July 4, 2018",
-      "dateModified": "April 17, 2019"
+      "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2018/07/04",
+      "dateModified": "2019/04/17"
+    },
+    {
+      "id": "apply-different-materials-to-subtools-in-zbrush",
+      "title": "How to apply different materials to subtools in ZBrush",
+      "teaser": "Apply different materials to different SubTools in ZBrush with 5 simple steps.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2018/07/23"
+    },
+    {
+      "id": "format-currency-in-angular",
+      "title": "Format Currency in Angular",
+      "teaser": "How format a number into currency with the Angular currency pipe.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2016/04/29",
+      "dateModified": "2018/09/25"
     }
+    
   ]
 }
+
+

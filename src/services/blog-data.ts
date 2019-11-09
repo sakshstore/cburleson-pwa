@@ -19,8 +19,6 @@ class BlogDataService {
 
     processData(data: any) {
         console.log('> BlogDataService > processData()')
-        // just some good 'ol JS fun with objects and arrays
-        // build up the data by linking speakers to sessions
         this.data = data;
         console.log('- BlogDataService < processData() returning: \n %o',this.data);
         return this.data;
@@ -33,5 +31,5 @@ class BlogDataService {
     }
 
 }
-
+// Singleton. See: https://www.joshmorony.com/using-services-providers-to-share-data-in-a-stencil-js-application/
 export const BlogData = new BlogDataService();

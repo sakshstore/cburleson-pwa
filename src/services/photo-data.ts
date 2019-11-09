@@ -27,5 +27,5 @@ class PhotoDataService {
     }
 
 }
-
+// Singleton. See: https://www.joshmorony.com/using-services-providers-to-share-data-in-a-stencil-js-application/
 export const PhotoData = new PhotoDataService();

@@ -1,5 +1,7 @@
 import { Component, h, Prop } from '@stencil/core';
 
+import { BlogData } from '../../services/blog-data';
+
 @Component({
   tag: 'page-blog',
   styleUrl: 'page-blog.css'
@@ -10,35 +12,22 @@ export class PageBlog {
 
   @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
 
-  items = [
-    {
-      id: "/killing-kittens/",
-      title: "Killing Kittens",
-      teaser: "A memory of Mom, a .45 pistol, and a litter of kittens.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "2019/03/09",
-      dateModified: "2019/06/10"
-    },
-    {
-      id: "/zbrush-keyboard-shortcuts/",
-      title: "ZBrush Keyboard Shortcuts",
-      teaser: "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "2018/07/04",
-      dateModified: "2019/04/17"
-    },
-    {
-      id: "/format-currency-in-angular/",
-      title: "Format Currency in Angular",
-      teaser: "How format a number into currency with the Angular currency pipe.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "2016/04/29",
-      dateModified: "2018/09/25"
-    }
-  ]
+  data: any;
 
-  componentWillLoad() {
-      document.title = this.title;
+  async componentWillLoad() {
+    console.log('>> PageBlog.componentWillLoad()');
+    this.data = await BlogData.load();
+    document.title = this.title;
+  }
+
+  componentWillRender() {
+    console.log('>> PageBlog.componentWillRender');
+  }
+  componentWillUpdate() {
+    console.log('>> PageBlog.componentWillUpdate');
+  }
+  componentDidLoad() {
+    console.log('>> PageBlog.componentDidLoad');
   }
 
   async presentFilter() {
@@ -78,8 +67,8 @@ export class PageBlog {
 
 
         <ion-list>
-        {this.items.map((item) =>
-            <ion-item href={item.id}>
+        {this.data.content.map((item) =>
+            <ion-item href={'/' + item.id + '/'}>
               <ion-thumbnail slot="start">
                 <img src={item.thumbnail}/>
               </ion-thumbnail>
