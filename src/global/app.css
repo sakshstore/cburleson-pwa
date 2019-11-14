@@ -84,7 +84,6 @@ th {
   border: 1px solid #dee2e6;
 }
 
-
 ion-img {
   /** 
     * Bug fix for:
@@ -92,3 +91,33 @@ ion-img {
     */
   min-height: 1px !important;
 }
+
+.entry-meta {
+  color: rgba(0,0,0,.6);
+  font-size: .8rem;
+}
+
+/* ***** YouTube Embedded Videos ****** */
+
+/* This sizes the embedded video fluid even to mobile... */
+
+/* wrap iframe in div with this class */
+div.video-container {
+  position: relative;
+  height: 0;
+  padding-bottom: 56.25%;
+  overflow: hidden;
+  margin-bottom:10px;
+}
+
+/* Set the YouTube video iframe with this class and remove the iframe's width and height attributes... */
+.video {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/* ******************************************************* */
+

@@ -72,8 +72,7 @@ export class PagePhotos {
                             <h1>{this.data.pageTitle}</h1>
 
                             <div innerHTML={this.data.pageIntro}></div>
-                            
-                            <p class="text-muted"><em>Last modified: {this.data.lastModified}</em></p>
+                            <p class="entry-meta">Last modified: <time>{this.data.lastModified}</time></p>
 
                             <ion-grid class="card-grid">{gridRows}</ion-grid>
 

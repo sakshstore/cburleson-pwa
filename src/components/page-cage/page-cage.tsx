@@ -2,21 +2,24 @@ import { Component, h } from '@stencil/core';
 
 @Component({
     tag: 'page-cage',
-    styleUrl: 'page-cage.css',
+    styleUrl: 'page-cage.css'
 })
 export class PageCage {
 
     title = 'The Cage';
 
-    items = [
-        {
-          id: "/beaver-cage-command-chron",
-          title: "Operation Beaver Cage - Command Chronology",
-          teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
-          thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
-          datePublished: "",
-          dateModified: "February 6, 2019"
-        },
+    recordItems = [
+      {
+        id: "/beaver-cage-command-chron",
+        title: "Operation Beaver Cage - Command Chronology",
+        teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
+        thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
+        datePublished: "",
+        dateModified: "February 6, 2019"
+      }
+    ]
+
+    photoItems = [
         {
           id: "/d-1-3-weapons-platoon",
           title: "Weapons Platoon - D 1/3 Marines, Vietnam",
@@ -32,6 +35,14 @@ export class PageCage {
           thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-curt-bruce-thumb.jpg",
           datePublished: "",
           dateModified: "July 6, 2019"
+        },
+        {
+          id: "/photos/ed-kalwara",
+          title: "Tour of Duty Photos from Ed Kalwara",
+          teaser: "Photographs from Gary Culp (Charlie Co) taken during his tour of duty.",
+          thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ed-kalwara-thumb.jpg",
+          datePublished: "",
+          dateModified: "Nov 11, 2019"
         },
         {
           id: "/photos/gary-culp",
@@ -99,6 +110,25 @@ export class PageCage {
         },
     ]
 
+    videoItems = [
+      {
+        id: "/ray-kelley-silver-star",
+        title: "Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War",
+        teaser: "Silver Star Medal presentation ceremony for Ray (&quot;Machine Gun&quot;) Kelley.",
+        thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/ray-kelley-silver-star-thumb.jpg",
+        datePublished: "Nov 9, 2019",
+        dateModified: "Nov 9, 2019"
+      },
+      {
+        id: "/vietnam-1967-amphibious-combat",
+        title: "Vietnam, 1967 - Amphibious Combat",
+        teaser: "A documentary about Amphibious Warfare in Vietnam, I-Corps, 1967 by  Donald F. Teal, M.D.",
+        thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/ray-kelley-silver-star-thumb.jpg",
+        datePublished: "Nov 9, 2019",
+        dateModified: "Nov 9, 2019"
+      }
+    ]
+
     componentWillLoad() {
         document.title = this.title;
     }
@@ -125,7 +155,7 @@ export class PageCage {
                             <h2>Companion Resources</h2>
 
                             <ion-list>
-                            {this.items.map((item) =>
+                            {this.recordItems.map((item) =>
                                 <ion-item href={item.id}>
                                   <ion-thumbnail slot="start">
                                     <img src={item.thumbnail}/>
@@ -137,7 +167,43 @@ export class PageCage {
                                 </ion-item>
                             )}
                             </ion-list>
+
+                            <h3>Photos</h3>
+
+                            <ion-list>
+                            {this.photoItems.map((item) =>
+                                <ion-item href={item.id}>
+                                  <ion-thumbnail slot="start">
+                                    <img src={item.thumbnail}/>
+                                  </ion-thumbnail>
+                                  <ion-label text-wrap>
+                                  {item.title}
+                                  <p innerHTML={item.teaser}></p>
+                                  </ion-label>
+                                </ion-item>
+                            )}
+                            </ion-list>
+                        
+                            <h3>Videos</h3>
+
+                            <ion-list>
+                            {this.videoItems.map((item) =>
+                                <ion-item href={item.id}>
+                                  <ion-thumbnail slot="start">
+                                    <img src={item.thumbnail}/>
+                                  </ion-thumbnail>
+                                  <ion-label text-wrap>
+                                  {item.title}
+                                  <p innerHTML={item.teaser}></p>
+                                  </ion-label>
+                                </ion-item>
+                            )}
+                            </ion-list>
+
+                            <h3>Vietnam War Reference Resources</h3>
+                        
                         </ion-col>
+
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
                         
                         <h3>Subscribe to the mailing list</h3>

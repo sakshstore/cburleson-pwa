@@ -1,6 +1,8 @@
 import { Component, h } from '@stencil/core';
 import Prism from "prismjs"
 
+import { BlogData } from '../../services/blog-data';
+
 const code = `<tr *ngFor="#item of data">
      <td><a href="#">{{ item.invoiceNo }}</a></td>
      <td>{{ item.invoiceDate }}</td>
@@ -13,14 +15,25 @@ const code = `<tr *ngFor="#item of data">
 })
 export class PageFormatCurrencyInAngular {
 
-    title = 'Format Currency in Angular';
+    // All data from BlogService
+    //data: any;
 
-    componentWillLoad() {
-        document.title = this.title;
+    // header for this individual item by id...
+    metadata: any;
+
+    async componentWillLoad() {
+        // this.data = await BlogData.load();
+        // Get the id from the URL path (slug)
+        let id = document.location.pathname.substr(1);
+        this.metadata = BlogData.getPostHeaderById(id);
+        console.log('-- PageFormatCurrencyInAngular.componentDidLoad > header by id: %o', BlogData.getPostHeaderById(id));
+        // set internalk property for use inside the page content H1
+        
+        // set document title for browser / tab / bookmark
+        document.title = this.metadata.title;
     }
 
     componentDidLoad() {
-        console.log('>> PageFormatCurrencyInAngular > componentDidLoad()');
         setTimeout(() => Prism.highlightAll(), 0)
     }
 
@@ -38,11 +51,11 @@ export class PageFormatCurrencyInAngular {
                 <ion-grid fixed>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                            <h1>{this.title}</h1>
+                            <h1>{this.metadata.title}</h1>
 
-                            <div class="entry-meta">
-                                <span class="posted-on">Posted on <time class="entry-date published" datetime="2016-04-29T23:02:20-06:00">April 29, 2016</time> (last modified <time class="updated" datetime="2018-09-25T07:21:20-06:00"> September 25, 2018 </time>)</span>
-                            </div>
+                            <p class="entry-meta">
+                                Posted on <time>{new Date(this.metadata.datePublished).toDateString()}</time> (last modified <time>{new Date(this.metadata.dateModified).toDateString()}</time>)
+                            </p>
 
                             <p>In Angular, to format a currency, use the currency pipe on a number as shown here.</p>
                             <pre><code class="language-html">{code}</code></pre>
@@ -61,6 +74,3 @@ export class PageFormatCurrencyInAngular {
         ];
     }
 }
-
-// Call the Prism.js API here
-// setTimeout(() => Prism.highlightAll(), 0)

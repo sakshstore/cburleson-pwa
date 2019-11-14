@@ -30,6 +30,14 @@ class BlogDataService {
         return data.topics.sort();
     }
 
+    getPostHeaderById( slug:string ) {
+
+        console.log('>> BlogDataService.getPostHeaderById("%s")', slug);
+
+        return this.data.content.find(item => item.id === slug);
+
+    }
+
 }
 // Singleton. See: https://www.joshmorony.com/using-services-providers-to-share-data-in-a-stencil-js-application/
 export const BlogData = new BlogDataService();

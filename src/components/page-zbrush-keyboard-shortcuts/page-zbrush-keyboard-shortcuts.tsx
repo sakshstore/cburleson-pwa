@@ -26,11 +26,13 @@ export class PageZbrushKeyboardShortcuts {
         <ion-grid fixed>
           <ion-row>
             <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+              
               <h1>{this.title}</h1>
+              <p class="entry-meta"><em>Posted on July 4, 2018 (last modified July 17, 2019)</em></p>
 
               <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the&nbsp;ZBrush 4R7 and ZBrush Core Online Documentation, © 2016 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
 
-              <p class="text-muted"><em>Posted on July 4, 2018 (last modified July 17, 2019)</em></p>
+              
 
               <h2>General shortcuts</h2>
 

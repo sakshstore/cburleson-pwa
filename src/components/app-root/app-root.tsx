@@ -38,6 +38,8 @@ export class AppRoot {
     this.data = await BlogData.load();
   }
 
+  // @Listen('body:ionRouteDidChange')
+
   renderRouter() {
     return (
       <ion-router useHash={false}>
@@ -65,10 +67,16 @@ export class AppRoot {
           <ion-route url="/d-1-3-weapons-platoon" component="tab-books">
             <ion-route component="page-photos-weapons-platoon"></ion-route>
           </ion-route>
+          <ion-route url="/ray-kelley-silver-star" component="tab-books">
+            <ion-route component="page-ray-kelley-silver-star"></ion-route>
+          </ion-route>
           <ion-route url="/photos" component="tab-books">
             <ion-route url="/:name" component="page-photos"></ion-route>
           </ion-route>
-
+          <ion-route url="/vietnam-1967-amphibious-combat" component="tab-books">
+            <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>
+          </ion-route>
+          
           {this.data.content.map((item) =>
             <ion-route url={'/' + item.id + '/'} component="tab-blog" >
               <ion-route component={'page-' + item.id}></ion-route>

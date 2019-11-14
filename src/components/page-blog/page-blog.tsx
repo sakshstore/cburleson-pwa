@@ -20,6 +20,7 @@ export class PageBlog {
     document.title = this.title;
   }
 
+  /*
   componentWillRender() {
     console.log('>> PageBlog.componentWillRender');
   }
@@ -29,6 +30,7 @@ export class PageBlog {
   componentDidLoad() {
     console.log('>> PageBlog.componentDidLoad');
   }
+  */
 
   async presentFilter() {
     console.log('PageBlog > presentFilter()');
@@ -59,10 +61,7 @@ export class PageBlog {
 
       <ion-content class="ion-padding">
         <p>
-          Welcome to the PWA Toolkit. You can use this starter to build entire
-          apps with web components using Stencil and ionic/core! Check out the
-          README for everything that comes in this starter out of the box and
-          check out our docs on <a href="https://stenciljs.com">stenciljs.com</a> to get started.
+          Click the control at top-right to filter by topics.
         </p>
 
 
