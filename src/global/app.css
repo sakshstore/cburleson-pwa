@@ -21,6 +21,8 @@
 @import "~@ionic/core/css/text-transformation.css";
 @import "~@ionic/core/css/flex-utils.css";
 
+@import "~prismjs/themes/prism-okaidia.css";
+
 /*
   The CSS Variables below can be used to theme your app.
   For more info on CSS variables check out:
@@ -41,6 +43,11 @@ ion-thumbnail {
     height: var(--size);
 }
 
+code {
+  /*font-size: 90%;*/
+  color: #e83e8c;
+  word-break: break-word;
+}
 
 /* *************************************************************************
 TABLES (based on Bootstrap 4) 

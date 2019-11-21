@@ -1,16 +1,23 @@
 import { Component, h } from '@stencil/core';
-// Use this if using source code blocks to be formatted by prism.js...
-// import Prism from "prismjs"
+import Prism from "prismjs"
 import { BlogData } from '../../services/blog-data';
 
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
+const CODE_1 = `<tr *ngFor="#item of data; #ndx = index">
+    <td>{{ndx+1}}</td>
+    <td>{{item.po}}</td>
+    <td>{{item.serviceType}}</td>
+    <td>{{item.validStart}}</td>
+    ...
+</tr>`;
+
 @Component({
-    tag: 'page-template-page',
+    tag: 'page-index-of-item-within-angular-ngfor-loop',
 })
-export class PageTemplatePage {
+export class PageIndexOfItemWithinAngularNgforLoop {
 
     title = 'Blog';
 
@@ -19,7 +26,7 @@ export class PageTemplatePage {
 
     async componentWillLoad() {
         if(debug) {
-            console.log('> PageTemplatePage.componentWillLoad');
+            console.log('> PageIndexOfItemWithinAngularNgforLoop.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
@@ -31,9 +38,9 @@ export class PageTemplatePage {
     }
 
     // Use this if using source code blocks to be formatted by prism.js...
-    // componentDidLoad() {
-        // setTimeout(() => Prism.highlightAll(), 0)
-    // }
+    componentDidLoad() {
+        setTimeout(() => Prism.highlightAll(), 0)
+    }
 
     render() {
         return [
@@ -52,6 +59,16 @@ export class PageTemplatePage {
                 
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
             
+                <p>Here's how to get and print the index (or the iteration number) of the current item in an ngFor loop.</p>
+                
+                <p>In Angular, to get the index (or the iteration number) of the current item, add a second part to the ngFor expression (after a semi-colon) as shown here.</p>
+
+                <pre><code class="language-html">{CODE_1}</code></pre>
+
+                <p>Notice that I’m adding 1 to the output expression ( <code>ndx+1</code> ) because the index is zero-based. The data table row example shown above renders as follows:</p>
+                
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/ngForLoopIndexExample.jpg" alt="" /></p>
+
             </ion-content>
 
         ];

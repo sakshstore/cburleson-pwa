@@ -1,7 +1,7 @@
 import { Config } from '@ionic/core';
 import { Component, Element, h, Listen, Prop } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
-import { get, remove, set } from '../../services/storage';
+import { get, set } from '../../services/storage';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -40,8 +40,10 @@ export class PageBlog {
         return result;
       })
       .catch(function (err) {
+        if(debug){
+          console.log('< PageBlog.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
+        }
         // do nothing
-        // console.log('In promise, got ERROR: %o', err);
         return [];
       });
 
@@ -68,25 +70,12 @@ export class PageBlog {
       console.log('> PageBlog.updateContentList');
     }
 
-    const data = await BlogData.getContent(this.excludeTracks);
+    await BlogData.getContent(this.excludeTracks);
     // this.shownSessions = data.shownSessions;
     // this.groups = data.groups;
 
     this.el.forceUpdate();
   }
-
-
-  /*
-  componentWillRender() {
-    console.log('>> PageBlog.componentWillRender');
-  }
-  componentWillUpdate() {
-    console.log('>> PageBlog.componentWillUpdate');
-  }
-  componentDidLoad() {
-    console.log('>> PageBlog.componentDidLoad');
-  }
-  */
 
   async presentFilter() {
     if (debug) {
@@ -119,10 +108,8 @@ export class PageBlog {
       </ion-header>,
 
       <ion-content class="ion-padding">
-        <p>
-          Click the control at top-right to filter by topics.
-        </p>
 
+        <p>Click the control at top-right to filter by topics.</p>
 
         <ion-list>
           {this.data.content.map((item) =>

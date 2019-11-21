@@ -1,0 +1,84 @@
+{
+  "content": [
+    {
+      "id": "killing-kittens",
+      "title": "Killing Kittens",
+      "teaser": "A memory of Mom, a .45 pistol, and a litter of kittens.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2019/03/09",
+      "dateModified": "2019/06/10",
+      "tracks": ["Memoir"],
+      "type": "component"
+    },
+    {
+      "id": "zbrush-keyboard-shortcuts",
+      "title": "ZBrush Keyboard Shortcuts",
+      "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/07/04",
+      "dateModified": "2019/04/17",
+      "tracks": ["ZBrush"],
+      "type": "component"
+    },
+    {
+      "id": "apply-different-materials-to-subtools-in-zbrush",
+      "title": "How to apply different materials to subtools in ZBrush",
+      "teaser": "Apply different materials to different SubTools in ZBrush with 5 simple steps.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2018/07/23",
+      "tracks": ["ZBrush"],
+      "type": "component"
+    },
+    {
+      "id": "sparql-examples-select",
+      "title": "SPARQL examples – select",
+      "teaser": "Various examples for using SELECT in SPARQL queries.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "datePublished": "2017/12/17",
+      "dateModified": "2019/04/12",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "format-currency-in-angular",
+      "title": "Format Currency in Angular",
+      "teaser": "How format a number into currency with the Angular currency pipe.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
+      "datePublished": "2016/04/29",
+      "dateModified": "2018/09/25",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "index-of-item-within-angular-ngfor-loop",
+      "title": "Index of item within Angular ngFor loop",
+      "teaser": "How to get and print the index (or the iteration number) of the current item in an ngFor loop.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
+      "datePublished": "2016/04/28",
+      "dateModified": "2018/09/24",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
+      "title": "Getting parts of a URL from the HttpServletRequest object",
+      "teaser": "Example Java code and example output values for getter methods on the HttpServletRequest object.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
+      "datePublished": "2013/09/18",
+      "dateModified": "2018/09/22",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "automatically-build-and-include-one-eclipse-project-into-another",
+      "title": "Automatically build and include one Eclipse project into another",
+      "teaser": "In your Eclipse IDE, you can automatically build and consume one project into another as a Java jar file. Here's how.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
+      "datePublished": "2013/04/21",
+      "dateModified": "2019/11/21",
+      "tracks": ["Software Dev"],
+      "type": "json-file"
+    }
+  ]
+}

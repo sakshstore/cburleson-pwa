@@ -22,16 +22,22 @@ export namespace Components {
   interface PageBlogFilter {
     'excludedTracks': string[];
   }
+  interface PageBlogPost {
+    'name': string;
+  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
   interface PageFormatCurrencyInAngular {}
+  interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
   interface PagePhotos {
     'name': string;
   }
   interface PagePhotosWeaponsPlatoon {}
   interface PageRayKelleySilverStar {}
+  interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
   interface PageVietnam1967AmphibiousCombat {}
@@ -83,6 +89,12 @@ declare global {
     new (): HTMLPageBlogFilterElement;
   };
 
+  interface HTMLPageBlogPostElement extends Components.PageBlogPost, HTMLStencilElement {}
+  var HTMLPageBlogPostElement: {
+    prototype: HTMLPageBlogPostElement;
+    new (): HTMLPageBlogPostElement;
+  };
+
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
   var HTMLPageBooksElement: {
     prototype: HTMLPageBooksElement;
@@ -107,6 +119,18 @@ declare global {
     new (): HTMLPageFormatCurrencyInAngularElement;
   };
 
+  interface HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement extends Components.PageGettingPartsOfAUrlFromTheHttpservletrequestObject, HTMLStencilElement {}
+  var HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement: {
+    prototype: HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    new (): HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+  };
+
+  interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
+  var HTMLPageIndexOfItemWithinAngularNgforLoopElement: {
+    prototype: HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+    new (): HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+  };
+
   interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
   var HTMLPageKillingKittensElement: {
     prototype: HTMLPageKillingKittensElement;
@@ -129,6 +153,12 @@ declare global {
   var HTMLPageRayKelleySilverStarElement: {
     prototype: HTMLPageRayKelleySilverStarElement;
     new (): HTMLPageRayKelleySilverStarElement;
+  };
+
+  interface HTMLPageSparqlExamplesSelectElement extends Components.PageSparqlExamplesSelect, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesSelectElement: {
+    prototype: HTMLPageSparqlExamplesSelectElement;
+    new (): HTMLPageSparqlExamplesSelectElement;
   };
 
   interface HTMLPageTabsElement extends Components.PageTabs, HTMLStencilElement {}
@@ -162,14 +192,18 @@ declare global {
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
     'page-blog-filter': HTMLPageBlogFilterElement;
+    'page-blog-post': HTMLPageBlogPostElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
+    'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-photos': HTMLPagePhotosElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
+    'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
@@ -190,16 +224,22 @@ declare namespace LocalJSX {
   interface PageBlogFilter {
     'excludedTracks'?: string[];
   }
+  interface PageBlogPost {
+    'name'?: string;
+  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
   interface PageFormatCurrencyInAngular {}
+  interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
   interface PagePhotos {
     'name'?: string;
   }
   interface PagePhotosWeaponsPlatoon {}
   interface PageRayKelleySilverStar {}
+  interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
   interface PageVietnam1967AmphibiousCombat {}
@@ -213,14 +253,18 @@ declare namespace LocalJSX {
     'page-art': PageArt;
     'page-blog': PageBlog;
     'page-blog-filter': PageBlogFilter;
+    'page-blog-post': PageBlogPost;
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
+    'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
+    'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-killing-kittens': PageKillingKittens;
     'page-photos': PagePhotos;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
+    'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
@@ -241,14 +285,18 @@ declare module "@stencil/core" {
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-blog-filter': LocalJSX.PageBlogFilter & JSXBase.HTMLAttributes<HTMLPageBlogFilterElement>;
+      'page-blog-post': LocalJSX.PageBlogPost & JSXBase.HTMLAttributes<HTMLPageBlogPostElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
+      'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
+      'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-photos': LocalJSX.PagePhotos & JSXBase.HTMLAttributes<HTMLPagePhotosElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
+      'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;

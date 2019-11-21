@@ -15,7 +15,7 @@ export class PageBooks {
     {
       id: "/cage",
       title: "The Cage",
-      teaser: "The epic true story of the Special Landing Force of 1st Batallion, 3rd Marines in the Vietnam War.",
+      teaser: "An epic true story of the Special Landing Force of 1st Batallion, 3rd Marines in the Vietnam War.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
       datePublished: "",
       dateModified: "Oct 21, 2019"

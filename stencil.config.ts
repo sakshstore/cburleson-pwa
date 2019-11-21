@@ -23,9 +23,11 @@ export const config: Config = {
   //globalScript: 'src/global/app.ts',
   globalScript: globalScript,
   globalStyle: 'src/global/app.css',
+  /*
   copy: [{
     src: '../node_modules/prismjs/themes/prism-okaidia.css',
     dest: 'assets/prismjs/prism.css'
   }]
+  */
 };
 

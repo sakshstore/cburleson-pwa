@@ -5,7 +5,7 @@ import { BlogData } from '../../services/blog-data';
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
-const code = `<tr *ngFor="#item of data">
+const CODE_1 = `<tr *ngFor="#item of data">
      <td><a href="#">{{ item.invoiceNo }}</a></td>
      <td>{{ item.invoiceDate }}</td>
      <td>{{ item.invoiceStatus }}</td>
@@ -21,20 +21,20 @@ export class PageFormatCurrencyInAngular {
     //data: any;
 
     // header for this individual item by id...
-    metadata: any;
+    header: any;
 
     async componentWillLoad() {
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
         let id = document.location.pathname.substr(1);
-        this.metadata = BlogData.getPostHeaderById(id);
+        this.header = BlogData.getPostHeaderById(id);
         if (debug) {
             console.log('-- PageFormatCurrencyInAngular.componentDidLoad > header by id: %o', BlogData.getPostHeaderById(id));
         }
         // set internalk property for use inside the page content H1
 
         // set document title for browser / tab / bookmark
-        document.title = this.metadata.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     componentDidLoad() {
@@ -55,14 +55,14 @@ export class PageFormatCurrencyInAngular {
                 <ion-grid fixed>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
-                            <h1>{this.metadata.title}</h1>
+                            <h1>{this.header.title}</h1>
 
                             <p class="entry-meta">
-                                Posted on <time>{new Date(this.metadata.datePublished).toDateString()}</time> (last modified <time>{new Date(this.metadata.dateModified).toDateString()}</time>)
+                                Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)
                             </p>
 
                             <p>In Angular, to format a currency, use the currency pipe on a number as shown here.</p>
-                            <pre><code class="language-html">{code}</code></pre>
+                            <pre><code class="language-html">{CODE_1}</code></pre>
                             <ul>
                                 <li>The first parameter, <code>'USD'</code>, of the pipe is an ISO currency code (e.g. ‘<code>USD</code>’,’<code>EUR</code>’, etc.)</li>
                                 <li>The second parameter, <code>true</code>, is an optional boolean to specify whether or not you want to render the currency symbol (‘<code>$</code>’, ‘<code>€</code>’); default is false</li>

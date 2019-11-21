@@ -80,6 +80,23 @@ export class AppRoot {
   // @Listen('body:ionRouteDidChange')
 
   renderRouter() {
+
+    const blogPostRoutes = [];
+
+    this.data.content.map((item) => {
+      if(item.type) {
+        if(item.type == 'component') {
+          blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>) 
+        } else if (item.type == 'json-file') {
+          blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="page-blog-post"></ion-route></ion-route>)
+        } else {
+          console.error('- AppRoot.renderRouter > Required attribute "type" unrecognized for item: %o', item);
+        }
+      } else {
+        console.error('- AppRoot.renderRouter > Required attribute "type" not defined for item: %o', item);
+      }
+    });
+
     return (
       <ion-router useHash={false}>
         <ion-route-redirect from="/" to='/blog' />
@@ -116,11 +133,7 @@ export class AppRoot {
             <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>
           </ion-route>
 
-          {this.data.content.map((item) =>
-            <ion-route url={'/' + item.id + '/'} component="tab-blog" >
-              <ion-route component={'page-' + item.id}></ion-route>
-            </ion-route>
-          )}
+          {blogPostRoutes}
 
         </ion-route>
 
