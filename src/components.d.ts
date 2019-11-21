@@ -15,12 +15,13 @@ export namespace Components {
     'item': any;
   }
   interface AppRoot {}
-  interface AppZbrushShortcuts {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
-  interface PageBlogFilter {}
+  interface PageBlogFilter {
+    'excludedTracks': string[];
+  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
@@ -50,12 +51,6 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
-  };
-
-  interface HTMLAppZbrushShortcutsElement extends Components.AppZbrushShortcuts, HTMLStencilElement {}
-  var HTMLAppZbrushShortcutsElement: {
-    prototype: HTMLAppZbrushShortcutsElement;
-    new (): HTMLAppZbrushShortcutsElement;
   };
 
   interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
@@ -162,7 +157,6 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-root': HTMLAppRootElement;
-    'app-zbrush-shortcuts': HTMLAppZbrushShortcutsElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
@@ -189,12 +183,13 @@ declare namespace LocalJSX {
     'item'?: any;
   }
   interface AppRoot {}
-  interface AppZbrushShortcuts {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
-  interface PageBlogFilter {}
+  interface PageBlogFilter {
+    'excludedTracks'?: string[];
+  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
@@ -213,7 +208,6 @@ declare namespace LocalJSX {
   interface IntrinsicElements {
     'app-photo-card': AppPhotoCard;
     'app-root': AppRoot;
-    'app-zbrush-shortcuts': AppZbrushShortcuts;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
@@ -242,7 +236,6 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
-      'app-zbrush-shortcuts': LocalJSX.AppZbrushShortcuts & JSXBase.HTMLAttributes<HTMLAppZbrushShortcutsElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;

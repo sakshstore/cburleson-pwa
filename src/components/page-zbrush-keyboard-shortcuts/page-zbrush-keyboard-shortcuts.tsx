@@ -38,8 +38,6 @@ export class PageZbrushKeyboardShortcuts {
 
               <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the&nbsp;ZBrush 4R7 and ZBrush Core Online Documentation, © 2016 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
 
-
-
               <h2>General shortcuts</h2>
 
               <table class="table table-bordered table-striped">
