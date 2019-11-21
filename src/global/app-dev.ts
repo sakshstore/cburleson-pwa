@@ -7,8 +7,8 @@ export default () => {
   //   mode: 'ios'
   // });
   mySetupConfig({
-    debug: false,
-    recordAnalytics: true,
+    debug: true,
+    recordAnalytics: false,
     siteName: 'Cody Burleson'
   });
 };

@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
   tag: 'page-about',
   styleUrl: 'page-about.css',
@@ -9,7 +12,10 @@ export class PageAbout {
   title = 'About';
 
   componentWillLoad() {
-      document.title = this.title;
+    if (debug) {
+      console.log('> PageAbout.componentWillLoad');
+    }
+    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   render() {
@@ -25,7 +31,7 @@ export class PageAbout {
 
       <ion-content class="ion-padding">
         <div class="leftImageContainer">
-        <img class="alignleft responsive" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cody-burleson-portrait-225x300.jpg" alt="Cody Burleson Portrait" width="225" height="300"></img>
+          <img class="alignleft responsive" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cody-burleson-portrait-225x300.jpg" alt="Cody Burleson Portrait" width="225" height="300"></img>
         </div>
         <p>Hi, I’m Cody Burleson and this is my home base on the web - an online notebook, sketchbook, and experimental software lab.</p>
         <p>Here, you’ll find a bunch of aging technical notes and tutorials that I posted during my days in the software business. I’m not posting much of the technical stuff anymore; I’ve recently retired from 23 years in software to focus full-time on writing.</p>

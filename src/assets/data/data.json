@@ -1,15 +1,14 @@
 {
   "topics": [
     {
-      "slug":"memoir",
-      "label":"memoir"
+      "slug": "memoir",
+      "label": "memoir"
     },
     {
-      "slug":"zbrush",
-      "label":"zbrush"
+      "slug": "zbrush",
+      "label": "zbrush"
     }
   ],
-
   "content": [
     {
       "id": "killing-kittens",
@@ -43,8 +42,5 @@
       "datePublished": "2016/04/29",
       "dateModified": "2018/09/25"
     }
-    
   ]
 }
-
-

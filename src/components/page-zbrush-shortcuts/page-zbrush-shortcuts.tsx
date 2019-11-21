@@ -1,14 +1,20 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
   tag: 'app-zbrush-shortcuts',
 })
-export class AppZbrushShortcuts {
+export class PageZbrushShortcuts {
 
   title = 'ZBrush Keyboard Shortcuts';
 
   componentWillLoad() {
-    document.title = this.title;
+    if (debug) {
+      console.log('> PageZbrushShortcuts.componentWillLoad');
+    }
+    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   render() {
@@ -31,7 +37,7 @@ export class AppZbrushShortcuts {
 
               <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the&nbsp;ZBrush 4R7 and ZBrush Core Online Documentation, © 2016 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
 
-              
+
 
               <h2>General shortcuts</h2>
 
@@ -765,11 +771,11 @@ export class AppZbrushShortcuts {
                 <tbody>
                   <tr>
                     <td>Group Masked and Clear Mask</td>
-                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br/>(This is super handy! Basically, it turns anything you have masked into a polygroup and then clears the mask. In other words, if you want to turn the currently masked area into a polygroup, press <kbd>CTRL</kbd> + <kbd>W</kbd>.)</td>
+                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br />(This is super handy! Basically, it turns anything you have masked into a polygroup and then clears the mask. In other words, if you want to turn the currently masked area into a polygroup, press <kbd>CTRL</kbd> + <kbd>W</kbd>.)</td>
                   </tr>
                   <tr>
                     <td>Make all polygroups into one</td>
-                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br/>(In addition to the above, this key combination can also be used to apply a single polygroup to the active subtool. For example &#8211; if a subtool has several polygroups and you want only one.)</td>
+                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br />(In addition to the above, this key combination can also be used to apply a single polygroup to the active subtool. For example &#8211; if a subtool has several polygroups and you want only one.)</td>
                   </tr>
                 </tbody>
               </table>

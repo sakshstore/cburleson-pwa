@@ -1,4 +1,7 @@
-import { Component, Prop , h } from '@stencil/core';
+import { Component, Prop, h } from '@stencil/core';
+
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
   tag: 'page-tabs',
@@ -9,6 +12,10 @@ export class PageTabs {
   @Prop({ connect: 'ion-menu-controller' }) menuCtrl: HTMLIonMenuControllerElement;
 
   async componentDidLoad() {
+    if (debug) {
+      console.log('> PageTabs.componentDidLoad');
+    }
+
     const menuCtlr: HTMLIonMenuControllerElement = await (this.menuCtrl as any).componentOnReady();
     menuCtlr.enable(true);
   }

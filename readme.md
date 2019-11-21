@@ -1,10 +1,13 @@
 # cburleson-pwa
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/5e6d062e-d4fe-496b-b3c2-978ca2ab080a/deploy-status)](https://app.netlify.com/sites/serene-saha-07d9e0/deploys)
+
 To run:
 
 - `npm install` - Run this first to install the dependencies defined in `package,json`
-- `npm start` - Starts the development server.
-- `npm run build` - Builds your components/app in production mode.
+- `npm start` - Starts the development server and runs in dev mode using `global/app-dev.ts` configuration instead of `global/app.ts` config.
+- `npm run build` - Builds your components/app for production.
+- `npm run prod` -  Builds your components/app for production and runs locally in production mode (for testing prod mode prior to deployment).
 - `npm test` - Starts the test runner.
 
 Further reading:

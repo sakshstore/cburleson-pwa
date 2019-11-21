@@ -1,6 +1,8 @@
 import { Component, h, Prop } from '@stencil/core';
-
 import { BlogData } from '../../services/blog-data';
+
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
   tag: 'page-blog',
@@ -15,9 +17,11 @@ export class PageBlog {
   data: any;
 
   async componentWillLoad() {
-    console.log('>> PageBlog.componentWillLoad()');
+    if (debug) {
+      console.log('> PageBlog.componentWillLoad');
+    }
     this.data = await BlogData.load();
-    document.title = this.title;
+    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   /*
@@ -33,8 +37,11 @@ export class PageBlog {
   */
 
   async presentFilter() {
-    console.log('PageBlog > presentFilter()');
-      const modal = await this.modalCtrl.create({
+    if (debug) {
+      console.log('>> PageBlog.presentFilter');
+    }
+
+    const modal = await this.modalCtrl.create({
       component: 'page-blog-filter',
       componentProps: {
         // excludedTracks: this.excludeTracks,
@@ -66,18 +73,18 @@ export class PageBlog {
 
 
         <ion-list>
-        {this.data.content.map((item) =>
+          {this.data.content.map((item) =>
             <ion-item href={'/' + item.id + '/'}>
               <ion-thumbnail slot="start">
-                <img src={item.thumbnail}/>
+                <img src={item.thumbnail} />
               </ion-thumbnail>
               <ion-label text-wrap>
-              {item.title}
-              <p innerHTML={item.teaser}></p>
-              <p><em>{new Date(item.datePublished).toDateString()}</em></p>
+                {item.title}
+                <p innerHTML={item.teaser}></p>
+                <p><em>{new Date(item.datePublished).toDateString()}</em></p>
               </ion-label>
             </ion-item>
-        )}
+          )}
         </ion-list>
 
       </ion-content>

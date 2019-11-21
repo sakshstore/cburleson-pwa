@@ -1,13 +1,20 @@
+import { EnvironmentConfigService } from '../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 class BlogDataService {
 
     data: any;
 
     constructor() {
-        console.log('> BlogDataService > constructor()')
+        if (debug) {
+            console.log('> BlogDataService.constructor')
+        }
     }
 
     async load() {
-        console.log('> BlogDataService > load()')
+        if (debug) {
+            console.log('> BlogDataService.load')
+        }
         if (this.data) {
             return this.data;
         } else {
@@ -18,24 +25,29 @@ class BlogDataService {
     }
 
     processData(data: any) {
-        console.log('> BlogDataService > processData()')
+        if (debug) {
+            console.log('> BlogDataService.processData');
+        }
         this.data = data;
-        console.log('- BlogDataService < processData() returning: \n %o',this.data);
+        if (debug) {
+            console.log('< BlogDataService < processData() returning: \n %o', this.data);
+        }
         return this.data;
     }
 
     async getTopics() {
-        console.log('> BlogDataService > getTopics()')
+        if (debug) {
+            console.log('> BlogDataService.getTopics');
+        }
         const data = await this.load();
         return data.topics.sort();
     }
 
-    getPostHeaderById( slug:string ) {
-
-        console.log('>> BlogDataService.getPostHeaderById("%s")', slug);
-
+    getPostHeaderById(slug: string) {
+        if (debug) {
+            console.log('> BlogDataService.getPostHeaderById("%s")', slug);
+        }
         return this.data.content.find(item => item.id === slug);
-
     }
 
 }

@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
   tag: 'page-books',
   styleUrl: 'page-books.css',
@@ -19,11 +22,12 @@ export class PageBooks {
     }
   ]
 
-
   componentWillLoad() {
-      document.title = this.title;
+    if (debug) {
+      console.log('> PageBooks.componentWillLoad');
+    }
+    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
   }
-
   render() {
     return [
       <ion-header>
@@ -38,23 +42,23 @@ export class PageBooks {
       <ion-content class="ion-padding">
         <h2>What I'm Writing</h2>
         <ion-list>
-        {this.writingItems.map((item) =>
+          {this.writingItems.map((item) =>
             <ion-item href={item.id}>
               <ion-thumbnail slot="start">
-                <img src={item.thumbnail}/>
+                <img src={item.thumbnail} />
               </ion-thumbnail>
               <ion-label text-wrap>
-              {item.title}
-              <p innerHTML={item.teaser}></p>
+                {item.title}
+                <p innerHTML={item.teaser}></p>
               </ion-label>
             </ion-item>
-        )}
+          )}
         </ion-list>
-        
+
         <h1>What I'm Reading</h1>
         <h1>What I Want to Read</h1>
         <h1>What I've Read</h1>
-        
+
       </ion-content>
     ];
   }

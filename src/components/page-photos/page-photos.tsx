@@ -1,7 +1,8 @@
 import { Component, Prop, h } from '@stencil/core';
-
-
 import { PhotoData } from '../../services/photo-data';
+
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-photos',
@@ -16,9 +17,11 @@ export class PagePhotos {
     data: any;
 
     async componentWillLoad() {
-        console.log('>> componentWillLoad() > Route parameter property "name": %s', this.name);
+        if (debug) {
+            console.log('> PagePhotos.componentWillLoad > Route param property "name": %s', this.name);
+        }
         this.data = await PhotoData.load(this.name);
-        document.title = this.data.pageTitle;
+        document.title = this.data.pageTitle + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

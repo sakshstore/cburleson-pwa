@@ -1,27 +1,30 @@
 // import { Config } from '@ionic/core';
-import { Component, Element, State , h } from '@stencil/core';
-
+import { Component, Element, State, h } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
+
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
   tag: 'page-blog-filter'
 })
 export class PageBlogFilter {
-  
+
   @Element() el: any;
 
 
-  @State() topics: {name: string, isChecked: boolean}[];
+  @State() topics: { name: string, isChecked: boolean }[];
 
-    /*
-  @Prop({ context: 'config' }) config: Config;
+  /*
+@Prop({ context: 'config' }) config: Config;
 
-  @Prop() excludedTracks: string[] = [];
-  */
+@Prop() excludedTracks: string[] = [];
+*/
 
 
   async componentWillLoad() {
-    console.log('> PageBlogFilter > componentWillLoad()')
+    if (debug) { console.log('> PageBlogFilter.componentWillLoad') }
+
     // passed in array of track names that should be excluded (unchecked)
     // TODO = this.navParams.data.excludedTracks;
     // const excludedTrackNames = this.excludedTracks;
@@ -33,17 +36,23 @@ export class PageBlogFilter {
       //isChecked: (excludedTrackNames.indexOf(trackName) === -1)
     }));
   }
- 
+
 
   dismiss(data?: any) {
-    console.log('> PageBlogFilter > dismiss()');
+    if (debug) {
+      console.log('> PageBlogFilter.dismiss');
+    }
+
     // dismiss this modal and pass back data
     (this.el.closest('ion-modal') as any).dismiss(data);
   }
 
-  
+
   applyFilters() {
-    console.log('PageBlogFilter > applyFilters()');
+    if (debug) {
+      console.log('PageBlogFilter > applyFilters');
+    }
+
     // Pass back a new array of track names to exclude
     // const excludedTrackNames = this.tracks.filter(c => !c.isChecked).map(c => c.name);
     // this.dismiss(excludedTrackNames);
@@ -51,12 +60,15 @@ export class PageBlogFilter {
 
   // reset all of the toggles to be checked
   resetFilters() {
+    if (debug) {
+      console.log('> PageBlogFilter.resetFilters');
+    }
     this.topics.forEach(topic => {
       topic.isChecked = true;
     });
     this.el.forceUpdate();
   }
-  
+
 
   /*
 
@@ -112,7 +124,7 @@ export class PageBlogFilter {
   }
   */
 
-    render() {
+  render() {
     return [
       <ion-header>
         <ion-toolbar>
@@ -134,7 +146,7 @@ export class PageBlogFilter {
         <ion-list>
           <ion-list-header>Topics</ion-list-header>
 
-            
+
           {this.topics.map(topic =>
             <ion-item class={{ [`item-topic-${topic.name.toLowerCase()}`]: true, 'item-topic': true }}>
               <span slot="start" class="dot"></span>

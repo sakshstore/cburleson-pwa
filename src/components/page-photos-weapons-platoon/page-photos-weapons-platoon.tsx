@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
     tag: 'page-photos-weapons-platoon',
 })
@@ -8,7 +11,10 @@ export class PagePhotosWeaponsPlatoon {
     title = 'Weapons Platoon - D 1/3 Marines, Vietnam';
 
     componentWillLoad() {
-        document.title = this.title;
+        if (debug) {
+            console.log('> PagePhotosWeaponsPlatoon.componentWillLoad');
+        }
+        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

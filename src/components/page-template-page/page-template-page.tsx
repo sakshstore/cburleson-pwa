@@ -1,14 +1,20 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
     tag: 'page-template-page',
 })
-export class AppTemplatePage {
+export class PageTemplatePage {
 
     title = 'Page Template Page';
 
     componentWillLoad() {
-        document.title = this.title;
+        if (debug) {
+            console.log('> PageTemplatePage.componentWillLoad');
+        }
+        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
 @Component({
     tag: 'page-vietnam-1967-amphibious-combat'
 })
@@ -8,7 +11,10 @@ export class PageVietnam1967AmphibiousCombat {
     title = 'Vietnam, 1967 - Amphibious Combat';
 
     componentWillLoad() {
-        document.title = this.title;
+        if (debug) {
+            console.log('> PageVietnam1967AmphibiousCombat.componentWillLoad');
+        }
+        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {
@@ -31,7 +37,7 @@ export class PageVietnam1967AmphibiousCombat {
                 <p>This movie is a documentary about Amphibious Warfare in Vietnam, I-Corps, 1967. Filmed in Vietnam in 1967 by Donald F. Teal, M.D., formerly Lieutenant, Medical Corps, United States Navy, while on deployment with United States Marines and Sailors of the First Battalion, Third Marine Regiment, Third Marine Division attached to Amphibious Ready Group Alpha and Special Landing Force Alpha as Medical Officer In Charge of Casualty Care. This movie was created and produced by Dr Teal in January 2011.</p>
                 <p><em>Video &copy; 2011 Donald F. Teal (except music soundtrack); published with permission as compliments to <a
                     href="/cage/">The Cage</a>, an in-progress book project.</em></p>
-                
+
 
                 <h2>Chapter 1 of 3</h2>
 
