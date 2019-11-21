@@ -35,10 +35,10 @@ export class PageAbout {
         </div>
         <p>Hi, I’m Cody Burleson and this is my home base on the web - an online notebook, sketchbook, and experimental software lab.</p>
         <p>Here, you’ll find a bunch of aging technical notes and tutorials that I posted during my days in the software business. I’m not posting much of the technical stuff anymore; I’ve recently retired from 23 years in software to focus full-time on writing.</p>
-        <p>Currently, I’m working on a book about the special landing force of 1st Battalion, 3rd Marines in the Vietnam War. My dad was a rocket man in a weapons platoon attached to Delta Company. The working title of the book is <em>The Cage</em>, which refers to Operation Beaver Cage – a key event in the story. I hope to complete and publish it by May, 2021.</p>
+        <p>Currently, I’m working on a book about the Special Landing Force of 1st Battalion, 3rd Marines in the Vietnam War. My dad was a rocket man in a weapons platoon attached to Delta Company. The working title of the book is <em>The Cage</em>, which refers to Operation Beaver Cage – a key event in the story. I hope to complete and publish it by May, 2021.</p>
         <p>For news about the project, you can sign up for the mailing list or find more information and companion resources here:</p>
-        <p><a href="https://codyburleson.com/cage/"><strong>Work-in-Progress Project: The Cage</strong></a></p>
-        <p>I occasionally share things that I learn about the art of story-telling and the craft of writing. I also post an occasional piece of creative writing or <a href="https://codyburleson.com/tag/memoire/">mémoire</a>.</p>
+        <p><a href="/cage/"><strong>Work-in-Progress Project: The Cage</strong></a></p>
+        <p>I occasionally share things that I learn about the art of story-telling and the craft of writing. I also post an occasional piece of creative writing or memoir.</p>
         <p>Thanks for visiting! I’m glad you stopped by.</p>
       </ion-content>
     ];
