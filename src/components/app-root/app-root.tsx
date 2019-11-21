@@ -4,7 +4,7 @@ import { BlogData } from '../../services/blog-data';
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 const recordAnalytics: boolean = EnvironmentConfigService.getInstance().get('recordAnalytics');
-
+const siteName: string = EnvironmentConfigService.getInstance().get('siteName');
 declare let gtag: Function;
 
 @Component({
@@ -44,6 +44,17 @@ export class AppRoot {
   routeDidChangeHandler(event: CustomEvent) {
     if (debug) {
       console.log('> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
+    }
+
+    // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
+    if(event.detail.to == '/blog') {
+      document.title = 'Blog | ' + siteName;
+    } else if(event.detail.to == '/books') {
+      document.title = 'Books | ' + siteName;
+    } else if(event.detail.to == '/art') {
+      document.title = 'Art | ' + siteName;
+    } else if(event.detail.to == '/about') {
+      document.title = 'About | ' + siteName;
     }
 
     if (recordAnalytics) {

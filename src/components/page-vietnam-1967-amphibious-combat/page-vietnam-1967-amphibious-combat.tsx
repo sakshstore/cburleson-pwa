@@ -14,7 +14,7 @@ export class PageVietnam1967AmphibiousCombat {
         if (debug) {
             console.log('> PageVietnam1967AmphibiousCombat.componentWillLoad');
         }
-        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

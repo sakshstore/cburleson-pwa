@@ -14,7 +14,7 @@ export class PageRayKelleySilverStar {
     if (debug) {
       console.log('> PageRayKelleySilverStar.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   render() {

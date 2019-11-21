@@ -29,7 +29,7 @@ export class PageBlog {
     if (debug) {
       console.log('> PageBlog.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
 
     this.data = await BlogData.load();
 

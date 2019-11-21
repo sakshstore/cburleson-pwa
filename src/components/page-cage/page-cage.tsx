@@ -39,6 +39,7 @@ export class PageCage {
       datePublished: "",
       dateModified: "July 6, 2019"
     },
+    /*
     {
       id: "/photos/ed-kalwara",
       title: "Tour of Duty Photos from Ed Kalwara",
@@ -46,7 +47,7 @@ export class PageCage {
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ed-kalwara-thumb.jpg",
       datePublished: "",
       dateModified: "Nov 11, 2019"
-    },
+    },*/
     {
       id: "/photos/gary-culp",
       title: "Tour of Duty Photos from Gary Culp",
@@ -79,6 +80,7 @@ export class PageCage {
       datePublished: "",
       dateModified: "Oct 7, 2019"
     },
+    /*
     {
       id: "/photos/ken-hicks",
       title: "Tour of Duty Photos from Ken Hicks",
@@ -87,6 +89,7 @@ export class PageCage {
       datePublished: "",
       dateModified: "July 6, 2019"
     },
+    */
     {
       id: "/photos/kevin-brooks",
       title: "Tour of Duty Photos from Kevin Brooks",
@@ -136,7 +139,7 @@ export class PageCage {
     if (debug) {
       console.log('> PageCage.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
 

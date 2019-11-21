@@ -15,7 +15,7 @@ export class PageArt {
     if (debug) {
       console.log('> PageArt.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   render() {

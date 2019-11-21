@@ -26,7 +26,7 @@ export class PageBooks {
     if (debug) {
       console.log('> PageBooks.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
   render() {
     return [

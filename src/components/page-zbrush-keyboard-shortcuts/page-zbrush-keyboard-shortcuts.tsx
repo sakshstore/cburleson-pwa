@@ -14,7 +14,7 @@ export class PageZbrushKeyboardShortcuts {
     if (debug) {
       console.log('> PageZbrushKeyboardShortcuts.componentWillLoad');
     }
-    document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
   render() {

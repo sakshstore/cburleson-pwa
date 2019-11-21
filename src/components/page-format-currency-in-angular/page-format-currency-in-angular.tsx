@@ -34,7 +34,7 @@ export class PageFormatCurrencyInAngular {
         // set internalk property for use inside the page content H1
 
         // set document title for browser / tab / bookmark
-        document.title = this.metadata.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.metadata.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     componentDidLoad() {

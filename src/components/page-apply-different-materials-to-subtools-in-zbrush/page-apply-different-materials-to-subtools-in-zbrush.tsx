@@ -14,7 +14,7 @@ export class PageApplyDifferentMaterialsToSubtoolsInZbrush {
         if (debug) {
             console.log('> PageApplyDifferentMaterialsToSubtoolsInZbrush.componentWillLoad');
         }
-        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

@@ -15,7 +15,7 @@ export class PageCmdChronBeaverCage {
         if (debug) {
           console.log('> PageCmdChronBeaverCage.componentWillLoad');
         }
-        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
       }
 
     render() {

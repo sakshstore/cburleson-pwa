@@ -14,7 +14,7 @@ export class PageKillingKittens {
         if (debug) {
             console.log('> PageKillingKittens.componentWillLoad');
         }
-        document.title = this.title + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {

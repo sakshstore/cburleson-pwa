@@ -21,7 +21,7 @@ export class PagePhotos {
             console.log('> PagePhotos.componentWillLoad > Route param property "name": %s', this.name);
         }
         this.data = await PhotoData.load(this.name);
-        document.title = this.data.pageTitle + ' - ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.data.pageTitle + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
     render() {
