@@ -1,6 +1,9 @@
 .requiredFieldText {
     color: red; font-size: 75%;
 }
+.optionalFieldText {
+    color: gray; font-size: 75%;
+}
 .clear {
     clear: both
 }

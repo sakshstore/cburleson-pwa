@@ -10,9 +10,15 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppBlogPost {
+    'name': string;
+  }
   interface AppPhotoCard {
     'imagePath': string;
     'item': any;
+  }
+  interface AppPhotos {
+    'name': string;
   }
   interface AppRoot {}
   interface PageAbout {}
@@ -22,9 +28,6 @@ export namespace Components {
   interface PageBlogFilter {
     'excludedTracks': string[];
   }
-  interface PageBlogPost {
-    'name': string;
-  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
@@ -32,9 +35,6 @@ export namespace Components {
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
-  interface PagePhotos {
-    'name': string;
-  }
   interface PagePhotosWeaponsPlatoon {}
   interface PageRayKelleySilverStar {}
   interface PageSparqlExamplesSelect {}
@@ -47,10 +47,22 @@ export namespace Components {
 declare global {
 
 
+  interface HTMLAppBlogPostElement extends Components.AppBlogPost, HTMLStencilElement {}
+  var HTMLAppBlogPostElement: {
+    prototype: HTMLAppBlogPostElement;
+    new (): HTMLAppBlogPostElement;
+  };
+
   interface HTMLAppPhotoCardElement extends Components.AppPhotoCard, HTMLStencilElement {}
   var HTMLAppPhotoCardElement: {
     prototype: HTMLAppPhotoCardElement;
     new (): HTMLAppPhotoCardElement;
+  };
+
+  interface HTMLAppPhotosElement extends Components.AppPhotos, HTMLStencilElement {}
+  var HTMLAppPhotosElement: {
+    prototype: HTMLAppPhotosElement;
+    new (): HTMLAppPhotosElement;
   };
 
   interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {}
@@ -87,12 +99,6 @@ declare global {
   var HTMLPageBlogFilterElement: {
     prototype: HTMLPageBlogFilterElement;
     new (): HTMLPageBlogFilterElement;
-  };
-
-  interface HTMLPageBlogPostElement extends Components.PageBlogPost, HTMLStencilElement {}
-  var HTMLPageBlogPostElement: {
-    prototype: HTMLPageBlogPostElement;
-    new (): HTMLPageBlogPostElement;
   };
 
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
@@ -137,12 +143,6 @@ declare global {
     new (): HTMLPageKillingKittensElement;
   };
 
-  interface HTMLPagePhotosElement extends Components.PagePhotos, HTMLStencilElement {}
-  var HTMLPagePhotosElement: {
-    prototype: HTMLPagePhotosElement;
-    new (): HTMLPagePhotosElement;
-  };
-
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -185,14 +185,15 @@ declare global {
     new (): HTMLPageZbrushKeyboardShortcutsElement;
   };
   interface HTMLElementTagNameMap {
+    'app-blog-post': HTMLAppBlogPostElement;
     'app-photo-card': HTMLAppPhotoCardElement;
+    'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
     'page-blog-filter': HTMLPageBlogFilterElement;
-    'page-blog-post': HTMLPageBlogPostElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
@@ -200,7 +201,6 @@ declare global {
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
-    'page-photos': HTMLPagePhotosElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
@@ -212,9 +212,15 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppBlogPost {
+    'name'?: string;
+  }
   interface AppPhotoCard {
     'imagePath'?: string;
     'item'?: any;
+  }
+  interface AppPhotos {
+    'name'?: string;
   }
   interface AppRoot {}
   interface PageAbout {}
@@ -224,9 +230,6 @@ declare namespace LocalJSX {
   interface PageBlogFilter {
     'excludedTracks'?: string[];
   }
-  interface PageBlogPost {
-    'name'?: string;
-  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
@@ -234,9 +237,6 @@ declare namespace LocalJSX {
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
-  interface PagePhotos {
-    'name'?: string;
-  }
   interface PagePhotosWeaponsPlatoon {}
   interface PageRayKelleySilverStar {}
   interface PageSparqlExamplesSelect {}
@@ -246,14 +246,15 @@ declare namespace LocalJSX {
   interface PageZbrushKeyboardShortcuts {}
 
   interface IntrinsicElements {
+    'app-blog-post': AppBlogPost;
     'app-photo-card': AppPhotoCard;
+    'app-photos': AppPhotos;
     'app-root': AppRoot;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
     'page-blog': PageBlog;
     'page-blog-filter': PageBlogFilter;
-    'page-blog-post': PageBlogPost;
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
@@ -261,7 +262,6 @@ declare namespace LocalJSX {
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-killing-kittens': PageKillingKittens;
-    'page-photos': PagePhotos;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
@@ -278,14 +278,15 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-blog-post': LocalJSX.AppBlogPost & JSXBase.HTMLAttributes<HTMLAppBlogPostElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
+      'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-blog-filter': LocalJSX.PageBlogFilter & JSXBase.HTMLAttributes<HTMLPageBlogFilterElement>;
-      'page-blog-post': LocalJSX.PageBlogPost & JSXBase.HTMLAttributes<HTMLPageBlogPostElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
@@ -293,7 +294,6 @@ declare module "@stencil/core" {
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
-      'page-photos': LocalJSX.PagePhotos & JSXBase.HTMLAttributes<HTMLPagePhotosElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;

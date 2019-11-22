@@ -216,21 +216,45 @@ export class PageCage {
 
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="4">
 
-              <h3>Subscribe to the mailing list</h3>
+            <ion-card>
+              <ion-card-header>
+                <ion-card-title>Join mailing list</ion-card-title>
+              </ion-card-header>
+
+              <ion-card-content>
               <div id="mc_embed_signup">
                 <form id="mc-embedded-subscribe-form" class="validate" action="https://codybburleson.us19.list-manage.com/subscribe/post?u=085bae426fecfc73c590d0ba3&amp;id=a8c24e6482" method="post" name="mc-embedded-subscribe-form" novalidate="" target="_blank">
                   <div id="mc_embed_signup_scroll">
-                    <p>Subscribe to the mailing list and I'll send you occasional news about the project. Don't worry; I will never share your info with anyone. You can view all messages in the <a href="https://us19.campaign-archive.com/home/?u=085bae426fecfc73c590d0ba3&amp;id=a8c24e6482">Email&nbsp;Archive</a>.</p>
+                    <p>Join my mailing list to receive occasional news about the project. I will never share your info with anyone. You can view all previous messages in the <a href="https://us19.campaign-archive.com/home/?u=085bae426fecfc73c590d0ba3&amp;id=a8c24e6482">Email&nbsp;Archive</a>.</p>
                     <div>
+                      {/*
                       <label>Email Address <span class="requiredFieldText">* required</span></label><br /><br />
                       <input id="mce-EMAIL" name="EMAIL" type="email" value="" />
+                      */}
+                      <ion-item>
+                        <ion-label position="floating">Email Address <span class="requiredFieldText">(required)</span></ion-label>
+                        <ion-input id="mce-EMAIL" name="EMAIL" type="email" inputmode="email" required></ion-input>
+                      </ion-item>
                     </div>
                     <div>
+                      {/*
                       <label>First Name </label><br />
                       <input id="mce-FNAME" name="FNAME" type="text" value="" />
+                      */}
+                      <ion-item>
+                        <ion-label position="floating">First Name <span class="optionalFieldText">(optional)</span></ion-label>
+                        <ion-input id="mce-FNAME" name="FNAME" inputmode="text"></ion-input>
+                      </ion-item>
                     </div>
-                    <div><label>Last Name </label><br />
+                    <div>
+                      {/*
+                      <label>Last Name </label><br />
                       <input id="mce-LNAME" name="LNAME" type="text" value="" />
+                      */}
+                      <ion-item>
+                        <ion-label position="floating">Last Name <span class="optionalFieldText">(optional)</span></ion-label>
+                        <ion-input id="mce-LNAME" name="LNAME" inputmode="text"></ion-input>
+                      </ion-item>
                     </div>
                     <div id="mce-responses" class="clear">
                       <div id="mce-error-response" style={{ display: `none` }}>&nbsp;</div>
@@ -239,13 +263,17 @@ export class PageCage {
                     <p><br /></p>
                     <div class="mailchimpHidden" aria-hidden="true"><input tabindex="-1" name="b_085bae426fecfc73c590d0ba3_a8c24e6482" type="text" value="" /></div>
                     <div class="clear">
+                      {/*
                       <input id="mc-embedded-subscribe" name="subscribe" type="submit" value="Subscribe" />
-                      <p><br /></p>
+                      */}
+                      <ion-button id="mc-embedded-subscribe" type="submit">Join</ion-button>
                     </div>
                   </div>
                 </form>
               </div>
-
+              </ion-card-content>
+            </ion-card>
+              
             </ion-col>
           </ion-row>
         </ion-grid>
