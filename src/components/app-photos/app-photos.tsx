@@ -5,10 +5,9 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-    tag: 'page-photos',
-    styleUrl: 'page-photos.css',
+    tag: 'app-photos'
 })
-export class PagePhotos {
+export class AppPhotos {
 
     @Prop() name: string;
 
@@ -18,7 +17,7 @@ export class PagePhotos {
 
     async componentWillLoad() {
         if (debug) {
-            console.log('> PagePhotos.componentWillLoad > Route param property "name": %s', this.name);
+            console.log('> AppPhotos.componentWillLoad > Route param property "name": %s', this.name);
         }
         this.data = await PhotoData.load(this.name);
         document.title = this.data.pageTitle + ' | ' + EnvironmentConfigService.getInstance().get('siteName');

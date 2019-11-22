@@ -88,7 +88,7 @@ export class AppRoot {
         if(item.type == 'component') {
           blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>) 
         } else if (item.type == 'json-file') {
-          blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="page-blog-post"></ion-route></ion-route>)
+          blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="app-blog-post"></ion-route></ion-route>)
         } else {
           console.error('- AppRoot.renderRouter > Required attribute "type" unrecognized for item: %o', item);
         }
@@ -127,7 +127,7 @@ export class AppRoot {
             <ion-route component="page-ray-kelley-silver-star"></ion-route>
           </ion-route>
           <ion-route url="/photos" component="tab-books">
-            <ion-route url="/:name" component="page-photos"></ion-route>
+            <ion-route url="/:name" component="app-photos"></ion-route>
           </ion-route>
           <ion-route url="/vietnam-1967-amphibious-combat" component="tab-books">
             <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>

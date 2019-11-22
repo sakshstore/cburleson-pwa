@@ -5,9 +5,9 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-    tag: 'page-blog-post'
+    tag: 'app-blog-post'
 })
-export class PageBlogPost {
+export class AppBlogPost {
 
     @Prop() name: string;
 
@@ -18,12 +18,12 @@ export class PageBlogPost {
 
     async componentWillLoad() {
         if (debug) {
-            console.log('> PageBlogPost.componentWillLoad > Route param property "name": %s', this.name);
+            console.log('> AppBlogPost.componentWillLoad > Route param property "name": %s', this.name);
         }
         this.data = await BlogData.getPostById(this.name);
         this.header = await BlogData.getPostHeaderById(this.name);
         if (debug) {
-            console.log('PageBlogPost.componentWillLoad > this.header: %o', this.header);
+            console.log('AppBlogPost.componentWillLoad > this.header: %o', this.header);
         }
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
@@ -50,7 +50,7 @@ export class PageBlogPost {
 
                 <p class="entry-meta">
                     Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)
-               </p>
+                </p>
 
                 <div innerHTML={contentBody}></div>
             </ion-content>,
