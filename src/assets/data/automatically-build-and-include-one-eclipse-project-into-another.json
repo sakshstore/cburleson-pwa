@@ -7,7 +7,7 @@
         "<li>Select Java Build Path and then the Projects tab.</li>",
         "<li>Click Add… to add the dependency project that you want to consume as a jar file.</li>",
         "<li>Next, in the left-hand side of the Properties dialog, switch from the Java Build Path to the item that says Deployment Assembly.</li>",
-        "<li>Click Add… and select the project to be consumed as shown below<br /><img src=\"https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2013/04/EclipseRadDeploymentAssembly.png\" alt=\"\"/></li>",
+        "<li>Click Add… and select the project to be consumed as shown below<br /><img class=\"img-fluid\" src=\"https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2013/04/EclipseRadDeploymentAssembly.png\" alt=\"\"/></li>",
         "<li>Finally, click Apply and OK.</li>",
         "</ul>",
         "<p>Now, when I build my web app project, my <code>base22-commons</code> library (a separate project) is now automatically built and included in <code>WEB-INF/lib</code> as <code>base22-commons.jar</code>.</p>"

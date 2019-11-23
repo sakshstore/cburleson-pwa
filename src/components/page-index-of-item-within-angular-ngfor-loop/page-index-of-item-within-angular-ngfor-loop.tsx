@@ -67,7 +67,7 @@ export class PageIndexOfItemWithinAngularNgforLoop {
 
                 <p>Notice that I’m adding 1 to the output expression ( <code>ndx+1</code> ) because the index is zero-based. The data table row example shown above renders as follows:</p>
                 
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/ngForLoopIndexExample.jpg" alt="" /></p>
+                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/ngForLoopIndexExample.jpg" alt="" /></p>
 
             </ion-content>
 

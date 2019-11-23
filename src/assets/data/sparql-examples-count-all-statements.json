@@ -1,0 +1,7 @@
+{
+    "body": [
+        "<p>Here's a SPARQL query that counts all statements (triples) in a repository.</p>",
+        "<p><code>SELECT (COUNT(?s) AS ?triples) WHERE &#123; ?s ?p ?o &#125;</code></p>",
+        "<p>Note that this can be a long running query. For me it took took 21 seconds to count the statements in a repository with 30 million triples.</p>"
+    ]
+}

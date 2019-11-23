@@ -91,6 +91,16 @@ export class PageBlog {
     await modal.present();
   }
 
+  createTopicList(item: any) {
+    let topicString = item.tracks[0];
+    for (var i = 1; i < item.tracks.length; i++) {
+             topicString = topicString + ", " + item.tracks[i]; 
+      
+       
+    }
+    return topicString;
+  }
+
   render() {
     return [
       <ion-header>
@@ -120,7 +130,9 @@ export class PageBlog {
               <ion-label text-wrap>
                 {item.title}
                 <p innerHTML={item.teaser}></p>
-                <p><em>{new Date(item.datePublished).toDateString()}</em></p>
+                <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
+                
+                </em></p>
               </ion-label>
             </ion-item>
           )}

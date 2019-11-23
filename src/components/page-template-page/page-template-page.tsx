@@ -1,6 +1,14 @@
 import { Component, h } from '@stencil/core';
 // Use this if using source code blocks to be formatted by prism.js...
 // import Prism from "prismjs"
+
+// And any, but ONLY the languages you need to use with prism...
+
+import 'prismjs/components/prism-typescript.min';
+import 'prismjs/components/prism-json.min';
+import 'prismjs/components/prism-yaml.min';
+
+
 import { BlogData } from '../../services/blog-data';
 
 

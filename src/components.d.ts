@@ -36,10 +36,13 @@ export namespace Components {
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
   interface PagePhotosWeaponsPlatoon {}
+  interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
+  interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUsePrismJsInIonicStencilApp {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageZbrushKeyboardShortcuts {}
 }
@@ -149,10 +152,22 @@ declare global {
     new (): HTMLPagePhotosWeaponsPlatoonElement;
   };
 
+  interface HTMLPagePwaWithIonicAngularWordpressApi1Element extends Components.PagePwaWithIonicAngularWordpressApi1, HTMLStencilElement {}
+  var HTMLPagePwaWithIonicAngularWordpressApi1Element: {
+    prototype: HTMLPagePwaWithIonicAngularWordpressApi1Element;
+    new (): HTMLPagePwaWithIonicAngularWordpressApi1Element;
+  };
+
   interface HTMLPageRayKelleySilverStarElement extends Components.PageRayKelleySilverStar, HTMLStencilElement {}
   var HTMLPageRayKelleySilverStarElement: {
     prototype: HTMLPageRayKelleySilverStarElement;
     new (): HTMLPageRayKelleySilverStarElement;
+  };
+
+  interface HTMLPageRespondToButtonClickWithObservableElement extends Components.PageRespondToButtonClickWithObservable, HTMLStencilElement {}
+  var HTMLPageRespondToButtonClickWithObservableElement: {
+    prototype: HTMLPageRespondToButtonClickWithObservableElement;
+    new (): HTMLPageRespondToButtonClickWithObservableElement;
   };
 
   interface HTMLPageSparqlExamplesSelectElement extends Components.PageSparqlExamplesSelect, HTMLStencilElement {}
@@ -171,6 +186,12 @@ declare global {
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
     new (): HTMLPageTemplatePageElement;
+  };
+
+  interface HTMLPageUsePrismJsInIonicStencilAppElement extends Components.PageUsePrismJsInIonicStencilApp, HTMLStencilElement {}
+  var HTMLPageUsePrismJsInIonicStencilAppElement: {
+    prototype: HTMLPageUsePrismJsInIonicStencilAppElement;
+    new (): HTMLPageUsePrismJsInIonicStencilAppElement;
   };
 
   interface HTMLPageVietnam1967AmphibiousCombatElement extends Components.PageVietnam1967AmphibiousCombat, HTMLStencilElement {}
@@ -202,10 +223,13 @@ declare global {
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
+    'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
+    'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
+    'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
   }
@@ -238,10 +262,13 @@ declare namespace LocalJSX {
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageKillingKittens {}
   interface PagePhotosWeaponsPlatoon {}
+  interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
+  interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUsePrismJsInIonicStencilApp {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageZbrushKeyboardShortcuts {}
 
@@ -263,10 +290,13 @@ declare namespace LocalJSX {
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-killing-kittens': PageKillingKittens;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
+    'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
+    'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
+    'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
   }
@@ -295,10 +325,13 @@ declare module "@stencil/core" {
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
+      'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
+      'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
+      'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
     }

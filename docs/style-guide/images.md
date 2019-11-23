@@ -9,3 +9,11 @@ The ideal image size for thumbnail images is 100px x 100px. This has been determ
 Now, the size used best for Ionic thumbnails has been determined to be 100px x 100px, but because we want to always have the best possible image for retina displays, we'll upscale that to 200px by 200px. Now that's still a little bit low for some very high-end retina devices like iPhone XS +, but it strikes a balance.
 
 TIP: If downscaling a high-resolution image, it is often helpful to run a Filter > Sharpen > Unsharp Mask (50%) after the down-scale.
+
+## Fluid Images (Mobile Resonsive)
+
+Use this on the `image` tag...
+
+```
+class="img-fluid"
+```
