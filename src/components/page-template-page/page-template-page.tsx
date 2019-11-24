@@ -4,10 +4,12 @@ import { Component, h } from '@stencil/core';
 
 // And any, but ONLY the languages you need to use with prism...
 
-import 'prismjs/components/prism-typescript.min';
-import 'prismjs/components/prism-json.min';
-import 'prismjs/components/prism-yaml.min';
-
+// import 'prismjs/components/prism-typescript.min';
+// import 'prismjs/components/prism-json.min';
+// import 'prismjs/components/prism-yaml.min';
+// These two both for SPARQL:
+// import '/assets/prismjs/prism-turtle.min.js';
+// import '/assets/prismjs/prism-sparql.min.js';
 
 import { BlogData } from '../../services/blog-data';
 

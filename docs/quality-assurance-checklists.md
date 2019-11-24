@@ -7,7 +7,6 @@
 - Make sure that any temporary DEV only switches are switched back to PROD.
 - Check that document.title is set (browser window or tab reflects accurate title).
 
-
 ## Before PROD deployment
 
 - Appearance has been checked under simulated conditions of color blindness.

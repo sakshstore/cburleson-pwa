@@ -1,6 +1,8 @@
 import { Component, h } from '@stencil/core';
 
 import Prism from "prismjs"
+import '/assets/prismjs/prism-turtle.min.js';
+import '/assets/prismjs/prism-sparql.min.js';
 
 import { BlogData } from '../../services/blog-data';
 

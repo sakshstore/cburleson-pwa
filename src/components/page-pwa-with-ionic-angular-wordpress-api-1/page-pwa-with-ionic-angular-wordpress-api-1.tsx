@@ -14,25 +14,6 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 const CODE_1 = `$ cd ./ionic-ng-wp-client
 $ ionic serve`;
 
-const CODE_2 = `version: "2"
-services:
-  my-wpdb:
-    image: mariadb
-    ports:
-      - "8081:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
-  my-wp:
-    image: wordpress
-    volumes:
-      - ./wp:/var/www/html
-    ports:
-      - "8080:80"
-    links:
-      - my-wpdb:mysql
-    environment:
-      WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`;
-
 const CODE_3 = `$ docker-compose stop
 $ docker-compose up -d`;
 

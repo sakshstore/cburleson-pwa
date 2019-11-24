@@ -39,6 +39,8 @@ export namespace Components {
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageSparqlExamplesAsk {}
+  interface PageSparqlExamplesListClasses {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
@@ -170,6 +172,18 @@ declare global {
     new (): HTMLPageRespondToButtonClickWithObservableElement;
   };
 
+  interface HTMLPageSparqlExamplesAskElement extends Components.PageSparqlExamplesAsk, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesAskElement: {
+    prototype: HTMLPageSparqlExamplesAskElement;
+    new (): HTMLPageSparqlExamplesAskElement;
+  };
+
+  interface HTMLPageSparqlExamplesListClassesElement extends Components.PageSparqlExamplesListClasses, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesListClassesElement: {
+    prototype: HTMLPageSparqlExamplesListClassesElement;
+    new (): HTMLPageSparqlExamplesListClassesElement;
+  };
+
   interface HTMLPageSparqlExamplesSelectElement extends Components.PageSparqlExamplesSelect, HTMLStencilElement {}
   var HTMLPageSparqlExamplesSelectElement: {
     prototype: HTMLPageSparqlExamplesSelectElement;
@@ -226,6 +240,8 @@ declare global {
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
+    'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
+    'page-sparql-examples-list-classes': HTMLPageSparqlExamplesListClassesElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
@@ -265,6 +281,8 @@ declare namespace LocalJSX {
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageSparqlExamplesAsk {}
+  interface PageSparqlExamplesListClasses {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
@@ -293,6 +311,8 @@ declare namespace LocalJSX {
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
+    'page-sparql-examples-ask': PageSparqlExamplesAsk;
+    'page-sparql-examples-list-classes': PageSparqlExamplesListClasses;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
@@ -328,6 +348,8 @@ declare module "@stencil/core" {
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
+      'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
+      'page-sparql-examples-list-classes': LocalJSX.PageSparqlExamplesListClasses & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesListClassesElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
