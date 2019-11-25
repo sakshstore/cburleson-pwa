@@ -8,10 +8,10 @@ import { Config } from '@stencil/core';
 // https://medium.com/stencil-tricks/environment-variables-with-stenciljs-57e9da591280
 let globalScript: string = 'src/global/app.ts';
 
-const dev: boolean = 
-           process.argv && process.argv.indexOf('--dev') > -1;
+const dev: boolean =
+  process.argv && process.argv.indexOf('--dev') > -1;
 if (dev) {
-    globalScript = 'src/global/app-dev.ts';
+  globalScript = 'src/global/app-dev.ts';
 }
 // End: env vars
 
@@ -23,11 +23,13 @@ export const config: Config = {
   //globalScript: 'src/global/app.ts',
   globalScript: globalScript,
   globalStyle: 'src/global/app.css',
-  /*
   copy: [{
-    src: '../node_modules/prismjs/themes/prism-okaidia.css',
-    dest: 'assets/prismjs/prism.css'
+    src: '../ads.txt',
+    dest: 'ads.txt'
+  },
+  {
+    src: '../google67847f872fb87981.html',
+    dest: 'google67847f872fb87981.html'
   }]
-  */
 };
 
