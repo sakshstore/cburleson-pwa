@@ -43,7 +43,13 @@ export namespace Components {
   interface PageSparqlExamplesConstruct {}
   interface PageSparqlExamplesCountAllStatements {}
   interface PageSparqlExamplesDateRange {}
+  interface PageSparqlExamplesFederation {}
+  interface PageSparqlExamplesFilter {}
+  interface PageSparqlExamplesInsert {}
+  interface PageSparqlExamplesLimit {}
   interface PageSparqlExamplesListClasses {}
+  interface PageSparqlExamplesNegation {}
+  interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
@@ -200,10 +206,46 @@ declare global {
     new (): HTMLPageSparqlExamplesDateRangeElement;
   };
 
+  interface HTMLPageSparqlExamplesFederationElement extends Components.PageSparqlExamplesFederation, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesFederationElement: {
+    prototype: HTMLPageSparqlExamplesFederationElement;
+    new (): HTMLPageSparqlExamplesFederationElement;
+  };
+
+  interface HTMLPageSparqlExamplesFilterElement extends Components.PageSparqlExamplesFilter, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesFilterElement: {
+    prototype: HTMLPageSparqlExamplesFilterElement;
+    new (): HTMLPageSparqlExamplesFilterElement;
+  };
+
+  interface HTMLPageSparqlExamplesInsertElement extends Components.PageSparqlExamplesInsert, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesInsertElement: {
+    prototype: HTMLPageSparqlExamplesInsertElement;
+    new (): HTMLPageSparqlExamplesInsertElement;
+  };
+
+  interface HTMLPageSparqlExamplesLimitElement extends Components.PageSparqlExamplesLimit, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesLimitElement: {
+    prototype: HTMLPageSparqlExamplesLimitElement;
+    new (): HTMLPageSparqlExamplesLimitElement;
+  };
+
   interface HTMLPageSparqlExamplesListClassesElement extends Components.PageSparqlExamplesListClasses, HTMLStencilElement {}
   var HTMLPageSparqlExamplesListClassesElement: {
     prototype: HTMLPageSparqlExamplesListClassesElement;
     new (): HTMLPageSparqlExamplesListClassesElement;
+  };
+
+  interface HTMLPageSparqlExamplesNegationElement extends Components.PageSparqlExamplesNegation, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesNegationElement: {
+    prototype: HTMLPageSparqlExamplesNegationElement;
+    new (): HTMLPageSparqlExamplesNegationElement;
+  };
+
+  interface HTMLPageSparqlExamplesOrderByElement extends Components.PageSparqlExamplesOrderBy, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesOrderByElement: {
+    prototype: HTMLPageSparqlExamplesOrderByElement;
+    new (): HTMLPageSparqlExamplesOrderByElement;
   };
 
   interface HTMLPageSparqlExamplesPagingElement extends Components.PageSparqlExamplesPaging, HTMLStencilElement {}
@@ -272,7 +314,13 @@ declare global {
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
     'page-sparql-examples-count-all-statements': HTMLPageSparqlExamplesCountAllStatementsElement;
     'page-sparql-examples-date-range': HTMLPageSparqlExamplesDateRangeElement;
+    'page-sparql-examples-federation': HTMLPageSparqlExamplesFederationElement;
+    'page-sparql-examples-filter': HTMLPageSparqlExamplesFilterElement;
+    'page-sparql-examples-insert': HTMLPageSparqlExamplesInsertElement;
+    'page-sparql-examples-limit': HTMLPageSparqlExamplesLimitElement;
     'page-sparql-examples-list-classes': HTMLPageSparqlExamplesListClassesElement;
+    'page-sparql-examples-negation': HTMLPageSparqlExamplesNegationElement;
+    'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
@@ -317,7 +365,13 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesConstruct {}
   interface PageSparqlExamplesCountAllStatements {}
   interface PageSparqlExamplesDateRange {}
+  interface PageSparqlExamplesFederation {}
+  interface PageSparqlExamplesFilter {}
+  interface PageSparqlExamplesInsert {}
+  interface PageSparqlExamplesLimit {}
   interface PageSparqlExamplesListClasses {}
+  interface PageSparqlExamplesNegation {}
+  interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
@@ -351,7 +405,13 @@ declare namespace LocalJSX {
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
     'page-sparql-examples-count-all-statements': PageSparqlExamplesCountAllStatements;
     'page-sparql-examples-date-range': PageSparqlExamplesDateRange;
+    'page-sparql-examples-federation': PageSparqlExamplesFederation;
+    'page-sparql-examples-filter': PageSparqlExamplesFilter;
+    'page-sparql-examples-insert': PageSparqlExamplesInsert;
+    'page-sparql-examples-limit': PageSparqlExamplesLimit;
     'page-sparql-examples-list-classes': PageSparqlExamplesListClasses;
+    'page-sparql-examples-negation': PageSparqlExamplesNegation;
+    'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
@@ -392,7 +452,13 @@ declare module "@stencil/core" {
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
       'page-sparql-examples-count-all-statements': LocalJSX.PageSparqlExamplesCountAllStatements & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesCountAllStatementsElement>;
       'page-sparql-examples-date-range': LocalJSX.PageSparqlExamplesDateRange & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesDateRangeElement>;
+      'page-sparql-examples-federation': LocalJSX.PageSparqlExamplesFederation & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesFederationElement>;
+      'page-sparql-examples-filter': LocalJSX.PageSparqlExamplesFilter & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesFilterElement>;
+      'page-sparql-examples-insert': LocalJSX.PageSparqlExamplesInsert & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesInsertElement>;
+      'page-sparql-examples-limit': LocalJSX.PageSparqlExamplesLimit & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesLimitElement>;
       'page-sparql-examples-list-classes': LocalJSX.PageSparqlExamplesListClasses & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesListClassesElement>;
+      'page-sparql-examples-negation': LocalJSX.PageSparqlExamplesNegation & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesNegationElement>;
+      'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
