@@ -40,7 +40,11 @@ export namespace Components {
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
+  interface PageSparqlExamplesConstruct {}
+  interface PageSparqlExamplesCountAllStatements {}
+  interface PageSparqlExamplesDateRange {}
   interface PageSparqlExamplesListClasses {}
+  interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
@@ -178,10 +182,34 @@ declare global {
     new (): HTMLPageSparqlExamplesAskElement;
   };
 
+  interface HTMLPageSparqlExamplesConstructElement extends Components.PageSparqlExamplesConstruct, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesConstructElement: {
+    prototype: HTMLPageSparqlExamplesConstructElement;
+    new (): HTMLPageSparqlExamplesConstructElement;
+  };
+
+  interface HTMLPageSparqlExamplesCountAllStatementsElement extends Components.PageSparqlExamplesCountAllStatements, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesCountAllStatementsElement: {
+    prototype: HTMLPageSparqlExamplesCountAllStatementsElement;
+    new (): HTMLPageSparqlExamplesCountAllStatementsElement;
+  };
+
+  interface HTMLPageSparqlExamplesDateRangeElement extends Components.PageSparqlExamplesDateRange, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesDateRangeElement: {
+    prototype: HTMLPageSparqlExamplesDateRangeElement;
+    new (): HTMLPageSparqlExamplesDateRangeElement;
+  };
+
   interface HTMLPageSparqlExamplesListClassesElement extends Components.PageSparqlExamplesListClasses, HTMLStencilElement {}
   var HTMLPageSparqlExamplesListClassesElement: {
     prototype: HTMLPageSparqlExamplesListClassesElement;
     new (): HTMLPageSparqlExamplesListClassesElement;
+  };
+
+  interface HTMLPageSparqlExamplesPagingElement extends Components.PageSparqlExamplesPaging, HTMLStencilElement {}
+  var HTMLPageSparqlExamplesPagingElement: {
+    prototype: HTMLPageSparqlExamplesPagingElement;
+    new (): HTMLPageSparqlExamplesPagingElement;
   };
 
   interface HTMLPageSparqlExamplesSelectElement extends Components.PageSparqlExamplesSelect, HTMLStencilElement {}
@@ -241,7 +269,11 @@ declare global {
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
+    'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
+    'page-sparql-examples-count-all-statements': HTMLPageSparqlExamplesCountAllStatementsElement;
+    'page-sparql-examples-date-range': HTMLPageSparqlExamplesDateRangeElement;
     'page-sparql-examples-list-classes': HTMLPageSparqlExamplesListClassesElement;
+    'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
@@ -282,7 +314,11 @@ declare namespace LocalJSX {
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
+  interface PageSparqlExamplesConstruct {}
+  interface PageSparqlExamplesCountAllStatements {}
+  interface PageSparqlExamplesDateRange {}
   interface PageSparqlExamplesListClasses {}
+  interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
@@ -312,7 +348,11 @@ declare namespace LocalJSX {
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
+    'page-sparql-examples-construct': PageSparqlExamplesConstruct;
+    'page-sparql-examples-count-all-statements': PageSparqlExamplesCountAllStatements;
+    'page-sparql-examples-date-range': PageSparqlExamplesDateRange;
     'page-sparql-examples-list-classes': PageSparqlExamplesListClasses;
+    'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
@@ -349,7 +389,11 @@ declare module "@stencil/core" {
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
+      'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
+      'page-sparql-examples-count-all-statements': LocalJSX.PageSparqlExamplesCountAllStatements & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesCountAllStatementsElement>;
+      'page-sparql-examples-date-range': LocalJSX.PageSparqlExamplesDateRange & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesDateRangeElement>;
       'page-sparql-examples-list-classes': LocalJSX.PageSparqlExamplesListClasses & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesListClassesElement>;
+      'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;

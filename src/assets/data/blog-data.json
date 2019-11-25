@@ -71,6 +71,16 @@
       "type": "component"
     },
     {
+      "id": "sparql-examples-construct",
+      "title": "SPARQL examples – construct",
+      "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "datePublished": "2017/12/19",
+      "dateModified": "2018/07/13",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
       "id": "sparql-examples-list-classes",
       "title": "SPARQL examples – list classes",
       "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",
@@ -116,8 +126,38 @@
       "teaser": "SPARQL query that counts all statements (triples) in a repository.",
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
-      "dateModified": "2019/11/22",
+      "dateModified": "2018/7/13",
       "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "sparql-examples-paging",
+      "title": "SPARQL examples – paging",
+      "teaser": "An example SPARQL query for retrieving one given page of results.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "datePublished": "2017/08/31",
+      "dateModified": "2018/07/13",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "sparql-examples-date-range",
+      "title": "SPARQL examples – date range",
+      "teaser": "An example SPARQL query for resources within a given date range.",
+      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "datePublished": "2017/08/31",
+      "dateModified": "2018/11/22",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "pink-hearts",
+      "title": "Pink hearts",
+      "teaser": "A memory of when my sister tried to kill herself (I think).",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2017/07/15",
+      "dateModified": "2018/07/16",
+      "tracks": ["Memoir"],
       "type": "json-file"
     },
     {
