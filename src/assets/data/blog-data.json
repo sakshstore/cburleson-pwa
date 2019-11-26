@@ -51,6 +51,16 @@
       "type": "json-file"
     },
     {
+      "id": "isolate-a-polygroup-in-zbrush",
+      "title": "How to isolate a polygroup in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/11/21",
+      "tracks": ["ZBrush"],
+      "type": "component"
+    },
+    {
       "id": "how-to-use-live-boolean-in-zbrush",
       "title": "How to use live boolean in ZBrush",
       "teaser": "Learn to use the real-time boolean operations in ZBrush.",
@@ -241,6 +251,16 @@
       "type": "component"
     },
     {
+      "id": "7-reasons-why-typescript-helps-you-kick-ass",
+      "title": "7 reasons why TypeScript helps you kick ass",
+      "teaser": "xxx",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
+      "datePublished": "2015/11/16",
+      "dateModified": "2018/07/26",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
       "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
       "title": "Getting parts of a URL from the HttpServletRequest object",
       "teaser": "Example Java code and example output values for getter methods on the HttpServletRequest object.",
@@ -259,6 +279,16 @@
       "dateModified": "2019/11/21",
       "tracks": ["Software Dev"],
       "type": "json-file"
+    },
+    {
+      "id": "list-ibm-db2-commands",
+      "title": "List IBM DB2 commands",
+      "teaser": "Get a quick list of IBM DB2 commands.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ibm.svg",
+      "datePublished": "2009/03/29",
+      "dateModified": "2019/11/22",
+      "tracks": ["Software Dev"],
+      "type": "component"
     }
   ]
 }

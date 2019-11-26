@@ -21,6 +21,7 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
+  interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
@@ -34,7 +35,9 @@ export namespace Components {
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageListIbmDb2Commands {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
@@ -84,6 +87,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement extends Components.Page7ReasonsWhyTypescriptHelpsYouKickAss, HTMLStencilElement {}
+  var HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement: {
+    prototype: HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
+    new (): HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
   };
 
   interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
@@ -152,10 +161,22 @@ declare global {
     new (): HTMLPageIndexOfItemWithinAngularNgforLoopElement;
   };
 
+  interface HTMLPageIsolateAPolygroupInZbrushElement extends Components.PageIsolateAPolygroupInZbrush, HTMLStencilElement {}
+  var HTMLPageIsolateAPolygroupInZbrushElement: {
+    prototype: HTMLPageIsolateAPolygroupInZbrushElement;
+    new (): HTMLPageIsolateAPolygroupInZbrushElement;
+  };
+
   interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
   var HTMLPageKillingKittensElement: {
     prototype: HTMLPageKillingKittensElement;
     new (): HTMLPageKillingKittensElement;
+  };
+
+  interface HTMLPageListIbmDb2CommandsElement extends Components.PageListIbmDb2Commands, HTMLStencilElement {}
+  var HTMLPageListIbmDb2CommandsElement: {
+    prototype: HTMLPageListIbmDb2CommandsElement;
+    new (): HTMLPageListIbmDb2CommandsElement;
   };
 
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
@@ -294,6 +315,7 @@ declare global {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
+    'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
@@ -305,7 +327,9 @@ declare global {
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+    'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
+    'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
@@ -343,6 +367,7 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
+  interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
@@ -356,7 +381,9 @@ declare namespace LocalJSX {
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageListIbmDb2Commands {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PageRayKelleySilverStar {}
@@ -385,6 +412,7 @@ declare namespace LocalJSX {
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
     'app-root': AppRoot;
+    'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
@@ -396,7 +424,9 @@ declare namespace LocalJSX {
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
+    'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
+    'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
@@ -432,6 +462,7 @@ declare module "@stencil/core" {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
@@ -443,7 +474,9 @@ declare module "@stencil/core" {
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
+      'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
+      'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
