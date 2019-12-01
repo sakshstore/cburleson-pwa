@@ -81,6 +81,16 @@
       "type": "component"
     },
     {
+      "id": "delete-hidden-geometry-in-zbrush",
+      "title": "Delete hidden geometry in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2018/07/27",
+      "tracks": ["ZBrush"],
+      "type": "json-file"
+    },
+    {
       "id": "sparql-examples-construct",
       "title": "SPARQL examples – construct",
       "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",

@@ -1,0 +1,9 @@
+{
+    "body": [
+        "<ul>",
+        "<li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and drag out a selection to select geometry to hide. Press <kbd>ALT</kbd> before releasing.</li>",
+        "<li>In Tools &gt; Geometry &gt; Modify Topology, click Del Hidden.</li>",
+        "<li>Optionally, in the same panel, you may click Close Holes to cap open holes.</li>",
+        "</ul>"
+    ]
+}

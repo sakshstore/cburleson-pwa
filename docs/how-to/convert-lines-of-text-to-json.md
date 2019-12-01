@@ -7,8 +7,9 @@ Then wrap it all with:
 
 ```
 {
-    "body": 
-    // paste result here; an array of lines [...]
+    "body": [
+        // paste result here; an array of lines [...]
+    ]
 }
 ```
 
