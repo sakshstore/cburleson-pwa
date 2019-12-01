@@ -241,6 +241,16 @@
       "type": "json-file"
     },
     {
+      "id": "7-quintessential-brushes-for-zbrush-beginners",
+      "title": "7 Quintessential brushes for ZBrush beginners",
+      "teaser": "Here are seven of the most important ZBrush brushes you’ll ever use. Begin your practice with these.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2017/07/12",
+      "dateModified": "2019/03/31",
+      "tracks": ["ZBrush"],
+      "type": "component"
+    },
+    {
       "id": "format-currency-in-angular",
       "title": "Format Currency in Angular",
       "teaser": "How format a number into currency with the Angular currency pipe.",

@@ -15,7 +15,7 @@ Put `class="video"` on the iframe....
 
 Make the following changes to the iframe attributes...
 
-- `allowfullscreen` to: `allowFullScreen`
+- `allowfullscreen` to: `allowFullScreen` and just make the attribute standalone with no equals and value (`allowFullScreen>`)
 - `allow` to: `data-allow`
 
 If allow is not there, you can add this:

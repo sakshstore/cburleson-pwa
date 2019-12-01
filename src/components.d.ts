@@ -21,6 +21,7 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
+  interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
@@ -87,6 +88,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLPage7QuintessentialBrushesForZbrushBeginnersElement extends Components.Page7QuintessentialBrushesForZbrushBeginners, HTMLStencilElement {}
+  var HTMLPage7QuintessentialBrushesForZbrushBeginnersElement: {
+    prototype: HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
+    new (): HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
   };
 
   interface HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement extends Components.Page7ReasonsWhyTypescriptHelpsYouKickAss, HTMLStencilElement {}
@@ -315,6 +322,7 @@ declare global {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
+    'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
@@ -367,6 +375,7 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
+  interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
@@ -412,6 +421,7 @@ declare namespace LocalJSX {
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
     'app-root': AppRoot;
+    'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
@@ -462,6 +472,7 @@ declare module "@stencil/core" {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
