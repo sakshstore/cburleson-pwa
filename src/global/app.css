@@ -32,15 +32,8 @@
   https://ionicframework.com/docs/theming/color-generator
 */
 
-
 * {
   line-height: 1.3em;
-}
-
-ion-thumbnail {
-    --size: 100px;
-    width: var(--size);
-    height: var(--size);
 }
 
 code {
@@ -91,23 +84,16 @@ th {
   border: 1px solid #dee2e6;
 }
 
-ion-img {
-  /** 
-    * Bug fix for:
-    * https://github.com/ionic-team/ionic/issues/18734
-    */
-  min-height: 1px !important;
-}
-
 .entry-meta {
   color: rgba(0,0,0,.6);
   font-size: .8rem;
 }
 
-/* ***** YouTube Embedded Videos ****** */
+/* ******************************************************* */
+/* YouTube Embedded Videos                                 */
+/* ******************************************************* */
 
 /* This sizes the embedded video fluid even to mobile... */
-
 /* wrap iframe in div with this class */
 div.video-container {
   position: relative;
@@ -127,8 +113,43 @@ div.video-container {
 }
 
 /* ******************************************************* */
+/* BADGES                                                  */
+/* ******************************************************* */
+.badge-secondary {
+  color: #fff;
+  background-color: #6c757d;
+}
+.badge {
+  display: inline-block;
+  padding: .25em .4em;
+  font-size: 75%;
+  font-weight: 700;
+  line-height: 1;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: baseline;
+  border-radius: .25rem;
+}
+
+/* ******************************************************* */
+/* IMAGES                                                  */
+/* ******************************************************* */
 
 .img-fluid {
   max-width: 100%;
   height: auto;
+}
+
+ion-img {
+  /** 
+    * Bug fix for:
+    * https://github.com/ionic-team/ionic/issues/18734
+    */
+  min-height: 1px !important;
+}
+
+ion-thumbnail {
+  --size: 100px;
+  width: var(--size);
+  height: var(--size);
 }

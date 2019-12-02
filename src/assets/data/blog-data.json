@@ -21,6 +21,16 @@
       "type": "component"
     },
     {
+      "id": "pwa-with-ionic-angular-wordpress-api-5",
+      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 5",
+      "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
+      "datePublished": "2018/09/20",
+      "dateModified": "2019/03/31",
+      "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
       "id": "pwa-with-ionic-angular-wordpress-api-1",
       "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 1",
       "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
@@ -28,6 +38,16 @@
       "datePublished": "2018/09/08",
       "dateModified": "2019/11/22",
       "tracks": ["Software Dev"],
+      "type": "component"
+    },
+    {
+      "id": "how-to-apply-texture-in-zbrush",
+      "title": "How to apply texture in ZBrush",
+      "teaser": "A quick tutorial on how to apply texture to an object in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/09/03",
+      "dateModified": "2018/09/03",
+      "tracks": ["ZBrush"],
       "type": "component"
     },
     {
@@ -57,6 +77,16 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
       "dateModified": "2019/11/21",
+      "tracks": ["ZBrush"],
+      "type": "component"
+    },
+    {
+      "id": "convert-zbrush-polygroups-into-subtools",
+      "title": "How to convert ZBrush polygroups into subtools",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/7/29",
       "tracks": ["ZBrush"],
       "type": "component"
     },
@@ -273,7 +303,6 @@
     {
       "id": "7-reasons-why-typescript-helps-you-kick-ass",
       "title": "7 reasons why TypeScript helps you kick ass",
-      "teaser": "xxx",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2015/11/16",
       "dateModified": "2018/07/26",

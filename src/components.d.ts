@@ -10,6 +10,9 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface AppBlogFilter {
+    'excludedTracks': string[];
+  }
   interface AppBlogPost {
     'name': string;
   }
@@ -27,20 +30,20 @@ export namespace Components {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
-  interface PageBlogFilter {
-    'excludedTracks': string[];
-  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageHowToApplyTextureInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
+  interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
@@ -65,6 +68,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLAppBlogFilterElement extends Components.AppBlogFilter, HTMLStencilElement {}
+  var HTMLAppBlogFilterElement: {
+    prototype: HTMLAppBlogFilterElement;
+    new (): HTMLAppBlogFilterElement;
+  };
 
   interface HTMLAppBlogPostElement extends Components.AppBlogPost, HTMLStencilElement {}
   var HTMLAppBlogPostElement: {
@@ -126,12 +135,6 @@ declare global {
     new (): HTMLPageBlogElement;
   };
 
-  interface HTMLPageBlogFilterElement extends Components.PageBlogFilter, HTMLStencilElement {}
-  var HTMLPageBlogFilterElement: {
-    prototype: HTMLPageBlogFilterElement;
-    new (): HTMLPageBlogFilterElement;
-  };
-
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
   var HTMLPageBooksElement: {
     prototype: HTMLPageBooksElement;
@@ -150,6 +153,12 @@ declare global {
     new (): HTMLPageCmdChronBeaverCageElement;
   };
 
+  interface HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement extends Components.PageConvertZbrushPolygroupsIntoSubtools, HTMLStencilElement {}
+  var HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement: {
+    prototype: HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
+    new (): HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
+  };
+
   interface HTMLPageFormatCurrencyInAngularElement extends Components.PageFormatCurrencyInAngular, HTMLStencilElement {}
   var HTMLPageFormatCurrencyInAngularElement: {
     prototype: HTMLPageFormatCurrencyInAngularElement;
@@ -160,6 +169,12 @@ declare global {
   var HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement: {
     prototype: HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     new (): HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+  };
+
+  interface HTMLPageHowToApplyTextureInZbrushElement extends Components.PageHowToApplyTextureInZbrush, HTMLStencilElement {}
+  var HTMLPageHowToApplyTextureInZbrushElement: {
+    prototype: HTMLPageHowToApplyTextureInZbrushElement;
+    new (): HTMLPageHowToApplyTextureInZbrushElement;
   };
 
   interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
@@ -196,6 +211,12 @@ declare global {
   var HTMLPagePwaWithIonicAngularWordpressApi1Element: {
     prototype: HTMLPagePwaWithIonicAngularWordpressApi1Element;
     new (): HTMLPagePwaWithIonicAngularWordpressApi1Element;
+  };
+
+  interface HTMLPagePwaWithIonicAngularWordpressApi5Element extends Components.PagePwaWithIonicAngularWordpressApi5, HTMLStencilElement {}
+  var HTMLPagePwaWithIonicAngularWordpressApi5Element: {
+    prototype: HTMLPagePwaWithIonicAngularWordpressApi5Element;
+    new (): HTMLPagePwaWithIonicAngularWordpressApi5Element;
   };
 
   interface HTMLPageRayKelleySilverStarElement extends Components.PageRayKelleySilverStar, HTMLStencilElement {}
@@ -318,6 +339,7 @@ declare global {
     new (): HTMLPageZbrushKeyboardShortcutsElement;
   };
   interface HTMLElementTagNameMap {
+    'app-blog-filter': HTMLAppBlogFilterElement;
     'app-blog-post': HTMLAppBlogPostElement;
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
@@ -328,18 +350,20 @@ declare global {
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
-    'page-blog-filter': HTMLPageBlogFilterElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
+    'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
@@ -364,6 +388,9 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface AppBlogFilter {
+    'excludedTracks'?: string[];
+  }
   interface AppBlogPost {
     'name'?: string;
   }
@@ -381,20 +408,20 @@ declare namespace LocalJSX {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
-  interface PageBlogFilter {
-    'excludedTracks'?: string[];
-  }
   interface PageBooks {}
   interface PageCage {}
   interface PageCmdChronBeaverCage {}
+  interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageHowToApplyTextureInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
+  interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
@@ -417,6 +444,7 @@ declare namespace LocalJSX {
   interface PageZbrushKeyboardShortcuts {}
 
   interface IntrinsicElements {
+    'app-blog-filter': AppBlogFilter;
     'app-blog-post': AppBlogPost;
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
@@ -427,18 +455,20 @@ declare namespace LocalJSX {
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
     'page-blog': PageBlog;
-    'page-blog-filter': PageBlogFilter;
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
+    'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
+    'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
@@ -468,6 +498,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-blog-filter': LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
       'app-blog-post': LocalJSX.AppBlogPost & JSXBase.HTMLAttributes<HTMLAppBlogPostElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
@@ -478,18 +509,20 @@ declare module "@stencil/core" {
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
-      'page-blog-filter': LocalJSX.PageBlogFilter & JSXBase.HTMLAttributes<HTMLPageBlogFilterElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
+      'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
+      'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;

@@ -40,7 +40,7 @@ export class PageBlog {
         return result;
       })
       .catch(function (err) {
-        if(debug){
+        if (debug) {
           console.log('< PageBlog.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
         }
         // do nothing
@@ -83,7 +83,7 @@ export class PageBlog {
     }
 
     const modal = await this.modalCtrl.create({
-      component: 'page-blog-filter',
+      component: 'app-blog-filter',
       componentProps: {
         excludedTracks: this.excludeTracks,
       }
@@ -94,9 +94,9 @@ export class PageBlog {
   createTopicList(item: any) {
     let topicString = item.tracks[0];
     for (var i = 1; i < item.tracks.length; i++) {
-             topicString = topicString + ", " + item.tracks[i]; 
-      
-       
+      topicString = topicString + ", " + item.tracks[i];
+
+
     }
     return topicString;
   }
@@ -115,30 +115,35 @@ export class PageBlog {
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
+        {/* 
+        <ion-toolbar color="primary" class="search-form">
+        <script async src='https://cse.google.com/cse.js?cx=partner-pub-7370676338719207:9067256876'></script><div class="gcse-searchbox-only"></div>
+        </ion-toolbar>
+        */}
       </ion-header>,
-
+    
       <ion-content class="ion-padding">
 
-        <p>Click the control at top-right to filter by topics.</p>
+            <p>Click the control at top-right to filter by topics.</p>
 
-        <ion-list>
-          {this.data.content.map((item) =>
-            <ion-item href={'/' + item.id + '/'} hidden={item.hide}>
-              <ion-thumbnail slot="start">
-                <img src={item.thumbnail} />
-              </ion-thumbnail>
-              <ion-label text-wrap>
-                {item.title}
-                <p innerHTML={item.teaser}></p>
-                <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
-                
-                </em></p>
-              </ion-label>
-            </ion-item>
-          )}
-        </ion-list>
+            <ion-list>
+              {this.data.content.map((item) =>
+                <ion-item href={'/' + item.id + '/'} hidden={item.hide}>
+                  <ion-thumbnail slot="start">
+                    <img src={item.thumbnail} />
+                  </ion-thumbnail>
+                  <ion-label text-wrap>
+                    {item.title}
+                    <p innerHTML={item.teaser}></p>
+                    <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
 
-      </ion-content>
-    ];
-  }
-}
+                    </em></p>
+                  </ion-label>
+                </ion-item>
+              )}
+            </ion-list>
+
+          </ion-content>
+          ];
+        }
+      }
