@@ -1,5 +1,10 @@
 # Style Guide - Images
 
+## Favor internal images
+
+For the prinicple of longevity, it is best not to use images that are sourced externally. Where possible, try to ensure that the image is obtained 
+and served from our own server. This is simply because we cannot rely (long term) on any image that is externally sourced. When externally sourced images suddenl;y dissapear, our pages degrade.
+
 ## Thumbnails
 
 Thumbnail images should be sized at 200px x 200px, 72 ppi, but rendered at 100px x 100px. They should be saved as JPEG, 80% compression, optimized.

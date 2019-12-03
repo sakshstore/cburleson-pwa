@@ -266,7 +266,7 @@
       "id": "sparql-examples-construct",
       "title": "SPARQL examples – construct",
       "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/12/19",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -278,7 +278,7 @@
       "id": "sparql-examples-list-classes",
       "title": "SPARQL examples – list classes",
       "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/12/19",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -290,7 +290,7 @@
       "id": "sparql-examples-select",
       "title": "SPARQL examples – select",
       "teaser": "Various examples for using SELECT in SPARQL queries.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/12/17",
       "dateModified": "2019/04/12",
       "tracks": [
@@ -314,7 +314,7 @@
       "id": "sparql-examples-ask",
       "title": "SPARQL examples – ask",
       "teaser": "SPARQL query examples using 'ASK'.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -326,7 +326,7 @@
       "id": "sparql-examples-federation",
       "title": "SPARQL examples – federation",
       "teaser": "Federate data from 2 endpoints with SPARQL.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -338,7 +338,7 @@
       "id": "sparql-examples-filter",
       "title": "SPARQL examples – filter",
       "teaser": "Example use of FILTER in SPARQL queries.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -350,7 +350,7 @@
       "id": "sparql-examples-insert",
       "title": "SPARQL examples – insert",
       "teaser": "Example use of INSERT to add data with SPARQL.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -362,7 +362,7 @@
       "id": "sparql-examples-limit",
       "title": "SPARQL examples – limit",
       "teaser": "Example use of the LIMIT keyword in SPARQL.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -374,7 +374,7 @@
       "id": "sparql-examples-negation",
       "title": "SPARQL examples – negation",
       "teaser": "Example negation in SPARQL with the MINUS keyword.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -386,7 +386,7 @@
       "id": "sparql-examples-order-by",
       "title": "SPARQL examples – order by",
       "teaser": "Example use of ORDER BY in SPARQL",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -398,7 +398,7 @@
       "id": "sparql-examples-count-all-statements",
       "title": "SPARQL examples – count all statements",
       "teaser": "SPARQL query that counts all statements (triples) in a repository.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/7/13",
       "tracks": [
@@ -410,7 +410,7 @@
       "id": "sparql-examples-paging",
       "title": "SPARQL examples – paging",
       "teaser": "An example SPARQL query for retrieving one given page of results.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
       "tracks": [
@@ -422,7 +422,7 @@
       "id": "sparql-examples-date-range",
       "title": "SPARQL examples – date range",
       "teaser": "An example SPARQL query for resources within a given date range.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/11/22",
       "tracks": [
@@ -516,7 +516,7 @@
       "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
       "title": "Getting parts of a URL from the HttpServletRequest object",
       "teaser": "Example Java code and example output values for getter methods on the HttpServletRequest object.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
       "datePublished": "2013/09/18",
       "dateModified": "2018/09/22",
       "tracks": [
@@ -528,13 +528,25 @@
       "id": "automatically-build-and-include-one-eclipse-project-into-another",
       "title": "Automatically build and include one Eclipse project into another",
       "teaser": "In your Eclipse IDE, you can automatically build and consume one project into another as a Java jar file. Here's how.",
-      "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
       "datePublished": "2013/04/21",
       "dateModified": "2019/11/21",
       "tracks": [
         "Software Dev"
       ],
       "type": "json-file"
+    },
+    {
+      "id": "shrink-windows-vm-on-vmware-fusion-for-mac",
+      "title": "How to shrink a Windows VM on VMWare Fusion for Mac",
+      "teaser": "Procedure for shrinking a Windows virtual machine on VMWare Fusion for the Mac.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-vmware-fusion.png",
+      "datePublished": "2013/01/05",
+      "dateModified": "2019/01/30",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
     },
     {
       "id": "list-ibm-db2-commands",

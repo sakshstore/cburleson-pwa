@@ -54,6 +54,7 @@ export namespace Components {
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
   interface PageSparqlExamplesCountAllStatements {}
@@ -292,6 +293,12 @@ declare global {
     new (): HTMLPageRespondToButtonClickWithObservableElement;
   };
 
+  interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
+  var HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement: {
+    prototype: HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
+    new (): HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
+  };
+
   interface HTMLPageSparqlExamplesAskElement extends Components.PageSparqlExamplesAsk, HTMLStencilElement {}
   var HTMLPageSparqlExamplesAskElement: {
     prototype: HTMLPageSparqlExamplesAskElement;
@@ -465,6 +472,7 @@ declare global {
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
+    'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
     'page-sparql-examples-count-all-statements': HTMLPageSparqlExamplesCountAllStatementsElement;
@@ -536,6 +544,7 @@ declare namespace LocalJSX {
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
   interface PageSparqlExamplesCountAllStatements {}
@@ -596,6 +605,7 @@ declare namespace LocalJSX {
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
+    'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
     'page-sparql-examples-count-all-statements': PageSparqlExamplesCountAllStatements;
@@ -663,6 +673,7 @@ declare module "@stencil/core" {
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
+      'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
       'page-sparql-examples-count-all-statements': LocalJSX.PageSparqlExamplesCountAllStatements & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesCountAllStatementsElement>;
