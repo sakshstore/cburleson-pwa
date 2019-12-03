@@ -114,6 +114,25 @@ class BlogDataService {
             return this.post;
         } else {
             const rsp = await fetch('/assets/data/' + slug + '.json');
+
+            /* MAY LATER BE HELPFUL FOR 404 PAGE NOT FOUND
+            const rsp = await fetch('/assets/data/' + slug + '.json').then(function (response) {
+                if (response.status == 200) {
+                    return response;
+                } else if (response.status == 404) {
+                    if (debug) {
+                        console.error('- BlogDataService.getPostById > 404 PAGE NOT FOUND');
+                    }
+                    return response;
+                } else {
+                    if (debug) {
+                        console.error('- BlogDataService.getPostById > No programming to handle response code.');
+                    }
+                    return response;
+                }
+            });
+            */
+
             const json = await rsp.json();
             this.postId = slug;
             return this.processPost(json);

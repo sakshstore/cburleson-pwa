@@ -10,6 +10,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 
 export namespace Components {
+  interface App404PageNotFound {}
   interface AppBlogFilter {
     'excludedTracks': string[];
   }
@@ -80,6 +81,12 @@ export namespace Components {
 
 declare global {
 
+
+  interface HTMLApp404PageNotFoundElement extends Components.App404PageNotFound, HTMLStencilElement {}
+  var HTMLApp404PageNotFoundElement: {
+    prototype: HTMLApp404PageNotFoundElement;
+    new (): HTMLApp404PageNotFoundElement;
+  };
 
   interface HTMLAppBlogFilterElement extends Components.AppBlogFilter, HTMLStencilElement {}
   var HTMLAppBlogFilterElement: {
@@ -423,6 +430,7 @@ declare global {
     new (): HTMLPageZbrushKeyboardShortcutsElement;
   };
   interface HTMLElementTagNameMap {
+    'app-404-page-not-found': HTMLApp404PageNotFoundElement;
     'app-blog-filter': HTMLAppBlogFilterElement;
     'app-blog-post': HTMLAppBlogPostElement;
     'app-photo-card': HTMLAppPhotoCardElement;
@@ -484,6 +492,7 @@ declare global {
 }
 
 declare namespace LocalJSX {
+  interface App404PageNotFound {}
   interface AppBlogFilter {
     'excludedTracks'?: string[];
   }
@@ -552,6 +561,7 @@ declare namespace LocalJSX {
   interface PageZbrushKeyboardShortcuts {}
 
   interface IntrinsicElements {
+    'app-404-page-not-found': App404PageNotFound;
     'app-blog-filter': AppBlogFilter;
     'app-blog-post': AppBlogPost;
     'app-photo-card': AppPhotoCard;
@@ -618,6 +628,7 @@ export { LocalJSX as JSX };
 declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
+      'app-404-page-not-found': LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
       'app-blog-filter': LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
       'app-blog-post': LocalJSX.AppBlogPost & JSXBase.HTMLAttributes<HTMLAppBlogPostElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
