@@ -17,3 +17,7 @@ Use this on the `image` tag...
 ```
 class="img-fluid"
 ```
+
+## Aligning Left
+
+`<img class="alignleft"` 

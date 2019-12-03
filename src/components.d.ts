@@ -26,14 +26,18 @@ export namespace Components {
   interface AppRoot {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
+  interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
+  interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
+  interface PageCopyAssetsFromNodeModulesInStencilJs {}
+  interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
@@ -41,9 +45,12 @@ export namespace Components {
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
+  interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
+  interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
@@ -61,8 +68,13 @@ export namespace Components {
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUnityRecipesFollowObject {}
+  interface PageUnityRecipesHeadBobOrBreathe {}
+  interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
+  interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageVietnam1967AmphibiousCombat {}
+  interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageZbrushKeyboardShortcuts {}
 }
 
@@ -111,6 +123,12 @@ declare global {
     new (): HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
   };
 
+  interface HTMLPageAJavascriptImplementationOfJavaUtilMapElement extends Components.PageAJavascriptImplementationOfJavaUtilMap, HTMLStencilElement {}
+  var HTMLPageAJavascriptImplementationOfJavaUtilMapElement: {
+    prototype: HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
+    new (): HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
+  };
+
   interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
   var HTMLPageAboutElement: {
     prototype: HTMLPageAboutElement;
@@ -147,6 +165,12 @@ declare global {
     new (): HTMLPageCageElement;
   };
 
+  interface HTMLPageChangeCanvasBackgroundColorInZbrushElement extends Components.PageChangeCanvasBackgroundColorInZbrush, HTMLStencilElement {}
+  var HTMLPageChangeCanvasBackgroundColorInZbrushElement: {
+    prototype: HTMLPageChangeCanvasBackgroundColorInZbrushElement;
+    new (): HTMLPageChangeCanvasBackgroundColorInZbrushElement;
+  };
+
   interface HTMLPageCmdChronBeaverCageElement extends Components.PageCmdChronBeaverCage, HTMLStencilElement {}
   var HTMLPageCmdChronBeaverCageElement: {
     prototype: HTMLPageCmdChronBeaverCageElement;
@@ -157,6 +181,18 @@ declare global {
   var HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement: {
     prototype: HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     new (): HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
+  };
+
+  interface HTMLPageCopyAssetsFromNodeModulesInStencilJsElement extends Components.PageCopyAssetsFromNodeModulesInStencilJs, HTMLStencilElement {}
+  var HTMLPageCopyAssetsFromNodeModulesInStencilJsElement: {
+    prototype: HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
+    new (): HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
+  };
+
+  interface HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement extends Components.PageCreateNewSubtoolFromMaskedAreaInZbrush, HTMLStencilElement {}
+  var HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement: {
+    prototype: HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
+    new (): HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
   };
 
   interface HTMLPageFormatCurrencyInAngularElement extends Components.PageFormatCurrencyInAngular, HTMLStencilElement {}
@@ -201,6 +237,12 @@ declare global {
     new (): HTMLPageListIbmDb2CommandsElement;
   };
 
+  interface HTMLPageMirrorPolygroupOnSubtoolInZbrushElement extends Components.PageMirrorPolygroupOnSubtoolInZbrush, HTMLStencilElement {}
+  var HTMLPageMirrorPolygroupOnSubtoolInZbrushElement: {
+    prototype: HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
+    new (): HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
+  };
+
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -213,10 +255,22 @@ declare global {
     new (): HTMLPagePwaWithIonicAngularWordpressApi1Element;
   };
 
+  interface HTMLPagePwaWithIonicAngularWordpressApi2Element extends Components.PagePwaWithIonicAngularWordpressApi2, HTMLStencilElement {}
+  var HTMLPagePwaWithIonicAngularWordpressApi2Element: {
+    prototype: HTMLPagePwaWithIonicAngularWordpressApi2Element;
+    new (): HTMLPagePwaWithIonicAngularWordpressApi2Element;
+  };
+
   interface HTMLPagePwaWithIonicAngularWordpressApi5Element extends Components.PagePwaWithIonicAngularWordpressApi5, HTMLStencilElement {}
   var HTMLPagePwaWithIonicAngularWordpressApi5Element: {
     prototype: HTMLPagePwaWithIonicAngularWordpressApi5Element;
     new (): HTMLPagePwaWithIonicAngularWordpressApi5Element;
+  };
+
+  interface HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement extends Components.PageQuickAndSimpleCachingWithApacheCommonsJcs, HTMLStencilElement {}
+  var HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement: {
+    prototype: HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
+    new (): HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
   };
 
   interface HTMLPageRayKelleySilverStarElement extends Components.PageRayKelleySilverStar, HTMLStencilElement {}
@@ -321,16 +375,46 @@ declare global {
     new (): HTMLPageTemplatePageElement;
   };
 
+  interface HTMLPageUnityRecipesFollowObjectElement extends Components.PageUnityRecipesFollowObject, HTMLStencilElement {}
+  var HTMLPageUnityRecipesFollowObjectElement: {
+    prototype: HTMLPageUnityRecipesFollowObjectElement;
+    new (): HTMLPageUnityRecipesFollowObjectElement;
+  };
+
+  interface HTMLPageUnityRecipesHeadBobOrBreatheElement extends Components.PageUnityRecipesHeadBobOrBreathe, HTMLStencilElement {}
+  var HTMLPageUnityRecipesHeadBobOrBreatheElement: {
+    prototype: HTMLPageUnityRecipesHeadBobOrBreatheElement;
+    new (): HTMLPageUnityRecipesHeadBobOrBreatheElement;
+  };
+
+  interface HTMLPageUseFibermeshInZbrushElement extends Components.PageUseFibermeshInZbrush, HTMLStencilElement {}
+  var HTMLPageUseFibermeshInZbrushElement: {
+    prototype: HTMLPageUseFibermeshInZbrushElement;
+    new (): HTMLPageUseFibermeshInZbrushElement;
+  };
+
   interface HTMLPageUsePrismJsInIonicStencilAppElement extends Components.PageUsePrismJsInIonicStencilApp, HTMLStencilElement {}
   var HTMLPageUsePrismJsInIonicStencilAppElement: {
     prototype: HTMLPageUsePrismJsInIonicStencilAppElement;
     new (): HTMLPageUsePrismJsInIonicStencilAppElement;
   };
 
+  interface HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement extends Components.PageUseSpotlightToDisplayReferenceImagesInZbrush, HTMLStencilElement {}
+  var HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement: {
+    prototype: HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
+    new (): HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
+  };
+
   interface HTMLPageVietnam1967AmphibiousCombatElement extends Components.PageVietnam1967AmphibiousCombat, HTMLStencilElement {}
   var HTMLPageVietnam1967AmphibiousCombatElement: {
     prototype: HTMLPageVietnam1967AmphibiousCombatElement;
     new (): HTMLPageVietnam1967AmphibiousCombatElement;
+  };
+
+  interface HTMLPageWeldMultipleSubtoolsInZbrushElement extends Components.PageWeldMultipleSubtoolsInZbrush, HTMLStencilElement {}
+  var HTMLPageWeldMultipleSubtoolsInZbrushElement: {
+    prototype: HTMLPageWeldMultipleSubtoolsInZbrushElement;
+    new (): HTMLPageWeldMultipleSubtoolsInZbrushElement;
   };
 
   interface HTMLPageZbrushKeyboardShortcutsElement extends Components.PageZbrushKeyboardShortcuts, HTMLStencilElement {}
@@ -346,14 +430,18 @@ declare global {
     'app-root': HTMLAppRootElement;
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
+    'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
+    'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
+    'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
+    'page-create-new-subtool-from-masked-area-in-zbrush': HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
@@ -361,9 +449,12 @@ declare global {
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
+    'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
+    'page-pwa-with-ionic-angular-wordpress-api-2': HTMLPagePwaWithIonicAngularWordpressApi2Element;
     'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
+    'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
@@ -381,8 +472,13 @@ declare global {
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
+    'page-unity-recipes-follow-object': HTMLPageUnityRecipesFollowObjectElement;
+    'page-unity-recipes-head-bob-or-breathe': HTMLPageUnityRecipesHeadBobOrBreatheElement;
+    'page-use-fibermesh-in-zbrush': HTMLPageUseFibermeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
+    'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
+    'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
     'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
   }
 }
@@ -404,14 +500,18 @@ declare namespace LocalJSX {
   interface AppRoot {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
+  interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
+  interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
+  interface PageCopyAssetsFromNodeModulesInStencilJs {}
+  interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
@@ -419,9 +519,12 @@ declare namespace LocalJSX {
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
+  interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
+  interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageSparqlExamplesAsk {}
@@ -439,8 +542,13 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUnityRecipesFollowObject {}
+  interface PageUnityRecipesHeadBobOrBreathe {}
+  interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
+  interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageVietnam1967AmphibiousCombat {}
+  interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageZbrushKeyboardShortcuts {}
 
   interface IntrinsicElements {
@@ -451,14 +559,18 @@ declare namespace LocalJSX {
     'app-root': AppRoot;
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
+    'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
     'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
+    'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
+    'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
+    'page-create-new-subtool-from-masked-area-in-zbrush': PageCreateNewSubtoolFromMaskedAreaInZbrush;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
@@ -466,9 +578,12 @@ declare namespace LocalJSX {
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
+    'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
+    'page-pwa-with-ionic-angular-wordpress-api-2': PagePwaWithIonicAngularWordpressApi2;
     'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
+    'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
@@ -486,8 +601,13 @@ declare namespace LocalJSX {
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
+    'page-unity-recipes-follow-object': PageUnityRecipesFollowObject;
+    'page-unity-recipes-head-bob-or-breathe': PageUnityRecipesHeadBobOrBreathe;
+    'page-use-fibermesh-in-zbrush': PageUseFibermeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
+    'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
+    'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
     'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
   }
 }
@@ -505,14 +625,18 @@ declare module "@stencil/core" {
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
+      'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
+      'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
+      'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
+      'page-create-new-subtool-from-masked-area-in-zbrush': LocalJSX.PageCreateNewSubtoolFromMaskedAreaInZbrush & JSXBase.HTMLAttributes<HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
@@ -520,9 +644,12 @@ declare module "@stencil/core" {
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
+      'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
+      'page-pwa-with-ionic-angular-wordpress-api-2': LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;
       'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
+      'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
@@ -540,8 +667,13 @@ declare module "@stencil/core" {
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
+      'page-unity-recipes-follow-object': LocalJSX.PageUnityRecipesFollowObject & JSXBase.HTMLAttributes<HTMLPageUnityRecipesFollowObjectElement>;
+      'page-unity-recipes-head-bob-or-breathe': LocalJSX.PageUnityRecipesHeadBobOrBreathe & JSXBase.HTMLAttributes<HTMLPageUnityRecipesHeadBobOrBreatheElement>;
+      'page-use-fibermesh-in-zbrush': LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
+      'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
+      'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
       'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
     }
   }

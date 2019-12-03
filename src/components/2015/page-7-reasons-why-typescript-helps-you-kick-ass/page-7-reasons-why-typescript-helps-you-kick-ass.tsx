@@ -137,7 +137,7 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
 
                 <h2>4. Compile to ES3/ES5/ES6</h2>
 
-                <p>That’s right. It’s genius. With TypeScript, you can learn and use ES6, but compile down to ES5 or even ES3. And guess what. It all still works. Boom! TypeScript automatically changes your code for you. You can see this in action using the <a class="external-link" href="http://www.typescriptlang.org/Playground" rel="nofollow">TypeScript Playground</a>, which is shown below. In the Playground, you can enter TypeScript code on the left while watching how the TypeScript compiler transforms it on the right.</p>
+                <p>That’s right. It’s genius. With TypeScript, you can learn and use ES6, but compile down to ES5 or even ES3. And guess what. It all still works. Boom! TypeScript automatically changes your code for you. You can see this in action using the <a href="http://www.typescriptlang.org/Playground" rel="nofollow">TypeScript Playground</a>, which is shown below. In the Playground, you can enter TypeScript code on the left while watching how the TypeScript compiler transforms it on the right.</p>
 
                 <p><img class="alignnone size-full wp-image-638" src="/wp-content/uploads/2018/07/TypeScriptPlayground.png" alt="" width="828" height="516" srcset="/wp-content/uploads/2018/07/TypeScriptPlayground.png 828w, /wp-content/uploads/2018/07/TypeScriptPlayground-300x187.png 300w, /wp-content/uploads/2018/07/TypeScriptPlayground-768x479.png 768w" sizes="(max-width: 828px) 100vw, 828px" /></p>
 

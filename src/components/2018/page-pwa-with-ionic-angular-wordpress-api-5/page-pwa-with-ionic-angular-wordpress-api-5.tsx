@@ -58,7 +58,7 @@ export class PagePwaWithIonicAngularWordpressApi5 {
 
                 <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif" class="img-fluid" alt="" />
 
-                <p>In this weekend side-hustle series, we’re building a Progressive Web App (PWA) for desktop and mobile that delivers WordPress content using Ionic, Angular, and the WordPress API. In <a href="https://codyburleson.com/pwa-with-ionic-angular-wordpress-api-1/">Part 1</a>, we got everything setup and working. In <a href="/pwa-with-ionic-angular-wordpress-api-2/">Part 2</a>, we created a richer presentation of the WordPress Posts using Ionic cards. In <a href="/pwa-with-ionic-angular-wordpress-api-3/">Part 3</a>, we implemented the single post view. In <a href="/pwa-with-ionic-angular-wordpress-api-4/">Part 4</a> we implemented paging functionality using Ionic’s Infinite Scroll (<a href="https://beta.ionicframework.com/docs/api/infinite-scroll/">ion-infinite-scroll</a>). Today, we’ll implement authentication so that we can login to WordPress. For now, this will just enable users to view private posts, but it will also be necessary in the future if we choose to allow administration from within the client app or other things like adding comments.</p>
+                <p>In this weekend side-hustle series, we’re building a Progressive Web App (PWA) for desktop and mobile that delivers WordPress content using Ionic, Angular, and the WordPress API. In <a href="/pwa-with-ionic-angular-wordpress-api-1/">Part 1</a>, we got everything setup and working. In <a href="/pwa-with-ionic-angular-wordpress-api-2/">Part 2</a>, we created a richer presentation of the WordPress Posts using Ionic cards. In <a href="/pwa-with-ionic-angular-wordpress-api-3/">Part 3</a>, we implemented the single post view. In <a href="/pwa-with-ionic-angular-wordpress-api-4/">Part 4</a> we implemented paging functionality using Ionic’s Infinite Scroll (<a href="https://beta.ionicframework.com/docs/api/infinite-scroll/">ion-infinite-scroll</a>). Today, we’ll implement authentication so that we can login to WordPress. For now, this will just enable users to view private posts, but it will also be necessary in the future if we choose to allow administration from within the client app or other things like adding comments.</p>
 
                 <h2>Part 4 Recap</h2>
 
@@ -68,7 +68,7 @@ export class PagePwaWithIonicAngularWordpressApi5 {
                     <li>Updated the DataService to get more posts</li>
                     <li>Updated the HomePage component to use infinite scroll</li>
                     <li>Added ion-infinite-scroll to the HomePage component HTML</li>
-                    <li>Made revised source code available on GitHub at <a href="https://github.com/codyburleson/ionic-ng-wp-client">https://github.com/codyburleson/ionic-ng-wp-client</a>.</li>
+                    <li>Made revised source code available on GitHub at <a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</li>
                 </ul>
 
                 <p>The final result of Part 4 still looks the same as what we ended with in Part 3, except that now, scrolling to the bottom of the list of posts loads more posts.</p>
@@ -491,7 +491,7 @@ export class DataService {
 
                 <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-post-login.jpg" alt="" /></p>
 
-                <p>I’m committing the code to <a href="https://github.com/codyburleson/ionpress">Github</a> at this point with the following message:</p>
+                <p>I’m committing the code to <a href="https://github.com/codyburleson/ionpress" rel="nofollow">Github</a> at this point with the following message:</p>
 
                 <p><span class="badge badge-secondary">Implement authentication</span></p>
 
@@ -499,7 +499,7 @@ export class DataService {
 
                 <p>Today we took a big step in terms of the necessary plumbing. We implemented authentication with a little help from the WordPress plugin,&nbsp;JWT Authentication for WP REST API. We proved this authentication using a private post, which will only display after we’re authenticated.</p>
 
-                <p>There are still so many more things to be done, I’m not quite sure what’s best to start on next, but I will be continuing the series, so stay tuned&nbsp;so stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
+                <p>There are still so many more things to be done, I’m not quite sure what’s best to start on next, but I will be continuing the series, so stay tuned&nbsp;so stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
 
             </ion-content>
 

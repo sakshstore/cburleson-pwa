@@ -42,6 +42,27 @@ code {
   word-break: break-word;
 }
 
+
+/* *************************************************************************
+ALERTS (I think based on Bootstrap 4?) 
+************************************************************************* */
+
+.alert-warning {
+  color: #856404;
+  background-color: #fff3cd;
+  border-color: #ffeeba;
+}
+
+.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  clear: both;
+}
+
+
 /* *************************************************************************
 TABLES (based on Bootstrap 4) 
 ************************************************************************* */
@@ -132,12 +153,25 @@ div.video-container {
 }
 
 /* ******************************************************* */
+/* ALIGNMENT                                               */
+/* ******************************************************* */
+
+.alignleft {
+  display: inline;
+  float: left; /* Not ignored as IDE says! */
+  margin-right: 1.5em;
+}
+
+/* ******************************************************* */
 /* IMAGES                                                  */
 /* ******************************************************* */
 
-.img-fluid {
+
+img {
   max-width: 100%;
   height: auto;
+  vertical-align: middle;
+  border-style: none;
 }
 
 ion-img {

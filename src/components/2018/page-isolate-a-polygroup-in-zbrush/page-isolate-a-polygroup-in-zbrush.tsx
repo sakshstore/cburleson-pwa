@@ -81,7 +81,7 @@ export class PageTemplatePage {
 
                 <h2>Selecting more than one polygroup</h2>
 
-                <p>Here&#8217;s the procedure for selecting more than one polygroup as described in the <a href="http://docs.pixologic.com/user-guide/3d-modeling/modeling-basics/polygroups/">ZBrush documentation for polygroups</a>:</p>
+                <p>Here&#8217;s the procedure for selecting more than one polygroup as described in the <a href="http://docs.pixologic.com/user-guide/3d-modeling/modeling-basics/polygroups/" rel="nofollow">ZBrush documentation for polygroups</a>:</p>
 
                 <ol><li>Press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and click on the mesh where one group is</li><li>Invert that selection: press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> then click and drag outside of the mesh</li><li>Press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and click on the other groups you want to select</li><li>Invert this selection: press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> then click and drag outside the model</li></ol>
 

@@ -1,28 +1,14 @@
 import { Component, h } from '@stencil/core';
-// Use this if using source code blocks to be formatted by prism.js...
-// import Prism from "prismjs"
 
-// And any, but ONLY the languages you need to use with prism...
+import { BlogData } from '../../../services/blog-data';
 
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import '/assets/prismjs/prism-turtle.min.js';
-// import '/assets/prismjs/prism-sparql.min.js';
-
-import { BlogData } from '../../services/blog-data';
-
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-    tag: 'page-template-page',
+    tag: 'page-change-canvas-background-color-in-zbrush',
 })
-export class PageTemplatePage {
+export class PageChangeCanvasBackgroundColorInZbrush {
 
     title = 'Blog';
 
@@ -30,8 +16,8 @@ export class PageTemplatePage {
     header: any;
 
     async componentWillLoad() {
-        if(debug) {
-            console.log('> PageTemplatePage.componentWillLoad');
+        if (debug) {
+            console.log('> PageChangeCanvasBackgroundColorInZbrush.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
@@ -41,11 +27,6 @@ export class PageTemplatePage {
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    // componentDidLoad() {
-        // setTimeout(() => Prism.highlightAll(), 0)
-    // }
 
     render() {
         return [
@@ -59,11 +40,17 @@ export class PageTemplatePage {
             </ion-header>,
 
             <ion-content class="ion-padding">
-                
+
                 <h1>{this.header.title}</h1>
-                
+
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
-            
+
+                <p>Here&#8217;s a quick note on how to change the canvas background color in ZBrush.</p>
+                
+                <p>In the Document palette, click on the Back button (as shown below). Continue to hold the left mouse button down and drag over any color within the app to select that color. If using a pen, continue to apply pressure while dragging out of the Back button region onto a color in any other region on the screen.</p>
+                
+                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/10/zbrush-change-background-color-2-352x1024.jpg" alt="" /></p>
+
             </ion-content>
 
         ];

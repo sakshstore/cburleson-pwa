@@ -356,7 +356,7 @@ services:
 
         <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-4.jpg" alt="" class="img-fluid" />
 
-        <p>With the containers running, you can now navigate to <a href="http://localhost:8080">http://localhost:8080</a> to complete the WordPress setup.</p>
+        <p>With the containers running, you can now navigate to <code>http://localhost:8080</code> to complete the WordPress setup.</p>
 
         <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress5.jpg" alt="" class="img-fluid" />
 
@@ -392,7 +392,7 @@ services:
 
         <h3>Enable the WordPress REST API</h3>
 
-        <p>Right now, if you navigate to&nbsp;<a class="vglnk" href="http://localhost:8080/wp-json/wp/v2/posts" rel="nofollow">http://localhost:8080/wp-json/wp/v2/posts</a>, you will get 404 Not Found. This has to do with the permalinks setting for your site. The <code>/wp-json/wp/v2</code> endpoint is available when your site is set up to use the custom permalink setting.</p>
+        <p>Right now, if you navigate to <code>http://localhost:8080/wp-json/wp/v2/posts</code>, you will get 404 Not Found. This has to do with the permalinks setting for your site. The <code>/wp-json/wp/v2</code> endpoint is available when your site is set up to use the custom permalink setting.</p>
 
         <p>In the WordPress dashboard, navigate to Settings &gt; Permalinks and choose the Custom Structure with <code>/%postname%/</code> in the field after the host and port. Save changes and try the URL again.</p>
 

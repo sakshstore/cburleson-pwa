@@ -1,28 +1,14 @@
 import { Component, h } from '@stencil/core';
-// Use this if using source code blocks to be formatted by prism.js...
-// import Prism from "prismjs"
 
-// And any, but ONLY the languages you need to use with prism...
+import { BlogData } from '../../../services/blog-data';
 
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import '/assets/prismjs/prism-turtle.min.js';
-// import '/assets/prismjs/prism-sparql.min.js';
-
-import { BlogData } from '../../services/blog-data';
-
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-    tag: 'page-template-page',
+    tag: 'page-create-new-subtool-from-masked-area-in-zbrush',
 })
-export class PageTemplatePage {
+export class PageCreateNewSubtoolFromMaskedAreaInZbrush {
 
     title = 'Blog';
 
@@ -30,7 +16,7 @@ export class PageTemplatePage {
     header: any;
 
     async componentWillLoad() {
-        if(debug) {
+        if (debug) {
             console.log('> PageTemplatePage.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -41,11 +27,6 @@ export class PageTemplatePage {
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    // componentDidLoad() {
-        // setTimeout(() => Prism.highlightAll(), 0)
-    // }
 
     render() {
         return [
@@ -59,11 +40,25 @@ export class PageTemplatePage {
             </ion-header>,
 
             <ion-content class="ion-padding">
-                
+
                 <h1>{this.header.title}</h1>
-                
+
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
-            
+
+                <p>Mask an area on the model&#8230;</p>
+
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-1.png" alt="" class="img-fluid" /></p>
+
+                <p>In the subtool palette, under Extract, set the thickness and options.</p>
+
+                <p>Click Extract button, then Accept.</p>
+
+                <p>A new subtool is generated from the extracted mask&#8230;</p>
+
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-2.png" alt="" class="img-fluid" /></p>
+
+                <p>It&#8217;s usually a good idea to use ZRemesher on the new subtool afterwards.</p>
+
             </ion-content>
 
         ];

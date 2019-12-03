@@ -7,7 +7,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
       "datePublished": "2019/11/07",
       "dateModified": "2019/11/22",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -17,7 +19,31 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
       "datePublished": "2019/03/09",
       "dateModified": "2019/06/10",
-      "tracks": ["Memoir"],
+      "tracks": [
+        "Memoir"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "copy-assets-from-node-modules-in-stencil-js",
+      "title": "How to copy assets from node_modules in Stencil.js",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
+      "datePublished": "2018/12/13",
+      "dateModified": "2019/11/07",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "change-canvas-background-color-in-zbrush",
+      "title": "How to change canvas background color in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/07",
+      "dateModified": "2019/04/14",
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -27,7 +53,21 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
       "datePublished": "2018/09/20",
       "dateModified": "2019/03/31",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "pwa-with-ionic-angular-wordpress-api-2",
+      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 2",
+      "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
+      "datePublished": "2018/09/09",
+      "dateModified": "2019/04/01",
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -37,7 +77,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
       "datePublished": "2018/09/08",
       "dateModified": "2019/11/22",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -47,7 +89,57 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/09/03",
       "dateModified": "2018/09/03",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-recipes-head-bob-or-breathe",
+      "title": "Unity recipes – head bob or breathe",
+      "teaser": "A C# script to give an object a repetitive, but smooth upward and downward movement.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/09/03",
+      "dateModified": "2018/09/03",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-recipes-follow-object",
+      "title": "Unity recipes – follow object",
+      "teaser": "A C# script for Unity to make an object follow another.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "dateModified": "2018/08/29",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "use-spotlight-to-display-reference-images-in-zbrush",
+      "title": "How to use Spotlight to display reference images in ZBrush",
+      "teaser": "A procedure for using Spotlight to display reference images in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/08/20",
+      "dateModified": "2019/07/24",
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "weld-multiple-subtools-in-zbrush",
+      "title": "How to weld multiple subtools together to make one tool in ZBrush",
+      "teaser": "How to weld multiple subtools together to create one seamless mesh.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/08/04",
+      "dateModified": "2019/04/14",
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -57,7 +149,21 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/07/04",
       "dateModified": "2019/04/17",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "create-new-subtool-from-masked-area-in-zbrush",
+      "title": "How to create a new subtool from a masked area in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/30",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -67,7 +173,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/22",
       "dateModified": "2019/08/05",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "json-file"
     },
     {
@@ -77,7 +185,21 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
       "dateModified": "2019/11/21",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "mirror-polygroup-on-subtool-in-zbrush",
+      "title": "How to mirror a polygroup on a subtool in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -87,7 +209,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
       "dateModified": "2019/7/29",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -97,7 +221,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/22",
       "dateModified": "2019/11/22",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "json-file"
     },
     {
@@ -107,7 +233,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/22",
       "dateModified": "2018/07/23",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -117,8 +245,22 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/22",
       "dateModified": "2018/07/27",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "json-file"
+    },
+    {
+      "id": "use-fibermesh-in-zbrush",
+      "title": "How to use FiberMesh in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
     },
     {
       "id": "sparql-examples-construct",
@@ -127,7 +269,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/12/19",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -137,7 +281,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/12/19",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -147,7 +293,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/12/17",
       "dateModified": "2019/04/12",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -157,7 +305,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
       "datePublished": "2017/12/03",
       "dateModified": "2019/11/12",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -167,7 +317,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -177,7 +329,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -187,7 +341,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -197,7 +353,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -207,7 +365,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -217,7 +377,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -227,7 +389,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -237,7 +401,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/7/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -247,7 +413,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/07/13",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -257,7 +425,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/1/16/Logo_Semantic_Web.svg",
       "datePublished": "2017/08/31",
       "dateModified": "2018/11/22",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -267,7 +437,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
       "datePublished": "2017/07/15",
       "dateModified": "2018/07/16",
-      "tracks": ["Memoir"],
+      "tracks": [
+        "Memoir"
+      ],
       "type": "json-file"
     },
     {
@@ -277,7 +449,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2017/07/12",
       "dateModified": "2019/03/31",
-      "tracks": ["ZBrush"],
+      "tracks": [
+        "ZBrush"
+      ],
       "type": "component"
     },
     {
@@ -287,7 +461,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2016/04/29",
       "dateModified": "2018/09/25",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -297,7 +473,21 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2016/04/28",
       "dateModified": "2018/09/24",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "quick-and-simple-caching-with-apache-commons-jcs",
+      "title": "Quick and simple caching with Apache Commons JCS",
+      "teaser": "Need a quick and easy caching system for your web app?",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-apache.svg",
+      "datePublished": "2016/02/19",
+      "dateModified": "2018/09/25",
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -306,7 +496,20 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2015/11/16",
       "dateModified": "2018/07/26",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "a-javascript-implementation-of-java-util-map",
+      "title": "A JavaScript Implementation of java.util.Map",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
+      "datePublished": "2014/06/02",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -316,7 +519,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
       "datePublished": "2013/09/18",
       "dateModified": "2018/09/22",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     },
     {
@@ -326,7 +531,9 @@
       "thumbnail": "https://upload.wikimedia.org/wikipedia/commons/c/cf/Eclipse-SVG.svg",
       "datePublished": "2013/04/21",
       "dateModified": "2019/11/21",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "json-file"
     },
     {
@@ -336,7 +543,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ibm.svg",
       "datePublished": "2009/03/29",
       "dateModified": "2019/11/22",
-      "tracks": ["Software Dev"],
+      "tracks": [
+        "Software Dev"
+      ],
       "type": "component"
     }
   ]
