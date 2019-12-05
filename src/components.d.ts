@@ -39,6 +39,10 @@ export namespace Components {
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
+  interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
@@ -54,6 +58,7 @@ export namespace Components {
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -70,8 +75,13 @@ export namespace Components {
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
+  interface PageUnityGetRigidbodyFromObject {}
+  interface PageUnityPreferencesYourBuiltInKeyboardCheatSheet {}
   interface PageUnityRecipesFollowObject {}
   interface PageUnityRecipesHeadBobOrBreathe {}
+  interface PageUnityRecipesLookTowardDirectionOfMovement {}
+  interface PageUnityRecipesLookTowardDirectionOfVelocity {}
   interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
@@ -203,6 +213,30 @@ declare global {
     new (): HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
   };
 
+  interface HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element extends Components.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1, HTMLStencilElement {}
+  var HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element: {
+    prototype: HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
+    new (): HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
+  };
+
+  interface HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element extends Components.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2, HTMLStencilElement {}
+  var HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element: {
+    prototype: HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
+    new (): HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
+  };
+
+  interface HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element extends Components.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3, HTMLStencilElement {}
+  var HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element: {
+    prototype: HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
+    new (): HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
+  };
+
+  interface HTMLPageFixForGitAfterMacosMojaveUpgradeElement extends Components.PageFixForGitAfterMacosMojaveUpgrade, HTMLStencilElement {}
+  var HTMLPageFixForGitAfterMacosMojaveUpgradeElement: {
+    prototype: HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
+    new (): HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
+  };
+
   interface HTMLPageFormatCurrencyInAngularElement extends Components.PageFormatCurrencyInAngular, HTMLStencilElement {}
   var HTMLPageFormatCurrencyInAngularElement: {
     prototype: HTMLPageFormatCurrencyInAngularElement;
@@ -291,6 +325,12 @@ declare global {
   var HTMLPageRespondToButtonClickWithObservableElement: {
     prototype: HTMLPageRespondToButtonClickWithObservableElement;
     new (): HTMLPageRespondToButtonClickWithObservableElement;
+  };
+
+  interface HTMLPageScriptForRotatingUnityGameObject90DegreesElement extends Components.PageScriptForRotatingUnityGameObject90Degrees, HTMLStencilElement {}
+  var HTMLPageScriptForRotatingUnityGameObject90DegreesElement: {
+    prototype: HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+    new (): HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
   };
 
   interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
@@ -389,6 +429,24 @@ declare global {
     new (): HTMLPageTemplatePageElement;
   };
 
+  interface HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement extends Components.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts, HTMLStencilElement {}
+  var HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement: {
+    prototype: HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
+    new (): HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
+  };
+
+  interface HTMLPageUnityGetRigidbodyFromObjectElement extends Components.PageUnityGetRigidbodyFromObject, HTMLStencilElement {}
+  var HTMLPageUnityGetRigidbodyFromObjectElement: {
+    prototype: HTMLPageUnityGetRigidbodyFromObjectElement;
+    new (): HTMLPageUnityGetRigidbodyFromObjectElement;
+  };
+
+  interface HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement extends Components.PageUnityPreferencesYourBuiltInKeyboardCheatSheet, HTMLStencilElement {}
+  var HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement: {
+    prototype: HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement;
+    new (): HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement;
+  };
+
   interface HTMLPageUnityRecipesFollowObjectElement extends Components.PageUnityRecipesFollowObject, HTMLStencilElement {}
   var HTMLPageUnityRecipesFollowObjectElement: {
     prototype: HTMLPageUnityRecipesFollowObjectElement;
@@ -399,6 +457,18 @@ declare global {
   var HTMLPageUnityRecipesHeadBobOrBreatheElement: {
     prototype: HTMLPageUnityRecipesHeadBobOrBreatheElement;
     new (): HTMLPageUnityRecipesHeadBobOrBreatheElement;
+  };
+
+  interface HTMLPageUnityRecipesLookTowardDirectionOfMovementElement extends Components.PageUnityRecipesLookTowardDirectionOfMovement, HTMLStencilElement {}
+  var HTMLPageUnityRecipesLookTowardDirectionOfMovementElement: {
+    prototype: HTMLPageUnityRecipesLookTowardDirectionOfMovementElement;
+    new (): HTMLPageUnityRecipesLookTowardDirectionOfMovementElement;
+  };
+
+  interface HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement extends Components.PageUnityRecipesLookTowardDirectionOfVelocity, HTMLStencilElement {}
+  var HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement: {
+    prototype: HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
+    new (): HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
   };
 
   interface HTMLPageUseFibermeshInZbrushElement extends Components.PageUseFibermeshInZbrush, HTMLStencilElement {}
@@ -457,6 +527,10 @@ declare global {
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
     'page-create-new-subtool-from-masked-area-in-zbrush': HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
+    'page-create-player-health-status-indicator-for-unity-gui-part-1': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
+    'page-create-player-health-status-indicator-for-unity-gui-part-2': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
+    'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
+    'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
@@ -472,6 +546,7 @@ declare global {
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
+    'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
@@ -488,8 +563,13 @@ declare global {
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
+    'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
+    'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
+    'page-unity-preferences-your-built-in-keyboard-cheat-sheet': HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement;
     'page-unity-recipes-follow-object': HTMLPageUnityRecipesFollowObjectElement;
     'page-unity-recipes-head-bob-or-breathe': HTMLPageUnityRecipesHeadBobOrBreatheElement;
+    'page-unity-recipes-look-toward-direction-of-movement': HTMLPageUnityRecipesLookTowardDirectionOfMovementElement;
+    'page-unity-recipes-look-toward-direction-of-velocity': HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
     'page-use-fibermesh-in-zbrush': HTMLPageUseFibermeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
@@ -529,6 +609,10 @@ declare namespace LocalJSX {
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
+  interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
+  interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
@@ -544,6 +628,7 @@ declare namespace LocalJSX {
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -560,8 +645,13 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesSelect {}
   interface PageTabs {}
   interface PageTemplatePage {}
+  interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
+  interface PageUnityGetRigidbodyFromObject {}
+  interface PageUnityPreferencesYourBuiltInKeyboardCheatSheet {}
   interface PageUnityRecipesFollowObject {}
   interface PageUnityRecipesHeadBobOrBreathe {}
+  interface PageUnityRecipesLookTowardDirectionOfMovement {}
+  interface PageUnityRecipesLookTowardDirectionOfVelocity {}
   interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
@@ -590,6 +680,10 @@ declare namespace LocalJSX {
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
     'page-create-new-subtool-from-masked-area-in-zbrush': PageCreateNewSubtoolFromMaskedAreaInZbrush;
+    'page-create-player-health-status-indicator-for-unity-gui-part-1': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1;
+    'page-create-player-health-status-indicator-for-unity-gui-part-2': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2;
+    'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
+    'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
@@ -605,6 +699,7 @@ declare namespace LocalJSX {
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
+    'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
@@ -621,8 +716,13 @@ declare namespace LocalJSX {
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
+    'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
+    'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
+    'page-unity-preferences-your-built-in-keyboard-cheat-sheet': PageUnityPreferencesYourBuiltInKeyboardCheatSheet;
     'page-unity-recipes-follow-object': PageUnityRecipesFollowObject;
     'page-unity-recipes-head-bob-or-breathe': PageUnityRecipesHeadBobOrBreathe;
+    'page-unity-recipes-look-toward-direction-of-movement': PageUnityRecipesLookTowardDirectionOfMovement;
+    'page-unity-recipes-look-toward-direction-of-velocity': PageUnityRecipesLookTowardDirectionOfVelocity;
     'page-use-fibermesh-in-zbrush': PageUseFibermeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
@@ -658,6 +758,10 @@ declare module "@stencil/core" {
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
       'page-create-new-subtool-from-masked-area-in-zbrush': LocalJSX.PageCreateNewSubtoolFromMaskedAreaInZbrush & JSXBase.HTMLAttributes<HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement>;
+      'page-create-player-health-status-indicator-for-unity-gui-part-1': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element>;
+      'page-create-player-health-status-indicator-for-unity-gui-part-2': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element>;
+      'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
+      'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
@@ -673,6 +777,7 @@ declare module "@stencil/core" {
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
+      'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
@@ -689,8 +794,13 @@ declare module "@stencil/core" {
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
+      'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
+      'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;
+      'page-unity-preferences-your-built-in-keyboard-cheat-sheet': LocalJSX.PageUnityPreferencesYourBuiltInKeyboardCheatSheet & JSXBase.HTMLAttributes<HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement>;
       'page-unity-recipes-follow-object': LocalJSX.PageUnityRecipesFollowObject & JSXBase.HTMLAttributes<HTMLPageUnityRecipesFollowObjectElement>;
       'page-unity-recipes-head-bob-or-breathe': LocalJSX.PageUnityRecipesHeadBobOrBreathe & JSXBase.HTMLAttributes<HTMLPageUnityRecipesHeadBobOrBreatheElement>;
+      'page-unity-recipes-look-toward-direction-of-movement': LocalJSX.PageUnityRecipesLookTowardDirectionOfMovement & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfMovementElement>;
+      'page-unity-recipes-look-toward-direction-of-velocity': LocalJSX.PageUnityRecipesLookTowardDirectionOfVelocity & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement>;
       'page-use-fibermesh-in-zbrush': LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;

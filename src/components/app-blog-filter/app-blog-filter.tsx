@@ -82,9 +82,7 @@ export class AppBlogFilter {
             <ion-button onClick={() => this.dismiss()}>Cancel</ion-button>
           </ion-buttons>
 
-          <ion-title>
-            Filter Sessions
-          </ion-title>
+          <ion-title>Filter Topics</ion-title>
 
           <ion-buttons slot="end">
             <ion-button onClick={() => this.applyFilters()} strong>Done</ion-button>

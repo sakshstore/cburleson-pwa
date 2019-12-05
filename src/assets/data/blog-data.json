@@ -47,6 +47,17 @@
       "type": "component"
     },
     {
+      "id": "fix-for-git-after-macos-mojave-upgrade",
+      "title": "Fix for Git after Mac OS Mojave upgrade",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-apple.svg",
+      "datePublished": "2018/10/02",
+      "dateModified": "2019/10/02",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
       "id": "pwa-with-ionic-angular-wordpress-api-5",
       "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 5",
       "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
@@ -101,6 +112,30 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/09/03",
       "dateModified": "2018/09/03",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-recipes-look-toward-direction-of-velocity",
+      "title": "Unity recipes – look toward direction of velocity",
+      "teaser": "A C# script for Unity can be used to make an object look toward the direction of its current velocity.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "dateModified": "2018/08/29",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-recipes-look-toward-direction-of-movement",
+      "title": "Unity recipes – look toward direction of movement",
+      "teaser": "A C# script for Unity can be used to make an object look (turn smoothly) toward the direction it is being moved.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "dateModified": "2018/08/29",
       "tracks": [
         "Software Dev"
       ],
@@ -502,6 +537,18 @@
       "type": "component"
     },
     {
+      "id": "unity-get-rigidbody-from-object",
+      "title": "Unity – How to get rigidbody from object a script is applied to",
+      "teaser": "C# scipt to get rigidbody from object the script is applied to in Unity.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2015/04/01",
+      "dateModified": "2015/04/01",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
       "id": "a-javascript-implementation-of-java-util-map",
       "title": "A JavaScript Implementation of java.util.Map",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
@@ -519,6 +566,18 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
       "datePublished": "2013/09/18",
       "dateModified": "2018/09/22",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "script-for-rotating-unity-game-object-90-degrees",
+      "title": "Script for rotating a Unity game object 90 degrees",
+      "teaser": "Unity behavior script that rotates object 90 degrees when the script’s rotate function is called.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2013/05/22",
+      "dateModified": "2013/05/22",
       "tracks": [
         "Software Dev"
       ],
@@ -543,6 +602,66 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-vmware-fusion.png",
       "datePublished": "2013/01/05",
       "dateModified": "2019/01/30",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
+      "title": "Unity Freebies: Game Timer, Cinematic Letterbox, and Fade-in Scripts",
+      "teaser": "Two awesome Unity behavior scripts that you can download and use for free right now!",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/14",
+      "dateModified": "2012/11/14",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "unity-preferences-your-built-in-keyboard-cheat-sheet",
+      "title": "Unity Preferences – Your Built-in Keyboard Cheat Sheet",
+      "teaser": "An easy way to find keyboard commands in the Unity game development tool.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/11",
+      "dateModified": "2012/11/11",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-3",
+      "title": "Create a player health status indicator for the Unity GUI, part 3",
+      "teaser": "Third and last of a multi-part series teaching yhow to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/08",
+      "dateModified": "2012/11/08",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-2",
+      "title": "Create a player health status indicator for the Unity GUI, part 2",
+      "teaser": "Second of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/10/16",
+      "dateModified": "2012/10/16",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-1",
+      "title": "Create a player health status indicator for the Unity GUI, part 1",
+      "teaser": "First of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/10/13",
+      "dateModified": "2012/10/13",
       "tracks": [
         "Software Dev"
       ],
