@@ -2,8 +2,7 @@ import { Component, Prop, h } from '@stencil/core';
 
 @Component({
     tag: 'app-entry-meta',
-    styleUrl: 'app-entry-meta.css',
-    shadow: true
+    shadow: false
 })
 export class AppPhotoCard {
 
@@ -12,7 +11,7 @@ export class AppPhotoCard {
     renderLastModified() {
         if (this.header && this.header.dateModified) {
             if(this.header.dateModified !== this.header.datePublished) {
-                return <span>(last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</span>;
+                return <span>&nbsp;(last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</span>;
             }
         }
     }

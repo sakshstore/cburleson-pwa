@@ -14,9 +14,6 @@ export namespace Components {
   interface AppBlogFilter {
     'excludedTracks': string[];
   }
-  interface AppBlogPost {
-    'name': string;
-  }
   interface AppEntryMeta {
     'header': any;
   }
@@ -114,12 +111,6 @@ declare global {
   var HTMLAppBlogFilterElement: {
     prototype: HTMLAppBlogFilterElement;
     new (): HTMLAppBlogFilterElement;
-  };
-
-  interface HTMLAppBlogPostElement extends Components.AppBlogPost, HTMLStencilElement {}
-  var HTMLAppBlogPostElement: {
-    prototype: HTMLAppBlogPostElement;
-    new (): HTMLAppBlogPostElement;
   };
 
   interface HTMLAppEntryMetaElement extends Components.AppEntryMeta, HTMLStencilElement {}
@@ -574,7 +565,6 @@ declare global {
   interface HTMLElementTagNameMap {
     'app-404-page-not-found': HTMLApp404PageNotFoundElement;
     'app-blog-filter': HTMLAppBlogFilterElement;
-    'app-blog-post': HTMLAppBlogPostElement;
     'app-entry-meta': HTMLAppEntryMetaElement;
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
@@ -657,9 +647,6 @@ declare namespace LocalJSX {
   interface App404PageNotFound {}
   interface AppBlogFilter {
     'excludedTracks'?: string[];
-  }
-  interface AppBlogPost {
-    'name'?: string;
   }
   interface AppEntryMeta {
     'header'?: any;
@@ -747,7 +734,6 @@ declare namespace LocalJSX {
   interface IntrinsicElements {
     'app-404-page-not-found': App404PageNotFound;
     'app-blog-filter': AppBlogFilter;
-    'app-blog-post': AppBlogPost;
     'app-entry-meta': AppEntryMeta;
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
@@ -834,7 +820,6 @@ declare module "@stencil/core" {
     interface IntrinsicElements {
       'app-404-page-not-found': LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
       'app-blog-filter': LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
-      'app-blog-post': LocalJSX.AppBlogPost & JSXBase.HTMLAttributes<HTMLAppBlogPostElement>;
       'app-entry-meta': LocalJSX.AppEntryMeta & JSXBase.HTMLAttributes<HTMLAppEntryMetaElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;

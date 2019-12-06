@@ -74,7 +74,8 @@ export class AppPhotos {
                             <h1>{this.data.pageTitle}</h1>
 
                             <div innerHTML={this.data.pageIntro}></div>
-                            <p class="entry-meta">Last modified: <time>{this.data.lastModified}</time></p>
+
+                            <app-entry-meta header={this.data}/>
 
                             <ion-grid class="card-grid">{gridRows}</ion-grid>
 
