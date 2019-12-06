@@ -34,6 +34,7 @@ export namespace Components {
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
+  interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -45,10 +46,13 @@ export namespace Components {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
+  interface PageCreatePolygroupFromMaskInZbrush {}
+  interface PageDeleteHiddenGeometryInZbrush {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
@@ -178,6 +182,12 @@ declare global {
     new (): HTMLPageArtElement;
   };
 
+  interface HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement extends Components.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother, HTMLStencilElement {}
+  var HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement: {
+    prototype: HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
+    new (): HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
+  };
+
   interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
   var HTMLPageBlogElement: {
     prototype: HTMLPageBlogElement;
@@ -244,6 +254,18 @@ declare global {
     new (): HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
   };
 
+  interface HTMLPageCreatePolygroupFromMaskInZbrushElement extends Components.PageCreatePolygroupFromMaskInZbrush, HTMLStencilElement {}
+  var HTMLPageCreatePolygroupFromMaskInZbrushElement: {
+    prototype: HTMLPageCreatePolygroupFromMaskInZbrushElement;
+    new (): HTMLPageCreatePolygroupFromMaskInZbrushElement;
+  };
+
+  interface HTMLPageDeleteHiddenGeometryInZbrushElement extends Components.PageDeleteHiddenGeometryInZbrush, HTMLStencilElement {}
+  var HTMLPageDeleteHiddenGeometryInZbrushElement: {
+    prototype: HTMLPageDeleteHiddenGeometryInZbrushElement;
+    new (): HTMLPageDeleteHiddenGeometryInZbrushElement;
+  };
+
   interface HTMLPageFixForGitAfterMacosMojaveUpgradeElement extends Components.PageFixForGitAfterMacosMojaveUpgrade, HTMLStencilElement {}
   var HTMLPageFixForGitAfterMacosMojaveUpgradeElement: {
     prototype: HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
@@ -266,6 +288,12 @@ declare global {
   var HTMLPageHowToApplyTextureInZbrushElement: {
     prototype: HTMLPageHowToApplyTextureInZbrushElement;
     new (): HTMLPageHowToApplyTextureInZbrushElement;
+  };
+
+  interface HTMLPageHowToUseLiveBooleanInZbrushElement extends Components.PageHowToUseLiveBooleanInZbrush, HTMLStencilElement {}
+  var HTMLPageHowToUseLiveBooleanInZbrushElement: {
+    prototype: HTMLPageHowToUseLiveBooleanInZbrushElement;
+    new (): HTMLPageHowToUseLiveBooleanInZbrushElement;
   };
 
   interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
@@ -557,6 +585,7 @@ declare global {
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
+    'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
@@ -568,10 +597,13 @@ declare global {
     'page-create-player-health-status-indicator-for-unity-gui-part-1': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
+    'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
+    'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
+    'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
@@ -646,6 +678,7 @@ declare namespace LocalJSX {
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
+  interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -657,10 +690,13 @@ declare namespace LocalJSX {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
+  interface PageCreatePolygroupFromMaskInZbrush {}
+  interface PageDeleteHiddenGeometryInZbrush {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
@@ -722,6 +758,7 @@ declare namespace LocalJSX {
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
+    'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
@@ -733,10 +770,13 @@ declare namespace LocalJSX {
     'page-create-player-health-status-indicator-for-unity-gui-part-1': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
+    'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
+    'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
+    'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
@@ -805,6 +845,7 @@ declare module "@stencil/core" {
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
+      'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
@@ -816,10 +857,13 @@ declare module "@stencil/core" {
       'page-create-player-health-status-indicator-for-unity-gui-part-1': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-2': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
+      'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
+      'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
+      'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;

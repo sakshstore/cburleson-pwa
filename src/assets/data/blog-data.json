@@ -9,8 +9,7 @@
       "dateModified": "2019/11/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "killing-kittens",
@@ -21,8 +20,7 @@
       "dateModified": "2019/06/10",
       "tracks": [
         "Memoir"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "copy-assets-from-node-modules-in-stencil-js",
@@ -32,8 +30,7 @@
       "dateModified": "2019/11/07",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "change-canvas-background-color-in-zbrush",
@@ -43,8 +40,7 @@
       "dateModified": "2019/04/14",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "fix-for-git-after-macos-mojave-upgrade",
@@ -54,8 +50,7 @@
       "dateModified": "2019/10/02",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-5",
@@ -66,8 +61,7 @@
       "dateModified": "2019/03/31",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-4",
@@ -78,8 +72,7 @@
       "dateModified": "2019/03/31",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-3",
@@ -90,8 +83,7 @@
       "dateModified": "2019/04/01",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-2",
@@ -102,8 +94,7 @@
       "dateModified": "2019/04/01",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-1",
@@ -114,8 +105,7 @@
       "dateModified": "2019/11/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "how-to-apply-texture-in-zbrush",
@@ -125,8 +115,7 @@
       "datePublished": "2018/09/03",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-recipes-head-bob-or-breathe",
@@ -136,8 +125,7 @@
       "datePublished": "2018/09/03",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-recipes-look-toward-direction-of-velocity",
@@ -147,8 +135,7 @@
       "datePublished": "2018/08/29",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-recipes-look-toward-direction-of-movement",
@@ -158,8 +145,7 @@
       "datePublished": "2018/08/29",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-recipes-follow-object",
@@ -169,8 +155,7 @@
       "datePublished": "2018/08/29",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "use-spotlight-to-display-reference-images-in-zbrush",
@@ -181,8 +166,7 @@
       "dateModified": "2019/07/24",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "weld-multiple-subtools-in-zbrush",
@@ -193,8 +177,7 @@
       "dateModified": "2019/04/14",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "zbrush-keyboard-shortcuts",
@@ -205,8 +188,7 @@
       "dateModified": "2019/04/17",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "create-new-subtool-from-masked-area-in-zbrush",
@@ -217,8 +199,7 @@
       "dateModified": "2019/12/02",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "create-polygroup-from-mask-in-zbrush",
@@ -229,8 +210,7 @@
       "dateModified": "2019/08/05",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "json-file"
+      ]
     },
     {
       "id": "isolate-a-polygroup-in-zbrush",
@@ -241,8 +221,7 @@
       "dateModified": "2019/11/21",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "mirror-polygroup-on-subtool-in-zbrush",
@@ -253,8 +232,7 @@
       "dateModified": "2019/12/02",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "convert-zbrush-polygroups-into-subtools",
@@ -265,8 +243,7 @@
       "dateModified": "2019/7/29",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "rig-a-mesh-with-zspheres-in-zbrush",
@@ -277,8 +254,7 @@
       "dateModified": "2019/12/05",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "how-to-use-live-boolean-in-zbrush",
@@ -289,8 +265,7 @@
       "dateModified": "2019/11/22",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "json-file"
+      ]
     },
     {
       "id": "apply-different-materials-to-subtools-in-zbrush",
@@ -301,8 +276,7 @@
       "dateModified": "2018/07/23",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "delete-hidden-geometry-in-zbrush",
@@ -313,8 +287,7 @@
       "dateModified": "2018/07/27",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "json-file"
+      ]
     },
     {
       "id": "use-fibermesh-in-zbrush",
@@ -325,8 +298,7 @@
       "dateModified": "2019/12/02",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-construct",
@@ -337,8 +309,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-list-classes",
@@ -349,8 +320,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-select",
@@ -361,8 +331,7 @@
       "dateModified": "2019/04/12",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "respond-to-button-click-with-observable",
@@ -373,8 +342,7 @@
       "dateModified": "2019/11/12",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-ask",
@@ -385,8 +353,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-federation",
@@ -397,8 +364,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-filter",
@@ -409,8 +375,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-insert",
@@ -421,8 +386,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-limit",
@@ -433,8 +397,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-negation",
@@ -445,8 +408,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-order-by",
@@ -457,8 +419,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-count-all-statements",
@@ -469,8 +430,7 @@
       "dateModified": "2018/7/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-paging",
@@ -481,8 +441,7 @@
       "dateModified": "2018/07/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "sparql-examples-date-range",
@@ -493,8 +452,7 @@
       "dateModified": "2018/11/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "pink-hearts",
@@ -504,8 +462,7 @@
       "datePublished": "2017/07/15",
       "tracks": [
         "Memoir"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "7-quintessential-brushes-for-zbrush-beginners",
@@ -516,8 +473,7 @@
       "dateModified": "2019/03/31",
       "tracks": [
         "ZBrush"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "format-currency-in-angular",
@@ -528,8 +484,7 @@
       "dateModified": "2018/09/25",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "index-of-item-within-angular-ngfor-loop",
@@ -540,8 +495,7 @@
       "dateModified": "2018/09/24",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "quick-and-simple-caching-with-apache-commons-jcs",
@@ -552,8 +506,7 @@
       "dateModified": "2018/09/25",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "7-reasons-why-typescript-helps-you-kick-ass",
@@ -563,8 +516,7 @@
       "dateModified": "2018/07/26",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-get-rigidbody-from-object",
@@ -574,8 +526,7 @@
       "datePublished": "2015/04/01",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "a-javascript-implementation-of-java-util-map",
@@ -585,8 +536,7 @@
       "dateModified": "2019/12/02",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
@@ -597,8 +547,7 @@
       "dateModified": "2018/09/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "script-for-rotating-unity-game-object-90-degrees",
@@ -608,8 +557,7 @@
       "datePublished": "2013/05/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "automatically-build-and-include-one-eclipse-project-into-another",
@@ -620,8 +568,7 @@
       "dateModified": "2019/11/21",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "json-file"
+      ]
     },
     {
       "id": "shrink-windows-vm-on-vmware-fusion-for-mac",
@@ -632,8 +579,7 @@
       "dateModified": "2019/01/30",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
@@ -643,8 +589,7 @@
       "datePublished": "2012/11/14",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "unity-preferences-your-built-in-keyboard-cheat-sheet",
@@ -654,8 +599,7 @@
       "datePublished": "2012/11/11",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-3",
@@ -665,8 +609,7 @@
       "datePublished": "2012/11/08",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-2",
@@ -676,8 +619,7 @@
       "datePublished": "2012/10/16",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-1",
@@ -687,8 +629,7 @@
       "datePublished": "2012/10/13",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     },
     {
       "id": "list-ibm-db2-commands",
@@ -699,8 +640,7 @@
       "dateModified": "2019/11/22",
       "tracks": [
         "Software Dev"
-      ],
-      "type": "component"
+      ]
     }
   ]
 }

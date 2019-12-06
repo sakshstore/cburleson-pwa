@@ -92,17 +92,17 @@ export class AppRoot {
     const blogPostRoutes = [];
 
     this.data.content.map((item) => {
-      if (item.type) {
-        if (item.type == 'component') {
+      //if (item.type) {
+        //if (item.type == 'component') {
           blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>)
-        } else if (item.type == 'json-file') {
-          blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="app-blog-post"></ion-route></ion-route>)
-        } else {
-          console.error('- AppRoot.renderRouter > Required attribute "type" unrecognized for item: %o', item);
-        }
-      } else {
-        console.error('- AppRoot.renderRouter > Required attribute "type" not defined for item: %o', item);
-      }
+        //} else if (item.type == 'json-file') {
+         // blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="app-blog-post"></ion-route></ion-route>)
+        //} else {
+         // console.error('- AppRoot.renderRouter > Required attribute "type" unrecognized for item: %o', item);
+        //}
+      //} else {
+       // console.error('- AppRoot.renderRouter > Required attribute "type" not defined for item: %o', item);
+      //}
     });
 
     return (

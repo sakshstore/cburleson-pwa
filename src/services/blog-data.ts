@@ -5,7 +5,6 @@ class BlogDataService {
 
     data: any;
     postId: string;
-    post: any;
 
     constructor() {
         if (debug) {
@@ -100,55 +99,6 @@ class BlogDataService {
             console.log('> BlogDataService.getPostHeaderById("%s")', slug);
         }
         return this.data.content.find(item => item.id === slug);
-    }
-
-    /* Loads and returns a single blog post as JSON file to be rendered in the dynamic page-blog-post component. */
-    async getPostById(slug: string) {
-        if (debug) {
-            console.log('> BlogDataService.getPostById("%s")', slug);
-        }
-        if (this.postId == slug) {
-            if (debug) {
-                console.log('< BlogDataService.getPostById < returning aleady loaded post: %s', slug);
-            }
-            return this.post;
-        } else {
-            const rsp = await fetch('/assets/data/' + slug + '.json');
-
-            /* MAY LATER BE HELPFUL FOR 404 PAGE NOT FOUND
-            const rsp = await fetch('/assets/data/' + slug + '.json').then(function (response) {
-                if (response.status == 200) {
-                    return response;
-                } else if (response.status == 404) {
-                    if (debug) {
-                        console.error('- BlogDataService.getPostById > 404 PAGE NOT FOUND');
-                    }
-                    return response;
-                } else {
-                    if (debug) {
-                        console.error('- BlogDataService.getPostById > No programming to handle response code.');
-                    }
-                    return response;
-                }
-            });
-            */
-
-            const json = await rsp.json();
-            this.postId = slug;
-            return this.processPost(json);
-        }
-    }
-
-    processPost(post: any) {
-        if (debug) {
-            console.log('> BlogDataService.processPost');
-        }
-        this.post = post;
-        // Placeholder function for future processing, but nothing done for now.
-        if (debug) {
-            console.log('< BlogDataService.processPost < returning post: %o', this.post);
-        }
-        return this.post;
     }
 
 }
