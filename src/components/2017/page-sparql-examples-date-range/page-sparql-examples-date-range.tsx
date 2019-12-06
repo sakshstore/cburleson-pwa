@@ -52,7 +52,7 @@ export class PageSparqlExamplesDateRange {
 
 				<h1>{this.header.title}</h1>
 
-				<p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+				<app-entry-meta header={this.header} />
 
 				<p>An example SPARQL query filtering for resources within a given date range (between two given dates).</p>
 

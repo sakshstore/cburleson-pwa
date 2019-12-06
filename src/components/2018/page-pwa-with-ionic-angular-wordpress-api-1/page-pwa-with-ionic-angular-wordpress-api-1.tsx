@@ -244,7 +244,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
         <h1>{this.header.title}</h1>
 
-        <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+        <app-entry-meta header={this.header} />
 
 
         <img  alt="" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif" />

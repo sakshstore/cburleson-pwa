@@ -43,7 +43,7 @@ export class PageRigAMeshWithZspheresInZbrush {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
 
                 <p>You can rig an existing mesh with a ZSphere armature, allowing you to pose the mesh by manipulated the underlying armature.</p>

@@ -60,7 +60,7 @@ export class PageTemplatePage {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>When you isolate a polygroup in ZBrush, you can then work with it independently.&nbsp;After isolating one or more polygroups, for example, you might want to delete those that are hidden, which you could then do with Tool &gt; Geometry &gt; Modify Topology &gt; Del Hidden.</p>
 

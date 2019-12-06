@@ -43,7 +43,7 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Recently, I upgraded my macOS to Mojave and ran into the following error after running the <code>git init</code> command.</p>
                 <p><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></p>

@@ -53,7 +53,7 @@ export class PageSparqlExamplesFederation {
 
 				<h1>{this.header.title}</h1>
 
-				<p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+				<app-entry-meta header={this.header} />
 
 				<h2>Federate data from 2 endpoints</h2>
 				<p>Find the birth dates of all of the actors in Star Trek: The Motion Picture.<br />

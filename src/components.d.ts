@@ -17,6 +17,9 @@ export namespace Components {
   interface AppBlogPost {
     'name': string;
   }
+  interface AppEntryMeta {
+    'header': any;
+  }
   interface AppPhotoCard {
     'imagePath': string;
     'item': any;
@@ -52,6 +55,7 @@ export namespace Components {
   interface PageListIbmDb2Commands {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
+  interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi3 {}
@@ -112,6 +116,12 @@ declare global {
   var HTMLAppBlogPostElement: {
     prototype: HTMLAppBlogPostElement;
     new (): HTMLAppBlogPostElement;
+  };
+
+  interface HTMLAppEntryMetaElement extends Components.AppEntryMeta, HTMLStencilElement {}
+  var HTMLAppEntryMetaElement: {
+    prototype: HTMLAppEntryMetaElement;
+    new (): HTMLAppEntryMetaElement;
   };
 
   interface HTMLAppPhotoCardElement extends Components.AppPhotoCard, HTMLStencilElement {}
@@ -292,6 +302,12 @@ declare global {
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
     new (): HTMLPagePhotosWeaponsPlatoonElement;
+  };
+
+  interface HTMLPagePinkHeartsElement extends Components.PagePinkHearts, HTMLStencilElement {}
+  var HTMLPagePinkHeartsElement: {
+    prototype: HTMLPagePinkHeartsElement;
+    new (): HTMLPagePinkHeartsElement;
   };
 
   interface HTMLPagePwaWithIonicAngularWordpressApi1Element extends Components.PagePwaWithIonicAngularWordpressApi1, HTMLStencilElement {}
@@ -531,6 +547,7 @@ declare global {
     'app-404-page-not-found': HTMLApp404PageNotFoundElement;
     'app-blog-filter': HTMLAppBlogFilterElement;
     'app-blog-post': HTMLAppBlogPostElement;
+    'app-entry-meta': HTMLAppEntryMetaElement;
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
@@ -561,6 +578,7 @@ declare global {
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
+    'page-pink-hearts': HTMLPagePinkHeartsElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-pwa-with-ionic-angular-wordpress-api-2': HTMLPagePwaWithIonicAngularWordpressApi2Element;
     'page-pwa-with-ionic-angular-wordpress-api-3': HTMLPagePwaWithIonicAngularWordpressApi3Element;
@@ -611,6 +629,9 @@ declare namespace LocalJSX {
   interface AppBlogPost {
     'name'?: string;
   }
+  interface AppEntryMeta {
+    'header'?: any;
+  }
   interface AppPhotoCard {
     'imagePath'?: string;
     'item'?: any;
@@ -646,6 +667,7 @@ declare namespace LocalJSX {
   interface PageListIbmDb2Commands {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
+  interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi3 {}
@@ -690,6 +712,7 @@ declare namespace LocalJSX {
     'app-404-page-not-found': App404PageNotFound;
     'app-blog-filter': AppBlogFilter;
     'app-blog-post': AppBlogPost;
+    'app-entry-meta': AppEntryMeta;
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
     'app-root': AppRoot;
@@ -720,6 +743,7 @@ declare namespace LocalJSX {
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
+    'page-pink-hearts': PagePinkHearts;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-pwa-with-ionic-angular-wordpress-api-2': PagePwaWithIonicAngularWordpressApi2;
     'page-pwa-with-ionic-angular-wordpress-api-3': PagePwaWithIonicAngularWordpressApi3;
@@ -771,6 +795,7 @@ declare module "@stencil/core" {
       'app-404-page-not-found': LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
       'app-blog-filter': LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
       'app-blog-post': LocalJSX.AppBlogPost & JSXBase.HTMLAttributes<HTMLAppBlogPostElement>;
+      'app-entry-meta': LocalJSX.AppEntryMeta & JSXBase.HTMLAttributes<HTMLAppEntryMetaElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
@@ -801,6 +826,7 @@ declare module "@stencil/core" {
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
+      'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-pwa-with-ionic-angular-wordpress-api-2': LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;
       'page-pwa-with-ionic-angular-wordpress-api-3': LocalJSX.PagePwaWithIonicAngularWordpressApi3 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi3Element>;

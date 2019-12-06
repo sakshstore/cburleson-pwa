@@ -50,7 +50,7 @@ export class PageAJavascriptImplementationOfJavaUtilMap {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p><img class="alignleft" style={{marginBottom: `10px`}} src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/150x150-javaScriptHashMap.png" alt="" />As a Java developer, I use a lot of maps – especially instances of HashMap. A map is a dictionary or lookup table that contains key/value pairs. It provides a very convenient way to cache objects for easy retrieval by some identifier such as a string (the&nbsp;<em>key</em>). It’s so convenient, in fact, that I find myself struggling without a JavaScript equivalent, so I wrote one. Following is a partial JavaScript implementation of the java.util.Map interface, which you are free to copy and use.</p>
 

@@ -123,7 +123,6 @@
       "teaser": "A quick tutorial on how to apply texture to an object in ZBrush.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/09/03",
-      "dateModified": "2018/09/03",
       "tracks": [
         "ZBrush"
       ],
@@ -135,7 +134,6 @@
       "teaser": "A C# script to give an object a repetitive, but smooth upward and downward movement.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/09/03",
-      "dateModified": "2018/09/03",
       "tracks": [
         "Software Dev"
       ],
@@ -147,7 +145,6 @@
       "teaser": "A C# script for Unity can be used to make an object look toward the direction of its current velocity.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
-      "dateModified": "2018/08/29",
       "tracks": [
         "Software Dev"
       ],
@@ -159,7 +156,6 @@
       "teaser": "A C# script for Unity can be used to make an object look (turn smoothly) toward the direction it is being moved.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
-      "dateModified": "2018/08/29",
       "tracks": [
         "Software Dev"
       ],
@@ -171,7 +167,6 @@
       "teaser": "A C# script for Unity to make an object follow another.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
-      "dateModified": "2018/08/29",
       "tracks": [
         "Software Dev"
       ],
@@ -507,11 +502,10 @@
       "teaser": "A memory of when my sister tried to kill herself (I think).",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
       "datePublished": "2017/07/15",
-      "dateModified": "2018/07/16",
       "tracks": [
         "Memoir"
       ],
-      "type": "json-file"
+      "type": "component"
     },
     {
       "id": "7-quintessential-brushes-for-zbrush-beginners",
@@ -578,7 +572,6 @@
       "teaser": "C# scipt to get rigidbody from object the script is applied to in Unity.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2015/04/01",
-      "dateModified": "2015/04/01",
       "tracks": [
         "Software Dev"
       ],
@@ -613,7 +606,6 @@
       "teaser": "Unity behavior script that rotates object 90 degrees when the script’s rotate function is called.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2013/05/22",
-      "dateModified": "2013/05/22",
       "tracks": [
         "Software Dev"
       ],
@@ -649,7 +641,6 @@
       "teaser": "Two awesome Unity behavior scripts that you can download and use for free right now!",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/14",
-      "dateModified": "2012/11/14",
       "tracks": [
         "Software Dev"
       ],
@@ -661,7 +652,6 @@
       "teaser": "An easy way to find keyboard commands in the Unity game development tool.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/11",
-      "dateModified": "2012/11/11",
       "tracks": [
         "Software Dev"
       ],
@@ -673,7 +663,6 @@
       "teaser": "Third and last of a multi-part series teaching yhow to build a player health status indicator for the Unity GUI.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/08",
-      "dateModified": "2012/11/08",
       "tracks": [
         "Software Dev"
       ],
@@ -685,7 +674,6 @@
       "teaser": "Second of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/16",
-      "dateModified": "2012/10/16",
       "tracks": [
         "Software Dev"
       ],
@@ -697,7 +685,6 @@
       "teaser": "First of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/13",
-      "dateModified": "2012/10/13",
       "tracks": [
         "Software Dev"
       ],

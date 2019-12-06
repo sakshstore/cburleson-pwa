@@ -50,7 +50,7 @@ componentDidLoad() {
                 
                 <h1>{this.header.title}</h1>
                 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
 <p>This Unity behavior script rotates the object it’s attached to by 90 degrees when the script’s rotate function is called. Just copy and paste the contents into a new JavaScript in Unity.</p>
 

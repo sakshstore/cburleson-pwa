@@ -38,6 +38,14 @@ export class AppRoot {
     }
   ];
 
+
+  @Listen('ionRouteWillChange', { target: 'body'})
+  handleRouteWillChange(event: CustomEvent) {
+    if (debug) {
+      console.log('> AppRoot.handleRouteWillChange > event: %o', event);
+    }
+  }
+
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
   @Listen('ionRouteDidChange')
@@ -47,13 +55,13 @@ export class AppRoot {
     }
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
-    if(event.detail.to == '/blog') {
+    if (event.detail.to == '/blog') {
       document.title = 'Blog | ' + siteName;
-    } else if(event.detail.to == '/books') {
+    } else if (event.detail.to == '/books') {
       document.title = 'Books | ' + siteName;
-    } else if(event.detail.to == '/art') {
+    } else if (event.detail.to == '/art') {
       document.title = 'Art | ' + siteName;
-    } else if(event.detail.to == '/about') {
+    } else if (event.detail.to == '/about') {
       document.title = 'About | ' + siteName;
     }
 
@@ -77,16 +85,16 @@ export class AppRoot {
     this.data = await BlogData.load();
   }
 
-  // @Listen('body:ionRouteDidChange')
+
 
   renderRouter() {
 
     const blogPostRoutes = [];
 
     this.data.content.map((item) => {
-      if(item.type) {
-        if(item.type == 'component') {
-          blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>) 
+      if (item.type) {
+        if (item.type == 'component') {
+          blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>)
         } else if (item.type == 'json-file') {
           blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="app-blog-post"></ion-route></ion-route>)
         } else {

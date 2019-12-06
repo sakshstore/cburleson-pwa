@@ -43,7 +43,7 @@ export class PageConvertZbrushPolygroupsIntoSubtools {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Normally, polygroups display sections of a single mesh. If you want to convert polygroups into SubTools you can do the following.</p>
                 <p>If your model has different elements go to Tool &gt; Polygroups and select Auto Groups. You can then go to SubTools &gt; Split and click Groups Split. Groups Split will be disabled unless all polygroups are visible on the canvas (<em>press <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and click an empty area of the canvas to display all polygroups</em>).</p>

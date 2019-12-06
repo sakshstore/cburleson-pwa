@@ -52,7 +52,7 @@ export class PageQuickAndSimpleCachingWithApacheCommonsJcs {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Need a quick and easy caching system for your web app? Don’t you dare roll your own. And don’t even think about doing some kind of quick and dirty HashMap. Setting up a simple cache with <a href="https://commons.apache.org/proper/commons-jcs/index.html">Commons JCS™</a>, is easy – you can have a basic&nbsp;<abbr title="Least Recently Used Cache (evicts least recently used entries)">LRU Cache</abbr>&nbsp;up and running in minutes. What’s more, the package is mature and sophisticated, so you can get into more advanced features when the need arises. But let’s take a look at a simple setup.</p>
 

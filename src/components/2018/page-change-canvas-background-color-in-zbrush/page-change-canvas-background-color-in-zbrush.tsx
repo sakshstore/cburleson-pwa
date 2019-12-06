@@ -43,7 +43,7 @@ export class PageChangeCanvasBackgroundColorInZbrush {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Here&#8217;s a quick note on how to change the canvas background color in ZBrush.</p>
                 

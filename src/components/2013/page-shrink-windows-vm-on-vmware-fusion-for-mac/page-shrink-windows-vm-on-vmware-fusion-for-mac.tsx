@@ -43,7 +43,7 @@ export class PageShrinkWindowsVmOnVmwareFusionForMac {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Here’s my procedure for shrinking a Windows virtual machine on VMWare Fusion for the Mac. I should give credit to &quot;Mmc&quot; who posted the <a href="http://techblog.41concepts.com/2008/03/31/Shrink-Your-Windows-Disk-Image-On-Wmware-Fusion-Mac/" rel="nofollow">original procedure</a> back in March 2008, which continues to dominate in Google search results. That procedure is out of date, however, so I reckon it’s time for an update.</p>
 

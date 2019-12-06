@@ -48,7 +48,7 @@ export class PageListIbmDb2Commands {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Did you know that you can get a quick list of db2 commands by typing &#8220;db2 ?&#8221; on the command line?</p>
                 <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2009/03/db2Help.gif" alt="" /></p>

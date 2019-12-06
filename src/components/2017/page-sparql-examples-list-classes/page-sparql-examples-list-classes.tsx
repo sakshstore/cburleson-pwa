@@ -53,7 +53,7 @@ export class PageSparqlExamplesListClasses {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Example SPARQL queries that can help you list the classes in an ontology.</p>
                 <h2 id="SPARQLexamples-listclasses-Listallclasses">List all classes</h2>

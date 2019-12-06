@@ -60,7 +60,7 @@ export class PageCopyAssetsFromNodeModulesInStencilJs {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>In this post I describe how to copy assets from the <code>node_modules</code> directory using the <code>copy</code> config in the <code>stencil.config.ts</code> file for Stencil.js.</p>
                 <p>My Stencil project has a dependency on Bootstrap, so in the pages that use my components, I needed to include the following files:</p>

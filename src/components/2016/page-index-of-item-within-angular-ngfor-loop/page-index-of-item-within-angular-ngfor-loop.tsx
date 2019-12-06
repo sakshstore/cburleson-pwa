@@ -57,7 +57,7 @@ export class PageIndexOfItemWithinAngularNgforLoop {
                 
                 <h1>{this.header.title}</h1>
                 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
             
                 <p>Here's how to get and print the index (or the iteration number) of the current item in an ngFor loop.</p>
                 

@@ -50,7 +50,7 @@ export class PageUnityRecipesFollowObject {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>The following C# script for Unity can be used to make an object follow another. It can be used, for example, to make a camera follow the player.</p>
 

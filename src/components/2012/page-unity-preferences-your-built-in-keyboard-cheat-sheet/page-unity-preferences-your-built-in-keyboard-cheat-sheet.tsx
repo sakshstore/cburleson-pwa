@@ -43,7 +43,7 @@ export class PageUnityPreferencesYourBuiltInKeyboardCheatSheet {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Learning keyboard commands in the Unity game development tool is essential to working fast and efficiently. To find them, you don’t have to search the Web for a cheat sheet; you can simply open Unity’s Preferences. From the menu bar, select Unity &gt; Preferences…</p>
                 <p><img  title="Keyboard Commands in Unity Preferences" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/UnityKeysInPreferences.png" alt="Keyboard Commands in Unity Preferences" /></p>

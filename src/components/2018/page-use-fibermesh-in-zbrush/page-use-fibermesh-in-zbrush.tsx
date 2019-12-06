@@ -43,7 +43,7 @@ export class PageUseFibermeshInZbrush {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>FiberMesh™&nbsp;is a specialized mesh generation tool in ZBrush that allows you the create fur, grass, fibers, weeds and hair.&nbsp;Unlike the Fiber material, FiberMesh is not a render process. Instead, FiberMesh creates real geometry which can be added to an existing model as a new SubTool. These are my notes taken from early experimentation, which can help beginners understand the basics of using FiberMesh™.</p>
 

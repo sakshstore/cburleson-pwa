@@ -51,7 +51,7 @@ export class PageUnityRecipesHeadBobOrBreathe {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>Here’s a handy Unity script that, when applied to a game object, will give the object a repetitive, but smooth upward and downward movement. This effect is often used to make a “head bob” or to make a player object look like it’s breathing; especially when it’s in idle state. This kind of effect can be achieved by animating the object before importing it (in a program like Blender, for example), but it can also be achieved with a sine wave function as provided by this script. The same or a similar script can also be used to make a main menu camera bob or to make lights breathe. Here it is:</p>
 

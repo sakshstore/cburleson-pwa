@@ -50,7 +50,7 @@ export class PagePwaWithIonicAngularWordpressApi2 {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
                 <p>In this series, we’re building a Progressive Web App (PWA) for desktop and mobile that delivers WordPress content using Ionic, Angular, and the WordPress API. In <a href="/pwa-with-ionic-angular-wordpress-api-1/">Part 1</a>, we got things setup and working. If you haven’t seen Part 1, I recommend that you <a href="/pwa-with-ionic-angular-wordpress-api-1/">start there</a>. Today, for Part 2, we will convert the Home page list items to cards, which will allow for a richer presentation of the post previews.</p>
 

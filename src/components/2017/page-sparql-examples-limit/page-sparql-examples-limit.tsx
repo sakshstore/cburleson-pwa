@@ -51,7 +51,7 @@ export class PageSparqlExamplesLimit {
 
 				<h1>{this.header.title}</h1>
 
-				<p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+				<app-entry-meta header={this.header} />
 
 				<h3>Limit the number of results returned</h3>
 

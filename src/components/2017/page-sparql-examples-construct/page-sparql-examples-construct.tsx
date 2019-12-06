@@ -52,7 +52,7 @@ export class PageSparqlExamplesConstruct {
 
 				<h1>{this.header.title}</h1>
 
-				<p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+				<app-entry-meta header={this.header} />
 
 				<p>Construct a graph giving ontology structure (the class hierarchy, properties, domains and ranges)</p>
 

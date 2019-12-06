@@ -51,7 +51,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {
 
                 <h1>{this.header.title}</h1>
 
-                <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
+                <app-entry-meta header={this.header} />
 
 
                 <p>This is the third of a multi-part series that will teach you how to build a player health status indicator for the <a href="http://unity3d.com/" target="_blank" rel="noopener noreferrer nofollow">Unity</a> GUI. If you haven’t already, you should <a title="How to Create a Player Health Status Indicator for the Unity GUI, Part 1" href="/create-player-health-status-indicator-for-unity-gui-part-1">read Part 1</a> and <a title="How to Create a Player Health Status Indicator for the Unity GUI, Part 2" href="/create-player-health-status-indicator-for-unity-gui-part-2">Part 2</a>. You might also wish to download <a title="Click to download the image assets and Javascript in one ZIP archive." href="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/Health-Status-Bar-Assets.zip" target="_blank" rel="noopener noreferrer">download the starter assets</a>, which you can then import into Unity.</p>
