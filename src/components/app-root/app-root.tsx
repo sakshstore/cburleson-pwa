@@ -38,13 +38,19 @@ export class AppRoot {
     }
   ];
 
-
+  /*
   @Listen('ionRouteWillChange', { target: 'body'})
   handleRouteWillChange(event: CustomEvent) {
     if (debug) {
       console.log('> AppRoot.handleRouteWillChange > event: %o', event);
     }
+    var slug = event.detail.to.substring(1);
+    console.log('SLUG: %s', slug);
+
+    var postHeader = BlogData.getPostHeaderById(slug);
+    console.log('Post Header: %o', postHeader);
   }
+  */
 
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
@@ -84,8 +90,6 @@ export class AppRoot {
     }
     this.data = await BlogData.load();
   }
-
-
 
   renderRouter() {
 

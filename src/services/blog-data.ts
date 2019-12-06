@@ -17,11 +17,18 @@ class BlogDataService {
             console.log('> BlogDataService.load')
         }
         if (this.data) {
+            if (debug) {
+                console.log('< BlogDataService.load < returning cached data: \n %o', this.data);
+            }
             return this.data;
         } else {
             const rsp = await fetch('/assets/data/blog-data.json');
             const json = await rsp.json();
-            return this.processData(json);
+            let data = this.processData(json);
+            if (debug) {
+                console.log('< BlogDataService.load < returning newly loaded data: \n %o', this.data);
+            }
+            return data;
         }
     }
 
@@ -47,10 +54,6 @@ class BlogDataService {
                 });
             }
         });
-
-        if (debug) {
-            console.log('< BlogDataService < processData() returning: \n %o', this.data);
-        }
 
         return this.data;
     }
