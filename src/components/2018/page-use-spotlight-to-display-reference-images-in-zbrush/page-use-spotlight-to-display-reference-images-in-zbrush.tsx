@@ -52,7 +52,7 @@ export class PageUseSpotlightToDisplayReferenceImagesInZbrush {
                     <li>Import a reference image using Texture &gt; Import.</li>
                     <li>Once you&#8217;ve imported the image, you should see a thumbnail for the image in the Texture palette. Click the image thumbnail to select it.</li>
                     <li>In the Texture palette, now click the plus/minus icon to add the selected image to Spotlight. The icon looks like this:<br />
-                        <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/zbrush-add-to-spotlight-button.jpg" alt="" /></li>
+                        <img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/zbrush-add-to-spotlight-button.jpg" alt="" /></li>
                     <li>Press the comma key (<kbd>,</kbd>) to get rid of Lightbox if that pops up. You will see the image imported into the ZBrush workspace. You will also see the Lightbox Dial or wheel with all sorts of options and tools such as scale and opacity.</li>
                     <li>You can click and drag the image to place it where you want and you can use the Spotlight dial&#8217;s tools to set things like scale and opacity.
                         <ul>

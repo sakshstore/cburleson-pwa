@@ -57,7 +57,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {
 
                 <p>This is the second of a multi-part series that will teach you how to build a player health status indicator for the <a href="http://unity3d.com/" target="_blank" rel="noopener noreferrer nofollow">Unity</a> GUI.</p>
 
-                <p><img class="img-fluid" title="Health Status Bar" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/healthStatusBar.png" alt="" /></p>
+                <p><img  title="Health Status Bar" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/healthStatusBar.png" alt="" /></p>
 
                 <h2>Introduction</h2>
 
@@ -144,7 +144,7 @@ var frameTexture : Texture;`}</code></pre>
 
                 <p>Globally scoped variables show up in the Inspector panel as values that can be populated or modified without changing the script’s code. In the image below, you can see that all of the global variables in our script at right are also exposed in the Unity Inspector panel at left.</p>
 
-                <p><img class="img-fluid" title="Global Variables in the Unity Inspector" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/globalVariablesBecomeInspectorSlots.png" alt="" /></p>
+                <p><img  title="Global Variables in the Unity Inspector" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/globalVariablesBecomeInspectorSlots.png" alt="" /></p>
 
                 <p>Our Health Status Indicator has already shown us two reasons why this is valuable. First, we are able to drag and drop our own textures into the Inspector slots created by the variables <em>backgroundTexture</em>, <em>foregroundTexture</em>, and <em>frameTexture</em>. That makes our script reusable and easy to customize. That is to say, you can reuse it for more than one game without changing any code. All you need to do is provide your own images to the widget by dragging and dropping them onto their respective slots in the inspector.</p>
 
@@ -171,7 +171,7 @@ var healthMarginTop: int = 38;`}</code></pre>
                 <p>We will use the healthMarginLeft variable to specify the horizontal position (from the left of the screen) where the texture’s rectangle will begin. And Similarly, we’ll use the healthMarginTop to specify the vertical position from the top of the screen.</p>
                 <p>In computer graphics, we often refer to the horizontal axis as <em>x </em>and the vertical axis as <em>y</em>. The top-most and left-most position on the screen is expressed as position (0,0) in (x,y).</p>
 
-                <p><img class="img-fluid" title="Unity GUI 2D" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/Unity-GUI-2D-300x257.png" alt="" /></p>
+                <p><img  title="Unity GUI 2D" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/Unity-GUI-2D-300x257.png" alt="" /></p>
 
                 <p>So, if our variables define x and y coordinates, it could be expressed like this: (healthMarginLeft,healthMarginTop). The point (41,38) is where the top-most and left-most corner of our texture will be placed. So, it will have a left margin (a distance to the far-left hand side of the screen) of 41 pixels. And it will have a top-margin of 38 pixels.</p>
 

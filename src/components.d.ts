@@ -54,10 +54,13 @@ export namespace Components {
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
+  interface PagePwaWithIonicAngularWordpressApi3 {}
+  interface PagePwaWithIonicAngularWordpressApi4 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
@@ -303,6 +306,18 @@ declare global {
     new (): HTMLPagePwaWithIonicAngularWordpressApi2Element;
   };
 
+  interface HTMLPagePwaWithIonicAngularWordpressApi3Element extends Components.PagePwaWithIonicAngularWordpressApi3, HTMLStencilElement {}
+  var HTMLPagePwaWithIonicAngularWordpressApi3Element: {
+    prototype: HTMLPagePwaWithIonicAngularWordpressApi3Element;
+    new (): HTMLPagePwaWithIonicAngularWordpressApi3Element;
+  };
+
+  interface HTMLPagePwaWithIonicAngularWordpressApi4Element extends Components.PagePwaWithIonicAngularWordpressApi4, HTMLStencilElement {}
+  var HTMLPagePwaWithIonicAngularWordpressApi4Element: {
+    prototype: HTMLPagePwaWithIonicAngularWordpressApi4Element;
+    new (): HTMLPagePwaWithIonicAngularWordpressApi4Element;
+  };
+
   interface HTMLPagePwaWithIonicAngularWordpressApi5Element extends Components.PagePwaWithIonicAngularWordpressApi5, HTMLStencilElement {}
   var HTMLPagePwaWithIonicAngularWordpressApi5Element: {
     prototype: HTMLPagePwaWithIonicAngularWordpressApi5Element;
@@ -325,6 +340,12 @@ declare global {
   var HTMLPageRespondToButtonClickWithObservableElement: {
     prototype: HTMLPageRespondToButtonClickWithObservableElement;
     new (): HTMLPageRespondToButtonClickWithObservableElement;
+  };
+
+  interface HTMLPageRigAMeshWithZspheresInZbrushElement extends Components.PageRigAMeshWithZspheresInZbrush, HTMLStencilElement {}
+  var HTMLPageRigAMeshWithZspheresInZbrushElement: {
+    prototype: HTMLPageRigAMeshWithZspheresInZbrushElement;
+    new (): HTMLPageRigAMeshWithZspheresInZbrushElement;
   };
 
   interface HTMLPageScriptForRotatingUnityGameObject90DegreesElement extends Components.PageScriptForRotatingUnityGameObject90Degrees, HTMLStencilElement {}
@@ -542,10 +563,13 @@ declare global {
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-pwa-with-ionic-angular-wordpress-api-2': HTMLPagePwaWithIonicAngularWordpressApi2Element;
+    'page-pwa-with-ionic-angular-wordpress-api-3': HTMLPagePwaWithIonicAngularWordpressApi3Element;
+    'page-pwa-with-ionic-angular-wordpress-api-4': HTMLPagePwaWithIonicAngularWordpressApi4Element;
     'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
+    'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
@@ -624,10 +648,13 @@ declare namespace LocalJSX {
   interface PagePhotosWeaponsPlatoon {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
+  interface PagePwaWithIonicAngularWordpressApi3 {}
+  interface PagePwaWithIonicAngularWordpressApi4 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
   interface PageRespondToButtonClickWithObservable {}
+  interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
@@ -695,10 +722,13 @@ declare namespace LocalJSX {
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-pwa-with-ionic-angular-wordpress-api-2': PagePwaWithIonicAngularWordpressApi2;
+    'page-pwa-with-ionic-angular-wordpress-api-3': PagePwaWithIonicAngularWordpressApi3;
+    'page-pwa-with-ionic-angular-wordpress-api-4': PagePwaWithIonicAngularWordpressApi4;
     'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
+    'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
@@ -773,10 +803,13 @@ declare module "@stencil/core" {
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-pwa-with-ionic-angular-wordpress-api-2': LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;
+      'page-pwa-with-ionic-angular-wordpress-api-3': LocalJSX.PagePwaWithIonicAngularWordpressApi3 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi3Element>;
+      'page-pwa-with-ionic-angular-wordpress-api-4': LocalJSX.PagePwaWithIonicAngularWordpressApi4 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi4Element>;
       'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
+      'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;

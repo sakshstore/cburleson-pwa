@@ -31,7 +31,7 @@ export class PageAbout {
 
       <ion-content class="ion-padding">
         <div class="leftImageContainer">
-          <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cody-burleson-portrait-225x300.jpg" alt="Cody Burleson Portrait" width="225" height="300"></img>
+          <img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cody-burleson-portrait-225x300.jpg" alt="Cody Burleson Portrait" width="225" height="300"></img>
         </div>
         <p>Hi, I’m Cody Burleson and this is my home base on the web - an online notebook, sketchbook, scrapbook and mad software science lab.</p>
         <p>Recently, I &quot;retired&quot; from 23 years in software to pursue my life-long dream of being a writer.</p>

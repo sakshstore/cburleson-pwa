@@ -70,6 +70,30 @@
       "type": "component"
     },
     {
+      "id": "pwa-with-ionic-angular-wordpress-api-4",
+      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 4",
+      "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
+      "datePublished": "2018/09/16",
+      "dateModified": "2019/03/31",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "pwa-with-ionic-angular-wordpress-api-3",
+      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 3",
+      "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
+      "datePublished": "2018/09/14",
+      "dateModified": "2019/04/01",
+      "tracks": [
+        "Software Dev"
+      ],
+      "type": "component"
+    },
+    {
       "id": "pwa-with-ionic-angular-wordpress-api-2",
       "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 2",
       "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
@@ -244,6 +268,18 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
       "dateModified": "2019/7/29",
+      "tracks": [
+        "ZBrush"
+      ],
+      "type": "component"
+    },
+    {
+      "id": "rig-a-mesh-with-zspheres-in-zbrush",
+      "title": "How to rig a mesh with ZSpheres in ZBrush",
+      "teaser": "You can rig an existing mesh with a ZSphere armature, allowing you to pose the mesh by manipulating the underlying armature.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/05",
       "tracks": [
         "ZBrush"
       ],

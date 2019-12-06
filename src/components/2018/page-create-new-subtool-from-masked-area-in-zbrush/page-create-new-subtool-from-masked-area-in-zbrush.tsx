@@ -47,7 +47,7 @@ export class PageCreateNewSubtoolFromMaskedAreaInZbrush {
 
                 <p>Mask an area on the model&#8230;</p>
 
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-1.png" alt="" class="img-fluid" /></p>
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-1.png" alt=""  /></p>
 
                 <p>In the subtool palette, under Extract, set the thickness and options.</p>
 
@@ -55,7 +55,7 @@ export class PageCreateNewSubtoolFromMaskedAreaInZbrush {
 
                 <p>A new subtool is generated from the extracted mask&#8230;</p>
 
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-2.png" alt="" class="img-fluid" /></p>
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-2.png" alt=""  /></p>
 
                 <p>It&#8217;s usually a good idea to use ZRemesher on the new subtool afterwards.</p>
 

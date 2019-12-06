@@ -68,7 +68,7 @@ export class PageFormatCurrencyInAngular {
                 </ul>
                 <p>Note, however, that the currency pipe relies on the Internationalization API, which is not available in all browsers. See <a href="http://caniuse.com/#search=intl" rel="nofollow">current browser support for Internationalization API</a>.</p>
                 <p>Here’s a visual example of what the example shown above renders when used on a decimal number:</p>
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/angularFormatCurrencyExample.jpg" alt="" class="img-fluid" /></p>
+                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2016/04/angularFormatCurrencyExample.jpg" alt=""  /></p>
 
             </ion-content>
         ];

@@ -54,7 +54,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
                 <p>This is the first of a multi-part series that will teach you how to build a player health status indicator for the <a href="http://unity3d.com/" target="_blank" rel="noopener noreferrer">Unity</a> GUI.</p>
 
-                <p><img class="img-fluid" title="Health Status Bar" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/healthStatusBar.png" alt="" /></p>
+                <p><img title="Health Status Bar" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/healthStatusBar.png" alt="" /></p>
 
                 <h2>Introduction</h2>
 
@@ -66,7 +66,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
                 <p>Start by drawing your health status bar using any graphics tool that supports layers. We used Adobe Illustrator to get the cartoon style that we wanted. We then used Adobe Photoshop to crop and save each layer as a transparent GIF and PNG-24 files.</p>
 
-                <p><img class="img-fluid" title="Health Status Bar Layers" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/HealthBarLayers.png" alt="" /></p>
+                <p><img title="Health Status Bar Layers" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/HealthBarLayers.png" alt="" /></p>
 
                 <p>The layers are going to be stacked and properly aligned in the Unity GUI. As the player loses health, the background and top frame layers remain static, but the middle layer will be reduced in size horizontally.</p>
 
@@ -80,7 +80,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
                 <p>You can import your image assets by right-clicking in the Unity Project panel and choosing Import New Asset… from the context menu (shown below). In our case, we created a folder to help keep our assets organized.</p>
 
-                <p><img class="img-fluid" title="Import Image Assets" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/ImportHealthStatusBarAssets.png" alt="" /></p>
+                <p><img title="Import Image Assets" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/ImportHealthStatusBarAssets.png" alt="" /></p>
 
                 <h2>Create a simple script to start with</h2>
 
@@ -111,7 +111,7 @@ function OnGUI () {
 
                 <p>In order for the script to do anything, it needs to be attached to a GameObject, so create a new GameObject by selecting from the menu: GameObject &gt; Create Empty. Once the GameObject is made you can right-click on it and rename it to something meaningful like ‘HealthStatusBarGUI’. Drag the script onto the GameObject. You should then see the script’s global variables in the Inspector panel where you must add each of the textures to the appropriate slot.</p>
 
-                <p><img class="img-fluid" title="Initial Health Bar Setup" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/InitalHealthBarSetup.png" alt="" /></p>
+                <p><img title="Initial Health Bar Setup" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/InitalHealthBarSetup.png" alt="" /></p>
 
                 <p><em>Tip: You can add the textures to each slot by simply dragging and dropping each image asset from the Project panel onto the appropriate texture slot in the Inspector.</em></p>
 
@@ -119,7 +119,7 @@ function OnGUI () {
 
                 <p>At this point, you can run the game and see your new health status bar on the screen!</p>
 
-                <p><img class="img-fluid" title="Drag Health Width to Test" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/DragHealthWidthToTest.png" alt="" /></p>
+                <p><img title="Drag Health Width to Test" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/10/DragHealthWidthToTest.png" alt="" /></p>
 
                 <p>To get a feel for how the indicator will work during game play, drag the Health Width item left and right in the Inspector panel while the game is playing.</p>
 

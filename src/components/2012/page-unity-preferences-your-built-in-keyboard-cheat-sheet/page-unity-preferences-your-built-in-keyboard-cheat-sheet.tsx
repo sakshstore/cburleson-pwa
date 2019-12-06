@@ -46,7 +46,7 @@ export class PageUnityPreferencesYourBuiltInKeyboardCheatSheet {
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
 
                 <p>Learning keyboard commands in the Unity game development tool is essential to working fast and efficiently. To find them, you don’t have to search the Web for a cheat sheet; you can simply open Unity’s Preferences. From the menu bar, select Unity &gt; Preferences…</p>
-                <p><img class="img-fluid" title="Keyboard Commands in Unity Preferences" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/UnityKeysInPreferences.png" alt="Keyboard Commands in Unity Preferences" /></p>
+                <p><img  title="Keyboard Commands in Unity Preferences" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/UnityKeysInPreferences.png" alt="Keyboard Commands in Unity Preferences" /></p>
                 <p>Once the Unity Preferences view appears, select Keys and then choose from the list of Actions. The keyboard commands for the selected action are then shown.</p>
                 <p>We recommend that you avoid changing the keyboard action settings if you’re new to Unity because the default settings may be referenced in the documentation and tutorials that you’ll be learning from.</p>
 

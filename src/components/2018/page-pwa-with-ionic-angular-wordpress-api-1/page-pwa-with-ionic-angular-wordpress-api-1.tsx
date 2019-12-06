@@ -247,7 +247,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
         <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
 
 
-        <img class="img-fluid" alt="" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif" />
+        <img  alt="" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif" />
 
         <p>To keep my dev skills polished, I always like to have a little weekend side-hustle. This weekend, I decided to start building a Progressive Web App (PWA) for desktop and mobile that delivers WordPress content using Ionic, Angular, and the WordPress API. This is my “developer log”, which you can use as a tutorial for learning more about these technologies or for just understanding the code base, which I’m sharing on GitHub. You can fork the code and customize it for yourself, or share in the development and post pull requests with your improvements.</p>
 
@@ -297,13 +297,13 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
         <p>The ionic serve command will spawn the app in your web browser and it should look something like this:</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-1.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-1.jpg" alt=""  />
 
         <p>Isn’t that awesome? With just a couple of simple commands, we’ve got a running app and we’re ready to go!</p>
 
         <p>Now, let’s take a quick peek at the project structure that was created for us.</p>
 
-        <img src="https://codyburleson.com/wp-content/uploads/2018/09/ionpress-3.jpg" alt="" class="img-fluid" />
+        <img src="https://codyburleson.com/wp-content/uploads/2018/09/ionpress-3.jpg" alt=""  />
 
         <p>The <code>src/</code> directory has items such as the <code>index.html</code> file, configuration files for tests, an <code>assets/</code> folder for images, and the main <code>app/</code> directory for the app’s code.&nbsp;The <code>src/app/</code> directory contains the root app component and module as well as additional directories that contain features such as pages, components, services, etc.</p>
 
@@ -354,11 +354,11 @@ services:
 
         <p>You should now have a <code>wp/</code> directory in your project root, which has all the files for WordPress mapped into the container’s&nbsp;<code>/var/www/html</code> directory. It should now look something like this:</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-4.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-4.jpg" alt=""  />
 
         <p>With the containers running, you can now navigate to <code>http://localhost:8080</code> to complete the WordPress setup.</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress5.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress5.jpg" alt=""  />
 
         <p>If you want to see the output of the containers (to monitor for errors), you can follow their logs with:</p>
 
@@ -380,15 +380,15 @@ services:
 
         <p>Activate the plugin and then navigate to FakerPress &gt; Posts in the WordPress menu. Set a number of posts to generate and the date range for them. I’m choosing 42 posts for now, with a date range of 2010-09-07 to 2018-09-07. For everything else, I’m keeping the defaults for now.</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress6.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress6.jpg" alt=""  />
 
         <p>Also, in the Meta Field Rules section, you should enter actual range values for the possible width and height sizes for the images. The plugin doesn’t appear to use default values, I learned, so you’ll end up with broken featured images in your posts if you don’t enter hard values as shown below… </p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-meta-field-rules.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-meta-field-rules.jpg" alt=""  />
 
         <p>Click Generate and then give the plugin time to do its thing and voila! We now have a bunch of dummy content to work with…</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-7-694x1024.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-7-694x1024.jpg" alt=""  />
 
         <h3>Enable the WordPress REST API</h3>
 
@@ -430,7 +430,7 @@ services:
 
         <p>This presents a little menu as shown below.</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress8.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress8.jpg" alt=""  />
 
         <p>Select the service option and hit <kbd>enter</kbd>. Then, for the <code>Name/path of service:</code>, type <code>shared/Data</code>&nbsp;and hit <kbd>ENTER</kbd>.</p>
 
@@ -483,7 +483,7 @@ services:
 
         <p>Now if you run <code>ionic serve</code> and inspect the console, you should see that post items are being returned from WordPress and logged to the console…</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-9.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-9.jpg" alt=""  />
 
         <p>Sweet! Now we’ll put those items into the view using&nbsp;<code>ion-list</code> and <code>ion-item</code>. Update <code>src/app/home/home.page.html</code> with the following code…</p>
 
@@ -491,7 +491,7 @@ services:
 
         <p>Now, when you run the app with <code>ionic serve</code>, you should see something similar to the following.</p>
 
-        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-10.jpg" alt="" class="img-fluid" />
+        <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-10.jpg" alt=""  />
 
         <p>The app runs fine, but if we run <code>ng test</code> at this point, we’ll get some errors, because we also need to make the <code>HttpClientModule</code> available to the test specs for the HomePage and DataService.</p>
 

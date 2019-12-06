@@ -51,7 +51,7 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
 
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/TypeScriptBanner.png" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/TypeScriptBanner.png" alt="" /></p>
 
                 <p>You can now count me as one of the many JavaScript developers who thinks TypeScript is kick-ass. I don’t want to say that I’m old-school, but if you measure by Internet time, I’m pretty old. I grew up shoving JavaScript into onclick attributes years before jQuery was even a thing. It also means that lately, I’ve been feeling a lot like a toddler who just got tossed in the twelve-foot end of a swimming pool and told to swim. I’ve been paddling my ass off to keep up with all the newfangled ways that front-end development is done. Seems like there’s been a whole-scale revolution darn-near overnight – what with all the Node.js, CSS preprocessors, task runners like Gulp and all. But recently, I took a deep dive into TypeScript and I gotta say – it’s a breath of fresh air. I feel like someone just threw me a floaty.</p>
 

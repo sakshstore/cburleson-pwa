@@ -53,15 +53,15 @@ export class PageUseFibermeshInZbrush {
 
                 <p>PolyPaint the source model with the colors of your choice. When the fibers are generated, they will (depending on the Fibers settings) draw their coloration from that of the underlying surface.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-1.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-1.jpg" alt="" /></p>
 
                 <p>With Colorize on (so the polypaint shows) turn on Tool &gt; FiberMesh &gt; Preview…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-2.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-2.jpg" alt="" /></p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-3.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-3.jpg" alt="" /></p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-4.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-4.jpg" alt="" /></p>
 
                 <p>In the Tool &gt; FiberMesh &gt; Modifiers set the TColor (Tip Colorize) slider to 0 and the BColor (Base Colorize) slider to 1. The fibers should now take on the polypaint color.</p>
 
@@ -69,47 +69,47 @@ export class PageUseFibermeshInZbrush {
 
                 <p>Note: if you change the settings, or turn off Colorize, sometimes you need to move the BColor slider to get the fibers color to update.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-5.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-5.jpg" alt="" /></p>
 
                 <p>Draw a Mask (hold down CTRL while painting) to define where you wish to have your fibers grow from on the model.</p>
 
-                <p><img class="img-fluid" src="https://codyburleson.com/wp-content/uploads/2018/07/zbrush-fibermesh-6.jpg" alt="" /></p>
+                <p><img  src="https://codyburleson.com/wp-content/uploads/2018/07/zbrush-fibermesh-6.jpg" alt="" /></p>
 
                 <p>The intensity of the Mask will modulate the density and the length of the fibers. It is advised to change the Mask intensity by modifying the RGB Intensity of the Mask brush and/or by blurring your Mask after it has been drawn. Lower intensity will create a less dense area of fibers with a short length. At full Mask intensity the fibers will take on the full attributes defined in the Tool &gt; Fibers sub-palette. In the image above, I’ve masked the red area where I want the fibers. In the image below, I’ve turned on FiberMesh &gt; Preview and you can see that the fibers now only grow from the masked area.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-7.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-7.jpg" alt="" /></p>
 
                 <p>Once the surface’s PolyPaint and Mask have been defined, modify the Fibers settings according to the style you are looking for. Now press the Preview button. Your fibers will appear as a non-editable preview. At this stage, if you move your point of view or orientation of the model, the fibers will disappear until you release your mouse cursor. While in Preview mode, changing any of the Fibers settings will instantaneously update the fibers on your model without the need to cancel your operation and start from scratch.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-8.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-8.jpg" alt="" /></p>
 
                 <p>To evaluate your Fiber with complete shading, press the BPR button at the top right of the interface or use the Shift+R hotkey. This will render your FiberMesh so that you can be sure you’re happy with the results before proceeding to the sculpting and styling phase. Picking the right Material is also a key factor in your FiberMesh render.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-9.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-9.jpg" alt="" /></p>
 
                 <p>Once you are satisfied with your results, press the Tool &gt; FiberMesh &gt; Accept button to generate your FiberMesh as a new SubTool. You should now be able to see the generated SubTool in the SubTool palette as shown below.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-10.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-10.jpg" alt="" /></p>
 
                 <p>You may now repeat the above steps with a different Masked area or different settings. In this way, a single surface can have many different types of Fibers effects.</p>
 
                 <p>Here, I’ve inverted the mask so that previously masked area becomes unmasked and the previously unmasked area becomes masked…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-11.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-11.jpg" alt="" /></p>
 
                 <p>I pressed SHIFT + R for a Best Preview Render and adjusted the Tool &gt; FiberMesh &gt; Coverage until I got something I liked…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-12.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-12.jpg" alt="" /></p>
 
                 <p>I then clicked Accept to generate the second SubTool. Now, I have two FiberMesh subtools.</p>
 
                 <p>Preview…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-13.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-13.jpg" alt="" /></p>
 
                 <p>Best Preview Render (BPR)…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-14.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-14.jpg" alt="" /></p>
 
                 <p>Once your fibers have been generated, select the resulting SubTool in the Tool &gt; SubTool sub-palette. You may now start using the different sculpting brushes to alter the fibers, including their colors. That is to say, you can move on to the grooming phase of the workflow. But first, you may wish to save your FiberMesh settings to get the same look again at a later date.</p>
 
@@ -135,11 +135,11 @@ export class PageUseFibermeshInZbrush {
 
                 <p>FiberMesh Groomed (Preview)…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-15.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-15.jpg" alt="" /></p>
 
                 <p>FiberMesh Groomed (BPR)…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-16.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/zbrush-fibermesh-16.jpg" alt="" /></p>
 
                 <p>Some of the groom brushes:</p>
 

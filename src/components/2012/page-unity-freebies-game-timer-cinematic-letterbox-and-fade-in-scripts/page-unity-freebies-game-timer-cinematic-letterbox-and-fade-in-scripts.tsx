@@ -55,7 +55,7 @@ export class PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {
 
                 <p>The GUI Letterbox script draws a cinematic letterbox on the screen which can open up to expose the full view of your game at the time you specify. Along with some good music, this can help you set a very interesting mood! The letterbox script also contains fade-in functionality which you can use alone or in combination with the letterbox.</p>
 
-                <p><img class="img-fluid" title="GameTimeAndLetterboxOnGameObject" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/GameTimeAndLetterboxOnGameObject-1024x674.png" alt="" /></p>
+                <p><img  title="GameTimeAndLetterboxOnGameObject" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/GameTimeAndLetterboxOnGameObject-1024x674.png" alt="" /></p>
 
                 <p>Create a new GameObject and name it ‘GameController’. Drag both scripts onto a GameObject that’s in the scene.&nbsp;Select the GameObject that holds the script and then look in the Inspector panel.</p>
 

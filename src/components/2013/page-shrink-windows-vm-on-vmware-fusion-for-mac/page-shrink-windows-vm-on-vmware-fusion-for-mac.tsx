@@ -56,9 +56,9 @@ export class PageShrinkWindowsVmOnVmwareFusionForMac {
                         – In a command prompt, execute “sdelete -z c:” to zap all the free disk space on the C drive</li>
                     <li>Shut down the Windows VM and quit VMWare Fusion.</li>
                     <li>Go to Window &gt; Virtual Machines Library, select the VM and then click the icon to Refresh Disk Space (as shown below)…<br />
-                        <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/refreshDiskSpace.png" alt="" /></li>
+                        <img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/refreshDiskSpace.png" alt="" /></li>
                     <li>Finally, go to Virtual Machines &gt; Settings… &gt; General and click the Clean Up Virtual Machine button to reclaim disk space (shown below)…<br />
-                        <img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/vmWareRecliamSpace.png" alt="" /></li>
+                        <img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/vmWareRecliamSpace.png" alt="" /></li>
                 </ol>
 
             </ion-content>

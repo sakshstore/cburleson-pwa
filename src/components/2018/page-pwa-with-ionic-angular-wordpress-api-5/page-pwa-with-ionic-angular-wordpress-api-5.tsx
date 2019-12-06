@@ -56,7 +56,7 @@ export class PagePwaWithIonicAngularWordpressApi5 {
 
                 <p class="entry-meta">Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)</p>
 
-                <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif" class="img-fluid" alt="" />
+                <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionic4-ng-wp-client_featured.gif"  alt="" />
 
                 <p>In this weekend side-hustle series, we’re building a Progressive Web App (PWA) for desktop and mobile that delivers WordPress content using Ionic, Angular, and the WordPress API. In <a href="/pwa-with-ionic-angular-wordpress-api-1/">Part 1</a>, we got everything setup and working. In <a href="/pwa-with-ionic-angular-wordpress-api-2/">Part 2</a>, we created a richer presentation of the WordPress Posts using Ionic cards. In <a href="/pwa-with-ionic-angular-wordpress-api-3/">Part 3</a>, we implemented the single post view. In <a href="/pwa-with-ionic-angular-wordpress-api-4/">Part 4</a> we implemented paging functionality using Ionic’s Infinite Scroll (<a href="https://beta.ionicframework.com/docs/api/infinite-scroll/">ion-infinite-scroll</a>). Today, we’ll implement authentication so that we can login to WordPress. For now, this will just enable users to view private posts, but it will also be necessary in the future if we choose to allow administration from within the client app or other things like adding comments.</p>
 
@@ -139,7 +139,7 @@ export class PagePwaWithIonicAngularWordpressApi5 {
 
                 <p>Now if you run the app with <code>ionic serve</code>, we can see the new menu item and we can navigate the the Login page.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress18.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress18.jpg" alt="" /></p>
 
                 <p>Since this is a stable check-point, we’ll do a Git commit so that we can roll back if we screw something up later. Here, I am committing with the following Git commit message.</p>
 
@@ -288,7 +288,7 @@ define('JWT_AUTH_CORS_ENABLE', true);`}</code></pre>
 </ion-content>`}</code></pre>
 
                 <p>This will give us a simple login form like this…</p>
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form.jpg" alt="" /></p>
 
                 <h2>Modify Login page style</h2>
 
@@ -308,7 +308,7 @@ define('JWT_AUTH_CORS_ENABLE', true);`}</code></pre>
 }`}</code></pre>
                 <p>Of course, we might move these styles in the future to make them global (for now, they apply only to the LoginPage component).&nbsp;This will give us a simple red-boxed error prompt like this…</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form-err.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form-err.jpg" alt="" /></p>
 
                 <h2>Import the ReactiveFormsModule</h2>
 
@@ -489,7 +489,7 @@ export class DataService {
 
                 <p>And that is it! Now, if you run the app with <code>ionic serve</code>, you will not see any private posts at first. But, if you login successfully, you should then see all posts (both public and private). In the screenshot below, for example, the post your reading now is indicated as Private, which is how I keep them until I’m ready to make them public.</p>
 
-                <p><img class="img-fluid" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-post-login.jpg" alt="" /></p>
+                <p><img  src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-post-login.jpg" alt="" /></p>
 
                 <p>I’m committing the code to <a href="https://github.com/codyburleson/ionpress" rel="nofollow">Github</a> at this point with the following message:</p>
 

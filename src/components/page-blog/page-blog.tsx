@@ -56,7 +56,10 @@ export class PageBlog {
 
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
-    if (event) {
+    if(debug){
+      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o',event.detail.data);
+    }
+    if (event && typeof event.detail.data !== 'undefined') {
       this.excludeTracks = event.detail.data;
       // Set the excluded tracks in local storage
       set(EXCLUDE_TRACKS, event.detail.data);
