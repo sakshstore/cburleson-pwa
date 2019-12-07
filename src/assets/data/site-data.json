@@ -1,6 +1,17 @@
 {
   "content": [
     {
+      "id": "vietnam-1967-amphibious-combat",
+      "title": "Vietnam, 1967 - Amphibious Combat",
+      "teaser": "A a documentary video about Amphibious Warfare in Vietnam, I-Corps, 1967, by Donald F. Teal, MD.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
+      "datePublished": "2019/11/08",
+      "tracks": [
+        "Software Dev"
+      ],
+      "siteArea": "books"
+    },
+    {
       "id": "use-prism-js-in-ionic-stencil-app",
       "title": "How to use Prism.js in Ionic Stencil app",
       "teaser": "Procedure for using the Prism.js syntax highlighter in an Ionic / Stencil app.",

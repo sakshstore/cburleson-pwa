@@ -22,7 +22,7 @@ class BlogDataService {
             }
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/blog-data.json');
+            const rsp = await fetch('/assets/data/site-data.json');
             const json = await rsp.json();
             let data = this.processData(json);
             if (debug) {

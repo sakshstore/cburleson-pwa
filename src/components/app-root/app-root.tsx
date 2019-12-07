@@ -15,6 +15,8 @@ export class AppRoot {
 
   data: any;
 
+  unfoundRoute: any;
+
   appPages = [
     {
       title: 'Blog',
@@ -37,20 +39,6 @@ export class AppRoot {
       icon: 'ios-information-circle'
     }
   ];
-
-  /*
-  @Listen('ionRouteWillChange', { target: 'body'})
-  handleRouteWillChange(event: CustomEvent) {
-    if (debug) {
-      console.log('> AppRoot.handleRouteWillChange > event: %o', event);
-    }
-    var slug = event.detail.to.substring(1);
-    console.log('SLUG: %s', slug);
-
-    var postHeader = BlogData.getPostHeaderById(slug);
-    console.log('Post Header: %o', postHeader);
-  }
-  */
 
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
@@ -88,7 +76,35 @@ export class AppRoot {
     if (debug) {
       console.log('> AppRoot.componentWillLoad');
     }
+
+    // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
+    let routeId = window.location.pathname.substring(1);
+    let header = BlogData.getPostHeaderById(routeId);
+    // If there is no header returned, the slug does not exist in the blog posts
+    if (!header) {
+      // We also need to bypass any parametrized routes that we've defined...
+      switch (routeId) {
+        case 'photos/curt-bruce':
+          break;
+        case 'photos/gary-culp':
+          break;
+        case 'photos/jack-depope':
+          break;
+        case 'photos/james-haight':
+          break;
+        case 'photos/jim-shipp':
+          break;
+        case 'photos/ray-kelley':
+          break;
+        case 'photos/stanley-hall':
+          break;
+        default:
+          // ...and finally we dynamically add the undefined route to the router and point it to Page Not Found.
+          this.unfoundRoute = (<ion-route url={'/' + routeId + '/'} component="app-404-page-not-found" />);
+      }
+
+    }
   }
 
   renderRouter() {
@@ -96,17 +112,7 @@ export class AppRoot {
     const blogPostRoutes = [];
 
     this.data.content.map((item) => {
-      //if (item.type) {
-        //if (item.type == 'component') {
-          blogPostRoutes.push(<ion-route url={'/' + item.id + '/'} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>)
-        //} else if (item.type == 'json-file') {
-         // blogPostRoutes.push(<ion-route url="/" component="tab-blog"><ion-route url="/:name" component="app-blog-post"></ion-route></ion-route>)
-        //} else {
-         // console.error('- AppRoot.renderRouter > Required attribute "type" unrecognized for item: %o', item);
-        //}
-      //} else {
-       // console.error('- AppRoot.renderRouter > Required attribute "type" not defined for item: %o', item);
-      //}
+      blogPostRoutes.push(<ion-route url={'/' + item.id} component="tab-blog" ><ion-route component={'page-' + item.id}></ion-route></ion-route>)
     });
 
     return (
@@ -116,7 +122,6 @@ export class AppRoot {
           <ion-route url="/blog" component="tab-blog">
             <ion-route component="page-blog"></ion-route>
           </ion-route>
-
           <ion-route url="/books" component="tab-books">
             <ion-route component="page-books"></ion-route>
           </ion-route>
@@ -148,6 +153,7 @@ export class AppRoot {
           {blogPostRoutes}
 
         </ion-route>
+        {this.unfoundRoute}
 
       </ion-router>
     );

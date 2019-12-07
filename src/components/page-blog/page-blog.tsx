@@ -131,7 +131,7 @@ export class PageBlog {
 
             <ion-list>
               {this.data.content.map((item) =>
-                <ion-item href={'/' + item.id + '/'} hidden={item.hide}>
+                <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
                   <ion-thumbnail slot="start">
                     <img src={item.thumbnail} />
                   </ion-thumbnail>
