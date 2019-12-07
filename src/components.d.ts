@@ -32,6 +32,7 @@ export namespace Components {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
+  interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -39,12 +40,14 @@ export namespace Components {
   interface PageCmdChronBeaverCage {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
+  interface PageCreateClothingInZbrushExtrudingMaskedArea {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDockerCheatSheet {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
@@ -54,6 +57,7 @@ export namespace Components {
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
@@ -67,6 +71,7 @@ export namespace Components {
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageSetThePageTitleInAngular {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -90,6 +95,7 @@ export namespace Components {
   interface PageUnityRecipesHeadBobOrBreathe {}
   interface PageUnityRecipesLookTowardDirectionOfMovement {}
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
+  interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
@@ -179,6 +185,12 @@ declare global {
     new (): HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
   };
 
+  interface HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement extends Components.PageBendThingsInZbrushWithTheBendCurveModifier, HTMLStencilElement {}
+  var HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement: {
+    prototype: HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
+    new (): HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
+  };
+
   interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
   var HTMLPageBlogElement: {
     prototype: HTMLPageBlogElement;
@@ -221,6 +233,12 @@ declare global {
     new (): HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
   };
 
+  interface HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement extends Components.PageCreateClothingInZbrushExtrudingMaskedArea, HTMLStencilElement {}
+  var HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement: {
+    prototype: HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
+    new (): HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
+  };
+
   interface HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement extends Components.PageCreateNewSubtoolFromMaskedAreaInZbrush, HTMLStencilElement {}
   var HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement: {
     prototype: HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
@@ -255,6 +273,12 @@ declare global {
   var HTMLPageDeleteHiddenGeometryInZbrushElement: {
     prototype: HTMLPageDeleteHiddenGeometryInZbrushElement;
     new (): HTMLPageDeleteHiddenGeometryInZbrushElement;
+  };
+
+  interface HTMLPageDockerCheatSheetElement extends Components.PageDockerCheatSheet, HTMLStencilElement {}
+  var HTMLPageDockerCheatSheetElement: {
+    prototype: HTMLPageDockerCheatSheetElement;
+    new (): HTMLPageDockerCheatSheetElement;
   };
 
   interface HTMLPageFixForGitAfterMacosMojaveUpgradeElement extends Components.PageFixForGitAfterMacosMojaveUpgrade, HTMLStencilElement {}
@@ -309,6 +333,12 @@ declare global {
   var HTMLPageListIbmDb2CommandsElement: {
     prototype: HTMLPageListIbmDb2CommandsElement;
     new (): HTMLPageListIbmDb2CommandsElement;
+  };
+
+  interface HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement extends Components.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired, HTMLStencilElement {}
+  var HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement: {
+    prototype: HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
+    new (): HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
   };
 
   interface HTMLPageMirrorPolygroupOnSubtoolInZbrushElement extends Components.PageMirrorPolygroupOnSubtoolInZbrush, HTMLStencilElement {}
@@ -387,6 +417,12 @@ declare global {
   var HTMLPageScriptForRotatingUnityGameObject90DegreesElement: {
     prototype: HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     new (): HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+  };
+
+  interface HTMLPageSetThePageTitleInAngularElement extends Components.PageSetThePageTitleInAngular, HTMLStencilElement {}
+  var HTMLPageSetThePageTitleInAngularElement: {
+    prototype: HTMLPageSetThePageTitleInAngularElement;
+    new (): HTMLPageSetThePageTitleInAngularElement;
   };
 
   interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
@@ -527,6 +563,12 @@ declare global {
     new (): HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
   };
 
+  interface HTMLPageUseAutoMaskingByPolygroupsInZbrushElement extends Components.PageUseAutoMaskingByPolygroupsInZbrush, HTMLStencilElement {}
+  var HTMLPageUseAutoMaskingByPolygroupsInZbrushElement: {
+    prototype: HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
+    new (): HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
+  };
+
   interface HTMLPageUseFibermeshInZbrushElement extends Components.PageUseFibermeshInZbrush, HTMLStencilElement {}
   var HTMLPageUseFibermeshInZbrushElement: {
     prototype: HTMLPageUseFibermeshInZbrushElement;
@@ -576,6 +618,7 @@ declare global {
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-art': HTMLPageArtElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
+    'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
@@ -583,12 +626,14 @@ declare global {
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
+    'page-create-clothing-in-zbrush-extruding-masked-area': HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
     'page-create-new-subtool-from-masked-area-in-zbrush': HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
     'page-create-player-health-status-indicator-for-unity-gui-part-1': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
+    'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
@@ -598,6 +643,7 @@ declare global {
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
+    'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pink-hearts': HTMLPagePinkHeartsElement;
@@ -611,6 +657,7 @@ declare global {
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+    'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
@@ -634,6 +681,7 @@ declare global {
     'page-unity-recipes-head-bob-or-breathe': HTMLPageUnityRecipesHeadBobOrBreatheElement;
     'page-unity-recipes-look-toward-direction-of-movement': HTMLPageUnityRecipesLookTowardDirectionOfMovementElement;
     'page-unity-recipes-look-toward-direction-of-velocity': HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
+    'page-use-auto-masking-by-polygroups-in-zbrush': HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
     'page-use-fibermesh-in-zbrush': HTMLPageUseFibermeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
@@ -666,6 +714,7 @@ declare namespace LocalJSX {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
+  interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -673,12 +722,14 @@ declare namespace LocalJSX {
   interface PageCmdChronBeaverCage {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
+  interface PageCreateClothingInZbrushExtrudingMaskedArea {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDockerCheatSheet {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
@@ -688,6 +739,7 @@ declare namespace LocalJSX {
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
@@ -701,6 +753,7 @@ declare namespace LocalJSX {
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageSetThePageTitleInAngular {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -724,6 +777,7 @@ declare namespace LocalJSX {
   interface PageUnityRecipesHeadBobOrBreathe {}
   interface PageUnityRecipesLookTowardDirectionOfMovement {}
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
+  interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
@@ -745,6 +799,7 @@ declare namespace LocalJSX {
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-art': PageArt;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
+    'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
@@ -752,12 +807,14 @@ declare namespace LocalJSX {
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
+    'page-create-clothing-in-zbrush-extruding-masked-area': PageCreateClothingInZbrushExtrudingMaskedArea;
     'page-create-new-subtool-from-masked-area-in-zbrush': PageCreateNewSubtoolFromMaskedAreaInZbrush;
     'page-create-player-health-status-indicator-for-unity-gui-part-1': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
+    'page-docker-cheat-sheet': PageDockerCheatSheet;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
@@ -767,6 +824,7 @@ declare namespace LocalJSX {
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
+    'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pink-hearts': PagePinkHearts;
@@ -780,6 +838,7 @@ declare namespace LocalJSX {
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
+    'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
@@ -803,6 +862,7 @@ declare namespace LocalJSX {
     'page-unity-recipes-head-bob-or-breathe': PageUnityRecipesHeadBobOrBreathe;
     'page-unity-recipes-look-toward-direction-of-movement': PageUnityRecipesLookTowardDirectionOfMovement;
     'page-unity-recipes-look-toward-direction-of-velocity': PageUnityRecipesLookTowardDirectionOfVelocity;
+    'page-use-auto-masking-by-polygroups-in-zbrush': PageUseAutoMaskingByPolygroupsInZbrush;
     'page-use-fibermesh-in-zbrush': PageUseFibermeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
@@ -831,6 +891,7 @@ declare module "@stencil/core" {
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
+      'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
@@ -838,12 +899,14 @@ declare module "@stencil/core" {
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
+      'page-create-clothing-in-zbrush-extruding-masked-area': LocalJSX.PageCreateClothingInZbrushExtrudingMaskedArea & JSXBase.HTMLAttributes<HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement>;
       'page-create-new-subtool-from-masked-area-in-zbrush': LocalJSX.PageCreateNewSubtoolFromMaskedAreaInZbrush & JSXBase.HTMLAttributes<HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement>;
       'page-create-player-health-status-indicator-for-unity-gui-part-1': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-2': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
+      'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
@@ -853,6 +916,7 @@ declare module "@stencil/core" {
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
+      'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
@@ -866,6 +930,7 @@ declare module "@stencil/core" {
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
+      'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
@@ -889,6 +954,7 @@ declare module "@stencil/core" {
       'page-unity-recipes-head-bob-or-breathe': LocalJSX.PageUnityRecipesHeadBobOrBreathe & JSXBase.HTMLAttributes<HTMLPageUnityRecipesHeadBobOrBreatheElement>;
       'page-unity-recipes-look-toward-direction-of-movement': LocalJSX.PageUnityRecipesLookTowardDirectionOfMovement & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfMovementElement>;
       'page-unity-recipes-look-toward-direction-of-velocity': LocalJSX.PageUnityRecipesLookTowardDirectionOfVelocity & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement>;
+      'page-use-auto-masking-by-polygroups-in-zbrush': LocalJSX.PageUseAutoMaskingByPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageUseAutoMaskingByPolygroupsInZbrushElement>;
       'page-use-fibermesh-in-zbrush': LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;

@@ -1,17 +1,6 @@
 {
   "content": [
     {
-      "id": "vietnam-1967-amphibious-combat",
-      "title": "Vietnam, 1967 - Amphibious Combat",
-      "teaser": "A a documentary video about Amphibious Warfare in Vietnam, I-Corps, 1967, by Donald F. Teal, MD.",
-      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
-      "datePublished": "2019/11/08",
-      "tracks": [
-        "Software Dev"
-      ],
-      "siteArea": "books"
-    },
-    {
       "id": "use-prism-js-in-ionic-stencil-app",
       "title": "How to use Prism.js in Ionic Stencil app",
       "teaser": "Procedure for using the Prism.js syntax highlighter in an Ionic / Stencil app.",
@@ -49,6 +38,16 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/10/07",
       "dateModified": "2019/04/14",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "bend-things-in-zbrush-with-the-bend-curve-modifier",
+      "title": "How to bend things in ZBrush with the Bend Curve modifier",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/07",
+      "dateModified": "2019/12/02",
       "tracks": [
         "ZBrush"
       ]
@@ -135,7 +134,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/09/03",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -145,7 +144,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -155,7 +154,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -165,7 +164,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -235,6 +234,17 @@
       ]
     },
     {
+      "id": "create-clothing-in-zbrush-extruding-masked-area",
+      "title": "How to create clothing in ZBrush by extruding a masked area",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/07/08",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "mirror-polygroup-on-subtool-in-zbrush",
       "title": "How to mirror a polygroup on a subtool in ZBrush",
       "teaser": "",
@@ -251,7 +261,15 @@
       "teaser": "",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
-      "dateModified": "2019/7/29",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "use-auto-masking-by-polygroups-in-zbrush",
+      "title": "Use auto masking by polygroups in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
       "tracks": [
         "ZBrush"
       ]
@@ -351,6 +369,17 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
       "datePublished": "2017/12/03",
       "dateModified": "2019/11/12",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "docker-cheat-sheet",
+      "title": "Docker cheat sheet",
+      "teaser": "Cheat sheet of commonly used docker commands.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-docker.svg",
+      "datePublished": "2017/10/20",
+      "dateModified": "2018/09/22",
       "tracks": [
         "Software Dev"
       ]
@@ -487,6 +516,17 @@
       ]
     },
     {
+      "id": "set-the-page-title-in-angular",
+      "title": "Set the page title in Angular",
+      "teaser": "Angular provides a Title service that you can use to set the title of a page. Here’s how to use it.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
+      "datePublished": "2016/10/31",
+      "dateModified": "2018/07/13",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "format-currency-in-angular",
       "title": "Format Currency in Angular",
       "teaser": "How format a number into currency with the Angular currency pipe.",
@@ -536,7 +576,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2015/04/01",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -561,13 +601,23 @@
       ]
     },
     {
+      "id": "mapping-to-a-view-in-spring-when-no-controller-logic-is-required",
+      "title": "Mapping to a view in Spring when no controller logic is required",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
+      "datePublished": "2013/07/20",
+      "dateModified": "2018/7/15",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "script-for-rotating-unity-game-object-90-degrees",
       "title": "Script for rotating a Unity game object 90 degrees",
       "teaser": "Unity behavior script that rotates object 90 degrees when the script’s rotate function is called.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2013/05/22",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -599,7 +649,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/14",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -609,7 +659,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/11",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -619,7 +669,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/08",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -629,7 +679,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/16",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
@@ -639,7 +689,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/13",
       "tracks": [
-        "Software Dev"
+        "Unity"
       ]
     },
     {
