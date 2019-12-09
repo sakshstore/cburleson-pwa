@@ -330,6 +330,17 @@
       ]
     },
     {
+      "id": "make-a-zbrush-speed-sculpt-timelapse-video",
+      "title": "How to make a ZBrush speed sculpt timelapse video",
+      "teaser": "Here’s a procedure to setup ZBrush and record your own speed-sculpt video.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "sparql-examples-construct",
       "title": "SPARQL examples – construct",
       "teaser": "Example SPARQL queries that can help you list the classes in an ontology.",
@@ -369,6 +380,16 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
       "datePublished": "2017/12/03",
       "dateModified": "2019/11/12",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "install-oracle-java-8-on-ubuntu",
+      "title": "Install Oracle Java 8 on Ubuntu",
+      "teaser": "How to install Oracle Java 8 on Ubuntu (in may case, Ubuntu 16.04 LTS)",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ubuntu.svg",
+      "datePublished": "2017/10/24",
       "tracks": [
         "Software Dev"
       ]
@@ -516,6 +537,16 @@
       ]
     },
     {
+      "id": "serve-static-resources-with-spring-boot",
+      "title": "Serve static resources with Spring Boot",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
+      "datePublished": "2017/04/05",
+      "dateModified": "2018/09/24",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "set-the-page-title-in-angular",
       "title": "Set the page title in Angular",
       "teaser": "Angular provides a Title service that you can use to set the title of a page. Here’s how to use it.",
@@ -555,6 +586,17 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-apache.svg",
       "datePublished": "2016/02/19",
       "dateModified": "2018/09/25",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "logging-with-spring-boot",
+      "title": "Logging with Spring Boot",
+      "teaser":"Quick and simple tips to get your Spring Boot logs rolling.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
+      "datePublished": "2013/07/20",
+      "dateModified": "2018/7/29",
       "tracks": [
         "Software Dev"
       ]
@@ -690,6 +732,16 @@
       "datePublished": "2012/10/13",
       "tracks": [
         "Unity"
+      ]
+    },
+    {
+      "id": "render-the-keys-and-values-from-a-map-in-freemarker",
+      "title": "Render the keys and values from a map in Freemarker",
+      "teaser": "how to get the keys and values of a Map (such as a HashMap) from within a Freemarker template.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2009/12/24",
+      "tracks": [
+        "Software Dev"
       ]
     },
     {

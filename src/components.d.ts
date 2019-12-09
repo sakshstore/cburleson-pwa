@@ -54,9 +54,12 @@ export namespace Components {
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageLoggingWithSpringBoot {}
+  interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -68,9 +71,11 @@ export namespace Components {
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
+  interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
@@ -317,6 +322,12 @@ declare global {
     new (): HTMLPageIndexOfItemWithinAngularNgforLoopElement;
   };
 
+  interface HTMLPageInstallOracleJava8OnUbuntuElement extends Components.PageInstallOracleJava8OnUbuntu, HTMLStencilElement {}
+  var HTMLPageInstallOracleJava8OnUbuntuElement: {
+    prototype: HTMLPageInstallOracleJava8OnUbuntuElement;
+    new (): HTMLPageInstallOracleJava8OnUbuntuElement;
+  };
+
   interface HTMLPageIsolateAPolygroupInZbrushElement extends Components.PageIsolateAPolygroupInZbrush, HTMLStencilElement {}
   var HTMLPageIsolateAPolygroupInZbrushElement: {
     prototype: HTMLPageIsolateAPolygroupInZbrushElement;
@@ -333,6 +344,18 @@ declare global {
   var HTMLPageListIbmDb2CommandsElement: {
     prototype: HTMLPageListIbmDb2CommandsElement;
     new (): HTMLPageListIbmDb2CommandsElement;
+  };
+
+  interface HTMLPageLoggingWithSpringBootElement extends Components.PageLoggingWithSpringBoot, HTMLStencilElement {}
+  var HTMLPageLoggingWithSpringBootElement: {
+    prototype: HTMLPageLoggingWithSpringBootElement;
+    new (): HTMLPageLoggingWithSpringBootElement;
+  };
+
+  interface HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement extends Components.PageMakeAZbrushSpeedSculptTimelapseVideo, HTMLStencilElement {}
+  var HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement: {
+    prototype: HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
+    new (): HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
   };
 
   interface HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement extends Components.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired, HTMLStencilElement {}
@@ -401,6 +424,12 @@ declare global {
     new (): HTMLPageRayKelleySilverStarElement;
   };
 
+  interface HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement extends Components.PageRenderTheKeysAndValuesFromAMapInFreemarker, HTMLStencilElement {}
+  var HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement: {
+    prototype: HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
+    new (): HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
+  };
+
   interface HTMLPageRespondToButtonClickWithObservableElement extends Components.PageRespondToButtonClickWithObservable, HTMLStencilElement {}
   var HTMLPageRespondToButtonClickWithObservableElement: {
     prototype: HTMLPageRespondToButtonClickWithObservableElement;
@@ -417,6 +446,12 @@ declare global {
   var HTMLPageScriptForRotatingUnityGameObject90DegreesElement: {
     prototype: HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     new (): HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+  };
+
+  interface HTMLPageServeStaticResourcesWithSpringBootElement extends Components.PageServeStaticResourcesWithSpringBoot, HTMLStencilElement {}
+  var HTMLPageServeStaticResourcesWithSpringBootElement: {
+    prototype: HTMLPageServeStaticResourcesWithSpringBootElement;
+    new (): HTMLPageServeStaticResourcesWithSpringBootElement;
   };
 
   interface HTMLPageSetThePageTitleInAngularElement extends Components.PageSetThePageTitleInAngular, HTMLStencilElement {}
@@ -640,9 +675,12 @@ declare global {
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+    'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
+    'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
+    'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
@@ -654,9 +692,11 @@ declare global {
     'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
+    'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+    'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
@@ -736,9 +776,12 @@ declare namespace LocalJSX {
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageListIbmDb2Commands {}
+  interface PageLoggingWithSpringBoot {}
+  interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -750,9 +793,11 @@ declare namespace LocalJSX {
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
+  interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
@@ -821,9 +866,12 @@ declare namespace LocalJSX {
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
+    'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
+    'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
+    'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
@@ -835,9 +883,11 @@ declare namespace LocalJSX {
     'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
+    'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
+    'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
@@ -913,9 +963,12 @@ declare module "@stencil/core" {
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
+      'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
+      'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
+      'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
@@ -927,9 +980,11 @@ declare module "@stencil/core" {
       'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
+      'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
+      'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
