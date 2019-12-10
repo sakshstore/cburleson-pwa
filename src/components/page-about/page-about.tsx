@@ -39,6 +39,18 @@ export class PageAbout {
         <p><strong>Work in progress: <ion-router-link href="/cage" routerDirection="forward">The Cage</ion-router-link></strong></p>
         <p>I occasionally share things that I learn about the art of story-telling and the craft of writing. I also post an occasional piece of creative writing or memoir.</p>
         <p>Thanks for visiting! I’m glad you stopped by.</p>
+        
+        <h2>Life Events</h2>
+        <ul>
+          <li>1989 - Graduated from C.F. Brewer High School in White Settlement, Texas.</li>
+          <li>1994 - Married Karlisa McKenney.</li>
+          <li>1995 - Son, Caden Burleson born. Mother, Donna Nobles died.</li>
+          <li>1997 - Daughter, Bailey Burleson born.</li>
+          <li>2001 - Stepfather, William Charles Nobles died.</li>
+          <li>2004 - Grandmother, Mary &quot;Mom&quot; Williams died.</li>
+          <li>2007 - Started company, Base22 (originally as Burleson Technology Group).</li>
+          <li>2019 - Left Base22 to pursue lifelong dream of being a writer. Granddaughter, Harlyn Faith Born.</li>
+        </ul>
       </ion-content>
     ];
   }

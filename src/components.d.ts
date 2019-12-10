@@ -25,6 +25,7 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
+  interface AppTabs {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
@@ -48,12 +49,14 @@ export namespace Components {
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDockerCheatSheet {}
+  interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
@@ -71,6 +74,7 @@ export namespace Components {
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
+  interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
@@ -91,7 +95,6 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
-  interface PageTabs {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -146,6 +149,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLAppTabsElement extends Components.AppTabs, HTMLStencilElement {}
+  var HTMLAppTabsElement: {
+    prototype: HTMLAppTabsElement;
+    new (): HTMLAppTabsElement;
   };
 
   interface HTMLPage7QuintessentialBrushesForZbrushBeginnersElement extends Components.Page7QuintessentialBrushesForZbrushBeginners, HTMLStencilElement {}
@@ -286,6 +295,12 @@ declare global {
     new (): HTMLPageDockerCheatSheetElement;
   };
 
+  interface HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement extends Components.PageFindJavaClassesOrPackagesContainedInJarFiles, HTMLStencilElement {}
+  var HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement: {
+    prototype: HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
+    new (): HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
+  };
+
   interface HTMLPageFixForGitAfterMacosMojaveUpgradeElement extends Components.PageFixForGitAfterMacosMojaveUpgrade, HTMLStencilElement {}
   var HTMLPageFixForGitAfterMacosMojaveUpgradeElement: {
     prototype: HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
@@ -320,6 +335,12 @@ declare global {
   var HTMLPageIndexOfItemWithinAngularNgforLoopElement: {
     prototype: HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     new (): HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+  };
+
+  interface HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element extends Components.PageInstallJavaPluginFor64bitFirefoxOnCentos64, HTMLStencilElement {}
+  var HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element: {
+    prototype: HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
+    new (): HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
   };
 
   interface HTMLPageInstallOracleJava8OnUbuntuElement extends Components.PageInstallOracleJava8OnUbuntu, HTMLStencilElement {}
@@ -422,6 +443,12 @@ declare global {
   var HTMLPageRayKelleySilverStarElement: {
     prototype: HTMLPageRayKelleySilverStarElement;
     new (): HTMLPageRayKelleySilverStarElement;
+  };
+
+  interface HTMLPageRdfSyntaxExamplesElement extends Components.PageRdfSyntaxExamples, HTMLStencilElement {}
+  var HTMLPageRdfSyntaxExamplesElement: {
+    prototype: HTMLPageRdfSyntaxExamplesElement;
+    new (): HTMLPageRdfSyntaxExamplesElement;
   };
 
   interface HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement extends Components.PageRenderTheKeysAndValuesFromAMapInFreemarker, HTMLStencilElement {}
@@ -544,12 +571,6 @@ declare global {
     new (): HTMLPageSparqlExamplesSelectElement;
   };
 
-  interface HTMLPageTabsElement extends Components.PageTabs, HTMLStencilElement {}
-  var HTMLPageTabsElement: {
-    prototype: HTMLPageTabsElement;
-    new (): HTMLPageTabsElement;
-  };
-
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -646,6 +667,7 @@ declare global {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
+    'app-tabs': HTMLAppTabsElement;
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
@@ -669,12 +691,14 @@ declare global {
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
+    'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
+    'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
@@ -692,6 +716,7 @@ declare global {
     'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
+    'page-rdf-syntax-examples': HTMLPageRdfSyntaxExamplesElement;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
@@ -712,7 +737,6 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
-    'page-tabs': HTMLPageTabsElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -747,6 +771,7 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
+  interface AppTabs {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
@@ -770,12 +795,14 @@ declare namespace LocalJSX {
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDockerCheatSheet {}
+  interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
+  interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
@@ -793,6 +820,7 @@ declare namespace LocalJSX {
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
   interface PageRayKelleySilverStar {}
+  interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
@@ -813,7 +841,6 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
-  interface PageTabs {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -837,6 +864,7 @@ declare namespace LocalJSX {
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
     'app-root': AppRoot;
+    'app-tabs': AppTabs;
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
@@ -860,12 +888,14 @@ declare namespace LocalJSX {
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
+    'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
+    'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
@@ -883,6 +913,7 @@ declare namespace LocalJSX {
     'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
+    'page-rdf-syntax-examples': PageRdfSyntaxExamples;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
@@ -903,7 +934,6 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
-    'page-tabs': PageTabs;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -934,6 +964,7 @@ declare module "@stencil/core" {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'app-tabs': LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
@@ -957,12 +988,14 @@ declare module "@stencil/core" {
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
+      'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
+      'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
@@ -980,6 +1013,7 @@ declare module "@stencil/core" {
       'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
+      'page-rdf-syntax-examples': LocalJSX.PageRdfSyntaxExamples & JSXBase.HTMLAttributes<HTMLPageRdfSyntaxExamplesElement>;
       'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
@@ -1000,7 +1034,6 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
-      'page-tabs': LocalJSX.PageTabs & JSXBase.HTMLAttributes<HTMLPageTabsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

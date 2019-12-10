@@ -4,10 +4,10 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-  tag: 'page-tabs',
-  styleUrl: 'page-tabs.css',
+  tag: 'app-tabs',
+  styleUrl: 'app-tabs.css',
 })
-export class PageTabs {
+export class AppTabs {
 
   @Prop({ connect: 'ion-menu-controller' }) menuCtrl: HTMLIonMenuControllerElement;
 

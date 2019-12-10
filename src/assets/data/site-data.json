@@ -406,6 +406,16 @@
       ]
     },
     {
+      "id": "rdf-syntax-examples",
+      "title": "RDF syntax examples",
+      "teaser": "One RDF example in seven different serialization formats.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
+      "datePublished": "2017/08/31",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "sparql-examples-ask",
       "title": "SPARQL examples – ask",
       "teaser": "SPARQL query examples using 'ASK'.",
@@ -663,6 +673,15 @@
       ]
     },
     {
+      "id": "install-java-plugin-for-64bit-firefox-on-centos-6-4",
+      "title": "Install the Java plugin for 64bit Firefox on CentOS 6.4",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-centos.svg",
+      "datePublished": "2013/05/03",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "automatically-build-and-include-one-eclipse-project-into-another",
       "title": "Automatically build and include one Eclipse project into another",
       "teaser": "In your Eclipse IDE, you can automatically build and consume one project into another as a Java jar file. Here's how.",
@@ -732,6 +751,16 @@
       "datePublished": "2012/10/13",
       "tracks": [
         "Unity"
+      ]
+    },
+    {
+      "id": "find-java-classes-or-packages-contained-in-jar-files",
+      "title": "Find Java classes or packages contained in JAR files",
+      "teaser": "Here's a tool that can help you search through JAR files to find Java classes or packages.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2011/04/18",
+      "tracks": [
+        "Software Dev"
       ]
     },
     {

@@ -13,10 +13,10 @@ import { Component, h } from '@stencil/core';
 // import '/assets/prismjs/prism-turtle.min.js';
 // import '/assets/prismjs/prism-sparql.min.js';
 
-import { BlogData } from '../../services/blog-data';
+import { BlogData } from '../../../services/blog-data';
 
 
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({

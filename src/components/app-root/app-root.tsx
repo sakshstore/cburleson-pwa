@@ -118,7 +118,7 @@ export class AppRoot {
     return (
       <ion-router useHash={false}>
         <ion-route-redirect from="/" to='/blog' />
-        <ion-route component="page-tabs">
+        <ion-route component="app-tabs">
           <ion-route url="/blog" component="tab-blog">
             <ion-route component="page-blog"></ion-route>
           </ion-route>

@@ -186,3 +186,9 @@ ion-thumbnail {
   width: var(--size);
   height: var(--size);
 }
+
+.alignleft {
+  display: inline;
+  float: left;
+  margin-right: 1.5em;
+}
