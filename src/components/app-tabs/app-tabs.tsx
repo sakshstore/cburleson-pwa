@@ -22,7 +22,10 @@ export class AppTabs {
   render() {
     return [
       <ion-tabs>
-        <ion-tab tab="tab-blog">
+        <ion-tab tab="tab-home">
+          <ion-nav></ion-nav>
+        </ion-tab>
+        <ion-tab tab="tab-story">
           <ion-nav></ion-nav>
         </ion-tab>
         <ion-tab tab="tab-books">
@@ -36,9 +39,13 @@ export class AppTabs {
         </ion-tab>
 
         <ion-tab-bar slot="bottom">
-          <ion-tab-button tab="tab-blog">
-            <ion-icon name="ios-megaphone"></ion-icon>
-            <ion-label>Blog</ion-label>
+          <ion-tab-button tab="tab-home">
+            <ion-icon name="ios-home"></ion-icon>
+            <ion-label>Home</ion-label>
+          </ion-tab-button>
+          <ion-tab-button tab="tab-story">
+            <ion-icon name="ios-book"></ion-icon>
+            <ion-label>Story</ion-label>
           </ion-tab-button>
           <ion-tab-button tab="tab-books">
             <ion-icon name="ios-book"></ion-icon>

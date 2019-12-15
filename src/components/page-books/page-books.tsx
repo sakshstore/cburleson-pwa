@@ -55,10 +55,6 @@ export class PageBooks {
           )}
         </ion-list>
 
-        <h1>What I'm Reading</h1>
-        <h1>What I Want to Read</h1>
-        <h1>What I've Read</h1>
-
       </ion-content>
     ];
   }

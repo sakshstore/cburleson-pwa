@@ -30,7 +30,7 @@ export class PageTemplatePage {
     header: any;
 
     async componentWillLoad() {
-        if(debug) {
+        if (debug) {
             console.log('> PageTemplatePage.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -44,7 +44,7 @@ export class PageTemplatePage {
 
     // Use this if using source code blocks to be formatted by prism.js...
     // componentDidLoad() {
-        // setTimeout(() => Prism.highlightAll(), 0)
+    // setTimeout(() => Prism.highlightAll(), 0)
     // }
 
     render() {
@@ -59,11 +59,21 @@ export class PageTemplatePage {
             </ion-header>,
 
             <ion-content class="ion-padding">
-                
-                <h1>{this.header.title}</h1>
-                
-                <app-entry-meta header={this.header} />
-            
+
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
+
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
             </ion-content>
 
         ];

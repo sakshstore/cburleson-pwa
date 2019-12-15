@@ -4,6 +4,7 @@
 }
 .leftImageContainer {
     max-width: 225px;
+    margin-bottom: .5em;
 }
 @media (min-width: 480px) {
     .leftImageContainer {

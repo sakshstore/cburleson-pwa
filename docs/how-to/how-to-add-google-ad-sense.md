@@ -10,8 +10,7 @@ Paste it into the HTML of https://codyburleson.com, between the <head> and </hea
 <script data-ad-client="ca-pub-7370676338719207" async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 ```
 
-
-Create ab ad unit and get the snippet code to place. Here's one I am using:
+Create an ad unit and get the snippet code to place. Here's one I am using:
 
 Sidebar1 (square)
 

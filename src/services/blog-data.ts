@@ -14,8 +14,9 @@ class BlogDataService {
 
     async load() {
         if (debug) {
-            console.log('> BlogDataService.load')
+            console.log('> BlogDataService.load');
         }
+        
         if (this.data) {
             if (debug) {
                 console.log('< BlogDataService.load < returning cached data: \n %o', this.data);

@@ -190,12 +190,32 @@
       ]
     },
     {
+      "id": "female-anatomy-out-of-the-box-in-zbrush",
+      "title": "Female anatomy out-of-the-box in ZBrush",
+      "teaser": "Hidden in ZBrush, there’s a fabulously detailed female anatomy model that comes out-of-the-box.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2017/07/14",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "zbrush-keyboard-shortcuts",
       "title": "ZBrush Keyboard Shortcuts",
       "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/07/04",
       "dateModified": "2019/04/17",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "use-micromesh-in-zbrush",
+      "title": "How to use MicroMesh in ZBrush",
+      "teaser" : "A quick procedure for using MicroMesh in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/06/03",
       "tracks": [
         "ZBrush"
       ]
@@ -270,6 +290,26 @@
       "title": "Use auto masking by polygroups in ZBrush",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-sketch-with-zspheres-in-zbrush",
+      "title": "How to sketch with ZSpheres in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "zbrush-resources-online",
+      "title": "ZBrush resources online",
+      "teaser": "A list of online resources related to ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/28",
+      "dateModified": "2019/12/02",
       "tracks": [
         "ZBrush"
       ]
@@ -403,6 +443,16 @@
       "dateModified": "2018/09/22",
       "tracks": [
         "Software Dev"
+      ]
+    },
+    {
+      "id": "scene-and-sequel-pattern-for-writers",
+      "title": "The Scene and Sequel Pattern for writers",
+      "teaser": "This technique is one that can help you create a solid pacing with the powerful and emotional experience that readers crave.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2017/10/12",
+      "tracks": [
+        "Storycraft and Writing"
       ]
     },
     {
@@ -556,6 +606,26 @@
         "Software Dev"
       ]
     },
+        {
+      "id": "confluence-panel-macro",
+      "title": "Confluence Panel Macro",
+      "teaser":"A macro plugin I made for Atlassian Confluence that mimics a Bootstrap 3 Panel.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-confluence.svg",
+      "datePublished": "2017/04/04",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "logging-with-spring-boot",
+      "title": "Logging with Spring Boot",
+      "teaser":"Quick and simple tips to get your Spring Boot logs rolling.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
+      "datePublished": "2017/04/04",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
     {
       "id": "set-the-page-title-in-angular",
       "title": "Set the page title in Angular",
@@ -596,17 +666,6 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-apache.svg",
       "datePublished": "2016/02/19",
       "dateModified": "2018/09/25",
-      "tracks": [
-        "Software Dev"
-      ]
-    },
-    {
-      "id": "logging-with-spring-boot",
-      "title": "Logging with Spring Boot",
-      "teaser":"Quick and simple tips to get your Spring Boot logs rolling.",
-      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
-      "datePublished": "2013/07/20",
-      "dateModified": "2018/7/29",
       "tracks": [
         "Software Dev"
       ]
@@ -688,6 +747,16 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
       "datePublished": "2013/04/21",
       "dateModified": "2019/11/21",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "xmlaccess-samples",
+      "title": "XMLAccess samples",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/01/24",
+      "dateModified": "2018/07/16",
       "tracks": [
         "Software Dev"
       ]

@@ -34,11 +34,11 @@ export namespace Components {
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
-  interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
+  interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateClothingInZbrushExtrudingMaskedArea {}
@@ -49,17 +49,21 @@ export namespace Components {
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDockerCheatSheet {}
+  interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageLifeEvents {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
@@ -78,6 +82,7 @@ export namespace Components {
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
+  interface PageSceneAndSequelPatternForWriters {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
@@ -95,6 +100,7 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStory {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -105,11 +111,14 @@ export namespace Components {
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
   interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
+  interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageWeldMultipleSubtoolsInZbrush {}
+  interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
+  interface PageZbrushResourcesOnline {}
 }
 
 declare global {
@@ -205,12 +214,6 @@ declare global {
     new (): HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
   };
 
-  interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
-  var HTMLPageBlogElement: {
-    prototype: HTMLPageBlogElement;
-    new (): HTMLPageBlogElement;
-  };
-
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
   var HTMLPageBooksElement: {
     prototype: HTMLPageBooksElement;
@@ -233,6 +236,12 @@ declare global {
   var HTMLPageCmdChronBeaverCageElement: {
     prototype: HTMLPageCmdChronBeaverCageElement;
     new (): HTMLPageCmdChronBeaverCageElement;
+  };
+
+  interface HTMLPageConfluencePanelMacroElement extends Components.PageConfluencePanelMacro, HTMLStencilElement {}
+  var HTMLPageConfluencePanelMacroElement: {
+    prototype: HTMLPageConfluencePanelMacroElement;
+    new (): HTMLPageConfluencePanelMacroElement;
   };
 
   interface HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement extends Components.PageConvertZbrushPolygroupsIntoSubtools, HTMLStencilElement {}
@@ -295,6 +304,12 @@ declare global {
     new (): HTMLPageDockerCheatSheetElement;
   };
 
+  interface HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement extends Components.PageFemaleAnatomyOutOfTheBoxInZbrush, HTMLStencilElement {}
+  var HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement: {
+    prototype: HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
+    new (): HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
+  };
+
   interface HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement extends Components.PageFindJavaClassesOrPackagesContainedInJarFiles, HTMLStencilElement {}
   var HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement: {
     prototype: HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
@@ -319,10 +334,22 @@ declare global {
     new (): HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
   };
 
+  interface HTMLPageHomeElement extends Components.PageHome, HTMLStencilElement {}
+  var HTMLPageHomeElement: {
+    prototype: HTMLPageHomeElement;
+    new (): HTMLPageHomeElement;
+  };
+
   interface HTMLPageHowToApplyTextureInZbrushElement extends Components.PageHowToApplyTextureInZbrush, HTMLStencilElement {}
   var HTMLPageHowToApplyTextureInZbrushElement: {
     prototype: HTMLPageHowToApplyTextureInZbrushElement;
     new (): HTMLPageHowToApplyTextureInZbrushElement;
+  };
+
+  interface HTMLPageHowToSketchWithZspheresInZbrushElement extends Components.PageHowToSketchWithZspheresInZbrush, HTMLStencilElement {}
+  var HTMLPageHowToSketchWithZspheresInZbrushElement: {
+    prototype: HTMLPageHowToSketchWithZspheresInZbrushElement;
+    new (): HTMLPageHowToSketchWithZspheresInZbrushElement;
   };
 
   interface HTMLPageHowToUseLiveBooleanInZbrushElement extends Components.PageHowToUseLiveBooleanInZbrush, HTMLStencilElement {}
@@ -359,6 +386,12 @@ declare global {
   var HTMLPageKillingKittensElement: {
     prototype: HTMLPageKillingKittensElement;
     new (): HTMLPageKillingKittensElement;
+  };
+
+  interface HTMLPageLifeEventsElement extends Components.PageLifeEvents, HTMLStencilElement {}
+  var HTMLPageLifeEventsElement: {
+    prototype: HTMLPageLifeEventsElement;
+    new (): HTMLPageLifeEventsElement;
   };
 
   interface HTMLPageListIbmDb2CommandsElement extends Components.PageListIbmDb2Commands, HTMLStencilElement {}
@@ -469,6 +502,12 @@ declare global {
     new (): HTMLPageRigAMeshWithZspheresInZbrushElement;
   };
 
+  interface HTMLPageSceneAndSequelPatternForWritersElement extends Components.PageSceneAndSequelPatternForWriters, HTMLStencilElement {}
+  var HTMLPageSceneAndSequelPatternForWritersElement: {
+    prototype: HTMLPageSceneAndSequelPatternForWritersElement;
+    new (): HTMLPageSceneAndSequelPatternForWritersElement;
+  };
+
   interface HTMLPageScriptForRotatingUnityGameObject90DegreesElement extends Components.PageScriptForRotatingUnityGameObject90Degrees, HTMLStencilElement {}
   var HTMLPageScriptForRotatingUnityGameObject90DegreesElement: {
     prototype: HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
@@ -571,6 +610,12 @@ declare global {
     new (): HTMLPageSparqlExamplesSelectElement;
   };
 
+  interface HTMLPageStoryElement extends Components.PageStory, HTMLStencilElement {}
+  var HTMLPageStoryElement: {
+    prototype: HTMLPageStoryElement;
+    new (): HTMLPageStoryElement;
+  };
+
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -631,6 +676,12 @@ declare global {
     new (): HTMLPageUseFibermeshInZbrushElement;
   };
 
+  interface HTMLPageUseMicromeshInZbrushElement extends Components.PageUseMicromeshInZbrush, HTMLStencilElement {}
+  var HTMLPageUseMicromeshInZbrushElement: {
+    prototype: HTMLPageUseMicromeshInZbrushElement;
+    new (): HTMLPageUseMicromeshInZbrushElement;
+  };
+
   interface HTMLPageUsePrismJsInIonicStencilAppElement extends Components.PageUsePrismJsInIonicStencilApp, HTMLStencilElement {}
   var HTMLPageUsePrismJsInIonicStencilAppElement: {
     prototype: HTMLPageUsePrismJsInIonicStencilAppElement;
@@ -655,10 +706,22 @@ declare global {
     new (): HTMLPageWeldMultipleSubtoolsInZbrushElement;
   };
 
+  interface HTMLPageXmlaccessSamplesElement extends Components.PageXmlaccessSamples, HTMLStencilElement {}
+  var HTMLPageXmlaccessSamplesElement: {
+    prototype: HTMLPageXmlaccessSamplesElement;
+    new (): HTMLPageXmlaccessSamplesElement;
+  };
+
   interface HTMLPageZbrushKeyboardShortcutsElement extends Components.PageZbrushKeyboardShortcuts, HTMLStencilElement {}
   var HTMLPageZbrushKeyboardShortcutsElement: {
     prototype: HTMLPageZbrushKeyboardShortcutsElement;
     new (): HTMLPageZbrushKeyboardShortcutsElement;
+  };
+
+  interface HTMLPageZbrushResourcesOnlineElement extends Components.PageZbrushResourcesOnline, HTMLStencilElement {}
+  var HTMLPageZbrushResourcesOnlineElement: {
+    prototype: HTMLPageZbrushResourcesOnlineElement;
+    new (): HTMLPageZbrushResourcesOnlineElement;
   };
   interface HTMLElementTagNameMap {
     'app-404-page-not-found': HTMLApp404PageNotFoundElement;
@@ -676,11 +739,11 @@ declare global {
     'page-art': HTMLPageArtElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
-    'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-confluence-panel-macro': HTMLPageConfluencePanelMacroElement;
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
     'page-create-clothing-in-zbrush-extruding-masked-area': HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
@@ -691,17 +754,21 @@ declare global {
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
+    'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    'page-home': HTMLPageHomeElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
+    'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
+    'page-life-events': HTMLPageLifeEventsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
@@ -720,6 +787,7 @@ declare global {
     'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
+    'page-scene-and-sequel-pattern-for-writers': HTMLPageSceneAndSequelPatternForWritersElement;
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
@@ -737,6 +805,7 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
+    'page-story': HTMLPageStoryElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -747,11 +816,14 @@ declare global {
     'page-unity-recipes-look-toward-direction-of-velocity': HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
     'page-use-auto-masking-by-polygroups-in-zbrush': HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
     'page-use-fibermesh-in-zbrush': HTMLPageUseFibermeshInZbrushElement;
+    'page-use-micromesh-in-zbrush': HTMLPageUseMicromeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
+    'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
     'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
+    'page-zbrush-resources-online': HTMLPageZbrushResourcesOnlineElement;
   }
 }
 
@@ -780,11 +852,11 @@ declare namespace LocalJSX {
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
-  interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
+  interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateClothingInZbrushExtrudingMaskedArea {}
@@ -795,17 +867,21 @@ declare namespace LocalJSX {
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDockerCheatSheet {}
+  interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageLifeEvents {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
@@ -824,6 +900,7 @@ declare namespace LocalJSX {
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
+  interface PageSceneAndSequelPatternForWriters {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
@@ -841,6 +918,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStory {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -851,11 +929,14 @@ declare namespace LocalJSX {
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
   interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
+  interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageWeldMultipleSubtoolsInZbrush {}
+  interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
+  interface PageZbrushResourcesOnline {}
 
   interface IntrinsicElements {
     'app-404-page-not-found': App404PageNotFound;
@@ -873,11 +954,11 @@ declare namespace LocalJSX {
     'page-art': PageArt;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
-    'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-confluence-panel-macro': PageConfluencePanelMacro;
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
     'page-create-clothing-in-zbrush-extruding-masked-area': PageCreateClothingInZbrushExtrudingMaskedArea;
@@ -888,17 +969,21 @@ declare namespace LocalJSX {
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
+    'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
+    'page-home': PageHome;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
+    'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
+    'page-life-events': PageLifeEvents;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
@@ -917,6 +1002,7 @@ declare namespace LocalJSX {
     'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
+    'page-scene-and-sequel-pattern-for-writers': PageSceneAndSequelPatternForWriters;
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
@@ -934,6 +1020,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
+    'page-story': PageStory;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -944,11 +1031,14 @@ declare namespace LocalJSX {
     'page-unity-recipes-look-toward-direction-of-velocity': PageUnityRecipesLookTowardDirectionOfVelocity;
     'page-use-auto-masking-by-polygroups-in-zbrush': PageUseAutoMaskingByPolygroupsInZbrush;
     'page-use-fibermesh-in-zbrush': PageUseFibermeshInZbrush;
+    'page-use-micromesh-in-zbrush': PageUseMicromeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
+    'page-xmlaccess-samples': PageXmlaccessSamples;
     'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
+    'page-zbrush-resources-online': PageZbrushResourcesOnline;
   }
 }
 
@@ -973,11 +1063,11 @@ declare module "@stencil/core" {
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
-      'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-confluence-panel-macro': LocalJSX.PageConfluencePanelMacro & JSXBase.HTMLAttributes<HTMLPageConfluencePanelMacroElement>;
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
       'page-create-clothing-in-zbrush-extruding-masked-area': LocalJSX.PageCreateClothingInZbrushExtrudingMaskedArea & JSXBase.HTMLAttributes<HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement>;
@@ -988,17 +1078,21 @@ declare module "@stencil/core" {
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
+      'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
+      'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
+      'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
+      'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
@@ -1017,6 +1111,7 @@ declare module "@stencil/core" {
       'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
+      'page-scene-and-sequel-pattern-for-writers': LocalJSX.PageSceneAndSequelPatternForWriters & JSXBase.HTMLAttributes<HTMLPageSceneAndSequelPatternForWritersElement>;
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
@@ -1034,6 +1129,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
+      'page-story': LocalJSX.PageStory & JSXBase.HTMLAttributes<HTMLPageStoryElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;
@@ -1044,11 +1140,14 @@ declare module "@stencil/core" {
       'page-unity-recipes-look-toward-direction-of-velocity': LocalJSX.PageUnityRecipesLookTowardDirectionOfVelocity & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement>;
       'page-use-auto-masking-by-polygroups-in-zbrush': LocalJSX.PageUseAutoMaskingByPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageUseAutoMaskingByPolygroupsInZbrushElement>;
       'page-use-fibermesh-in-zbrush': LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
+      'page-use-micromesh-in-zbrush': LocalJSX.PageUseMicromeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseMicromeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
+      'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;
       'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
+      'page-zbrush-resources-online': LocalJSX.PageZbrushResourcesOnline & JSXBase.HTMLAttributes<HTMLPageZbrushResourcesOnlineElement>;
     }
   }
 }

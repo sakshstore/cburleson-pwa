@@ -39,15 +39,14 @@ export class PageCage {
       datePublished: "",
       dateModified: "July 6, 2019"
     },
-    /*
     {
       id: "/photos/ed-kalwara",
       title: "Tour of Duty Photos from Ed Kalwara",
       teaser: "Photographs from Ed Kalwara taken during his tour of duty.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ed-kalwara-thumb.jpg",
       datePublished: "",
-      dateModified: "Nov 11, 2019"
-    },*/
+      dateModified: "Dec 11, 2019"
+    },
     {
       id: "/photos/gary-culp",
       title: "Tour of Duty Photos from Gary Culp",

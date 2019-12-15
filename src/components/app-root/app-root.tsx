@@ -19,19 +19,24 @@ export class AppRoot {
 
   appPages = [
     {
-      title: 'Blog',
-      url: '/blog',
-      icon: 'ios-megaphone'
+      title: 'Home',
+      url: '/home',
+      icon: 'ios-home'
     },
     {
-      title: 'Books',
-      url: '/books',
+      title: 'Story',
+      url: '/story',
       icon: 'ios-book'
     },
     {
       title: 'Art',
       url: '/art',
       icon: 'ios-easel'
+    },
+    {
+      title: 'Books',
+      url: '/books',
+      icon: 'ios-book'
     },
     {
       title: 'About',
@@ -49,8 +54,10 @@ export class AppRoot {
     }
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
-    if (event.detail.to == '/blog') {
-      document.title = 'Blog | ' + siteName;
+    if (event.detail.to == '/home') {
+      document.title = 'Home | ' + siteName;
+    } else if (event.detail.to == '/story') {
+      document.title = 'Story | ' + siteName;
     } else if (event.detail.to == '/books') {
       document.title = 'Books | ' + siteName;
     } else if (event.detail.to == '/art') {
@@ -87,6 +94,8 @@ export class AppRoot {
       switch (routeId) {
         case 'photos/curt-bruce':
           break;
+        case 'photos/ed-kalwara':
+          break;
         case 'photos/gary-culp':
           break;
         case 'photos/jack-depope':
@@ -117,10 +126,13 @@ export class AppRoot {
 
     return (
       <ion-router useHash={false}>
-        <ion-route-redirect from="/" to='/blog' />
+        <ion-route-redirect from="/" to='/home' />
         <ion-route component="app-tabs">
-          <ion-route url="/blog" component="tab-blog">
-            <ion-route component="page-blog"></ion-route>
+        <ion-route url="/home" component="tab-home">
+            <ion-route component="page-home"></ion-route>
+          </ion-route>
+          <ion-route url="/story" component="tab-story">
+            <ion-route component="page-story"></ion-route>
           </ion-route>
           <ion-route url="/books" component="tab-books">
             <ion-route component="page-books"></ion-route>
@@ -130,6 +142,9 @@ export class AppRoot {
           </ion-route>
           <ion-route url="/about" component="tab-about">
             <ion-route component="page-about"></ion-route>
+          </ion-route>
+          <ion-route url="/about" component="tab-about">
+            <ion-route url="/life-events" component="page-life-events"></ion-route>
           </ion-route>
           <ion-route url="/beaver-cage-command-chron" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>

@@ -9,12 +9,12 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 const EXCLUDE_TRACKS = 'excludeTracks';
 
 @Component({
-  tag: 'page-blog',
-  styleUrl: 'page-blog.css'
+  tag: 'page-story',
+  styleUrl: 'page-story.css'
 })
-export class PageBlog {
+export class PageStory {
 
-  title = 'Blog';
+  title = 'Story';
   excludeTracks: any = [];
 
   @Element() el: any;
@@ -27,12 +27,11 @@ export class PageBlog {
 
   async componentWillLoad() {
     if (debug) {
-      console.log('> PageBlog.componentWillLoad');
+      console.log('> PageStory.componentWillLoad');
     }
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
 
     this.data = await BlogData.load();
-
 
     let excludeTracks = await get(EXCLUDE_TRACKS)
       .then(function (result) {
@@ -41,7 +40,7 @@ export class PageBlog {
       })
       .catch(function (err) {
         if (debug) {
-          console.log('< PageBlog.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
+          console.log('< PageStory.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
         }
         // do nothing
         return [];
@@ -57,7 +56,7 @@ export class PageBlog {
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
     if(debug){
-      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o',event.detail.data);
+      console.log('> PageStory.modalDidDismiss > event.detail.data: %o',event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
       this.excludeTracks = event.detail.data;
@@ -70,7 +69,7 @@ export class PageBlog {
   async updateContentList() {
 
     if (debug) {
-      console.log('> PageBlog.updateContentList');
+      console.log('> PageStory.updateContentList');
     }
 
     await BlogData.getContent(this.excludeTracks);
@@ -82,7 +81,7 @@ export class PageBlog {
 
   async presentFilter() {
     if (debug) {
-      console.log('>> PageBlog.presentFilter');
+      console.log('>> PageStory.presentFilter');
     }
 
     const modal = await this.modalCtrl.create({
@@ -111,7 +110,7 @@ export class PageBlog {
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-          <ion-title>Blog</ion-title>
+          <ion-title>{this.title}</ion-title>
           <ion-buttons slot="end">
             <ion-button onClick={() => this.presentFilter()}>
               <ion-icon slot="icon-only" name="options"></ion-icon>
