@@ -34,7 +34,6 @@ export namespace Components {
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
-  interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
@@ -71,6 +70,7 @@ export namespace Components {
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
+  interface PageProjects {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi3 {}
@@ -101,6 +101,7 @@ export namespace Components {
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageStory {}
+  interface PageTechnology {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -212,12 +213,6 @@ declare global {
   var HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement: {
     prototype: HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     new (): HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
-  };
-
-  interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
-  var HTMLPageBooksElement: {
-    prototype: HTMLPageBooksElement;
-    new (): HTMLPageBooksElement;
   };
 
   interface HTMLPageCageElement extends Components.PageCage, HTMLStencilElement {}
@@ -436,6 +431,12 @@ declare global {
     new (): HTMLPagePinkHeartsElement;
   };
 
+  interface HTMLPageProjectsElement extends Components.PageProjects, HTMLStencilElement {}
+  var HTMLPageProjectsElement: {
+    prototype: HTMLPageProjectsElement;
+    new (): HTMLPageProjectsElement;
+  };
+
   interface HTMLPagePwaWithIonicAngularWordpressApi1Element extends Components.PagePwaWithIonicAngularWordpressApi1, HTMLStencilElement {}
   var HTMLPagePwaWithIonicAngularWordpressApi1Element: {
     prototype: HTMLPagePwaWithIonicAngularWordpressApi1Element;
@@ -616,6 +617,12 @@ declare global {
     new (): HTMLPageStoryElement;
   };
 
+  interface HTMLPageTechnologyElement extends Components.PageTechnology, HTMLStencilElement {}
+  var HTMLPageTechnologyElement: {
+    prototype: HTMLPageTechnologyElement;
+    new (): HTMLPageTechnologyElement;
+  };
+
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -739,7 +746,6 @@ declare global {
     'page-art': HTMLPageArtElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
-    'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
@@ -776,6 +782,7 @@ declare global {
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pink-hearts': HTMLPagePinkHeartsElement;
+    'page-projects': HTMLPageProjectsElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
     'page-pwa-with-ionic-angular-wordpress-api-2': HTMLPagePwaWithIonicAngularWordpressApi2Element;
     'page-pwa-with-ionic-angular-wordpress-api-3': HTMLPagePwaWithIonicAngularWordpressApi3Element;
@@ -806,6 +813,7 @@ declare global {
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-story': HTMLPageStoryElement;
+    'page-technology': HTMLPageTechnologyElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -852,7 +860,6 @@ declare namespace LocalJSX {
   interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
-  interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
@@ -889,6 +896,7 @@ declare namespace LocalJSX {
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
+  interface PageProjects {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
   interface PagePwaWithIonicAngularWordpressApi2 {}
   interface PagePwaWithIonicAngularWordpressApi3 {}
@@ -919,6 +927,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageStory {}
+  interface PageTechnology {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -954,7 +963,6 @@ declare namespace LocalJSX {
     'page-art': PageArt;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
-    'page-books': PageBooks;
     'page-cage': PageCage;
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
@@ -991,6 +999,7 @@ declare namespace LocalJSX {
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pink-hearts': PagePinkHearts;
+    'page-projects': PageProjects;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
     'page-pwa-with-ionic-angular-wordpress-api-2': PagePwaWithIonicAngularWordpressApi2;
     'page-pwa-with-ionic-angular-wordpress-api-3': PagePwaWithIonicAngularWordpressApi3;
@@ -1021,6 +1030,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-story': PageStory;
+    'page-technology': PageTechnology;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1063,7 +1073,6 @@ declare module "@stencil/core" {
       'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
-      'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
@@ -1100,6 +1109,7 @@ declare module "@stencil/core" {
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
+      'page-projects': LocalJSX.PageProjects & JSXBase.HTMLAttributes<HTMLPageProjectsElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
       'page-pwa-with-ionic-angular-wordpress-api-2': LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;
       'page-pwa-with-ionic-angular-wordpress-api-3': LocalJSX.PagePwaWithIonicAngularWordpressApi3 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi3Element>;
@@ -1130,6 +1140,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-story': LocalJSX.PageStory & JSXBase.HTMLAttributes<HTMLPageStoryElement>;
+      'page-technology': LocalJSX.PageTechnology & JSXBase.HTMLAttributes<HTMLPageTechnologyElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

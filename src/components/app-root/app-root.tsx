@@ -1,5 +1,6 @@
 import { Component, h, Listen } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
+import { PageData } from '../../services/page-data';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -17,33 +18,7 @@ export class AppRoot {
 
   unfoundRoute: any;
 
-  appPages = [
-    {
-      title: 'Home',
-      url: '/home',
-      icon: 'ios-home'
-    },
-    {
-      title: 'Story',
-      url: '/story',
-      icon: 'ios-book'
-    },
-    {
-      title: 'Art',
-      url: '/art',
-      icon: 'ios-easel'
-    },
-    {
-      title: 'Books',
-      url: '/books',
-      icon: 'ios-book'
-    },
-    {
-      title: 'About',
-      url: '/about',
-      icon: 'ios-information-circle'
-    }
-  ];
+  pageData: any = [];
 
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
@@ -58,10 +33,12 @@ export class AppRoot {
       document.title = 'Home | ' + siteName;
     } else if (event.detail.to == '/story') {
       document.title = 'Story | ' + siteName;
-    } else if (event.detail.to == '/books') {
-      document.title = 'Books | ' + siteName;
     } else if (event.detail.to == '/art') {
       document.title = 'Art | ' + siteName;
+    } else if (event.detail.to == '/technology') {
+      document.title = 'Technology | ' + siteName;
+    } else if (event.detail.to == '/projects') {
+      document.title = 'Projects | ' + siteName;
     } else if (event.detail.to == '/about') {
       document.title = 'About | ' + siteName;
     }
@@ -83,6 +60,8 @@ export class AppRoot {
     if (debug) {
       console.log('> AppRoot.componentWillLoad');
     }
+
+    this.pageData = await PageData.load();
 
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
@@ -134,11 +113,14 @@ export class AppRoot {
           <ion-route url="/story" component="tab-story">
             <ion-route component="page-story"></ion-route>
           </ion-route>
-          <ion-route url="/books" component="tab-books">
-            <ion-route component="page-books"></ion-route>
-          </ion-route>
           <ion-route url="/art" component="tab-art">
             <ion-route component="page-art"></ion-route>
+          </ion-route>
+          <ion-route url="/technology" component="tab-technology">
+            <ion-route component="page-technology"></ion-route>
+          </ion-route>
+          <ion-route url="/projects" component="tab-projects">
+            <ion-route component="page-projects"></ion-route>
           </ion-route>
           <ion-route url="/about" component="tab-about">
             <ion-route component="page-about"></ion-route>
@@ -174,12 +156,24 @@ export class AppRoot {
     );
   }
 
-  render() {
+  renderMenu() {
+    const pages = [];
+
+    this.pageData.pages.map((item) => {
+      if(item.menu) {
+       pages.push(
+        <ion-menu-toggle autoHide={false}>
+          <ion-item href={'/' + item.slug}>
+            <ion-icon slot="start" name={item.icon}></ion-icon>
+            <ion-label>{item.title}</ion-label>
+          </ion-item>
+        </ion-menu-toggle>
+       );
+      }
+    });
+
     return (
-      <ion-app>
-        {this.renderRouter()}
-        <ion-split-pane content-id="menu-content">
-          <ion-menu content-id="menu-content">
+      <ion-menu content-id="menu-content">
             <ion-header>
               <ion-toolbar>
                 <ion-title>Menu</ion-title>
@@ -188,20 +182,20 @@ export class AppRoot {
             <ion-content forceOverscroll={false}>
               <ion-list>
                 <ion-list-header>Browse</ion-list-header>
-
-                {this.appPages.map((p) => (
-                  <ion-menu-toggle autoHide={false}>
-                    <ion-item href={p.url}>
-                      <ion-icon slot="start" name={p.icon}></ion-icon>
-                      <ion-label>{p.title}</ion-label>
-                    </ion-item>
-                  </ion-menu-toggle>
-                ))}
-
+                {pages}
               </ion-list>
             </ion-content>
           </ion-menu>
+    );
+  }
 
+  render() {
+
+    return (
+      <ion-app>
+        {this.renderRouter()}
+        <ion-split-pane content-id="menu-content">
+          {this.renderMenu()}
           <ion-router-outlet animated={false} id="menu-content"></ion-router-outlet>
         </ion-split-pane>
       </ion-app>

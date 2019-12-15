@@ -4,12 +4,11 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-  tag: 'page-books',
-  styleUrl: 'page-books.css',
+  tag: 'page-projects'
 })
-export class PageBooks {
+export class PageProjects {
 
-  title = 'Books';
+  title = 'Projects';
 
   writingItems = [
     {
@@ -24,7 +23,7 @@ export class PageBooks {
 
   componentWillLoad() {
     if (debug) {
-      console.log('> PageBooks.componentWillLoad');
+      console.log('> PageProjects.componentWillLoad');
     }
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
@@ -35,7 +34,7 @@ export class PageBooks {
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-          <ion-title>Books</ion-title>
+          <ion-title>{this.title}</ion-title>
         </ion-toolbar>
       </ion-header>,
 

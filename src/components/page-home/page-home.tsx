@@ -31,10 +31,13 @@ export class PageHome {
     render() {
         return [
             <ion-header>
-                <ion-toolbar color="primary">
-                    <ion-title>Home</ion-title>
-                </ion-toolbar>
-            </ion-header>,
+            <ion-toolbar color="primary">
+              <ion-buttons slot="start">
+                <ion-menu-button></ion-menu-button>
+              </ion-buttons>
+              <ion-title>{this.title}</ion-title>
+            </ion-toolbar>
+          </ion-header>,
 
             <ion-content class="ion-padding">
 
