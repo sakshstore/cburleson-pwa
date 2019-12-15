@@ -160,7 +160,7 @@ export class AppRoot {
     const pages = [];
 
     this.pageData.pages.map((item) => {
-      if(item.menu) {
+      if(item.isMenu) {
        pages.push(
         <ion-menu-toggle autoHide={false}>
           <ion-item href={'/' + item.slug}>

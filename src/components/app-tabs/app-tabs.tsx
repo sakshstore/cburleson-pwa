@@ -36,7 +36,7 @@ export class AppTabs {
     const tabButtons = [];
 
     this.data.pages.map((item) => {
-      if(item.tab) {
+      if(item.isTab) {
         tabs.push( <ion-tab tab={'tab-' + item.slug}><ion-nav></ion-nav></ion-tab>);
         tabButtons.push(  <ion-tab-button tab={'tab-' + item.slug}><ion-icon name={item.icon}></ion-icon><ion-label>{item.title}</ion-label></ion-tab-button> );
       }
@@ -44,9 +44,7 @@ export class AppTabs {
 
     return [
       <ion-tabs>
-        
         {tabs}
-
         <ion-tab-bar slot="bottom">
           {tabButtons}
         </ion-tab-bar>

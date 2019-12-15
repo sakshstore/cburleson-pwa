@@ -4,43 +4,43 @@
               "title": "Home",
               "slug": "home",
               "icon": "ios-home",
-              "tab" : true,
-              "menu": true
+              "isTab" : true,
+              "isMenu": true
             },
             {
               "title": "Story",
               "slug": "story",
               "icon": "ios-book",
-              "tab" : true,
-              "menu": true
+              "isTab" : true,
+              "isMenu": true
             },
             {
               "title": "Art",
               "slug": "art",
               "icon": "ios-color-palette",
-              "tab" : true,
-              "menu": true
+              "isTab" : true,
+              "isMenu": true
             },
             {
               "title": "Technology",
               "slug": "technology",
               "icon": "ios-code-working",
-              "tab" : true,
-              "menu": true
+              "isTab" : true,
+              "isMenu": true
             },
             {
               "title": "Projects",
               "slug": "projects",
               "icon": "ios-construct",
-              "tab" : true,
-              "menu": true
+              "isTab" : true,
+              "isMenu": true
             },
             {
               "title": "About",
               "slug": "about",
               "icon": "ios-information-circle",
-              "tab" : false,
-              "menu": true
+              "isTab" : false,
+              "isMenu": true
             }
     ]
 }
