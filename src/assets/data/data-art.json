@@ -1,0 +1,368 @@
+{
+  "content": [
+    {
+      "id": "change-canvas-background-color-in-zbrush",
+      "title": "How to change canvas background color in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/07",
+      "dateModified": "2019/04/14",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "bend-things-in-zbrush-with-the-bend-curve-modifier",
+      "title": "How to bend things in ZBrush with the Bend Curve modifier",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/07",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-apply-texture-in-zbrush",
+      "title": "How to apply texture in ZBrush",
+      "teaser": "A quick tutorial on how to apply texture to an object in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/09/03",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "unity-recipes-head-bob-or-breathe",
+      "title": "Unity recipes – head bob or breathe",
+      "teaser": "A C# script to give an object a repetitive, but smooth upward and downward movement.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/09/03",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "unity-recipes-look-toward-direction-of-velocity",
+      "title": "Unity recipes – look toward direction of velocity",
+      "teaser": "A C# script for Unity can be used to make an object look toward the direction of its current velocity.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "unity-recipes-look-toward-direction-of-movement",
+      "title": "Unity recipes – look toward direction of movement",
+      "teaser": "A C# script for Unity can be used to make an object look (turn smoothly) toward the direction it is being moved.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "unity-recipes-follow-object",
+      "title": "Unity recipes – follow object",
+      "teaser": "A C# script for Unity to make an object follow another.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2018/08/29",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "use-spotlight-to-display-reference-images-in-zbrush",
+      "title": "How to use Spotlight to display reference images in ZBrush",
+      "teaser": "A procedure for using Spotlight to display reference images in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/08/20",
+      "dateModified": "2019/07/24",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "weld-multiple-subtools-in-zbrush",
+      "title": "How to weld multiple subtools together to make one tool in ZBrush",
+      "teaser": "How to weld multiple subtools together to create one seamless mesh.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/08/04",
+      "dateModified": "2019/04/14",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "female-anatomy-out-of-the-box-in-zbrush",
+      "title": "Female anatomy out-of-the-box in ZBrush",
+      "teaser": "Hidden in ZBrush, there’s a fabulously detailed female anatomy model that comes out-of-the-box.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2017/07/14",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "zbrush-keyboard-shortcuts",
+      "title": "ZBrush Keyboard Shortcuts",
+      "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/07/04",
+      "dateModified": "2019/04/17",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "use-micromesh-in-zbrush",
+      "title": "How to use MicroMesh in ZBrush",
+      "teaser" : "A quick procedure for using MicroMesh in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/06/03",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "create-new-subtool-from-masked-area-in-zbrush",
+      "title": "How to create a new subtool from a masked area in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/30",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "create-polygroup-from-mask-in-zbrush",
+      "title": "Create polygroup from mask in ZBrush",
+      "teaser": "How to create a new polygroup of a masked area in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/22",
+      "dateModified": "2019/08/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "isolate-a-polygroup-in-zbrush",
+      "title": "How to isolate a polygroup in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/11/21",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "create-clothing-in-zbrush-extruding-masked-area",
+      "title": "How to create clothing in ZBrush by extruding a masked area",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/07/08",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "mirror-polygroup-on-subtool-in-zbrush",
+      "title": "How to mirror a polygroup on a subtool in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "convert-zbrush-polygroups-into-subtools",
+      "title": "How to convert ZBrush polygroups into subtools",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "use-auto-masking-by-polygroups-in-zbrush",
+      "title": "Use auto masking by polygroups in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-sketch-with-zspheres-in-zbrush",
+      "title": "How to sketch with ZSpheres in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "zbrush-resources-online",
+      "title": "ZBrush resources online",
+      "teaser": "A list of online resources related to ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/28",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "rig-a-mesh-with-zspheres-in-zbrush",
+      "title": "How to rig a mesh with ZSpheres in ZBrush",
+      "teaser": "You can rig an existing mesh with a ZSphere armature, allowing you to pose the mesh by manipulating the underlying armature.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-use-live-boolean-in-zbrush",
+      "title": "How to use live boolean in ZBrush",
+      "teaser": "Learn to use the real-time boolean operations in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/11/22",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "apply-different-materials-to-subtools-in-zbrush",
+      "title": "How to apply different materials to subtools in ZBrush",
+      "teaser": "Apply different materials to different SubTools in ZBrush with 5 simple steps.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2018/07/23",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "delete-hidden-geometry-in-zbrush",
+      "title": "Delete hidden geometry in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2018/07/27",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "use-fibermesh-in-zbrush",
+      "title": "How to use FiberMesh in ZBrush",
+      "teaser": "",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "make-a-zbrush-speed-sculpt-timelapse-video",
+      "title": "How to make a ZBrush speed sculpt timelapse video",
+      "teaser": "Here’s a procedure to setup ZBrush and record your own speed-sculpt video.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "7-quintessential-brushes-for-zbrush-beginners",
+      "title": "7 Quintessential brushes for ZBrush beginners",
+      "teaser": "Here are seven of the most important ZBrush brushes you’ll ever use. Begin your practice with these.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2017/07/12",
+      "dateModified": "2019/03/31",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "unity-get-rigidbody-from-object",
+      "title": "Unity – How to get rigidbody from object a script is applied to",
+      "teaser": "C# scipt to get rigidbody from object the script is applied to in Unity.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2015/04/01",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "script-for-rotating-unity-game-object-90-degrees",
+      "title": "Script for rotating a Unity game object 90 degrees",
+      "teaser": "Unity behavior script that rotates object 90 degrees when the script’s rotate function is called.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2013/05/22",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
+      "title": "Unity Freebies: Game Timer, Cinematic Letterbox, and Fade-in Scripts",
+      "teaser": "Two awesome Unity behavior scripts that you can download and use for free right now!",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/14",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "unity-preferences-your-built-in-keyboard-cheat-sheet",
+      "title": "Unity Preferences – Your Built-in Keyboard Cheat Sheet",
+      "teaser": "An easy way to find keyboard commands in the Unity game development tool.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/11",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-3",
+      "title": "Create a player health status indicator for the Unity GUI, part 3",
+      "teaser": "Third and last of a multi-part series teaching yhow to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/11/08",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-2",
+      "title": "Create a player health status indicator for the Unity GUI, part 2",
+      "teaser": "Second of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/10/16",
+      "tracks": [
+        "Unity"
+      ]
+    },
+    {
+      "id": "create-player-health-status-indicator-for-unity-gui-part-1",
+      "title": "Create a player health status indicator for the Unity GUI, part 1",
+      "teaser": "First of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2012/10/13",
+      "tracks": [
+        "Unity"
+      ]
+    }
+  ]
+}

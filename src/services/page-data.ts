@@ -1,6 +1,14 @@
 import { EnvironmentConfigService } from '../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
+/**
+ * PageDataService is responsible for loading and returning data from the 
+ * assets/page-data.json file. As of now, the page-data.json file exists 
+ * to provide one single place to define the main, top-level pages that 
+ * may also appear in the primary navigation menu and as mobile tabs. There 
+ * can, therefore, exist page components that are not defined in the file 
+ * (as they do no need to be if not creating a primary menu item or mobile tab.)
+ */
 class PageDataService {
 
     data: any;
@@ -39,22 +47,6 @@ class PageDataService {
         }
 
         this.data = data;
-
-        /*
-        // For each content item...
-        this.data.content.forEach((item: any) => {
-            // If it has tracks (topics)...
-            if (item.tracks) {
-                // For each topic that it has...
-                item.tracks.forEach((track: any) => {
-                    // If topic is not already in data.tracks array, put it there...
-                    if (this.data.tracks.indexOf(track) < 0) {
-                        this.data.tracks.push(track);
-                    }
-                });
-            }
-        });
-        */
 
         return this.data;
     }

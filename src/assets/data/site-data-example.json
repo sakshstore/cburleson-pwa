@@ -1,0 +1,32 @@
+[
+  {
+    "section": "writing",
+    "content": [
+      {
+        "id": "use-prism-js-in-ionic-stencil-app",
+        "title": "How to use Prism.js in Ionic Stencil app",
+        "teaser": "Procedure for using the Prism.js syntax highlighter in an Ionic / Stencil app.",
+        "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
+        "datePublished": "2019/11/07",
+        "dateModified": "2019/11/22",
+        "tracks": [
+          "Software Dev"
+        ]
+      },
+      {
+        "id": "killing-kittens",
+        "title": "Killing Kittens",
+        "teaser": "A memory of Mom, a .45 pistol, and a litter of kittens.",
+        "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+        "datePublished": "2019/03/09",
+        "dateModified": "2019/06/10",
+        "tracks": [
+          "Memoir"
+        ]
+      }
+    ],
+    "tracks":[
+      "Software Dev"
+    ]
+  }
+]
