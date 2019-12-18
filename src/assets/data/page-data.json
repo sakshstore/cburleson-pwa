@@ -8,30 +8,16 @@
               "isMenu": true
             },
             {
-              "title": "Story",
-              "slug": "story",
+              "title": "Blog",
+              "slug": "blog",
+              "icon": "ios-text",
+              "isTab" : true,
+              "isMenu": true
+            },
+            {
+              "title": "Books",
+              "slug": "books",
               "icon": "ios-book",
-              "isTab" : true,
-              "isMenu": true
-            },
-            {
-              "title": "Art",
-              "slug": "art",
-              "icon": "ios-color-palette",
-              "isTab" : true,
-              "isMenu": true
-            },
-            {
-              "title": "Technology",
-              "slug": "technology",
-              "icon": "ios-code-working",
-              "isTab" : true,
-              "isMenu": true
-            },
-            {
-              "title": "Projects",
-              "slug": "projects",
-              "icon": "ios-construct",
               "isTab" : true,
               "isMenu": true
             },
@@ -39,7 +25,7 @@
               "title": "About",
               "slug": "about",
               "icon": "ios-information-circle",
-              "isTab" : false,
+              "isTab" : true,
               "isMenu": true
             }
     ]

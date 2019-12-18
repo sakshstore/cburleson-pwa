@@ -4,11 +4,11 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-  tag: 'page-projects'
+  tag: 'page-books'
 })
-export class PageProjects {
+export class PageBooks {
 
-  title = 'Projects';
+  title = 'Books';
 
   writingItems = [
     {

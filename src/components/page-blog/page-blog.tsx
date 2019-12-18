@@ -9,12 +9,12 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 const EXCLUDE_TRACKS = 'excludeTracks';
 
 @Component({
-  tag: 'page-story',
-  styleUrl: 'page-story.css'
+  tag: 'page-blog',
+  styleUrl: 'page-blog.css'
 })
-export class PageStory {
+export class PageBlog {
 
-  title = 'Story';
+  title = 'Blog';
   excludeTracks: any = [];
 
   @Element() el: any;
@@ -27,7 +27,7 @@ export class PageStory {
 
   async componentWillLoad() {
     if (debug) {
-      console.log('> PageStory.componentWillLoad');
+      console.log('> PageBlog.componentWillLoad');
     }
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
 
@@ -40,7 +40,7 @@ export class PageStory {
       })
       .catch(function (err) {
         if (debug) {
-          console.log('< PageStory.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
+          console.log('< PageBlog.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
         }
         // do nothing
         return [];
@@ -56,7 +56,7 @@ export class PageStory {
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
     if(debug){
-      console.log('> PageStory.modalDidDismiss > event.detail.data: %o',event.detail.data);
+      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o',event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
       this.excludeTracks = event.detail.data;
@@ -69,7 +69,7 @@ export class PageStory {
   async updateContentList() {
 
     if (debug) {
-      console.log('> PageStory.updateContentList');
+      console.log('> PageBlog.updateContentList');
     }
 
     await BlogData.getContent(this.excludeTracks);
@@ -81,7 +81,7 @@ export class PageStory {
 
   async presentFilter() {
     if (debug) {
-      console.log('>> PageStory.presentFilter');
+      console.log('>> PageBlog.presentFilter');
     }
 
     const modal = await this.modalCtrl.create({

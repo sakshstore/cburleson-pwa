@@ -31,14 +31,10 @@ export class AppRoot {
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
     if (event.detail.to == '/home') {
       document.title = 'Home | ' + siteName;
-    } else if (event.detail.to == '/story') {
-      document.title = 'Story | ' + siteName;
-    } else if (event.detail.to == '/art') {
-      document.title = 'Art | ' + siteName;
-    } else if (event.detail.to == '/technology') {
-      document.title = 'Technology | ' + siteName;
-    } else if (event.detail.to == '/projects') {
-      document.title = 'Projects | ' + siteName;
+    } else if (event.detail.to == '/blog') {
+      document.title = 'Blog | ' + siteName;
+    } else if (event.detail.to == '/books') {
+      document.title = 'Books | ' + siteName;
     } else if (event.detail.to == '/about') {
       document.title = 'About | ' + siteName;
     }
@@ -110,17 +106,11 @@ export class AppRoot {
         <ion-route url="/home" component="tab-home">
             <ion-route component="page-home"></ion-route>
           </ion-route>
-          <ion-route url="/story" component="tab-story">
-            <ion-route component="page-story"></ion-route>
+          <ion-route url="/blog" component="tab-blog">
+            <ion-route component="page-blog"></ion-route>
           </ion-route>
-          <ion-route url="/art" component="tab-art">
-            <ion-route component="page-art"></ion-route>
-          </ion-route>
-          <ion-route url="/technology" component="tab-technology">
-            <ion-route component="page-technology"></ion-route>
-          </ion-route>
-          <ion-route url="/projects" component="tab-projects">
-            <ion-route component="page-projects"></ion-route>
+          <ion-route url="/books" component="tab-books">
+            <ion-route component="page-books"></ion-route>
           </ion-route>
           <ion-route url="/about" component="tab-about">
             <ion-route component="page-about"></ion-route>
