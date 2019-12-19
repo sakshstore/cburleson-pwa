@@ -1,13 +1,6 @@
 {
     "pages": [
             {
-              "title": "Home",
-              "slug": "home",
-              "icon": "ios-home",
-              "isTab" : true,
-              "isMenu": true
-            },
-            {
               "title": "Blog",
               "slug": "blog",
               "icon": "ios-text",

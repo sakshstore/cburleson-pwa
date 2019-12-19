@@ -39,7 +39,7 @@ export class PageBooks {
       </ion-header>,
 
       <ion-content class="ion-padding">
-        <h2>What I'm Writing</h2>
+        <h2>Work in progress</h2>
         <ion-list>
           {this.writingItems.map((item) =>
             <ion-item href={item.id}>

@@ -159,7 +159,7 @@ export class PageCage {
             <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="8">
               <h1>{this.title}</h1>
 
-              <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during the research. These resources will remain online as companions to the forthcoming book.</p>
+              <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during my research. These resources will remain online as companions to the forthcoming book.</p>
 
               <h2>Companion Resources</h2>
 

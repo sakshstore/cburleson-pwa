@@ -50,6 +50,76 @@ export class PageHome {
                             <p>Here is some test Home content.</p>
 
 
+
+                            <ion-grid>
+          <ion-row>
+            <ion-col>
+
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-card-title>Writing</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                  ...
+            </ion-card-content>
+              </ion-card>
+
+
+            </ion-col>
+            <ion-col>
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-card-title>Game Arts</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                  ...
+            </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+            <ion-col>
+
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-card-title>Software Dev</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                  ...
+            </ion-card-content>
+              </ion-card>
+
+
+            </ion-col>
+            <ion-col>
+
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                  <ion-card-title>Colorado Adventures</ion-card-title>
+                </ion-card-header>
+
+                <ion-card-content>
+                  ...
+            </ion-card-content>
+              </ion-card>
+
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+
+
+
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 

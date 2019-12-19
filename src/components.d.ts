@@ -31,7 +31,6 @@ export namespace Components {
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
-  interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
@@ -101,7 +100,6 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
-  interface PageTechnology {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -195,12 +193,6 @@ declare global {
   var HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement: {
     prototype: HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     new (): HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
-  };
-
-  interface HTMLPageArtElement extends Components.PageArt, HTMLStencilElement {}
-  var HTMLPageArtElement: {
-    prototype: HTMLPageArtElement;
-    new (): HTMLPageArtElement;
   };
 
   interface HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement extends Components.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother, HTMLStencilElement {}
@@ -617,12 +609,6 @@ declare global {
     new (): HTMLPageSparqlExamplesSelectElement;
   };
 
-  interface HTMLPageTechnologyElement extends Components.PageTechnology, HTMLStencilElement {}
-  var HTMLPageTechnologyElement: {
-    prototype: HTMLPageTechnologyElement;
-    new (): HTMLPageTechnologyElement;
-  };
-
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -743,7 +729,6 @@ declare global {
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
     'page-about': HTMLPageAboutElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
-    'page-art': HTMLPageArtElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-blog': HTMLPageBlogElement;
@@ -813,7 +798,6 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
-    'page-technology': HTMLPageTechnologyElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -857,7 +841,6 @@ declare namespace LocalJSX {
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
-  interface PageArt {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
@@ -927,7 +910,6 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
-  interface PageTechnology {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -960,7 +942,6 @@ declare namespace LocalJSX {
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
     'page-about': PageAbout;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
-    'page-art': PageArt;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-blog': PageBlog;
@@ -1030,7 +1011,6 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
-    'page-technology': PageTechnology;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1070,7 +1050,6 @@ declare module "@stencil/core" {
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
-      'page-art': LocalJSX.PageArt & JSXBase.HTMLAttributes<HTMLPageArtElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
@@ -1140,7 +1119,6 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
-      'page-technology': LocalJSX.PageTechnology & JSXBase.HTMLAttributes<HTMLPageTechnologyElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

@@ -9,6 +9,7 @@ export default () => {
   mySetupConfig({
     debug: true,
     recordAnalytics: false,
-    siteName: 'Cody Burleson'
+    siteName: 'Cody Burleson',
+    siteVersion: '1.0.0'
   });
 };

@@ -11,3 +11,6 @@ Pushing to master deploys the app on Netlify. If the build fails on Netlify, it 
 
 - Run `npm run prod` and spot check everything locally before committing with a push to prod.
 - Complete spot check in Chrome, Firefox, and Edge (on PC).
+- Change the version number in `package.json`
+- Change the siteVersion number in `src/global/app-dev.ts` and `src/global/app.ts`
+

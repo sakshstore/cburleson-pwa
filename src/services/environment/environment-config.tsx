@@ -6,6 +6,7 @@ export interface EnvironmentConfig {
     debug: boolean;
     siteName: string;
     recordAnalytics: boolean;
+    siteVersion: string;
 }
 
 export function mySetupConfig(config: EnvironmentConfig) {

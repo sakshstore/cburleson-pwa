@@ -1,7 +1,5 @@
 import { Component, h } from '@stencil/core';
 
-// import { BlogData } from '../../services/blog-data';
-
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
@@ -17,10 +15,6 @@ export class PageLifeEvents {
         if(debug) {
             console.log('> PageTemplatePage.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        //let id = document.location.pathname.substr(1);
-        //this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
         document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
