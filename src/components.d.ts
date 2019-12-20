@@ -100,6 +100,7 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -609,6 +610,12 @@ declare global {
     new (): HTMLPageSparqlExamplesSelectElement;
   };
 
+  interface HTMLPageStoryStructureDiagramElement extends Components.PageStoryStructureDiagram, HTMLStencilElement {}
+  var HTMLPageStoryStructureDiagramElement: {
+    prototype: HTMLPageStoryStructureDiagramElement;
+    new (): HTMLPageStoryStructureDiagramElement;
+  };
+
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -798,6 +805,7 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
+    'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -910,6 +918,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -1011,6 +1020,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
+    'page-story-structure-diagram': PageStoryStructureDiagram;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1119,6 +1129,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
+      'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

@@ -649,6 +649,17 @@
       ]
     },
     {
+      "id": "story-structure-diagram",
+      "title": "Story structure diagram",
+      "teaser": "A story structure diagram to help you plan and plot your novel.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2016/04/02",
+      "dateModified": "2019/02/26",
+      "tracks": [
+        "Storycraft and Writing"
+      ]
+    },
+    {
       "id": "index-of-item-within-angular-ngfor-loop",
       "title": "Index of item within Angular ngFor loop",
       "teaser": "How to get and print the index (or the iteration number) of the current item in an ngFor loop.",
