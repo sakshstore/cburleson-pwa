@@ -864,6 +864,16 @@
       ]
     },
     {
+      "id": "glossary-of-ldap-acronyms-and-terms",
+      "title": "Glossary of LDAP acronyms and terms",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ldap.svg",
+      "datePublished": "2009/11/20",
+      "dateModified": "2018/07/26",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "list-ibm-db2-commands",
       "title": "List IBM DB2 commands",
       "teaser": "Get a quick list of IBM DB2 commands.",

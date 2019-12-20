@@ -54,6 +54,7 @@ export namespace Components {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -333,6 +334,12 @@ declare global {
   var HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement: {
     prototype: HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     new (): HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+  };
+
+  interface HTMLPageGlossaryOfLdapAcronymsAndTermsElement extends Components.PageGlossaryOfLdapAcronymsAndTerms, HTMLStencilElement {}
+  var HTMLPageGlossaryOfLdapAcronymsAndTermsElement: {
+    prototype: HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
+    new (): HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
   };
 
   interface HTMLPageHomeElement extends Components.PageHome, HTMLStencilElement {}
@@ -766,6 +773,7 @@ declare global {
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
     'page-home': HTMLPageHomeElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
@@ -880,6 +888,7 @@ declare namespace LocalJSX {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -983,6 +992,7 @@ declare namespace LocalJSX {
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
+    'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
     'page-home': PageHome;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
@@ -1093,6 +1103,7 @@ declare module "@stencil/core" {
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
+      'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
       'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
