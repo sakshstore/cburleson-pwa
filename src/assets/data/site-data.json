@@ -11,6 +11,7 @@
         "Software Dev"
       ]
     },
+
     {
       "id": "killing-kittens",
       "title": "Killing Kittens",
@@ -30,6 +31,15 @@
       "dateModified": "2019/11/07",
       "tracks": [
         "Software Dev"
+      ]
+    },
+    {
+      "id": "show-both-sides-of-a-plane-in-zbrush",
+      "title": "How to show both sides of a plane in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/13",
+      "tracks": [
+        "ZBrush"
       ]
     },
     {

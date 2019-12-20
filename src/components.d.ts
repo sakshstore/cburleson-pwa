@@ -86,6 +86,7 @@ export namespace Components {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -526,6 +527,12 @@ declare global {
     new (): HTMLPageSetThePageTitleInAngularElement;
   };
 
+  interface HTMLPageShowBothSidesOfAPlaneInZbrushElement extends Components.PageShowBothSidesOfAPlaneInZbrush, HTMLStencilElement {}
+  var HTMLPageShowBothSidesOfAPlaneInZbrushElement: {
+    prototype: HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+    new (): HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+  };
+
   interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
   var HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement: {
     prototype: HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
@@ -791,6 +798,7 @@ declare global {
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
+    'page-show-both-sides-of-a-plane-in-zbrush': HTMLPageShowBothSidesOfAPlaneInZbrushElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
@@ -904,6 +912,7 @@ declare namespace LocalJSX {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -1006,6 +1015,7 @@ declare namespace LocalJSX {
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
+    'page-show-both-sides-of-a-plane-in-zbrush': PageShowBothSidesOfAPlaneInZbrush;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
@@ -1115,6 +1125,7 @@ declare module "@stencil/core" {
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
+      'page-show-both-sides-of-a-plane-in-zbrush': LocalJSX.PageShowBothSidesOfAPlaneInZbrush & JSXBase.HTMLAttributes<HTMLPageShowBothSidesOfAPlaneInZbrushElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
