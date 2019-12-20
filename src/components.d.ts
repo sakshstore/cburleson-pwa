@@ -54,6 +54,7 @@ export namespace Components {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -86,6 +87,7 @@ export namespace Components {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -100,6 +102,7 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -333,6 +336,12 @@ declare global {
     new (): HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
   };
 
+  interface HTMLPageGlossaryOfLdapAcronymsAndTermsElement extends Components.PageGlossaryOfLdapAcronymsAndTerms, HTMLStencilElement {}
+  var HTMLPageGlossaryOfLdapAcronymsAndTermsElement: {
+    prototype: HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
+    new (): HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
+  };
+
   interface HTMLPageHomeElement extends Components.PageHome, HTMLStencilElement {}
   var HTMLPageHomeElement: {
     prototype: HTMLPageHomeElement;
@@ -525,6 +534,12 @@ declare global {
     new (): HTMLPageSetThePageTitleInAngularElement;
   };
 
+  interface HTMLPageShowBothSidesOfAPlaneInZbrushElement extends Components.PageShowBothSidesOfAPlaneInZbrush, HTMLStencilElement {}
+  var HTMLPageShowBothSidesOfAPlaneInZbrushElement: {
+    prototype: HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+    new (): HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+  };
+
   interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
   var HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement: {
     prototype: HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
@@ -607,6 +622,12 @@ declare global {
   var HTMLPageSparqlExamplesSelectElement: {
     prototype: HTMLPageSparqlExamplesSelectElement;
     new (): HTMLPageSparqlExamplesSelectElement;
+  };
+
+  interface HTMLPageStoryStructureDiagramElement extends Components.PageStoryStructureDiagram, HTMLStencilElement {}
+  var HTMLPageStoryStructureDiagramElement: {
+    prototype: HTMLPageStoryStructureDiagramElement;
+    new (): HTMLPageStoryStructureDiagramElement;
   };
 
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
@@ -752,6 +773,7 @@ declare global {
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
+    'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
     'page-home': HTMLPageHomeElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
@@ -784,6 +806,7 @@ declare global {
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
+    'page-show-both-sides-of-a-plane-in-zbrush': HTMLPageShowBothSidesOfAPlaneInZbrushElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
@@ -798,6 +821,7 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
+    'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -864,6 +888,7 @@ declare namespace LocalJSX {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
+  interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -896,6 +921,7 @@ declare namespace LocalJSX {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -910,6 +936,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -965,6 +992,7 @@ declare namespace LocalJSX {
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
+    'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
     'page-home': PageHome;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
@@ -997,6 +1025,7 @@ declare namespace LocalJSX {
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
+    'page-show-both-sides-of-a-plane-in-zbrush': PageShowBothSidesOfAPlaneInZbrush;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
@@ -1011,6 +1040,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
+    'page-story-structure-diagram': PageStoryStructureDiagram;
     'page-template-page': PageTemplatePage;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1073,6 +1103,7 @@ declare module "@stencil/core" {
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
+      'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
       'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
@@ -1105,6 +1136,7 @@ declare module "@stencil/core" {
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
+      'page-show-both-sides-of-a-plane-in-zbrush': LocalJSX.PageShowBothSidesOfAPlaneInZbrush & JSXBase.HTMLAttributes<HTMLPageShowBothSidesOfAPlaneInZbrushElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
@@ -1119,6 +1151,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
+      'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

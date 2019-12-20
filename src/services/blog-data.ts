@@ -1,5 +1,7 @@
 import { EnvironmentConfigService } from '../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
+const DEBUG: boolean = EnvironmentConfigService.getInstance().get('debug');
+const SITE_VERSION: string = EnvironmentConfigService.getInstance().get('siteVersion');
 
 class BlogDataService {
 
@@ -7,26 +9,26 @@ class BlogDataService {
     postId: string;
 
     constructor() {
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.constructor')
         }
     }
 
     async load() {
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.load');
         }
         
         if (this.data) {
-            if (debug) {
+            if (DEBUG) {
                 console.log('< BlogDataService.load < returning cached data: \n %o', this.data);
             }
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/site-data.json');
+            const rsp = await fetch('/assets/data/site-data.json?v=' + SITE_VERSION);
             const json = await rsp.json();
             let data = this.processData(json);
-            if (debug) {
+            if (DEBUG) {
                 console.log('< BlogDataService.load < returning newly loaded data: \n %o', this.data);
             }
             return data;
@@ -35,7 +37,7 @@ class BlogDataService {
 
     processData(data: any) {
 
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.processData');
         }
 
@@ -62,7 +64,7 @@ class BlogDataService {
 
     async getContent(excludeTracks: any[] = []) {
 
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.getContent');
         }
 
@@ -91,7 +93,7 @@ class BlogDataService {
     }
 
     async getTracks() {
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.getTracks');
         }
         const data = await this.load();
@@ -99,7 +101,7 @@ class BlogDataService {
     }
 
     getPostHeaderById(slug: string) {
-        if (debug) {
+        if (DEBUG) {
             console.log('> BlogDataService.getPostHeaderById("%s")', slug);
         }
         return this.data.content.find(item => item.id === slug);

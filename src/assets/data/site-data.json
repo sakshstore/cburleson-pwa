@@ -11,6 +11,7 @@
         "Software Dev"
       ]
     },
+
     {
       "id": "killing-kittens",
       "title": "Killing Kittens",
@@ -30,6 +31,15 @@
       "dateModified": "2019/11/07",
       "tracks": [
         "Software Dev"
+      ]
+    },
+    {
+      "id": "show-both-sides-of-a-plane-in-zbrush",
+      "title": "How to show both sides of a plane in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/10/13",
+      "tracks": [
+        "ZBrush"
       ]
     },
     {
@@ -649,6 +659,17 @@
       ]
     },
     {
+      "id": "story-structure-diagram",
+      "title": "Story structure diagram",
+      "teaser": "A story structure diagram to help you plan and plot your novel.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2016/04/02",
+      "dateModified": "2019/02/26",
+      "tracks": [
+        "Storycraft and Writing"
+      ]
+    },
+    {
       "id": "index-of-item-within-angular-ngfor-loop",
       "title": "Index of item within Angular ngFor loop",
       "teaser": "How to get and print the index (or the iteration number) of the current item in an ngFor loop.",
@@ -838,6 +859,16 @@
       "teaser": "how to get the keys and values of a Map (such as a HashMap) from within a Freemarker template.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
       "datePublished": "2009/12/24",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "glossary-of-ldap-acronyms-and-terms",
+      "title": "Glossary of LDAP acronyms and terms",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ldap.svg",
+      "datePublished": "2009/11/20",
+      "dateModified": "2018/07/26",
       "tracks": [
         "Software Dev"
       ]
