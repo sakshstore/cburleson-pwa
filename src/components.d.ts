@@ -48,6 +48,7 @@ export namespace Components {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
@@ -298,6 +299,12 @@ declare global {
   var HTMLPageDeleteHiddenGeometryInZbrushElement: {
     prototype: HTMLPageDeleteHiddenGeometryInZbrushElement;
     new (): HTMLPageDeleteHiddenGeometryInZbrushElement;
+  };
+
+  interface HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement extends Components.PageDisplayUserAttributesInAWebspherePortalTheme, HTMLStencilElement {}
+  var HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement: {
+    prototype: HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
+    new (): HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
   };
 
   interface HTMLPageDockerCheatSheetElement extends Components.PageDockerCheatSheet, HTMLStencilElement {}
@@ -767,6 +774,7 @@ declare global {
     'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
+    'page-display-user-attributes-in-a-websphere-portal-theme': HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
     'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
@@ -882,6 +890,7 @@ declare namespace LocalJSX {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
@@ -986,6 +995,7 @@ declare namespace LocalJSX {
     'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
+    'page-display-user-attributes-in-a-websphere-portal-theme': PageDisplayUserAttributesInAWebspherePortalTheme;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
     'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
@@ -1097,6 +1107,7 @@ declare module "@stencil/core" {
       'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
+      'page-display-user-attributes-in-a-websphere-portal-theme': LocalJSX.PageDisplayUserAttributesInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
       'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;

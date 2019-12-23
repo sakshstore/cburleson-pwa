@@ -783,6 +783,15 @@
       ]
     },
     {
+      "id": "display-user-attributes-in-a-websphere-portal-theme",
+      "title": "How to display user attributes in a WebSphere Portal theme",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/01/22",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "shrink-windows-vm-on-vmware-fusion-for-mac",
       "title": "How to shrink a Windows VM on VMWare Fusion for Mac",
       "teaser": "Procedure for shrinking a Windows virtual machine on VMWare Fusion for the Mac.",
