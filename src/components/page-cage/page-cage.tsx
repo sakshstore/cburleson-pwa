@@ -167,7 +167,7 @@ export class PageCage {
                 {this.recordItems.map((item) =>
                   <ion-item href={item.id}>
                     <ion-thumbnail slot="start">
-                      <img src={item.thumbnail} />
+                      <ion-img src={item.thumbnail} />
                     </ion-thumbnail>
                     <ion-label text-wrap>
                       {item.title}
@@ -183,7 +183,7 @@ export class PageCage {
                 {this.photoItems.map((item) =>
                   <ion-item href={item.id}>
                     <ion-thumbnail slot="start">
-                      <img src={item.thumbnail} />
+                      <ion-img src={item.thumbnail} />
                     </ion-thumbnail>
                     <ion-label text-wrap>
                       {item.title}
@@ -199,7 +199,7 @@ export class PageCage {
                 {this.videoItems.map((item) =>
                   <ion-item href={item.id}>
                     <ion-thumbnail slot="start">
-                      <img src={item.thumbnail} />
+                      <ion-img src={item.thumbnail} />
                     </ion-thumbnail>
                     <ion-label text-wrap>
                       {item.title}
@@ -208,8 +208,6 @@ export class PageCage {
                   </ion-item>
                 )}
               </ion-list>
-
-              <h3>Vietnam War Reference Resources</h3>
 
             </ion-col>
 

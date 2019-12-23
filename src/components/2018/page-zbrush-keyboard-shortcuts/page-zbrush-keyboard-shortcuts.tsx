@@ -34,9 +34,6 @@ export class PageZbrushKeyboardShortcuts {
   }
 
   componentDidRender() {
-    if (debug) {
-      console.log('> PageZbrushKeyboardShortcuts.comnponentDidRender');
-    }
     (this.adsbygoogle = window.adsbygoogle || []).push({});
   }
 

@@ -14,7 +14,7 @@ export class PageBooks {
     {
       id: "/cage",
       title: "The Cage",
-      teaser: "An epic true story of the Special Landing Force of 1st Batallion, 3rd Marines in the Vietnam War.",
+      teaser: "The true story of the Special Landing Force of 1st Batallion, 3rd Marines in the Vietnam War.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
       datePublished: "",
       dateModified: "Oct 21, 2019"
@@ -44,7 +44,7 @@ export class PageBooks {
           {this.writingItems.map((item) =>
             <ion-item href={item.id}>
               <ion-thumbnail slot="start">
-                <img src={item.thumbnail} />
+                <ion-img src={item.thumbnail} />
               </ion-thumbnail>
               <ion-label text-wrap>
                 {item.title}
