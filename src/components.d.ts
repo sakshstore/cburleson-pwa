@@ -58,6 +58,7 @@ export namespace Components {
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
@@ -359,6 +360,12 @@ declare global {
   var HTMLPageHowToApplyTextureInZbrushElement: {
     prototype: HTMLPageHowToApplyTextureInZbrushElement;
     new (): HTMLPageHowToApplyTextureInZbrushElement;
+  };
+
+  interface HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement extends Components.PageHowToCheckUserAccessRoleInAWebspherePortalTheme, HTMLStencilElement {}
+  var HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement: {
+    prototype: HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
+    new (): HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
   };
 
   interface HTMLPageHowToSketchWithZspheresInZbrushElement extends Components.PageHowToSketchWithZspheresInZbrush, HTMLStencilElement {}
@@ -784,6 +791,7 @@ declare global {
     'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
     'page-home': HTMLPageHomeElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
+    'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
@@ -900,6 +908,7 @@ declare namespace LocalJSX {
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
   interface PageHowToApplyTextureInZbrush {}
+  interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
@@ -1005,6 +1014,7 @@ declare namespace LocalJSX {
     'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
     'page-home': PageHome;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
+    'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
@@ -1117,6 +1127,7 @@ declare module "@stencil/core" {
       'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
       'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
+      'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;

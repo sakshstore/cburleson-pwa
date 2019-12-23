@@ -36,6 +36,14 @@
   line-height: 1.3em;
 }
 
+/* Allow text selection in Ionic app See: https://devdactic.com/10-simple-ionic-hacks/ */
+/*body {
+  -webkit-user-select: text;
+  user-select: text;
+}
+THIS DOES NOT!!! WORK!
+*/
+
 code {
   /*font-size: 90%;*/
   color: #e83e8c;
@@ -161,6 +169,10 @@ div.video-container {
   margin-right: 1.5em;
 }
 
+.aligncenter {text-align: center}
+
+.clear {clear: both}
+
 /* ******************************************************* */
 /* IMAGES                                                  */
 /* ******************************************************* */
@@ -187,16 +199,3 @@ ion-thumbnail {
   height: var(--size);
 }
 
-.alignleft {
-  display: inline;
-  float: left;
-  margin-right: 1.5em;
-}
-
-.aligncenter {
-  text-align: center;
-}
-
-.clear {
- clear: both;
-}

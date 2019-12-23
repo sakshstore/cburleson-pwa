@@ -53,7 +53,7 @@ export class PageDisplayUserAttributesInAWebspherePortalTheme {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png" alt="WebSphere Portal Logo Symbol" />Since the release of IBM WebSphere Portal 7, there have been a number of&nbsp;<a href="http://www-10.lotus.com/ldd/portalwiki.nsf/dx/Portal_EL_Beans" rel="nofollow">Portal EL beans</a>&nbsp;exposed for access in your theme. EL beans are Java objects that can be used with the JSTL Expression Language. One of these objects, the UserBean, provides convenient access to the defined user attributes of the authenticated user.</p>
+                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png" alt="WebSphere Portal Logo Symbol" />Since the release of IBM WebSphere Portal 7, there have been a number of&nbsp;<a href="https://www-10.lotus.com/ldd/portalwiki.nsf/dx/Portal_EL_Beans" rel="nofollow">Portal EL beans</a>&nbsp;exposed for access in your theme. EL beans are Java objects that can be used with the JSTL Expression Language. One of these objects, the UserBean, provides convenient access to the defined user attributes of the authenticated user.</p>
 
 <p>In the default Portal 8.0 and CTC 3.1 theme, for example, you can find the following JSTL statement, which is used to print the authenticated user’s name in the theme header. The snippet is in /themes/html/dynamicSpots/commonActions.jsp and it looks like this:</p>
 

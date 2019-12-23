@@ -1,10 +1,12 @@
 import { Component, h } from '@stencil/core';
 import { BlogData } from '../../../services/blog-data';
 
-
-
 import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+
+declare global {
+  interface Window { adsbygoogle: any; }
+}
 
 @Component({
   tag: 'page-zbrush-keyboard-shortcuts',
@@ -15,6 +17,8 @@ export class PageZbrushKeyboardShortcuts {
 
   // header for this individual item by id...
   header: any;
+
+  adsbygoogle:any;
 
   async componentWillLoad() {
     if (debug) {
@@ -27,6 +31,13 @@ export class PageZbrushKeyboardShortcuts {
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+  }
+
+  componentDidRender() {
+    if (debug) {
+      console.log('> PageZbrushKeyboardShortcuts.comnponentDidRender');
+    }
+    (this.adsbygoogle = window.adsbygoogle || []).push({});
   }
 
   render() {
@@ -46,9 +57,6 @@ export class PageZbrushKeyboardShortcuts {
         <ion-grid>
           <ion-row>
             <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-              <h1>{this.header.title}</h1>
-              <app-entry-meta header={this.header} />
-
               <h1>{this.title}</h1>
 
               <app-entry-meta header={this.header} />
@@ -1347,14 +1355,14 @@ indicated in the top left of the brush icon in to brush palette.</p>
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               {/* Sidebar2 * (vertical; long from top to bottom) */}
-              <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+              
               <ins class="adsbygoogle"
                 style={{ display: `block` }}
                 data-ad-client="ca-pub-7370676338719207"
                 data-ad-slot="5178955087"
                 data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
-              <script>(adsbygoogle = window.adsbygoogle || []).push({});</script>
+              {/*<script>(adsbygoogle = window.adsbygoogle || []).push({});</script>*/}
             </ion-col>
           </ion-row>
         </ion-grid>
