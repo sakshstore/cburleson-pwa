@@ -2,6 +2,12 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/5e6d062e-d4fe-496b-b3c2-978ca2ab080a/deploy-status)](https://app.netlify.com/sites/serene-saha-07d9e0/deploys)
 
+This is the source code for my static Ionic and Stencil.js blog, live at https://codyburleson.com. My goal for the blog has been to see what I can actually accomplish in a static site with no "fad" framework like Angular, React, or Vue. All that is used is standards-compliant web components and small helper libraries. Currently, managing the site is done manually, but I hope to start creating some Node.js scripts to help.
+
+- [Changelog](changelog.md)
+
+## Developer getting started...
+
 To run:
 
 - `npm install` - Run this first to install the dependencies defined in `package,json`

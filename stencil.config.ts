@@ -30,6 +30,9 @@ export const config: Config = {
   {
     src: '../google67847f872fb87981.html',
     dest: 'google67847f872fb87981.html'
+  },
+  {
+    src: '../sitemap.txt',
+    dest: 'sitemap.txt'
   }]
 };
-
