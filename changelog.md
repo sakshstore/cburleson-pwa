@@ -11,7 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - New Node.js script, `appGenSitemap.js` generates sitemap.txt file from `src/assets/data/site-data.json` file. `stencil.config.ts` is configured to copy the generated txt file into the `www` deployment folder.
-- Page from legacy WordPress blog: `notes-on-zbrush-sculptris-pro`
+- Pagew from legacy WordPress blog: 
+    - `notes-on-zbrush-sculptris-pro`
+    - `accessing-the-authentica...r-from-a-separate-web-app`
 
 ### Changed
 

@@ -732,6 +732,15 @@
       ]
     },
     {
+      "id": "accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app",
+      "title": "Accessing the authenticated WebSphere Portal user from a separate web app",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/09/21",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
       "title": "Getting parts of a URL from the HttpServletRequest object",
       "teaser": "Example Java code and example output values for getter methods on the HttpServletRequest object.",

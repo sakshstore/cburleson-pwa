@@ -30,6 +30,7 @@ export namespace Components {
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
+  interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
@@ -193,6 +194,12 @@ declare global {
   var HTMLPageAboutElement: {
     prototype: HTMLPageAboutElement;
     new (): HTMLPageAboutElement;
+  };
+
+  interface HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement extends Components.PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp, HTMLStencilElement {}
+  var HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement: {
+    prototype: HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement;
+    new (): HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement;
   };
 
   interface HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement extends Components.PageApplyDifferentMaterialsToSubtoolsInZbrush, HTMLStencilElement {}
@@ -770,6 +777,7 @@ declare global {
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
     'page-about': HTMLPageAboutElement;
+    'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
@@ -888,6 +896,7 @@ declare namespace LocalJSX {
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
+  interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
@@ -995,6 +1004,7 @@ declare namespace LocalJSX {
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
     'page-about': PageAbout;
+    'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
@@ -1109,6 +1119,7 @@ declare module "@stencil/core" {
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
+      'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': LocalJSX.PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp & JSXBase.HTMLAttributes<HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;

@@ -71,6 +71,7 @@ https://codyburleson.com/quick-and-simple-caching-with-apache-commons-jcs
 https://codyburleson.com/7-reasons-why-typescript-helps-you-kick-ass
 https://codyburleson.com/unity-get-rigidbody-from-object
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
+https://codyburleson.com/accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app
 https://codyburleson.com/getting-parts-of-a-url-from-the-httpservletrequest-object
 https://codyburleson.com/mapping-to-a-view-in-spring-when-no-controller-logic-is-required
 https://codyburleson.com/script-for-rotating-unity-game-object-90-degrees
