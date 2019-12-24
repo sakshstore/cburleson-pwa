@@ -336,6 +336,16 @@
       ]
     },
     {
+      "id": "notes-on-zbrush-sculptris-pro",
+      "title": "Notes on ZBrush Sculptris Pro",
+      "teaser": "My study notes on the Sculptris Pro features in ZBrush.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "how-to-use-live-boolean-in-zbrush",
       "title": "How to use live boolean in ZBrush",
       "teaser": "Learn to use the real-time boolean operations in ZBrush.",

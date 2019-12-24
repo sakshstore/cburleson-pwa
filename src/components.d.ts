@@ -72,6 +72,7 @@ export namespace Components {
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
+  interface PageNotesOnZbrushSculptrisPro {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -446,6 +447,12 @@ declare global {
     new (): HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
   };
 
+  interface HTMLPageNotesOnZbrushSculptrisProElement extends Components.PageNotesOnZbrushSculptrisPro, HTMLStencilElement {}
+  var HTMLPageNotesOnZbrushSculptrisProElement: {
+    prototype: HTMLPageNotesOnZbrushSculptrisProElement;
+    new (): HTMLPageNotesOnZbrushSculptrisProElement;
+  };
+
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -805,6 +812,7 @@ declare global {
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
+    'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pink-hearts': HTMLPagePinkHeartsElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
@@ -922,6 +930,7 @@ declare namespace LocalJSX {
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
+  interface PageNotesOnZbrushSculptrisPro {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -1028,6 +1037,7 @@ declare namespace LocalJSX {
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
+    'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pink-hearts': PagePinkHearts;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
@@ -1141,6 +1151,7 @@ declare module "@stencil/core" {
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
+      'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;

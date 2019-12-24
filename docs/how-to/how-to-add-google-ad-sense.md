@@ -41,6 +41,13 @@ Next, remove the last script block. You then have only this:
      data-full-width-responsive="true"></ins>
 ```
 
+Replace the style attribute in the snippet with: 
+
+```
+style={{ display: `block` }}
+```
+
+
 Place that `ins` tag wherever you want the ad to display.
 
 Befoire the page's class derfinition, put this:
@@ -56,7 +63,9 @@ That extends the window object interface so that you don't get errors about the 
 Finally add this method to the component's page code:
 
 ```
-  componentDidRender() {
-    (this.adsbygoogle = window.adsbygoogle || []).push({});
-  }
+componentDidRender() {
+  (this.adsbygoogle = window.adsbygoogle || []).push({});
+}
 ```
+
+and declare `adsbygoogle: any` in the class scope.
