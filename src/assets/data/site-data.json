@@ -345,6 +345,15 @@
       ]
     },
     {
+      "id": "about-zsphere-smoothing-brushes",
+      "title": "About ZSphere smoothing brushes",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "notes-on-zbrush-sculptris-pro",
       "title": "Notes on ZBrush Sculptris Pro",
       "teaser": "My study notes on the Sculptris Pro features in ZBrush.",

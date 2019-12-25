@@ -184,7 +184,7 @@ export class PageSparqlExamplesSelect {
 
                 <pre><code class="language-sparql" innerHTML={CODE_11}></code></pre>
 
-                <p>You can try this one at the <a class="external-link" href="http://dbpedia.org/sparql" rel="nofollow">DBPedia SPARQL endpoint</a>.</p>
+                <p>You can try this one at the <a href="http://dbpedia.org/sparql" rel="nofollow">DBPedia SPARQL endpoint</a>.</p>
                 <ul>
                     <li><code>FILTER</code> constraints use boolean conditions to filter out unwanted query results.</li>
                     <li>Shortcut: a semicolon (;) can be used to separate two triple patterns that share the same subject. (<code>?country</code> is the shared subject above.)</li>

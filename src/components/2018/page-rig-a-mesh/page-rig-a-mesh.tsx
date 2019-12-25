@@ -90,7 +90,7 @@ export class PageRigAMeshWithZspheresInZbrush {
 
                 <h2 id="RigameshwithZSpheres-Reference">Reference</h2>
                 <ul>
-                    <li><a class="external-link" href="https://www.youtube.com/watch?v=s6THhnv0m6g" rel="nofollow">Posing Characters in Zbrush using a Zsphere Rig</a>, Andrew Klein, YouTube</li>
+                    <li><a href="https://www.youtube.com/watch?v=s6THhnv0m6g" rel="nofollow">Posing Characters in Zbrush using a Zsphere Rig</a>, Andrew Klein, YouTube</li>
                 </ul>
 
             </ion-content>

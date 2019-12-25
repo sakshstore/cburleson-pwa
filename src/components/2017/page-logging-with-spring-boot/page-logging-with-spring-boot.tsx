@@ -176,7 +176,7 @@ logging.file=$\{java.io.tmpdir\}/myapp.log
 
                 <h2>Conclusion</h2>
 
-                <p>As you can see, logging from your Spring Boot application is piece of cake. Of course, there’s a lot more that you can do as your requirements dictate. For more information, take a look at&nbsp;<a class="external-link" href="http://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/#boot-features-logging" rel="nofollow">Logging, in the Spring Boot Reference Guide</a>.</p>
+                <p>As you can see, logging from your Spring Boot application is piece of cake. Of course, there’s a lot more that you can do as your requirements dictate. For more information, take a look at&nbsp;<a href="http://docs.spring.io/spring-boot/docs/1.5.2.RELEASE/reference/htmlsingle/#boot-features-logging" rel="nofollow">Logging, in the Spring Boot Reference Guide</a>.</p>
 
                 <h2>References</h2>
 

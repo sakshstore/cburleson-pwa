@@ -85,7 +85,7 @@ export class PageMNakeAZbrushSpeedSculptTimelapseVideo {
                 </ul>
                 <h1>Reference Resources</h1>
                 <ul>
-                    <li><a class="external-link" href="https://www.youtube.com/watch?v=Cf36MNzyAdQ" rel="nofollow">ZBrush – How to Record a Timelapse</a>, Jared Michael</li>
+                    <li><a href="https://www.youtube.com/watch?v=Cf36MNzyAdQ" rel="nofollow">ZBrush – How to Record a Timelapse</a>, Jared Michael</li>
                 </ul>
 
             </ion-content>
