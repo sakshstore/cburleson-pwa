@@ -46,6 +46,7 @@ export class PageAbout {
 
         <p><strong><ion-router-link href="/cage" routerDirection="forward">The Cage</ion-router-link></strong> (work-in-progress book)</p>
 
+        {/*
         <h3 class="clear">Follow me</h3>
 
         <p>I'm not very active on social media, but, for what it's worth, I can also be found here:</p>
@@ -80,6 +81,8 @@ export class PageAbout {
             <ion-icon name="logo-github" slot="start"></ion-icon>
           </ion-item>
         </ion-list>
+
+        */}
 
         <h2>About this site (technology)</h2>
 

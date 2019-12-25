@@ -9,8 +9,7 @@ const siteName: string = EnvironmentConfigService.getInstance().get('siteName');
 declare let gtag: Function;
 
 @Component({
-  tag: 'app-root',
-  styleUrl: 'app-root.css'
+  tag: 'app-root'
 })
 export class AppRoot {
 
@@ -61,34 +60,7 @@ export class AppRoot {
 
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
-    let routeId = window.location.pathname.substring(1);
-    let header = BlogData.getPostHeaderById(routeId);
-    // If there is no header returned, the slug does not exist in the blog posts
-    if (!header) {
-      // We also need to bypass any parametrized routes that we've defined...
-      switch (routeId) {
-        case 'photos/curt-bruce':
-          break;
-        case 'photos/ed-kalwara':
-          break;
-        case 'photos/gary-culp':
-          break;
-        case 'photos/jack-depope':
-          break;
-        case 'photos/james-haight':
-          break;
-        case 'photos/jim-shipp':
-          break;
-        case 'photos/ray-kelley':
-          break;
-        case 'photos/stanley-hall':
-          break;
-        default:
-          // ...and finally we dynamically add the undefined route to the router and point it to Page Not Found.
-          this.unfoundRoute = (<ion-route url={'/' + routeId + '/'} component="app-404-page-not-found" />);
-      }
 
-    }
   }
 
   renderRouter() {
@@ -133,6 +105,9 @@ export class AppRoot {
           <ion-route url="/photos" component="tab-books">
             <ion-route url="/:name" component="app-photos"></ion-route>
           </ion-route>
+          <ion-route url="/photos" component="tab-books">
+            <ion-route url="/:name/:any" component="app-404-page-not-found"></ion-route>
+          </ion-route>
           <ion-route url="/vietnam-1967-amphibious-combat" component="tab-books">
             <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>
           </ion-route>
@@ -140,7 +115,8 @@ export class AppRoot {
           {blogPostRoutes}
 
         </ion-route>
-        {this.unfoundRoute}
+
+        <ion-route url=":any" component="app-404-page-not-found"/>
 
       </ion-router>
     );

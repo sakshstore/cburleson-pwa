@@ -881,6 +881,15 @@
       ]
     },
     {
+      "id": "access-the-was-console-from-websphere-portal-server",
+      "title": "Access the WAS console from WebSphere Portal Server",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2012/08/08",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "find-java-classes-or-packages-contained-in-jar-files",
       "title": "Find Java classes or packages contained in JAR files",
       "teaser": "Here's a tool that can help you search through JAR files to find Java classes or packages.",
