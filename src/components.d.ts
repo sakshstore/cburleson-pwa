@@ -86,6 +86,7 @@ export namespace Components {
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
+  interface PageResolving404ErrorsAccessingWcmContentThroughPocServlet {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageSceneAndSequelPatternForWriters {}
@@ -533,6 +534,12 @@ declare global {
     new (): HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
   };
 
+  interface HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement extends Components.PageResolving404ErrorsAccessingWcmContentThroughPocServlet, HTMLStencilElement {}
+  var HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement: {
+    prototype: HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement;
+    new (): HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement;
+  };
+
   interface HTMLPageRespondToButtonClickWithObservableElement extends Components.PageRespondToButtonClickWithObservable, HTMLStencilElement {}
   var HTMLPageRespondToButtonClickWithObservableElement: {
     prototype: HTMLPageRespondToButtonClickWithObservableElement;
@@ -840,6 +847,7 @@ declare global {
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-rdf-syntax-examples': HTMLPageRdfSyntaxExamplesElement;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
+    'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
     'page-scene-and-sequel-pattern-for-writers': HTMLPageSceneAndSequelPatternForWritersElement;
@@ -960,6 +968,7 @@ declare namespace LocalJSX {
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
+  interface PageResolving404ErrorsAccessingWcmContentThroughPocServlet {}
   interface PageRespondToButtonClickWithObservable {}
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageSceneAndSequelPatternForWriters {}
@@ -1069,6 +1078,7 @@ declare namespace LocalJSX {
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-rdf-syntax-examples': PageRdfSyntaxExamples;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
+    'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': PageResolving404ErrorsAccessingWcmContentThroughPocServlet;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
     'page-scene-and-sequel-pattern-for-writers': PageSceneAndSequelPatternForWriters;
@@ -1185,6 +1195,7 @@ declare module "@stencil/core" {
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-rdf-syntax-examples': LocalJSX.PageRdfSyntaxExamples & JSXBase.HTMLAttributes<HTMLPageRdfSyntaxExamplesElement>;
       'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
+      'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': LocalJSX.PageResolving404ErrorsAccessingWcmContentThroughPocServlet & JSXBase.HTMLAttributes<HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
       'page-scene-and-sequel-pattern-for-writers': LocalJSX.PageSceneAndSequelPatternForWriters & JSXBase.HTMLAttributes<HTMLPageSceneAndSequelPatternForWritersElement>;

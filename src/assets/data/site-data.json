@@ -820,6 +820,15 @@
       ]
     },
     {
+      "id": "resolving-404-errors-accessing-wcm-content-through-poc-servlet",
+      "title": "Resolving 404 errors accessing WCM content through POC Servlet",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/01/12",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "shrink-windows-vm-on-vmware-fusion-for-mac",
       "title": "How to shrink a Windows VM on VMWare Fusion for Mac",
       "teaser": "Procedure for shrinking a Windows virtual machine on VMWare Fusion for the Mac.",
