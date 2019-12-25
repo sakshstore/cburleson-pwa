@@ -323,6 +323,15 @@
       ]
     },
     {
+      "id": "about-polygroups-in-zbrush",
+      "title": "About polygroups in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "zbrush-resources-online",
       "title": "ZBrush resources online",
       "teaser": "A list of online resources related to ZBrush.",

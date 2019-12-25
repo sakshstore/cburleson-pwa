@@ -84,7 +84,7 @@ export class PageAbout {
 
         */}
 
-        <h2>About this site (technology)</h2>
+        <h2 class="clear">About this site (technology)</h2>
 
         <p>This site was developed using the <a href="https://ionicframework.com/" rel="nofollow">Ionic Framework</a> and <a href="https://stenciljs.com/" rel="nofollow">Stencil.js</a>. While the site also uses some helper libraries like <a href="https://prismjs.com/" rel="nofollow">Prismjs (for code syntax highlighting)</a>, it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the &quot;fad&quot; JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
 

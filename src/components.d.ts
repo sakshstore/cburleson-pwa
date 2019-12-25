@@ -30,6 +30,7 @@ export namespace Components {
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
+  interface PageAboutPolygroupsInZbrush {}
   interface PageAboutZsphereSmoothingBrushes {}
   interface PageAccessTheWasConsoleFromWebspherePortalServer {}
   interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
@@ -199,6 +200,12 @@ declare global {
   var HTMLPageAboutElement: {
     prototype: HTMLPageAboutElement;
     new (): HTMLPageAboutElement;
+  };
+
+  interface HTMLPageAboutPolygroupsInZbrushElement extends Components.PageAboutPolygroupsInZbrush, HTMLStencilElement {}
+  var HTMLPageAboutPolygroupsInZbrushElement: {
+    prototype: HTMLPageAboutPolygroupsInZbrushElement;
+    new (): HTMLPageAboutPolygroupsInZbrushElement;
   };
 
   interface HTMLPageAboutZsphereSmoothingBrushesElement extends Components.PageAboutZsphereSmoothingBrushes, HTMLStencilElement {}
@@ -812,6 +819,7 @@ declare global {
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
     'page-about': HTMLPageAboutElement;
+    'page-about-polygroups-in-zbrush': HTMLPageAboutPolygroupsInZbrushElement;
     'page-about-zsphere-smoothing-brushes': HTMLPageAboutZsphereSmoothingBrushesElement;
     'page-access-the-was-console-from-websphere-portal-server': HTMLPageAccessTheWasConsoleFromWebspherePortalServerElement;
     'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement;
@@ -936,6 +944,7 @@ declare namespace LocalJSX {
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
   interface PageAbout {}
+  interface PageAboutPolygroupsInZbrush {}
   interface PageAboutZsphereSmoothingBrushes {}
   interface PageAccessTheWasConsoleFromWebspherePortalServer {}
   interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
@@ -1049,6 +1058,7 @@ declare namespace LocalJSX {
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
     'page-about': PageAbout;
+    'page-about-polygroups-in-zbrush': PageAboutPolygroupsInZbrush;
     'page-about-zsphere-smoothing-brushes': PageAboutZsphereSmoothingBrushes;
     'page-access-the-was-console-from-websphere-portal-server': PageAccessTheWasConsoleFromWebspherePortalServer;
     'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp;
@@ -1169,6 +1179,7 @@ declare module "@stencil/core" {
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
+      'page-about-polygroups-in-zbrush': LocalJSX.PageAboutPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageAboutPolygroupsInZbrushElement>;
       'page-about-zsphere-smoothing-brushes': LocalJSX.PageAboutZsphereSmoothingBrushes & JSXBase.HTMLAttributes<HTMLPageAboutZsphereSmoothingBrushesElement>;
       'page-access-the-was-console-from-websphere-portal-server': LocalJSX.PageAccessTheWasConsoleFromWebspherePortalServer & JSXBase.HTMLAttributes<HTMLPageAccessTheWasConsoleFromWebspherePortalServerElement>;
       'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': LocalJSX.PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp & JSXBase.HTMLAttributes<HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement>;
