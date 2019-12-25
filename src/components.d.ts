@@ -75,6 +75,7 @@ export namespace Components {
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageNotesOnZbrushSculptrisPro {}
+  interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -468,6 +469,12 @@ declare global {
     new (): HTMLPageNotesOnZbrushSculptrisProElement;
   };
 
+  interface HTMLPageNotesOnZbrushSlicecurveBrushElement extends Components.PageNotesOnZbrushSlicecurveBrush, HTMLStencilElement {}
+  var HTMLPageNotesOnZbrushSlicecurveBrushElement: {
+    prototype: HTMLPageNotesOnZbrushSlicecurveBrushElement;
+    new (): HTMLPageNotesOnZbrushSlicecurveBrushElement;
+  };
+
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -836,6 +843,7 @@ declare global {
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
+    'page-notes-on-zbrush-slicecurve-brush': HTMLPageNotesOnZbrushSlicecurveBrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pink-hearts': HTMLPagePinkHeartsElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
@@ -957,6 +965,7 @@ declare namespace LocalJSX {
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageNotesOnZbrushSculptrisPro {}
+  interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -1067,6 +1076,7 @@ declare namespace LocalJSX {
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
+    'page-notes-on-zbrush-slicecurve-brush': PageNotesOnZbrushSlicecurveBrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pink-hearts': PagePinkHearts;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
@@ -1184,6 +1194,7 @@ declare module "@stencil/core" {
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
+      'page-notes-on-zbrush-slicecurve-brush': LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;

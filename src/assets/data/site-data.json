@@ -253,6 +253,15 @@
       ]
     },
     {
+      "id": "notes-on-zbrush-slicecurve-brush",
+      "title": "Notes on the ZBrush SliceCurve brush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/05/16",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
       "id": "isolate-a-polygroup-in-zbrush",
       "title": "How to isolate a polygroup in ZBrush",
       "teaser": "",
