@@ -63,6 +63,7 @@ export namespace Components {
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
+  interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -395,6 +396,12 @@ declare global {
   var HTMLPageHowToUseLiveBooleanInZbrushElement: {
     prototype: HTMLPageHowToUseLiveBooleanInZbrushElement;
     new (): HTMLPageHowToUseLiveBooleanInZbrushElement;
+  };
+
+  interface HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement extends Components.PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap, HTMLStencilElement {}
+  var HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement: {
+    prototype: HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
+    new (): HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
   };
 
   interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
@@ -831,6 +838,7 @@ declare global {
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
+    'page-identifying-large-objects-consuming-memory-in-java-heap': HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
@@ -953,6 +961,7 @@ declare namespace LocalJSX {
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
+  interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -1064,6 +1073,7 @@ declare namespace LocalJSX {
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
+    'page-identifying-large-objects-consuming-memory-in-java-heap': PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
@@ -1182,6 +1192,7 @@ declare module "@stencil/core" {
       'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
+      'page-identifying-large-objects-consuming-memory-in-java-heap': LocalJSX.PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap & JSXBase.HTMLAttributes<HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;

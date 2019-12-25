@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed** [#49](https://github.com/codyburleson/cburleson-pwa/issues/49) Add page: access-the-was-console-from-websphere-portal-server
 - **Fixed** [#45](https://github.com/codyburleson/cburleson-pwa/issues/45) Add page: resolving-404-errors-accessing-wcm-content-through-poc-servlet
 - **Fixed** [#44](https://github.com/codyburleson/cburleson-pwa/issues/44) Add page: notes-on-zbrush-slicecurve-brush/
+- **Fixed** [#38](https://github.com/codyburleson/cburleson-pwa/issues/38) Add page from legacy site: identifying-large-object...uming-memory-in-java-heap
 
 ## [1.1.1] - 2019-12-25
 
