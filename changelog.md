@@ -4,7 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.1.1] - 2019-12-25
+
+### Added
+
+- Added `robots.txt` file allowing all agents to crawl all resources, and pointing to the `sitemap.txt` file.
+- Added 3 <link rel="preconnect" href="..."/> tags based on performance improvement suggestion from Lighthouse.
+
+### Changed
+
+- About page: Next to site version number, added a link to the changelog on Github.
+
+### Fixed
+
+- [#54](https://github.com/codyburleson/cburleson-pwa/issues/54) - URLs that end with fwd slash load appropriate page, but do not render
 
 ## [1.1.0] - 2019-12-24
 

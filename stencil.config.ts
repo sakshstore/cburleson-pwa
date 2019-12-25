@@ -34,5 +34,9 @@ export const config: Config = {
   {
     src: '../sitemap.txt',
     dest: 'sitemap.txt'
+  },
+  {
+    src: '../robots.txt',
+    dest: 'robots.txt'
   }]
 };
