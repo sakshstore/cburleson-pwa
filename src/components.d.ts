@@ -77,6 +77,12 @@ export namespace Components {
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMemoriesOfMomma1 {}
+  interface PageMemoriesOfMomma2 {}
+  interface PageMemoriesOfMomma3 {}
+  interface PageMemoriesOfMomma4 {}
+  interface PageMemoriesOfMomma5 {}
+  interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
@@ -485,6 +491,42 @@ declare global {
     new (): HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
   };
 
+  interface HTMLPageMemoriesOfMomma1Element extends Components.PageMemoriesOfMomma1, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma1Element: {
+    prototype: HTMLPageMemoriesOfMomma1Element;
+    new (): HTMLPageMemoriesOfMomma1Element;
+  };
+
+  interface HTMLPageMemoriesOfMomma2Element extends Components.PageMemoriesOfMomma2, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma2Element: {
+    prototype: HTMLPageMemoriesOfMomma2Element;
+    new (): HTMLPageMemoriesOfMomma2Element;
+  };
+
+  interface HTMLPageMemoriesOfMomma3Element extends Components.PageMemoriesOfMomma3, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma3Element: {
+    prototype: HTMLPageMemoriesOfMomma3Element;
+    new (): HTMLPageMemoriesOfMomma3Element;
+  };
+
+  interface HTMLPageMemoriesOfMomma4Element extends Components.PageMemoriesOfMomma4, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma4Element: {
+    prototype: HTMLPageMemoriesOfMomma4Element;
+    new (): HTMLPageMemoriesOfMomma4Element;
+  };
+
+  interface HTMLPageMemoriesOfMomma5Element extends Components.PageMemoriesOfMomma5, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma5Element: {
+    prototype: HTMLPageMemoriesOfMomma5Element;
+    new (): HTMLPageMemoriesOfMomma5Element;
+  };
+
+  interface HTMLPageMemoriesOfMomma6Element extends Components.PageMemoriesOfMomma6, HTMLStencilElement {}
+  var HTMLPageMemoriesOfMomma6Element: {
+    prototype: HTMLPageMemoriesOfMomma6Element;
+    new (): HTMLPageMemoriesOfMomma6Element;
+  };
+
   interface HTMLPageMirrorPolygroupOnSubtoolInZbrushElement extends Components.PageMirrorPolygroupOnSubtoolInZbrush, HTMLStencilElement {}
   var HTMLPageMirrorPolygroupOnSubtoolInZbrushElement: {
     prototype: HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
@@ -873,6 +915,12 @@ declare global {
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
+    'page-memories-of-momma-1': HTMLPageMemoriesOfMomma1Element;
+    'page-memories-of-momma-2': HTMLPageMemoriesOfMomma2Element;
+    'page-memories-of-momma-3': HTMLPageMemoriesOfMomma3Element;
+    'page-memories-of-momma-4': HTMLPageMemoriesOfMomma4Element;
+    'page-memories-of-momma-5': HTMLPageMemoriesOfMomma5Element;
+    'page-memories-of-momma-6': HTMLPageMemoriesOfMomma6Element;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
     'page-notes-on-zbrush-slicecurve-brush': HTMLPageNotesOnZbrushSlicecurveBrushElement;
@@ -999,6 +1047,12 @@ declare namespace LocalJSX {
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMemoriesOfMomma1 {}
+  interface PageMemoriesOfMomma2 {}
+  interface PageMemoriesOfMomma3 {}
+  interface PageMemoriesOfMomma4 {}
+  interface PageMemoriesOfMomma5 {}
+  interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
@@ -1114,6 +1168,12 @@ declare namespace LocalJSX {
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
+    'page-memories-of-momma-1': PageMemoriesOfMomma1;
+    'page-memories-of-momma-2': PageMemoriesOfMomma2;
+    'page-memories-of-momma-3': PageMemoriesOfMomma3;
+    'page-memories-of-momma-4': PageMemoriesOfMomma4;
+    'page-memories-of-momma-5': PageMemoriesOfMomma5;
+    'page-memories-of-momma-6': PageMemoriesOfMomma6;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
     'page-notes-on-zbrush-slicecurve-brush': PageNotesOnZbrushSlicecurveBrush;
@@ -1236,6 +1296,12 @@ declare module "@stencil/core" {
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
+      'page-memories-of-momma-1': LocalJSX.PageMemoriesOfMomma1 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma1Element>;
+      'page-memories-of-momma-2': LocalJSX.PageMemoriesOfMomma2 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma2Element>;
+      'page-memories-of-momma-3': LocalJSX.PageMemoriesOfMomma3 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma3Element>;
+      'page-memories-of-momma-4': LocalJSX.PageMemoriesOfMomma4 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma4Element>;
+      'page-memories-of-momma-5': LocalJSX.PageMemoriesOfMomma5 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma5Element>;
+      'page-memories-of-momma-6': LocalJSX.PageMemoriesOfMomma6 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma6Element>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
       'page-notes-on-zbrush-slicecurve-brush': LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
