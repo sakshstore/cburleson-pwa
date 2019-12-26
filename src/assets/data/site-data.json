@@ -43,6 +43,15 @@
       ]
     },
     {
+      "id": "a-look-at-sparql-sql-for-semantic-web",
+      "title": "A look at SPARQL - SQL for the Semantic Web",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
+      "datePublished": "2018/10/13",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "change-canvas-background-color-in-zbrush",
       "title": "How to change canvas background color in ZBrush",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",

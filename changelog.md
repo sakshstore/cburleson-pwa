@@ -14,6 +14,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Fixed** [#38](https://github.com/codyburleson/cburleson-pwa/issues/38) Add page from legacy site: identifying-large-object...uming-memory-in-java-heap
 - **Fixed** [#37](https://github.com/codyburleson/cburleson-pwa/issues/37) Add page from legacy blog: about-zsphere-smoothing-brushes
 - **Fixed** [#55](https://github.com/codyburleson/cburleson-pwa/issues/55) Add page: about-polygroups-in-zbrush
+- **Fixed** [#56](https://github.com/codyburleson/cburleson-pwa/issues/56) Add page: a-look-at-sparql-sql-for-semantic-web
 
 ## [1.1.1] - 2019-12-25
 

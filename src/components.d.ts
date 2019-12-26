@@ -29,6 +29,7 @@ export namespace Components {
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
+  interface PageALookAtSparqlSqlForSemanticWeb {}
   interface PageAbout {}
   interface PageAboutPolygroupsInZbrush {}
   interface PageAboutZsphereSmoothingBrushes {}
@@ -194,6 +195,12 @@ declare global {
   var HTMLPageAJavascriptImplementationOfJavaUtilMapElement: {
     prototype: HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
     new (): HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
+  };
+
+  interface HTMLPageALookAtSparqlSqlForSemanticWebElement extends Components.PageALookAtSparqlSqlForSemanticWeb, HTMLStencilElement {}
+  var HTMLPageALookAtSparqlSqlForSemanticWebElement: {
+    prototype: HTMLPageALookAtSparqlSqlForSemanticWebElement;
+    new (): HTMLPageALookAtSparqlSqlForSemanticWebElement;
   };
 
   interface HTMLPageAboutElement extends Components.PageAbout, HTMLStencilElement {}
@@ -818,6 +825,7 @@ declare global {
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
+    'page-a-look-at-sparql-sql-for-semantic-web': HTMLPageALookAtSparqlSqlForSemanticWebElement;
     'page-about': HTMLPageAboutElement;
     'page-about-polygroups-in-zbrush': HTMLPageAboutPolygroupsInZbrushElement;
     'page-about-zsphere-smoothing-brushes': HTMLPageAboutZsphereSmoothingBrushesElement;
@@ -943,6 +951,7 @@ declare namespace LocalJSX {
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
+  interface PageALookAtSparqlSqlForSemanticWeb {}
   interface PageAbout {}
   interface PageAboutPolygroupsInZbrush {}
   interface PageAboutZsphereSmoothingBrushes {}
@@ -1057,6 +1066,7 @@ declare namespace LocalJSX {
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
+    'page-a-look-at-sparql-sql-for-semantic-web': PageALookAtSparqlSqlForSemanticWeb;
     'page-about': PageAbout;
     'page-about-polygroups-in-zbrush': PageAboutPolygroupsInZbrush;
     'page-about-zsphere-smoothing-brushes': PageAboutZsphereSmoothingBrushes;
@@ -1178,6 +1188,7 @@ declare module "@stencil/core" {
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
+      'page-a-look-at-sparql-sql-for-semantic-web': LocalJSX.PageALookAtSparqlSqlForSemanticWeb & JSXBase.HTMLAttributes<HTMLPageALookAtSparqlSqlForSemanticWebElement>;
       'page-about': LocalJSX.PageAbout & JSXBase.HTMLAttributes<HTMLPageAboutElement>;
       'page-about-polygroups-in-zbrush': LocalJSX.PageAboutPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageAboutPolygroupsInZbrushElement>;
       'page-about-zsphere-smoothing-brushes': LocalJSX.PageAboutZsphereSmoothingBrushes & JSXBase.HTMLAttributes<HTMLPageAboutZsphereSmoothingBrushesElement>;
