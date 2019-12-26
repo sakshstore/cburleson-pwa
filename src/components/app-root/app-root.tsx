@@ -38,9 +38,8 @@ export class AppRoot {
       document.title = 'About | ' + siteName;
     }
 
-    if (recordAnalytics) {
+    if (recordAnalytics && window.location.hostname !== 'localhost') {
       if (event.detail.redirectedFrom !== null) {
-        ;
         // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
         // where they got redirected to (mainly '/' instead of 'blog'). If a redirection exists, take the redirectedFrom...
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.redirectedFrom });
@@ -49,6 +48,7 @@ export class AppRoot {
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
       }
     }
+    
   }
 
   async componentWillLoad() {
