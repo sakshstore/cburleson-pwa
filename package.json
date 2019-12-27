@@ -13,7 +13,8 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
     "generate": "stencil generate",
-    "prod": "node appGenSitemap.js && stencil build --watch --serve"
+    "prod": "node appGenSitemap.js && stencil build --watch --serve",
+    "prod.prerender": "node appGenSitemap.js && stencil build --prerender --watch --serve"
   },
   "dependencies": {
     "@ionic/core": "^4.11.4",

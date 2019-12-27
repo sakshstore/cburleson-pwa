@@ -1,20 +1,7 @@
 import { Component, h } from '@stencil/core';
-// Use this if using source code blocks to be formatted by prism.js...
 import Prism from "prismjs"
 
-// And any, but ONLY the languages you need to use with prism...
-
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import '/assets/prismjs/prism-turtle.min.js';
-// import '/assets/prismjs/prism-sparql.min.js';
-
 import { BlogData } from '../../../services/blog-data';
-
 
 import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');

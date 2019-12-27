@@ -3,6 +3,12 @@ https://codyburleson.com/blog
 https://codyburleson.com/books
 https://codyburleson.com/about
 https://codyburleson.com/use-prism-js-in-ionic-stencil-app
+https://codyburleson.com/memories-of-momma-6
+https://codyburleson.com/memories-of-momma-5
+https://codyburleson.com/memories-of-momma-4
+https://codyburleson.com/memories-of-momma-3
+https://codyburleson.com/memories-of-momma-2
+https://codyburleson.com/memories-of-momma-1
 https://codyburleson.com/killing-kittens
 https://codyburleson.com/copy-assets-from-node-modules-in-stencil-js
 https://codyburleson.com/show-both-sides-of-a-plane-in-zbrush

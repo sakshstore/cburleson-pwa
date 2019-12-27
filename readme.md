@@ -14,6 +14,7 @@ To run:
 - `npm start` - Starts the development server and runs in dev mode using `global/app-dev.ts` configuration instead of `global/app.ts` config.
 - `npm run build` - Builds your components/app for production.
 - `npm run prod` -  Builds your components/app for production and runs locally in production mode (for testing prod mode prior to deployment).
+- `npm run porod.prerender` - EXPERIMENTAL; builds and runs the app in prod mode, prerendered.
 - `npm test` - Starts the test runner.
 - `stencil build --prerender` - Prerendering generates static HTML files at build time that can then be served to the browser and asynchronously hydrated on the client-side. See: [Stenil.js Prerendering](https://stenciljs.com/docs/prerendering)
 

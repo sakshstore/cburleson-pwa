@@ -2,13 +2,6 @@ import { Component, h } from '@stencil/core';
 
 import Prism from "prismjs"
 import 'prismjs/components/prism-bash.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import '/assets/prismjs/prism-turtle.min.js';
-// import '/assets/prismjs/prism-sparql.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 
