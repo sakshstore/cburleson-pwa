@@ -40,6 +40,7 @@ export namespace Components {
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
   interface PageAwesomePowerOfTheLinkInLinkedData {}
+  interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
@@ -270,6 +271,12 @@ declare global {
   var HTMLPageAwesomePowerOfTheLinkInLinkedDataElement: {
     prototype: HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
     new (): HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
+  };
+
+  interface HTMLPageBase22ConsultantsCreedElement extends Components.PageBase22ConsultantsCreed, HTMLStencilElement {}
+  var HTMLPageBase22ConsultantsCreedElement: {
+    prototype: HTMLPageBase22ConsultantsCreedElement;
+    new (): HTMLPageBase22ConsultantsCreedElement;
   };
 
   interface HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement extends Components.PageBendThingsInZbrushWithTheBendCurveModifier, HTMLStencilElement {}
@@ -899,6 +906,7 @@ declare global {
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-avoid-tracking-ga-page-views-in-atlassian-confluence': HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
     'page-awesome-power-of-the-link-in-linked-data': HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
+    'page-base22-consultants-creed': HTMLPageBase22ConsultantsCreedElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
@@ -1034,6 +1042,7 @@ declare namespace LocalJSX {
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
   interface PageAwesomePowerOfTheLinkInLinkedData {}
+  interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
@@ -1158,6 +1167,7 @@ declare namespace LocalJSX {
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-avoid-tracking-ga-page-views-in-atlassian-confluence': PageAvoidTrackingGaPageViewsInAtlassianConfluence;
     'page-awesome-power-of-the-link-in-linked-data': PageAwesomePowerOfTheLinkInLinkedData;
+    'page-base22-consultants-creed': PageBase22ConsultantsCreed;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-blog': PageBlog;
     'page-books': PageBooks;
@@ -1289,6 +1299,7 @@ declare module "@stencil/core" {
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-avoid-tracking-ga-page-views-in-atlassian-confluence': LocalJSX.PageAvoidTrackingGaPageViewsInAtlassianConfluence & JSXBase.HTMLAttributes<HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement>;
       'page-awesome-power-of-the-link-in-linked-data': LocalJSX.PageAwesomePowerOfTheLinkInLinkedData & JSXBase.HTMLAttributes<HTMLPageAwesomePowerOfTheLinkInLinkedDataElement>;
+      'page-base22-consultants-creed': LocalJSX.PageBase22ConsultantsCreed & JSXBase.HTMLAttributes<HTMLPageBase22ConsultantsCreedElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;

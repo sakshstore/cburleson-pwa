@@ -932,6 +932,15 @@
       ]
     },
     {
+      "id": "base22-consultants-creed",
+      "title": "The Base22 consultant's creed",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/Base22CreedFlag-thumbnail.png",
+      "datePublished": "2013/01/23",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "display-user-attributes-in-a-websphere-portal-theme",
       "title": "How to display user attributes in a WebSphere Portal theme",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",

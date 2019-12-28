@@ -8,7 +8,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - **Added** [#57](https://github.com/codyburleson/cburleson-pwa/issues/57) Page: are-mashups-the-new-portals-and-gadgets-the-new-portlets
 - **Added** [#58](https://github.com/codyburleson/cburleson-pwa/issues/58) Page: avoid-tracking-ga-page-views-in-atlassian-confluence
-- **Added** [#59](https://github.com/codyburleson/cburleson-pwa/issues/58) Page: awesome-power-of-the-link-in-linked-data
+- **Added** [#59](https://github.com/codyburleson/cburleson-pwa/issues/59) Page: awesome-power-of-the-link-in-linked-data
+- **Added** [#60](https://github.com/codyburleson/cburleson-pwa/issues/60) Page: base22-consultants-creed
 
 ## [1.1.3] - 2019-12-26
 
