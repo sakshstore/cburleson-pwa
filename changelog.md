@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Added** [#58](https://github.com/codyburleson/cburleson-pwa/issues/58) Page: avoid-tracking-ga-page-views-in-atlassian-confluence
 - **Added** [#59](https://github.com/codyburleson/cburleson-pwa/issues/59) Page: awesome-power-of-the-link-in-linked-data
 - **Added** [#60](https://github.com/codyburleson/cburleson-pwa/issues/60) Page: base22-consultants-creed
+- **Added** [#67](https://github.com/codyburleson/cburleson-pwa/issues/67) Add page: eclipse-tip-format-source-code-on-save
 
 ## [1.1.3] - 2019-12-26
 

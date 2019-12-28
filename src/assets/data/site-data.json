@@ -843,6 +843,15 @@
       ]
     },
     {
+      "id": "eclipse-tip-format-source-code-on-save",
+      "title": "Eclipse tip - format source code on save",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
+      "datePublished": "2014/09/18",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "a-javascript-implementation-of-java-util-map",
       "title": "A JavaScript Implementation of java.util.Map",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",

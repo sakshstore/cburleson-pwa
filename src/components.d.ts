@@ -59,6 +59,7 @@ export namespace Components {
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
+  interface PageEclipseTipFormatSourceCodeOnSave {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -385,6 +386,12 @@ declare global {
   var HTMLPageDockerCheatSheetElement: {
     prototype: HTMLPageDockerCheatSheetElement;
     new (): HTMLPageDockerCheatSheetElement;
+  };
+
+  interface HTMLPageEclipseTipFormatSourceCodeOnSaveElement extends Components.PageEclipseTipFormatSourceCodeOnSave, HTMLStencilElement {}
+  var HTMLPageEclipseTipFormatSourceCodeOnSaveElement: {
+    prototype: HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
+    new (): HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
   };
 
   interface HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement extends Components.PageFemaleAnatomyOutOfTheBoxInZbrush, HTMLStencilElement {}
@@ -925,6 +932,7 @@ declare global {
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
     'page-display-user-attributes-in-a-websphere-portal-theme': HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
+    'page-eclipse-tip-format-source-code-on-save': HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
     'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
@@ -1061,6 +1069,7 @@ declare namespace LocalJSX {
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
+  interface PageEclipseTipFormatSourceCodeOnSave {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -1186,6 +1195,7 @@ declare namespace LocalJSX {
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
     'page-display-user-attributes-in-a-websphere-portal-theme': PageDisplayUserAttributesInAWebspherePortalTheme;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
+    'page-eclipse-tip-format-source-code-on-save': PageEclipseTipFormatSourceCodeOnSave;
     'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
@@ -1318,6 +1328,7 @@ declare module "@stencil/core" {
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
       'page-display-user-attributes-in-a-websphere-portal-theme': LocalJSX.PageDisplayUserAttributesInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
+      'page-eclipse-tip-format-source-code-on-save': LocalJSX.PageEclipseTipFormatSourceCodeOnSave & JSXBase.HTMLAttributes<HTMLPageEclipseTipFormatSourceCodeOnSaveElement>;
       'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
