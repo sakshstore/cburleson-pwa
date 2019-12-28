@@ -272,7 +272,7 @@
       "title": "Female anatomy out-of-the-box in ZBrush",
       "teaser": "Hidden in ZBrush, there’s a fabulously detailed female anatomy model that comes out-of-the-box.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
-      "datePublished": "2017/07/14",
+      "datePublished": "2018/08/03",
       "tracks": [
         "ZBrush"
       ]
@@ -417,6 +417,15 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/22",
       "dateModified": "2019/12/05",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "binding-to-a-zsphere-armature",
+      "title": "Binding to a ZSphere armature",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
       "tracks": [
         "ZBrush"
       ]

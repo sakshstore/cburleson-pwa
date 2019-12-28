@@ -43,6 +43,7 @@ export namespace Components {
   interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
+  interface PageBindingToAZsphereArmature {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -291,6 +292,12 @@ declare global {
   var HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement: {
     prototype: HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     new (): HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
+  };
+
+  interface HTMLPageBindingToAZsphereArmatureElement extends Components.PageBindingToAZsphereArmature, HTMLStencilElement {}
+  var HTMLPageBindingToAZsphereArmatureElement: {
+    prototype: HTMLPageBindingToAZsphereArmatureElement;
+    new (): HTMLPageBindingToAZsphereArmatureElement;
   };
 
   interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
@@ -923,6 +930,7 @@ declare global {
     'page-base22-consultants-creed': HTMLPageBase22ConsultantsCreedElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
+    'page-binding-to-a-zsphere-armature': HTMLPageBindingToAZsphereArmatureElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
@@ -1061,6 +1069,7 @@ declare namespace LocalJSX {
   interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
+  interface PageBindingToAZsphereArmature {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -1188,6 +1197,7 @@ declare namespace LocalJSX {
     'page-base22-consultants-creed': PageBase22ConsultantsCreed;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
+    'page-binding-to-a-zsphere-armature': PageBindingToAZsphereArmature;
     'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
@@ -1322,6 +1332,7 @@ declare module "@stencil/core" {
       'page-base22-consultants-creed': LocalJSX.PageBase22ConsultantsCreed & JSXBase.HTMLAttributes<HTMLPageBase22ConsultantsCreedElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
+      'page-binding-to-a-zsphere-armature': LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
