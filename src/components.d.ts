@@ -38,6 +38,8 @@ export namespace Components {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
+  interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
+  interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
@@ -256,6 +258,18 @@ declare global {
   var HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement: {
     prototype: HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     new (): HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
+  };
+
+  interface HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement extends Components.PageAvoidTrackingGaPageViewsInAtlassianConfluence, HTMLStencilElement {}
+  var HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement: {
+    prototype: HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
+    new (): HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
+  };
+
+  interface HTMLPageAwesomePowerOfTheLinkInLinkedDataElement extends Components.PageAwesomePowerOfTheLinkInLinkedData, HTMLStencilElement {}
+  var HTMLPageAwesomePowerOfTheLinkInLinkedDataElement: {
+    prototype: HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
+    new (): HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
   };
 
   interface HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement extends Components.PageBendThingsInZbrushWithTheBendCurveModifier, HTMLStencilElement {}
@@ -883,6 +897,8 @@ declare global {
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
+    'page-avoid-tracking-ga-page-views-in-atlassian-confluence': HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
+    'page-awesome-power-of-the-link-in-linked-data': HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
@@ -1016,6 +1032,8 @@ declare namespace LocalJSX {
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
   interface PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
+  interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
+  interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
   interface PageBooks {}
@@ -1138,6 +1156,8 @@ declare namespace LocalJSX {
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
     'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
+    'page-avoid-tracking-ga-page-views-in-atlassian-confluence': PageAvoidTrackingGaPageViewsInAtlassianConfluence;
+    'page-awesome-power-of-the-link-in-linked-data': PageAwesomePowerOfTheLinkInLinkedData;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-blog': PageBlog;
     'page-books': PageBooks;
@@ -1267,6 +1287,8 @@ declare module "@stencil/core" {
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
       'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': LocalJSX.PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets & JSXBase.HTMLAttributes<HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
+      'page-avoid-tracking-ga-page-views-in-atlassian-confluence': LocalJSX.PageAvoidTrackingGaPageViewsInAtlassianConfluence & JSXBase.HTMLAttributes<HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement>;
+      'page-awesome-power-of-the-link-in-linked-data': LocalJSX.PageAwesomePowerOfTheLinkInLinkedData & JSXBase.HTMLAttributes<HTMLPageAwesomePowerOfTheLinkInLinkedDataElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;

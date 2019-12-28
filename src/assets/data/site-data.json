@@ -741,6 +741,15 @@
       ]
     },
     {
+      "id": "avoid-tracking-ga-page-views-in-atlassian-confluence",
+      "title": "How to avoid tracking Google Analytics page views for admin or specific users in Atlassian Confluence",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-google-analytics.svg",
+      "datePublished": "2017/02/22",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "set-the-page-title-in-angular",
       "title": "Set the page title in Angular",
       "teaser": "Angular provides a Title service that you can use to set the title of a page. Here’s how to use it.",
@@ -801,6 +810,15 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2015/11/16",
       "dateModified": "2018/07/26",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "awesome-power-of-the-link-in-linked-data",
+      "title": "The awesome power of the link in Linked Data",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
+      "datePublished": "2015/07/28",
       "tracks": [
         "Software Dev"
       ]
