@@ -42,6 +42,7 @@ export namespace Components {
   interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
+  interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -284,6 +285,12 @@ declare global {
   var HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement: {
     prototype: HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     new (): HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
+  };
+
+  interface HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement extends Components.PageBetterErrorMessagesFromGulpUsingGulpUtil, HTMLStencilElement {}
+  var HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement: {
+    prototype: HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
+    new (): HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
   };
 
   interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
@@ -915,6 +922,7 @@ declare global {
     'page-awesome-power-of-the-link-in-linked-data': HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
     'page-base22-consultants-creed': HTMLPageBase22ConsultantsCreedElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
+    'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     'page-blog': HTMLPageBlogElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
@@ -1052,6 +1060,7 @@ declare namespace LocalJSX {
   interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBase22ConsultantsCreed {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
+  interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBlog {}
   interface PageBooks {}
   interface PageCage {}
@@ -1178,6 +1187,7 @@ declare namespace LocalJSX {
     'page-awesome-power-of-the-link-in-linked-data': PageAwesomePowerOfTheLinkInLinkedData;
     'page-base22-consultants-creed': PageBase22ConsultantsCreed;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
+    'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
     'page-blog': PageBlog;
     'page-books': PageBooks;
     'page-cage': PageCage;
@@ -1311,6 +1321,7 @@ declare module "@stencil/core" {
       'page-awesome-power-of-the-link-in-linked-data': LocalJSX.PageAwesomePowerOfTheLinkInLinkedData & JSXBase.HTMLAttributes<HTMLPageAwesomePowerOfTheLinkInLinkedDataElement>;
       'page-base22-consultants-creed': LocalJSX.PageBase22ConsultantsCreed & JSXBase.HTMLAttributes<HTMLPageBase22ConsultantsCreedElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
+      'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
