@@ -36,6 +36,7 @@ export namespace Components {
   interface PageAccessTheWasConsoleFromWebspherePortalServer {}
   interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
+  interface PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
@@ -243,6 +244,12 @@ declare global {
   var HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement: {
     prototype: HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
     new (): HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
+  };
+
+  interface HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement extends Components.PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets, HTMLStencilElement {}
+  var HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement: {
+    prototype: HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement;
+    new (): HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement;
   };
 
   interface HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement extends Components.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother, HTMLStencilElement {}
@@ -874,6 +881,7 @@ declare global {
     'page-access-the-was-console-from-websphere-portal-server': HTMLPageAccessTheWasConsoleFromWebspherePortalServerElement;
     'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement;
     'page-apply-different-materials-to-subtools-in-zbrush': HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement;
+    'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement;
     'page-automatically-build-and-include-one-eclipse-project-into-another': HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-blog': HTMLPageBlogElement;
@@ -1006,6 +1014,7 @@ declare namespace LocalJSX {
   interface PageAccessTheWasConsoleFromWebspherePortalServer {}
   interface PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {}
   interface PageApplyDifferentMaterialsToSubtoolsInZbrush {}
+  interface PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets {}
   interface PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBlog {}
@@ -1127,6 +1136,7 @@ declare namespace LocalJSX {
     'page-access-the-was-console-from-websphere-portal-server': PageAccessTheWasConsoleFromWebspherePortalServer;
     'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp;
     'page-apply-different-materials-to-subtools-in-zbrush': PageApplyDifferentMaterialsToSubtoolsInZbrush;
+    'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets;
     'page-automatically-build-and-include-one-eclipse-project-into-another': PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-blog': PageBlog;
@@ -1255,6 +1265,7 @@ declare module "@stencil/core" {
       'page-access-the-was-console-from-websphere-portal-server': LocalJSX.PageAccessTheWasConsoleFromWebspherePortalServer & JSXBase.HTMLAttributes<HTMLPageAccessTheWasConsoleFromWebspherePortalServerElement>;
       'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app': LocalJSX.PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp & JSXBase.HTMLAttributes<HTMLPageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebAppElement>;
       'page-apply-different-materials-to-subtools-in-zbrush': LocalJSX.PageApplyDifferentMaterialsToSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageApplyDifferentMaterialsToSubtoolsInZbrushElement>;
+      'page-are-mashups-the-new-portals-and-gadgets-the-new-portlets': LocalJSX.PageAreMashupsTheNewPortalsAndGadgetsTheNewPortlets & JSXBase.HTMLAttributes<HTMLPageAreMashupsTheNewPortalsAndGadgetsTheNewPortletsElement>;
       'page-automatically-build-and-include-one-eclipse-project-into-another': LocalJSX.PageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnother & JSXBase.HTMLAttributes<HTMLPageAutomaticallyBuildAndIncludeOneEclipseProjectIntoAnotherElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;

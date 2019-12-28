@@ -51,7 +51,6 @@ export class PageZbrushIsolateAPolygroup {
 
                 <figure class="wp-block-image"><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-draw-polyframe.jpg" alt="Toggle polyframe mode with SHIFT + F" class="wp-image-1418" /></figure>
 
-
                 <p>Hold&nbsp;<kbd>CTRL</kbd> + <kbd>SHIFT</kbd>&nbsp;and click on a given polygroup to isolate it, hiding all the others.</p>
 
                 <figure class="wp-block-image"><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/isolate-polygroup-1.png" alt="" class="wp-image-552" /></figure>
