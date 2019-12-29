@@ -26,6 +26,7 @@ export namespace Components {
   }
   interface AppRoot {}
   interface AppTabs {}
+  interface GlsAdsenseAd {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
@@ -143,6 +144,7 @@ export namespace Components {
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
+  interface PageVsCodeCheatSheet {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
@@ -192,6 +194,12 @@ declare global {
   var HTMLAppTabsElement: {
     prototype: HTMLAppTabsElement;
     new (): HTMLAppTabsElement;
+  };
+
+  interface HTMLGlsAdsenseAdElement extends Components.GlsAdsenseAd, HTMLStencilElement {}
+  var HTMLGlsAdsenseAdElement: {
+    prototype: HTMLGlsAdsenseAdElement;
+    new (): HTMLGlsAdsenseAdElement;
   };
 
   interface HTMLPage7QuintessentialBrushesForZbrushBeginnersElement extends Components.Page7QuintessentialBrushesForZbrushBeginners, HTMLStencilElement {}
@@ -896,6 +904,12 @@ declare global {
     new (): HTMLPageVietnam1967AmphibiousCombatElement;
   };
 
+  interface HTMLPageVsCodeCheatSheetElement extends Components.PageVsCodeCheatSheet, HTMLStencilElement {}
+  var HTMLPageVsCodeCheatSheetElement: {
+    prototype: HTMLPageVsCodeCheatSheetElement;
+    new (): HTMLPageVsCodeCheatSheetElement;
+  };
+
   interface HTMLPageWeldMultipleSubtoolsInZbrushElement extends Components.PageWeldMultipleSubtoolsInZbrush, HTMLStencilElement {}
   var HTMLPageWeldMultipleSubtoolsInZbrushElement: {
     prototype: HTMLPageWeldMultipleSubtoolsInZbrushElement;
@@ -927,6 +941,7 @@ declare global {
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
     'app-tabs': HTMLAppTabsElement;
+    'gls-adsense-ad': HTMLGlsAdsenseAdElement;
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
     'page-a-javascript-implementation-of-java-util-map': HTMLPageAJavascriptImplementationOfJavaUtilMapElement;
@@ -1044,6 +1059,7 @@ declare global {
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
     'page-user-impersonation-programming-in-websphere-portal': HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
+    'page-vs-code-cheat-sheet': HTMLPageVsCodeCheatSheetElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
     'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
     'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
@@ -1068,6 +1084,7 @@ declare namespace LocalJSX {
   }
   interface AppRoot {}
   interface AppTabs {}
+  interface GlsAdsenseAd {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
   interface PageAJavascriptImplementationOfJavaUtilMap {}
@@ -1185,6 +1202,7 @@ declare namespace LocalJSX {
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
+  interface PageVsCodeCheatSheet {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
@@ -1198,6 +1216,7 @@ declare namespace LocalJSX {
     'app-photos': AppPhotos;
     'app-root': AppRoot;
     'app-tabs': AppTabs;
+    'gls-adsense-ad': GlsAdsenseAd;
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
     'page-a-javascript-implementation-of-java-util-map': PageAJavascriptImplementationOfJavaUtilMap;
@@ -1315,6 +1334,7 @@ declare namespace LocalJSX {
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
     'page-user-impersonation-programming-in-websphere-portal': PageUserImpersonationProgrammingInWebspherePortal;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
+    'page-vs-code-cheat-sheet': PageVsCodeCheatSheet;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
     'page-xmlaccess-samples': PageXmlaccessSamples;
     'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
@@ -1335,6 +1355,7 @@ declare module "@stencil/core" {
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
       'app-tabs': LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
+      'gls-adsense-ad': LocalJSX.GlsAdsenseAd & JSXBase.HTMLAttributes<HTMLGlsAdsenseAdElement>;
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
       'page-a-javascript-implementation-of-java-util-map': LocalJSX.PageAJavascriptImplementationOfJavaUtilMap & JSXBase.HTMLAttributes<HTMLPageAJavascriptImplementationOfJavaUtilMapElement>;
@@ -1452,6 +1473,7 @@ declare module "@stencil/core" {
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
       'page-user-impersonation-programming-in-websphere-portal': LocalJSX.PageUserImpersonationProgrammingInWebspherePortal & JSXBase.HTMLAttributes<HTMLPageUserImpersonationProgrammingInWebspherePortalElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
+      'page-vs-code-cheat-sheet': LocalJSX.PageVsCodeCheatSheet & JSXBase.HTMLAttributes<HTMLPageVsCodeCheatSheetElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
       'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;
       'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;

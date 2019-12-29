@@ -278,6 +278,16 @@
       ]
     },
     {
+      "id": "vs-code-cheat-sheet",
+      "title": "VS Code cheat sheet",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-vs-code.svg",
+      "datePublished": "2018/08/03",
+      "dateModified": "2019/12/29",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "zbrush-keyboard-shortcuts",
       "title": "ZBrush Keyboard Shortcuts",
       "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
