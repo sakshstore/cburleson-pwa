@@ -1056,6 +1056,15 @@
       ]
     },
     {
+      "id": "user-impersonation-programming-in-websphere-portal",
+      "title": "User impersonation programming in WebSphere Portal",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2011/07/31",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "find-java-classes-or-packages-contained-in-jar-files",
       "title": "Find Java classes or packages contained in JAR files",
       "teaser": "Here's a tool that can help you search through JAR files to find Java classes or packages.",

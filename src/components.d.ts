@@ -45,6 +45,7 @@ export namespace Components {
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
   interface PageBlog {}
+  interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
@@ -140,6 +141,7 @@ export namespace Components {
   interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
+  interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageXmlaccessSamples {}
@@ -304,6 +306,12 @@ declare global {
   var HTMLPageBlogElement: {
     prototype: HTMLPageBlogElement;
     new (): HTMLPageBlogElement;
+  };
+
+  interface HTMLPageBookReviewMoreThanEverythingElement extends Components.PageBookReviewMoreThanEverything, HTMLStencilElement {}
+  var HTMLPageBookReviewMoreThanEverythingElement: {
+    prototype: HTMLPageBookReviewMoreThanEverythingElement;
+    new (): HTMLPageBookReviewMoreThanEverythingElement;
   };
 
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
@@ -876,6 +884,12 @@ declare global {
     new (): HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
   };
 
+  interface HTMLPageUserImpersonationProgrammingInWebspherePortalElement extends Components.PageUserImpersonationProgrammingInWebspherePortal, HTMLStencilElement {}
+  var HTMLPageUserImpersonationProgrammingInWebspherePortalElement: {
+    prototype: HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
+    new (): HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
+  };
+
   interface HTMLPageVietnam1967AmphibiousCombatElement extends Components.PageVietnam1967AmphibiousCombat, HTMLStencilElement {}
   var HTMLPageVietnam1967AmphibiousCombatElement: {
     prototype: HTMLPageVietnam1967AmphibiousCombatElement;
@@ -932,6 +946,7 @@ declare global {
     'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     'page-binding-to-a-zsphere-armature': HTMLPageBindingToAZsphereArmatureElement;
     'page-blog': HTMLPageBlogElement;
+    'page-book-review-more-than-everything': HTMLPageBookReviewMoreThanEverythingElement;
     'page-books': HTMLPageBooksElement;
     'page-cage': HTMLPageCageElement;
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
@@ -1027,6 +1042,7 @@ declare global {
     'page-use-micromesh-in-zbrush': HTMLPageUseMicromeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
+    'page-user-impersonation-programming-in-websphere-portal': HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
     'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
@@ -1071,6 +1087,7 @@ declare namespace LocalJSX {
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
   interface PageBlog {}
+  interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
@@ -1166,6 +1183,7 @@ declare namespace LocalJSX {
   interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
+  interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageXmlaccessSamples {}
@@ -1199,6 +1217,7 @@ declare namespace LocalJSX {
     'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
     'page-binding-to-a-zsphere-armature': PageBindingToAZsphereArmature;
     'page-blog': PageBlog;
+    'page-book-review-more-than-everything': PageBookReviewMoreThanEverything;
     'page-books': PageBooks;
     'page-cage': PageCage;
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
@@ -1294,6 +1313,7 @@ declare namespace LocalJSX {
     'page-use-micromesh-in-zbrush': PageUseMicromeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
+    'page-user-impersonation-programming-in-websphere-portal': PageUserImpersonationProgrammingInWebspherePortal;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
     'page-xmlaccess-samples': PageXmlaccessSamples;
@@ -1334,6 +1354,7 @@ declare module "@stencil/core" {
       'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
       'page-binding-to-a-zsphere-armature': LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
+      'page-book-review-more-than-everything': LocalJSX.PageBookReviewMoreThanEverything & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
@@ -1429,6 +1450,7 @@ declare module "@stencil/core" {
       'page-use-micromesh-in-zbrush': LocalJSX.PageUseMicromeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseMicromeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
+      'page-user-impersonation-programming-in-websphere-portal': LocalJSX.PageUserImpersonationProgrammingInWebspherePortal & JSXBase.HTMLAttributes<HTMLPageUserImpersonationProgrammingInWebspherePortalElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
       'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;

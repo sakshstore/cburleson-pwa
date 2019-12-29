@@ -96,6 +96,9 @@ export class AppRoot {
           <ion-route url="/cage" component="tab-books">
             <ion-route component="page-cage"></ion-route>
           </ion-route>
+          <ion-route url="/book-review-more-than-everything-by-vanessa-foster" component="tab-books">
+            <ion-route component="page-book-review-more-than-everything"></ion-route>
+          </ion-route>
           <ion-route url="/d-1-3-weapons-platoon" component="tab-books">
             <ion-route component="page-photos-weapons-platoon"></ion-route>
           </ion-route>

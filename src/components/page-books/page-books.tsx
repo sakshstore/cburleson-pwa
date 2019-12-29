@@ -18,8 +18,15 @@ export class PageBooks {
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
       datePublished: "",
       dateModified: "Oct 21, 2019"
-    }
-  ]
+    }]
+
+  reviewedItems = [{
+    id: "/book-review-more-than-everything-by-vanessa-foster",
+    title: "Book review - More Than Everything by Vanessa Foster",
+    teaser: "Lost, Broken, and on the Run From the FBI; a gripping memoir of resilience and liberation.",
+    thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2017/07/book-more-than-everything-thumb.jpg",
+    datePublished: "Jul 20, 2017"
+  }]
 
   componentWillLoad() {
     if (debug) {
@@ -39,10 +46,28 @@ export class PageBooks {
       </ion-header>,
 
       <ion-content class="ion-padding">
-        <h2>Work in progress</h2>
+
+        <h2>What I'm writing now</h2>
+
         <ion-list>
           {this.writingItems.map((item) =>
-            <ion-item href={item.id}>
+            <ion-item href={item.id} lines="none">
+              <ion-thumbnail slot="start">
+                <ion-img src={item.thumbnail} />
+              </ion-thumbnail>
+              <ion-label text-wrap>
+                {item.title}
+                <p innerHTML={item.teaser}></p>
+              </ion-label>
+            </ion-item>
+          )}
+        </ion-list>
+
+        <h2>Book reviews</h2>
+
+        <ion-list>
+          {this.reviewedItems.map((item) =>
+            <ion-item href={item.id} lines="none">
               <ion-thumbnail slot="start">
                 <ion-img src={item.thumbnail} />
               </ion-thumbnail>
