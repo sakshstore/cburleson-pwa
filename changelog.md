@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [1.1.4] - 2019-12-28
 
 - **Added** [#57](https://github.com/codyburleson/cburleson-pwa/issues/57) Page: are-mashups-the-new-portals-and-gadgets-the-new-portlets
 - **Added** [#58](https://github.com/codyburleson/cburleson-pwa/issues/58) Page: avoid-tracking-ga-page-views-in-atlassian-confluence

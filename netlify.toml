@@ -2,4 +2,9 @@
   from = "/*"
   to = "/index.html"
   status = 200
-  
+
+[[redirects]]
+  from = "/display/blog/2013/01/05/How+to+Shrink+a+Windows+VM+on+VMWare+Fusion+for+Mac"
+  to = "https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect

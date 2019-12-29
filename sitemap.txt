@@ -43,6 +43,7 @@ https://codyburleson.com/how-to-sketch-with-zspheres-in-zbrush
 https://codyburleson.com/about-polygroups-in-zbrush
 https://codyburleson.com/zbrush-resources-online
 https://codyburleson.com/rig-a-mesh-with-zspheres-in-zbrush
+https://codyburleson.com/binding-to-a-zsphere-armature
 https://codyburleson.com/about-zsphere-smoothing-brushes
 https://codyburleson.com/notes-on-zbrush-sculptris-pro
 https://codyburleson.com/how-to-use-live-boolean-in-zbrush
@@ -73,14 +74,18 @@ https://codyburleson.com/7-quintessential-brushes-for-zbrush-beginners
 https://codyburleson.com/serve-static-resources-with-spring-boot
 https://codyburleson.com/confluence-panel-macro
 https://codyburleson.com/logging-with-spring-boot
+https://codyburleson.com/avoid-tracking-ga-page-views-in-atlassian-confluence
 https://codyburleson.com/set-the-page-title-in-angular
 https://codyburleson.com/format-currency-in-angular
 https://codyburleson.com/story-structure-diagram
 https://codyburleson.com/index-of-item-within-angular-ngfor-loop
 https://codyburleson.com/quick-and-simple-caching-with-apache-commons-jcs
 https://codyburleson.com/7-reasons-why-typescript-helps-you-kick-ass
+https://codyburleson.com/better-error-messages-from-gulp-using-gulp-util
+https://codyburleson.com/awesome-power-of-the-link-in-linked-data
 https://codyburleson.com/unity-get-rigidbody-from-object
 https://codyburleson.com/identifying-large-objects-consuming-memory-in-java-heap
+https://codyburleson.com/eclipse-tip-format-source-code-on-save
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
 https://codyburleson.com/accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app
 https://codyburleson.com/getting-parts-of-a-url-from-the-httpservletrequest-object
@@ -90,6 +95,7 @@ https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4
 https://codyburleson.com/automatically-build-and-include-one-eclipse-project-into-another
 https://codyburleson.com/how-to-check-user-access-role-in-a-websphere-portal-theme
 https://codyburleson.com/xmlaccess-samples
+https://codyburleson.com/base22-consultants-creed
 https://codyburleson.com/display-user-attributes-in-a-websphere-portal-theme
 https://codyburleson.com/resolving-404-errors-accessing-wcm-content-through-poc-servlet
 https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac
@@ -99,7 +105,9 @@ https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-par
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-2
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-1
 https://codyburleson.com/access-the-was-console-from-websphere-portal-server
+https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
 https://codyburleson.com/render-the-keys-and-values-from-a-map-in-freemarker
 https://codyburleson.com/glossary-of-ldap-acronyms-and-terms
+https://codyburleson.com/are-mashups-the-new-portals-and-gadgets-the-new-portlets
 https://codyburleson.com/list-ibm-db2-commands
