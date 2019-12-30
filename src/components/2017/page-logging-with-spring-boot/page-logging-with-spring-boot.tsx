@@ -3,7 +3,7 @@ import { Component, h } from '@stencil/core';
 import Prism from "prismjs"
 import 'prismjs/components/prism-java.min';
 import 'prismjs/components/prism-properties.min';
-import 'prismjs/components/prism-shell-session.min';
+import 'prismjs/components/prism-bash.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -73,7 +73,7 @@ export class PageLoggingWithSpringBoot {
 
                 <p>Notice that the Spring Boot starter already includes dependencies for logging…</p>
 
-                <pre><code class="language-shell">{`[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.5.2.RELEASE:compile
+                <pre><code class="language-bash">{`[INFO] +- org.springframework.boot:spring-boot-starter-web:jar:1.5.2.RELEASE:compile
 [INFO] |  +- org.springframework.boot:spring-boot-starter:jar:1.5.2.RELEASE:compile
 [INFO] |  |  +- org.springframework.boot:spring-boot-starter-logging:jar:1.5.2.RELEASE:compile
 [INFO] |  |  |  +- ch.qos.logback:logback-classic:jar:1.1.11:compile

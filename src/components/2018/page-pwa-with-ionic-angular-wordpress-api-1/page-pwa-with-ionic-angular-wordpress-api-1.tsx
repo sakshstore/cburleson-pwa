@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
 
 import Prism from "prismjs"
+import 'prismjs/components/prism-bash.min.js';
 import 'prismjs/components/prism-typescript.min';
 import 'prismjs/components/prism-json.min';
 import 'prismjs/components/prism-yaml.min';
@@ -293,7 +294,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
         <p>Now we can run the Ionic app to see what the sidemenu template has given us as a starting point. Change into the newly created project’s directory and run the app…</p>
 
-        <pre><code class="language-shell">{CODE_1}</code></pre>
+        <pre><code class="language-bash">{CODE_1}</code></pre>
 
         <p>The ionic serve command will spawn the app in your web browser and it should look something like this:</p>
 

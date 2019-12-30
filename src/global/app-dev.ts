@@ -10,6 +10,6 @@ export default () => {
     debug: true,
     recordAnalytics: false,
     siteName: 'Cody Burleson',
-    siteVersion: '1.2.4'
+    siteVersion: '1.2.5'
   });
 };

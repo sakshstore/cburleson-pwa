@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
 
 import Prism from "prismjs"
+import 'prismjs/components/prism-bash.min.js';
 import 'prismjs/components/prism-java.min';
 
 import { BlogData } from '../../../services/blog-data';
@@ -107,7 +108,7 @@ export class PageGettingPartsUrl {
                 <p>C’mon. You know you’ve done it more than once too, so just stop it with the smug smile.</p>
                 <p>I’m ashamed and sick of it, so this time, I’m dropping a breadcrumb for my future self by posting the output, which will give me a clue in some future date when my brain is wore to the core like it is tonight. As God is my witness, I will never, ever write this code stanza again. Here’s the output…</p>
 
-                <pre><code class="language-shell">{CODE_2}</code></pre>
+                <pre><code class="language-bash">{CODE_2}</code></pre>
 
             </ion-content>
 

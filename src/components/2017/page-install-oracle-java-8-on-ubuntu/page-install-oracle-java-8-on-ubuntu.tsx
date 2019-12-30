@@ -52,7 +52,7 @@ export class PageInstallOracleJava8OnUbuntu {
 
                 <app-entry-meta header={this.header} />
 
-                <p>How to install Oracle Java 8 on Ubuntu (in may case,&nbsp;Ubuntu 16.04 LTS)</p>
+                <p>How to install Oracle Java 8 on Ubuntu (in my case,&nbsp;Ubuntu 16.04 LTS)</p>
 
                 <h2>Procedure to install Oracle Java 8 on Ubuntu</h2>
 
