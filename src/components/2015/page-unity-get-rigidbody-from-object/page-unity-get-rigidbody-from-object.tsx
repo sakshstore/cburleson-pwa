@@ -48,14 +48,15 @@ export class PageUnityGetRigidbodyFromObject {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>Here’s how to get the rigidbody from an object the script is applied to in Unity. The example shown is in C#.</p>
 
-
-                <p>Here’s how to get the rigidbody from an object the script is applied to in Unity. The example shown is in C#.</p>
-
-                <pre><code class="language-csharp">{`using UnityEngine;
+                            <pre><code class="language-csharp">{`using UnityEngine;
 using System.Collections;
 public class PlayerController : MonoBehaviour {
   private Rigidbody rb;
@@ -79,7 +80,18 @@ public class PlayerController : MonoBehaviour {
   }
 }`}</code></pre>
 
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
             </ion-content>
+
 
         ];
     }

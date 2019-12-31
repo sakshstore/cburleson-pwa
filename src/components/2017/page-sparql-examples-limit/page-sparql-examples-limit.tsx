@@ -49,13 +49,15 @@ export class PageSparqlExamplesLimit {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
+							<h3>Limit the number of results returned</h3>
 
-				<h3>Limit the number of results returned</h3>
-
-				<pre><code class="language-sparql">{`PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
+							<pre><code class="language-sparql">{`PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bc: <http://www.base22.com/ontologies/2010/5/bc.owl#>
 
 SELECT *
@@ -64,18 +66,26 @@ WHERE {
            ?subject bc:hasBusinessEmail ?email .
 } LIMIT 5`}</code></pre>
 
-				<p>The LIMIT keyword is used after the WHERE clause, followed by a numerical value. In this case, of course, only 5 results are returned.</p>
+							<p>The LIMIT keyword is used after the WHERE clause, followed by a numerical value. In this case, of course, only 5 results are returned.</p>
 
-				<ul>
-					<li>LIMIT is a solution modifier that limits the number of rows returned from a query. SPARQL has two other solution modifiers:
+							<ul>
+								<li>LIMIT is a solution modifier that limits the number of rows returned from a query. SPARQL has two other solution modifiers:
 	<ul>
-							<li>ORDER BY for sorting query solutions on the value of one or more variables</li>
-							<li>OFFSET, used in conjunction with LIMIT and ORDER BY to take a slice of a sorted solution set (e.g. for paging)</li>
-						</ul>
-					</li>
-				</ul>
+										<li>ORDER BY for sorting query solutions on the value of one or more variables</li>
+										<li>OFFSET, used in conjunction with LIMIT and ORDER BY to take a slice of a sorted solution set (e.g. for paging)</li>
+									</ul>
+								</li>
+							</ul>
+
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+							<gls-adsense-ad />
+						</ion-col>
+					</ion-row>
+				</ion-grid>
 
 			</ion-content>
+
 
 		];
 	}

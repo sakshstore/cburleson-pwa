@@ -48,13 +48,15 @@ export class PageSetThePageTitleInAngular {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>Angular provides a Title service that you can use to set the title of a page. This is good, of course, for SEO. Here’s how to use it.</p>
 
-                <p>Angular provides a Title service that you can use to set the title of a page. This is good, of course, for SEO. Here’s how to use it.</p>
-
-                <pre><code class="language-ts">{`import { Component } from '@angular/core';
+                            <pre><code class="language-ts">{`import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
  
 @Component({
@@ -76,9 +78,19 @@ export class MyAppComponent {
                 }
 }`}</code></pre>
 
-                <p>The service automatically creates the title&nbsp;element in the head if needed and also sets the value. &nbsp;The service also has a getter method to get the title.</p>
+                            <p>The service automatically creates the title&nbsp;element in the head if needed and also sets the value. &nbsp;The service also has a getter method to get the title.</p>
 
-            </ion-content >
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
+            </ion-content>
+
 
         ];
     }

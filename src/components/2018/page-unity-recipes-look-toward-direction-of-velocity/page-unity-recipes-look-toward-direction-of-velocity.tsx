@@ -48,27 +48,34 @@ export class PageUnityRecipesLookTowardDirectionOfVelocity {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
 
-<p>The following C# script for Unity can be used to make an object look toward the direction of its current velocity.</p>
+                            <p>The following C# script for Unity can be used to make an object look toward the direction of its current velocity.</p>
 
-        <pre><code class="language-csharp">{`using System.Collections;
+                            <pre><code class="language-csharp">{`using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 public class MyController : MonoBehaviour
 {
-    private void Update()
-    {
-        lookTowardDirectionOfVelocity();
-    }
-    void lookTowardDirectionOfVelocity() {
-        transform.rotation = Quaternion.LookRotation(player.GetComponent().velocity);
-    }
+private void Update()
+{
+lookTowardDirectionOfVelocity();
+}
+void lookTowardDirectionOfVelocity() {
+transform.rotation = Quaternion.LookRotation(player.GetComponent().velocity);
+}
 }`}</code></pre>
-
-
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                            <gls-adsense-ad />
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

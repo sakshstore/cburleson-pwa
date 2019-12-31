@@ -48,23 +48,25 @@ export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>I’ve always felt stupid for writing a simple Spring controller just to return a view when no controller logic is required. Turns out, I was right; there is a better way. So, okay. I <em>was</em> stupid, but now I know and here it is.</p>
 
-                <p>I’ve always felt stupid for writing a simple Spring controller just to return a view when no controller logic is required. Turns out, I was right; there is a better way. So, okay. I <em>was</em> stupid, but now I know and here it is.</p>
+                            <p>Since Spring 3.0, you can use the following tag in your XML configuration:</p>
 
-                <p>Since Spring 3.0, you can use the following tag in your XML configuration:</p>
+                            <pre><code class="language-xml">{`<mvc:view-controller path="/" view-name="home"/>`}</code></pre>
 
-                <pre><code class="language-xml">{`<mvc:view-controller path="/" view-name="home"/>`}</code></pre>
+                            <p>That’s an example of a view-controller definition that forwards to a home page without any custom backing controller. The <a href="http://static.springsource.org/spring/docs/3.0.x/reference/mvc.html" rel="nofollow">Spring 3.0 documentation</a> describes the tag as follows:</p>
 
-                <p>That’s an example of a view-controller definition that forwards to a home page without any custom backing controller. The <a href="http://static.springsource.org/spring/docs/3.0.x/reference/mvc.html" rel="nofollow">Spring 3.0 documentation</a> describes the tag as follows:</p>
+                            <blockquote><p>This tag is a shorcut for defining a ParameterizableViewController that immediately forwards to a view when invoked. Use it in static cases when there is no Java Controller logic to execute before the view generates the response.</p></blockquote>
 
-                <blockquote><p>This tag is a shorcut for defining a ParameterizableViewController that immediately forwards to a view when invoked. Use it in static cases when there is no Java Controller logic to execute before the view generates the response.</p></blockquote>
+                            <p>Following is an example of the full dispatcher-servlet.xml file that I’m using at the moment. You can see at the very bottom that I’ve mapped two of these. The path ‘/index’ routes to a <a href="http://freemarker.org/" rel="nofollow">FreeMarker</a> view I’ve defined in an index.ftl file and the path ‘/about’ routes to another FreeMarker view defined in the file, about.ftl.</p>
 
-                <p>Following is an example of the full dispatcher-servlet.xml file that I’m using at the moment. You can see at the very bottom that I’ve mapped two of these. The path ‘/index’ routes to a <a href="http://freemarker.org/" rel="nofollow">FreeMarker</a> view I’ve defined in an index.ftl file and the path ‘/about’ routes to another FreeMarker view defined in the file, about.ftl.</p>
-
-                <pre><code class="language-xml">{`<?xml version="1.0" encoding="UTF-8"?>
+                            <pre><code class="language-xml">{`<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" 
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      xmlns:p="http://www.springframework.org/schema/p" 
@@ -108,9 +110,9 @@ export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
  
 </beans>`}</code></pre>
 
-                <p>If you prefer Java code configuration over XML files for Spring, you can do this:</p>
+                            <p>If you prefer Java code configuration over XML files for Spring, you can do this:</p>
 
-                <pre><code class="language-java">{`@Configuration
+                            <pre><code class="language-java">{`@Configuration
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
  
@@ -121,7 +123,18 @@ public class WebConfig extends WebMvcConfigurerAdapter {
  
 }`}</code></pre>
 
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
+
             </ion-content>
+
 
         ];
     }

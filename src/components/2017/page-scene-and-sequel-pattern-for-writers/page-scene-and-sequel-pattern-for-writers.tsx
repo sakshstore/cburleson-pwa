@@ -126,6 +126,8 @@ export class PageSceneAndSequelPatternForWriters {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
+                            <gls-adsense-ad/>
+
                         </ion-col>
                     </ion-row>
                 </ion-grid>

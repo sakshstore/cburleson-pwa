@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [UNRELEASED]
+
+- **Added** Pages from legacy WordPress blog: 
+    - [/build-a-rendering-plugin-ibm-wcm-part-1](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1)
+    - [/build-a-rendering-plugin-ibm-wcm-part-2](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2)
+- **Fixes** [#53](https://github.com/codyburleson/cburleson-pwa/issues/53) Create component for adsense and apply to all pages.
+
 ## [1.2.5] - 2019-12-29
 
 - **Modified** new `gls-adsense-ad` component for testing on page [/automatically-build-and-include-one-eclipse-project-into-another](https://codyburleson.com/automatically-build-and-include-one-eclipse-project-into-another); attempt using `componentWillRender` did not work. This is a production test of `componentDidRender`.

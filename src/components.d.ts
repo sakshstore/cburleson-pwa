@@ -48,6 +48,8 @@ export namespace Components {
   interface PageBlog {}
   interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
+  interface PageBuildARenderingPluginIbmWcmPart1 {}
+  interface PageBuildARenderingPluginIbmWcmPart2 {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
@@ -326,6 +328,18 @@ declare global {
   var HTMLPageBooksElement: {
     prototype: HTMLPageBooksElement;
     new (): HTMLPageBooksElement;
+  };
+
+  interface HTMLPageBuildARenderingPluginIbmWcmPart1Element extends Components.PageBuildARenderingPluginIbmWcmPart1, HTMLStencilElement {}
+  var HTMLPageBuildARenderingPluginIbmWcmPart1Element: {
+    prototype: HTMLPageBuildARenderingPluginIbmWcmPart1Element;
+    new (): HTMLPageBuildARenderingPluginIbmWcmPart1Element;
+  };
+
+  interface HTMLPageBuildARenderingPluginIbmWcmPart2Element extends Components.PageBuildARenderingPluginIbmWcmPart2, HTMLStencilElement {}
+  var HTMLPageBuildARenderingPluginIbmWcmPart2Element: {
+    prototype: HTMLPageBuildARenderingPluginIbmWcmPart2Element;
+    new (): HTMLPageBuildARenderingPluginIbmWcmPart2Element;
   };
 
   interface HTMLPageCageElement extends Components.PageCage, HTMLStencilElement {}
@@ -963,6 +977,8 @@ declare global {
     'page-blog': HTMLPageBlogElement;
     'page-book-review-more-than-everything': HTMLPageBookReviewMoreThanEverythingElement;
     'page-books': HTMLPageBooksElement;
+    'page-build-a-rendering-plugin-ibm-wcm-part-1': HTMLPageBuildARenderingPluginIbmWcmPart1Element;
+    'page-build-a-rendering-plugin-ibm-wcm-part-2': HTMLPageBuildARenderingPluginIbmWcmPart2Element;
     'page-cage': HTMLPageCageElement;
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
@@ -1106,6 +1122,8 @@ declare namespace LocalJSX {
   interface PageBlog {}
   interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
+  interface PageBuildARenderingPluginIbmWcmPart1 {}
+  interface PageBuildARenderingPluginIbmWcmPart2 {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageCmdChronBeaverCage {}
@@ -1238,6 +1256,8 @@ declare namespace LocalJSX {
     'page-blog': PageBlog;
     'page-book-review-more-than-everything': PageBookReviewMoreThanEverything;
     'page-books': PageBooks;
+    'page-build-a-rendering-plugin-ibm-wcm-part-1': PageBuildARenderingPluginIbmWcmPart1;
+    'page-build-a-rendering-plugin-ibm-wcm-part-2': PageBuildARenderingPluginIbmWcmPart2;
     'page-cage': PageCage;
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
@@ -1377,6 +1397,8 @@ declare module "@stencil/core" {
       'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-book-review-more-than-everything': LocalJSX.PageBookReviewMoreThanEverything & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
+      'page-build-a-rendering-plugin-ibm-wcm-part-1': LocalJSX.PageBuildARenderingPluginIbmWcmPart1 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart1Element>;
+      'page-build-a-rendering-plugin-ibm-wcm-part-2': LocalJSX.PageBuildARenderingPluginIbmWcmPart2 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart2Element>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;

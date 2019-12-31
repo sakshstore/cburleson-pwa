@@ -50,13 +50,14 @@ export class PageSparqlExamplesFilter {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
-
-
-				<h3>Return items with recorded date less than given date</h3>
-				<pre><code class="language-sparql">{`PREFIX dcterms: <http://purl.org/dc/terms/>
+							<h3>Return items with recorded date less than given date</h3>
+							<pre><code class="language-sparql">{`PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX web: <http://base22.com/ont/web#>
  
@@ -66,7 +67,19 @@ SELECT * WHERE {
     ?subject web:publishDate ?publishDate.
     FILTER (?publishDate < "2016-09-28T19:19:02.982Z"^^xsd:dateTime)
 }`}</code></pre>
+
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+							<gls-adsense-ad />
+
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+
 			</ion-content>
+
+
 
 		];
 	}

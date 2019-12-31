@@ -112,78 +112,94 @@ export class PageUsePrismJsInIonicStencilApp {
                 </ion-toolbar>
             </ion-header>,
 
-            <ion-content class="ion-padding">
+<ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+<ion-grid>
+    <ion-row>
+        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+        <h1>{this.header.title}</h1>
 
-                <app-entry-meta header={this.header} />
+<app-entry-meta header={this.header} />
 
-                <p>Here is my procedure for using the <a href="https://prismjs.com/">Prism.js</a> syntax highlighter in an Ionic / Stencil app. </p>
+<p>Here is my procedure for using the <a href="https://prismjs.com/">Prism.js</a> syntax highlighter in an Ionic / Stencil app. </p>
 
-                <p>First install prism.js with the following command:</p>
+<p>First install prism.js with the following command:</p>
 
-                <p><code>npm install --save prismjs</code></p>
+<p><code>npm install --save prismjs</code></p>
 
-                <p>Add the following import statement in your global CSS file (e.g. <code>src/global/app.css</code>).</p>
+<p>Add the following import statement in your global CSS file (e.g. <code>src/global/app.css</code>).</p>
 
-                <p><code>@import "~prismjs/themes/prism-okaidia.css";</code></p>
+<p><code>@import "~prismjs/themes/prism-okaidia.css";</code></p>
 
-                <p>Note that I am using the prism-okaidia.css theme file (a dark theme), but you can choose the css file for any theme you prefer. </p>
+<p>Note that I am using the prism-okaidia.css theme file (a dark theme), but you can choose the css file for any theme you prefer. </p>
 
-                <p>Now, in the page component where you want to use syntax highlighting, add the following import statement:</p>
+<p>Now, in the page component where you want to use syntax highlighting, add the following import statement:</p>
 
-                <p><code>import Prism from "prismjs"</code></p>
+<p><code>import Prism from "prismjs"</code></p>
 
-                <p>Then, add your code snippet as a constant at the top of the file, after imports and before the class definition (constants can't be defined within the component class itself). Here's an example:</p>
+<p>Then, add your code snippet as a constant at the top of the file, after imports and before the class definition (constants can't be defined within the component class itself). Here's an example:</p>
 
-                <pre><code class="language-ts">{CODE_1}</code></pre>
+<pre><code class="language-ts">{CODE_1}</code></pre>
 
-                <p>Inside the render() method, you can put the code within a pre tag as follows:</p>
+<p>Inside the render() method, you can put the code within a pre tag as follows:</p>
 
-                <p><code>&lt;pre&gt;&lt;code class="language-html"&gt;&#123;code&#125;&lt;/pre&gt;</code></p>
+<p><code>&lt;pre&gt;&lt;code class="language-html"&gt;&#123;code&#125;&lt;/pre&gt;</code></p>
 
-                <p>If you want any HTML encoded characters to be interpreted and rendered, you can alternatively do it this way:</p>
+<p>If you want any HTML encoded characters to be interpreted and rendered, you can alternatively do it this way:</p>
 
-                <p><code>&lt;pre&gt;&lt;code class="language-html" innerHTML=&#123;code&#125;&gt;&lt;/pre&gt;</code></p>
+<p><code>&lt;pre&gt;&lt;code class="language-html" innerHTML=&#123;code&#125;&gt;&lt;/pre&gt;</code></p>
 
-                <p>Finally add the following method to the class:</p>
+<p>Finally add the following method to the class:</p>
 
-                <pre><code class="language-ts">{CODE_2}</code></pre>
+<pre><code class="language-ts">{CODE_2}</code></pre>
 
-                <p>That's it! Let's now look at the example page component all in one piece:</p>
+<p>That's it! Let's now look at the example page component all in one piece:</p>
 
-                <pre><code class="language-ts">{CODE_3}</code></pre>
+<pre><code class="language-ts">{CODE_3}</code></pre>
 
 
 
-                <p>Another alternative to using a constant for the code snippet is to just put the code snippet inline between brackets and back-ticks, like this:</p>
+<p>Another alternative to using a constant for the code snippet is to just put the code snippet inline between brackets and back-ticks, like this:</p>
 
-                <pre><code class="language-html">{`<pre><code class="language-yml">{\`version: "2"
+<pre><code class="language-html">{`<pre><code class="language-yml">{\`version: "2"
 services:
-  my-wpdb:
-    image: mariadb
-    ports:
-      - "8081:3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
-  my-wp:
-    image: wordpress
-    volumes:
-      - ./wp:/var/www/html
-    ports:
-      - "8080:80"
-    links:
-      - my-wpdb:mysql
-    environment:
-      WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant\`}</code></pre>`}</code></pre>
+my-wpdb:
+image: mariadb
+ports:
+- "8081:3306"
+environment:
+MYSQL_ROOT_PASSWORD: ChangeMeIfYouWant
+my-wp:
+image: wordpress
+volumes:
+- ./wp:/var/www/html
+ports:
+- "8080:80"
+links:
+- my-wpdb:mysql
+environment:
+WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant\`}</code></pre>`}</code></pre>
 
 
 
-                <p>Finally, if you want to support additional plugins and languages, include them like this:</p>
+<p>Finally, if you want to support additional plugins and languages, include them like this:</p>
 
-                <pre><code class="language-ts">{CODE_4}</code></pre>
+<pre><code class="language-ts">{CODE_4}</code></pre>
 
-            </ion-content>
+
+
+        </ion-col>
+        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+            <gls-adsense-ad />
+
+        </ion-col>
+    </ion-row>
+</ion-grid>
+
+</ion-content>
+
+
 
         ];
     }

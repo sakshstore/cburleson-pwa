@@ -1007,6 +1007,24 @@
       ]
     },
     {
+      "id": "build-a-rendering-plugin-ibm-wcm-part-2",
+      "title": "Build a Rendering Plugin to Integrate Velocity with IBM WCM - Part 2",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2012/12/27",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "build-a-rendering-plugin-ibm-wcm-part-1",
+      "title": "Build a Rendering Plugin to Integrate Velocity with IBM WCM - Part 1",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2012/12/26",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
       "title": "Unity Freebies: Game Timer, Cinematic Letterbox, and Fade-in Scripts",
       "teaser": "Two awesome Unity behavior scripts that you can download and use for free right now!",

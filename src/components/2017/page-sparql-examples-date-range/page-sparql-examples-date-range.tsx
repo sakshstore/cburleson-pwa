@@ -50,18 +50,29 @@ export class PageSparqlExamplesDateRange {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
+							<p>An example SPARQL query filtering for resources within a given date range (between two given dates).</p>
 
-				<p>An example SPARQL query filtering for resources within a given date range (between two given dates).</p>
-
-				<pre><code class="language-sparql">{`PREFIX c: <https://carbonldp.com/ns/v1/platform#>
+							<pre><code class="language-sparql">{`PREFIX c: <https://carbonldp.com/ns/v1/platform#>
  
 SELECT ?document ?createdDate WHERE {
     ?document c:created ?createdDate
     FILTER (?createdDate < "2017-04-18T22:29:33.667Z"^^xsd:dateTime && ?createdDate > "2017-04-18T21:37:37.708Z"^^xsd:dateTime)
 } LIMIT 100`}</code></pre>
+
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+							<gls-adsense-ad />
+
+						</ion-col>
+					</ion-row>
+				</ion-grid>
 
 			</ion-content>
 

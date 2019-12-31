@@ -18,7 +18,7 @@ if (dev) {
 export const config: Config = {
   outputTargets: [{
     type: 'www',
-    // baseUrl: 'https://localhost:3333/',
+    baseUrl: 'https://localhost:3333/',
     serviceWorker: null
   }],
   //globalScript: 'src/global/app.ts',

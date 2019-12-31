@@ -47,37 +47,50 @@ export class PageRenderTheKeysAndValuesFromAMapInFreemarker {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <h2>Render the values of a Map</h2>
 
-                <h2>Render the values of a Map</h2>
+                            <p>The following code snippet shows how to get the values of a Map (e.g. HashMap) from within a Freemarker template.</p>
 
-                <p>The following code snippet shows how to get the values of a Map (e.g. HashMap) from within a Freemarker template.</p>
-
-                <pre><code class="language-xml">{`<#assign m = myMap>
+                            <pre><code class="language-xml">{`<#assign m = myMap>
 <#assign values = m?values>
-         
+
 <ul>
-     <#list values as myObject>
-     <li>$\{myObject.myPropery\}</li>
-     </#list>
+<#list values as myObject>
+<li>$\{myObject.myPropery\}</li>
+</#list>
 </ul>`}</code></pre>
 
-                <h2>Render the keys of a Map</h2>
+                            <h2>Render the keys of a Map</h2>
 
-                <p>You can do a similar thing with the keys of a map as shown below.</p>
+                            <p>You can do a similar thing with the keys of a map as shown below.</p>
 
-                <pre><code class="language-xml">{`<#assign m = myMap>
+                            <pre><code class="language-xml">{`<#assign m = myMap>
 <#assign keys = m?keys>
-         
+
 <ul>
-     <#list keys as key>
-     <li>$\{key\}</li>
-     </#list>
+<#list keys as key>
+<li>$\{key\}</li>
+</#list>
 </ul>`}</code></pre>
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
+
 
         ];
     }

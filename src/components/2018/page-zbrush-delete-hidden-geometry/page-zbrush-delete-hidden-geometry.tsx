@@ -41,17 +41,26 @@ export class PagedZbrushDleteHiddenGeometry {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
-
-                <ul>
-                    <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and drag out a selection to select geometry to hide. Press <kbd>ALT</kbd> before releasing.</li>
-                    <li>In Tools &gt; Geometry &gt; Modify Topology, click Del Hidden.</li>
-                    <li>Optionally, in the same panel, you may click Close Holes to cap open holes.</li>
-                </ul>
+                            <ul>
+                                <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and drag out a selection to select geometry to hide. Press <kbd>ALT</kbd> before releasing.</li>
+                                <li>In Tools &gt; Geometry &gt; Modify Topology, click Del Hidden.</li>
+                                <li>Optionally, in the same panel, you may click Close Holes to cap open holes.</li>
+                            </ul>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                            <gls-adsense-ad />
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
 
         ];
     }

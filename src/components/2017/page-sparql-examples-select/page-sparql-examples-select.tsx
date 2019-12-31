@@ -114,82 +114,91 @@ export class PageSparqlExamplesSelect {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <h2>Find all triples</h2>
 
-                <h2>Find all triples</h2>
+                            <p>Use <code>SELECT</code> to signify you want to select certain information and <code>WHERE</code> to signify your conditions, restrictions, and filters. A <code>LIMIT</code> is used to avoid cracking the server on a large dataset.</p>
 
-                <p>Use <code>SELECT</code> to signify you want to select certain information and <code>WHERE</code> to signify your conditions, restrictions, and filters. A <code>LIMIT</code> is used to avoid cracking the server on a large dataset.</p>
+                            <pre><code class="language-sparql" innerHTML={CODE_1}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_1}></code></pre>
+                            <h2>Find all same-subject triples by given subject</h2>
 
-                <h2>Find all same-subject triples by given subject</h2>
+                            <p>By specifying only the subject in the pattern, we can return all triples that have that subject. When an individual entity is defined by a given subject URI, then this is a way to get all the properties for that entity.</p>
 
-                <p>By specifying only the subject in the pattern, we can return all triples that have that subject. When an individual entity is defined by a given subject URI, then this is a way to get all the properties for that entity.</p>
+                            <pre><code class="language-sparql">{CODE_2}</code></pre>
 
-                <pre><code class="language-sparql">{CODE_2}</code></pre>
+                            <p>Since the subject is known, you could also omit <code>?subject</code> from the <code>SELECT</code> line so that only the predicates and objects are returned.</p>
 
-                <p>Since the subject is known, you could also omit <code>?subject</code> from the <code>SELECT</code> line so that only the predicates and objects are returned.</p>
+                            <h2>Find and order most used predicates</h2>
 
-                <h2>Find and order most used predicates</h2>
+                            <pre><code class="language-sparql" innerHTML={CODE_3}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_3}></code></pre>
+                            <h2>Select the top 100 nodes in the RDF graph</h2>
 
-                <h2>Select the top 100 nodes in the RDF graph</h2>
+                            <p>RDF Rank is a <a href="http://ontotext.com/products/graphdb/" rel="nofollow">GraphDB</a> extension. It is similar to Page Rank and it identifies “important” nodes in an RDF graph based on their interconnectedness. It is accessed using the <code>rank:hasRDFRank</code> system predicate.</p>
 
-                <p>RDF Rank is a <a href="http://ontotext.com/products/graphdb/" rel="nofollow">GraphDB</a> extension. It is similar to Page Rank and it identifies “important” nodes in an RDF graph based on their interconnectedness. It is accessed using the <code>rank:hasRDFRank</code> system predicate.</p>
+                            <pre><code class="language-sparql" innerHTML={CODE_4}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_4}></code></pre>
+                            <h2>Find anything with a label</h2>
 
-                <h2>Find anything with a label</h2>
+                            <p>The following query will find all triples where subject and object are joined by <code>rdfs:label</code>. In other words, anything that has been defined as having a label.</p>
 
-                <p>The following query will find all triples where subject and object are joined by <code>rdfs:label</code>. In other words, anything that has been defined as having a label.</p>
+                            <pre><code class="language-sparql" innerHTML={CODE_5}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_5}></code></pre>
+                            <h2>Find instances by class with a label</h2>
 
-                <h2>Find instances by class with a label</h2>
+                            <p>The following example query will get the labels of anything of the class type (<code>rdf:type</code>) Organization.</p>
 
-                <p>The following example query will get the labels of anything of the class type (<code>rdf:type</code>) Organization.</p>
+                            <pre><code class="language-sparql" innerHTML={CODE_6}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_6}></code></pre>
+                            <h2>Find all subjects with a given object property</h2>
 
-                <h2>Find all subjects with a given object property</h2>
+                            <pre><code class="language-sparql" innerHTML={CODE_7}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_7}></code></pre>
+                            <p>From my contacts ontology, I find all IBMers (i.e. the <code>hasEmployer</code> predicate points to the individual IBM, which is an object of type Organization).</p>
 
-                <p>From my contacts ontology, I find all IBMers (i.e. the <code>hasEmployer</code> predicate points to the individual IBM, which is an object of type Organization).</p>
+                            <h2>Find all classes</h2>
 
-                <h2>Find all classes</h2>
+                            <pre><code class="language-sparql" innerHTML={CODE_8}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_8}></code></pre>
+                            <p>The SPARQL keyword&nbsp;<strong>a</strong>&nbsp;is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
 
-                <p>The SPARQL keyword&nbsp;<strong>a</strong>&nbsp;is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
+                            <h2>Find all classes with a given prefix</h2>
 
-                <h2>Find all classes with a given prefix</h2>
+                            <pre><code class="language-sparql" innerHTML={CODE_9}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_9}></code></pre>
+                            <p>The SPARQL keyword <strong>a</strong> is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
 
-                <p>The SPARQL keyword <strong>a</strong> is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
+                            <h2>Query from a particular graph on the web</h2>
 
-                <h2>Query from a particular graph on the web</h2>
+                            <pre><code class="language-sparql" innerHTML={CODE_10}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_10}></code></pre>
+                            <p>The <code>FROM</code> keyword lets us specify the target graph in the query itself.<br />Of interest also in the query shown above:<br />By using <code>?known</code> as an object of one triple and the subject of another, we traverse multiple links in the graph.</p>
 
-                <p>The <code>FROM</code> keyword lets us specify the target graph in the query itself.<br />Of interest also in the query shown above:<br />By using <code>?known</code> as an object of one triple and the subject of another, we traverse multiple links in the graph.</p>
+                            <h2>Find subjects with a property value greater than</h2>
 
-                <h2>Find subjects with a property value greater than</h2>
+                            <p>Find me all landlocked countries with a population greater than 15 million</p>
 
-                <p>Find me all landlocked countries with a population greater than 15 million</p>
+                            <pre><code class="language-sparql" innerHTML={CODE_11}></code></pre>
 
-                <pre><code class="language-sparql" innerHTML={CODE_11}></code></pre>
+                            <p>You can try this one at the <a href="http://dbpedia.org/sparql" rel="nofollow">DBPedia SPARQL endpoint</a>.</p>
+                            <ul>
+                                <li><code>FILTER</code> constraints use boolean conditions to filter out unwanted query results.</li>
+                                <li>Shortcut: a semicolon (;) can be used to separate two triple patterns that share the same subject. (<code>?country</code> is the shared subject above.)</li>
+                                <li><code>rdfs:label</code> is a common predicate for giving a human-friendly label to a resource.</li>
+                            </ul>
 
-                <p>You can try this one at the <a href="http://dbpedia.org/sparql" rel="nofollow">DBPedia SPARQL endpoint</a>.</p>
-                <ul>
-                    <li><code>FILTER</code> constraints use boolean conditions to filter out unwanted query results.</li>
-                    <li>Shortcut: a semicolon (;) can be used to separate two triple patterns that share the same subject. (<code>?country</code> is the shared subject above.)</li>
-                    <li><code>rdfs:label</code> is a common predicate for giving a human-friendly label to a resource.</li>
-                </ul>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                            <gls-adsense-ad />
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

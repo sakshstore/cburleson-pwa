@@ -48,17 +48,23 @@ export class PageInstallOracleJava8OnUbuntu {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <h1>{this.header.title}</h1>
 
-                <p>How to install Oracle Java 8 on Ubuntu (in my case,&nbsp;Ubuntu 16.04 LTS)</p>
+                            <app-entry-meta header={this.header} />
 
-                <h2>Procedure to install Oracle Java 8 on Ubuntu</h2>
+                            <p>How to install Oracle Java 8 on Ubuntu (in my case,&nbsp;Ubuntu 16.04 LTS)</p>
 
-                <p>You probably want to confirm first that a version of Java is not already installed. If so, you can do that with the&nbsp;java -version command as shown below…</p>
+                            <h2>Procedure to install Oracle Java 8 on Ubuntu</h2>
 
-                <pre><code class="language-bash">{`developer@ubuntu:~$ java -version
+                            <p>You probably want to confirm first that a version of Java is not already installed. If so, you can do that with the&nbsp;java -version command as shown below…</p>
+
+                            <pre><code class="language-bash">{`developer@ubuntu:~$ java -version
 The program 'java' can be found in the following packages:
  * default-jre
  * gcj-5-jre-headless
@@ -69,28 +75,38 @@ The program 'java' can be found in the following packages:
 Try: sudo apt install <selected package>
 developer@ubuntu:~$`}</code></pre>
 
-                <p>Change to root…</p>
+                            <p>Change to root…</p>
 
-                <pre><code class="language-bash">{`sudo su -
+                            <pre><code class="language-bash">{`sudo su -
 (enter password)
 apt-get install software-properties-common
 add-apt-repository ppa:webupd8team/java
 apt-get update
 apt-get install oracle-java8-installer`}</code></pre>
 
-                <p>Check if Java is successfully installed</p>
+                            <p>Check if Java is successfully installed</p>
 
-                <pre><code class="language-bash">{`java -version
+                            <pre><code class="language-bash">{`java -version
 java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></pre>
 
-                <h2>Procedure to uninstall</h2>
+                            <h2>Procedure to uninstall</h2>
 
-                <p>If, for some reason, you want to undo this operation and uninstall Oracle Java 8 from Ubuntu, you can then execute the following:</p>
+                            <p>If, for some reason, you want to undo this operation and uninstall Oracle Java 8 from Ubuntu, you can then execute the following:</p>
 
-                <pre><code class="language-bash">{`sudo su -
+                            <pre><code class="language-bash">{`sudo su -
 sudo apt-get remove oracle-java8-installer`}</code></pre>
+
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

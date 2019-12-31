@@ -49,17 +49,27 @@ export class PageSparqlExamplesCountAllStatements {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
+							<p>Here&#8217;s a SPARQL query that counts all statements (triples) in a repository.</p>
 
-				<p>Here&#8217;s a SPARQL query that counts all statements (triples) in a repository.</p>
+							<pre><code class="language-sparql">{`SELECT (COUNT(?s) AS ?triples) WHERE { ?s ?p ?o }`}</code></pre>
 
-				<pre><code class="language-sparql">{`SELECT (COUNT(?s) AS ?triples) WHERE { ?s ?p ?o }`}</code></pre>
+							<p>Note that this can be a long running query. For me it took took 21 seconds to count the statements in a repository with 30 million triples.</p>
 
-				<p>Note that this can be a long running query. For me it took took 21 seconds to count the statements in a repository with 30 million triples.</p>
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+							<gls-adsense-ad />
+						</ion-col>
+					</ion-row>
+				</ion-grid>
 
 			</ion-content>
+
 
 		];
 	}

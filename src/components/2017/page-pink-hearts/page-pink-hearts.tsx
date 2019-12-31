@@ -41,23 +41,35 @@ export class PagePinkHearts {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>My sister tried to kill herself. Or, at least, I think she did.</p>
+                            <p>I was eleven years old. I don’t remember much about it; it was a long time ago – kind of a blur at this point. The thing that sticks out is all the little pink hearts – speed pills. She’d swallowed a shit-load, then sprayed them all over the upholstery of the car with her vomit.</p>
+                            <p>Mom rolled down the windows. The stench was bad.</p>
+                            <p>I watched those little pills drip off the top of the car as we raced to the hospital to have her stomach pumped.</p>
+                            <p>She was thirteen years old.</p>
+                            <p>She survived it.</p>
+                            <p>To this day, I don’t know why she did that.</p>
+                            <p>I was too young to understand much, but it makes me wonder now.</p>
+                            <p>What could have been so troublesome for her at that age? I don’t even recall her having a boyfriend at the time. She never did drugs before then. It’s not like we lived on skid row or anything – we were at my sweet grandmother’s house for Christ’s sake. Where in the hell does a thirteen year old girl find a bunch of speed?</p>
+                            <p>Maybe they were just caffeine pills. Maybe it was just a ploy for attention or a cry for help. Maybe not.</p>
+                            <p>I’ll never know.</p>
 
-                <p>My sister tried to kill herself. Or, at least, I think she did.</p>
-                <p>I was eleven years old. I don’t remember much about it; it was a long time ago – kind of a blur at this point. The thing that sticks out is all the little pink hearts – speed pills. She’d swallowed a shit-load, then sprayed them all over the upholstery of the car with her vomit.</p>
-                <p>Mom rolled down the windows. The stench was bad.</p>
-                <p>I watched those little pills drip off the top of the car as we raced to the hospital to have her stomach pumped.</p>
-                <p>She was thirteen years old.</p>
-                <p>She survived it.</p>
-                <p>To this day, I don’t know why she did that.</p>
-                <p>I was too young to understand much, but it makes me wonder now.</p>
-                <p>What could have been so troublesome for her at that age? I don’t even recall her having a boyfriend at the time. She never did drugs before then. It’s not like we lived on skid row or anything – we were at my sweet grandmother’s house for Christ’s sake. Where in the hell does a thirteen year old girl find a bunch of speed?</p>
-                <p>Maybe they were just caffeine pills. Maybe it was just a ploy for attention or a cry for help. Maybe not.</p>
-                <p>I’ll never know.</p>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
 
         ];
     }

@@ -41,25 +41,37 @@ export class PageZbrushCreateNewSubtoolFromMaskedArea {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>Mask an area on the model&#8230;</p>
 
-                <p>Mask an area on the model&#8230;</p>
+                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-1.png" alt="" /></p>
 
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-1.png" alt=""  /></p>
+                            <p>In the subtool palette, under Extract, set the thickness and options.</p>
 
-                <p>In the subtool palette, under Extract, set the thickness and options.</p>
+                            <p>Click Extract button, then Accept.</p>
 
-                <p>Click Extract button, then Accept.</p>
+                            <p>A new subtool is generated from the extracted mask&#8230;</p>
 
-                <p>A new subtool is generated from the extracted mask&#8230;</p>
+                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-2.png" alt="" /></p>
 
-                <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-subtool-from-mask-2.png" alt=""  /></p>
+                            <p>It&#8217;s usually a good idea to use ZRemesher on the new subtool afterwards.</p>
 
-                <p>It&#8217;s usually a good idea to use ZRemesher on the new subtool afterwards.</p>
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
 
         ];
     }

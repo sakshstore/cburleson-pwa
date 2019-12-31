@@ -8,10 +8,6 @@ import { BlogData } from '../../../services/blog-data';
 import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
-declare global {
-    interface Window { adsbygoogle: any; }
-}
-
 @Component({
     tag: 'page-accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app',
 })
@@ -21,8 +17,6 @@ export class PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp
 
     // header for this individual item by id...
     header: any;
-
-    adsbygoogle:any;
 
     async componentWillLoad() {
         if (debug) {
@@ -39,10 +33,6 @@ export class PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp
 
     componentDidLoad() {
         setTimeout(() => Prism.highlightAll(), 0)
-    }
-
-    componentDidRender() {
-        (this.adsbygoogle = window.adsbygoogle || []).push({});
     }
 
     render() {
@@ -63,7 +53,6 @@ export class PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
-
 
                             <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png" alt="WebSphere Portal Logo" />Recently, I had trouble sharing a security context between WebSphere Portal and a custom web app deployed on the same server. It was for a mobile app that provides a JSON/XML REST API to content and services from Portal 6.1.5. For this to work, we needed the currently authenticated portal user, but since it was a separate web app deployed on the app server, and not a portlet or set of resources deployed within the portal, it was a challenge. This post illustrates the challenge and a solution.</p>
 
@@ -212,12 +201,7 @@ try {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <ins class="adsbygoogle"
-                                style={{ display: `block` }}
-                                data-ad-client="ca-pub-7370676338719207"
-                                data-ad-slot="5178955087"
-                                data-ad-format="auto"
-                                data-full-width-responsive="true"></ins>
+                            <gls-adsense-ad />>
                         </ion-col>
                     </ion-row>
                 </ion-grid>

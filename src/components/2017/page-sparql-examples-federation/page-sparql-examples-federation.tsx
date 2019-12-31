@@ -51,14 +51,16 @@ export class PageSparqlExamplesFederation {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
-
-				<h2>Federate data from 2 endpoints</h2>
-				<p>Find the birth dates of all of the actors in Star Trek: The Motion Picture.<br />
-					Try this on ARQ.</p>
-				<pre><code class="language-sparql">{`PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
+							<h2>Federate data from 2 endpoints</h2>
+							<p>Find the birth dates of all of the actors in Star Trek: The Motion Picture.<br />
+								Try this on ARQ.</p>
+							<pre><code class="language-sparql">{`PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
 PREFIX dbpedia: <http://dbpedia.org/ontology/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?actor_name ?birth_date
@@ -73,7 +75,16 @@ WHERE {
     FILTER(STR(?actor_name_en) = ?actor_name)
   }
 }`}</code></pre>
-				<p>The <code>SERVICE</code> keyword is used to send part of a query against a remote SPARQL endpoint.</p>
+							<p>The <code>SERVICE</code> keyword is used to send part of a query against a remote SPARQL endpoint.</p>
+
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+							<gls-adsense-ad />
+
+						</ion-col>
+					</ion-row>
+				</ion-grid>
 
 			</ion-content>
 

@@ -97,18 +97,29 @@ export class PageGettingPartsUrl {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>When I’m not quite sure how to get exactly what I need out of the request URL, I write some stanza that spits out the value of just about every relevant getter method on the javax.servlet.http.HttpServletRequest object. I’ve done this more than once. To be honest… more than twice – probably three or more times. I feel really bad about it, honestly. You know what I’m talking about? It looks something like this:</p>
 
-                <p>When I’m not quite sure how to get exactly what I need out of the request URL, I write some stanza that spits out the value of just about every relevant getter method on the javax.servlet.http.HttpServletRequest object. I’ve done this more than once. To be honest… more than twice – probably three or more times. I feel really bad about it, honestly. You know what I’m talking about? It looks something like this:</p>
-            
-                <pre><code class="language-java">{CODE_1}</code></pre>
+                            <pre><code class="language-java">{CODE_1}</code></pre>
 
-                <p>C’mon. You know you’ve done it more than once too, so just stop it with the smug smile.</p>
-                <p>I’m ashamed and sick of it, so this time, I’m dropping a breadcrumb for my future self by posting the output, which will give me a clue in some future date when my brain is wore to the core like it is tonight. As God is my witness, I will never, ever write this code stanza again. Here’s the output…</p>
+                            <p>C’mon. You know you’ve done it more than once too, so just stop it with the smug smile.</p>
+                            <p>I’m ashamed and sick of it, so this time, I’m dropping a breadcrumb for my future self by posting the output, which will give me a clue in some future date when my brain is wore to the core like it is tonight. As God is my witness, I will never, ever write this code stanza again. Here’s the output…</p>
 
-                <pre><code class="language-bash">{CODE_2}</code></pre>
+                            <pre><code class="language-bash">{CODE_2}</code></pre>
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

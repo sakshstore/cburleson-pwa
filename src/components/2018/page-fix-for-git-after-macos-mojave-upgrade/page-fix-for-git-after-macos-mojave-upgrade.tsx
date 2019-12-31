@@ -41,15 +41,25 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>Recently, I upgraded my macOS to Mojave and ran into the following error after running the <code>git init</code> command.</p>
+                            <p><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></p>
+                            <p>I was able to fix this by running the following command in a terminal…</p>
+                            <p><code>xcode-select --install</code></p>
+                            <p>Accept the license and install xcode-select when the associated install prompt window appears. You should then be back in business (at least, I was).</p>
 
-                <p>Recently, I upgraded my macOS to Mojave and ran into the following error after running the <code>git init</code> command.</p>
-                <p><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></p>
-                <p>I was able to fix this by running the following command in a terminal…</p>
-                <p><code>xcode-select --install</code></p>
-                <p>Accept the license and install xcode-select when the associated install prompt window appears. You should then be back in business (at least, I was).</p>
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                            <gls-adsense-ad />
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

@@ -48,28 +48,30 @@ export class PageAJavascriptImplementationOfJavaUtilMap {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p><img class="alignleft" style={{ marginBottom: `10px` }} src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/150x150-javaScriptHashMap.png" alt="" />As a Java developer, I use a lot of maps – especially instances of HashMap. A map is a dictionary or lookup table that contains key/value pairs. It provides a very convenient way to cache objects for easy retrieval by some identifier such as a string (the&nbsp;<em>key</em>). It’s so convenient, in fact, that I find myself struggling without a JavaScript equivalent, so I wrote one. Following is a partial JavaScript implementation of the java.util.Map interface, which you are free to copy and use.</p>
 
-                <p><img class="alignleft" style={{marginBottom: `10px`}} src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/150x150-javaScriptHashMap.png" alt="" />As a Java developer, I use a lot of maps – especially instances of HashMap. A map is a dictionary or lookup table that contains key/value pairs. It provides a very convenient way to cache objects for easy retrieval by some identifier such as a string (the&nbsp;<em>key</em>). It’s so convenient, in fact, that I find myself struggling without a JavaScript equivalent, so I wrote one. Following is a partial JavaScript implementation of the java.util.Map interface, which you are free to copy and use.</p>
+                            <div class="alert alert-warning" role="alert">Before using this map, please be advised that maps are now available as a part of the ECMAScript 2015 (ES6) standard. See: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a></div>
 
-                <div class="alert alert-warning" role="alert">Before using this map, please be advised that maps are now available as a part of the ECMAScript 2015 (ES6) standard. See: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map" rel="nofollow">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map</a></div>
+                            <h1>JavaScript Map usage example</h1>
 
-                <h1>JavaScript Map usage example</h1>
+                            <p>As you can see from the example below, using this map is just like using a map in Java.</p>
 
-                <p>As you can see from the example below, using this map is just like using a map in Java.</p>
-
-                <pre><code class="language-javascript">{`var myMap = new Map();
+                            <pre><code class="language-javascript">{`var myMap = new Map();
 myMap.put('myKey1',"Hello World!");
 myMap.put('myKey2',{'prop1':'How','prop2':' are you?'});
  
 console.log( myMap.get('myKey1') );
 console.log( myMap.get('myKey2').prop1 + myMap.get('myKey2').prop2);`}</code></pre>
 
-                <h2>JavaScript Map</h2>
+                            <h2>JavaScript Map</h2>
 
-                <pre><code class="language-javascript">{`/**
+                            <pre><code class="language-javascript">{`/**
 * An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
 * For those familiar with the Java programming language, this is similar to a HashMap; it implements most of the
 * methods defined by Java's java.util.Map interface.
@@ -167,9 +169,9 @@ function Map() {
     }
 }`}</code></pre>
 
-                <p><strong>Test Class</strong></p>
+                            <p><strong>Test Class</strong></p>
 
-                <pre><code class="language-javascript">{`/**
+                            <pre><code class="language-javascript">{`/**
 * =============================
 * Map Test Cases
 * =============================
@@ -230,128 +232,139 @@ assert( myMap.size() == 1 , "size should be 1 after removing item under 'key1'."
 myMap.clear();
 assert( myMap.size() == 0 , "size should be 0 after clearing lookup table.");`}</code></pre>
 
-                <h2>JavaScript Map API</h2>
+                            <h2>JavaScript Map API</h2>
 
-                <h3>Map</h3>
+                            <h3>Map</h3>
 
-                <h4>new Map()</h4>
+                            <h4>new Map()</h4>
 
-                <p>An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value. For those familiar with the Java programming language, this is similar to a HashMap; it implements most of the methods defined by Java’s <code>java.util.Map</code> interface.</p>
+                            <p>An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value. For those familiar with the Java programming language, this is similar to a HashMap; it implements most of the methods defined by Java’s <code>java.util.Map</code> interface.</p>
 
-                <h2 class="subsection-title">Methods</h2>
+                            <h2 class="subsection-title">Methods</h2>
 
-                <h3>clear()</h3>
+                            <h3>clear()</h3>
 
-                <p>Removes all of the mappings from this map. The map will be empty after this call returns.</p>
+                            <p>Removes all of the mappings from this map. The map will be empty after this call returns.</p>
 
-                <h3>containsKey(key)</h3>
+                            <h3>containsKey(key)</h3>
 
-                <p>Returns true if this map contains a mapping for the specified key. Parameters:</p>
+                            <p>Returns true if this map contains a mapping for the specified key. Parameters:</p>
 
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>key</td>
-                            <td>String</td>
-                            <td>key whose presence in this map is to be tested</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>key</td>
+                                        <td>String</td>
+                                        <td>key whose presence in this map is to be tested</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                <h3>forEach(callback)</h3>
+                            <h3>forEach(callback)</h3>
 
-                <p>Executes the given callback for each entry in this map until all entries have been processed. The given callback will be passed a map entry as parameter. So, for example…</p>
+                            <p>Executes the given callback for each entry in this map until all entries have been processed. The given callback will be passed a map entry as parameter. So, for example…</p>
 
-                <pre><code class="language-javascript">{`function myCallback(mapEntryItem) {
+                            <pre><code class="language-javascript">{`function myCallback(mapEntryItem) {
      console.log('I will process this item: ' + mapEntryItem.text);
 }
  
 myMap.forEach(myCallback);`}</code></pre>
 
-                <p>Parameters:</p>
+                            <p>Parameters:</p>
 
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>callback</td>
-                            <td>function</td>
-                            <td>The callback function that will be called for each entry in the map and which will be passed the value for each entry in the map.</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>callback</td>
+                                        <td>function</td>
+                                        <td>The callback function that will be called for each entry in the map and which will be passed the value for each entry in the map.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                <h3>isEmpty()</h3>
+                            <h3>isEmpty()</h3>
 
-                <p>Returns true if this map contains no key-value mappings.</p>
+                            <p>Returns true if this map contains no key-value mappings.</p>
 
-                <h3>put(key, value)</h3>
+                            <h3>put(key, value)</h3>
 
-                <p>Associates the specified value with the specified key in this map. If the map previously contained a mapping for the key, the old value is replaced.</p>
+                            <p>Associates the specified value with the specified key in this map. If the map previously contained a mapping for the key, the old value is replaced.</p>
 
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>key</td>
-                            <td>String</td>
-                            <td>key with which the specified value is to be associated</td>
-                        </tr>
-                        <tr>
-                            <td>value</td>
-                            <td>Object</td>
-                            <td>value to be associated with the specified key</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>key</td>
+                                        <td>String</td>
+                                        <td>key with which the specified value is to be associated</td>
+                                    </tr>
+                                    <tr>
+                                        <td>value</td>
+                                        <td>Object</td>
+                                        <td>value to be associated with the specified key</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                <h3>remove(key)</h3>
+                            <h3>remove(key)</h3>
 
-                <p>Removes the mapping for the specified key from this map if present.</p>
+                            <p>Removes the mapping for the specified key from this map if present.</p>
 
-                <table class="table table-bordered">
-                    <thead>
-                        <tr>
-                            <th>Name</th>
-                            <th>Type</th>
-                            <th>Description</th>
-                        </tr>
-                    </thead>
-                    <tbody>
-                        <tr>
-                            <td>key</td>
-                            <td>String</td>
-                            <td>key whose mapping is to be removed from the map</td>
-                        </tr>
-                    </tbody>
-                </table>
+                            <table class="table table-bordered">
+                                <thead>
+                                    <tr>
+                                        <th>Name</th>
+                                        <th>Type</th>
+                                        <th>Description</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>key</td>
+                                        <td>String</td>
+                                        <td>key whose mapping is to be removed from the map</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
-                <h3>size()</h3>
+                            <h3>size()</h3>
 
-                <p>Returns the number of key-value mappings in this map.</p>
+                            <p>Returns the number of key-value mappings in this map.</p>
 
-                <h2>Gist on GitHub</h2>
+                            <h2>Gist on GitHub</h2>
 
-                <p><a href="https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map" rel="nofollow">https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map</a></p>
+                            <p><a href="https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map" rel="nofollow">https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map</a></p>
+
+
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
 

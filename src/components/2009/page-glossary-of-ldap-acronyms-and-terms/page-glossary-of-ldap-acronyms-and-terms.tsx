@@ -99,10 +99,8 @@ givenname: Cody
 uid: cburleson
 ou: marketing`}</code></pre>
 
-                            <p><strong>o</strong><br />
-                                Organization</p>
-                            <p><strong>OID</strong><br />
-                                Object Identifier used to uniquely name each entity in the LDAP schema. The syntax is a string of numbers separated by periods. For example:</p>
+                            <p><strong>o</strong><br />Organization</p>
+                            <p><strong>OID</strong><br />Object Identifier used to uniquely name each entity in the LDAP schema. The syntax is a string of numbers separated by periods. For example:</p>
 
                             <p><code>2.16.840.1.113730.3.2.2</code></p>
 
@@ -116,27 +114,25 @@ ou: marketing`}</code></pre>
 
                             <p><strong>ou</strong></p>
 
-                            <p>Organizational Unit<br />
-                                OUs are typically used to create a hierarchy of containers within a domain. Only OUs within the same domain can have relationships. OUs of the same name in different domains are independent.</p>
+                            <p>Organizational Unit<br />OUs are typically used to create a hierarchy of containers within a domain. Only OUs within the same domain can have relationships. OUs of the same name in different domains are independent.</p>
 
-                            <p><strong>RDN</strong><br />
-                                Relative Distinuished Name</p>
+                            <p><strong>RDN</strong><br />Relative Distinuished Name</p>
 
                             <p><strong>sn</strong></p>
 
                             <p>Surname</p>
                             <p>The family name (last name) of a person</p>
 
-                            <p><strong>st</strong><br />
-                                State</p>
+                            <p><strong>st</strong><br />State</p>
 
                             <p><strong>structural (object classes)</strong><br />
                                 Each directory entry (instance) must contain at least one structural class. A structural class always uses inheritance, and it must be a subclass of some other object class. Only structural classes can use inheritance; abstract and auxiliary classes cannot use inheritance. A structural class can be a super class of another object class.</p>
-                            <p><strong>uid</strong><br />
-                                User ID</p>
+                            <p><strong>uid</strong><br />User ID</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
 
                         </ion-col>
                     </ion-row>

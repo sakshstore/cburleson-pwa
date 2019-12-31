@@ -19,7 +19,7 @@ export class PageScriptForRotatingUnityGameObject90Degrees {
     header: any;
 
     async componentWillLoad() {
-        if(debug) {
+        if (debug) {
             console.log('> PageScriptForRotatingUnityGameObject90Degrees.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -31,7 +31,7 @@ export class PageScriptForRotatingUnityGameObject90Degrees {
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
-componentDidLoad() {
+    componentDidLoad() {
         setTimeout(() => Prism.highlightAll(), 0)
     }
 
@@ -46,15 +46,20 @@ componentDidLoad() {
                 </ion-toolbar>
             </ion-header>,
 
+
             <ion-content class="ion-padding">
-                
-                <h1>{this.header.title}</h1>
-                
-                <app-entry-meta header={this.header} />
 
-<p>This Unity behavior script rotates the object it’s attached to by 90 degrees when the script’s rotate function is called. Just copy and paste the contents into a new JavaScript in Unity.</p>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
 
-        <pre><code class="language-javascript">{`#pragma strict
+                            <h1>{this.header.title}</h1>
+
+                            <app-entry-meta header={this.header} />
+
+                            <p>This Unity behavior script rotates the object it’s attached to by 90 degrees when the script’s rotate function is called. Just copy and paste the contents into a new JavaScript in Unity.</p>
+
+                            <pre><code class="language-javascript">{`#pragma strict
 public var seconds: float = .2;
 private var rotating = false;
 function rotateObject (thisTransform : Transform, degrees : Vector3) {
@@ -75,14 +80,25 @@ function rotate() {
   rotateObject(transform, Vector3.forward*-90);
 }`}</code></pre>
 
-<p>One way to call the rotate function from some other script is as follows:</p>
+                            <p>One way to call the rotate function from some other script is as follows:</p>
 
-<pre><code class="language-javascript">{`var cube : GameObject = GameObject.Find("Cube");
+                            <pre><code class="language-javascript">{`var cube : GameObject = GameObject.Find("Cube");
 cube.SendMessage("rotate");`}</code></pre>
 
-<p>Cheers!</p>
+                            <p>Cheers!</p>
+
+
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
 
         ];
     }

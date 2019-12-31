@@ -56,7 +56,6 @@ export class PageUserImpersonationProgramming {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-
                             <p>The user impersonation feature in WebSphere Portal allows specified users or groups the ability to assume the profile of others. In this way, administrators or help-desk staff can view a personalized and secured portal the way another end-user sees it. Of course, depending on the types of content and services you provide, this could be a security risk. If you have features that should not be accessed, even in impersonated sessions, you may need to wrap those features with some specialized logic. In this post, I show you how.</p>
 
                             <h2>Accessing the ImpersonationService in Your Java Code</h2>
@@ -127,6 +126,8 @@ try {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
 
                         </ion-col>
                     </ion-row>

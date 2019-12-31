@@ -51,25 +51,27 @@ export class PageSparqlExamplesListClasses {
 
             <ion-content class="ion-padding">
 
-                <h1>{this.header.title}</h1>
+                <ion-grid>
+                    <ion-row>
+                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            <h1>{this.header.title}</h1>
+                            <app-entry-meta header={this.header} />
 
-                <app-entry-meta header={this.header} />
+                            <p>Example SPARQL queries that can help you list the classes in an ontology.</p>
+                            <h2 id="SPARQLexamples-listclasses-Listallclasses">List all classes</h2>
 
-                <p>Example SPARQL queries that can help you list the classes in an ontology.</p>
-                <h2 id="SPARQLexamples-listclasses-Listallclasses">List all classes</h2>
-
-                <pre><code class="language-sparql">{`PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+                            <pre><code class="language-sparql">{`PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
   
 SELECT DISTINCT ?type
 WHERE {
   ?s a ?type.
 }`}</code></pre>
 
-                <p>Note: The SPARQL keyword <code>a</code> is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
+                            <p>Note: The SPARQL keyword <code>a</code> is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
 
-                <h2>List root classes</h2>
+                            <h2>List root classes</h2>
 
-                <pre><code class="language-sparql">{`SELECT ?directSub ?super
+                            <pre><code class="language-sparql">{`SELECT ?directSub ?super
  WHERE { ?directSub rdfs:subClassOf ?super .
          FILTER NOT EXISTS {
             ?directSub rdfs:subClassOf ?otherSub .
@@ -77,9 +79,9 @@ WHERE {
          }
 }`}</code></pre>
 
-                <h2>List all classes with a given prefix</h2>
+                            <h2>List all classes with a given prefix</h2>
 
-                <pre><code class="language-sparql">{`PREFIX bc: <http://base22.com/ont/bc#>
+                            <pre><code class="language-sparql">{`PREFIX bc: <http://base22.com/ont/bc#>
  
 SELECT DISTINCT ?type
 WHERE {
@@ -87,9 +89,9 @@ WHERE {
   FILTER( STRSTARTS(STR(?type),str(bc:)) )
 }`}</code></pre>
 
-                <h2>List class hierarchy</h2>
+                            <h2>List class hierarchy</h2>
 
-                <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
  
 SELECT DISTINCT ?subject ?label ?supertype
@@ -99,13 +101,13 @@ WHERE {
     OPTIONAL { ?subject rdfs:label ?label }
 } ORDER BY ?subject`}</code></pre>
 
-                <p>Note that when a reasoner is enabled classes may typically be inferred to be <code>rdfs:subClassOf</code> themselves and <code>rdfs:subClassOf</code> any parent class, not just the direct parent.</p>
+                            <p>Note that when a reasoner is enabled classes may typically be inferred to be <code>rdfs:subClassOf</code> themselves and <code>rdfs:subClassOf</code> any parent class, not just the direct parent.</p>
 
-                <h2>List class hierarchy &#8211; filtered</h2>
+                            <h2>List class hierarchy &#8211; filtered</h2>
 
-                <p>Give a class hierarchy, but filter out several structural elements so that we only end up with the unique classes in our ontology.</p>
+                            <p>Give a class hierarchy, but filter out several structural elements so that we only end up with the unique classes in our ontology.</p>
 
-                <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 SELECT DISTINCT ?subject ?label ?supertype
@@ -124,13 +126,13 @@ WHERE {
         ?subject != owl:Ontology )
 } ORDER BY ?subject`}</code></pre>
 
-                <p>Note that when a reasoner is enabled classes may typically be inferred to be rdfs:subClassOf themselves and rdfs:subClassOf any parent class, not just the direct parent.</p>
+                            <p>Note that when a reasoner is enabled classes may typically be inferred to be rdfs:subClassOf themselves and rdfs:subClassOf any parent class, not just the direct parent.</p>
 
-                <h2>List class hierarchy with direct subclasses only</h2>
+                            <h2>List class hierarchy with direct subclasses only</h2>
 
-                <p>This is similar to the query above, but uses the Sesame-specific sesame:directSubClassOf to get only direct subclasses. This would work in any RDF4J (formerly Sesame) system such as Graph DB.</p>
+                            <p>This is similar to the query above, but uses the Sesame-specific sesame:directSubClassOf to get only direct subclasses. This would work in any RDF4J (formerly Sesame) system such as Graph DB.</p>
 
-                <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
+                            <pre><code class="language-sparql">{`PREFIX owl: <http://www.w3.org/2002/07/owl#>
 PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
 PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
 PREFIX : <https://codyburleson.com/hyperg/>
@@ -155,8 +157,18 @@ WHERE {
             ?subject != ?supertype)
 } ORDER BY ?subject`}</code></pre>
 
+                        </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
+
+                        </ion-col>
+                    </ion-row>
+                </ion-grid>
 
             </ion-content>
+
+
 
         ];
     }

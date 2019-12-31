@@ -50,12 +50,14 @@ export class PageSparqlExamplesPaging {
 
 			<ion-content class="ion-padding">
 
-				<h1>{this.header.title}</h1>
+				<ion-grid>
+					<ion-row>
+						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+							<h1>{this.header.title}</h1>
+							<app-entry-meta header={this.header} />
 
-				<app-entry-meta header={this.header} />
-
-				<p>Retrieve the second page of names and emails of people in Tim Berners-Lee&#8217;s FOAF file, given that each page has 10 people. Try this on <a href="http://sparql.org/sparql.html" rel="nofollow">ARQ</a>.</p>
-				<pre><code class="language-sparql">{`PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+							<p>Retrieve the second page of names and emails of people in Tim Berners-Lee&#8217;s FOAF file, given that each page has 10 people. Try this on <a href="http://sparql.org/sparql.html" rel="nofollow">ARQ</a>.</p>
+							<pre><code class="language-sparql">{`PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 
 SELECT ?name ?email
 FROM <http://www.w3.org/People/Berners-Lee/card>
@@ -66,7 +68,17 @@ WHERE {
     OPTIONAL { ?person foaf:mbox ?email }
 }`}</code></pre>
 
+						</ion-col>
+						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+							<gls-adsense-ad />
+
+						</ion-col>
+					</ion-row>
+				</ion-grid>
+
 			</ion-content>
+
 
 		];
 	}

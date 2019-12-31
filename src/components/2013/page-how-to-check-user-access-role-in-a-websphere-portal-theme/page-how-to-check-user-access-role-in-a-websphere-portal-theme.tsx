@@ -31,8 +31,8 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
-     componentDidLoad() {
-     setTimeout(() => Prism.highlightAll(), 0)
+    componentDidLoad() {
+        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -124,6 +124,8 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <gls-adsense-ad />
 
                         </ion-col>
                     </ion-row>
