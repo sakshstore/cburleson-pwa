@@ -12,6 +12,7 @@ import { Component, h } from '@stencil/core';
 // These two both for SPARQL:
 // import '/assets/prismjs/prism-turtle.min.js';
 // import '/assets/prismjs/prism-sparql.min.js';
+// import 'prismjs/components/prism-bash.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 

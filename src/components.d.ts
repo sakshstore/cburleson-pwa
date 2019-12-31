@@ -144,6 +144,7 @@ export namespace Components {
   interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
+  interface PageUseSpringForStardogInASpringBootApplication {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
@@ -906,6 +907,12 @@ declare global {
     new (): HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
   };
 
+  interface HTMLPageUseSpringForStardogInASpringBootApplicationElement extends Components.PageUseSpringForStardogInASpringBootApplication, HTMLStencilElement {}
+  var HTMLPageUseSpringForStardogInASpringBootApplicationElement: {
+    prototype: HTMLPageUseSpringForStardogInASpringBootApplicationElement;
+    new (): HTMLPageUseSpringForStardogInASpringBootApplicationElement;
+  };
+
   interface HTMLPageUserImpersonationProgrammingInWebspherePortalElement extends Components.PageUserImpersonationProgrammingInWebspherePortal, HTMLStencilElement {}
   var HTMLPageUserImpersonationProgrammingInWebspherePortalElement: {
     prototype: HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
@@ -1073,6 +1080,7 @@ declare global {
     'page-use-micromesh-in-zbrush': HTMLPageUseMicromeshInZbrushElement;
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
+    'page-use-spring-for-stardog-in-a-spring-boot-application': HTMLPageUseSpringForStardogInASpringBootApplicationElement;
     'page-user-impersonation-programming-in-websphere-portal': HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-vs-code-cheat-sheet': HTMLPageVsCodeCheatSheetElement;
@@ -1218,6 +1226,7 @@ declare namespace LocalJSX {
   interface PageUseMicromeshInZbrush {}
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
+  interface PageUseSpringForStardogInASpringBootApplication {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
@@ -1352,6 +1361,7 @@ declare namespace LocalJSX {
     'page-use-micromesh-in-zbrush': PageUseMicromeshInZbrush;
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
+    'page-use-spring-for-stardog-in-a-spring-boot-application': PageUseSpringForStardogInASpringBootApplication;
     'page-user-impersonation-programming-in-websphere-portal': PageUserImpersonationProgrammingInWebspherePortal;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-vs-code-cheat-sheet': PageVsCodeCheatSheet;
@@ -1493,6 +1503,7 @@ declare module "@stencil/core" {
       'page-use-micromesh-in-zbrush': LocalJSX.PageUseMicromeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseMicromeshInZbrushElement>;
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
+      'page-use-spring-for-stardog-in-a-spring-boot-application': LocalJSX.PageUseSpringForStardogInASpringBootApplication & JSXBase.HTMLAttributes<HTMLPageUseSpringForStardogInASpringBootApplicationElement>;
       'page-user-impersonation-programming-in-websphere-portal': LocalJSX.PageUserImpersonationProgrammingInWebspherePortal & JSXBase.HTMLAttributes<HTMLPageUserImpersonationProgrammingInWebspherePortalElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-vs-code-cheat-sheet': LocalJSX.PageVsCodeCheatSheet & JSXBase.HTMLAttributes<HTMLPageVsCodeCheatSheetElement>;

@@ -14,3 +14,15 @@
   to = "https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "/display/ZN/Mirror+polygroup+on+a+subtool"
+  to = "https://codyburleson.com/mirror-polygroup-on-subtool-in-zbrush"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect
+
+[[redirects]]
+  from = "/display/ZN/Mirror%20polygroup%20on%20a%20subtool"
+  to = "https://codyburleson.com/mirror-polygroup-on-subtool-in-zbrush"
+  status = 301
+  force = true # COMMENT: ensure that we always redirect

@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - **Added** Pages from legacy WordPress blog: 
     - [/build-a-rendering-plugin-ibm-wcm-part-1](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1)
     - [/build-a-rendering-plugin-ibm-wcm-part-2](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2)
+    - [/use-spring-for-stardog-in-a-spring-boot-application](https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application)
 - **Fixes** [#53](https://github.com/codyburleson/cburleson-pwa/issues/53) Create component for adsense and apply to all pages.
 
 ## [1.2.5] - 2019-12-29

@@ -15,14 +15,6 @@ Now, the size used best for Ionic thumbnails has been determined to be 100px x 1
 
 TIP: If downscaling a high-resolution image, it is often helpful to run a Filter > Sharpen > Unsharp Mask (50%) after the down-scale.
 
-## Fluid Images (Mobile Resonsive)
-
-Use this on the `image` tag...
-
-```
-class="img-fluid"
-```
-
 ## Aligning Left
 
-`<img class="alignleft"` 
+`<img class="alignleft"`

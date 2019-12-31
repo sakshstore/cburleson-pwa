@@ -730,6 +730,15 @@
       ]
     },
     {
+      "id": "use-spring-for-stardog-in-a-spring-boot-application",
+      "title": "Use Spring for Stardog in a Spring Boot application",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stardog.svg",
+      "datePublished": "2017/05/11",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "serve-static-resources-with-spring-boot",
       "title": "Serve static resources with Spring Boot",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
