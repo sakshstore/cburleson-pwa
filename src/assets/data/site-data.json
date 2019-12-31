@@ -969,6 +969,16 @@
       ]
     },
     {
+      "id": "musing-on-nostalgia",
+      "title": "Musing on nostalgia",
+      "teaser": "A fond memory of my Commodore 64 and the first computer program I ever wrote.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2013/03/23",
+      "tracks": [
+        "Memoir"
+      ]
+    },
+    {
       "id": "how-to-check-user-access-role-in-a-websphere-portal-theme",
       "title": "How to check user access role in a WebSphere Portal theme",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1117,6 +1127,15 @@
       "teaser": "Here's a tool that can help you search through JAR files to find Java classes or packages.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
       "datePublished": "2011/04/18",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "classnotfound-does-not-always-mean-class-not-found",
+      "title": "ClassNotFound does not always mean class not found",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2011/02/06",
       "tracks": [
         "Software Dev"
       ]

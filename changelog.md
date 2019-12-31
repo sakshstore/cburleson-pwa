@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [Unreleased]
+
+- **Added** Pages from legacy WordPress blog:
+    - [/classnotfound-does-not-always-mean-class-not-found](https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found)
+    - [/musing-on-nostalgia](https://codyburleson.com/musing-on-nostalgia)
+
 ## [1.2.6] - 2019-12-30
 
 - **Added** Pages from legacy WordPress blog: 
