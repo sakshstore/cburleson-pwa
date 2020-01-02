@@ -6,9 +6,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+- **Added** New content: [/delete-node-modules-folder-on-windows](https://codyburleson.com/delete-node-modules-folder-on-windows)
 - **Added** Pages from legacy WordPress blog:
     - [/classnotfound-does-not-always-mean-class-not-found](https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found)
     - [/musing-on-nostalgia](https://codyburleson.com/musing-on-nostalgia)
+    - [/how-to-adjust-zsphere-sketch-depth-in-zbrush](https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush)
+    - [/trim-fat-from-your-content](https://codyburleson.com/trim-fat-from-your-content)
 
 ## [1.2.6] - 2019-12-30
 

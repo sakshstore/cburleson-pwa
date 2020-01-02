@@ -1,6 +1,15 @@
 {
   "content": [
     {
+      "id": "delete-node-modules-folder-on-windows",
+      "title": "How to delete the node_modules folder on Windows",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-npm.svg",
+      "datePublished": "2019/12/31",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "use-prism-js-in-ionic-stencil-app",
       "title": "How to use Prism.js in Ionic Stencil app",
       "teaser": "Procedure for using the Prism.js syntax highlighter in an Ionic / Stencil app.",
@@ -293,7 +302,7 @@
       "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/07/04",
-      "dateModified": "2019/04/17",
+      "dateModified": "2020/01/02",
       "tracks": [
         "ZBrush"
       ]
@@ -416,6 +425,24 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/28",
       "dateModified": "2019/12/02",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-optimize-a-zsphere-sketch-in-zbrush",
+      "title": "How to optimize a ZSphere sketch in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "tracks": [
+        "ZBrush"
+      ]
+    },
+    {
+      "id": "how-to-adjust-zsphere-sketch-depth-in-zbrush",
+      "title": "How to adjust ZSphere sketch depth in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
       "tracks": [
         "ZBrush"
       ]
@@ -1101,6 +1128,16 @@
       "datePublished": "2012/10/13",
       "tracks": [
         "Unity"
+      ]
+    },
+    {
+      "id": "trim-fat-from-your-content",
+      "title": "Trim fat from your content",
+      "teaser": "An example-based reminder to make reduction a conscious part of your writing process.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2011/08/19",
+      "tracks": [
+        "Storycraft and Writing"
       ]
     },
     {

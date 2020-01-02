@@ -52,6 +52,7 @@ export namespace Components {
   interface PageBuildARenderingPluginIbmWcmPart2 {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
+  interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {}
   interface PageCmdChronBeaverCage {}
   interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
@@ -63,6 +64,7 @@ export namespace Components {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDeleteNodeModulesFolderOnWindows {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
@@ -73,8 +75,10 @@ export namespace Components {
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
+  interface PageHowToAdjustZsphereSketchDepthInZbrush {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
+  interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIDareYouToTouchHer {}
@@ -96,6 +100,7 @@ export namespace Components {
   interface PageMemoriesOfMomma5 {}
   interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
+  interface PageMusingOnNostalgia {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -133,6 +138,7 @@ export namespace Components {
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
+  interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
   interface PageUnityPreferencesYourBuiltInKeyboardCheatSheet {}
@@ -356,6 +362,12 @@ declare global {
     new (): HTMLPageChangeCanvasBackgroundColorInZbrushElement;
   };
 
+  interface HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement extends Components.PageClassnotfoundDoesNotAlwaysMeanClassNotFound, HTMLStencilElement {}
+  var HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement: {
+    prototype: HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
+    new (): HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
+  };
+
   interface HTMLPageCmdChronBeaverCageElement extends Components.PageCmdChronBeaverCage, HTMLStencilElement {}
   var HTMLPageCmdChronBeaverCageElement: {
     prototype: HTMLPageCmdChronBeaverCageElement;
@@ -422,6 +434,12 @@ declare global {
     new (): HTMLPageDeleteHiddenGeometryInZbrushElement;
   };
 
+  interface HTMLPageDeleteNodeModulesFolderOnWindowsElement extends Components.PageDeleteNodeModulesFolderOnWindows, HTMLStencilElement {}
+  var HTMLPageDeleteNodeModulesFolderOnWindowsElement: {
+    prototype: HTMLPageDeleteNodeModulesFolderOnWindowsElement;
+    new (): HTMLPageDeleteNodeModulesFolderOnWindowsElement;
+  };
+
   interface HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement extends Components.PageDisplayUserAttributesInAWebspherePortalTheme, HTMLStencilElement {}
   var HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement: {
     prototype: HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
@@ -482,6 +500,12 @@ declare global {
     new (): HTMLPageHomeElement;
   };
 
+  interface HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement extends Components.PageHowToAdjustZsphereSketchDepthInZbrush, HTMLStencilElement {}
+  var HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement: {
+    prototype: HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement;
+    new (): HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement;
+  };
+
   interface HTMLPageHowToApplyTextureInZbrushElement extends Components.PageHowToApplyTextureInZbrush, HTMLStencilElement {}
   var HTMLPageHowToApplyTextureInZbrushElement: {
     prototype: HTMLPageHowToApplyTextureInZbrushElement;
@@ -492,6 +516,12 @@ declare global {
   var HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement: {
     prototype: HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     new (): HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
+  };
+
+  interface HTMLPageHowToOptimizeAZsphereSketchInZbrushElement extends Components.PageHowToOptimizeAZsphereSketchInZbrush, HTMLStencilElement {}
+  var HTMLPageHowToOptimizeAZsphereSketchInZbrushElement: {
+    prototype: HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
+    new (): HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
   };
 
   interface HTMLPageHowToSketchWithZspheresInZbrushElement extends Components.PageHowToSketchWithZspheresInZbrush, HTMLStencilElement {}
@@ -618,6 +648,12 @@ declare global {
   var HTMLPageMirrorPolygroupOnSubtoolInZbrushElement: {
     prototype: HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     new (): HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
+  };
+
+  interface HTMLPageMusingOnNostalgiaElement extends Components.PageMusingOnNostalgia, HTMLStencilElement {}
+  var HTMLPageMusingOnNostalgiaElement: {
+    prototype: HTMLPageMusingOnNostalgiaElement;
+    new (): HTMLPageMusingOnNostalgiaElement;
   };
 
   interface HTMLPageNotesOnZbrushSculptrisProElement extends Components.PageNotesOnZbrushSculptrisPro, HTMLStencilElement {}
@@ -842,6 +878,12 @@ declare global {
     new (): HTMLPageTemplatePageElement;
   };
 
+  interface HTMLPageTrimFatFromYourContentElement extends Components.PageTrimFatFromYourContent, HTMLStencilElement {}
+  var HTMLPageTrimFatFromYourContentElement: {
+    prototype: HTMLPageTrimFatFromYourContentElement;
+    new (): HTMLPageTrimFatFromYourContentElement;
+  };
+
   interface HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement extends Components.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts, HTMLStencilElement {}
   var HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement: {
     prototype: HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
@@ -995,6 +1037,7 @@ declare global {
     'page-build-a-rendering-plugin-ibm-wcm-part-2': HTMLPageBuildARenderingPluginIbmWcmPart2Element;
     'page-cage': HTMLPageCageElement;
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
+    'page-classnotfound-does-not-always-mean-class-not-found': HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
     'page-confluence-panel-macro': HTMLPageConfluencePanelMacroElement;
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
@@ -1006,6 +1049,7 @@ declare global {
     'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
+    'page-delete-node-modules-folder-on-windows': HTMLPageDeleteNodeModulesFolderOnWindowsElement;
     'page-display-user-attributes-in-a-websphere-portal-theme': HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
     'page-eclipse-tip-format-source-code-on-save': HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
@@ -1016,8 +1060,10 @@ declare global {
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
     'page-home': HTMLPageHomeElement;
+    'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
+    'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-i-dare-you-to-touch-her': HTMLPageIDareYouToTouchHerElement;
@@ -1039,6 +1085,7 @@ declare global {
     'page-memories-of-momma-5': HTMLPageMemoriesOfMomma5Element;
     'page-memories-of-momma-6': HTMLPageMemoriesOfMomma6Element;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
+    'page-musing-on-nostalgia': HTMLPageMusingOnNostalgiaElement;
     'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
     'page-notes-on-zbrush-slicecurve-brush': HTMLPageNotesOnZbrushSlicecurveBrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
@@ -1076,6 +1123,7 @@ declare global {
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
     'page-template-page': HTMLPageTemplatePageElement;
+    'page-trim-fat-from-your-content': HTMLPageTrimFatFromYourContentElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
     'page-unity-preferences-your-built-in-keyboard-cheat-sheet': HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement;
@@ -1142,6 +1190,7 @@ declare namespace LocalJSX {
   interface PageBuildARenderingPluginIbmWcmPart2 {}
   interface PageCage {}
   interface PageChangeCanvasBackgroundColorInZbrush {}
+  interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {}
   interface PageCmdChronBeaverCage {}
   interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
@@ -1153,6 +1202,7 @@ declare namespace LocalJSX {
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
   interface PageDeleteHiddenGeometryInZbrush {}
+  interface PageDeleteNodeModulesFolderOnWindows {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
@@ -1163,8 +1213,10 @@ declare namespace LocalJSX {
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
+  interface PageHowToAdjustZsphereSketchDepthInZbrush {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
+  interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageIDareYouToTouchHer {}
@@ -1186,6 +1238,7 @@ declare namespace LocalJSX {
   interface PageMemoriesOfMomma5 {}
   interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
+  interface PageMusingOnNostalgia {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -1223,6 +1276,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
+  interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
   interface PageUnityPreferencesYourBuiltInKeyboardCheatSheet {}
@@ -1278,6 +1332,7 @@ declare namespace LocalJSX {
     'page-build-a-rendering-plugin-ibm-wcm-part-2': PageBuildARenderingPluginIbmWcmPart2;
     'page-cage': PageCage;
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
+    'page-classnotfound-does-not-always-mean-class-not-found': PageClassnotfoundDoesNotAlwaysMeanClassNotFound;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
     'page-confluence-panel-macro': PageConfluencePanelMacro;
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
@@ -1289,6 +1344,7 @@ declare namespace LocalJSX {
     'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
+    'page-delete-node-modules-folder-on-windows': PageDeleteNodeModulesFolderOnWindows;
     'page-display-user-attributes-in-a-websphere-portal-theme': PageDisplayUserAttributesInAWebspherePortalTheme;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
     'page-eclipse-tip-format-source-code-on-save': PageEclipseTipFormatSourceCodeOnSave;
@@ -1299,8 +1355,10 @@ declare namespace LocalJSX {
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
     'page-home': PageHome;
+    'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': PageHowToAdjustZsphereSketchDepthInZbrush;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
+    'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-i-dare-you-to-touch-her': PageIDareYouToTouchHer;
@@ -1322,6 +1380,7 @@ declare namespace LocalJSX {
     'page-memories-of-momma-5': PageMemoriesOfMomma5;
     'page-memories-of-momma-6': PageMemoriesOfMomma6;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
+    'page-musing-on-nostalgia': PageMusingOnNostalgia;
     'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
     'page-notes-on-zbrush-slicecurve-brush': PageNotesOnZbrushSlicecurveBrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
@@ -1359,6 +1418,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-story-structure-diagram': PageStoryStructureDiagram;
     'page-template-page': PageTemplatePage;
+    'page-trim-fat-from-your-content': PageTrimFatFromYourContent;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
     'page-unity-preferences-your-built-in-keyboard-cheat-sheet': PageUnityPreferencesYourBuiltInKeyboardCheatSheet;
@@ -1421,6 +1481,7 @@ declare module "@stencil/core" {
       'page-build-a-rendering-plugin-ibm-wcm-part-2': LocalJSX.PageBuildARenderingPluginIbmWcmPart2 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart2Element>;
       'page-cage': LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
+      'page-classnotfound-does-not-always-mean-class-not-found': LocalJSX.PageClassnotfoundDoesNotAlwaysMeanClassNotFound & JSXBase.HTMLAttributes<HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
       'page-confluence-panel-macro': LocalJSX.PageConfluencePanelMacro & JSXBase.HTMLAttributes<HTMLPageConfluencePanelMacroElement>;
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
@@ -1432,6 +1493,7 @@ declare module "@stencil/core" {
       'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
+      'page-delete-node-modules-folder-on-windows': LocalJSX.PageDeleteNodeModulesFolderOnWindows & JSXBase.HTMLAttributes<HTMLPageDeleteNodeModulesFolderOnWindowsElement>;
       'page-display-user-attributes-in-a-websphere-portal-theme': LocalJSX.PageDisplayUserAttributesInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
       'page-eclipse-tip-format-source-code-on-save': LocalJSX.PageEclipseTipFormatSourceCodeOnSave & JSXBase.HTMLAttributes<HTMLPageEclipseTipFormatSourceCodeOnSaveElement>;
@@ -1442,8 +1504,10 @@ declare module "@stencil/core" {
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
       'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
+      'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': LocalJSX.PageHowToAdjustZsphereSketchDepthInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
+      'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-i-dare-you-to-touch-her': LocalJSX.PageIDareYouToTouchHer & JSXBase.HTMLAttributes<HTMLPageIDareYouToTouchHerElement>;
@@ -1465,6 +1529,7 @@ declare module "@stencil/core" {
       'page-memories-of-momma-5': LocalJSX.PageMemoriesOfMomma5 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma5Element>;
       'page-memories-of-momma-6': LocalJSX.PageMemoriesOfMomma6 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma6Element>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
+      'page-musing-on-nostalgia': LocalJSX.PageMusingOnNostalgia & JSXBase.HTMLAttributes<HTMLPageMusingOnNostalgiaElement>;
       'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
       'page-notes-on-zbrush-slicecurve-brush': LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
@@ -1502,6 +1567,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
+      'page-trim-fat-from-your-content': LocalJSX.PageTrimFatFromYourContent & JSXBase.HTMLAttributes<HTMLPageTrimFatFromYourContentElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;
       'page-unity-preferences-your-built-in-keyboard-cheat-sheet': LocalJSX.PageUnityPreferencesYourBuiltInKeyboardCheatSheet & JSXBase.HTMLAttributes<HTMLPageUnityPreferencesYourBuiltInKeyboardCheatSheetElement>;

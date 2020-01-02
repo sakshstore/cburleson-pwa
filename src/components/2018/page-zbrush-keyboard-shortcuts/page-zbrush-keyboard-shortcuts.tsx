@@ -11,19 +11,16 @@ export class PageZbrushKeyboardShortcuts {
 
   title = 'ZBrush Keyboard Shortcuts';
 
-  // header for this individual item by id...
   header: any;
 
   async componentWillLoad() {
     if (debug) {
       console.log('> PageZbrushKeyboardShortcuts.componentWillLoad');
     }
-    // this.data = await BlogData.load();
-    // Get the id from the URL path (slug)
+
     let id = document.location.pathname.substr(1);
     this.header = BlogData.getPostHeaderById(id);
 
-    // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
@@ -38,7 +35,6 @@ export class PageZbrushKeyboardShortcuts {
         </ion-toolbar>
       </ion-header>,
 
-
       <ion-content class="ion-padding">
 
         <ion-grid>
@@ -48,7 +44,7 @@ export class PageZbrushKeyboardShortcuts {
 
               <app-entry-meta header={this.header} />
 
-              <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the&nbsp;ZBrush 4R7 and ZBrush Core Online Documentation, © 2016 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
+              <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the ZBrush Online Documentation, © 2020 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
 
               <h2>General shortcuts</h2>
 
@@ -77,7 +73,7 @@ export class PageZbrushKeyboardShortcuts {
                     <td><kbd>SHIFT</kbd> + <kbd>CTRL</kbd> + <kbd>Z</kbd></td>
                   </tr>
                   <tr>
-                    <td>Popup selection (on&nbsp;PC only)</td>
+                    <td>Popup selection (on PC only)</td>
                     <td>
                       <ul>
                         <li>Tools &#8211; <kbd>F1</kbd></li>
@@ -98,7 +94,7 @@ export class PageZbrushKeyboardShortcuts {
                     <td><kbd>TAB</kbd></td>
                   </tr>
                   <tr>
-                    <td>Show item description</td>
+                    <td>Show item description (when Popup Info is switched on)</td>
                     <td><kbd>CTRL</kbd> + cursor over item; When Popup Info is switched on.</td>
                   </tr>
                   <tr>
@@ -107,7 +103,7 @@ export class PageZbrushKeyboardShortcuts {
                   </tr>
                   <tr>
                     <td>Assign custom hotkey</td>
-                    <td><kbd>CTRL</kbd>+ ALT + click on item; Stores&nbsp;hotkeys in Preferences &gt; Hotkeys submenu</td>
+                    <td><kbd>CTRL</kbd>+ <kbd>ALT</kbd> + click on item; Stores&nbsp;hotkeys in Preferences &gt; Hotkeys submenu</td>
                   </tr>
                   <tr>
                     <td>Projection Master</td>
@@ -128,7 +124,7 @@ export class PageZbrushKeyboardShortcuts {
                 <tbody>
                   <tr>
                     <td>Show/hide Lightbox</td>
-                    <td><kbd>,</kbd></td>
+                    <td><kbd>,</kbd> (comma key)</td>
                   </tr>
                   <tr>
                     <td>load selected item</td>
@@ -145,7 +141,42 @@ export class PageZbrushKeyboardShortcuts {
                 </tbody>
               </table>
 
-              <h2>Right-Click Navigation</h2>
+              <h2>Edit mode Navigation</h2>
+
+              <p>with a 3D mesh in Edit mode...</p>
+
+              <table class="table table-bordered table-striped">
+                <tbody>
+                  <tr>
+                    <th>Action</th>
+                    <th>Key(s)</th>
+                  </tr>
+                  <tr>
+                    <td>Free Rotate</td>
+                    <td>Click &amp; drag Background</td>
+                  </tr>
+                  <tr>
+                    <td>Move</td>
+                    <td><kbd>Alt</kbd> + Click &mp; drag Background</td>
+                  </tr>
+                  <tr>
+                    <td>Constrain to 90-degree rotation</td>
+                    <td>Click + drag, press <kbd>SHIFT</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>Scale</td>
+                    <td><kbd>ALT</kbd> + Click, Release <kbd>ALT</kbd>, drag Background</td>
+                  </tr>
+                  <tr>
+                    <td>Rotate around Z-axis</td>
+                    <td><kbd>SHIFT</kbd>, Click, release <kbd>SHIFT</kbd>, drag</td>
+                  </tr>
+                </tbody>
+              </table>
+
+              (For best results turn off <styrong>RightClick Navigation</styrong> in the Preferences > Interface menu.)
+
+              <h3>Right-Click Navigation</h3>
 
               <p>Turn on <strong>RightClick Navigation</strong>&nbsp;in the <strong>Preferences &gt; Interface</strong>&nbsp;menu.</p>
 
@@ -349,7 +380,7 @@ export class PageZbrushKeyboardShortcuts {
 
               <p>Each brush has its own keyboard shortcut combo. You can learn them by pressing <kbd>B</kbd> to bring up the brush
 palette, then a letter like <kbd>C</kbd> (to filter by all brushes starting with C), and then the letter
-indicated in the top left of the brush icon in to brush palette.</p>
+indicated in the top left of the brush icon in to brush palette. Following are some key combos for some common, but not all, brushes...</p>
 
               <table class="table table-bordered table-striped">
                 <thead>
@@ -365,27 +396,51 @@ indicated in the top left of the brush icon in to brush palette.</p>
                   </tr>
                   <tr>
                     <td>Clay Buildup</td>
-                    <td><kbd>B</kbd> + <kbd>C</kbd> + <kbd>D</kbd></td>
+                    <td><kbd>B</kbd> - <kbd>C</kbd> - <kbd>D</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>ClayLine</td>
+                    <td><kbd>B</kbd> - <kbd>C</kbd> - <kbd>L</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>ClipCurve</td>
+                    <td><kbd>B</kbd> - <kbd>C</kbd> - <kbd>C</kbd></td>
                   </tr>
                   <tr>
                     <td>Damien Standard (dam std)</td>
-                    <td><kbd>B</kbd> + <kbd>D</kbd> + <kbd>S</kbd></td>
+                    <td><kbd>B</kbd> - <kbd>D</kbd> - <kbd>S</kbd></td>
                   </tr>
                   <tr>
                     <td>Inflate</td>
-                    <td><kbd>B</kbd> + <kbd>I</kbd> + <kbd>N</kbd></td>
+                    <td><kbd>B</kbd> - <kbd>I</kbd> - <kbd>N</kbd></td>
                   </tr>
                   <tr>
                     <td>Move</td>
-                    <td><kbd>B</kbd> + <kbd>M</kbd> + <kbd>V</kbd></td>
+                    <td><kbd>B</kbd> - <kbd>M</kbd> - <kbd>V</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>Move Elastic</td>
+                    <td><kbd>B</kbd> - <kbd>M</kbd> - <kbd>E</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>MPolish</td>
+                    <td><kbd>B</kbd> - <kbd>M</kbd> - <kbd>P</kbd></td>
+                  </tr>
+                  <tr>
+                    <td>Smooth Stronger</td>
+                    <td><kbd>B</kbd> - <kbd>S</kbd> - <kbd>S</kbd></td>
                   </tr>
                   <tr>
                     <td>Spiral</td>
-                    <td><kbd>B</kbd> + <kbd>S</kbd> + <kbd>A</kbd>; Hold down ALT to spiral in the opposite direction.</td>
+                    <td><kbd>B</kbd> - <kbd>S</kbd> - <kbd>A</kbd>; Hold down ALT to spiral in the opposite direction.</td>
+                  </tr>
+                  <tr>
+                    <td>Standard Brush</td>
+                    <td><kbd>B</kbd> - <kbd>S</kbd> - <kbd>T</kbd></td>
                   </tr>
                   <tr>
                     <td>ZModeler</td>
-                    <td><kbd>B</kbd> + <kbd>Z</kbd> + <kbd>M</kbd></td>
+                    <td><kbd>B</kbd> - <kbd>Z</kbd> - <kbd>M</kbd></td>
                   </tr>
                 </tbody>
               </table>
@@ -553,52 +608,6 @@ indicated in the top left of the brush icon in to brush palette.</p>
                 </tbody>
               </table>
 
-              <h2>Edit mode Navigation</h2>
-
-              <p>The following actions apply when in Edit Object (Key: <kbd>T</kbd>) mode.</p>
-
-              <p><em>Note:&nbsp;For best results turn off <strong>RightClick Navigation</strong>&nbsp;in the <strong>Preferences
-        &gt; Interface</strong>&nbsp;menu.</em></p>
-
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Action</th>
-                    <th>Key(s)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
-                    <td>Frame (Fit Mesh to View)</td>
-                    <td><kbd>F</kbd></td>
-                  </tr>
-                  <tr>
-                    <td>Move (Move Edited Object)</td>
-                    <td><kbd>ALT</kbd> + click and drag Background</td>
-                  </tr>
-                  <tr>
-                    <td>Zoom3D (Scale Edited Object)</td>
-                    <td><kbd>ALT</kbd> + click on background, release <kbd>ALT</kbd>, then drag</td>
-                  </tr>
-                  <tr>
-                    <td>Free Rotate</td>
-                    <td>click + drag on background</td>
-                  </tr>
-                  <tr>
-                    <td>Constrain to 90-degree rotation</td>
-                    <td>click + drag on background and then press <kbd>SHIFT</kbd></td>
-                  </tr>
-                  <tr>
-                    <td>Rotate around Z-axis</td>
-                    <td><kbd>SHIFT</kbd>, click on background, release <kbd>SHIFT</kbd>, drag</td>
-                  </tr>
-                  <tr>
-                    <td>Scale</td>
-                    <td><kbd>ALT</kbd> + click, release <kbd>ALT</kbd>, drag Background</td>
-                  </tr>
-                </tbody>
-              </table>
-
               <h3>SubTools</h3>
 
               <table class="table table-bordered table-striped">
@@ -624,29 +633,12 @@ indicated in the top left of the brush icon in to brush palette.</p>
                       + click</em></td>
                   </tr>
                   <tr>
-                    <td>Show SubTool Pop-up List</td>
-                    <td><kbd>N</kbd></td>
-                  </tr>
-                </tbody>
-              </table>
-
-              <h3>Polypaint</h3>
-
-              <table class="table table-bordered table-striped">
-                <thead>
-                  <tr>
-                    <th>Action</th>
-                    <th>Key(s)</th>
-                  </tr>
-                </thead>
-                <tbody>
-                  <tr>
                     <td>Toggle Polypaint Colorize</td>
-                    <td>Click&nbsp;on paintbrush icon</td>
+                    <td>Click on paintbrush icon</td>
                   </tr>
                   <tr>
                     <td>Toggle Polypaint Colorize for all SubTools</td>
-                    <td><kbd>SHIFT</kbd> + click&nbsp;on paintbrush icon</td>
+                    <td><kbd>SHIFT</kbd> + click on paintbrush icon</td>
                   </tr>
                 </tbody>
               </table>
@@ -786,7 +778,7 @@ indicated in the top left of the brush icon in to brush palette.</p>
                   </tr>
                   <tr>
                     <td>Make all polygroups into one</td>
-                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br />(In addition to the above, this key combination can also be used to apply a single polygroup to the active subtool. For example &#8211; if a subtool has several polygroups and you want only one.)</td>
+                    <td><kbd>CTRL</kbd> + <kbd>W</kbd><br />(Applies a single polygroup to the active subtool; if a subtool has several polygroups and you want only one, for example)</td>
                   </tr>
                 </tbody>
               </table>
@@ -1148,11 +1140,11 @@ indicated in the top left of the brush icon in to brush palette.</p>
                   </tr>
                   <tr>
                     <td>Zoom In</td>
-                    <td><kbd>+</kbd></td>
+                    <td><kbd>+</kbd> (plus sign)</td>
                   </tr>
                   <tr>
                     <td>Zoom Out</td>
-                    <td><kbd>-</kbd></td>
+                    <td><kbd>-</kbd> (minus sign)</td>
                   </tr>
                 </tbody>
               </table>
@@ -1286,11 +1278,11 @@ indicated in the top left of the brush icon in to brush palette.</p>
                 <tbody>
                   <tr>
                     <td>Move item to custom interface position</td>
-                    <td><kbd>CTRL</kbd> + <kbd>ALT</kbd> + drag (when Enable Customize is on)</td>
+                    <td><kbd>CTRL</kbd> + <kbd>ALT</kbd> + drag (when <em>Enable Customize</em> is on)</td>
                   </tr>
                   <tr>
                     <td>Remove item from custom interface position</td>
-                    <td><kbd>CTRL</kbd> + <kbd>ALT</kbd> + drag to Canvas (when Enable Customize is on)</td>
+                    <td><kbd>CTRL</kbd> + <kbd>ALT</kbd> + drag to Canvas (when <em>Enable Customize</em> is on)</td>
                   </tr>
                   <tr>
                     <td>Store Configuration File</td>
@@ -1336,7 +1328,7 @@ indicated in the top left of the brush icon in to brush palette.</p>
 
               <ul>
                 <li><a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/shortcuts-by-category/"
-                  rel="nofollow">Shortcuts by Category</a>, ZBrush 4R7 and ZBrush Core Online Documentation</li>
+                  rel="nofollow">Shortcuts by Category</a>, ZBrush 4Online Documentation</li>
               </ul>
 
             </ion-col>
