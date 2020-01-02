@@ -1188,6 +1188,15 @@
       ]
     },
     {
+      "id": "ldap-error-codes",
+      "title": "LDAP error codes",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ldap.svg",
+      "datePublished": "2009/11/21",
+      "tracks": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "glossary-of-ldap-acronyms-and-terms",
       "title": "Glossary of LDAP acronyms and terms",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ldap.svg",

@@ -12,6 +12,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - [/musing-on-nostalgia](https://codyburleson.com/musing-on-nostalgia)
     - [/how-to-adjust-zsphere-sketch-depth-in-zbrush](https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush)
     - [/trim-fat-from-your-content](https://codyburleson.com/trim-fat-from-your-content)
+    - [/ldap-error-codes](https://codyburleson.com/ldap-error-codes)
+    
 
 ## [1.2.6] - 2019-12-30
 

@@ -88,6 +88,7 @@ export namespace Components {
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
@@ -576,6 +577,12 @@ declare global {
   var HTMLPageKillingKittensElement: {
     prototype: HTMLPageKillingKittensElement;
     new (): HTMLPageKillingKittensElement;
+  };
+
+  interface HTMLPageLdapErrorCodesElement extends Components.PageLdapErrorCodes, HTMLStencilElement {}
+  var HTMLPageLdapErrorCodesElement: {
+    prototype: HTMLPageLdapErrorCodesElement;
+    new (): HTMLPageLdapErrorCodesElement;
   };
 
   interface HTMLPageLifeEventsElement extends Components.PageLifeEvents, HTMLStencilElement {}
@@ -1073,6 +1080,7 @@ declare global {
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
+    'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
@@ -1226,6 +1234,7 @@ declare namespace LocalJSX {
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
+  interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
@@ -1368,6 +1377,7 @@ declare namespace LocalJSX {
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
+    'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
@@ -1517,6 +1527,7 @@ declare module "@stencil/core" {
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
+      'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
