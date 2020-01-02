@@ -20,6 +20,7 @@ https://codyburleson.com/photos/ken-hicks
 https://codyburleson.com/photos/kevin-brooks
 https://codyburleson.com/photos/ray-kelley
 https://codyburleson.com/photos/stanley-hall
+https://codyburleson.com/delete-node-modules-folder-on-windows
 https://codyburleson.com/use-prism-js-in-ionic-stencil-app
 https://codyburleson.com/memories-of-momma-6
 https://codyburleson.com/memories-of-momma-5
@@ -61,6 +62,8 @@ https://codyburleson.com/use-auto-masking-by-polygroups-in-zbrush
 https://codyburleson.com/how-to-sketch-with-zspheres-in-zbrush
 https://codyburleson.com/about-polygroups-in-zbrush
 https://codyburleson.com/zbrush-resources-online
+https://codyburleson.com/how-to-optimize-a-zsphere-sketch-in-zbrush
+https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush
 https://codyburleson.com/rig-a-mesh-with-zspheres-in-zbrush
 https://codyburleson.com/binding-to-a-zsphere-armature
 https://codyburleson.com/about-zsphere-smoothing-brushes
@@ -91,6 +94,7 @@ https://codyburleson.com/sparql-examples-date-range
 https://codyburleson.com/pink-hearts
 https://codyburleson.com/7-quintessential-brushes-for-zbrush-beginners
 https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application
+https://codyburleson.com/linux-and-unix-commands
 https://codyburleson.com/serve-static-resources-with-spring-boot
 https://codyburleson.com/confluence-panel-macro
 https://codyburleson.com/logging-with-spring-boot
@@ -114,6 +118,7 @@ https://codyburleson.com/mapping-to-a-view-in-spring-when-no-controller-logic-is
 https://codyburleson.com/script-for-rotating-unity-game-object-90-degrees
 https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4
 https://codyburleson.com/automatically-build-and-include-one-eclipse-project-into-another
+https://codyburleson.com/musing-on-nostalgia
 https://codyburleson.com/how-to-check-user-access-role-in-a-websphere-portal-theme
 https://codyburleson.com/xmlaccess-samples
 https://codyburleson.com/base22-consultants-creed
@@ -127,10 +132,13 @@ https://codyburleson.com/unity-preferences-your-built-in-keyboard-cheat-sheet
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-3
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-2
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-1
+https://codyburleson.com/trim-fat-from-your-content
 https://codyburleson.com/access-the-was-console-from-websphere-portal-server
 https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
+https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found
 https://codyburleson.com/render-the-keys-and-values-from-a-map-in-freemarker
+https://codyburleson.com/ldap-error-codes
 https://codyburleson.com/glossary-of-ldap-acronyms-and-terms
 https://codyburleson.com/are-mashups-the-new-portals-and-gadgets-the-new-portlets
 https://codyburleson.com/list-ibm-db2-commands

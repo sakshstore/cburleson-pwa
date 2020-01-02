@@ -6,7 +6,7 @@ import { get, set } from '../../services/storage';
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
-const EXCLUDE_TRACKS = 'excludeTracks';
+const EXCLUDE_TOPICS = 'excludeTopics';
 
 @Component({
   tag: 'page-blog',
@@ -15,7 +15,7 @@ const EXCLUDE_TRACKS = 'excludeTracks';
 export class PageBlog {
 
   title = 'Blog';
-  excludeTracks: any = [];
+  excludeTopics: any = [];
 
   @Element() el: any;
 
@@ -33,21 +33,21 @@ export class PageBlog {
 
     this.data = await BlogData.load();
 
-    let excludeTracks = await get(EXCLUDE_TRACKS)
+    let excludeTopics = await get(EXCLUDE_TOPICS)
       .then(function (result) {
         // console.log('In promise, got: %o', result);
         return result;
       })
       .catch(function (err) {
         if (debug) {
-          console.log('< PageBlog.componentWillLoad < No exclude tracks saved; returning empty array. [%o]', err);
+          console.log('< PageBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
         }
         // do nothing
         return [];
       });
 
-    if (excludeTracks) {
-      this.excludeTracks = excludeTracks;
+    if (excludeTopics) {
+      this.excludeTopics = excludeTopics;
       this.updateContentList();
     }
 
@@ -59,9 +59,9 @@ export class PageBlog {
       console.log('> PageBlog.modalDidDismiss > event.detail.data: %o',event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
-      this.excludeTracks = event.detail.data;
-      // Set the excluded tracks in local storage
-      set(EXCLUDE_TRACKS, event.detail.data);
+      this.excludeTopics = event.detail.data;
+      // Set the excluded topics in local storage
+      set(EXCLUDE_TOPICS, event.detail.data);
       this.updateContentList();
     }
   }
@@ -72,7 +72,7 @@ export class PageBlog {
       console.log('> PageBlog.updateContentList');
     }
 
-    await BlogData.getContent(this.excludeTracks);
+    await BlogData.getContent(this.excludeTopics);
     // this.shownSessions = data.shownSessions;
     // this.groups = data.groups;
 
@@ -87,16 +87,16 @@ export class PageBlog {
     const modal = await this.modalCtrl.create({
       component: 'app-blog-filter',
       componentProps: {
-        excludedTracks: this.excludeTracks,
+        excludedTopics: this.excludeTopics,
       }
     });
     await modal.present();
   }
 
   createTopicList(item: any) {
-    let topicString = item.tracks[0];
-    for (var i = 1; i < item.tracks.length; i++) {
-      topicString = topicString + ", " + item.tracks[i];
+    let topicString = item.topics[0];
+    for (var i = 1; i < item.topics.length; i++) {
+      topicString = topicString + ", " + item.topics[i];
     }
     return topicString;
   }

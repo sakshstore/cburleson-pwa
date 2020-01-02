@@ -4,7 +4,7 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [Unreleased]
+## [1.2.7] - 2020-01-02
 
 - **Added** New content: [/delete-node-modules-folder-on-windows](https://codyburleson.com/delete-node-modules-folder-on-windows)
 - **Added** Pages from legacy WordPress blog:
@@ -13,7 +13,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
     - [/how-to-adjust-zsphere-sketch-depth-in-zbrush](https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush)
     - [/trim-fat-from-your-content](https://codyburleson.com/trim-fat-from-your-content)
     - [/ldap-error-codes](https://codyburleson.com/ldap-error-codes)
-    
+    - [/linux-and-unix-commands](https://codyburleson.com/linux-and-unix-commands)
 
 ## [1.2.6] - 2019-12-30
 

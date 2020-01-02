@@ -1,5 +1,8 @@
 import { Component, h } from '@stencil/core';
 
+import Prism from "prismjs"
+import 'prismjs/components/prism-bash.min.js';
+
 import { BlogData } from '../../../services/blog-data';
 
 import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
@@ -28,6 +31,10 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
         document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
+    componentDidLoad() {
+        setTimeout(() => Prism.highlightAll(), 0)
+    }
+
     render() {
         return [
             <ion-header>
@@ -48,7 +55,10 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
                             <app-entry-meta header={this.header} />
 
                             <p>Recently, I upgraded my macOS to Mojave and ran into the following error after running the <code>git init</code> command.</p>
-                            <p><code>xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun</code></p>
+
+                            <pre><code class="language-bash">{`xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), 
+    missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`}</code></pre>
+
                             <p>I was able to fix this by running the following command in a terminal…</p>
                             <p><code>xcode-select --install</code></p>
                             <p>Accept the license and install xcode-select when the associated install prompt window appears. You should then be back in business (at least, I was).</p>

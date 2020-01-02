@@ -2,7 +2,7 @@
 
 ## Favor internal images
 
-For the prinicple of longevity, it is best not to use images that are sourced externally. Where possible, try to ensure that the image is obtained 
+For the princicple of longevity, it is best not to use images that are sourced externally. Where possible, try to ensure that the image is obtained 
 and served from our own server. This is simply because we cannot rely (long term) on any image that is externally sourced. When externally sourced images suddenl;y dissapear, our pages degrade.
 
 ## Thumbnails
@@ -17,4 +17,13 @@ TIP: If downscaling a high-resolution image, it is often helpful to run a Filter
 
 ## Aligning Left
 
+Images can be left-aligned with text wrapping around the image using the following CSS class:
+
 `<img class="alignleft"`
+
+## Finding and using vector images
+
+A great place to find vector logos is [Vecta.io](https://vecta.io/symbols/96/brands-sn-sz/156/svg-official).
+
+When uploading SVG images to Amazon S3 bucket, don't forget to set `Content-Type` to `image/svg+xml`.
+

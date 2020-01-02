@@ -12,11 +12,11 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 export class AppBlogFilter {
   @Element() el: any;
 
-  @State() tracks: { name: string, isChecked: boolean }[];
+  @State() topics: { name: string, isChecked: boolean }[];
 
   @Prop({ context: 'config' }) config: Config;
 
-  @Prop() excludedTracks: string[] = [];
+  @Prop() excludedTopics: string[] = [];
 
   async componentWillLoad() {
 
@@ -24,14 +24,14 @@ export class AppBlogFilter {
       console.log('> AppBlogFilter.componentWillLoad');
     }
 
-    // passed in array of track names that should be excluded (unchecked)
-    // TODO = this.navParams.data.excludedTracks;
-    const excludedTrackNames = this.excludedTracks;
+    // passed in array of topic names that should be excluded (unchecked)
+    // TODO = this.navParams.data.excludedTopics;
+    const excludedTopicNames = this.excludedTopics;
 
-    const trackNames = await BlogData.getTracks();
-    this.tracks = trackNames.map(trackName => ({
-      name: trackName,
-      isChecked: (excludedTrackNames.indexOf(trackName) === -1)
+    const topicNames = await BlogData.getTopics();
+    this.topics = topicNames.map(topicName => ({
+      name: topicName,
+      isChecked: (excludedTopicNames.indexOf(topicName) === -1)
     }));
   }
 
@@ -49,9 +49,9 @@ export class AppBlogFilter {
     if (debug) {
       console.log('> AppBlogFilter.applyFilters');
     }
-    // Pass back a new array of track names to exclude
-    const excludedTrackNames = this.tracks.filter(c => !c.isChecked).map(c => c.name);
-    this.dismiss(excludedTrackNames);
+    // Pass back a new array of topic names to exclude
+    const excludedTopicNames = this.topics.filter(c => !c.isChecked).map(c => c.name);
+    this.dismiss(excludedTopicNames);
   }
 
   // reset all of the toggles to be checked
@@ -59,8 +59,8 @@ export class AppBlogFilter {
     if (debug) {
       console.log('> AppBlogFilter.resetFilters');
     }
-    this.tracks.forEach(track => {
-      track.isChecked = true;
+    this.topics.forEach(topic => {
+      topic.isChecked = true;
     });
     this.el.forceUpdate();
   }
@@ -70,8 +70,8 @@ export class AppBlogFilter {
     if (debug) {
       console.log('- AppBlogFilter.onToggleChanged');
     }
-    const track = this.tracks.find(({ name }) => name === (ev.target as any).name);
-    track.isChecked = (ev.target as any).checked;
+    const topic = this.topics.find(({ name }) => name === (ev.target as any).name);
+    topic.isChecked = (ev.target as any).checked;
   }
 
   render() {
@@ -94,11 +94,11 @@ export class AppBlogFilter {
         <ion-list>
           <ion-list-header>Topics</ion-list-header>
 
-          {this.tracks.map(track =>
-            <ion-item class={{ [`item-track-${track.name.toLowerCase()}`]: true, 'item-track': true }}>
+          {this.topics.map(topic =>
+            <ion-item class={{ [`item-topic-${topic.name.toLowerCase()}`]: true, 'item-topic': true }}>
               <span slot="start" class="dot"></span>
-              <ion-label>{track.name}</ion-label>
-              <ion-toggle checked={track.isChecked} color="success" name={track.name}></ion-toggle>
+              <ion-label>{topic.name}</ion-label>
+              <ion-toggle checked={topic.isChecked} color="success" name={topic.name}></ion-toggle>
             </ion-item>
           )}
         </ion-list>

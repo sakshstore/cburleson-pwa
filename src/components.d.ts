@@ -12,7 +12,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 export namespace Components {
   interface App404PageNotFound {}
   interface AppBlogFilter {
-    'excludedTracks': string[];
+    'excludedTopics': string[];
   }
   interface AppEntryMeta {
     'header': any;
@@ -90,6 +90,7 @@ export namespace Components {
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
+  interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
@@ -591,6 +592,12 @@ declare global {
     new (): HTMLPageLifeEventsElement;
   };
 
+  interface HTMLPageLinuxAndUnixCommandsElement extends Components.PageLinuxAndUnixCommands, HTMLStencilElement {}
+  var HTMLPageLinuxAndUnixCommandsElement: {
+    prototype: HTMLPageLinuxAndUnixCommandsElement;
+    new (): HTMLPageLinuxAndUnixCommandsElement;
+  };
+
   interface HTMLPageListIbmDb2CommandsElement extends Components.PageListIbmDb2Commands, HTMLStencilElement {}
   var HTMLPageListIbmDb2CommandsElement: {
     prototype: HTMLPageListIbmDb2CommandsElement;
@@ -1082,6 +1089,7 @@ declare global {
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
+    'page-linux-and-unix-commands': HTMLPageLinuxAndUnixCommandsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
@@ -1158,7 +1166,7 @@ declare global {
 declare namespace LocalJSX {
   interface App404PageNotFound {}
   interface AppBlogFilter {
-    'excludedTracks'?: string[];
+    'excludedTopics'?: string[];
   }
   interface AppEntryMeta {
     'header'?: any;
@@ -1236,6 +1244,7 @@ declare namespace LocalJSX {
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
+  interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
@@ -1379,6 +1388,7 @@ declare namespace LocalJSX {
     'page-killing-kittens': PageKillingKittens;
     'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
+    'page-linux-and-unix-commands': PageLinuxAndUnixCommands;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
@@ -1529,6 +1539,7 @@ declare module "@stencil/core" {
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
+      'page-linux-and-unix-commands': LocalJSX.PageLinuxAndUnixCommands & JSXBase.HTMLAttributes<HTMLPageLinuxAndUnixCommandsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;

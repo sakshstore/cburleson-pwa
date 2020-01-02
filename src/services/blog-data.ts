@@ -42,17 +42,17 @@ class BlogDataService {
         }
 
         this.data = data;
-        this.data.tracks = [];
+        this.data.topics = [];
 
         // For each content item...
         this.data.content.forEach((item: any) => {
-            // If it has tracks (topics)...
-            if (item.tracks) {
+            // If it has topics...
+            if (item.topics) {
                 // For each topic that it has...
-                item.tracks.forEach((track: any) => {
-                    // If topic is not already in data.tracks array, put it there...
-                    if (this.data.tracks.indexOf(track) < 0) {
-                        this.data.tracks.push(track);
+                item.topics.forEach((topic: any) => {
+                    // If topic is not already in data.topics array, put it there...
+                    if (this.data.topics.indexOf(topic) < 0) {
+                        this.data.topics.push(topic);
                     }
                 });
             }
@@ -62,7 +62,7 @@ class BlogDataService {
     }
 
 
-    async getContent(excludeTracks: any[] = []) {
+    async getContent(excludeTopics: any[] = []) {
 
         if (DEBUG) {
             console.log('> BlogDataService.getContent');
@@ -71,33 +71,33 @@ class BlogDataService {
         const data = await this.load();
 
         data.content.forEach((item: any) => {
-            this.filterContent(item, excludeTracks);
+            this.filterContent(item, excludeTopics);
         });
 
         return data;
 
     }
 
-    filterContent(item: any, excludeTracks: any[]) {
-        // if any of the sessions tracks are not in the
-        // exclude tracks then this session passes the track test
-        let matchesTracks = false;
-        item.tracks.forEach((trackName: string) => {
-            if (excludeTracks.indexOf(trackName) === -1) {
-                matchesTracks = true;
+    filterContent(item: any, excludeTopics: any[]) {
+        // if any of the item's topics are not in the
+        // exclude topics then this item passes the topic test
+        let matchesTopics = false;
+        item.topics.forEach((topicName: string) => {
+            if (excludeTopics.indexOf(topicName) === -1) {
+                matchesTopics = true;
             }
         });
 
         // all tests must be true if it should not be hidden
-        item.hide = !(matchesTracks);
+        item.hide = !(matchesTopics);
     }
 
-    async getTracks() {
+    async getTopics() {
         if (DEBUG) {
-            console.log('> BlogDataService.getTracks');
+            console.log('> BlogDataService.getTopics');
         }
         const data = await this.load();
-        return data.tracks.sort();
+        return data.topics.sort();
     }
 
     getPostHeaderById(slug: string) {
