@@ -595,6 +595,17 @@
       ]
     },
     {
+      "id": "quotes-for-writers",
+      "title": "Quotes for writers",
+      "teaser": "A list of inspiring quotes from writers, for writers.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2017/10/21",
+      "dateModified": "2019/09/30",
+      "topics": [
+        "Storycraft and Writing"
+      ]
+    },
+    {
       "id": "docker-cheat-sheet",
       "title": "Docker cheat sheet",
       "teaser": "Cheat sheet of commonly used docker commands.",

@@ -74,6 +74,11 @@ export class AppRoot {
     return (
       <ion-router useHash={false}>
         <ion-route-redirect from="/" to='/blog' />
+
+        <ion-route-redirect from="/display/blog/2013/01/05/How+to+Shrink+a+Windows+VM+on+VMWare+Fusion+for+Mac" to='/shrink-windows-vm-on-vmware-fusion-for-mac' />
+        <ion-route-redirect from="/how-to-rig-a-mesh-with-zspheres-in-zbrush/" to='/rig-a-mesh-with-zspheres-in-zbrush' />
+        <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
+
         <ion-route component="app-tabs">
         <ion-route url="/home" component="tab-home">
             <ion-route component="page-home"></ion-route>
@@ -114,6 +119,7 @@ export class AppRoot {
           <ion-route url="/vietnam-1967-amphibious-combat" component="tab-books">
             <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>
           </ion-route>
+
 
           {blogPostRoutes}
 

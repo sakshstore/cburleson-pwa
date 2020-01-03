@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased]
+
+- **Added** Pages from legacy WordPress blog:
+    - [/quotes-for-writers](https://codyburleson.com/quotes-for-writers)
+
 ## [1.2.7] - 2020-01-02
 
 - **Added** New content: [/delete-node-modules-folder-on-windows](https://codyburleson.com/delete-node-modules-folder-on-windows)

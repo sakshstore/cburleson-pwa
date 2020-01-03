@@ -4,20 +4,8 @@
   status = 200
 
 [[redirects]]
-  from = "/display/blog/2013/01/05/How+to+Shrink+a+Windows+VM+on+VMWare+Fusion+for+Mac"
-  to = "https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac"
-  status = 301
-  force = true # COMMENT: ensure that we always redirect
-
-[[redirects]]
   from = "/2013/05/06/installing-the-java-plugin-for-64bit-firefox-on-centos-6-4/"
   to = "https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4"
-  status = 301
-  force = true # COMMENT: ensure that we always redirect
-
-[[redirects]]
-  from = "/display/ZN/Mirror+polygroup+on+a+subtool"
-  to = "https://codyburleson.com/mirror-polygroup-on-subtool-in-zbrush"
   status = 301
   force = true # COMMENT: ensure that we always redirect
 
@@ -26,3 +14,4 @@
   to = "https://codyburleson.com/mirror-polygroup-on-subtool-in-zbrush"
   status = 301
   force = true # COMMENT: ensure that we always redirect
+

@@ -113,6 +113,7 @@ export namespace Components {
   interface PagePwaWithIonicAngularWordpressApi4 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
+  interface PageQuotesForWriters {}
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
@@ -730,6 +731,12 @@ declare global {
     new (): HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
   };
 
+  interface HTMLPageQuotesForWritersElement extends Components.PageQuotesForWriters, HTMLStencilElement {}
+  var HTMLPageQuotesForWritersElement: {
+    prototype: HTMLPageQuotesForWritersElement;
+    new (): HTMLPageQuotesForWritersElement;
+  };
+
   interface HTMLPageRayKelleySilverStarElement extends Components.PageRayKelleySilverStar, HTMLStencilElement {}
   var HTMLPageRayKelleySilverStarElement: {
     prototype: HTMLPageRayKelleySilverStarElement;
@@ -1112,6 +1119,7 @@ declare global {
     'page-pwa-with-ionic-angular-wordpress-api-4': HTMLPagePwaWithIonicAngularWordpressApi4Element;
     'page-pwa-with-ionic-angular-wordpress-api-5': HTMLPagePwaWithIonicAngularWordpressApi5Element;
     'page-quick-and-simple-caching-with-apache-commons-jcs': HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement;
+    'page-quotes-for-writers': HTMLPageQuotesForWritersElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-rdf-syntax-examples': HTMLPageRdfSyntaxExamplesElement;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
@@ -1267,6 +1275,7 @@ declare namespace LocalJSX {
   interface PagePwaWithIonicAngularWordpressApi4 {}
   interface PagePwaWithIonicAngularWordpressApi5 {}
   interface PageQuickAndSimpleCachingWithApacheCommonsJcs {}
+  interface PageQuotesForWriters {}
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
@@ -1411,6 +1420,7 @@ declare namespace LocalJSX {
     'page-pwa-with-ionic-angular-wordpress-api-4': PagePwaWithIonicAngularWordpressApi4;
     'page-pwa-with-ionic-angular-wordpress-api-5': PagePwaWithIonicAngularWordpressApi5;
     'page-quick-and-simple-caching-with-apache-commons-jcs': PageQuickAndSimpleCachingWithApacheCommonsJcs;
+    'page-quotes-for-writers': PageQuotesForWriters;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-rdf-syntax-examples': PageRdfSyntaxExamples;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
@@ -1562,6 +1572,7 @@ declare module "@stencil/core" {
       'page-pwa-with-ionic-angular-wordpress-api-4': LocalJSX.PagePwaWithIonicAngularWordpressApi4 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi4Element>;
       'page-pwa-with-ionic-angular-wordpress-api-5': LocalJSX.PagePwaWithIonicAngularWordpressApi5 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi5Element>;
       'page-quick-and-simple-caching-with-apache-commons-jcs': LocalJSX.PageQuickAndSimpleCachingWithApacheCommonsJcs & JSXBase.HTMLAttributes<HTMLPageQuickAndSimpleCachingWithApacheCommonsJcsElement>;
+      'page-quotes-for-writers': LocalJSX.PageQuotesForWriters & JSXBase.HTMLAttributes<HTMLPageQuotesForWritersElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-rdf-syntax-examples': LocalJSX.PageRdfSyntaxExamples & JSXBase.HTMLAttributes<HTMLPageRdfSyntaxExamplesElement>;
       'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
