@@ -58,16 +58,20 @@ export namespace Components {
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateClothingInZbrushExtrudingMaskedArea {}
+  interface PageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScripting {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
+  interface PageCuratedListOfIbmDigitalExperienceResources {}
+  interface PageDefineAServletUsingJavaAnnotationsInsteadOfXml {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDeleteNodeModulesFolderOnWindows {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
+  interface PageEnhanceYourFrontEndWebDevWorkflowWithEmmet {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -78,6 +82,7 @@ export namespace Components {
   interface PageHowToAdjustZsphereSketchDepthInZbrush {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
+  interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
@@ -401,6 +406,12 @@ declare global {
     new (): HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
   };
 
+  interface HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement extends Components.PageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScripting, HTMLStencilElement {}
+  var HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement: {
+    prototype: HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement;
+    new (): HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement;
+  };
+
   interface HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement extends Components.PageCreateNewSubtoolFromMaskedAreaInZbrush, HTMLStencilElement {}
   var HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement: {
     prototype: HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
@@ -431,6 +442,18 @@ declare global {
     new (): HTMLPageCreatePolygroupFromMaskInZbrushElement;
   };
 
+  interface HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement extends Components.PageCuratedListOfIbmDigitalExperienceResources, HTMLStencilElement {}
+  var HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement: {
+    prototype: HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+    new (): HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+  };
+
+  interface HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement extends Components.PageDefineAServletUsingJavaAnnotationsInsteadOfXml, HTMLStencilElement {}
+  var HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement: {
+    prototype: HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement;
+    new (): HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement;
+  };
+
   interface HTMLPageDeleteHiddenGeometryInZbrushElement extends Components.PageDeleteHiddenGeometryInZbrush, HTMLStencilElement {}
   var HTMLPageDeleteHiddenGeometryInZbrushElement: {
     prototype: HTMLPageDeleteHiddenGeometryInZbrushElement;
@@ -459,6 +482,12 @@ declare global {
   var HTMLPageEclipseTipFormatSourceCodeOnSaveElement: {
     prototype: HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
     new (): HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
+  };
+
+  interface HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement extends Components.PageEnhanceYourFrontEndWebDevWorkflowWithEmmet, HTMLStencilElement {}
+  var HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement: {
+    prototype: HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
+    new (): HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
   };
 
   interface HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement extends Components.PageFemaleAnatomyOutOfTheBoxInZbrush, HTMLStencilElement {}
@@ -519,6 +548,12 @@ declare global {
   var HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement: {
     prototype: HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     new (): HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
+  };
+
+  interface HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement extends Components.PageHowToFindLargeImagesAndFilesInIbmWcm, HTMLStencilElement {}
+  var HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement: {
+    prototype: HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
+    new (): HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
   };
 
   interface HTMLPageHowToOptimizeAZsphereSketchInZbrushElement extends Components.PageHowToOptimizeAZsphereSketchInZbrush, HTMLStencilElement {}
@@ -1064,16 +1099,20 @@ declare global {
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
     'page-create-clothing-in-zbrush-extruding-masked-area': HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement;
+    'page-create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting': HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement;
     'page-create-new-subtool-from-masked-area-in-zbrush': HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement;
     'page-create-player-health-status-indicator-for-unity-gui-part-1': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
     'page-create-polygroup-from-mask-in-zbrush': HTMLPageCreatePolygroupFromMaskInZbrushElement;
+    'page-curated-list-of-ibm-digital-experience-resources': HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+    'page-define-a-servlet-using-java-annotations-instead-of-xml': HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement;
     'page-delete-hidden-geometry-in-zbrush': HTMLPageDeleteHiddenGeometryInZbrushElement;
     'page-delete-node-modules-folder-on-windows': HTMLPageDeleteNodeModulesFolderOnWindowsElement;
     'page-display-user-attributes-in-a-websphere-portal-theme': HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement;
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
     'page-eclipse-tip-format-source-code-on-save': HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
+    'page-enhance-your-front-end-web-dev-workflow-with-emmet': HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
     'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
@@ -1084,6 +1123,7 @@ declare global {
     'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement;
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
+    'page-how-to-find-large-images-and-files-in-ibm-wcm': HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
@@ -1220,16 +1260,20 @@ declare namespace LocalJSX {
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
   interface PageCreateClothingInZbrushExtrudingMaskedArea {}
+  interface PageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScripting {}
   interface PageCreateNewSubtoolFromMaskedAreaInZbrush {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {}
   interface PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {}
   interface PageCreatePolygroupFromMaskInZbrush {}
+  interface PageCuratedListOfIbmDigitalExperienceResources {}
+  interface PageDefineAServletUsingJavaAnnotationsInsteadOfXml {}
   interface PageDeleteHiddenGeometryInZbrush {}
   interface PageDeleteNodeModulesFolderOnWindows {}
   interface PageDisplayUserAttributesInAWebspherePortalTheme {}
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
+  interface PageEnhanceYourFrontEndWebDevWorkflowWithEmmet {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -1240,6 +1284,7 @@ declare namespace LocalJSX {
   interface PageHowToAdjustZsphereSketchDepthInZbrush {}
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
+  interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
@@ -1365,16 +1410,20 @@ declare namespace LocalJSX {
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
     'page-create-clothing-in-zbrush-extruding-masked-area': PageCreateClothingInZbrushExtrudingMaskedArea;
+    'page-create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting': PageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScripting;
     'page-create-new-subtool-from-masked-area-in-zbrush': PageCreateNewSubtoolFromMaskedAreaInZbrush;
     'page-create-player-health-status-indicator-for-unity-gui-part-1': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1;
     'page-create-player-health-status-indicator-for-unity-gui-part-2': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2;
     'page-create-player-health-status-indicator-for-unity-gui-part-3': PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
     'page-create-polygroup-from-mask-in-zbrush': PageCreatePolygroupFromMaskInZbrush;
+    'page-curated-list-of-ibm-digital-experience-resources': PageCuratedListOfIbmDigitalExperienceResources;
+    'page-define-a-servlet-using-java-annotations-instead-of-xml': PageDefineAServletUsingJavaAnnotationsInsteadOfXml;
     'page-delete-hidden-geometry-in-zbrush': PageDeleteHiddenGeometryInZbrush;
     'page-delete-node-modules-folder-on-windows': PageDeleteNodeModulesFolderOnWindows;
     'page-display-user-attributes-in-a-websphere-portal-theme': PageDisplayUserAttributesInAWebspherePortalTheme;
     'page-docker-cheat-sheet': PageDockerCheatSheet;
     'page-eclipse-tip-format-source-code-on-save': PageEclipseTipFormatSourceCodeOnSave;
+    'page-enhance-your-front-end-web-dev-workflow-with-emmet': PageEnhanceYourFrontEndWebDevWorkflowWithEmmet;
     'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
@@ -1385,6 +1434,7 @@ declare namespace LocalJSX {
     'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': PageHowToAdjustZsphereSketchDepthInZbrush;
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
+    'page-how-to-find-large-images-and-files-in-ibm-wcm': PageHowToFindLargeImagesAndFilesInIbmWcm;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
@@ -1517,16 +1567,20 @@ declare module "@stencil/core" {
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
       'page-create-clothing-in-zbrush-extruding-masked-area': LocalJSX.PageCreateClothingInZbrushExtrudingMaskedArea & JSXBase.HTMLAttributes<HTMLPageCreateClothingInZbrushExtrudingMaskedAreaElement>;
+      'page-create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting': LocalJSX.PageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScripting & JSXBase.HTMLAttributes<HTMLPageCreateCustomPropertiesForAResourceEnvironmentProviderUsingWasadminScriptingElement>;
       'page-create-new-subtool-from-masked-area-in-zbrush': LocalJSX.PageCreateNewSubtoolFromMaskedAreaInZbrush & JSXBase.HTMLAttributes<HTMLPageCreateNewSubtoolFromMaskedAreaInZbrushElement>;
       'page-create-player-health-status-indicator-for-unity-gui-part-1': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart1Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-2': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart2Element>;
       'page-create-player-health-status-indicator-for-unity-gui-part-3': LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
       'page-create-polygroup-from-mask-in-zbrush': LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
+      'page-curated-list-of-ibm-digital-experience-resources': LocalJSX.PageCuratedListOfIbmDigitalExperienceResources & JSXBase.HTMLAttributes<HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement>;
+      'page-define-a-servlet-using-java-annotations-instead-of-xml': LocalJSX.PageDefineAServletUsingJavaAnnotationsInsteadOfXml & JSXBase.HTMLAttributes<HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement>;
       'page-delete-hidden-geometry-in-zbrush': LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
       'page-delete-node-modules-folder-on-windows': LocalJSX.PageDeleteNodeModulesFolderOnWindows & JSXBase.HTMLAttributes<HTMLPageDeleteNodeModulesFolderOnWindowsElement>;
       'page-display-user-attributes-in-a-websphere-portal-theme': LocalJSX.PageDisplayUserAttributesInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageDisplayUserAttributesInAWebspherePortalThemeElement>;
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
       'page-eclipse-tip-format-source-code-on-save': LocalJSX.PageEclipseTipFormatSourceCodeOnSave & JSXBase.HTMLAttributes<HTMLPageEclipseTipFormatSourceCodeOnSaveElement>;
+      'page-enhance-your-front-end-web-dev-workflow-with-emmet': LocalJSX.PageEnhanceYourFrontEndWebDevWorkflowWithEmmet & JSXBase.HTMLAttributes<HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement>;
       'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
@@ -1537,6 +1591,7 @@ declare module "@stencil/core" {
       'page-how-to-adjust-zsphere-sketch-depth-in-zbrush': LocalJSX.PageHowToAdjustZsphereSketchDepthInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement>;
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
+      'page-how-to-find-large-images-and-files-in-ibm-wcm': LocalJSX.PageHowToFindLargeImagesAndFilesInIbmWcm & JSXBase.HTMLAttributes<HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement>;
       'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;

@@ -92,6 +92,15 @@
       ]
     },
     {
+      "id": "curated-list-of-ibm-digital-experience-resources",
+      "title": "Curated list of IBM Digital Experience resources",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/12/04",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "copy-assets-from-node-modules-in-stencil-js",
       "title": "How to copy assets from node_modules in Stencil.js",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
@@ -818,6 +827,15 @@
       ]
     },
     {
+      "id": "enhance-your-front-end-web-dev-workflow-with-emmet",
+      "title": "Enhance your front-end web dev workflow with Emmet",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-emmet.svg",
+      "datePublished": "2017/03/10",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "avoid-tracking-ga-page-views-in-atlassian-confluence",
       "title": "How to avoid tracking Google Analytics page views for admin or specific users in Atlassian Confluence",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-google-analytics.svg",
@@ -958,6 +976,15 @@
       ]
     },
     {
+      "id": "how-to-find-large-images-and-files-in-ibm-wcm",
+      "title": "How to find large images and files in IBM WCM",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/12/04",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app",
       "title": "Accessing the authenticated WebSphere Portal user from a separate web app",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1025,6 +1052,24 @@
       "datePublished": "2013/03/23",
       "topics": [
         "Memoir"
+      ]
+    },
+    {
+      "id": "define-a-servlet-using-java-annotations-instead-of-xml",
+      "title": "How to define a servlet using Java annotations instead of XML",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2013/03/23",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting",
+      "title": "How to create custom properties for a resource environment provider using wasadmin scripting",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/02/17",
+      "topics": [
+        "Software Dev"
       ]
     },
     {

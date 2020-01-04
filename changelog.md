@@ -4,15 +4,20 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [1.2.8] - 2020-01-04
 
-- **Added** Pages from legacy WordPress blog:
+- **Added** pages from legacy WordPress blog:
     - [/quotes-for-writers](https://codyburleson.com/quotes-for-writers)
+    - [/how-to-find-large-images-and-files-in-ibm-wcm](https://codyburleson.com/how-to-find-large-images-and-files-in-ibm-wcm)
+    - [/curated-list-of-ibm-digital-experience-resources](https://codyburleson.com/curated-list-of-ibm-digital-experience-resources)
+    - [/define-a-servlet-using-java-annotations-instead-of-xml](https://codyburleson.com/define-a-servlet-using-java-annotations-instead-of-xml)
+    - [/create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting](https://codyburleson.com/create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting)
+    - [/enhance-your-front-end-web-dev-workflow-with-emmet](https://codyburleson.com/enhance-your-front-end-web-dev-workflow-with-emmet)
 
 ## [1.2.7] - 2020-01-02
 
-- **Added** New content: [/delete-node-modules-folder-on-windows](https://codyburleson.com/delete-node-modules-folder-on-windows)
-- **Added** Pages from legacy WordPress blog:
+- **Added** new content: [/delete-node-modules-folder-on-windows](https://codyburleson.com/delete-node-modules-folder-on-windows)
+- **Added** pages from legacy WordPress blog:
     - [/classnotfound-does-not-always-mean-class-not-found](https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found)
     - [/musing-on-nostalgia](https://codyburleson.com/musing-on-nostalgia)
     - [/how-to-adjust-zsphere-sketch-depth-in-zbrush](https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush)
@@ -22,7 +27,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.2.6] - 2019-12-30
 
-- **Added** Pages from legacy WordPress blog: 
+- **Added** pages from legacy WordPress blog: 
     - [/build-a-rendering-plugin-ibm-wcm-part-1](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1)
     - [/build-a-rendering-plugin-ibm-wcm-part-2](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2)
     - [/use-spring-for-stardog-in-a-spring-boot-application](https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application)
@@ -40,7 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.4] - 2019-12-28
 
-- **Added** Pages from my legacy WordPress blog...
+- **Added** pages from my legacy WordPress blog...
     - [/are-mashups-the-new-portals-and-gadgets-the-new-portlets](https://codyburleson.com/are-mashups-the-new-portals-and-gadgets-the-new-portlets)
     - [/avoid-tracking-ga-page-views-in-atlassian-confluence](https://codyburleson.com/avoid-tracking-ga-page-views-in-atlassian-confluence)
     - [/awesome-power-of-the-link-in-linked-data](https://codyburleson.com/awesome-power-of-the-link-in-linked-data)
@@ -53,7 +58,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.3] - 2019-12-26
 
-- **Added** Pages from my legacy WordPress blog:
+- **Added** pages from my legacy WordPress blog:
     - [/memories-of-momma-1](https://codyburleson.com/memories-of-momma-1)
     - [/memories-of-momma-2](https://codyburleson.com/memories-of-momma-2)
     - [/memories-of-momma-3](https://codyburleson.com/memories-of-momma-3)
@@ -63,7 +68,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [1.1.2] - 2019-12-25
 
-- **Added** Pages from my legacy WordPress blog...
+- **Added** pages from my legacy WordPress blog...
     - [/access-the-was-console-from-websphere-portal-server](https://codyburleson.com/access-the-was-console-from-websphere-portal-server)
     - [/resolving-404-errors-accessing-wcm-content-through-poc-servlet](https://codyburleson.com/resolving-404-errors-accessing-wcm-content-through-poc-servlet)
     - [/notes-on-zbrush-slicecurve-brush](https://codyburleson.com/notes-on-zbrush-slicecurve-brush)

@@ -29,6 +29,7 @@ https://codyburleson.com/memories-of-momma-3
 https://codyburleson.com/memories-of-momma-2
 https://codyburleson.com/memories-of-momma-1
 https://codyburleson.com/killing-kittens
+https://codyburleson.com/curated-list-of-ibm-digital-experience-resources
 https://codyburleson.com/copy-assets-from-node-modules-in-stencil-js
 https://codyburleson.com/show-both-sides-of-a-plane-in-zbrush
 https://codyburleson.com/a-look-at-sparql-sql-for-semantic-web
@@ -78,6 +79,7 @@ https://codyburleson.com/sparql-examples-list-classes
 https://codyburleson.com/sparql-examples-select
 https://codyburleson.com/respond-to-button-click-with-observable
 https://codyburleson.com/install-oracle-java-8-on-ubuntu
+https://codyburleson.com/quotes-for-writers
 https://codyburleson.com/docker-cheat-sheet
 https://codyburleson.com/scene-and-sequel-pattern-for-writers
 https://codyburleson.com/rdf-syntax-examples
@@ -98,6 +100,7 @@ https://codyburleson.com/linux-and-unix-commands
 https://codyburleson.com/serve-static-resources-with-spring-boot
 https://codyburleson.com/confluence-panel-macro
 https://codyburleson.com/logging-with-spring-boot
+https://codyburleson.com/enhance-your-front-end-web-dev-workflow-with-emmet
 https://codyburleson.com/avoid-tracking-ga-page-views-in-atlassian-confluence
 https://codyburleson.com/set-the-page-title-in-angular
 https://codyburleson.com/format-currency-in-angular
@@ -112,6 +115,7 @@ https://codyburleson.com/unity-get-rigidbody-from-object
 https://codyburleson.com/identifying-large-objects-consuming-memory-in-java-heap
 https://codyburleson.com/eclipse-tip-format-source-code-on-save
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
+https://codyburleson.com/how-to-find-large-images-and-files-in-ibm-wcm
 https://codyburleson.com/accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app
 https://codyburleson.com/getting-parts-of-a-url-from-the-httpservletrequest-object
 https://codyburleson.com/mapping-to-a-view-in-spring-when-no-controller-logic-is-required
@@ -119,6 +123,8 @@ https://codyburleson.com/script-for-rotating-unity-game-object-90-degrees
 https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4
 https://codyburleson.com/automatically-build-and-include-one-eclipse-project-into-another
 https://codyburleson.com/musing-on-nostalgia
+https://codyburleson.com/define-a-servlet-using-java-annotations-instead-of-xml
+https://codyburleson.com/create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting
 https://codyburleson.com/how-to-check-user-access-role-in-a-websphere-portal-theme
 https://codyburleson.com/xmlaccess-samples
 https://codyburleson.com/base22-consultants-creed
