@@ -95,6 +95,7 @@ https://codyburleson.com/sparql-examples-paging
 https://codyburleson.com/sparql-examples-date-range
 https://codyburleson.com/pink-hearts
 https://codyburleson.com/7-quintessential-brushes-for-zbrush-beginners
+https://codyburleson.com/intellij-idea-cheat-sheet
 https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application
 https://codyburleson.com/linux-and-unix-commands
 https://codyburleson.com/serve-static-resources-with-spring-boot

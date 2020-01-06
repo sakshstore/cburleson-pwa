@@ -42,30 +42,32 @@ export class PageCmdChronBeaverCage {
                             <p>
                                 This document is a declassified record of the Vietnam War from the period of Apr 1, 1967 to May 13, 1967, which generally
                                 pertains to the operation known as &quot;Beaver Cage&quot;. The document was transcribed from a PDF
-                                file by Cody Burleson for the purpose of making it more useful for research (i.e. more legible, hyperlinked,
+                                file for the purpose of making it more useful for research (i.e. more legible, hyperlinked,
                                 and searchable). In some places, the scanned source document was somewhat illegible. The following
                                 symbology is used to reflect what was questionable during the transcription:</p>
 
                             <ul>
-                                <li>[?] = One character exists here that is completely illegible or highly questionable.</li>
-                                <li>[X?] = Character here looks like character in brackets, but is questionable to some degree.</li>
-                                <li>[O or 0] = May be first of second character within brackets.</li>
-                                <li>[…] = Several characters or words of unrecognizable text.</li>
+                                <li><code>[?]</code> = One character exists here that is completely illegible or highly questionable.</li>
+                                <li><code>[X?]</code> = Character here looks like character in brackets, but is questionable to some degree.</li>
+                                <li><code>[O or 0]</code> = May be first of second character within brackets.</li>
+                                <li><code>[…]</code> = Several characters or words of unrecognizable text.</li>
                             </ul>
 
-                            <p><em>Last modified: February 6, 2019</em></p>
-                            <p>
+                            <p class="entry-meta">
+                            Last modified: February 6, 2019
+                            </p>
+                            <p class="entry-meta">
                                 Source:<br />
                                 COMMAND CHRONOLOGY [BLT 1/3], 01 April 1967, Box __, Folder 039, US Marine Corps History Division Vietnam War Documents Collection, Vietnam Center and Archive, Texas Tech University, <a href="https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031" target="_blank">https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031</a>, Accessed 22 Oct 2019.
                             </p>
 
-                            <div id="command-chronology">
+                            <div id="command-chronology" style={{borderTop:`1px solid #CCC`, paddingTop:`40px`}}>
 
                                 <p class="text-center red"><strong>DECLASSIFIED</strong></p>
 
                                 <p class="ion-text-center">
                                     HEADQUARTERS<br /> Battalion Landing Team 1/3<br /> Regimental Landing Team-26<br /> 9th Marine Amphibious
-                                    Brigade, F[?]F
+                                    Brigade, F<code>[?]</code>F
                                     <br /> FPO, San Francisco 96602</p>
 
                                 <p class="ion-text-right">
@@ -78,9 +80,9 @@ export class PageCmdChronBeaverCage {
                                 <h2>Subj: Command Chronology for period 1 April 1967 through 13 May 1967</h2>
                                 <p>Ref:</p>
                                 <ol class="list-lower-latin">
-                                    <li>M[C?]O 5750.2A</li>
-                                    <li>Brig[O or 0] 5750.1A</li>
-                                    <li>FMFPACO 5750.[?]</li>
+                                    <li>M<code>[C?]O</code> 5750.2A</li>
+                                    <li>Brig<code>[O or 0]</code> 5750.1A</li>
+                                    <li>FMFPACO 5750.<code>[?]</code></li>
                                 </ol>
 
                                 <p>Encl: (1) Battalion Landing Team 1/3 Command Chronology</p>
@@ -124,7 +126,7 @@ export class PageCmdChronBeaverCage {
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td>Battalion Landing Team 1/3 […]</td>
+                                            <td>Battalion Landing Team 1/3 <code>[…]</code></td>
                                             <td>LtCol P. A. WICKWIRE</td>
                                         </tr>
                                     </tbody>
@@ -225,7 +227,7 @@ export class PageCmdChronBeaverCage {
                                             <td>2dLt F. G. WENTWORTH</td>
                                         </tr>
                                         <tr>
-                                            <td>1stPlt, Co[B?] 3dReconBn</td>
+                                            <td>1stPlt, Co<code>[B?]</code> 3dReconBn</td>
                                             <td>2dLt R. H. FREEMAN</td>
                                         </tr>
                                         <tr>
@@ -381,7 +383,7 @@ export class PageCmdChronBeaverCage {
                                     During the next two days “B”, “C” and “D” Companies continued sweeping the Valley to the west. On 12 May they arrived at
                                     helicopter Landing Zone Quail in the vicinity of BT 060395 which had been secured by elements of
                                     3d Battalion, 5th Marines. On this day all elements of BLT 1/3 were extracted from this zone or from
-                                    Landing Zone Magpie at Que Son, to the ships of TG 7[6?].4. After 15 days, Operation Beaver Cage
+                                    Landing Zone Magpie at Que Son, to the ships of TG 7<code>[6?]</code>.4. After 15 days, Operation Beaver Cage
                                     was completed.
                         </p>
 
@@ -451,7 +453,7 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>28 April</h5>
                                             <p>Operation Beaver Cage commenced in support of Operation Union at 0700 with the landing
-                            of “C” Company at BT 186294, followed by “A” Company at BT 19[8?]265 by helicopter. “D”
+                            of “C” Company at BT 186294, followed by “A” Company at BT 19<code>[8?]</code>265 by helicopter. “D”
                             Company, with attached tanks and ontos commenced amphibious landing at BT 305361 by LVT
                             at 0800. A/1/12 landed at Hill 29 while W/2/12 and the BLT Command Group Landed at BT
                             186294. Search and destroy operations were conducted in each company’s TAOR with light
@@ -461,7 +463,7 @@ export class PageCmdChronBeaverCage {
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>29 April</h5>
-                                            <p>Search and destroy operations were conducted throughout the day while “[B?]” and “C”
+                                            <p>Search and destroy operations were conducted throughout the day while “<code>[B?]</code>” and “C”
                             Companies proceeded to BT 165277 to establish a new C.P. “A” Company was helilifted to
                             BT 149234. Landing Zones in the new TAOR were secured and W/2/12 and the BLT Command
                             Group were helilifted to the new C.P. Light resistance in the form of sniper fire was
@@ -483,10 +485,10 @@ export class PageCmdChronBeaverCage {
                                             <h5>1 May</h5>
                                             <p>Local search and destroy operations conducted by all companies. “A” Company spotted 75
                             – 100 VC near BT 169240. An artillery mission on […] excellent target coverage but unknown
-                            results. Groups of [?]0 – [3?]0 VC were engaged by “B” and “D” Companies in fire fights
+                            results. Groups of <code>[?]</code>0 – <code>[3?]</code>0 VC were engaged by “B” and “D” Companies in fire fights
                             and mortar attacks with unknown results. In late afternoon “A” Company, W/2/12 and the
                             BLT Command Group were helilifted to BT 128388 while “C” Company was helilifted to BT
-                    132399. One VCS was captured, [one?] VC killed and one wounded.</p>
+                    132399. One VCS was captured, <code>[one?]</code> VC killed and one wounded.</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
@@ -494,7 +496,7 @@ export class PageCmdChronBeaverCage {
                                             <h5>2 May</h5>
                                             <p>Extensive search and destroy operations conducted by all companies with light contact
                             with small groups of VC throughout the day. At 1930 “C” Company, digging in at BT 098385,
-                            came under heavy 82mm mortar, [?]7mm recoiless rifle, automatic weapons and small arms
+                            came under heavy 82mm mortar, <code>[?]</code>7mm recoiless rifle, automatic weapons and small arms
                             fire. 105mm and 107mm artillery fire was called in on targets at BT 166384 and BT 110374.
                             Ancestor Flareship, Spooky Gunship, Huey Gunshis and fixed wing airstrikes called in
                             on the same targets. The heavy fire and the advance of the VC units were effectively
@@ -509,9 +511,9 @@ export class PageCmdChronBeaverCage {
                                             <p>Medevac and emergency resupply of “C” Company conducted at first light. Sparrow Hawk
                             force inserted at BT 120384 to extract Reconnaissance element and attack area of possible
                             VC mortars. Search and destroy operations were continued by all companies with little
-                            contact. At 1[?]30 an “A” Company water patrol made contact at BT 094356 and received
+                            contact. At 1<code>[?]</code>30 an “A” Company water patrol made contact at BT 094356 and received
                             heavy automatic weapons and small arms fire. Artillery and HUIE Gunships were utilized
-                            to suppress the fire and four [squads?] were sent to assist the water patrol.This action
+                            to suppress the fire and four <code>[squads?]</code> were sent to assist the water patrol.This action
                             lasted into the late evening hours with the situation remaining unclear until the following
                     day.</p>
                                         </ion-label>
@@ -521,7 +523,7 @@ export class PageCmdChronBeaverCage {
                                             <h5>4 May</h5>
                                             <p>Search and destroy mission of TAOR continued by all companies. “A” Company’s casualties
                             from the previous night were med-evaced. The final count showed 14 KIA, [8?] WIA and
-                            1 WIANE. Enemy casualties were [3? or 8?] KIA confirmed and 6 KIA probable. “A” Company
+                            1 WIANE. Enemy casualties were <code>[3? or 8?]</code> KIA confirmed and 6 KIA probable. “A” Company
                             called in artillery mission on 60 to 70 VC at BT 096404 and BT 095405. Mortar and small
                             arms fire was received during scattered fire fights. “D” Company reported extensive tunnel
                             complexes throughout their operating area. Total casualties for the day included 11 U.S.
@@ -545,7 +547,7 @@ export class PageCmdChronBeaverCage {
                                             <h5>6 May</h5>
                                             <p>Search and destroy operations encountered light resistance in the form of sporadic sniper
                             fire throughout the day. The positions of the companies at the end of the day were –
-                            “B” Company – BT 072395; “C” Company – BT 06239[?]; “D” Company – BT 057395. 4 U. S.
+                            “B” Company – BT 072395; “C” Company – BT 06239<code>[?]</code>; “D” Company – BT 057395. 4 U. S.
                     WIA were sustained during the period with 3 probable VC KIA.</p>
                                         </ion-label>
                                     </ion-item>
@@ -581,20 +583,20 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>10 May</h5>
                                             <p>The direction of the search and destroy sweep was reversed and proceeded to the east
-                            from the north-south line through BT 0[2?]41. “B”, “C”, and “D” Companies came under
+                            from the north-south line through BT 0<code>[2?]</code>41. “B”, “C”, and “D” Companies came under
                             intensive attack by mortar, automatic and small arms fire from hill 110 to the south,
                             from the slopes to the north and trenchlines to the east. Four air strikes by fixed wing
                             aircraft and five by Klondike Gunships against various VC emplacements, along with coordinated
                             attacks by the Companies effectively silenced enemy opposition. U. S. casualties were
-                            22 KIA and 8[8?] WIA. Enemy casualties were 181 (KIA confirmed), 136 KIA (probable),
+                            22 KIA and 8<code>[8?]</code> WIA. Enemy casualties were 181 (KIA confirmed), 136 KIA (probable),
                     and 66 VC prisoners and detainees.</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>11 May</h5>
-                                            <p>Movement of “B”, “C”, and “D” Companies to LZ until at […] 060377 for backloading to
-                    ships of AR[G?] 76.4 continued throughout the day with no enemy contact.</p>
+                                            <p>Movement of “B”, “C”, and “D” Companies to LZ until at <code>[…]</code> 060377 for backloading to
+                    ships of AR<code>[G?]</code> 76.4 continued throughout the day with no enemy contact.</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
@@ -618,7 +620,7 @@ export class PageCmdChronBeaverCage {
                                     <li>Casualties: 55 KIA, 151 WIAE, 50 WIANE, 5 deaths due to loss of helicopter in transferring personnel
                                 between ships.</li>
                                     <li>Awards: 8 Purple Hearts</li>
-                                    <li>Post[?]l, promotions and personnel accounting remain satisfactory.</li>
+                                    <li>Post<code>[?]</code>l, promotions and personnel accounting remain satisfactory.</li>
                                 </ol>
 
 
@@ -630,7 +632,7 @@ export class PageCmdChronBeaverCage {
 
                                 <h4>Command Relations</h4>
 
-                                <p>Battalion Landing Team 1/3 is OPCON to CTG 79.4 and ADCO[N? or H?] to CG, 9thMA[B?].</p>
+                                <p>Battalion Landing Team 1/3 is OPCON to CTG 79.4 and ADCO<code>[N or H]</code> to CG, 9thMAB.</p>
 
                                 <h4>Intelligence</h4>
 
@@ -659,7 +661,7 @@ export class PageCmdChronBeaverCage {
 
                                 <p>
                                     During Operation Beaver Cage (28 April – 12 May) helicopter support was provided by our brother unit in the S.L.F., H[?][?]-263,
-                                    which flew 44[2?]9 UH-34 sorties and 389 UH-1E Gunship and TACA sorties; and 1stMAW helicopter squadrons
+                                    which flew 44<code>[2?]</code>9 UH-34 sorties and 389 UH-1E Gunship and TACA sorties; and 1stMAW helicopter squadrons
                                     which flew occasional medevacs. Fixed wind support was provided by elements of the 1stMAW and 7th
                                     Air Force who flew 21 01E observation, spotting, and TACA sorties; 30 fixed wind strike sorties;
                             4 C-47 gunship sorties; and 1 C-130 flareship sortie in support.</p>
@@ -668,7 +670,7 @@ export class PageCmdChronBeaverCage {
 
                                 <ol class="list-lower-latin">
                                     <li><span class="text-underline">Supply</span>. During this period, approximately 101
-                                        requisitions were placed through FSR with only 3[5?] completed. For Operation Beaver Cage […]ndable
+                                        requisitions were placed through FSR with only 3<code>[5?]</code> completed. For Operation Beaver Cage <code>[…]</code>ndable
                                 supplies were furnished from LSA Tam Ky, RVN.</li>
                                     <li><span class="text-underline">Maintenance</span>. During this period limited 3rd
                                         echelon maintenance was provided for engineer and communications equipment by an attached LSU
@@ -690,7 +692,7 @@ export class PageCmdChronBeaverCage {
                                 <h3>PART IV – SUPPORTING DOCUMENTS</h3>
 
                                 <ol>
-                                    <li>BLT 1/3 Operation Order 5-67 (Added s[?]c 308 033)</li>
+                                    <li>BLT 1/3 Operation Order 5-67 (Added s<code>[?]</code>c 308 033)</li>
                                     <li>BLT 1/3 Administrative Plan 5-67</li>
                                     <li>BLT 1/3 Frag Order No 1 to OpOrder 5-67 (Added)</li>
                                     <li><a href="#combat-after-action-report-beaver-cage">BLT 1/3 After Action Report Operation Beaver
@@ -707,7 +709,7 @@ export class PageCmdChronBeaverCage {
                                     <li>BLT 1/3 Op Order 5-67</li>
                                     <li>Operations Overlay ALFA (Enclosure (1) to BLT 1/3 Frag Order Number 1 to Operation Order 5-67).</li>
                                     <li>Operations Overlay BRAVO (Enclosure (2) to BLT 1/3 Frag Order Number 1 to Operation Order 5-67).</li>
-                                    <li>Intelligence Estimate for Operation Beaver Cage (Enclosure (3) t[…] BLT 1/3 Frag Order Number
+                                    <li>Intelligence Estimate for Operation Beaver Cage (Enclosure (3) t<code>[...]</code> BLT 1/3 Frag Order Number
                                 1 to Operation Order 5-67).</li>
                                     <li>Maps: Viet Name AMS Series L7014, Sheets 664oI, II, III, and IV.</li>
                                 </ol>
@@ -750,7 +752,7 @@ export class PageCmdChronBeaverCage {
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;Det. HqC[o?] 26thMar (Radio Relay)</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;Det. HqC<code>[o?]</code> 26thMar (Radio Relay)</td>
                                             <td></td>
                                         </tr>
                                         <tr>
@@ -834,11 +836,11 @@ export class PageCmdChronBeaverCage {
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[…]Plat</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<code>[…]</code>Plat</td>
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Det. Comm[…]</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Det. Comm<code>[…]</code></td>
                                             <td></td>
                                         </tr>
                                         <tr>
@@ -847,7 +849,7 @@ export class PageCmdChronBeaverCage {
                                         </tr>
                                         <tr>
                                             <td>&nbsp;&nbsp;&nbsp;<span class="text-underline">Co C (Rein)</span></td>
-                                            <td>Capt Re[…]K</td>
+                                            <td>Capt Re<code>[…]</code>K</td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;&nbsp;&nbsp;&nbsp;Co C</td>
@@ -890,7 +892,7 @@ export class PageCmdChronBeaverCage {
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;Det. HqBn 3rdMarDiv (Photo Se[c?])</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;Det. HqBn 3rdMarDiv (Photo Se<code>[c?]</code>)</td>
                                             <td></td>
                                         </tr>
                                         <tr>
@@ -1022,7 +1024,7 @@ export class PageCmdChronBeaverCage {
                                             <td></td>
                                         </tr>
                                         <tr>
-                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;[…]</td>
+                                            <td>&nbsp;&nbsp;&nbsp;&nbsp;<code>[…]</code></td>
                                             <td></td>
                                         </tr>
 
@@ -1107,14 +1109,14 @@ export class PageCmdChronBeaverCage {
                                     </li>
                                     <li>
                                         <span class="text-underline">MISSION</span>. BLT 1/3 conducts an amphibious assault
-                                        commencing […] Hour, D-Day in Thang Binh and Tam Ky Districts, Quang Tin […] destroy enemy forces
+                                        commencing <code>[…]</code> Hour, D-Day in Thang Binh and Tam Ky Districts, Quang Tin […] destroy enemy forces
                                         by:
                                 <ol class="list-none">
-                                            <li>Ph1: Seizing a designated beach area and approaches […] designated helicopter landing
-                                                zones and surrounding […].
+                                            <li>Ph1: Seizing a designated beach area and approaches <code>[…]</code> designated helicopter landing
+                                                zones and surrounding <code>[…]</code>.
                                     </li>
                                             <li>Ph2: Coordinating search and destroy operations simultaneously within the designated
-                                        TAOR (and the additional […] the AOA).</li>
+                                        TAOR (and the additional <code>[…]</code> the AOA).</li>
                                             <li>Ph3: Conducting amphibious withdrawal on order.</li>
                                         </ol>
                                     </li>
@@ -1123,21 +1125,21 @@ export class PageCmdChronBeaverCage {
                                 <ol class="list-lower-latin">
                                             <li>
                                                 <span class="text-underline">Concept of Operations</span>. Commencing at
-                                                H-Hour on D-Day […] company will land over Red Beach, seizing and securing […] approaches
+                                                H-Hour on D-Day <code>[…]</code> company will land over Red Beach, seizing and securing <code>[…]</code> approaches
                                                 thereto and conducting search and destroy operations in designated TAOR. At L-Hour on
-                                                D-Day, two […] conduct helicopter assaults into LZ Thrush and […] surrounding terrain
+                                                D-Day, two <code>[…]</code> conduct helicopter assaults into LZ Thrush and <code>[…]</code> surrounding terrain
                                                 and on order conduct search and destroy operations in assigned ZOA. One rifle company
-                                                will be […] SLF Reserve aboard LPH to include Sparrow Hawk Force […] to control of BLT
+                                                will be <code>[…]</code> SLF Reserve aboard LPH to include Sparrow Hawk Force <code>[…]</code> to control of BLT
                                                 1/3. On order the BLT will conduct amphibious withdrawal.
                                     </li>
                                             <li>
                                                 <span class="text-underline">Company “C” (Rein).</span>
                                                 <ol class="list-none">
                                                     <li>(1) Commencing at L-Hour, D-Day, conduct a helicopterborne assault to seize Landing
-                                                        Zone Ori[o?]le.
+                                                        Zone Oriole.
                                             </li>
                                                     <li>(2) On order conduct search and destroy operations in designated ZOA. Seize BLT
-                                                Objectives 2,62,4,6,8 and 1[0?].</li>
+                                                Objectives 2,62,4,6,8 and 1<code>[0?]</code>.</li>
                                                     <li>(3) Be prepared to conduct amphibious withdrawal on order.</li>
                                                 </ol>
                                             </li>
@@ -1183,7 +1185,7 @@ export class PageCmdChronBeaverCage {
                                                 <ol class="list-none">
                                                     <li>(1) On order conduct helicopterborne movement to designated landing zone. Provide
                                                 direct support fires in support of assault elements of BLT 1/3.</li>
-                                                    <li>(2) Prioroty of fires to helicopterborne [… probably “assualt forces”].</li>
+                                                    <li>(2) Prioroty of fires to helicopterborne <code>[… probably “assualt forces”]</code>.</li>
                                                     <li>(3) Be prepared to displace and/or conduct amphibious withdrawal on order</li>
                                                 </ol>
                                             </li>
@@ -1474,7 +1476,7 @@ export class PageCmdChronBeaverCage {
                                         </tr>
                                         <tr>
                                             <td>&nbsp;&nbsp;&nbsp;<span class="text-underline">Co A (Rein)</span></td>
-                                            <td>[?]</td>
+                                            <td><code>[?]</code></td>
                                         </tr>
                                         <tr>
                                             <td>&nbsp;&nbsp;&nbsp;&nbsp;Co A</td>
@@ -1768,7 +1770,7 @@ export class PageCmdChronBeaverCage {
                                     <li>The first four days of the operation; the enemy contact consisted of sniper and harassing fire
                                         in the vicinity of Landing Zone Oriole and Thrush and objectives 11, 12, and 13 on Red Beach.
                                         Numerous tunnels and spider traps were uncovered and destroyed in the vacinity of Red Beach (BT
-                                        3037). An estimated [...] of rice was discovered in the vicinity of LZ Oriole and Thrush, rice
+                                        3037). An estimated <code>[...]</code> of rice was discovered in the vicinity of LZ Oriole and Thrush, rice
                                 was picked up and redistributed by Popular Forces.</li>
                                     <li>Search and Destroy operations in the vicinity of Landing Zone Cardinal were more active than
                                         those reported for Landing Zone Oriole and Thrush. An estimated VC/NVA company was observed in
@@ -2458,7 +2460,7 @@ export class PageCmdChronBeaverCage {
                                                     <h5>042325</h5>
                                                     <p>Co D reports all KIA extracted from Battle Zone to friendly lines. One M-60MG
                                                         with firing mechanism removed, one .45 Cal pistol and one M-16 rifle lost in
-                                                        action. Total casualties: Friendly 11 KIA; 20 WIAE; 6[?] WIANE. Enemy Casualties
+                                                        action. Total casualties: Friendly 11 KIA; 20 WIAE; 6<code>[?]</code> WIANE. Enemy Casualties
                                                 - Unknown.</p>
                                                 </ion-label>
                                             </ion-item>
@@ -2664,7 +2666,7 @@ export class PageCmdChronBeaverCage {
                                             <ion-item>
                                                 <ion-label text-wrap>
                                                     <h5>081102</h5>
-                                                    <p>Co D receiving mortar fire. Co B 81's moving into [...] to assist Co C. Mortars
+                                                    <p>Co D receiving mortar fire. Co B 81's moving into <code>[...]</code> to assist Co C. Mortars
                                                 located by recon elements at 032392. Co D reports 3 WIANE, non serious.</p>
                                                 </ion-label>
                                             </ion-item>
@@ -2795,7 +2797,7 @@ export class PageCmdChronBeaverCage {
                                             <ion-item>
                                                 <ion-label text-wrap>
                                                     <h5>100740</h5>
-                                                    <p>Bravo Co receiving SAF and automatic wpns fire from Hill 110 a[...] 033386.</p>
+                                                    <p>Bravo Co receiving SAF and automatic wpns fire from Hill 110 a<code>[...]</code> 033386.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
@@ -3211,7 +3213,7 @@ export class PageCmdChronBeaverCage {
                                         to waterbornse elementslanded over the beach and helicopterborne elements landed abnormally deep
                                         inland intensified the problems of control and at times exceeded the command and capabilities
                                         of the BLT. In effect, two separate operations resulted. The use of a BLT as a subordinate command
-                                        where major support units are not fragmented to task[...] organizations unnecessarily burdens
+                                        where major support units are not fragmented to task<code>[...]</code> organizations unnecessarily burdens
                                         the BLT with the problems of providing logistical support and security for numerous elements
                                         of the BLT, as well as causing serious distractions from the essential task of directing the
                                         Infantry Battalion. Briefings particularly with regard to overall missions and general plan were
@@ -3348,7 +3350,7 @@ export class PageCmdChronBeaverCage {
                                                 of communications. Weather and terrain were generally favorable to good voice communications
                                         and consequent communication was reliable throughout the two week deployment.</li>
                                             <li>Post operation lim!ted technical inspection of radios and telephones disclosed no equipment
-                                                faiures or malfunctions. However loss and [..] of radio accessories has dropped the availability
+                                                faiures or malfunctions. However loss and <code>[...]</code> of radio accessories has dropped the availability
                                         of PRC-25 radios to a critical low.</li>
                                             <li>From the time that the BLT embarked on Okinawa through the end of Operation Beaver Cage,
                                                 situations arose whioh, as they compounded, threatened the maintenance of adequate communications
@@ -3417,7 +3419,7 @@ export class PageCmdChronBeaverCage {
                                     </li>
                                             <li>There were occasions when units requesting resupply experienced difficulty in determining
                                                 exact requirements dut to the changing nature of the tactical situation. Extreme care,
-                                                forethought and screening must be taken by the requesting [...] to avoid receiving burdensome
+                                                forethought and screening must be taken by the requesting <code>[...]</code> to avoid receiving burdensome
                                         excess ammunition or other supplies.</li>
                                             <li>Companies submiting resupply request during the evening prior to delivery the following
                                                 day were supplied on a "fill or kill" basis. This made the resupply chain function smoother

@@ -23,6 +23,11 @@
 
 @import "~prismjs/themes/prism-okaidia.css";
 
+ion-content {
+  -webkit-user-select: text;
+  user-select: text;
+}
+
 /*
   The CSS Variables below can be used to theme your app.
   For more info on CSS variables check out:
@@ -199,3 +204,17 @@ ion-thumbnail {
   height: var(--size);
 }
 
+/* ******************************************************* */
+/* PRINT ONLY STYLES                                       */
+/* ******************************************************* */
+@media print {
+
+  ion-tab-bar {
+    display: none;
+  }
+
+  ion-menu {
+    display:none;
+  }
+
+}

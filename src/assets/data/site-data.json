@@ -777,6 +777,15 @@
       ]
     },
     {
+      "id": "intellij-idea-cheat-sheet",
+      "title": "IntelliJ IDEA cheat sheet",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-intellij.svg",
+      "datePublished": "2017/06/22",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "use-spring-for-stardog-in-a-spring-boot-application",
       "title": "Use Spring for Stardog in a Spring Boot application",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stardog.svg",

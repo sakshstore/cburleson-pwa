@@ -91,6 +91,7 @@ export namespace Components {
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
+  interface PageIntellijIdeaCheatSheet {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
@@ -602,6 +603,12 @@ declare global {
   var HTMLPageInstallOracleJava8OnUbuntuElement: {
     prototype: HTMLPageInstallOracleJava8OnUbuntuElement;
     new (): HTMLPageInstallOracleJava8OnUbuntuElement;
+  };
+
+  interface HTMLPageIntellijIdeaCheatSheetElement extends Components.PageIntellijIdeaCheatSheet, HTMLStencilElement {}
+  var HTMLPageIntellijIdeaCheatSheetElement: {
+    prototype: HTMLPageIntellijIdeaCheatSheetElement;
+    new (): HTMLPageIntellijIdeaCheatSheetElement;
   };
 
   interface HTMLPageIsolateAPolygroupInZbrushElement extends Components.PageIsolateAPolygroupInZbrush, HTMLStencilElement {}
@@ -1132,6 +1139,7 @@ declare global {
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
+    'page-intellij-idea-cheat-sheet': HTMLPageIntellijIdeaCheatSheetElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
@@ -1293,6 +1301,7 @@ declare namespace LocalJSX {
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
+  interface PageIntellijIdeaCheatSheet {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
@@ -1443,6 +1452,7 @@ declare namespace LocalJSX {
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
+    'page-intellij-idea-cheat-sheet': PageIntellijIdeaCheatSheet;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-killing-kittens': PageKillingKittens;
     'page-ldap-error-codes': PageLdapErrorCodes;
@@ -1600,6 +1610,7 @@ declare module "@stencil/core" {
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
+      'page-intellij-idea-cheat-sheet': LocalJSX.PageIntellijIdeaCheatSheet & JSXBase.HTMLAttributes<HTMLPageIntellijIdeaCheatSheetElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;

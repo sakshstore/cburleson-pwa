@@ -137,7 +137,7 @@ export class AppRoot {
     this.pageData.pages.map((item) => {
       if(item.isMenu) {
        pages.push(
-        <ion-menu-toggle autoHide={false}>
+        <ion-menu-toggle autoHide={false} id="primaryNav">
           <ion-item href={'/' + item.slug}>
             <ion-icon slot="start" name={item.icon}></ion-icon>
             <ion-label>{item.title}</ion-label>

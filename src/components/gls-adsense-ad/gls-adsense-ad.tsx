@@ -11,20 +11,9 @@ export class GlsAdsenseAd {
 
     adsbygoogle:any;
 
-    // Indicate that name should be a public property on the component
-    // @Prop() name: string;
-
-    //componentWillRender() {
-        //console.log('****** componentWillRender()');
-        //(this.adsbygoogle = window.adsbygoogle || []).push({});
-    //}
-
-    
     componentDidRender() {
-        // console.log('****** componentDidRender()');
         (this.adsbygoogle = window.adsbygoogle || []).push({});
     }
-    
 
     render() {
         return (
