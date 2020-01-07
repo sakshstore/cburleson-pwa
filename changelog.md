@@ -1,8 +1,18 @@
 # Changelog
 All notable changes to this project will be documented in this file.
 
-The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
-and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.4.1] - 2020-01-07
+
+- **Added** pages from legacy WordPress blog:
+    - [/how-to-use-wcm-categories-from-query-parameter-for-pzn](https://codyburleson.com/how-to-use-wcm-categories-from-query-parameter-for-pzn)
+    - [/work-life-balance-is-overrated](https://codyburleson.com/work-life-balance-is-overrated)
+    - [/meet-iife-the-quintessential-javascript-closure](https://codyburleson.com/meet-iife-the-quintessential-javascript-closure)
+    - [/logging-through-websphere-portal-from-java-and-jsps](https://codyburleson.com/logging-through-websphere-portal-from-java-and-jsps)
+- **Modified** The Cage photo pages (added new photographs):
+    - [/photos/kevin-brooks](https://codyburleson.com/kevin-brooks)
+    - [/photos/james-haight](https://codyburleson.com/james-haight)
 
 ## [1.4.0] - 2020-01-06
 

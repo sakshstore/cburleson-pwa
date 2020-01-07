@@ -55,8 +55,8 @@ export class PageBlog {
 
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
-    if(debug){
-      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o',event.detail.data);
+    if (debug) {
+      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
       this.excludeTopics = event.detail.data;
@@ -101,9 +101,9 @@ export class PageBlog {
     return topicString;
   }
 
-  toggleSearch(){
-    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
-       this.el.querySelector("#searchbar").classList.remove('hidden');
+  toggleSearch() {
+    if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+      this.el.querySelector("#searchbar").classList.remove('hidden');
     } else {
       this.el.querySelector("#searchbar").classList.add('hidden');
     }
@@ -126,30 +126,42 @@ export class PageBlog {
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
-        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
+        <gls-gcse-searchbox-only id="searchbar" class="hidden" />
       </ion-header>,
-    
+
+
       <ion-content class="ion-padding">
 
-            <p>Click the control at top-right to filter by topics.</p>
+        <ion-grid>
+          <ion-row>
+            <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+              <p>Click the control at top-right to filter by topics.</p>
 
-            <ion-list>
-              {this.data.content.map((item) =>
-                <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
-                  <ion-thumbnail slot="start">
-                    <ion-img src={item.thumbnail} />
-                  </ion-thumbnail>
-                  <ion-label text-wrap>
-                    {item.title}
-                    <p innerHTML={item.teaser}></p>
-                    <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
-                    </em></p>
-                  </ion-label>
-                </ion-item>
-              )}
-            </ion-list>
+              <ion-list>
+                {this.data.content.map((item) =>
+                  <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
+                    <ion-thumbnail slot="start">
+                      <ion-img src={item.thumbnail} />
+                    </ion-thumbnail>
+                    <ion-label text-wrap>
+                      {item.title}
+                      <p innerHTML={item.teaser}></p>
+                      <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
+                      </em></p>
+                    </ion-label>
+                  </ion-item>
+                )}
+              </ion-list>
 
-          </ion-content>
-          ];
-        }
-      }
+            </ion-col>
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+              <gls-adsense-ad />
+            </ion-col>
+          </ion-row>
+        </ion-grid>
+
+      </ion-content>
+
+    ];
+  }
+}

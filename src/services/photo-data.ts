@@ -1,5 +1,7 @@
 import { EnvironmentConfigService } from '../services/environment/environment-config.service';
+
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+const SITE_VERSION: string = EnvironmentConfigService.getInstance().get('siteVersion');
 
 class PhotoDataService {
 
@@ -19,7 +21,7 @@ class PhotoDataService {
         if (this.data && this.data.id === name) {
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/photos-' + name + '.json');
+            const rsp = await fetch('/assets/data/photos-' + name + '.json?v=' + SITE_VERSION);
             const json = await rsp.json();
             return this.processData(json);
         }

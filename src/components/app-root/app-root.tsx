@@ -76,6 +76,9 @@ export class AppRoot {
         <ion-route-redirect from="/" to='/blog' />
 
         <ion-route-redirect from="/display/blog/2013/01/05/How+to+Shrink+a+Windows+VM+on+VMWare+Fusion+for+Mac" to='/shrink-windows-vm-on-vmware-fusion-for-mac' />
+        <ion-route-redirect from="/2013/07/20/mapping-to-a-view-in-spring-with-no-controller" to='/mapping-to-a-view-in-spring-when-no-controller-logic-is-required' />
+        
+       
         <ion-route-redirect from="/how-to-rig-a-mesh-with-zspheres-in-zbrush/" to='/rig-a-mesh-with-zspheres-in-zbrush' />
         <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
 
@@ -119,7 +122,6 @@ export class AppRoot {
           <ion-route url="/vietnam-1967-amphibious-combat" component="tab-books">
             <ion-route component="page-vietnam-1967-amphibious-combat"></ion-route>
           </ion-route>
-
 
           {blogPostRoutes}
 

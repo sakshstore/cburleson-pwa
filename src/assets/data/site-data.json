@@ -766,6 +766,15 @@
       ]
     },
     {
+      "id": "how-to-use-wcm-categories-from-query-parameter-for-pzn",
+      "title": "How to use WCM categories from query parameter for personalization",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2017/07/13",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "7-quintessential-brushes-for-zbrush-beginners",
       "title": "7 Quintessential brushes for ZBrush beginners",
       "teaser": "Here are seven of the most important ZBrush brushes you’ll ever use. Begin your practice with these.",
@@ -966,6 +975,15 @@
       ]
     },
     {
+      "id": "meet-iife-the-quintessential-javascript-closure",
+      "title": "Meet IIFE - the quintessential JavaScript closure",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
+      "datePublished": "2014/10/23",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "eclipse-tip-format-source-code-on-save",
       "title": "Eclipse tip - format source code on save",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
@@ -1119,6 +1137,15 @@
       ]
     },
     {
+      "id": "work-life-balance-is-overrated",
+      "title": "Work-life balance is overrated",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2013/01/13",
+      "topics": [
+        "Uncategorized"
+      ]
+    },
+    {
       "id": "resolving-404-errors-accessing-wcm-content-through-poc-servlet",
       "title": "Resolving 404 errors accessing WCM content through POC Servlet",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1221,6 +1248,15 @@
       "title": "Access the WAS console from WebSphere Portal Server",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2012/08/08",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "logging-through-websphere-portal-from-java-and-jsps",
+      "title": "Logging through WebSphere Portal from Java and JSPs",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2012/07/31",
       "topics": [
         "Software Dev"
       ]

@@ -88,6 +88,7 @@ export namespace Components {
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
+  interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
@@ -100,9 +101,11 @@ export namespace Components {
   interface PageLifeEvents {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
+  interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMeetIifeTheQuintessentialJavascriptClosure {}
   interface PageMemoriesOfMomma1 {}
   interface PageMemoriesOfMomma2 {}
   interface PageMemoriesOfMomma3 {}
@@ -167,6 +170,7 @@ export namespace Components {
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
   interface PageWeldMultipleSubtoolsInZbrush {}
+  interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
   interface PageZbrushResourcesOnline {}
@@ -589,6 +593,12 @@ declare global {
     new (): HTMLPageHowToUseLiveBooleanInZbrushElement;
   };
 
+  interface HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement extends Components.PageHowToUseWcmCategoriesFromQueryParameterForPzn, HTMLStencilElement {}
+  var HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement: {
+    prototype: HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement;
+    new (): HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement;
+  };
+
   interface HTMLPageIDareYouToTouchHerElement extends Components.PageIDareYouToTouchHer, HTMLStencilElement {}
   var HTMLPageIDareYouToTouchHerElement: {
     prototype: HTMLPageIDareYouToTouchHerElement;
@@ -661,6 +671,12 @@ declare global {
     new (): HTMLPageListIbmDb2CommandsElement;
   };
 
+  interface HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement extends Components.PageLoggingThroughWebspherePortalFromJavaAndJsps, HTMLStencilElement {}
+  var HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement: {
+    prototype: HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
+    new (): HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
+  };
+
   interface HTMLPageLoggingWithSpringBootElement extends Components.PageLoggingWithSpringBoot, HTMLStencilElement {}
   var HTMLPageLoggingWithSpringBootElement: {
     prototype: HTMLPageLoggingWithSpringBootElement;
@@ -677,6 +693,12 @@ declare global {
   var HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement: {
     prototype: HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     new (): HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
+  };
+
+  interface HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement extends Components.PageMeetIifeTheQuintessentialJavascriptClosure, HTMLStencilElement {}
+  var HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement: {
+    prototype: HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
+    new (): HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
   };
 
   interface HTMLPageMemoriesOfMomma1Element extends Components.PageMemoriesOfMomma1, HTMLStencilElement {}
@@ -1063,6 +1085,12 @@ declare global {
     new (): HTMLPageWeldMultipleSubtoolsInZbrushElement;
   };
 
+  interface HTMLPageWorkLifeBalanceIsOverratedElement extends Components.PageWorkLifeBalanceIsOverrated, HTMLStencilElement {}
+  var HTMLPageWorkLifeBalanceIsOverratedElement: {
+    prototype: HTMLPageWorkLifeBalanceIsOverratedElement;
+    new (): HTMLPageWorkLifeBalanceIsOverratedElement;
+  };
+
   interface HTMLPageXmlaccessSamplesElement extends Components.PageXmlaccessSamples, HTMLStencilElement {}
   var HTMLPageXmlaccessSamplesElement: {
     prototype: HTMLPageXmlaccessSamplesElement;
@@ -1150,6 +1178,7 @@ declare global {
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
+    'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement;
     'page-i-dare-you-to-touch-her': HTMLPageIDareYouToTouchHerElement;
     'page-identifying-large-objects-consuming-memory-in-java-heap': HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
@@ -1162,9 +1191,11 @@ declare global {
     'page-life-events': HTMLPageLifeEventsElement;
     'page-linux-and-unix-commands': HTMLPageLinuxAndUnixCommandsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
+    'page-logging-through-websphere-portal-from-java-and-jsps': HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
+    'page-meet-iife-the-quintessential-javascript-closure': HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
     'page-memories-of-momma-1': HTMLPageMemoriesOfMomma1Element;
     'page-memories-of-momma-2': HTMLPageMemoriesOfMomma2Element;
     'page-memories-of-momma-3': HTMLPageMemoriesOfMomma3Element;
@@ -1229,6 +1260,7 @@ declare global {
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-vs-code-cheat-sheet': HTMLPageVsCodeCheatSheetElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
+    'page-work-life-balance-is-overrated': HTMLPageWorkLifeBalanceIsOverratedElement;
     'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
     'page-zbrush-keyboard-shortcuts': HTMLPageZbrushKeyboardShortcutsElement;
     'page-zbrush-resources-online': HTMLPageZbrushResourcesOnlineElement;
@@ -1314,6 +1346,7 @@ declare namespace LocalJSX {
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
   interface PageHowToUseLiveBooleanInZbrush {}
+  interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
@@ -1326,9 +1359,11 @@ declare namespace LocalJSX {
   interface PageLifeEvents {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
+  interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
   interface PageLoggingWithSpringBoot {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMeetIifeTheQuintessentialJavascriptClosure {}
   interface PageMemoriesOfMomma1 {}
   interface PageMemoriesOfMomma2 {}
   interface PageMemoriesOfMomma3 {}
@@ -1393,6 +1428,7 @@ declare namespace LocalJSX {
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
   interface PageWeldMultipleSubtoolsInZbrush {}
+  interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
   interface PageZbrushKeyboardShortcuts {}
   interface PageZbrushResourcesOnline {}
@@ -1467,6 +1503,7 @@ declare namespace LocalJSX {
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
+    'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': PageHowToUseWcmCategoriesFromQueryParameterForPzn;
     'page-i-dare-you-to-touch-her': PageIDareYouToTouchHer;
     'page-identifying-large-objects-consuming-memory-in-java-heap': PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
@@ -1479,9 +1516,11 @@ declare namespace LocalJSX {
     'page-life-events': PageLifeEvents;
     'page-linux-and-unix-commands': PageLinuxAndUnixCommands;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
+    'page-logging-through-websphere-portal-from-java-and-jsps': PageLoggingThroughWebspherePortalFromJavaAndJsps;
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
+    'page-meet-iife-the-quintessential-javascript-closure': PageMeetIifeTheQuintessentialJavascriptClosure;
     'page-memories-of-momma-1': PageMemoriesOfMomma1;
     'page-memories-of-momma-2': PageMemoriesOfMomma2;
     'page-memories-of-momma-3': PageMemoriesOfMomma3;
@@ -1546,6 +1585,7 @@ declare namespace LocalJSX {
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-vs-code-cheat-sheet': PageVsCodeCheatSheet;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
+    'page-work-life-balance-is-overrated': PageWorkLifeBalanceIsOverrated;
     'page-xmlaccess-samples': PageXmlaccessSamples;
     'page-zbrush-keyboard-shortcuts': PageZbrushKeyboardShortcuts;
     'page-zbrush-resources-online': PageZbrushResourcesOnline;
@@ -1627,6 +1667,7 @@ declare module "@stencil/core" {
       'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
+      'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': LocalJSX.PageHowToUseWcmCategoriesFromQueryParameterForPzn & JSXBase.HTMLAttributes<HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement>;
       'page-i-dare-you-to-touch-her': LocalJSX.PageIDareYouToTouchHer & JSXBase.HTMLAttributes<HTMLPageIDareYouToTouchHerElement>;
       'page-identifying-large-objects-consuming-memory-in-java-heap': LocalJSX.PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap & JSXBase.HTMLAttributes<HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
@@ -1639,9 +1680,11 @@ declare module "@stencil/core" {
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
       'page-linux-and-unix-commands': LocalJSX.PageLinuxAndUnixCommands & JSXBase.HTMLAttributes<HTMLPageLinuxAndUnixCommandsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
+      'page-logging-through-websphere-portal-from-java-and-jsps': LocalJSX.PageLoggingThroughWebspherePortalFromJavaAndJsps & JSXBase.HTMLAttributes<HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement>;
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
+      'page-meet-iife-the-quintessential-javascript-closure': LocalJSX.PageMeetIifeTheQuintessentialJavascriptClosure & JSXBase.HTMLAttributes<HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement>;
       'page-memories-of-momma-1': LocalJSX.PageMemoriesOfMomma1 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma1Element>;
       'page-memories-of-momma-2': LocalJSX.PageMemoriesOfMomma2 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma2Element>;
       'page-memories-of-momma-3': LocalJSX.PageMemoriesOfMomma3 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma3Element>;
@@ -1706,6 +1749,7 @@ declare module "@stencil/core" {
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-vs-code-cheat-sheet': LocalJSX.PageVsCodeCheatSheet & JSXBase.HTMLAttributes<HTMLPageVsCodeCheatSheetElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
+      'page-work-life-balance-is-overrated': LocalJSX.PageWorkLifeBalanceIsOverrated & JSXBase.HTMLAttributes<HTMLPageWorkLifeBalanceIsOverratedElement>;
       'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;
       'page-zbrush-keyboard-shortcuts': LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
       'page-zbrush-resources-online': LocalJSX.PageZbrushResourcesOnline & JSXBase.HTMLAttributes<HTMLPageZbrushResourcesOnlineElement>;

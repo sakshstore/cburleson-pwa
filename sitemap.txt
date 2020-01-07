@@ -94,6 +94,7 @@ https://codyburleson.com/sparql-examples-count-all-statements
 https://codyburleson.com/sparql-examples-paging
 https://codyburleson.com/sparql-examples-date-range
 https://codyburleson.com/pink-hearts
+https://codyburleson.com/how-to-use-wcm-categories-from-query-parameter-for-pzn
 https://codyburleson.com/7-quintessential-brushes-for-zbrush-beginners
 https://codyburleson.com/intellij-idea-cheat-sheet
 https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application
@@ -114,6 +115,7 @@ https://codyburleson.com/better-error-messages-from-gulp-using-gulp-util
 https://codyburleson.com/awesome-power-of-the-link-in-linked-data
 https://codyburleson.com/unity-get-rigidbody-from-object
 https://codyburleson.com/identifying-large-objects-consuming-memory-in-java-heap
+https://codyburleson.com/meet-iife-the-quintessential-javascript-closure
 https://codyburleson.com/eclipse-tip-format-source-code-on-save
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
 https://codyburleson.com/how-to-find-large-images-and-files-in-ibm-wcm
@@ -130,6 +132,7 @@ https://codyburleson.com/how-to-check-user-access-role-in-a-websphere-portal-the
 https://codyburleson.com/xmlaccess-samples
 https://codyburleson.com/base22-consultants-creed
 https://codyburleson.com/display-user-attributes-in-a-websphere-portal-theme
+https://codyburleson.com/work-life-balance-is-overrated
 https://codyburleson.com/resolving-404-errors-accessing-wcm-content-through-poc-servlet
 https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac
 https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2
@@ -141,6 +144,7 @@ https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-par
 https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-part-1
 https://codyburleson.com/trim-fat-from-your-content
 https://codyburleson.com/access-the-was-console-from-websphere-portal-server
+https://codyburleson.com/logging-through-websphere-portal-from-java-and-jsps
 https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
 https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found

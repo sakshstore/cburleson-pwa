@@ -1,9 +1,9 @@
 {
     "id": "kevin-brooks",
     "pageTitle": "Vietnam Tour of Duty Photographs from Kevin Brooks",
-    "pageIntro": "<p>A collection of photographs from Kevin Brooks (Charlie Company, 1st Battalion / 3rd Marines) taken during his tour of duty in the Vietnam War.</p><p><em>Photographs &copy; 1967-2019 Kevin Brooks; published with permission as compliments to <a href=\"/cage\">The Cage</a>, an in-progress book project.</em></p>",
+    "pageIntro": "<p>A collection of photographs from Kevin Brooks (Charlie Company, 1st Battalion / 3rd Marines) taken during his tour of duty in the Vietnam War.</p><p><em>Photographs &copy; 2019 Kevin Brooks; published with permission as compliments to <a href=\"/cage\">The Cage</a>, an in-progress book project.</em></p>",
     "datePublished": "2019/11/05",
-    "dateModified": "2019/11/05",
+    "dateModified": "2020/01/07",
     "imagesURL": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-kevin-brooks/",
     "photos": [
         {
@@ -150,6 +150,61 @@
             "id": "imh285",
             "subtitle": "Aug 9, 1967",
             "content": "Operation Beacon Gate. Marking round right on target."
+        },
+        {
+            "id": "imh286",
+            "subtitle": "Aug 9, 1967",
+            "content": "Operation Cochise. Charlie Company, 1/3 staff meeting"
+        },
+        {
+            "id": "imh291",
+            "subtitle": "Aug 16, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley"
+        },
+        {
+            "id": "imh292",
+            "subtitle": "Aug 16, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley"
+        },
+        {
+            "id": "imh293",
+            "subtitle": "Aug 16, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley"
+        },
+        {
+            "id": "imh294",
+            "subtitle": "Aug 16, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley"
+        },
+        {
+            "id": "imh295",
+            "subtitle": "Aug 16, 1967",
+            "content": "Operation Cochise in Hiep Due Valley. USMC Phantom dropping napalm on NVA."
+        },
+        {
+            "id": "imh296",
+            "subtitle": "Aug 22, 1967",
+            "content": "Operation Cochise in Hiep Due Valley. Crossing Song Thu Bon"
+        },
+        {
+            "id": "imh297",
+            "subtitle": "Aug 22, 1967",
+            "content": "Operation Cochise in Hiep Due Valley. Crossing Song Thu Bon"
+        },
+        {
+            "id": "imh298",
+            "subtitle": "Aug 23, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley"
+        },
+        {
+            "id": "imh290",
+            "subtitle": "Aug 27, 1967",
+            "content": "Operation Cochise in Hiep Duc Valley. (Lots of facial hair because we had no water for 4 days.)"
+        },
+        {
+            "id": "imh301",
+            "subtitle": "Aug 27, 1967",
+            "content": "Operation Cochise in Hiep Due Valley. Unshaved, unwashed, unfed but still smiling after 18 day operation."
         }
     ]
 }

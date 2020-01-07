@@ -37,7 +37,7 @@ export class AppPhotoCard {
                 <ion-card-content>
                     <div innerHTML={this.item.content}></div>
                     <p><a href={hiResImagePath} class="button">View hi-res image...</a></p>
-                    <p>ID: {this.item.id}</p>
+                    {/* <p>ID: {this.item.id}</p> */}
                 </ion-card-content>
             </ion-card>
         );
