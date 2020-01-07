@@ -25,6 +25,7 @@ export namespace Components {
     'name': string;
   }
   interface AppRoot {}
+  interface AppSearch {}
   interface AppTabs {}
   interface GlsAdsenseAd {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
@@ -207,6 +208,12 @@ declare global {
   var HTMLAppRootElement: {
     prototype: HTMLAppRootElement;
     new (): HTMLAppRootElement;
+  };
+
+  interface HTMLAppSearchElement extends Components.AppSearch, HTMLStencilElement {}
+  var HTMLAppSearchElement: {
+    prototype: HTMLAppSearchElement;
+    new (): HTMLAppSearchElement;
   };
 
   interface HTMLAppTabsElement extends Components.AppTabs, HTMLStencilElement {}
@@ -1073,6 +1080,7 @@ declare global {
     'app-photo-card': HTMLAppPhotoCardElement;
     'app-photos': HTMLAppPhotosElement;
     'app-root': HTMLAppRootElement;
+    'app-search': HTMLAppSearchElement;
     'app-tabs': HTMLAppTabsElement;
     'gls-adsense-ad': HTMLGlsAdsenseAdElement;
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
@@ -1235,6 +1243,7 @@ declare namespace LocalJSX {
     'name'?: string;
   }
   interface AppRoot {}
+  interface AppSearch {}
   interface AppTabs {}
   interface GlsAdsenseAd {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
@@ -1386,6 +1395,7 @@ declare namespace LocalJSX {
     'app-photo-card': AppPhotoCard;
     'app-photos': AppPhotos;
     'app-root': AppRoot;
+    'app-search': AppSearch;
     'app-tabs': AppTabs;
     'gls-adsense-ad': GlsAdsenseAd;
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
@@ -1544,6 +1554,7 @@ declare module "@stencil/core" {
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
       'app-photos': LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
       'app-root': LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
+      'app-search': LocalJSX.AppSearch & JSXBase.HTMLAttributes<HTMLAppSearchElement>;
       'app-tabs': LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
       'gls-adsense-ad': LocalJSX.GlsAdsenseAd & JSXBase.HTMLAttributes<HTMLGlsAdsenseAdElement>;
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;

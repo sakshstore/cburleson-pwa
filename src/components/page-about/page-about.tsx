@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -12,11 +12,24 @@ export class PageAbout {
 
   title = 'About';
 
+  @Element() el: HTMLElement;
+
   async componentWillLoad() {
     if (debug) {
       console.log('> PageAbout.componentWillLoad');
     }
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+  }
+
+  toggleSearch(){
+    if(debug) {
+      console.log('> PageAbout > toggleSearch');
+    }
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
   }
 
   render() {
@@ -27,6 +40,15 @@ export class PageAbout {
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
           <ion-title>About</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <ion-toolbar color="medium" id="searchbar" class="hidden">
+          {/* <ion-searchbar value="mojo" placeholder="Search"></ion-searchbar> */}
+          <div class="gcse-searchbox-only"></div>
         </ion-toolbar>
       </ion-header>,
 

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.3.1] - 2020-01-06
+
+- **Added** initial test for Google Custom Search just on About page; must deploy to prod to test, unfortunately...
+
 ## [1.3.0] - 2020-01-06
 
 - **Added** pages from legacy WordPress blog:

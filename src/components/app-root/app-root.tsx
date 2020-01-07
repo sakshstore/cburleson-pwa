@@ -80,7 +80,7 @@ export class AppRoot {
         <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
 
         <ion-route component="app-tabs">
-        <ion-route url="/home" component="tab-home">
+          <ion-route url="/home" component="tab-home">
             <ion-route component="page-home"></ion-route>
           </ion-route>
           <ion-route url="/blog" component="tab-blog">
@@ -125,6 +125,7 @@ export class AppRoot {
 
         </ion-route>
 
+        <ion-route url="/search" component="app-search"/>
         <ion-route url=":any" component="app-404-page-not-found"/>
 
       </ion-router>
