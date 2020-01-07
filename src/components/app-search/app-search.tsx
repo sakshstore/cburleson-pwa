@@ -44,14 +44,12 @@ export class AppSearch {
                 <ion-grid>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-                            <h1>{this.title}</h1>
 
-                            <div class="gcse-searchresults-only"></div>
-
+                            <div><script async src="https://cse.google.com/cse.js?cx=partner-pub-7370676338719207:9067256876"></script>
+<div class="gcse-searchresults-only"></div></div>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -7,6 +7,8 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
   tag: 'page-book-review-more-than-everything',
 })
 export class PageBookReviewMoreThanEverything {
+
+  @Element() el: HTMLElement;
 
   title = 'Book review - More Than Everything by Vanessa Foster';
 
@@ -25,6 +27,15 @@ export class PageBookReviewMoreThanEverything {
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
+  toggleSearch(){
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
+
+
   render() {
     return [
       <ion-header>
@@ -33,7 +44,13 @@ export class PageBookReviewMoreThanEverything {
             <ion-back-button defaultHref="/books" />
           </ion-buttons>
           <ion-title>Books</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
+          </ion-buttons>
         </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
       </ion-header>,
 
       <ion-content class="ion-padding">

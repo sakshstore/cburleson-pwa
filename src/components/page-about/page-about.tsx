@@ -10,9 +10,9 @@ const siteVersion: string = EnvironmentConfigService.getInstance().get('siteVers
 })
 export class PageAbout {
 
-  title = 'About';
-
   @Element() el: HTMLElement;
+  
+  title = 'About';
 
   async componentWillLoad() {
     if (debug) {
@@ -22,9 +22,6 @@ export class PageAbout {
   }
 
   toggleSearch(){
-    if(debug) {
-      console.log('> PageAbout > toggleSearch');
-    }
     if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
        this.el.querySelector("#searchbar").classList.remove('hidden');
     } else {
@@ -46,10 +43,7 @@ export class PageAbout {
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
-        <ion-toolbar color="medium" id="searchbar" class="hidden">
-          {/* <ion-searchbar value="mojo" placeholder="Search"></ion-searchbar> */}
-          <div class="gcse-searchbox-only"></div>
-        </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
       </ion-header>,
 
       <ion-content class="ion-padding">
@@ -108,7 +102,7 @@ export class PageAbout {
 
         <h2 class="clear">About this site (technology)</h2>
 
-        <p>This site was developed using the <a href="https://ionicframework.com/" rel="nofollow">Ionic Framework</a> and <a href="https://stenciljs.com/" rel="nofollow">Stencil.js</a>. While the site also uses some helper libraries like <a href="https://prismjs.com/" rel="nofollow">Prismjs (for code syntax highlighting)</a>, it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the &quot;fad&quot; JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
+        <p>This site was developed using the Ionic Framework and Stencil.js. While the site also uses some helper libraries like Prismjs (for code syntax highlighting), it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the popular JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
 
         <p>Site version: {siteVersion}; for history of changes, see the <a href="https://github.com/codyburleson/cburleson-pwa/blob/master/changelog.md" rel="nofollow">changelog</a> on GitHub.</p>
 

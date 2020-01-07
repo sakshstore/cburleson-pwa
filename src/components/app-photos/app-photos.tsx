@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, Element, Prop, h } from '@stencil/core';
 import { PhotoData } from '../../services/photo-data';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
@@ -8,6 +8,8 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
     tag: 'app-photos'
 })
 export class AppPhotos {
+
+    @Element() el: any;
 
     @Prop() name: string;
 
@@ -22,6 +24,14 @@ export class AppPhotos {
         this.data = await PhotoData.load(this.name);
         document.title = this.data.pageTitle + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
+
+    toggleSearch(){
+        if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+           this.el.querySelector("#searchbar").classList.remove('hidden');
+        } else {
+          this.el.querySelector("#searchbar").classList.add('hidden');
+        }
+      }
 
     render() {
 
@@ -63,7 +73,13 @@ export class AppPhotos {
                         <ion-back-button defaultHref="/cage" />
                     </ion-buttons>
                     <ion-title>The Cage - Vietnam</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button onClick={() => this.toggleSearch()}>
+                        <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
                 </ion-toolbar>
+                <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
             </ion-header>,
 
             <ion-content>

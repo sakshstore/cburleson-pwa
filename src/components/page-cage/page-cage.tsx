@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -8,6 +8,8 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
   styleUrl: 'page-cage.css'
 })
 export class PageCage {
+
+  @Element() el: HTMLElement;
 
   title = 'The Cage';
 
@@ -141,6 +143,13 @@ export class PageCage {
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
+  toggleSearch(){
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
 
   render() {
     return [
@@ -150,7 +159,13 @@ export class PageCage {
             <ion-back-button defaultHref="/books"></ion-back-button>
           </ion-buttons>
           <ion-title>The Cage - Vietnam</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
+          </ion-buttons>
         </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
       </ion-header>,
 
       <ion-content class="ion-padding">

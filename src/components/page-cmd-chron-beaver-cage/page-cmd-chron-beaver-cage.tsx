@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -9,14 +9,24 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 })
 export class PageCmdChronBeaverCage {
 
+    @Element() el: HTMLElement;
+
     title = 'Operation Beaver Cage - Command Chronology';
 
     componentWillLoad() {
         if (debug) {
-          console.log('> PageCmdChronBeaverCage.componentWillLoad');
+            console.log('> PageCmdChronBeaverCage.componentWillLoad');
         }
         document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
-      }
+    }
+
+    toggleSearch() {
+        if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+            this.el.querySelector("#searchbar").classList.remove('hidden');
+        } else {
+            this.el.querySelector("#searchbar").classList.add('hidden');
+        }
+    }
 
     render() {
         return [
@@ -26,7 +36,13 @@ export class PageCmdChronBeaverCage {
                         <ion-back-button defaultHref="/cage" />
                     </ion-buttons>
                     <ion-title>The Cage - Vietnam</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button onClick={() => this.toggleSearch()}>
+                            <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
                 </ion-toolbar>
+                <gls-gcse-searchbox-only id="searchbar" class="hidden" />
             </ion-header>,
 
             <ion-content>
@@ -54,14 +70,14 @@ export class PageCmdChronBeaverCage {
                             </ul>
 
                             <p class="entry-meta">
-                            Last modified: February 6, 2019
+                                Last modified: February 6, 2019
                             </p>
                             <p class="entry-meta">
                                 Source:<br />
                                 COMMAND CHRONOLOGY [BLT 1/3], 01 April 1967, Box __, Folder 039, US Marine Corps History Division Vietnam War Documents Collection, Vietnam Center and Archive, Texas Tech University, <a href="https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031" target="_blank">https://www.vietnam.ttu.edu/virtualarchive/items.php?item=1201039031</a>, Accessed 22 Oct 2019.
                             </p>
 
-                            <div id="command-chronology" style={{borderTop:`1px solid #CCC`, paddingTop:`40px`}}>
+                            <div id="command-chronology" style={{ borderTop: `1px solid #CCC`, paddingTop: `40px` }}>
 
                                 <p class="text-center red"><strong>DECLASSIFIED</strong></p>
 
@@ -454,9 +470,9 @@ export class PageCmdChronBeaverCage {
                                             <h5>28 April</h5>
                                             <p>Operation Beaver Cage commenced in support of Operation Union at 0700 with the landing
                             of “C” Company at BT 186294, followed by “A” Company at BT 19<code>[8?]</code>265 by helicopter. “D”
-                            Company, with attached tanks and ontos commenced amphibious landing at BT 305361 by LVT
-                            at 0800. A/1/12 landed at Hill 29 while W/2/12 and the BLT Command Group Landed at BT
-                            186294. Search and destroy operations were conducted in each company’s TAOR with light
+                                                Company, with attached tanks and ontos commenced amphibious landing at BT 305361 by LVT
+                                                at 0800. A/1/12 landed at Hill 29 while W/2/12 and the BLT Command Group Landed at BT
+                                                186294. Search and destroy operations were conducted in each company’s TAOR with light
                     resistance encountered. No friendly casualties were sustained while 5 VCS were captured.</p>
                                         </ion-label>
                                     </ion-item>
@@ -486,8 +502,8 @@ export class PageCmdChronBeaverCage {
                                             <p>Local search and destroy operations conducted by all companies. “A” Company spotted 75
                             – 100 VC near BT 169240. An artillery mission on […] excellent target coverage but unknown
                             results. Groups of <code>[?]</code>0 – <code>[3?]</code>0 VC were engaged by “B” and “D” Companies in fire fights
-                            and mortar attacks with unknown results. In late afternoon “A” Company, W/2/12 and the
-                            BLT Command Group were helilifted to BT 128388 while “C” Company was helilifted to BT
+                                                and mortar attacks with unknown results. In late afternoon “A” Company, W/2/12 and the
+                                                BLT Command Group were helilifted to BT 128388 while “C” Company was helilifted to BT
                     132399. One VCS was captured, <code>[one?]</code> VC killed and one wounded.</p>
                                         </ion-label>
                                     </ion-item>
@@ -497,11 +513,11 @@ export class PageCmdChronBeaverCage {
                                             <p>Extensive search and destroy operations conducted by all companies with light contact
                             with small groups of VC throughout the day. At 1930 “C” Company, digging in at BT 098385,
                             came under heavy 82mm mortar, <code>[?]</code>7mm recoiless rifle, automatic weapons and small arms
-                            fire. 105mm and 107mm artillery fire was called in on targets at BT 166384 and BT 110374.
-                            Ancestor Flareship, Spooky Gunship, Huey Gunshis and fixed wing airstrikes called in
-                            on the same targets. The heavy fire and the advance of the VC units were effectively
-                            stopped. 4 U.S. KIA, 14 WIA and 6 WIANE were sustained during the battle while 2 VC KIA
-                            were confirmed. A thorough follow up search of the area was not conducted due to operational
+                                                fire. 105mm and 107mm artillery fire was called in on targets at BT 166384 and BT 110374.
+                                                Ancestor Flareship, Spooky Gunship, Huey Gunshis and fixed wing airstrikes called in
+                                                on the same targets. The heavy fire and the advance of the VC units were effectively
+                                                stopped. 4 U.S. KIA, 14 WIA and 6 WIANE were sustained during the battle while 2 VC KIA
+                                                were confirmed. A thorough follow up search of the area was not conducted due to operational
                         commitments assigned by higher headquarters.</p>
                                         </ion-label>
                                     </ion-item>
@@ -512,9 +528,9 @@ export class PageCmdChronBeaverCage {
                             force inserted at BT 120384 to extract Reconnaissance element and attack area of possible
                             VC mortars. Search and destroy operations were continued by all companies with little
                             contact. At 1<code>[?]</code>30 an “A” Company water patrol made contact at BT 094356 and received
-                            heavy automatic weapons and small arms fire. Artillery and HUIE Gunships were utilized
+                                                heavy automatic weapons and small arms fire. Artillery and HUIE Gunships were utilized
                             to suppress the fire and four <code>[squads?]</code> were sent to assist the water patrol.This action
-                            lasted into the late evening hours with the situation remaining unclear until the following
+                                                lasted into the late evening hours with the situation remaining unclear until the following
                     day.</p>
                                         </ion-label>
                                     </ion-item>
@@ -524,9 +540,9 @@ export class PageCmdChronBeaverCage {
                                             <p>Search and destroy mission of TAOR continued by all companies. “A” Company’s casualties
                             from the previous night were med-evaced. The final count showed 14 KIA, [8?] WIA and
                             1 WIANE. Enemy casualties were <code>[3? or 8?]</code> KIA confirmed and 6 KIA probable. “A” Company
-                            called in artillery mission on 60 to 70 VC at BT 096404 and BT 095405. Mortar and small
-                            arms fire was received during scattered fire fights. “D” Company reported extensive tunnel
-                            complexes throughout their operating area. Total casualties for the day included 11 U.S.
+                                                called in artillery mission on 60 to 70 VC at BT 096404 and BT 095405. Mortar and small
+                                                arms fire was received during scattered fire fights. “D” Company reported extensive tunnel
+                                                complexes throughout their operating area. Total casualties for the day included 11 U.S.
                         KIA, 20 WIA, 6 WIANE. Enemy casualties were unknown.</p>
                                         </ion-label>
                                     </ion-item>
@@ -584,10 +600,10 @@ export class PageCmdChronBeaverCage {
                                             <h5>10 May</h5>
                                             <p>The direction of the search and destroy sweep was reversed and proceeded to the east
                             from the north-south line through BT 0<code>[2?]</code>41. “B”, “C”, and “D” Companies came under
-                            intensive attack by mortar, automatic and small arms fire from hill 110 to the south,
-                            from the slopes to the north and trenchlines to the east. Four air strikes by fixed wing
-                            aircraft and five by Klondike Gunships against various VC emplacements, along with coordinated
-                            attacks by the Companies effectively silenced enemy opposition. U. S. casualties were
+                                                intensive attack by mortar, automatic and small arms fire from hill 110 to the south,
+                                                from the slopes to the north and trenchlines to the east. Four air strikes by fixed wing
+                                                aircraft and five by Klondike Gunships against various VC emplacements, along with coordinated
+                                                attacks by the Companies effectively silenced enemy opposition. U. S. casualties were
                             22 KIA and 8<code>[8?]</code> WIA. Enemy casualties were 181 (KIA confirmed), 136 KIA (probable),
                     and 66 VC prisoners and detainees.</p>
                                         </ion-label>
@@ -1236,9 +1252,9 @@ export class PageCmdChronBeaverCage {
                                                     <li>(7) AOA for operation is the land area contained within a ten nautical mile arc
                                                 centered on Grid Coordinates 299379, <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-1.pdf">AMS
                                                     Series L7014, Sheet 6640I</a>. The seaward extension of the AOA is contained
-                                                        in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
-                                                        and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
-                                                        feet mean sea level and tunnels for the passage of civil air traffic will be
+                                                            in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
+                                                            and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
+                                                            feet mean sea level and tunnels for the passage of civil air traffic will be
                                                 promulgated by NOTAM as directed by COMUSMAVC.</li>
                                                     <li>(8) Fire support coordination IAW reference (c) and as modified below:</li>
                                                     <li>(9) Code name of Operation is “BEAVER CAGE”</li>

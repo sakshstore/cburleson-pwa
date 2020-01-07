@@ -101,6 +101,14 @@ export class PageBlog {
     return topicString;
   }
 
+  toggleSearch(){
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
+
   render() {
     return [
       <ion-header>
@@ -113,13 +121,12 @@ export class PageBlog {
             <ion-button onClick={() => this.presentFilter()}>
               <ion-icon slot="icon-only" name="options"></ion-icon>
             </ion-button>
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
           </ion-buttons>
         </ion-toolbar>
-        {/* 
-        <ion-toolbar color="primary" class="search-form">
-        <script async src='https://cse.google.com/cse.js?cx=partner-pub-7370676338719207:9067256876'></script><div class="gcse-searchbox-only"></div>
-        </ion-toolbar>
-        */}
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
       </ion-header>,
     
       <ion-content class="ion-padding">

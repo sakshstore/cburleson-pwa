@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -7,6 +7,8 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
   tag: 'page-ray-kelley-silver-star'
 })
 export class PageRayKelleySilverStar {
+
+  @Element() el: HTMLElement;
 
   title = 'Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War';
 
@@ -17,6 +19,14 @@ export class PageRayKelleySilverStar {
     document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
   }
 
+  toggleSearch(){
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
+
   render() {
     return [
       <ion-header>
@@ -25,7 +35,13 @@ export class PageRayKelleySilverStar {
             <ion-back-button defaultHref="/cage" />
           </ion-buttons>
           <ion-title>The Cage - Vietnam</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
+          </ion-buttons>
         </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
       </ion-header>,
 
       <ion-content class="ion-padding">

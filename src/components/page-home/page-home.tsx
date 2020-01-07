@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 // import { BlogData } from '../../services/blog-data';
 
@@ -6,129 +6,145 @@ import { EnvironmentConfigService } from '../../services/environment/environment
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
-    tag: 'page-home',
+  tag: 'page-home',
 })
 export class PageHome {
 
-    title = 'Home';
+  @Element() el: HTMLElement;
 
-    // header for this individual item by id...
-    header: any;
+  title = 'Home';
 
-    async componentWillLoad() {
-        if (debug) {
-            console.log('> AppHome.componentWillLoad');
-        }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        //let id = document.location.pathname.substr(1);
-        //this.header = BlogData.getPostHeaderById(id);
+  // header for this individual item by id...
+  header: any;
 
-        // set document title for browser / tab / bookmark
-        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+  async componentWillLoad() {
+    if (debug) {
+      console.log('> AppHome.componentWillLoad');
     }
+    // this.data = await BlogData.load();
+    // Get the id from the URL path (slug)
+    //let id = document.location.pathname.substr(1);
+    //this.header = BlogData.getPostHeaderById(id);
 
-    render() {
-        return [
-            <ion-header>
-            <ion-toolbar color="primary">
-              <ion-buttons slot="start">
-                <ion-menu-button></ion-menu-button>
-              </ion-buttons>
-              <ion-title>{this.title}</ion-title>
-            </ion-toolbar>
-          </ion-header>,
+    // set document title for browser / tab / bookmark
+    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+  }
 
-            <ion-content class="ion-padding">
+  toggleSearch() {
+    if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+      this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
 
-                <ion-grid>
-                    <ion-row>
-                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-                            <h1>{this.title}</h1>
-                            <app-entry-meta header={this.header} />
+  render() {
+    return [
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+          </ion-buttons>
+          <ion-title>{this.title}</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar" class="hidden" />
+      </ion-header>,
 
-                            <p>Here is some test Home content.</p>
+      <ion-content class="ion-padding">
 
-
-
-                            <ion-grid>
+        <ion-grid>
           <ion-row>
-            <ion-col>
+            <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+              <h1>{this.title}</h1>
+              <app-entry-meta header={this.header} />
+
+              <p>Here is some test Home content.</p>
 
 
-              <ion-card>
-                <ion-card-header>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                  <ion-card-title>Writing</ion-card-title>
-                </ion-card-header>
 
-                <ion-card-content>
-                  ...
+              <ion-grid>
+                <ion-row>
+                  <ion-col>
+
+
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Writing</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        ...
             </ion-card-content>
-              </ion-card>
+                    </ion-card>
+
+
+                  </ion-col>
+                  <ion-col>
+
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Game Arts</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        ...
+            </ion-card-content>
+                    </ion-card>
+
+                  </ion-col>
+                  <ion-col>
+
+
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Software Dev</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        ...
+            </ion-card-content>
+                    </ion-card>
+
+
+                  </ion-col>
+                  <ion-col>
+
+                    <ion-card>
+                      <ion-card-header>
+                        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
+                        <ion-card-title>Colorado Adventures</ion-card-title>
+                      </ion-card-header>
+
+                      <ion-card-content>
+                        ...
+            </ion-card-content>
+                    </ion-card>
+
+                  </ion-col>
+                </ion-row>
+              </ion-grid>
+
+
+
 
 
             </ion-col>
-            <ion-col>
-
-              <ion-card>
-                <ion-card-header>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                  <ion-card-title>Game Arts</ion-card-title>
-                </ion-card-header>
-
-                <ion-card-content>
-                  ...
-            </ion-card-content>
-              </ion-card>
-
-            </ion-col>
-            <ion-col>
-
-
-              <ion-card>
-                <ion-card-header>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                  <ion-card-title>Software Dev</ion-card-title>
-                </ion-card-header>
-
-                <ion-card-content>
-                  ...
-            </ion-card-content>
-              </ion-card>
-
-
-            </ion-col>
-            <ion-col>
-
-              <ion-card>
-                <ion-card-header>
-                  <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-                  <ion-card-title>Colorado Adventures</ion-card-title>
-                </ion-card-header>
-
-                <ion-card-content>
-                  ...
-            </ion-card-content>
-              </ion-card>
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
             </ion-col>
           </ion-row>
         </ion-grid>
 
+      </ion-content>
 
-
-
-
-                        </ion-col>
-                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
-
-            </ion-content>
-
-        ];
-    }
+    ];
+  }
 }

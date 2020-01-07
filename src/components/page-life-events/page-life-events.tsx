@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, Element, h } from '@stencil/core';
 
 import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
 const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
@@ -7,6 +7,8 @@ const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
     tag: 'page-life-events',
 })
 export class PageLifeEvents {
+
+    @Element() el: HTMLElement;
 
     title = 'Life Events';
     datePublished = '2019/12/11';
@@ -20,6 +22,14 @@ export class PageLifeEvents {
         document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
     }
 
+    toggleSearch(){
+        if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+           this.el.querySelector("#searchbar").classList.remove('hidden');
+        } else {
+          this.el.querySelector("#searchbar").classList.add('hidden');
+        }
+      }
+
     render() {
         return [
             <ion-header>
@@ -28,7 +38,13 @@ export class PageLifeEvents {
                         <ion-back-button defaultHref="/about" />
                     </ion-buttons>
                     <ion-title>About</ion-title>
+                    <ion-buttons slot="end">
+                        <ion-button onClick={() => this.toggleSearch()}>
+                        <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                        </ion-button>
+                    </ion-buttons>
                 </ion-toolbar>
+                <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
             </ion-header>,
 
             <ion-content class="ion-padding">
