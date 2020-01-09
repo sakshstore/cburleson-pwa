@@ -21,6 +21,13 @@ export class PageCage {
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
       datePublished: "",
       dateModified: "February 6, 2019"
+    },
+    {
+      id: "/beaver-cage-union-memorial",
+      title: "Beaver Cage/Union memorial service program",
+      teaser: "A program (booklet) for the memorial service held aboard the USS Okinawa on May 16, 1967, after the operations.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-union-memorial-thumb.jpg",
+      datePublished: "1/8/2020"
     }
   ]
 
@@ -176,9 +183,13 @@ export class PageCage {
 
               <h1>{this.title}</h1>
 
-              <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during my research. These resources will remain online as companions to the forthcoming book.</p>
+              <p><strong>The Cage</strong> is a temporary working title for my work-in-progess book about the 1st Battalion, 3rd Marines in the Vietnam War (Special Landing Force Alpha). &quot;The Cage&quot; refers to Operation Beaver Cage, a key event in the story. </p>
 
               <h2>Companion Resources</h2>
+
+              <p>This page provides access to declassified documents, photographs shared by Marine veterans, and other resources discovered during my research. These resources will remain online as companions to the forthcoming book.</p>
+
+              <h3>Documents</h3>
 
               <ion-list>
                 {this.recordItems.map((item) =>

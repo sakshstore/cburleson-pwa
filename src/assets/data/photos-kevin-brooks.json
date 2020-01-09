@@ -3,7 +3,7 @@
     "pageTitle": "Vietnam Tour of Duty Photographs from Kevin Brooks",
     "pageIntro": "<p>A collection of photographs from Kevin Brooks (Charlie Company, 1st Battalion / 3rd Marines) taken during his tour of duty in the Vietnam War.</p><p><em>Photographs &copy; 2019 Kevin Brooks; published with permission as compliments to <a href=\"/cage\">The Cage</a>, an in-progress book project.</em></p>",
     "datePublished": "2019/11/05",
-    "dateModified": "2020/01/07",
+    "dateModified": "2020/01/08",
     "imagesURL": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-kevin-brooks/",
     "photos": [
         {
@@ -154,7 +154,7 @@
         {
             "id": "imh286",
             "subtitle": "Aug 9, 1967",
-            "content": "Operation Cochise. Charlie Company, 1/3 staff meeting"
+            "content": "Operation Beacon Gate. Charlie Company, 1/3 staff meeting"
         },
         {
             "id": "imh291",
@@ -205,6 +205,46 @@
             "id": "imh301",
             "subtitle": "Aug 27, 1967",
             "content": "Operation Cochise in Hiep Due Valley. Unshaved, unwashed, unfed but still smiling after 18 day operation."
+        },
+        {
+            "id": "imh302",
+            "subtitle": "Sept 2, 1967",
+            "content": "Operation Beacon Point. Church near Street Without Joy."
+        },
+        {
+            "id": "imh303",
+            "subtitle": "Sept. 5, 1967",
+            "content": "Operation Beacon Point. Moving W across open desert with 1st monsoon of season approaching."
+        },
+        {
+            "id": "imh304",
+            "subtitle": "Sept 5, 1967",
+            "content": "Operation Beacon Point. Crossing desert but looking E towards ocean, away from approaching monsoon."
+        },
+        {
+            "id": "imh305",
+            "subtitle": "Sept 5, 1967",
+            "content": "Operation Beacon Point. Charlie Company CP taking a break. Cpl. Steve Fanter, Capt. Gerry Reczek, CO, Cpl. French, 1st Lt. Bill Neuss, XO."
+        },
+        {
+            "id": "imh306",
+            "subtitle": "Sept 5, 1967",
+            "content": "Operation Beacon Point. Looking back E at village burning after artillery strike."
+        },
+        {
+            "id": "imh307",
+            "subtitle": "Sept. 8, 1967",
+            "content": "Operation Fremont (providing security for national elections). Cpl. Roseboro (arty radio operator), 2nd Lt Kevin Brooks, arty FO."
+        },
+        {
+            "id": "imh309",
+            "subtitle": "Sept. 9, 1967",
+            "content": "Charlie Company returning temporarily to USS Duluth (LPD-6) because seas were too rough to climb nets onto USS Okinawa (LPH-3)"
+        },
+        {
+            "id": "imh310",
+            "subtitle": "Sept. 9, 1967",
+            "content": "USS Duluth (LPD-6) flight deck"
         }
     ]
 }

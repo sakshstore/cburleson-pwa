@@ -775,6 +775,15 @@
       ]
     },
     {
+      "id": "show-item-namesin-ibm-wcm-authoring",
+      "title": "Show item names instead of display titles in the IBM WCM authoring UI",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2017/07/13",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "7-quintessential-brushes-for-zbrush-beginners",
       "title": "7 Quintessential brushes for ZBrush beginners",
       "teaser": "Here are seven of the most important ZBrush brushes you’ll ever use. Begin your practice with these.",
@@ -933,6 +942,15 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-angular.svg",
       "datePublished": "2015/11/16",
       "dateModified": "2018/07/26",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "new-web-developer-toolkit-for-ibm-digital-experience",
+      "title": "New Web Developer Toolkit for IBM Digital Experience",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2015/10/05",
       "topics": [
         "Software Dev"
       ]
@@ -1262,6 +1280,15 @@
       ]
     },
     {
+      "id": "how-to-tail-websphere-portal-log-files-in-microsoft-windows",
+      "title": "How to tail WebSphere Portal log files in Microsoft Windows",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2012/01/25",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "user-impersonation-programming-in-websphere-portal",
       "title": "User impersonation programming in WebSphere Portal",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1285,6 +1312,15 @@
       "title": "ClassNotFound does not always mean class not found",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
       "datePublished": "2011/02/06",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "introduction-to-the-semantic-web-vision-and-technologies",
+      "title": "Introduction to the Semantic Web vision and technologies",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
+      "datePublished": "2010/09/13",
       "topics": [
         "Software Dev"
       ]
@@ -1334,6 +1370,15 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-ibm.svg",
       "datePublished": "2009/03/29",
       "dateModified": "2019/11/22",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "java-system-properties",
+      "title": "Java system properties",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2008/10/29",
       "topics": [
         "Software Dev"
       ]

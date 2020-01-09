@@ -3,6 +3,19 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.2] - 2020-01-08
+
+- **Added** New content: [Beaver Cage/Union memorial service program](https://codyburleson.com/beaver-cage-union-memorial)
+- **Added** Pages from legacy WordPress blog:
+    - [/java-system-properties](https://codyburleson.com/java-system-properties)
+    - [/introduction-to-the-semantic-web-vision-and-technologies](https://codyburleson.com/introduction-to-the-semantic-web-vision-and-technologies)
+    - [/show-item-namesin-ibm-wcm-authoring](https://codyburleson.com/show-item-namesin-ibm-wcm-authoring)
+    - [/new-web-developer-toolkit-for-ibm-digital-experience](https://codyburleson.com/new-web-developer-toolkit-for-ibm-digital-experience)
+    - [/how-to-tail-websphere-portal-log-files-in-microsoft-windows](https://codyburleson.com/how-to-tail-websphere-portal-log-files-in-microsoft-windows)
+- **Modified**
+    - [/life-events](https://codyburleson.com/life-events) with new content.
+    - [/photos/kevin-brooks](https://codyburleson.com/kevin-brooks) to fix one text error and add newly received photos
+
 ## [1.4.1] - 2020-01-07
 
 - **Added** pages from legacy WordPress blog:

@@ -101,6 +101,9 @@ export class AppRoot {
           <ion-route url="/beaver-cage-command-chron" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>
           </ion-route>
+          <ion-route url="/beaver-cage-union-memorial" component="tab-books">
+            <ion-route component="page-beaver-cage-union-memorial"></ion-route>
+          </ion-route>
           <ion-route url="/cage" component="tab-books">
             <ion-route component="page-cage"></ion-route>
           </ion-route>

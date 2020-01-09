@@ -15,6 +15,7 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     siteMapText += 'https://codyburleson.com/about\r\n';
     siteMapText += 'https://codyburleson.com/about/life-events\r\n';
     siteMapText += 'https://codyburleson.com/beaver-cage-command-chron\r\n';
+    siteMapText += 'https://codyburleson.com/beaver-cage-union-memorial\r\n';
     siteMapText += 'https://codyburleson.com/cage\r\n';
     siteMapText += 'https://codyburleson.com/book-review-more-than-everything-by-vanessa-foster\r\n';
     siteMapText += 'https://codyburleson.com/d-1-3-weapons-platoon\r\n';
@@ -32,7 +33,7 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     siteMapText += 'https://codyburleson.com/photos/ray-kelley\r\n';
     siteMapText += 'https://codyburleson.com/photos/stanley-hall\r\n';
 
-    let count = 22;
+    let count = 23;
     
     siteData.content.forEach((item) => {
         siteMapText += 'https://codyburleson.com/' + item.id + '\r\n';

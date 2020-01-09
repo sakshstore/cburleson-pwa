@@ -57,12 +57,15 @@ export class PageLifeEvents {
 
                             <p class="entry-meta">Posted on <time>{new Date(this.datePublished).toDateString()}</time></p>
 
-                            <p>One of the reasons why I maintain this site is so that I can manage and share information in one central place,
-                                rather than across various social media sites. Since Facebook provides a place on the user About page for
-                                life events, I thought I'd replicate that concept here. It's mainly for my own reference, but, in case you care
-                    to know, here are some key events from my life.</p>
+                            <p>One of the reasons why I maintain this site is so that I can manage and share information in one central place, rather than across various social media sites. Since Facebook provides a place on the user About page for life events, I thought I'd replicate that concept here. It's mainly for my own reference, but, in case you care to know, here are some key events from my life.</p>
 
                             <ul>
+                                <li>
+                                    <strong>1981</strong>
+                                    <ul>
+                                        <li>Aunt Debbie (Debra Sue Baker) died.</li>
+                                    </ul>
+                                </li>
                                 <li>
                                     <strong>1989</strong>
                                     <ul>
@@ -79,12 +82,12 @@ export class PageLifeEvents {
                                 <li>
                                     <strong>1994</strong>
                                     <ul>
-                                        <li>Married Karlisa McKenney.</li>
+                                        <li>Nov 5 - Married Karlisa Anne McKenney.</li>
                                     </ul>
                                 </li>
                                 <li><strong>1995</strong>
                                     <ul>
-                                        <li>Jan 7 - Mother, Donna Nobles died at age 46.</li>
+                                        <li>Jan 7 - Mother, Donna Nobles (Donna Carol Baker) died at age 46.</li>
                                         <li>Mar 25 - Son, Caden Burleson born.</li>
                                     </ul></li>
                                 <li>
@@ -111,10 +114,16 @@ export class PageLifeEvents {
                                         <li>Started working as a Senior Managing Consultant for IBM (my former company, PwC Consulting was acquired by IBM).</li>
                                     </ul>
                                 </li>
+                                <li>2003
+                                    <ul>
+                                        <li>Oct 5 - Grandfather, Don Owen Baker, died.</li>
+                                    </ul>
+                                </li>
+
                                 <li>
                                     <strong>2004</strong>
                                     <ul>
-                                        <li>Grandmother, Mary &quot;Mom&quot; Williams died.</li>
+                                        <li>May 17 - Grandmother, Mary &quot;Mom&quot; Williams (Mary Elizabeth Muncy) died.</li>
                                     </ul>
                                 </li>
                                 <li>
@@ -122,6 +131,12 @@ export class PageLifeEvents {
                                     <ul>
                                         <li>Left IBM to start the company, Base22 (originally as Burleson Technology Group).</li>
                                     </ul>
+                                </li>
+                                <li><strong>2011</strong>
+                                    <ul>
+                                        <li>Sister, Dawn Alaina Burleson died at age 41.</li>
+                                    </ul>
+
                                 </li>
                                 <li>
                                     <strong>2012</strong>

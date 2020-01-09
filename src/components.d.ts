@@ -44,6 +44,7 @@ export namespace Components {
   interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
   interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBase22ConsultantsCreed {}
+  interface PageBeaverCageUnionMemorial {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
@@ -87,6 +88,7 @@ export namespace Components {
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
+  interface PageHowToTailWebspherePortalLogFilesInMicrosoftWindows {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
@@ -95,7 +97,9 @@ export namespace Components {
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIntellijIdeaCheatSheet {}
+  interface PageIntroductionToTheSemanticWebVisionAndTechnologies {}
   interface PageIsolateAPolygroupInZbrush {}
+  interface PageJavaSystemProperties {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
@@ -114,6 +118,7 @@ export namespace Components {
   interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageMusingOnNostalgia {}
+  interface PageNewWebDeveloperToolkitForIbmDigitalExperience {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -136,6 +141,7 @@ export namespace Components {
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageShowBothSidesOfAPlaneInZbrush {}
+  interface PageShowItemNamesinIbmWcmAuthoring {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -327,6 +333,12 @@ declare global {
   var HTMLPageBase22ConsultantsCreedElement: {
     prototype: HTMLPageBase22ConsultantsCreedElement;
     new (): HTMLPageBase22ConsultantsCreedElement;
+  };
+
+  interface HTMLPageBeaverCageUnionMemorialElement extends Components.PageBeaverCageUnionMemorial, HTMLStencilElement {}
+  var HTMLPageBeaverCageUnionMemorialElement: {
+    prototype: HTMLPageBeaverCageUnionMemorialElement;
+    new (): HTMLPageBeaverCageUnionMemorialElement;
   };
 
   interface HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement extends Components.PageBendThingsInZbrushWithTheBendCurveModifier, HTMLStencilElement {}
@@ -587,6 +599,12 @@ declare global {
     new (): HTMLPageHowToSketchWithZspheresInZbrushElement;
   };
 
+  interface HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement extends Components.PageHowToTailWebspherePortalLogFilesInMicrosoftWindows, HTMLStencilElement {}
+  var HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement: {
+    prototype: HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement;
+    new (): HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement;
+  };
+
   interface HTMLPageHowToUseLiveBooleanInZbrushElement extends Components.PageHowToUseLiveBooleanInZbrush, HTMLStencilElement {}
   var HTMLPageHowToUseLiveBooleanInZbrushElement: {
     prototype: HTMLPageHowToUseLiveBooleanInZbrushElement;
@@ -635,10 +653,22 @@ declare global {
     new (): HTMLPageIntellijIdeaCheatSheetElement;
   };
 
+  interface HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement extends Components.PageIntroductionToTheSemanticWebVisionAndTechnologies, HTMLStencilElement {}
+  var HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement: {
+    prototype: HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement;
+    new (): HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement;
+  };
+
   interface HTMLPageIsolateAPolygroupInZbrushElement extends Components.PageIsolateAPolygroupInZbrush, HTMLStencilElement {}
   var HTMLPageIsolateAPolygroupInZbrushElement: {
     prototype: HTMLPageIsolateAPolygroupInZbrushElement;
     new (): HTMLPageIsolateAPolygroupInZbrushElement;
+  };
+
+  interface HTMLPageJavaSystemPropertiesElement extends Components.PageJavaSystemProperties, HTMLStencilElement {}
+  var HTMLPageJavaSystemPropertiesElement: {
+    prototype: HTMLPageJavaSystemPropertiesElement;
+    new (): HTMLPageJavaSystemPropertiesElement;
   };
 
   interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
@@ -747,6 +777,12 @@ declare global {
   var HTMLPageMusingOnNostalgiaElement: {
     prototype: HTMLPageMusingOnNostalgiaElement;
     new (): HTMLPageMusingOnNostalgiaElement;
+  };
+
+  interface HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement extends Components.PageNewWebDeveloperToolkitForIbmDigitalExperience, HTMLStencilElement {}
+  var HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement: {
+    prototype: HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement;
+    new (): HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement;
   };
 
   interface HTMLPageNotesOnZbrushSculptrisProElement extends Components.PageNotesOnZbrushSculptrisPro, HTMLStencilElement {}
@@ -879,6 +915,12 @@ declare global {
   var HTMLPageShowBothSidesOfAPlaneInZbrushElement: {
     prototype: HTMLPageShowBothSidesOfAPlaneInZbrushElement;
     new (): HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+  };
+
+  interface HTMLPageShowItemNamesinIbmWcmAuthoringElement extends Components.PageShowItemNamesinIbmWcmAuthoring, HTMLStencilElement {}
+  var HTMLPageShowItemNamesinIbmWcmAuthoringElement: {
+    prototype: HTMLPageShowItemNamesinIbmWcmAuthoringElement;
+    new (): HTMLPageShowItemNamesinIbmWcmAuthoringElement;
   };
 
   interface HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement extends Components.PageShrinkWindowsVmOnVmwareFusionForMac, HTMLStencilElement {}
@@ -1134,6 +1176,7 @@ declare global {
     'page-avoid-tracking-ga-page-views-in-atlassian-confluence': HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
     'page-awesome-power-of-the-link-in-linked-data': HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
     'page-base22-consultants-creed': HTMLPageBase22ConsultantsCreedElement;
+    'page-beaver-cage-union-memorial': HTMLPageBeaverCageUnionMemorialElement;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     'page-binding-to-a-zsphere-armature': HTMLPageBindingToAZsphereArmatureElement;
@@ -1177,6 +1220,7 @@ declare global {
     'page-how-to-find-large-images-and-files-in-ibm-wcm': HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
+    'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement;
     'page-i-dare-you-to-touch-her': HTMLPageIDareYouToTouchHerElement;
@@ -1185,7 +1229,9 @@ declare global {
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
     'page-intellij-idea-cheat-sheet': HTMLPageIntellijIdeaCheatSheetElement;
+    'page-introduction-to-the-semantic-web-vision-and-technologies': HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
+    'page-java-system-properties': HTMLPageJavaSystemPropertiesElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
@@ -1204,6 +1250,7 @@ declare global {
     'page-memories-of-momma-6': HTMLPageMemoriesOfMomma6Element;
     'page-mirror-polygroup-on-subtool-in-zbrush': HTMLPageMirrorPolygroupOnSubtoolInZbrushElement;
     'page-musing-on-nostalgia': HTMLPageMusingOnNostalgiaElement;
+    'page-new-web-developer-toolkit-for-ibm-digital-experience': HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement;
     'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
     'page-notes-on-zbrush-slicecurve-brush': HTMLPageNotesOnZbrushSlicecurveBrushElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
@@ -1226,6 +1273,7 @@ declare global {
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
     'page-show-both-sides-of-a-plane-in-zbrush': HTMLPageShowBothSidesOfAPlaneInZbrushElement;
+    'page-show-item-namesin-ibm-wcm-authoring': HTMLPageShowItemNamesinIbmWcmAuthoringElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     'page-sparql-examples-ask': HTMLPageSparqlExamplesAskElement;
     'page-sparql-examples-construct': HTMLPageSparqlExamplesConstructElement;
@@ -1302,6 +1350,7 @@ declare namespace LocalJSX {
   interface PageAvoidTrackingGaPageViewsInAtlassianConfluence {}
   interface PageAwesomePowerOfTheLinkInLinkedData {}
   interface PageBase22ConsultantsCreed {}
+  interface PageBeaverCageUnionMemorial {}
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
@@ -1345,6 +1394,7 @@ declare namespace LocalJSX {
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToSketchWithZspheresInZbrush {}
+  interface PageHowToTailWebspherePortalLogFilesInMicrosoftWindows {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
@@ -1353,7 +1403,9 @@ declare namespace LocalJSX {
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
   interface PageIntellijIdeaCheatSheet {}
+  interface PageIntroductionToTheSemanticWebVisionAndTechnologies {}
   interface PageIsolateAPolygroupInZbrush {}
+  interface PageJavaSystemProperties {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
@@ -1372,6 +1424,7 @@ declare namespace LocalJSX {
   interface PageMemoriesOfMomma6 {}
   interface PageMirrorPolygroupOnSubtoolInZbrush {}
   interface PageMusingOnNostalgia {}
+  interface PageNewWebDeveloperToolkitForIbmDigitalExperience {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
   interface PagePhotosWeaponsPlatoon {}
@@ -1394,6 +1447,7 @@ declare namespace LocalJSX {
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageShowBothSidesOfAPlaneInZbrush {}
+  interface PageShowItemNamesinIbmWcmAuthoring {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
   interface PageSparqlExamplesAsk {}
   interface PageSparqlExamplesConstruct {}
@@ -1459,6 +1513,7 @@ declare namespace LocalJSX {
     'page-avoid-tracking-ga-page-views-in-atlassian-confluence': PageAvoidTrackingGaPageViewsInAtlassianConfluence;
     'page-awesome-power-of-the-link-in-linked-data': PageAwesomePowerOfTheLinkInLinkedData;
     'page-base22-consultants-creed': PageBase22ConsultantsCreed;
+    'page-beaver-cage-union-memorial': PageBeaverCageUnionMemorial;
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
     'page-binding-to-a-zsphere-armature': PageBindingToAZsphereArmature;
@@ -1502,6 +1557,7 @@ declare namespace LocalJSX {
     'page-how-to-find-large-images-and-files-in-ibm-wcm': PageHowToFindLargeImagesAndFilesInIbmWcm;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
+    'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': PageHowToTailWebspherePortalLogFilesInMicrosoftWindows;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': PageHowToUseWcmCategoriesFromQueryParameterForPzn;
     'page-i-dare-you-to-touch-her': PageIDareYouToTouchHer;
@@ -1510,7 +1566,9 @@ declare namespace LocalJSX {
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
     'page-intellij-idea-cheat-sheet': PageIntellijIdeaCheatSheet;
+    'page-introduction-to-the-semantic-web-vision-and-technologies': PageIntroductionToTheSemanticWebVisionAndTechnologies;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
+    'page-java-system-properties': PageJavaSystemProperties;
     'page-killing-kittens': PageKillingKittens;
     'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
@@ -1529,6 +1587,7 @@ declare namespace LocalJSX {
     'page-memories-of-momma-6': PageMemoriesOfMomma6;
     'page-mirror-polygroup-on-subtool-in-zbrush': PageMirrorPolygroupOnSubtoolInZbrush;
     'page-musing-on-nostalgia': PageMusingOnNostalgia;
+    'page-new-web-developer-toolkit-for-ibm-digital-experience': PageNewWebDeveloperToolkitForIbmDigitalExperience;
     'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
     'page-notes-on-zbrush-slicecurve-brush': PageNotesOnZbrushSlicecurveBrush;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
@@ -1551,6 +1610,7 @@ declare namespace LocalJSX {
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
     'page-show-both-sides-of-a-plane-in-zbrush': PageShowBothSidesOfAPlaneInZbrush;
+    'page-show-item-namesin-ibm-wcm-authoring': PageShowItemNamesinIbmWcmAuthoring;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
     'page-sparql-examples-ask': PageSparqlExamplesAsk;
     'page-sparql-examples-construct': PageSparqlExamplesConstruct;
@@ -1623,6 +1683,7 @@ declare module "@stencil/core" {
       'page-avoid-tracking-ga-page-views-in-atlassian-confluence': LocalJSX.PageAvoidTrackingGaPageViewsInAtlassianConfluence & JSXBase.HTMLAttributes<HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement>;
       'page-awesome-power-of-the-link-in-linked-data': LocalJSX.PageAwesomePowerOfTheLinkInLinkedData & JSXBase.HTMLAttributes<HTMLPageAwesomePowerOfTheLinkInLinkedDataElement>;
       'page-base22-consultants-creed': LocalJSX.PageBase22ConsultantsCreed & JSXBase.HTMLAttributes<HTMLPageBase22ConsultantsCreedElement>;
+      'page-beaver-cage-union-memorial': LocalJSX.PageBeaverCageUnionMemorial & JSXBase.HTMLAttributes<HTMLPageBeaverCageUnionMemorialElement>;
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
       'page-binding-to-a-zsphere-armature': LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
@@ -1666,6 +1727,7 @@ declare module "@stencil/core" {
       'page-how-to-find-large-images-and-files-in-ibm-wcm': LocalJSX.PageHowToFindLargeImagesAndFilesInIbmWcm & JSXBase.HTMLAttributes<HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement>;
       'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
+      'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': LocalJSX.PageHowToTailWebspherePortalLogFilesInMicrosoftWindows & JSXBase.HTMLAttributes<HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': LocalJSX.PageHowToUseWcmCategoriesFromQueryParameterForPzn & JSXBase.HTMLAttributes<HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement>;
       'page-i-dare-you-to-touch-her': LocalJSX.PageIDareYouToTouchHer & JSXBase.HTMLAttributes<HTMLPageIDareYouToTouchHerElement>;
@@ -1674,7 +1736,9 @@ declare module "@stencil/core" {
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
       'page-intellij-idea-cheat-sheet': LocalJSX.PageIntellijIdeaCheatSheet & JSXBase.HTMLAttributes<HTMLPageIntellijIdeaCheatSheetElement>;
+      'page-introduction-to-the-semantic-web-vision-and-technologies': LocalJSX.PageIntroductionToTheSemanticWebVisionAndTechnologies & JSXBase.HTMLAttributes<HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
+      'page-java-system-properties': LocalJSX.PageJavaSystemProperties & JSXBase.HTMLAttributes<HTMLPageJavaSystemPropertiesElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
@@ -1693,6 +1757,7 @@ declare module "@stencil/core" {
       'page-memories-of-momma-6': LocalJSX.PageMemoriesOfMomma6 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma6Element>;
       'page-mirror-polygroup-on-subtool-in-zbrush': LocalJSX.PageMirrorPolygroupOnSubtoolInZbrush & JSXBase.HTMLAttributes<HTMLPageMirrorPolygroupOnSubtoolInZbrushElement>;
       'page-musing-on-nostalgia': LocalJSX.PageMusingOnNostalgia & JSXBase.HTMLAttributes<HTMLPageMusingOnNostalgiaElement>;
+      'page-new-web-developer-toolkit-for-ibm-digital-experience': LocalJSX.PageNewWebDeveloperToolkitForIbmDigitalExperience & JSXBase.HTMLAttributes<HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement>;
       'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
       'page-notes-on-zbrush-slicecurve-brush': LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
@@ -1715,6 +1780,7 @@ declare module "@stencil/core" {
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
       'page-show-both-sides-of-a-plane-in-zbrush': LocalJSX.PageShowBothSidesOfAPlaneInZbrush & JSXBase.HTMLAttributes<HTMLPageShowBothSidesOfAPlaneInZbrushElement>;
+      'page-show-item-namesin-ibm-wcm-authoring': LocalJSX.PageShowItemNamesinIbmWcmAuthoring & JSXBase.HTMLAttributes<HTMLPageShowItemNamesinIbmWcmAuthoringElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
       'page-sparql-examples-ask': LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
       'page-sparql-examples-construct': LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;

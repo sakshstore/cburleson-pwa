@@ -4,6 +4,7 @@ https://codyburleson.com/books
 https://codyburleson.com/about
 https://codyburleson.com/about/life-events
 https://codyburleson.com/beaver-cage-command-chron
+https://codyburleson.com/beaver-cage-union-memorial
 https://codyburleson.com/cage
 https://codyburleson.com/book-review-more-than-everything-by-vanessa-foster
 https://codyburleson.com/d-1-3-weapons-platoon
@@ -95,6 +96,7 @@ https://codyburleson.com/sparql-examples-paging
 https://codyburleson.com/sparql-examples-date-range
 https://codyburleson.com/pink-hearts
 https://codyburleson.com/how-to-use-wcm-categories-from-query-parameter-for-pzn
+https://codyburleson.com/show-item-namesin-ibm-wcm-authoring
 https://codyburleson.com/7-quintessential-brushes-for-zbrush-beginners
 https://codyburleson.com/intellij-idea-cheat-sheet
 https://codyburleson.com/use-spring-for-stardog-in-a-spring-boot-application
@@ -111,6 +113,7 @@ https://codyburleson.com/index-of-item-within-angular-ngfor-loop
 https://codyburleson.com/quick-and-simple-caching-with-apache-commons-jcs
 https://codyburleson.com/i-dare-you-to-touch-her
 https://codyburleson.com/7-reasons-why-typescript-helps-you-kick-ass
+https://codyburleson.com/new-web-developer-toolkit-for-ibm-digital-experience
 https://codyburleson.com/better-error-messages-from-gulp-using-gulp-util
 https://codyburleson.com/awesome-power-of-the-link-in-linked-data
 https://codyburleson.com/unity-get-rigidbody-from-object
@@ -145,11 +148,14 @@ https://codyburleson.com/create-player-health-status-indicator-for-unity-gui-par
 https://codyburleson.com/trim-fat-from-your-content
 https://codyburleson.com/access-the-was-console-from-websphere-portal-server
 https://codyburleson.com/logging-through-websphere-portal-from-java-and-jsps
+https://codyburleson.com/how-to-tail-websphere-portal-log-files-in-microsoft-windows
 https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
 https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found
+https://codyburleson.com/introduction-to-the-semantic-web-vision-and-technologies
 https://codyburleson.com/render-the-keys-and-values-from-a-map-in-freemarker
 https://codyburleson.com/ldap-error-codes
 https://codyburleson.com/glossary-of-ldap-acronyms-and-terms
 https://codyburleson.com/are-mashups-the-new-portals-and-gadgets-the-new-portlets
 https://codyburleson.com/list-ibm-db2-commands
+https://codyburleson.com/java-system-properties
