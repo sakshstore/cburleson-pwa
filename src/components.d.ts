@@ -107,6 +107,7 @@ export namespace Components {
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
   interface PageLoggingWithSpringBoot {}
+  interface PageLonelinessAndAShovel {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMeetIifeTheQuintessentialJavascriptClosure {}
@@ -158,6 +159,11 @@ export namespace Components {
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
+  interface PageTheIaFiles001IntoTheFire {}
+  interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {}
+  interface PageTheIaFiles003DefinitionsDefined {}
+  interface PageTheIaFiles004Taxonomies {}
+  interface PageTheIaFiles005NavigationBreadthAndDepth {}
   interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -713,6 +719,12 @@ declare global {
     new (): HTMLPageLoggingWithSpringBootElement;
   };
 
+  interface HTMLPageLonelinessAndAShovelElement extends Components.PageLonelinessAndAShovel, HTMLStencilElement {}
+  var HTMLPageLonelinessAndAShovelElement: {
+    prototype: HTMLPageLonelinessAndAShovelElement;
+    new (): HTMLPageLonelinessAndAShovelElement;
+  };
+
   interface HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement extends Components.PageMakeAZbrushSpeedSculptTimelapseVideo, HTMLStencilElement {}
   var HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement: {
     prototype: HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
@@ -1019,6 +1031,36 @@ declare global {
     new (): HTMLPageTemplatePageElement;
   };
 
+  interface HTMLPageTheIaFiles001IntoTheFireElement extends Components.PageTheIaFiles001IntoTheFire, HTMLStencilElement {}
+  var HTMLPageTheIaFiles001IntoTheFireElement: {
+    prototype: HTMLPageTheIaFiles001IntoTheFireElement;
+    new (): HTMLPageTheIaFiles001IntoTheFireElement;
+  };
+
+  interface HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement extends Components.PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide, HTMLStencilElement {}
+  var HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement: {
+    prototype: HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement;
+    new (): HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement;
+  };
+
+  interface HTMLPageTheIaFiles003DefinitionsDefinedElement extends Components.PageTheIaFiles003DefinitionsDefined, HTMLStencilElement {}
+  var HTMLPageTheIaFiles003DefinitionsDefinedElement: {
+    prototype: HTMLPageTheIaFiles003DefinitionsDefinedElement;
+    new (): HTMLPageTheIaFiles003DefinitionsDefinedElement;
+  };
+
+  interface HTMLPageTheIaFiles004TaxonomiesElement extends Components.PageTheIaFiles004Taxonomies, HTMLStencilElement {}
+  var HTMLPageTheIaFiles004TaxonomiesElement: {
+    prototype: HTMLPageTheIaFiles004TaxonomiesElement;
+    new (): HTMLPageTheIaFiles004TaxonomiesElement;
+  };
+
+  interface HTMLPageTheIaFiles005NavigationBreadthAndDepthElement extends Components.PageTheIaFiles005NavigationBreadthAndDepth, HTMLStencilElement {}
+  var HTMLPageTheIaFiles005NavigationBreadthAndDepthElement: {
+    prototype: HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
+    new (): HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
+  };
+
   interface HTMLPageTrimFatFromYourContentElement extends Components.PageTrimFatFromYourContent, HTMLStencilElement {}
   var HTMLPageTrimFatFromYourContentElement: {
     prototype: HTMLPageTrimFatFromYourContentElement;
@@ -1239,6 +1281,7 @@ declare global {
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-through-websphere-portal-from-java-and-jsps': HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
     'page-logging-with-spring-boot': HTMLPageLoggingWithSpringBootElement;
+    'page-loneliness-and-a-shovel': HTMLPageLonelinessAndAShovelElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     'page-meet-iife-the-quintessential-javascript-closure': HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
@@ -1290,6 +1333,11 @@ declare global {
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
     'page-template-page': HTMLPageTemplatePageElement;
+    'page-the-ia-files-001-into-the-fire': HTMLPageTheIaFiles001IntoTheFireElement;
+    'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement;
+    'page-the-ia-files-003-definitions-defined': HTMLPageTheIaFiles003DefinitionsDefinedElement;
+    'page-the-ia-files-004-taxonomies': HTMLPageTheIaFiles004TaxonomiesElement;
+    'page-the-ia-files-005-navigation-breadth-and-depth': HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
     'page-trim-fat-from-your-content': HTMLPageTrimFatFromYourContentElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -1413,6 +1461,7 @@ declare namespace LocalJSX {
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
   interface PageLoggingWithSpringBoot {}
+  interface PageLonelinessAndAShovel {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
   interface PageMeetIifeTheQuintessentialJavascriptClosure {}
@@ -1464,6 +1513,11 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
   interface PageTemplatePage {}
+  interface PageTheIaFiles001IntoTheFire {}
+  interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {}
+  interface PageTheIaFiles003DefinitionsDefined {}
+  interface PageTheIaFiles004Taxonomies {}
+  interface PageTheIaFiles005NavigationBreadthAndDepth {}
   interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -1576,6 +1630,7 @@ declare namespace LocalJSX {
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-through-websphere-portal-from-java-and-jsps': PageLoggingThroughWebspherePortalFromJavaAndJsps;
     'page-logging-with-spring-boot': PageLoggingWithSpringBoot;
+    'page-loneliness-and-a-shovel': PageLonelinessAndAShovel;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
     'page-meet-iife-the-quintessential-javascript-closure': PageMeetIifeTheQuintessentialJavascriptClosure;
@@ -1627,6 +1682,11 @@ declare namespace LocalJSX {
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-story-structure-diagram': PageStoryStructureDiagram;
     'page-template-page': PageTemplatePage;
+    'page-the-ia-files-001-into-the-fire': PageTheIaFiles001IntoTheFire;
+    'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide;
+    'page-the-ia-files-003-definitions-defined': PageTheIaFiles003DefinitionsDefined;
+    'page-the-ia-files-004-taxonomies': PageTheIaFiles004Taxonomies;
+    'page-the-ia-files-005-navigation-breadth-and-depth': PageTheIaFiles005NavigationBreadthAndDepth;
     'page-trim-fat-from-your-content': PageTrimFatFromYourContent;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1746,6 +1806,7 @@ declare module "@stencil/core" {
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-through-websphere-portal-from-java-and-jsps': LocalJSX.PageLoggingThroughWebspherePortalFromJavaAndJsps & JSXBase.HTMLAttributes<HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement>;
       'page-logging-with-spring-boot': LocalJSX.PageLoggingWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageLoggingWithSpringBootElement>;
+      'page-loneliness-and-a-shovel': LocalJSX.PageLonelinessAndAShovel & JSXBase.HTMLAttributes<HTMLPageLonelinessAndAShovelElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
       'page-meet-iife-the-quintessential-javascript-closure': LocalJSX.PageMeetIifeTheQuintessentialJavascriptClosure & JSXBase.HTMLAttributes<HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement>;
@@ -1797,6 +1858,11 @@ declare module "@stencil/core" {
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
+      'page-the-ia-files-001-into-the-fire': LocalJSX.PageTheIaFiles001IntoTheFire & JSXBase.HTMLAttributes<HTMLPageTheIaFiles001IntoTheFireElement>;
+      'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': LocalJSX.PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide & JSXBase.HTMLAttributes<HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement>;
+      'page-the-ia-files-003-definitions-defined': LocalJSX.PageTheIaFiles003DefinitionsDefined & JSXBase.HTMLAttributes<HTMLPageTheIaFiles003DefinitionsDefinedElement>;
+      'page-the-ia-files-004-taxonomies': LocalJSX.PageTheIaFiles004Taxonomies & JSXBase.HTMLAttributes<HTMLPageTheIaFiles004TaxonomiesElement>;
+      'page-the-ia-files-005-navigation-breadth-and-depth': LocalJSX.PageTheIaFiles005NavigationBreadthAndDepth & JSXBase.HTMLAttributes<HTMLPageTheIaFiles005NavigationBreadthAndDepthElement>;
       'page-trim-fat-from-your-content': LocalJSX.PageTrimFatFromYourContent & JSXBase.HTMLAttributes<HTMLPageTrimFatFromYourContentElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;

@@ -319,7 +319,7 @@
     {
       "id": "use-micromesh-in-zbrush",
       "title": "How to use MicroMesh in ZBrush",
-      "teaser" : "A quick procedure for using MicroMesh in ZBrush.",
+      "teaser": "A quick procedure for using MicroMesh in ZBrush.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/06/03",
       "topics": [
@@ -594,6 +594,15 @@
       ]
     },
     {
+      "id": "loneliness-and-a-shovel",
+      "title": "Prompt writing - Loneliness and a shovel",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2017/10/28",
+      "topics": [
+        "Storycraft and Writing"
+      ]
+    },
+    {
       "id": "install-oracle-java-8-on-ubuntu",
       "title": "Install Oracle Java 8 on Ubuntu",
       "teaser": "How to install Oracle Java 8 on Ubuntu (in may case, Ubuntu 16.04 LTS)",
@@ -833,10 +842,10 @@
         "Software Dev"
       ]
     },
-        {
+    {
       "id": "confluence-panel-macro",
       "title": "Confluence Panel Macro",
-      "teaser":"A macro plugin I made for Atlassian Confluence that mimics a Bootstrap 3 Panel.",
+      "teaser": "A macro plugin I made for Atlassian Confluence that mimics a Bootstrap 3 Panel.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-confluence.svg",
       "datePublished": "2017/04/04",
       "topics": [
@@ -846,7 +855,7 @@
     {
       "id": "logging-with-spring-boot",
       "title": "Logging with Spring Boot",
-      "teaser":"Quick and simple tips to get your Spring Boot logs rolling.",
+      "teaser": "Quick and simple tips to get your Spring Boot logs rolling.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-spring-framework.svg",
       "datePublished": "2017/04/04",
       "topics": [
@@ -1060,6 +1069,15 @@
       ]
     },
     {
+      "id": "the-ia-files-005-navigation-breadth-and-depth",
+      "title": "The IA Files 005 - Navigation breadth and depth",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
+      "datePublished": "2013-07-07",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "script-for-rotating-unity-game-object-90-degrees",
       "title": "Script for rotating a Unity game object 90 degrees",
       "teaser": "Unity behavior script that rotates object 90 degrees when the script’s rotate function is called.",
@@ -1090,6 +1108,15 @@
       ]
     },
     {
+      "id": "the-ia-files-004-taxonomies",
+      "title": "The IA Files 004 - Taxonomies",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
+      "datePublished": "2013-03-28",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
       "id": "musing-on-nostalgia",
       "title": "Musing on nostalgia",
       "teaser": "A fond memory of my Commodore 64 and the first computer program I ever wrote.",
@@ -1104,6 +1131,15 @@
       "title": "How to define a servlet using Java annotations instead of XML",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
       "datePublished": "2013/03/23",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "the-ia-files-003-definitions-defined",
+      "title": "The IA Files 003 - Definitions, defined",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
+      "datePublished": "2013-02-22",
       "topics": [
         "Software Dev"
       ]
@@ -1150,6 +1186,24 @@
       "title": "How to display user attributes in a WebSphere Portal theme",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2013/01/22",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide",
+      "title": "The IA Files 002 - Concepts, crows, camels, and the cognitive divide",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
+      "datePublished": "2013-01-19",
+      "topics": [
+        "Software Dev"
+      ]
+    },
+    {
+      "id": "the-ia-files-001-into-the-fire",
+      "title": "The IA Files 001 - Into the fire",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
+      "datePublished": "2013-01-17",
       "topics": [
         "Software Dev"
       ]

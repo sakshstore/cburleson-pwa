@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.4.3] - 2020-01-10
+
+- **Added** Pages from legacy Wordpress blog:
+    - [/the-ia-files-001-into-the-fire](https://codyburleson.com/the-ia-files-001-into-the-fire)
+    - [/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide](https://codyburleson.com/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide)
+    - [/the-ia-files-003-definitions-defined](https://codyburleson.com/the-ia-files-003-definitions-defined)
+    - [/the-ia-files-004-taxonomies](https://codyburleson.com/the-ia-files-004-taxonomies)
+    - [/the-ia-files-005-navigation-breadth-and-depth](https://codyburleson.com/the-ia-files-005-navigation-breadth-and-depth)
+- **Modified** page - [/photos/kevin-brooks](https://codyburleson.com/kevin-brooks); added three new photos
+
 ## [1.4.2] - 2020-01-08
 
 - **Added** New content: [Beaver Cage/Union memorial service program](https://codyburleson.com/beaver-cage-union-memorial)
