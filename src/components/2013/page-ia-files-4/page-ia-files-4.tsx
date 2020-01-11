@@ -113,7 +113,7 @@ export class PageIAFiles1 {
 
                             <p>Rest assured, there <em>are</em> best practices and “rules of thumb” for building effective website navigation systems and in the next installment of the IA Files, I’ll begin to share some things my colleagues and I have learned from our experiences, so please stay tuned.</p>
 
-                            <p>Next: <a href="/the-ia-files-005-navigation-breadth-and-depth">The IA Files 005 &#8211; Navigation Breadth and Depth</a></p>
+                            <p><ion-button color="primary" routerDirection="back" href="/the-ia-files-003-definitions-defined">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" routerDirection="forward" href="/the-ia-files-005-navigation-breadth-and-depth">Next: Part 5 &gt;&gt;</ion-button></p>
 
                             <p>Notes:</p>
                             <ol>

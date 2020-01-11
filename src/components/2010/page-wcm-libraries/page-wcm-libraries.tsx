@@ -3,11 +3,10 @@ import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-
 @Component({
-    tag: 'page-introduction-to-the-semantic-web-vision-and-technologies',
+    tag: 'page-wcm-libraries-video-overview',
 })
-export class PageIntroductionToSemanticWeb {
+export class PageWcmLibraries {
 
     title = 'Blog';
 
@@ -16,7 +15,7 @@ export class PageIntroductionToSemanticWeb {
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageIntroductionToSemanticWeb.componentWillLoad');
+            console.log('> PageWcmLibraries.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
@@ -47,13 +46,11 @@ export class PageIntroductionToSemanticWeb {
                             <app-entry-meta header={this.header} />
 
 
-                            <p>A presentation I gave in March, 2006 at the IBM Technical Leadership Exchange.</p>
+                            
+		<p>A 10 minute Lunch Byte in a series designed to help you improve your skills in developing websites using IBM Workplace Web Content Management. This episode focuses on the role and capabilities of a Library in WCM.</p>
 
-<p><iframe title="Introduction to the Semantic Web - Vision and Technologies" style={{border:`1px solid #CCC`, marginBottom: `5px`, maxWidth: `100%`}} src="//www.slideshare.net/slideshow/embed_code/key/4tGuGb2jgjTlIa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowFullScreen> </iframe></p>
+        <div class="video-container"><iframe title="Lunch Byte - Understanding WCM Libraries" class="video" src="https://www.youtube.com/embed/3nrszlb2csI" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
 
-<div style={{marginBottom: `5px`}}><strong> <a title="Introduction to the Semantic Web - Vision and Technologies" href="//www.slideshare.net/CodyBurleson/introduction-to-the-semantic-web-vision-and-technologies" target="_blank" rel="noopener noreferrer">Introduction to the Semantic Web &#8211; Vision and Technologies</a> </strong> from <strong><a href="https://www.slideshare.net/CodyBurleson" target="_blank" rel="noopener noreferrer">Cody Burleson</a></strong></div>
-
-		
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

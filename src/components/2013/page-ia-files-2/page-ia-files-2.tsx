@@ -99,6 +99,9 @@ export class PageIAFiles1 {
 
                             <p>Next: <a href="/the-ia-files-003-definitions-defined/">The IA Files 003 &#8211; Definitions, Defined</a></p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/the-ia-files-001-into-the-fire">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/the-ia-files-003-definitions-defined">Next: Part 3 &gt;&gt;</ion-button></p>
+
+
                             <p>Notes:</p>
                             <ol>
                                 <li>Rand, Ayn. <a href="http://www.amazon.com/gp/product/0452010306/ref=as_li_tf_tl?ie=UTF8&amp;tag=burtecgrollc-20&amp;linkCode=as2&amp;camp=1789&amp;creative=9325&amp;creativeASIN=0452010306" rel="nofollow">Introduction to Objectivist Epistemology: Expanded Second Edition</a><span class="confluence-embedded-file-wrapper confluence-embedded-manual-size"><img src="http://www.assoc-amazon.com/e/ir?t=burtecgrollc-20&amp;l=as2&amp;o=1&amp;a=0452010306" width="1" height="1" data-image-src="http://www.assoc-amazon.com/e/ir?t=burtecgrollc-20&amp;l=as2&amp;o=1&amp;a=0452010306" /></span>, Chapter 7 – The story of the crows was said by Ayn Rand to have been originally told by a university classroom professor of psychology.</li>

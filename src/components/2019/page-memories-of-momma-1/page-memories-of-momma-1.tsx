@@ -80,7 +80,7 @@ export class PageMemoriesOfMomma1 {
 
                             <p>So, yeah - Momma was pretty, but also pretty smart.</p>
 
-                            <p><ion-button color="primary" href="/memories-of-momma-2">Next: Part 2 &gt;&gt;</ion-button></p>
+                            <p><ion-button color="primary" routerDirection="forward" href="/memories-of-momma-2">Next: Part 2 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

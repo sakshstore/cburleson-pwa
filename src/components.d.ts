@@ -159,12 +159,14 @@ export namespace Components {
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
+  interface PageStringReplaceHelperForDustJs {}
   interface PageTemplatePage {}
   interface PageTheIaFiles001IntoTheFire {}
   interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {}
   interface PageTheIaFiles003DefinitionsDefined {}
   interface PageTheIaFiles004Taxonomies {}
   interface PageTheIaFiles005NavigationBreadthAndDepth {}
+  interface PageTouchAllItemsInAWcmLibrary {}
   interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -179,9 +181,13 @@ export namespace Components {
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageUseSpringForStardogInASpringBootApplication {}
+  interface PageUserImpersonationInWebspherePortalVideoDemo {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
+  interface PageW3cLinkedDataPlatformAimsToReframeTheWeb {}
+  interface PageWcmLibrariesVideoOverview {}
+  interface PageWcmSecurityVideoOverview {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
@@ -1032,6 +1038,12 @@ declare global {
     new (): HTMLPageStoryStructureDiagramElement;
   };
 
+  interface HTMLPageStringReplaceHelperForDustJsElement extends Components.PageStringReplaceHelperForDustJs, HTMLStencilElement {}
+  var HTMLPageStringReplaceHelperForDustJsElement: {
+    prototype: HTMLPageStringReplaceHelperForDustJsElement;
+    new (): HTMLPageStringReplaceHelperForDustJsElement;
+  };
+
   interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {}
   var HTMLPageTemplatePageElement: {
     prototype: HTMLPageTemplatePageElement;
@@ -1066,6 +1078,12 @@ declare global {
   var HTMLPageTheIaFiles005NavigationBreadthAndDepthElement: {
     prototype: HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
     new (): HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
+  };
+
+  interface HTMLPageTouchAllItemsInAWcmLibraryElement extends Components.PageTouchAllItemsInAWcmLibrary, HTMLStencilElement {}
+  var HTMLPageTouchAllItemsInAWcmLibraryElement: {
+    prototype: HTMLPageTouchAllItemsInAWcmLibraryElement;
+    new (): HTMLPageTouchAllItemsInAWcmLibraryElement;
   };
 
   interface HTMLPageTrimFatFromYourContentElement extends Components.PageTrimFatFromYourContent, HTMLStencilElement {}
@@ -1152,6 +1170,12 @@ declare global {
     new (): HTMLPageUseSpringForStardogInASpringBootApplicationElement;
   };
 
+  interface HTMLPageUserImpersonationInWebspherePortalVideoDemoElement extends Components.PageUserImpersonationInWebspherePortalVideoDemo, HTMLStencilElement {}
+  var HTMLPageUserImpersonationInWebspherePortalVideoDemoElement: {
+    prototype: HTMLPageUserImpersonationInWebspherePortalVideoDemoElement;
+    new (): HTMLPageUserImpersonationInWebspherePortalVideoDemoElement;
+  };
+
   interface HTMLPageUserImpersonationProgrammingInWebspherePortalElement extends Components.PageUserImpersonationProgrammingInWebspherePortal, HTMLStencilElement {}
   var HTMLPageUserImpersonationProgrammingInWebspherePortalElement: {
     prototype: HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
@@ -1168,6 +1192,24 @@ declare global {
   var HTMLPageVsCodeCheatSheetElement: {
     prototype: HTMLPageVsCodeCheatSheetElement;
     new (): HTMLPageVsCodeCheatSheetElement;
+  };
+
+  interface HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement extends Components.PageW3cLinkedDataPlatformAimsToReframeTheWeb, HTMLStencilElement {}
+  var HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement: {
+    prototype: HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement;
+    new (): HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement;
+  };
+
+  interface HTMLPageWcmLibrariesVideoOverviewElement extends Components.PageWcmLibrariesVideoOverview, HTMLStencilElement {}
+  var HTMLPageWcmLibrariesVideoOverviewElement: {
+    prototype: HTMLPageWcmLibrariesVideoOverviewElement;
+    new (): HTMLPageWcmLibrariesVideoOverviewElement;
+  };
+
+  interface HTMLPageWcmSecurityVideoOverviewElement extends Components.PageWcmSecurityVideoOverview, HTMLStencilElement {}
+  var HTMLPageWcmSecurityVideoOverviewElement: {
+    prototype: HTMLPageWcmSecurityVideoOverviewElement;
+    new (): HTMLPageWcmSecurityVideoOverviewElement;
   };
 
   interface HTMLPageWeldMultipleSubtoolsInZbrushElement extends Components.PageWeldMultipleSubtoolsInZbrush, HTMLStencilElement {}
@@ -1340,12 +1382,14 @@ declare global {
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
     'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
+    'page-string-replace-helper-for-dust-js': HTMLPageStringReplaceHelperForDustJsElement;
     'page-template-page': HTMLPageTemplatePageElement;
     'page-the-ia-files-001-into-the-fire': HTMLPageTheIaFiles001IntoTheFireElement;
     'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement;
     'page-the-ia-files-003-definitions-defined': HTMLPageTheIaFiles003DefinitionsDefinedElement;
     'page-the-ia-files-004-taxonomies': HTMLPageTheIaFiles004TaxonomiesElement;
     'page-the-ia-files-005-navigation-breadth-and-depth': HTMLPageTheIaFiles005NavigationBreadthAndDepthElement;
+    'page-touch-all-items-in-a-wcm-library': HTMLPageTouchAllItemsInAWcmLibraryElement;
     'page-trim-fat-from-your-content': HTMLPageTrimFatFromYourContentElement;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement;
     'page-unity-get-rigidbody-from-object': HTMLPageUnityGetRigidbodyFromObjectElement;
@@ -1360,9 +1404,13 @@ declare global {
     'page-use-prism-js-in-ionic-stencil-app': HTMLPageUsePrismJsInIonicStencilAppElement;
     'page-use-spotlight-to-display-reference-images-in-zbrush': HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
     'page-use-spring-for-stardog-in-a-spring-boot-application': HTMLPageUseSpringForStardogInASpringBootApplicationElement;
+    'page-user-impersonation-in-websphere-portal-video-demo': HTMLPageUserImpersonationInWebspherePortalVideoDemoElement;
     'page-user-impersonation-programming-in-websphere-portal': HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
     'page-vietnam-1967-amphibious-combat': HTMLPageVietnam1967AmphibiousCombatElement;
     'page-vs-code-cheat-sheet': HTMLPageVsCodeCheatSheetElement;
+    'page-w3c-linked-data-platform-aims-to-reframe-the-web': HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement;
+    'page-wcm-libraries-video-overview': HTMLPageWcmLibrariesVideoOverviewElement;
+    'page-wcm-security-video-overview': HTMLPageWcmSecurityVideoOverviewElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
     'page-work-life-balance-is-overrated': HTMLPageWorkLifeBalanceIsOverratedElement;
     'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
@@ -1521,12 +1569,14 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
   interface PageStoryStructureDiagram {}
+  interface PageStringReplaceHelperForDustJs {}
   interface PageTemplatePage {}
   interface PageTheIaFiles001IntoTheFire {}
   interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {}
   interface PageTheIaFiles003DefinitionsDefined {}
   interface PageTheIaFiles004Taxonomies {}
   interface PageTheIaFiles005NavigationBreadthAndDepth {}
+  interface PageTouchAllItemsInAWcmLibrary {}
   interface PageTrimFatFromYourContent {}
   interface PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts {}
   interface PageUnityGetRigidbodyFromObject {}
@@ -1541,9 +1591,13 @@ declare namespace LocalJSX {
   interface PageUsePrismJsInIonicStencilApp {}
   interface PageUseSpotlightToDisplayReferenceImagesInZbrush {}
   interface PageUseSpringForStardogInASpringBootApplication {}
+  interface PageUserImpersonationInWebspherePortalVideoDemo {}
   interface PageUserImpersonationProgrammingInWebspherePortal {}
   interface PageVietnam1967AmphibiousCombat {}
   interface PageVsCodeCheatSheet {}
+  interface PageW3cLinkedDataPlatformAimsToReframeTheWeb {}
+  interface PageWcmLibrariesVideoOverview {}
+  interface PageWcmSecurityVideoOverview {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
@@ -1691,12 +1745,14 @@ declare namespace LocalJSX {
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
     'page-story-structure-diagram': PageStoryStructureDiagram;
+    'page-string-replace-helper-for-dust-js': PageStringReplaceHelperForDustJs;
     'page-template-page': PageTemplatePage;
     'page-the-ia-files-001-into-the-fire': PageTheIaFiles001IntoTheFire;
     'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide;
     'page-the-ia-files-003-definitions-defined': PageTheIaFiles003DefinitionsDefined;
     'page-the-ia-files-004-taxonomies': PageTheIaFiles004Taxonomies;
     'page-the-ia-files-005-navigation-breadth-and-depth': PageTheIaFiles005NavigationBreadthAndDepth;
+    'page-touch-all-items-in-a-wcm-library': PageTouchAllItemsInAWcmLibrary;
     'page-trim-fat-from-your-content': PageTrimFatFromYourContent;
     'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts;
     'page-unity-get-rigidbody-from-object': PageUnityGetRigidbodyFromObject;
@@ -1711,9 +1767,13 @@ declare namespace LocalJSX {
     'page-use-prism-js-in-ionic-stencil-app': PageUsePrismJsInIonicStencilApp;
     'page-use-spotlight-to-display-reference-images-in-zbrush': PageUseSpotlightToDisplayReferenceImagesInZbrush;
     'page-use-spring-for-stardog-in-a-spring-boot-application': PageUseSpringForStardogInASpringBootApplication;
+    'page-user-impersonation-in-websphere-portal-video-demo': PageUserImpersonationInWebspherePortalVideoDemo;
     'page-user-impersonation-programming-in-websphere-portal': PageUserImpersonationProgrammingInWebspherePortal;
     'page-vietnam-1967-amphibious-combat': PageVietnam1967AmphibiousCombat;
     'page-vs-code-cheat-sheet': PageVsCodeCheatSheet;
+    'page-w3c-linked-data-platform-aims-to-reframe-the-web': PageW3cLinkedDataPlatformAimsToReframeTheWeb;
+    'page-wcm-libraries-video-overview': PageWcmLibrariesVideoOverview;
+    'page-wcm-security-video-overview': PageWcmSecurityVideoOverview;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
     'page-work-life-balance-is-overrated': PageWorkLifeBalanceIsOverrated;
     'page-xmlaccess-samples': PageXmlaccessSamples;
@@ -1868,12 +1928,14 @@ declare module "@stencil/core" {
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
       'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
+      'page-string-replace-helper-for-dust-js': LocalJSX.PageStringReplaceHelperForDustJs & JSXBase.HTMLAttributes<HTMLPageStringReplaceHelperForDustJsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
       'page-the-ia-files-001-into-the-fire': LocalJSX.PageTheIaFiles001IntoTheFire & JSXBase.HTMLAttributes<HTMLPageTheIaFiles001IntoTheFireElement>;
       'page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide': LocalJSX.PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide & JSXBase.HTMLAttributes<HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement>;
       'page-the-ia-files-003-definitions-defined': LocalJSX.PageTheIaFiles003DefinitionsDefined & JSXBase.HTMLAttributes<HTMLPageTheIaFiles003DefinitionsDefinedElement>;
       'page-the-ia-files-004-taxonomies': LocalJSX.PageTheIaFiles004Taxonomies & JSXBase.HTMLAttributes<HTMLPageTheIaFiles004TaxonomiesElement>;
       'page-the-ia-files-005-navigation-breadth-and-depth': LocalJSX.PageTheIaFiles005NavigationBreadthAndDepth & JSXBase.HTMLAttributes<HTMLPageTheIaFiles005NavigationBreadthAndDepthElement>;
+      'page-touch-all-items-in-a-wcm-library': LocalJSX.PageTouchAllItemsInAWcmLibrary & JSXBase.HTMLAttributes<HTMLPageTouchAllItemsInAWcmLibraryElement>;
       'page-trim-fat-from-your-content': LocalJSX.PageTrimFatFromYourContent & JSXBase.HTMLAttributes<HTMLPageTrimFatFromYourContentElement>;
       'page-unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts': LocalJSX.PageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScripts & JSXBase.HTMLAttributes<HTMLPageUnityFreebiesGameTimerCinematicLetterboxAndFadeInScriptsElement>;
       'page-unity-get-rigidbody-from-object': LocalJSX.PageUnityGetRigidbodyFromObject & JSXBase.HTMLAttributes<HTMLPageUnityGetRigidbodyFromObjectElement>;
@@ -1888,9 +1950,13 @@ declare module "@stencil/core" {
       'page-use-prism-js-in-ionic-stencil-app': LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
       'page-use-spotlight-to-display-reference-images-in-zbrush': LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
       'page-use-spring-for-stardog-in-a-spring-boot-application': LocalJSX.PageUseSpringForStardogInASpringBootApplication & JSXBase.HTMLAttributes<HTMLPageUseSpringForStardogInASpringBootApplicationElement>;
+      'page-user-impersonation-in-websphere-portal-video-demo': LocalJSX.PageUserImpersonationInWebspherePortalVideoDemo & JSXBase.HTMLAttributes<HTMLPageUserImpersonationInWebspherePortalVideoDemoElement>;
       'page-user-impersonation-programming-in-websphere-portal': LocalJSX.PageUserImpersonationProgrammingInWebspherePortal & JSXBase.HTMLAttributes<HTMLPageUserImpersonationProgrammingInWebspherePortalElement>;
       'page-vietnam-1967-amphibious-combat': LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
       'page-vs-code-cheat-sheet': LocalJSX.PageVsCodeCheatSheet & JSXBase.HTMLAttributes<HTMLPageVsCodeCheatSheetElement>;
+      'page-w3c-linked-data-platform-aims-to-reframe-the-web': LocalJSX.PageW3cLinkedDataPlatformAimsToReframeTheWeb & JSXBase.HTMLAttributes<HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement>;
+      'page-wcm-libraries-video-overview': LocalJSX.PageWcmLibrariesVideoOverview & JSXBase.HTMLAttributes<HTMLPageWcmLibrariesVideoOverviewElement>;
+      'page-wcm-security-video-overview': LocalJSX.PageWcmSecurityVideoOverview & JSXBase.HTMLAttributes<HTMLPageWcmSecurityVideoOverviewElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
       'page-work-life-balance-is-overrated': LocalJSX.PageWorkLifeBalanceIsOverrated & JSXBase.HTMLAttributes<HTMLPageWorkLifeBalanceIsOverratedElement>;
       'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;

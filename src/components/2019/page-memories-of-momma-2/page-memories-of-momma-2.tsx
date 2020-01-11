@@ -62,7 +62,7 @@ export class PageMemoriesOfMomma2 {
 
                             <p>The happy one - in that happy time. Long before the downward spiral. Before Momma stopped opening the windows, or the curtains, or even the door to her bedroom. Long before I ever put a thing called "gold dust" up my nose, stole something, touched myself, or even said a dirty word. Long before my sister ever put a needle in her arm.</p><p> Long before all those things, my mother, Donna Carol Baker, was a maker of happiness.</p>
 
-                            <p><ion-button color="primary" href="/memories-of-momma-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" href="/memories-of-momma-3">Next: Part 3 &gt;&gt;</ion-button></p>
+                            <p><ion-button color="primary" routerDirection="back" href="/memories-of-momma-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/memories-of-momma-3">Next: Part 3 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

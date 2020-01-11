@@ -52,7 +52,7 @@ export class PageRayKelleySilverStar {
         <p>Published with permission as compliments to <a href="/cage">The Cage</a>, an in-progress book project.</p>
 
         <div class="video-container">
-          <iframe class="video" src="https://www.youtube.com/embed/BTOOJotDnCE" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+          <iframe title="Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War" class="video" src="https://www.youtube.com/embed/BTOOJotDnCE" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
         </div>
 
         <p>Video contents:</p>

@@ -170,6 +170,7 @@ healthBarScript.healthWidth = 199;
 
                             <p>Until next time, enjoy the craft!</p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/create-player-health-status-indicator-for-unity-gui-part-2">&lt;&lt; Previous: Part 2</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

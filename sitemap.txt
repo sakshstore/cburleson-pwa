@@ -120,14 +120,17 @@ https://codyburleson.com/better-error-messages-from-gulp-using-gulp-util
 https://codyburleson.com/awesome-power-of-the-link-in-linked-data
 https://codyburleson.com/unity-get-rigidbody-from-object
 https://codyburleson.com/identifying-large-objects-consuming-memory-in-java-heap
+https://codyburleson.com/string-replace-helper-for-dust-js
 https://codyburleson.com/meet-iife-the-quintessential-javascript-closure
 https://codyburleson.com/eclipse-tip-format-source-code-on-save
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
 https://codyburleson.com/how-to-find-large-images-and-files-in-ibm-wcm
+https://codyburleson.com/touch-all-items-in-a-wcm-library
 https://codyburleson.com/accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app
 https://codyburleson.com/getting-parts-of-a-url-from-the-httpservletrequest-object
 https://codyburleson.com/mapping-to-a-view-in-spring-when-no-controller-logic-is-required
 https://codyburleson.com/the-ia-files-005-navigation-breadth-and-depth
+https://codyburleson.com/w3c-linked-data-platform-aims-to-reframe-the-web
 https://codyburleson.com/script-for-rotating-unity-game-object-90-degrees
 https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4
 https://codyburleson.com/automatically-build-and-include-one-eclipse-project-into-another
@@ -145,6 +148,7 @@ https://codyburleson.com/the-ia-files-001-into-the-fire
 https://codyburleson.com/work-life-balance-is-overrated
 https://codyburleson.com/resolving-404-errors-accessing-wcm-content-through-poc-servlet
 https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac
+https://codyburleson.com/user-impersonation-in-websphere-portal-video-demo
 https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2
 https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1
 https://codyburleson.com/unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts
@@ -160,6 +164,8 @@ https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
 https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found
 https://codyburleson.com/introduction-to-the-semantic-web-vision-and-technologies
+https://codyburleson.com/wcm-security-video-overview
+https://codyburleson.com/wcm-libraries-video-overview
 https://codyburleson.com/render-the-keys-and-values-from-a-map-in-freemarker
 https://codyburleson.com/ldap-error-codes
 https://codyburleson.com/glossary-of-ldap-acronyms-and-terms

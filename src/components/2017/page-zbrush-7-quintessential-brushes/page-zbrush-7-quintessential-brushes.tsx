@@ -146,7 +146,7 @@ export class PageZBrush7QuintessentialBrushes {
                             <p><a href="https://www.youtube.com/watch?v=lCYcxG6LYNA">Zbrush Sculpting Tutorial – White Walker from Game of Thrones HD</a></p>
 
                             <div class="video-container">
-                                <iframe class="video" src="https://www.youtube.com/embed/lCYcxG6LYNA" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                                <iframe title="Zbrush Sculpting Tutorial - White Walker from Game of Thrones HD" class="video" src="https://www.youtube.com/embed/lCYcxG6LYNA" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                             </div>
 
 

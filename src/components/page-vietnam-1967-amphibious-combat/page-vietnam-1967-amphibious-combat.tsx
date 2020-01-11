@@ -56,19 +56,19 @@ export class PageVietnam1967AmphibiousCombat {
                 <h2>Chapter 1 of 3</h2>
 
                 <div class="video-container">
-                    <iframe class="video" src="https://www.youtube.com/embed/2BTHe705_uE" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="Vietnam, 1967 - Amphibious Combat - Chapter 1 of 3" class="video" src="https://www.youtube.com/embed/2BTHe705_uE" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
 
                 <h2>Chapter 2 of 3</h2>
 
                 <div class="video-container">
-                    <iframe class="video" src="https://www.youtube.com/embed/dXwng8gvHJg" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="Vietnam, 1967 - Amphibious Combat - Chapter 2 of 3" class="video" src="https://www.youtube.com/embed/dXwng8gvHJg" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
 
                 <h2>Chapter 3 of 3</h2>
 
                 <div class="video-container">
-                    <iframe class="video" src="https://www.youtube.com/embed/XXFmUyYXjDo" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
+                    <iframe title="Vietnam, 1967 - Amphibious Combat - Chapter 3 of 3" class="video" src="https://www.youtube.com/embed/XXFmUyYXjDo" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe>
                 </div>
 
             </ion-content>

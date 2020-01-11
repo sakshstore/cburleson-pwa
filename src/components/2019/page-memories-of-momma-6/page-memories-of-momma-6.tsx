@@ -114,7 +114,7 @@ export class PageMemoriesOfMomma6 {
 
                             <p>I hope it's big enough for them.</p>
 
-                            <p><ion-button color="primary" href="/memories-of-momma-5">&lt;&lt; Previous: Part 5</ion-button></p>
+                            <p><ion-button color="primary" routerDirection="back" href="/memories-of-momma-5">&lt;&lt; Previous: Part 5</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

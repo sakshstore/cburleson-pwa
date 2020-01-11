@@ -16,7 +16,7 @@ export class PageStoryStructureDiagram {
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageTemplatePage.componentWillLoad');
+            console.log('> PageStoryStructureDiagram.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)

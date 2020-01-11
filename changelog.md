@@ -3,9 +3,21 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [1.5.0] - 2020-01-11
 
-- **Modified** `package.json` - updated prismjs version; since sparql and turtle components are now part of the package, I was also able to remove the `src/assets/prismjs` directory and have all files that referred to those refer to the components that are now in the package.
+- **Added** pages from legacy WordPress blog:
+    - [/user-impersonation-in-websphere-portal-video-demo](https://codyburleson.com/user-impersonation-in-websphere-portal-video-demo)
+    - [/wcm-libraries-video-overview](https://codyburleson.com/wcm-libraries-video-overview)
+    - [/wcm-security-video-overview](https://codyburleson.com/wcm-security-video-overview)
+    - [/string-replace-helper-for-dust-js](https://codyburleson.com/string-replace-helper-for-dust-js)
+    - [/touch-all-items-in-a-wcm-library](https://codyburleson.com/touch-all-items-in-a-wcm-library)
+- **Modified**
+    - `package.json` - updated prismjs version; since sparql and turtle components are now part of the package, I was also able to remove the `src/assets/prismjs` directory and have all files that referred to those refer to the components that are now in the package.
+    - Gave `title` attribute to all iframes to improve Lighthouse Audit accessibility score (which was 78 before this change).
+    - Gave new `showInMenus` attribute to items in `site-data.json`. Items not appearing in menus will still have a route in the router; this attribute can now be read to skip rendering in certain or all menus, however. It is used, for example, in the [/memories-of-momma-1] series. Only the first post in the series shows up in the blog menu of posts. The rest of the items ARE in the site-data.json file, so they have routes (and this allows a NEXT/BACK navigation through the series).
+    - Removed `EnvironmentConfigService` in favor of more simplified use of `src/helpers/utils.ts`.
+    - Gave Prev and Next controls to `IA Files` content series and removed parts 2 through 5 from menus; this now mimics how the Memories of Momma series works.
+    - Gave Prev and Next controls to `Create a player health status indicator for the Unity GUI` content series and removed parts 2 through 5 from menus; this now mimics how the Memories of Momma series works.
 
 ## [1.4.3] - 2020-01-10
 

@@ -79,7 +79,7 @@
     },
     {
       "id": "memories-of-momma-1",
-      "title": "Memories of Momma - Part 1",
+      "title": "Memories of Momma",
       "teaser": "First in a six-part Mother's Day tribute to my mom.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2019/05/memories-of-momma-thumbnail.jpg",
       "datePublished": "2019/05/11",
@@ -184,7 +184,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-4",
@@ -196,7 +196,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-3",
@@ -208,7 +208,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-2",
@@ -220,11 +220,11 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-1",
-      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API – Part 1",
+      "title": "Build a PWA with Ionic, Angular, and the WordPress REST API",
       "teaser": "Build a progressive web app that delivers WordPress content using Ionic, Angular, and the WordPress API.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-wordpress.svg",
       "datePublished": "2018/09/08",
@@ -329,7 +329,7 @@
       "title": "VS Code cheat sheet",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-vs-code.svg",
       "datePublished": "2018/08/03",
-      "dateModified": "2019/12/29",
+      "dateModified": "2020/01/11",
       "topics": [
         "Software Dev"
       ],
@@ -1110,6 +1110,16 @@
       "showInMenus": true
     },
     {
+      "id": "string-replace-helper-for-dust-js",
+      "title": "String replace helper for Dust.js",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
+      "datePublished": "2014/10/24",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "meet-iife-the-quintessential-javascript-closure",
       "title": "Meet IIFE - the quintessential JavaScript closure",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-javascript.svg",
@@ -1145,6 +1155,16 @@
       "title": "How to find large images and files in IBM WCM",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2013/12/04",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "touch-all-items-in-a-wcm-library",
+      "title": "How to touch all items in a WCM library",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/10/03",
       "topics": [
         "Software Dev"
       ],
@@ -1191,6 +1211,16 @@
       "topics": [
         "Software Dev"
       ],
+      "showInMenus": false
+    },
+    {
+      "id": "w3c-linked-data-platform-aims-to-reframe-the-web",
+      "title": "W3C Linked Data Platform aims to reframe the Web",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
+      "datePublished": "2013/06/22",
+      "topics": [
+        "Software Dev"
+      ],
       "showInMenus": true
     },
     {
@@ -1234,7 +1264,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "musing-on-nostalgia",
@@ -1265,7 +1295,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting",
@@ -1326,11 +1356,12 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "the-ia-files-001-into-the-fire",
-      "title": "The IA Files 001 - Into the fire",
+      "title": "The IA Files",
+      "teaser": "On Information Architecture - concepts, definitions, taxonomies, and navigation breadth and depth.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "datePublished": "2013-01-17",
       "topics": [
@@ -1365,6 +1396,16 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-vmware-fusion.png",
       "datePublished": "2013/01/05",
       "dateModified": "2019/01/30",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "user-impersonation-in-websphere-portal-video-demo",
+      "title": "User impersonation in WebSphere Portal - video demo",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2013/01/04",
       "topics": [
         "Software Dev"
       ],
@@ -1421,7 +1462,7 @@
       "topics": [
         "Unity"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-2",
@@ -1432,11 +1473,11 @@
       "topics": [
         "Unity"
       ],
-      "showInMenus": true
+      "showInMenus": false
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-1",
-      "title": "Create a player health status indicator for the Unity GUI, part 1",
+      "title": "Create a player health status indicator for the Unity GUI",
       "teaser": "First of a multi-part series teaching how to build a player health status indicator for the Unity GUI.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/13",
@@ -1522,6 +1563,26 @@
       "title": "Introduction to the Semantic Web vision and technologies",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2010/09/13",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "wcm-security-video-overview",
+      "title": "WCM security - video overview",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2010/04/31",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "wcm-libraries-video-overview",
+      "title": "WCM libraries - video overview",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2010/01/02",
       "topics": [
         "Software Dev"
       ],

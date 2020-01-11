@@ -74,7 +74,7 @@ export class PageMemoriesOfMomma3 {
 
 <p> That night, Mamma made fried chicken. I reckon that Hank Williams was right. Country folks CAN survive.</p>
 
-<p><ion-button color="primary" href="/memories-of-momma-2">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" href="/memories-of-momma-4">Next: Part 4 &gt;&gt;</ion-button></p>
+<p><ion-button color="primary" routerDirection="back" href="/memories-of-momma-2">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" routerDirection="forward" href="/memories-of-momma-4">Next: Part 4 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

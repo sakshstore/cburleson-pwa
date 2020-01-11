@@ -1,22 +1,7 @@
 import { Component, h } from '@stencil/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-// import Prism from "prismjs"
-
-// And any, but ONLY the languages you need to use with prism...
-
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import 'prismjs/components/prism-turtle.min.js';
-// import 'prismjs/components/prism-sparql.min.js';
 
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-vs-code-cheat-sheet',
@@ -40,11 +25,6 @@ export class PageVsCodeCheatSheet {
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
     }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    // componentDidLoad() {
-    // setTimeout(() => Prism.highlightAll(), 0)
-    // }
 
     render() {
         return [
@@ -705,7 +685,57 @@ export class PageVsCodeCheatSheet {
                             <p>For other operating systems’ keyboard shortcuts and additional information, see <a
                                 href="https://code.visualstudio.com/docs/getstarted/keybindings">Key Bindings for Visual Studio Code</a>.</p>
 
+                            
+                            <h2>Preference settings</h2>
 
+                            <p>Following is NOT an exhaustive list of all preference settings that are available. There are more, but these are just the ones I have so 
+                                far found useful.</p>
+                            <p>To access settings, go to File &gt; Preferences &gt; Settings, or press <kbd>CTRL</kbd> + <kbd>,</kbd></p>
+
+                            <table class="table table-bordered table-striped">
+                                <thead>
+                                    <th>Setting</th>
+                                    <th>Description</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>editor.minimap.enabled</td>
+                                        <td>Controls whether the minimap is shown.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>editor.renderControlCharacters</td>
+                                        <td>Controls whether the editor should render control characters.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>editor.renderWhitespace</td>
+                                        <td>Controls whether the editor should render whitespace characters.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>explorer.compactFolders</td>
+                                        <td>Controls whether the explorer should render folders in a compact form. In such a form, single child folders will be compressed in a combined tree element. Useful for Java package structures, for example.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>html.autoClosingTags</td>
+                                        <td>Enable/disable autoclosing of HTML tags.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>javascript.updateImportsOnFileMove.enabled</td>
+                                        <td>Enable/disable automatic updating of import paths when you rename or move a file in VS Code. Requires using TypeScript 2.9 or newer in the workspace.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>window.zoomLevel</td>
+                                        <td>Adjust the zoom level of the window. The original size is 0 and each increment above (e.g. 1) or below (e.g. -1) represents zooming 20% larger or smaller. You can also enter decimals to adjust the zoom level with a finer granularity.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>workbench.tree.indent</td>
+                                        <td>Controls tree indentation in pixels.</td>
+                                    </tr>
+                                    <tr>
+                                        <td>workbench.tree.renderIndentGuides</td>
+                                        <td>Controls whether the tree should render indent guides.</td>
+                                    </tr>
+                                </tbody>
+                            </table>
 
 
                             <h2>Plugins</h2>

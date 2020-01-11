@@ -46,7 +46,6 @@ export class PageIAFiles1 {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-
                             <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/TheRedPill.png" alt="" style={{ MINwIDTH: `150PX` }} />Those who practice user-centered design might say that Information Architecture (IA) is all about organizing information in a way that is most useful and meaningful to end-users. Indeed that’s a big part of it, but certainly not <em>all.</em> If that were really all there was to it, we could just call it Information <em>Organization.</em></p>
 
                             <p>But <em>Architecture</em> implies more; it implies both art and science, both process <em>and</em> product. It implies planning, design, and construction. It implies a number of different components and systems integrated to create one cohesive whole. It’s a multi-faceted thing wherein we find multiple forces pushing and pulling on one another. What’s needed by the business and what’s viable? What’s wanted by the users? What are the capabilities and constraints of the technology platform? Of the organization? Its teams and individuals? A great IA must consider and balance all of these forces.</p>
@@ -66,7 +65,7 @@ export class PageIAFiles1 {
 
                             <p>Howdy friend. These are the IA Files.</p>
 
-                            <p>Next: <a href="/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide/">The IA Files 002 &#8211; Concepts, Crows, Camels, and the Cognitive Divide</a></p>
+                            <p><ion-button color="primary" href="/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide">Next: Part 2 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

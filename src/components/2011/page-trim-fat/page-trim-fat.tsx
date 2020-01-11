@@ -60,7 +60,7 @@ export class PageTrimFat {
 
                             <p>&nbsp;</p>
 
-                            <iframe style={{ width: `120px`, height: `240px` }} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=158297358X&asins=158297358X&linkId=47addfaa3ec52b0b347a22898de11b29&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
+                            <iframe title="Getting the Words Right: 39 Ways to Improve Your Writing" style={{ width: `120px`, height: `240px` }} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=158297358X&asins=158297358X&linkId=47addfaa3ec52b0b347a22898de11b29&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

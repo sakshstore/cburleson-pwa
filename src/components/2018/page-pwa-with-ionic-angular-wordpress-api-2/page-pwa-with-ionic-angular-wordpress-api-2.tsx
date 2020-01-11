@@ -244,10 +244,7 @@ Home
 
               <p>I hope you’ll join me on this project, contribute comments, or your own improvements.&nbsp;I intend to take the project further and will continue my “developer log” here, so stay tuned!</p>
 
-              <p>Want to keep going? Click the link below for Part 3:</p>
-
-              <p><strong><a href="/pwa-with-ionic-angular-wordpress-api-3/">Build a PWA with Ionic, Angular, and the WordPress REST API – Part 3</a></strong></p>
-
+              <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-3">Next: Part 3 &gt;&gt;</ion-button></p>
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

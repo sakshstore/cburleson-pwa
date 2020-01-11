@@ -101,7 +101,7 @@ export class PageRespondToButtonClickWithObservable {
 
                             <p>
                                 <div class="video-container">
-                                    <iframe class="video" src="https://www.youtube.com/embed/Tux1nhBPl_w" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowFullScreen></iframe>
+                                    <iframe title="RxJS Tutorial Video on Observables, Observers and Subscriptions" class="video" src="https://www.youtube.com/embed/Tux1nhBPl_w" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" frameborder="0" allowFullScreen></iframe>
                                 </div>
                             </p>
 

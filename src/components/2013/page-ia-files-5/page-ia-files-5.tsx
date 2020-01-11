@@ -93,6 +93,8 @@ export class PageIAFiles1 {
 
                             <p>A basic 7/3 breadth/depth ratio provides a healthy set of parameters to work with. You won’t go to IA hell for stepping outside of those bounds, but you can at least be sure that it’s a good framework. It’s supported by scientific research and it has proven to work well in our experience. Using this as a general “rule of thumb” for navigation breadth and depth will give you a solid starting point so that you can focus on the fun stuff – classification and organization, abstraction and concretization, etc.</p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/the-ia-files-004-taxonomies">&lt;&lt; Previous: Part 4</ion-button></p>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

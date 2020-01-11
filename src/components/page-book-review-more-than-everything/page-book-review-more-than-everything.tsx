@@ -70,7 +70,7 @@ export class PageBookReviewMoreThanEverything {
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-            <iframe style={{width: `120px`, height: `240px`}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=0615780873&asins=0615780873&linkId=a8b77a2c7c69ed9cab112ba6d16dd9d9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
+            <iframe title=" More Than Everything by Vanessa Foster" style={{width: `120px`, height: `240px`}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=0615780873&asins=0615780873&linkId=a8b77a2c7c69ed9cab112ba6d16dd9d9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
 
             </ion-col>
           </ion-row>

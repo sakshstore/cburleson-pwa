@@ -86,6 +86,9 @@ export class PageIAFiles1 {
 
                             <p>Next:&nbsp;<a href="/the-ia-files-004-taxonomies">The IA Files 004 - Taxonomies</a></p>
 
+                            <p><ion-button color="primary" href="/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" href="/the-ia-files-004-taxonomies">Next: Part 4 &gt;&gt;</ion-button></p>
+
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

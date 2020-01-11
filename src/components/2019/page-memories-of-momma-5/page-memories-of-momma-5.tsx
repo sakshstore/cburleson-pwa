@@ -122,7 +122,7 @@ export class PageMemoriesOfMomma5 {
 
                             <p>I got a zero for missing my homework on Science that week, but I learned a little lesson about chemistry, nevertheless.</p>
 
-                            <p><ion-button color="primary" href="/memories-of-momma-4">&lt;&lt; Previous: Part 4</ion-button> <ion-button color="primary" href="/memories-of-momma-6">Next: Part 6 &gt;&gt;</ion-button></p>
+                            <p><ion-button color="primary" routerDirection="back" href="/memories-of-momma-4">&lt;&lt; Previous: Part 4</ion-button> <ion-button color="primary" routerDirection="forward" href="/memories-of-momma-6">Next: Part 6 &gt;&gt;</ion-button></p>
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 

@@ -500,8 +500,10 @@ return this.page < this.totalPages;
 
                             <p>Today we took a big step in terms of the necessary plumbing. We implemented authentication with a little help from the WordPress plugin,&nbsp;JWT Authentication for WP REST API. We proved this authentication using a private post, which will only display after we’re authenticated.</p>
 
-                            <p>There are still so many more things to be done, I’m not quite sure what’s best to start on next, but I will be continuing the series, so stay tuned&nbsp;so stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
+                            <p>Remember that the source code can be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-4">&lt;&lt; Previous: Part 4</ion-button></p>
+                            
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

@@ -3,11 +3,10 @@ import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-
 @Component({
-    tag: 'page-introduction-to-the-semantic-web-vision-and-technologies',
+    tag: 'page-user-impersonation-in-websphere-portal-video-demo',
 })
-export class PageIntroductionToSemanticWeb {
+export class PageUserImpersonation {
 
     title = 'Blog';
 
@@ -16,7 +15,7 @@ export class PageIntroductionToSemanticWeb {
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageIntroductionToSemanticWeb.componentWillLoad');
+            console.log('> PageUserImpersonation.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
@@ -46,14 +45,12 @@ export class PageIntroductionToSemanticWeb {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
+                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/UserImpersonationGraphic.png" alt="" width="270" height="179" />User Impersonation is a feature in WebSphere Portal that allows select administrative users to take on the profile of other users without having to know their login credentials. This allows the administrative user to evaluate the user experience from the impersonated user’s perspective. It can be quite handy for portals where security and personalization play a heavy role or where help-desk and support staff really need to see exactly what the end-user sees. I created this screencast that demonstrates how it works and even though it may be a little old, it’s still relevant…</p>
 
-                            <p>A presentation I gave in March, 2006 at the IBM Technical Leadership Exchange.</p>
+                            <div class="video-container">
+                                <iframe class="video" title="User Impersonation in WebSphere Portal - Demonstration" src="https://www.youtube.com/embed/bq9IoodVtOU" frameborder="0" allowFullScreen></iframe>
+                            </div>
 
-<p><iframe title="Introduction to the Semantic Web - Vision and Technologies" style={{border:`1px solid #CCC`, marginBottom: `5px`, maxWidth: `100%`}} src="//www.slideshare.net/slideshow/embed_code/key/4tGuGb2jgjTlIa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowFullScreen> </iframe></p>
-
-<div style={{marginBottom: `5px`}}><strong> <a title="Introduction to the Semantic Web - Vision and Technologies" href="//www.slideshare.net/CodyBurleson/introduction-to-the-semantic-web-vision-and-technologies" target="_blank" rel="noopener noreferrer">Introduction to the Semantic Web &#8211; Vision and Technologies</a> </strong> from <strong><a href="https://www.slideshare.net/CodyBurleson" target="_blank" rel="noopener noreferrer">Cody Burleson</a></strong></div>
-
-		
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

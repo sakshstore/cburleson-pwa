@@ -260,6 +260,9 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <p>In <strong> <a title="How to Create a Player Health Status Indicator for the Unity GUI, Part 3" href="/create-player-health-status-indicator-for-unity-gui-part-3">Part 3</a></strong>, we’ll learn how to reduce or increase health through code while the game is running.</p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/create-player-health-status-indicator-for-unity-gui-part-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/create-player-health-status-indicator-for-unity-gui-part-3">Next: Part 3 &gt;&gt;</ion-button></p>
+
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 

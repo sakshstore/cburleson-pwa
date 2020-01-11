@@ -248,9 +248,7 @@ Tagged X, Y, Z
 
                             <p>Building on&nbsp;<a href="/pwa-with-ionic-angular-wordpress-api-3">Part 3</a>, I showed you how you can implement infinite scroll functionality to page through all available WordPress posts. The app is starting to get useful, but there’s still a lot to do&nbsp; to make it&nbsp; cool. I’m not sure what I’ll tackle next, but I will continue to evolve the app, so stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.\</p>
 
-                            <p>Wanna keep goin? Click the link below for Part 3:</p>
-
-                            <p><strong><a href="/pwa-with-ionic-angular-wordpress-api-5">Build a PWA with Ionic, Angular, and the WordPress REST API – Part 5</a></strong></p>
+                            <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-5">Next: Part 5 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

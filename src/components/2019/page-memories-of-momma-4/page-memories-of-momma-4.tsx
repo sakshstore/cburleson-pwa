@@ -81,7 +81,7 @@ export class PageMemoriesOfMomma4 {
 
                             <p>They work like a charm.</p>
 
-                            <p><ion-button color="primary" href="/memories-of-momma-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" href="/memories-of-momma-5">Next: Part 5 &gt;&gt;</ion-button></p>
+                            <p><ion-button color="primary" href="/memories-of-momma-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" routerDirection="forward" href="/memories-of-momma-5">Next: Part 5 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
