@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased]
+
+- **Modified** `package.json` - updated prismjs version being used; since sparql and turtle components are now part of the package, I was also able to remove the `src/assets/prismjs` directory and have all files that referred to those refer to the components that are now in the package.
+
 ## [1.4.3] - 2020-01-10
 
 - **Added** Pages from legacy Wordpress blog:

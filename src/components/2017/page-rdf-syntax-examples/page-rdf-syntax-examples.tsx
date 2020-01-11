@@ -9,8 +9,8 @@ import 'prismjs/components/prism-json.min';
 // import 'prismjs/components/prism-java.min';
 // These two both for SPARQL:
 
-import '/assets/prismjs/prism-turtle.min.js';
-// import '/assets/prismjs/prism-sparql.min.js';
+import 'prismjs/components/prism-turtle.min.js';
+// import 'prismjs/components/prism-sparql.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 

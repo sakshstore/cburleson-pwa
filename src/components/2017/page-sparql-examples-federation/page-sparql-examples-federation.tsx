@@ -2,8 +2,8 @@ import { Component, h } from '@stencil/core';
 // Use this if using source code blocks to be formatted by prism.js...
 import Prism from "prismjs"
 
-import '/assets/prismjs/prism-turtle.min.js';
-import '/assets/prismjs/prism-sparql.min.js';
+import 'prismjs/components/prism-turtle.min.js';
+import 'prismjs/components/prism-sparql.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 

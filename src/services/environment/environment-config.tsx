@@ -10,6 +10,7 @@ export interface EnvironmentConfig {
 }
 
 export function mySetupConfig(config: EnvironmentConfig) {
+    
     if (!window) {
         return;
     }
@@ -30,4 +31,5 @@ export function mySetupConfig(config: EnvironmentConfig) {
     };
 
     return win.MyPWA.config;
+
 }
