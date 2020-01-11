@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-6',
@@ -16,7 +15,7 @@ export class PageMemoriesOfMomma6 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma3.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageMemoriesOfMomma6 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -114,6 +113,8 @@ export class PageMemoriesOfMomma6 {
                             <p>I look at my hand again. Larger than hers - my little granddaughter's. Still larger than my children's, I think. Calloused now by time, if not by hard labor. Broken lines and lost frames and joints that get a little sore in the cold, if I'm being honest. But it's ready, this hand.</p>
 
                             <p>I hope it's big enough for them.</p>
+
+                            <p><ion-button color="primary" href="/memories-of-momma-5">&lt;&lt; Previous: Part 5</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

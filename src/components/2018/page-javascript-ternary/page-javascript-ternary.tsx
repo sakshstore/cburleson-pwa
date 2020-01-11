@@ -1,13 +1,17 @@
 import { Component, h } from '@stencil/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
+import Prism from "prismjs"
+
+import 'prismjs/components/prism-javascript.min.js';
+
 import { BlogData } from '../../../services/blog-data';
 
 
 @Component({
-    tag: 'page-classnotfound-does-not-always-mean-class-not-found',
+    tag: 'page-javascript-ternary-operator-shortcut-to-the-if-statement',
 })
-export class PageClassNotFound {
+export class PageJavaScriptTernary {
 
     title = 'Blog';
 
@@ -16,7 +20,7 @@ export class PageClassNotFound {
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageClassNotFound.componentWillLoad');
+            console.log('> PageJavaScriptTernary.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
@@ -25,6 +29,10 @@ export class PageClassNotFound {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+    }
+
+    componentDidLoad() {
+        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -46,17 +54,24 @@ export class PageClassNotFound {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg" alt="Java icon" width="75"/>A Java ClassNotFound exception does not always mean that a class could not be found on the classpath. It seems that sometimes it can mean that the class was actually found 2 or more times – a conflict in the classloader.</p>
 
-                            <p class="clear">Recently, while developing a portlet for WebSphere Portal, I got the following exception:</p>
+                            <p>The conditional (ternary) operator is the only JavaScript operator that takes three operands and it is frequently used as a shortcut for the if statement.</p>
 
-                            <p><code>Caused by: java.lang.ClassNotFoundException: javax.el.ELException</code></p>
+                            <pre><code class="language-js">{`// If isMember (first argument) evaluates to true, return "$2:00" (first expression),
+// else return "$10.00" (second expression)
+function getFee(isMember) {
+  return (isMember ? "$2.00" : "$10.00");
+}
+ 
+ 
+// Another example
+// var foo = (a === b) ? 1 : 2;
+var foo = (a === b)
+  ? 1
+  : 2;`}</code></pre>
 
-                            <p>My portlet ran fine in my local development environment, but when I deployed it to Production, it crapped out. This is because I had included JSTL jar files in my portlet’s WEB-INF/<span class="s3">lib</span> folder. As it turns out, those jar files, or similar ones, were already somewhere on the classpath in the Production environment.</p>
 
-                            <p>So…It seems that the class was actually found – just more times than expected. It is as if the classloader cancels them all out if it finds duplicates or conflicts. This, in turn, can lead to the ClassNotFound message, which in that case is somewhat misleading.</p>
-
-                            <p>Just something to keep in mind.</p>
+                            <p>See also: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" rel="nofollow">Conditional (ternary) Operator</a>, MDN web docs</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

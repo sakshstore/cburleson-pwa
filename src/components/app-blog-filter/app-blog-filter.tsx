@@ -1,9 +1,7 @@
 import { Config } from '@ionic/core';
 import { Component, Element, h, Listen, Prop, State } from '@stencil/core';
+import { isLocal } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
   tag: 'app-blog-filter',
@@ -20,7 +18,7 @@ export class AppBlogFilter {
 
   async componentWillLoad() {
 
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppBlogFilter.componentWillLoad');
     }
 
@@ -36,7 +34,7 @@ export class AppBlogFilter {
   }
 
   dismiss(data?: any) {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppBlogFilter.dismiss > data: %o', data);
     }
     // dismiss this modal and pass back data
@@ -46,7 +44,7 @@ export class AppBlogFilter {
   }
 
   applyFilters() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppBlogFilter.applyFilters');
     }
     // Pass back a new array of topic names to exclude
@@ -56,7 +54,7 @@ export class AppBlogFilter {
 
   // reset all of the toggles to be checked
   resetFilters() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppBlogFilter.resetFilters');
     }
     this.topics.forEach(topic => {
@@ -67,7 +65,7 @@ export class AppBlogFilter {
 
   @Listen('ionChange')
   onToggleChanged(ev: CustomEvent) {
-    if (debug) {
+    if (isLocal()) {
       console.log('- AppBlogFilter.onToggleChanged');
     }
     const topic = this.topics.find(({ name }) => name === (ev.target as any).name);

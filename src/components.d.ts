@@ -100,6 +100,7 @@ export namespace Components {
   interface PageIntroductionToTheSemanticWebVisionAndTechnologies {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageJavaSystemProperties {}
+  interface PageJavascriptTernaryOperatorShortcutToTheIfStatement {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
@@ -675,6 +676,12 @@ declare global {
   var HTMLPageJavaSystemPropertiesElement: {
     prototype: HTMLPageJavaSystemPropertiesElement;
     new (): HTMLPageJavaSystemPropertiesElement;
+  };
+
+  interface HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement extends Components.PageJavascriptTernaryOperatorShortcutToTheIfStatement, HTMLStencilElement {}
+  var HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement: {
+    prototype: HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement;
+    new (): HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement;
   };
 
   interface HTMLPageKillingKittensElement extends Components.PageKillingKittens, HTMLStencilElement {}
@@ -1274,6 +1281,7 @@ declare global {
     'page-introduction-to-the-semantic-web-vision-and-technologies': HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement;
     'page-isolate-a-polygroup-in-zbrush': HTMLPageIsolateAPolygroupInZbrushElement;
     'page-java-system-properties': HTMLPageJavaSystemPropertiesElement;
+    'page-javascript-ternary-operator-shortcut-to-the-if-statement': HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement;
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
@@ -1454,6 +1462,7 @@ declare namespace LocalJSX {
   interface PageIntroductionToTheSemanticWebVisionAndTechnologies {}
   interface PageIsolateAPolygroupInZbrush {}
   interface PageJavaSystemProperties {}
+  interface PageJavascriptTernaryOperatorShortcutToTheIfStatement {}
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
@@ -1623,6 +1632,7 @@ declare namespace LocalJSX {
     'page-introduction-to-the-semantic-web-vision-and-technologies': PageIntroductionToTheSemanticWebVisionAndTechnologies;
     'page-isolate-a-polygroup-in-zbrush': PageIsolateAPolygroupInZbrush;
     'page-java-system-properties': PageJavaSystemProperties;
+    'page-javascript-ternary-operator-shortcut-to-the-if-statement': PageJavascriptTernaryOperatorShortcutToTheIfStatement;
     'page-killing-kittens': PageKillingKittens;
     'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
@@ -1799,6 +1809,7 @@ declare module "@stencil/core" {
       'page-introduction-to-the-semantic-web-vision-and-technologies': LocalJSX.PageIntroductionToTheSemanticWebVisionAndTechnologies & JSXBase.HTMLAttributes<HTMLPageIntroductionToTheSemanticWebVisionAndTechnologiesElement>;
       'page-isolate-a-polygroup-in-zbrush': LocalJSX.PageIsolateAPolygroupInZbrush & JSXBase.HTMLAttributes<HTMLPageIsolateAPolygroupInZbrushElement>;
       'page-java-system-properties': LocalJSX.PageJavaSystemProperties & JSXBase.HTMLAttributes<HTMLPageJavaSystemPropertiesElement>;
+      'page-javascript-ternary-operator-shortcut-to-the-if-statement': LocalJSX.PageJavascriptTernaryOperatorShortcutToTheIfStatement & JSXBase.HTMLAttributes<HTMLPageJavascriptTernaryOperatorShortcutToTheIfStatementElement>;
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;

@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-1',
@@ -16,7 +15,7 @@ export class PageMemoriesOfMomma1 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma1.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageMemoriesOfMomma1 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -80,6 +79,8 @@ export class PageMemoriesOfMomma1 {
                             <p>Next thing you know, I was licking and stamping envelopes for the rest of the day and thoroughly convinced that it was fun. I went home with paper cuts all over my tongue and a mouth full of glue.</p>
 
                             <p>So, yeah - Momma was pretty, but also pretty smart.</p>
+
+                            <p><ion-button color="primary" href="/memories-of-momma-2">Next: Part 2 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

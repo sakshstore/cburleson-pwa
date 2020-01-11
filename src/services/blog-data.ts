@@ -1,7 +1,5 @@
-import { EnvironmentConfigService } from '../services/environment/environment-config.service';
+import { isLocal, SITEVERSION } from '../helpers/utils';
 
-const DEBUG: boolean = EnvironmentConfigService.getInstance().get('debug');
-const SITE_VERSION: string = EnvironmentConfigService.getInstance().get('siteVersion');
 
 class BlogDataService {
 
@@ -9,26 +7,26 @@ class BlogDataService {
     postId: string;
 
     constructor() {
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.constructor')
         }
     }
 
     async load() {
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.load');
         }
         
         if (this.data) {
-            if (DEBUG) {
+            if (isLocal()) {
                 console.log('< BlogDataService.load < returning cached data: \n %o', this.data);
             }
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/site-data.json?v=' + SITE_VERSION);
+            const rsp = await fetch('/assets/data/site-data.json?v=' + SITEVERSION);
             const json = await rsp.json();
             let data = this.processData(json);
-            if (DEBUG) {
+            if (isLocal()) {
                 console.log('< BlogDataService.load < returning newly loaded data: \n %o', this.data);
             }
             return data;
@@ -37,7 +35,7 @@ class BlogDataService {
 
     processData(data: any) {
 
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.processData');
         }
 
@@ -64,7 +62,7 @@ class BlogDataService {
 
     async getContent(excludeTopics: any[] = []) {
 
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.getContent');
         }
 
@@ -93,7 +91,7 @@ class BlogDataService {
     }
 
     async getTopics() {
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.getTopics');
         }
         const data = await this.load();
@@ -101,7 +99,7 @@ class BlogDataService {
     }
 
     getPostHeaderById(slug: string) {
-        if (DEBUG) {
+        if (isLocal()) {
             console.log('> BlogDataService.getPostHeaderById("%s")', slug);
         }
 

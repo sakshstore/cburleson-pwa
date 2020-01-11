@@ -1,7 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
     tag: 'page-life-events',
@@ -14,12 +12,12 @@ export class PageLifeEvents {
     datePublished = '2019/12/11';
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageTemplatePage.componentWillLoad');
         }
 
         // set document title for browser / tab / bookmark
-        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + SITENAME;
     }
 
     toggleSearch(){

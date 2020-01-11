@@ -1,7 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
     tag: 'page-cmd-chron-beaver-cage',
@@ -14,10 +12,10 @@ export class PageCmdChronBeaverCage {
     title = 'Operation Beaver Cage - Command Chronology';
 
     componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageCmdChronBeaverCage.componentWillLoad');
         }
-        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + SITENAME;
     }
 
     toggleSearch() {

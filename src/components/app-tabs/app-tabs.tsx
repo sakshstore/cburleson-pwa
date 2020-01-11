@@ -1,8 +1,6 @@
 import { Component, Prop, h } from '@stencil/core';
+import { isLocal } from '../../helpers/utils';
 import { PageData } from '../../services/page-data';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
   tag: 'app-tabs',
@@ -15,14 +13,14 @@ export class AppTabs {
   data: any;
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppTabs.componentWillLoad');
     }
     this.data = await PageData.load();
   }
 
   async componentDidLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageTabs.componentDidLoad');
     }
 

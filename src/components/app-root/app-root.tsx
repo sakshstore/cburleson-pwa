@@ -1,11 +1,12 @@
 import { Component, h, Listen } from '@stencil/core';
+import { isLocal, SITENAME } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
 import { PageData } from '../../services/page-data';
 
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
-const recordAnalytics: boolean = EnvironmentConfigService.getInstance().get('recordAnalytics');
-const siteName: string = EnvironmentConfigService.getInstance().get('siteName');
+//import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
+
+//const recordAnalytics: boolean = EnvironmentConfigService.getInstance().get('recordAnalytics');
+//const siteName: string = EnvironmentConfigService.getInstance().get('siteName');
 declare let gtag: Function;
 
 @Component({
@@ -23,22 +24,22 @@ export class AppRoot {
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
   @Listen('ionRouteDidChange')
   routeDidChangeHandler(event: CustomEvent) {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
     }
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
     if (event.detail.to == '/home') {
-      document.title = 'Home | ' + siteName;
+      document.title = 'Home | ' + SITENAME;
     } else if (event.detail.to == '/blog') {
-      document.title = 'Blog | ' + siteName;
+      document.title = 'Blog | ' + SITENAME;
     } else if (event.detail.to == '/books') {
-      document.title = 'Books | ' + siteName;
+      document.title = 'Books | ' + SITENAME;
     } else if (event.detail.to == '/about') {
-      document.title = 'About | ' + siteName;
+      document.title = 'About | ' + SITENAME;
     }
 
-    if (recordAnalytics && window.location.hostname !== 'localhost') {
+    if ( ! isLocal() ) {
       if (event.detail.redirectedFrom !== null) {
         // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
         // where they got redirected to (mainly '/' instead of 'blog'). If a redirection exists, take the redirectedFrom...
@@ -48,11 +49,11 @@ export class AppRoot {
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
       }
     }
-    
+
   }
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppRoot.componentWillLoad');
     }
 

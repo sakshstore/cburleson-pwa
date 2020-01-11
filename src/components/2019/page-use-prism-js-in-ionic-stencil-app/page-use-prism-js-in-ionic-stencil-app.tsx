@@ -1,13 +1,13 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 import Prism from "prismjs"
 import 'prismjs/components/prism-typescript.min';
 import { BlogData } from '../../../services/blog-data';
 
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 const CODE_1 = `import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 import Prism from "prismjs"
 const code = \`<tr *ngFor="#item of data">
 <td><a href="#">{{ item.invoiceNo }}</a></td>
@@ -25,6 +25,7 @@ const CODE_2 = `componentDidLoad() {
     setTimeout(() => Prism.highlightAll(), 0)
 }`;
 const CODE_3 = `import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 import Prism from "prismjs"
 const code = \`<tr *ngFor="#item of data">
 <td><a href="#">{{ item.invoiceNo }}</a></td>
@@ -85,7 +86,7 @@ export class PageUsePrismJsInIonicStencilApp {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageUsePrismJsInIonicStencilApp.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -94,7 +95,7 @@ export class PageUsePrismJsInIonicStencilApp {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidLoad() {

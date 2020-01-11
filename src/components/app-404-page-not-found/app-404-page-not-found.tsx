@@ -1,7 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal } from '../../helpers/utils';
 
 @Component({
     tag: 'app-404-page-not-found',
@@ -15,7 +13,7 @@ export class App404PageNotFound {
     pathname: string;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> App404PageNotFound.componentWillLoad');
         }
 

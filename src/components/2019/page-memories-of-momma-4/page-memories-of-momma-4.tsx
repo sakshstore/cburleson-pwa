@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-4',
@@ -17,7 +16,7 @@ export class PageMemoriesOfMomma4 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma4.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -26,7 +25,7 @@ export class PageMemoriesOfMomma4 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -81,6 +80,8 @@ export class PageMemoriesOfMomma4 {
                             <p>Since that magical day, I've seen plenty of those little creatures. I'm pretty sure the old wive's tale about the lightning strike can't be true, but I can assure you, I never put a finger anywhere near enough to find out. Those old southern quips were designed for stupid little creek dwellers like me and let me tell you...they work.</p>
 
                             <p>They work like a charm.</p>
+
+                            <p><ion-button color="primary" href="/memories-of-momma-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" href="/memories-of-momma-5">Next: Part 5 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

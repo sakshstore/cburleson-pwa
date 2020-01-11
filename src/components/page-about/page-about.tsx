@@ -1,8 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
-const siteVersion: string = EnvironmentConfigService.getInstance().get('siteVersion');
+import { isLocal, SITENAME, SITEVERSION } from '../../helpers/utils';
 
 @Component({
   tag: 'page-about',
@@ -15,10 +12,10 @@ export class PageAbout {
   title = 'About';
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageAbout.componentWillLoad');
     }
-    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + SITENAME;
   }
 
   toggleSearch(){
@@ -104,7 +101,7 @@ export class PageAbout {
 
         <p>This site was developed using the Ionic Framework and Stencil.js. While the site also uses some helper libraries like Prismjs (for code syntax highlighting), it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the popular JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
 
-        <p>Site version: {siteVersion}; for history of changes, see the <a href="https://github.com/codyburleson/cburleson-pwa/blob/master/changelog.md" rel="nofollow">changelog</a> on GitHub.</p>
+        <p>Site version: {SITEVERSION}; for history of changes, see the <a href="https://github.com/codyburleson/cburleson-pwa/blob/master/changelog.md" rel="nofollow">changelog</a> on GitHub.</p>
 
         <h2>Etc...</h2>
 

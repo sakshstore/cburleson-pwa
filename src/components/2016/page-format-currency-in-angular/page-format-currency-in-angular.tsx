@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 import Prism from "prismjs"
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 const CODE_1 = `<tr *ngFor="#item of data">
      <td><a href="#">{{ item.invoiceNo }}</a></td>
@@ -28,13 +27,13 @@ export class PageFormatCurrencyInAngular {
         // Get the id from the URL path (slug)
         let id = document.location.pathname.substr(1);
         this.header = BlogData.getPostHeaderById(id);
-        if (debug) {
+        if (isLocal()) {
             console.log('-- PageFormatCurrencyInAngular.componentDidLoad > header by id: %o', BlogData.getPostHeaderById(id));
         }
         // set internalk property for use inside the page content H1
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidLoad() {

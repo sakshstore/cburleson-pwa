@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-about-zsphere-smoothing-brushes',
@@ -16,7 +15,7 @@ export class PageZbrushAboutZsphereSmoothingBrushes {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageZbrushAboutZsphereSmoothingBrushes.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageZbrushAboutZsphereSmoothingBrushes {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {

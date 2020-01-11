@@ -1,7 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
     tag: 'page-vietnam-1967-amphibious-combat'
@@ -13,10 +11,10 @@ export class PageVietnam1967AmphibiousCombat {
     title = 'Vietnam, 1967 - Amphibious Combat';
 
     componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageVietnam1967AmphibiousCombat.componentWillLoad');
         }
-        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + SITENAME;
     }
 
     toggleSearch() {

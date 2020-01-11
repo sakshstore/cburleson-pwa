@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import Prism from "prismjs"
 import 'prismjs/components/prism-csharp.min.js';
@@ -6,8 +7,6 @@ import 'prismjs/components/prism-csharp.min.js';
 import { BlogData } from '../../../services/blog-data';
 
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-unity-recipes-head-bob-or-breathe',
@@ -20,7 +19,7 @@ export class PageUnityRecipesHeadBobOrBreathe {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageUnityRecipesHeadBobOrBreathe.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -29,7 +28,7 @@ export class PageUnityRecipesHeadBobOrBreathe {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidLoad() {

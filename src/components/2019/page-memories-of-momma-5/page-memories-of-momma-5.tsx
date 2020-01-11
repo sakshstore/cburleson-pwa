@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-5',
@@ -16,7 +15,7 @@ export class PageMemoriesOfMomma5 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma5.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageMemoriesOfMomma5 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -122,6 +121,8 @@ export class PageMemoriesOfMomma5 {
                             <p>At the doctor's instruction, Dad flushed one of the prescriptions down the toilet and a couple of days later, all the bats were clear from the belfry. Momma was back on planet earth. She was back to being just a little weird, which for Momma, was normal and for the rest of us, comfortable and good.</p>
 
                             <p>I got a zero for missing my homework on Science that week, but I learned a little lesson about chemistry, nevertheless.</p>
+
+                            <p><ion-button color="primary" href="/memories-of-momma-4">&lt;&lt; Previous: Part 4</ion-button> <ion-button color="primary" href="/memories-of-momma-6">Next: Part 6 &gt;&gt;</ion-button></p>
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 

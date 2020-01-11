@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-2',
@@ -16,7 +15,7 @@ export class PageMemoriesOfMomma2 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma2.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageMemoriesOfMomma2 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -62,6 +61,8 @@ export class PageMemoriesOfMomma2 {
                             <p>What I wouldn't give for just one minute more, if only in a dream, to be spinning around in that woman's arms again.</p>
 
                             <p>The happy one - in that happy time. Long before the downward spiral. Before Momma stopped opening the windows, or the curtains, or even the door to her bedroom. Long before I ever put a thing called "gold dust" up my nose, stole something, touched myself, or even said a dirty word. Long before my sister ever put a needle in her arm.</p><p> Long before all those things, my mother, Donna Carol Baker, was a maker of happiness.</p>
+
+                            <p><ion-button color="primary" href="/memories-of-momma-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" href="/memories-of-momma-3">Next: Part 3 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

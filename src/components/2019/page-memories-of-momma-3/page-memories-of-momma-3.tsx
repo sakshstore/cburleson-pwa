@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-memories-of-momma-3',
@@ -16,7 +15,7 @@ export class PageMemoriesOfMomma3 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageMemoriesOfMomma3.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +24,7 @@ export class PageMemoriesOfMomma3 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     render() {
@@ -74,6 +73,8 @@ export class PageMemoriesOfMomma3 {
 <p> I just stood there frozen. Eyes as wide as fried eggs. It was, as we say in Texas, the darnedest thing you ever saw.</p>
 
 <p> That night, Mamma made fried chicken. I reckon that Hank Williams was right. Country folks CAN survive.</p>
+
+<p><ion-button color="primary" href="/memories-of-momma-2">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" href="/memories-of-momma-4">Next: Part 4 &gt;&gt;</ion-button></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

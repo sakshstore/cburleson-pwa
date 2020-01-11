@@ -1,12 +1,11 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import Prism from "prismjs"
 import 'prismjs/components/prism-javascript.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'page-create-player-health-status-indicator-for-unity-gui-part-1',
@@ -19,7 +18,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -28,7 +27,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidLoad() {

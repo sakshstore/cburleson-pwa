@@ -1,8 +1,6 @@
 import { Component, Element, Prop, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../helpers/utils';
 import { PhotoData } from '../../services/photo-data';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 @Component({
     tag: 'app-photos'
@@ -18,11 +16,11 @@ export class AppPhotos {
     data: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> AppPhotos.componentWillLoad > Route param property "name": %s', this.name);
         }
         this.data = await PhotoData.load(this.name);
-        document.title = this.data.pageTitle + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.data.pageTitle + ' | ' + SITENAME;
     }
 
     toggleSearch(){

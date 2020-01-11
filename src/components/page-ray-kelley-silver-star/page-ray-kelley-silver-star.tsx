@@ -1,7 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
   tag: 'page-ray-kelley-silver-star'
@@ -13,10 +11,10 @@ export class PageRayKelleySilverStar {
   title = 'Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War';
 
   componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageRayKelleySilverStar.componentWillLoad');
     }
-    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + SITENAME;
   }
 
   toggleSearch(){

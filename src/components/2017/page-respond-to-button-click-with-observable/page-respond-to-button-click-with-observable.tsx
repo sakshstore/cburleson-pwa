@@ -1,10 +1,9 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 import Prism from "prismjs"
 import { BlogData } from '../../../services/blog-data';
 
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 
 const CODE_1 = `<script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
@@ -50,7 +49,7 @@ export class PageRespondToButtonClickWithObservable {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageRespondToButtonClickWithObservable.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -59,7 +58,7 @@ export class PageRespondToButtonClickWithObservable {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidLoad() {

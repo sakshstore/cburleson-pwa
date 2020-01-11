@@ -3,8 +3,7 @@ import { Component, Element, h, Listen, Prop } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
 import { get, set } from '../../services/storage';
 
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 const EXCLUDE_TOPICS = 'excludeTopics';
 
@@ -26,10 +25,10 @@ export class PageBlog {
   data: any;
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageBlog.componentWillLoad');
     }
-    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + SITENAME;
 
     this.data = await BlogData.load();
 
@@ -39,7 +38,7 @@ export class PageBlog {
         return result;
       })
       .catch(function (err) {
-        if (debug) {
+        if (isLocal()) {
           console.log('< PageBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
         }
         // do nothing
@@ -55,7 +54,7 @@ export class PageBlog {
 
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
@@ -68,7 +67,7 @@ export class PageBlog {
 
   async updateContentList() {
 
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageBlog.updateContentList');
     }
 
@@ -80,7 +79,7 @@ export class PageBlog {
   }
 
   async presentFilter() {
-    if (debug) {
+    if (isLocal()) {
       console.log('>> PageBlog.presentFilter');
     }
 
@@ -106,6 +105,26 @@ export class PageBlog {
       this.el.querySelector("#searchbar").classList.remove('hidden');
     } else {
       this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
+
+  renderItem(item: any) {
+    if (item.showInMenus) {
+      return (
+        <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
+          <ion-thumbnail slot="start">
+            <ion-img src={item.thumbnail} />
+          </ion-thumbnail>
+          <ion-label text-wrap>
+            {item.title}
+            <p innerHTML={item.teaser}></p>
+            <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
+            </em></p>
+          </ion-label>
+        </ion-item>
+      )
+    } else {
+      return
     }
   }
 
@@ -139,17 +158,7 @@ export class PageBlog {
 
               <ion-list>
                 {this.data.content.map((item) =>
-                  <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
-                    <ion-thumbnail slot="start">
-                      <ion-img src={item.thumbnail} />
-                    </ion-thumbnail>
-                    <ion-label text-wrap>
-                      {item.title}
-                      <p innerHTML={item.teaser}></p>
-                      <p><em>Posted {new Date(item.datePublished).toDateString()}, Tagged {this.createTopicList(item)}
-                      </em></p>
-                    </ion-label>
-                  </ion-item>
+                  this.renderItem(item)
                 )}
               </ion-list>
 

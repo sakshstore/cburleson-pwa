@@ -1,9 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-
-// import { BlogData } from '../../services/blog-data';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
   tag: 'page-home',
@@ -18,7 +14,7 @@ export class PageHome {
   header: any;
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> AppHome.componentWillLoad');
     }
     // this.data = await BlogData.load();
@@ -27,7 +23,7 @@ export class PageHome {
     //this.header = BlogData.getPostHeaderById(id);
 
     // set document title for browser / tab / bookmark
-    document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.title + ' | ' + SITENAME;
   }
 
   toggleSearch() {

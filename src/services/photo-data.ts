@@ -1,34 +1,31 @@
-import { EnvironmentConfigService } from '../services/environment/environment-config.service';
-
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
-const SITE_VERSION: string = EnvironmentConfigService.getInstance().get('siteVersion');
+import { isLocal, SITEVERSION } from '../helpers/utils';
 
 class PhotoDataService {
 
     data: any;
 
     constructor() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PhotoDataService.constructor');
         }
     }
 
     async load(name: string) {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PhotoDataService.load(%s)', name);
         }
 
         if (this.data && this.data.id === name) {
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/photos-' + name + '.json?v=' + SITE_VERSION);
+            const rsp = await fetch('/assets/data/photos-' + name + '.json?v=' + SITEVERSION);
             const json = await rsp.json();
             return this.processData(json);
         }
     }
 
     processData(data: any) {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PhotoDataService.processData')
         }
 

@@ -1,4 +1,5 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import Prism from "prismjs"
 import 'prismjs/components/prism-bash.min.js';
@@ -9,8 +10,6 @@ import 'prismjs/components/prism-yaml.min';
 import { BlogData } from '../../../services/blog-data';
 
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 const CODE_1 = `$ cd ./ionic-ng-wp-client
 $ ionic serve`;
@@ -213,7 +212,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
   header: any;
 
   async componentWillLoad() {
-    if (debug) {
+    if (isLocal()) {
       console.log('> PageTemplatePage.componentWillLoad');
     }
     // this.data = await BlogData.load();
@@ -222,7 +221,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
     this.header = BlogData.getPostHeaderById(id);
 
     // set document title for browser / tab / bookmark
-    document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+    document.title = this.header.title + ' | ' + SITENAME;
   }
 
   // Use this if using source code blocks to be formatted by prism.js...

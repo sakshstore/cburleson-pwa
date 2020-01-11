@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-
-// import { BlogData } from '../../services/blog-data';
-
-import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 @Component({
     tag: 'app-search',
@@ -16,7 +12,7 @@ export class AppSearch {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> AppSearch.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -25,7 +21,7 @@ export class AppSearch {
         //this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.title + ' | ' + SITENAME;
     }
 
     render() {

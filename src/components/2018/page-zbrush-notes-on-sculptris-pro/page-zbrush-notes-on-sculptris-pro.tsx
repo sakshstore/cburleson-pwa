@@ -1,9 +1,8 @@
 import { Component, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
-import { EnvironmentConfigService } from '../../../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
 
 declare global {
     interface Window { adsbygoogle: any; }
@@ -22,7 +21,7 @@ export class PageZbrushNotesOnSculptrisPro {
     header: any;
 
     async componentWillLoad() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageZbrushNotesOnSculptrisPro.componentWillLoad');
         }
         // this.data = await BlogData.load();
@@ -31,7 +30,7 @@ export class PageZbrushNotesOnSculptrisPro {
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
-        document.title = this.header.title + ' | ' + EnvironmentConfigService.getInstance().get('siteName');
+        document.title = this.header.title + ' | ' + SITENAME;
     }
 
     componentDidRender() {

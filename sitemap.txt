@@ -75,6 +75,7 @@ https://codyburleson.com/apply-different-materials-to-subtools-in-zbrush
 https://codyburleson.com/delete-hidden-geometry-in-zbrush
 https://codyburleson.com/use-fibermesh-in-zbrush
 https://codyburleson.com/make-a-zbrush-speed-sculpt-timelapse-video
+https://codyburleson.com/javascript-ternary-operator-shortcut-to-the-if-statement
 https://codyburleson.com/sparql-examples-construct
 https://codyburleson.com/sparql-examples-list-classes
 https://codyburleson.com/sparql-examples-select

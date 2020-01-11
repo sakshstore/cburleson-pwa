@@ -1,5 +1,4 @@
-import { EnvironmentConfigService } from '../services/environment/environment-config.service';
-const debug: boolean = EnvironmentConfigService.getInstance().get('debug');
+import { isLocal } from '../helpers/utils';
 
 /**
  * PageDataService is responsible for loading and returning data from the 
@@ -14,18 +13,18 @@ class PageDataService {
     data: any;
 
     constructor() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageDataService.constructor')
         }
     }
 
     async load() {
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageDataService.load');
         }
         
         if (this.data) {
-            if (debug) {
+            if (isLocal()) {
                 console.log('< PageDataService.load < returning cached data: \n %o', this.data);
             }
             return this.data;
@@ -33,7 +32,7 @@ class PageDataService {
             const rsp = await fetch('/assets/data/page-data.json');
             const json = await rsp.json();
             let data = this.processData(json);
-            if (debug) {
+            if (isLocal()) {
                 console.log('< PageDataService.load < returning newly loaded data: \n %o', this.data);
             }
             return data;
@@ -42,7 +41,7 @@ class PageDataService {
 
     processData(data: any) {
 
-        if (debug) {
+        if (isLocal()) {
             console.log('> PageDataService.processData');
         }
 
