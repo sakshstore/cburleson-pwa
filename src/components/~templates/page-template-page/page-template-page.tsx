@@ -14,6 +14,7 @@ import { isLocal, SITENAME } from '../../../helpers/utils';
 // import 'prismjs/components/prism-turtle.min.js';
 // import 'prismjs/components/prism-sparql.min.js';
 // import 'prismjs/components/prism-bash.min.js';
+// import 'prismjs/components/prism-properties.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 

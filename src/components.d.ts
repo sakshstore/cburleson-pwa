@@ -78,6 +78,7 @@ export namespace Components {
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
+  interface PageFixValidationErrorsWhenUsingRenderrequestInAJsp {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
@@ -87,12 +88,15 @@ export namespace Components {
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
+  interface PageHowToShakeHands {}
   interface PageHowToSketchWithZspheresInZbrush {}
+  interface PageHowToStartASimpleHttpServerFromAnyFolderOnAMac {}
   interface PageHowToTailWebspherePortalLogFilesInMicrosoftWindows {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
+  interface PageImNotBoredImThinking {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -104,6 +108,7 @@ export namespace Components {
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
+  interface PageLiferay7UbuntuDeveloperVmSetupLog {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -158,6 +163,7 @@ export namespace Components {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoriesOfSlaveryAsToldByExSlaves {}
   interface PageStoryStructureDiagram {}
   interface PageStringReplaceHelperForDustJs {}
   interface PageTemplatePage {}
@@ -188,6 +194,7 @@ export namespace Components {
   interface PageW3cLinkedDataPlatformAimsToReframeTheWeb {}
   interface PageWcmLibrariesVideoOverview {}
   interface PageWcmSecurityVideoOverview {}
+  interface PageWebsphereFederatedRepositoryLessonLearned {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
@@ -552,6 +559,12 @@ declare global {
     new (): HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
   };
 
+  interface HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement extends Components.PageFixValidationErrorsWhenUsingRenderrequestInAJsp, HTMLStencilElement {}
+  var HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement: {
+    prototype: HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement;
+    new (): HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement;
+  };
+
   interface HTMLPageFormatCurrencyInAngularElement extends Components.PageFormatCurrencyInAngular, HTMLStencilElement {}
   var HTMLPageFormatCurrencyInAngularElement: {
     prototype: HTMLPageFormatCurrencyInAngularElement;
@@ -606,10 +619,22 @@ declare global {
     new (): HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
   };
 
+  interface HTMLPageHowToShakeHandsElement extends Components.PageHowToShakeHands, HTMLStencilElement {}
+  var HTMLPageHowToShakeHandsElement: {
+    prototype: HTMLPageHowToShakeHandsElement;
+    new (): HTMLPageHowToShakeHandsElement;
+  };
+
   interface HTMLPageHowToSketchWithZspheresInZbrushElement extends Components.PageHowToSketchWithZspheresInZbrush, HTMLStencilElement {}
   var HTMLPageHowToSketchWithZspheresInZbrushElement: {
     prototype: HTMLPageHowToSketchWithZspheresInZbrushElement;
     new (): HTMLPageHowToSketchWithZspheresInZbrushElement;
+  };
+
+  interface HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement extends Components.PageHowToStartASimpleHttpServerFromAnyFolderOnAMac, HTMLStencilElement {}
+  var HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement: {
+    prototype: HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement;
+    new (): HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement;
   };
 
   interface HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement extends Components.PageHowToTailWebspherePortalLogFilesInMicrosoftWindows, HTMLStencilElement {}
@@ -640,6 +665,12 @@ declare global {
   var HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement: {
     prototype: HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
     new (): HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
+  };
+
+  interface HTMLPageImNotBoredImThinkingElement extends Components.PageImNotBoredImThinking, HTMLStencilElement {}
+  var HTMLPageImNotBoredImThinkingElement: {
+    prototype: HTMLPageImNotBoredImThinkingElement;
+    new (): HTMLPageImNotBoredImThinkingElement;
   };
 
   interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
@@ -706,6 +737,12 @@ declare global {
   var HTMLPageLifeEventsElement: {
     prototype: HTMLPageLifeEventsElement;
     new (): HTMLPageLifeEventsElement;
+  };
+
+  interface HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement extends Components.PageLiferay7UbuntuDeveloperVmSetupLog, HTMLStencilElement {}
+  var HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement: {
+    prototype: HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
+    new (): HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
   };
 
   interface HTMLPageLinuxAndUnixCommandsElement extends Components.PageLinuxAndUnixCommands, HTMLStencilElement {}
@@ -1032,6 +1069,12 @@ declare global {
     new (): HTMLPageSparqlExamplesSelectElement;
   };
 
+  interface HTMLPageStoriesOfSlaveryAsToldByExSlavesElement extends Components.PageStoriesOfSlaveryAsToldByExSlaves, HTMLStencilElement {}
+  var HTMLPageStoriesOfSlaveryAsToldByExSlavesElement: {
+    prototype: HTMLPageStoriesOfSlaveryAsToldByExSlavesElement;
+    new (): HTMLPageStoriesOfSlaveryAsToldByExSlavesElement;
+  };
+
   interface HTMLPageStoryStructureDiagramElement extends Components.PageStoryStructureDiagram, HTMLStencilElement {}
   var HTMLPageStoryStructureDiagramElement: {
     prototype: HTMLPageStoryStructureDiagramElement;
@@ -1212,6 +1255,12 @@ declare global {
     new (): HTMLPageWcmSecurityVideoOverviewElement;
   };
 
+  interface HTMLPageWebsphereFederatedRepositoryLessonLearnedElement extends Components.PageWebsphereFederatedRepositoryLessonLearned, HTMLStencilElement {}
+  var HTMLPageWebsphereFederatedRepositoryLessonLearnedElement: {
+    prototype: HTMLPageWebsphereFederatedRepositoryLessonLearnedElement;
+    new (): HTMLPageWebsphereFederatedRepositoryLessonLearnedElement;
+  };
+
   interface HTMLPageWeldMultipleSubtoolsInZbrushElement extends Components.PageWeldMultipleSubtoolsInZbrush, HTMLStencilElement {}
   var HTMLPageWeldMultipleSubtoolsInZbrushElement: {
     prototype: HTMLPageWeldMultipleSubtoolsInZbrushElement;
@@ -1301,6 +1350,7 @@ declare global {
     'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
+    'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
@@ -1310,12 +1360,15 @@ declare global {
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     'page-how-to-find-large-images-and-files-in-ibm-wcm': HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
+    'page-how-to-shake-hands': HTMLPageHowToShakeHandsElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
+    'page-how-to-start-a-simple-http-server-from-any-folder-on-a-mac': HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement;
     'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement;
     'page-how-to-use-live-boolean-in-zbrush': HTMLPageHowToUseLiveBooleanInZbrushElement;
     'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement;
     'page-i-dare-you-to-touch-her': HTMLPageIDareYouToTouchHerElement;
     'page-identifying-large-objects-consuming-memory-in-java-heap': HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
+    'page-im-not-bored-im-thinking': HTMLPageImNotBoredImThinkingElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
@@ -1327,6 +1380,7 @@ declare global {
     'page-killing-kittens': HTMLPageKillingKittensElement;
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
+    'page-liferay-7-ubuntu-developer-vm-setup-log': HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
     'page-linux-and-unix-commands': HTMLPageLinuxAndUnixCommandsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-through-websphere-portal-from-java-and-jsps': HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
@@ -1381,6 +1435,7 @@ declare global {
     'page-sparql-examples-order-by': HTMLPageSparqlExamplesOrderByElement;
     'page-sparql-examples-paging': HTMLPageSparqlExamplesPagingElement;
     'page-sparql-examples-select': HTMLPageSparqlExamplesSelectElement;
+    'page-stories-of-slavery-as-told-by-ex-slaves': HTMLPageStoriesOfSlaveryAsToldByExSlavesElement;
     'page-story-structure-diagram': HTMLPageStoryStructureDiagramElement;
     'page-string-replace-helper-for-dust-js': HTMLPageStringReplaceHelperForDustJsElement;
     'page-template-page': HTMLPageTemplatePageElement;
@@ -1411,6 +1466,7 @@ declare global {
     'page-w3c-linked-data-platform-aims-to-reframe-the-web': HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement;
     'page-wcm-libraries-video-overview': HTMLPageWcmLibrariesVideoOverviewElement;
     'page-wcm-security-video-overview': HTMLPageWcmSecurityVideoOverviewElement;
+    'page-websphere-federated-repository-lesson-learned': HTMLPageWebsphereFederatedRepositoryLessonLearnedElement;
     'page-weld-multiple-subtools-in-zbrush': HTMLPageWeldMultipleSubtoolsInZbrushElement;
     'page-work-life-balance-is-overrated': HTMLPageWorkLifeBalanceIsOverratedElement;
     'page-xmlaccess-samples': HTMLPageXmlaccessSamplesElement;
@@ -1488,6 +1544,7 @@ declare namespace LocalJSX {
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
+  interface PageFixValidationErrorsWhenUsingRenderrequestInAJsp {}
   interface PageFormatCurrencyInAngular {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
@@ -1497,12 +1554,15 @@ declare namespace LocalJSX {
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
+  interface PageHowToShakeHands {}
   interface PageHowToSketchWithZspheresInZbrush {}
+  interface PageHowToStartASimpleHttpServerFromAnyFolderOnAMac {}
   interface PageHowToTailWebspherePortalLogFilesInMicrosoftWindows {}
   interface PageHowToUseLiveBooleanInZbrush {}
   interface PageHowToUseWcmCategoriesFromQueryParameterForPzn {}
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
+  interface PageImNotBoredImThinking {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -1514,6 +1574,7 @@ declare namespace LocalJSX {
   interface PageKillingKittens {}
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
+  interface PageLiferay7UbuntuDeveloperVmSetupLog {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -1568,6 +1629,7 @@ declare namespace LocalJSX {
   interface PageSparqlExamplesOrderBy {}
   interface PageSparqlExamplesPaging {}
   interface PageSparqlExamplesSelect {}
+  interface PageStoriesOfSlaveryAsToldByExSlaves {}
   interface PageStoryStructureDiagram {}
   interface PageStringReplaceHelperForDustJs {}
   interface PageTemplatePage {}
@@ -1598,6 +1660,7 @@ declare namespace LocalJSX {
   interface PageW3cLinkedDataPlatformAimsToReframeTheWeb {}
   interface PageWcmLibrariesVideoOverview {}
   interface PageWcmSecurityVideoOverview {}
+  interface PageWebsphereFederatedRepositoryLessonLearned {}
   interface PageWeldMultipleSubtoolsInZbrush {}
   interface PageWorkLifeBalanceIsOverrated {}
   interface PageXmlaccessSamples {}
@@ -1664,6 +1727,7 @@ declare namespace LocalJSX {
     'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
+    'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': PageFixValidationErrorsWhenUsingRenderrequestInAJsp;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
@@ -1673,12 +1737,15 @@ declare namespace LocalJSX {
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
     'page-how-to-find-large-images-and-files-in-ibm-wcm': PageHowToFindLargeImagesAndFilesInIbmWcm;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
+    'page-how-to-shake-hands': PageHowToShakeHands;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
+    'page-how-to-start-a-simple-http-server-from-any-folder-on-a-mac': PageHowToStartASimpleHttpServerFromAnyFolderOnAMac;
     'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': PageHowToTailWebspherePortalLogFilesInMicrosoftWindows;
     'page-how-to-use-live-boolean-in-zbrush': PageHowToUseLiveBooleanInZbrush;
     'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': PageHowToUseWcmCategoriesFromQueryParameterForPzn;
     'page-i-dare-you-to-touch-her': PageIDareYouToTouchHer;
     'page-identifying-large-objects-consuming-memory-in-java-heap': PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap;
+    'page-im-not-bored-im-thinking': PageImNotBoredImThinking;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
@@ -1690,6 +1757,7 @@ declare namespace LocalJSX {
     'page-killing-kittens': PageKillingKittens;
     'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
+    'page-liferay-7-ubuntu-developer-vm-setup-log': PageLiferay7UbuntuDeveloperVmSetupLog;
     'page-linux-and-unix-commands': PageLinuxAndUnixCommands;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-through-websphere-portal-from-java-and-jsps': PageLoggingThroughWebspherePortalFromJavaAndJsps;
@@ -1744,6 +1812,7 @@ declare namespace LocalJSX {
     'page-sparql-examples-order-by': PageSparqlExamplesOrderBy;
     'page-sparql-examples-paging': PageSparqlExamplesPaging;
     'page-sparql-examples-select': PageSparqlExamplesSelect;
+    'page-stories-of-slavery-as-told-by-ex-slaves': PageStoriesOfSlaveryAsToldByExSlaves;
     'page-story-structure-diagram': PageStoryStructureDiagram;
     'page-string-replace-helper-for-dust-js': PageStringReplaceHelperForDustJs;
     'page-template-page': PageTemplatePage;
@@ -1774,6 +1843,7 @@ declare namespace LocalJSX {
     'page-w3c-linked-data-platform-aims-to-reframe-the-web': PageW3cLinkedDataPlatformAimsToReframeTheWeb;
     'page-wcm-libraries-video-overview': PageWcmLibrariesVideoOverview;
     'page-wcm-security-video-overview': PageWcmSecurityVideoOverview;
+    'page-websphere-federated-repository-lesson-learned': PageWebsphereFederatedRepositoryLessonLearned;
     'page-weld-multiple-subtools-in-zbrush': PageWeldMultipleSubtoolsInZbrush;
     'page-work-life-balance-is-overrated': PageWorkLifeBalanceIsOverrated;
     'page-xmlaccess-samples': PageXmlaccessSamples;
@@ -1847,6 +1917,7 @@ declare module "@stencil/core" {
       'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
+      'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': LocalJSX.PageFixValidationErrorsWhenUsingRenderrequestInAJsp & JSXBase.HTMLAttributes<HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
@@ -1856,12 +1927,15 @@ declare module "@stencil/core" {
       'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
       'page-how-to-find-large-images-and-files-in-ibm-wcm': LocalJSX.PageHowToFindLargeImagesAndFilesInIbmWcm & JSXBase.HTMLAttributes<HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement>;
       'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
+      'page-how-to-shake-hands': LocalJSX.PageHowToShakeHands & JSXBase.HTMLAttributes<HTMLPageHowToShakeHandsElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
+      'page-how-to-start-a-simple-http-server-from-any-folder-on-a-mac': LocalJSX.PageHowToStartASimpleHttpServerFromAnyFolderOnAMac & JSXBase.HTMLAttributes<HTMLPageHowToStartASimpleHttpServerFromAnyFolderOnAMacElement>;
       'page-how-to-tail-websphere-portal-log-files-in-microsoft-windows': LocalJSX.PageHowToTailWebspherePortalLogFilesInMicrosoftWindows & JSXBase.HTMLAttributes<HTMLPageHowToTailWebspherePortalLogFilesInMicrosoftWindowsElement>;
       'page-how-to-use-live-boolean-in-zbrush': LocalJSX.PageHowToUseLiveBooleanInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToUseLiveBooleanInZbrushElement>;
       'page-how-to-use-wcm-categories-from-query-parameter-for-pzn': LocalJSX.PageHowToUseWcmCategoriesFromQueryParameterForPzn & JSXBase.HTMLAttributes<HTMLPageHowToUseWcmCategoriesFromQueryParameterForPznElement>;
       'page-i-dare-you-to-touch-her': LocalJSX.PageIDareYouToTouchHer & JSXBase.HTMLAttributes<HTMLPageIDareYouToTouchHerElement>;
       'page-identifying-large-objects-consuming-memory-in-java-heap': LocalJSX.PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap & JSXBase.HTMLAttributes<HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement>;
+      'page-im-not-bored-im-thinking': LocalJSX.PageImNotBoredImThinking & JSXBase.HTMLAttributes<HTMLPageImNotBoredImThinkingElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
@@ -1873,6 +1947,7 @@ declare module "@stencil/core" {
       'page-killing-kittens': LocalJSX.PageKillingKittens & JSXBase.HTMLAttributes<HTMLPageKillingKittensElement>;
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
+      'page-liferay-7-ubuntu-developer-vm-setup-log': LocalJSX.PageLiferay7UbuntuDeveloperVmSetupLog & JSXBase.HTMLAttributes<HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement>;
       'page-linux-and-unix-commands': LocalJSX.PageLinuxAndUnixCommands & JSXBase.HTMLAttributes<HTMLPageLinuxAndUnixCommandsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-through-websphere-portal-from-java-and-jsps': LocalJSX.PageLoggingThroughWebspherePortalFromJavaAndJsps & JSXBase.HTMLAttributes<HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement>;
@@ -1927,6 +2002,7 @@ declare module "@stencil/core" {
       'page-sparql-examples-order-by': LocalJSX.PageSparqlExamplesOrderBy & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesOrderByElement>;
       'page-sparql-examples-paging': LocalJSX.PageSparqlExamplesPaging & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesPagingElement>;
       'page-sparql-examples-select': LocalJSX.PageSparqlExamplesSelect & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesSelectElement>;
+      'page-stories-of-slavery-as-told-by-ex-slaves': LocalJSX.PageStoriesOfSlaveryAsToldByExSlaves & JSXBase.HTMLAttributes<HTMLPageStoriesOfSlaveryAsToldByExSlavesElement>;
       'page-story-structure-diagram': LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
       'page-string-replace-helper-for-dust-js': LocalJSX.PageStringReplaceHelperForDustJs & JSXBase.HTMLAttributes<HTMLPageStringReplaceHelperForDustJsElement>;
       'page-template-page': LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
@@ -1957,6 +2033,7 @@ declare module "@stencil/core" {
       'page-w3c-linked-data-platform-aims-to-reframe-the-web': LocalJSX.PageW3cLinkedDataPlatformAimsToReframeTheWeb & JSXBase.HTMLAttributes<HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement>;
       'page-wcm-libraries-video-overview': LocalJSX.PageWcmLibrariesVideoOverview & JSXBase.HTMLAttributes<HTMLPageWcmLibrariesVideoOverviewElement>;
       'page-wcm-security-video-overview': LocalJSX.PageWcmSecurityVideoOverview & JSXBase.HTMLAttributes<HTMLPageWcmSecurityVideoOverviewElement>;
+      'page-websphere-federated-repository-lesson-learned': LocalJSX.PageWebsphereFederatedRepositoryLessonLearned & JSXBase.HTMLAttributes<HTMLPageWebsphereFederatedRepositoryLessonLearnedElement>;
       'page-weld-multiple-subtools-in-zbrush': LocalJSX.PageWeldMultipleSubtoolsInZbrush & JSXBase.HTMLAttributes<HTMLPageWeldMultipleSubtoolsInZbrushElement>;
       'page-work-life-balance-is-overrated': LocalJSX.PageWorkLifeBalanceIsOverrated & JSXBase.HTMLAttributes<HTMLPageWorkLifeBalanceIsOverratedElement>;
       'page-xmlaccess-samples': LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;

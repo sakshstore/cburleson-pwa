@@ -662,12 +662,33 @@
       "showInMenus": true
     },
     {
+      "id": "stories-of-slavery-as-told-by-ex-slaves",
+      "title": "A Treasure on the Web: Stories of Slavery as Told by Ex-Slaves",
+      "teaser": "Share the memories of what it truly meant to be born in slavery.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2017/11/slavery-thumbnail.jpg",
+      "datePublished": "2017/11/27",
+      "topics": [
+        "Memoir"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "loneliness-and-a-shovel",
       "title": "Prompt writing - Loneliness and a shovel",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
       "datePublished": "2017/10/28",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "liferay-7-ubuntu-developer-vm-setup-log",
+      "title": "Liferay 7 Ubuntu developer VM setup log",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-liferay.svg",
+      "datePublished": "2017/10/24",
+      "topics": [
+        "Software Dev"
       ],
       "showInMenus": true
     },
@@ -989,6 +1010,17 @@
       "showInMenus": true
     },
     {
+      "id": "im-not-bored-im-thinking",
+      "title": "I'm not bored, I'm thinking",
+      "teaser": "In order to think, sometimes you have to power through a little boredom.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
+      "datePublished": "2016/08/12",
+      "topics": [
+        "Storycraft and Writing"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "format-currency-in-angular",
       "title": "Format Currency in Angular",
       "teaser": "How format a number into currency with the Angular currency pipe.",
@@ -1130,12 +1162,32 @@
       "showInMenus": true
     },
     {
+      "id": "how-to-start-a-simple-http-server-from-any-folder-on-a-mac",
+      "title": "How to start a simple HTTP server from any folder on a Mac",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-apple.svg",
+      "datePublished": "2014/10/23",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "eclipse-tip-format-source-code-on-save",
       "title": "Eclipse tip - format source code on save",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
       "datePublished": "2014/09/18",
       "topics": [
         "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "how-to-shake-hands",
+      "title": "How to shake hands",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/handshake-thumbnail.jpg",
+      "datePublished": "2014/07/12",
+      "topics": [
+        "Uncategorized"
       ],
       "showInMenus": true
     },
@@ -1155,6 +1207,16 @@
       "title": "How to find large images and files in IBM WCM",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2013/12/04",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "fix-validation-errors-when-using-renderrequest-in-a-jsp",
+      "title": "Fix annoying validation errors when using renderRequest in a JSP",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-java.svg",
+      "datePublished": "2013/11/08",
       "topics": [
         "Software Dev"
       ],
@@ -1432,6 +1494,16 @@
       "showInMenus": true
     },
     {
+      "id": "websphere-federated-repository-lesson-learned",
+      "title": "WebSphere federated repository - lesson learned",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/DManager150x150.png",
+      "datePublished": "2012/12/19",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
       "title": "Unity Freebies: Game Timer, Cinematic Letterbox, and Fade-in Scripts",
       "teaser": "Two awesome Unity behavior scripts that you can download and use for free right now!",
@@ -1500,7 +1572,7 @@
     {
       "id": "access-the-was-console-from-websphere-portal-server",
       "title": "Access the WAS console from WebSphere Portal Server",
-      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/DManager150x150.png",
       "datePublished": "2012/08/08",
       "topics": [
         "Software Dev"

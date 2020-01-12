@@ -176,12 +176,21 @@ div.video-container {
 
 .aligncenter {text-align: center}
 
+.alignright {
+  display: inline;
+  float: right; /* Not ignored as IDE says! */
+  margin-left: 1.5em;
+}
+
+img.alignright, img.alignleft {
+  margin-bottom:20px;
+}
+
 .clear {clear: both}
 
 /* ******************************************************* */
 /* IMAGES                                                  */
 /* ******************************************************* */
-
 
 img {
   max-width: 100%;
@@ -224,3 +233,23 @@ ion-thumbnail {
 .hidden {
   display: none;
 }
+
+/* ******************************************************* */
+
+blockquote {
+  font-family: Georgia,Source Serif Pro,serif;
+  font-style: italic;
+  font-size: 1.5rem;
+  line-height: 2.3rem;
+  margin: 4.8rem 120px;
+  text-align: center;
+  quotes: none;
+}
+
+blockquote footer {
+  display:block;
+  font-size:75%;
+  color:#6c757d
+}
+
+blockquote footer::before{content:"\2014 \00A0"}

@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.1] - 2020-01-11
+
+- **Added** page from LinkedIn (moved and deleted it from LinkedIn): [/treasure-web-stories-slavery](https://codyburleson.com/stories-of-slavery-as-told-by-ex-slaves)
+- **Added** pages from legacy WordPress blog:
+    - [/how-to-shake-hands](https://codyburleson.com/how-to-shake-hands)
+    - [/fix-validation-errors-when-using-renderrequest-in-a-jsp](https://codyburleson.com/fix-validation-errors-when-using-renderrequest-in-a-jsp)
+    - [/im-not-bored-im-thinking](https://codyburleson.com/im-not-bored-im-thinking)
+    - [/how-to-start-a-simple-http-server-from-any-folder-on-a-mac](https://codyburleson.com/how-to-start-a-simple-http-server-from-any-folder-on-a-mac)
+    - [/liferay-7-ubuntu-developer-vm-setup-log](https://codyburleson.com/liferay-7-ubuntu-developer-vm-setup-log)
+
 ## [1.5.0] - 2020-01-11
 
 - **Added** pages from legacy WordPress blog:
