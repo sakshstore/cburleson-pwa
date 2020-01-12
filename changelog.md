@@ -3,6 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased]
+- **Added** pages from legacy WordPress blog:
+    - [/setup-carbon-ldp-with-stardog-container-from-scratch](https://codyburleson.com/setup-carbon-ldp-with-stardog-container-from-scratch)
+    - [/how-to-make-your-rational-project-use-ant-for-automatic-build](https://codyburleson.com/how-to-make-your-rational-project-use-ant-for-automatic-build)
+    - [/free-zbrush-asset-gamblers-hat](https://codyburleson.com/free-zbrush-asset-gamblers-hat)
+    - [/permitting-author-access-to-search-collection-in-wcm-search-component](https://codyburleson.com/permitting-author-access-to-search-collection-in-wcm-search-component)
+    - [/remove-sign-up-link-on-wps-login-page](https://codyburleson.com/remove-sign-up-link-on-wps-login-page)
+    - [/improve-your-rational-or-eclipse-based-ides-spelling-dictionary](https://codyburleson.com/improve-your-rational-or-eclipse-based-ides-spelling-dictionary)
+    - [/collect-ui-ui-screenshots-to-inspire-design](https://codyburleson.com/collect-ui-ui-screenshots-to-inspire-design)
+
 ## [1.5.1] - 2020-01-11
 
 - **Added** page from LinkedIn (moved and deleted it from LinkedIn): [/treasure-web-stories-slavery](https://codyburleson.com/stories-of-slavery-as-told-by-ex-slaves)

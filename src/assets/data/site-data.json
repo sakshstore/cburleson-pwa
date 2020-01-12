@@ -101,10 +101,20 @@
       "showInMenus": true
     },
     {
+      "id": "collect-ui-ui-screenshots-to-inspire-design",
+      "title": "Collect UI - screenshots to inspire your next design",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2019/02/collectui.com-thumbnail.png",
+      "datePublished": "2019/02/18",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "curated-list-of-ibm-digital-experience-resources",
       "title": "Curated list of IBM Digital Experience resources",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
-      "datePublished": "2013/12/04",
+      "datePublished": "2018/12/04",
       "topics": [
         "Software Dev"
       ],
@@ -171,6 +181,17 @@
       "dateModified": "2019/10/02",
       "topics": [
         "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "lifetime",
+      "title": "Life Time Calendar",
+      "teaser": "View your whole life in a sobering glance with this life time calendar.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/lifetime-thumbnail.jpg",
+      "datePublished": "2018/09/22",
+      "topics": [
+        "Uncategorized"
       ],
       "showInMenus": true
     },
@@ -336,6 +357,16 @@
       "showInMenus": true
     },
     {
+      "id": "setup-carbon-ldp-with-stardog-container-from-scratch",
+      "title": "Setup Carbon LDP with Stardog container from scratch",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/carbonldp-logo.png",
+      "datePublished": "2018/07/17",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "zbrush-keyboard-shortcuts",
       "title": "ZBrush Keyboard Shortcuts",
       "teaser": "My notes on ZBrush keyboard shortcuts (hotkeys) and control.",
@@ -484,6 +515,16 @@
     {
       "id": "how-to-optimize-a-zsphere-sketch-in-zbrush",
       "title": "How to optimize a ZSphere sketch in ZBrush",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
+      "datePublished": "2018/04/22",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "free-zbrush-asset-gamblers-hat",
+      "title": "Free ZBrush asset - gambler's hat",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/04/22",
       "topics": [
@@ -1203,6 +1244,16 @@
       "showInMenus": true
     },
     {
+      "id": "improve-your-rational-or-eclipse-based-ides-spelling-dictionary",
+      "title": "Improve your Rational or Eclipse-based IDE's spelling dictionary",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
+      "datePublished": "2013/12/30",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "how-to-find-large-images-and-files-in-ibm-wcm",
       "title": "How to find large images and files in IBM WCM",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1474,6 +1525,16 @@
       "showInMenus": true
     },
     {
+      "id": "how-to-make-your-rational-project-use-ant-for-automatic-build",
+      "title": "How to make your Rational project use Ant for automatic build",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg",
+      "datePublished": "2012/12/30",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "build-a-rendering-plugin-ibm-wcm-part-2",
       "title": "Build a Rendering Plugin to Integrate Velocity with IBM WCM - Part 2",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1600,6 +1661,16 @@
       "showInMenus": true
     },
     {
+      "id": "permitting-author-access-to-search-collection-in-wcm-search-component",
+      "title": "Permitting author access to the search collection in a WCM search component",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2011/09/25",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
       "id": "user-impersonation-programming-in-websphere-portal",
       "title": "User impersonation programming in WebSphere Portal",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
@@ -1635,6 +1706,16 @@
       "title": "Introduction to the Semantic Web vision and technologies",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2010/09/13",
+      "topics": [
+        "Software Dev"
+      ],
+      "showInMenus": true
+    },
+    {
+      "id": "remove-sign-up-link-on-wps-login-page",
+      "title": "How to remove the sign-up link on the WebSphere Portal login page",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
+      "datePublished": "2010/06/14",
       "topics": [
         "Software Dev"
       ],

@@ -3,10 +3,6 @@ import { isLocal, SITENAME } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
 import { PageData } from '../../services/page-data';
 
-//import { EnvironmentConfigService } from '../../services/environment/environment-config.service';
-
-//const recordAnalytics: boolean = EnvironmentConfigService.getInstance().get('recordAnalytics');
-//const siteName: string = EnvironmentConfigService.getInstance().get('siteName');
 declare let gtag: Function;
 
 @Component({
@@ -78,10 +74,11 @@ export class AppRoot {
 
         <ion-route-redirect from="/display/blog/2013/01/05/How+to+Shrink+a+Windows+VM+on+VMWare+Fusion+for+Mac" to='/shrink-windows-vm-on-vmware-fusion-for-mac' />
         <ion-route-redirect from="/2013/07/20/mapping-to-a-view-in-spring-with-no-controller" to='/mapping-to-a-view-in-spring-when-no-controller-logic-is-required' />
-        
-       
+
         <ion-route-redirect from="/how-to-rig-a-mesh-with-zspheres-in-zbrush/" to='/rig-a-mesh-with-zspheres-in-zbrush' />
         <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
+        <ion-route-redirect from="/app/lifetime/" to='/lifetime' />
+        <ion-route-redirect from="/see-your-whole-life-in-a-sobering-glance" to='/lifetime' />
 
         <ion-route component="app-tabs">
           <ion-route url="/home" component="tab-home">

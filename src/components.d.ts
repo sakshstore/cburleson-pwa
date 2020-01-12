@@ -57,6 +57,7 @@ export namespace Components {
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {}
   interface PageCmdChronBeaverCage {}
+  interface PageCollectUiUiScreenshotsToInspireDesign {}
   interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
@@ -80,6 +81,7 @@ export namespace Components {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFixValidationErrorsWhenUsingRenderrequestInAJsp {}
   interface PageFormatCurrencyInAngular {}
+  interface PageFreeZbrushAssetGamblersHat {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
@@ -87,6 +89,7 @@ export namespace Components {
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
+  interface PageHowToMakeYourRationalProjectUseAntForAutomaticBuild {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToShakeHands {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -97,6 +100,7 @@ export namespace Components {
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageImNotBoredImThinking {}
+  interface PageImproveYourRationalOrEclipseBasedIdesSpellingDictionary {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -109,6 +113,7 @@ export namespace Components {
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
   interface PageLiferay7UbuntuDeveloperVmSetupLog {}
+  interface PageLifetime {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -128,6 +133,7 @@ export namespace Components {
   interface PageNewWebDeveloperToolkitForIbmDigitalExperience {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
+  interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -139,6 +145,7 @@ export namespace Components {
   interface PageQuotesForWriters {}
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
+  interface PageRemoveSignUpLinkOnWpsLoginPage {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageResolving404ErrorsAccessingWcmContentThroughPocServlet {}
   interface PageRespondToButtonClickWithObservable {}
@@ -147,6 +154,7 @@ export namespace Components {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageSetupCarbonLdpWithStardogContainerFromScratch {}
   interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShowItemNamesinIbmWcmAuthoring {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
@@ -433,6 +441,12 @@ declare global {
     new (): HTMLPageCmdChronBeaverCageElement;
   };
 
+  interface HTMLPageCollectUiUiScreenshotsToInspireDesignElement extends Components.PageCollectUiUiScreenshotsToInspireDesign, HTMLStencilElement {}
+  var HTMLPageCollectUiUiScreenshotsToInspireDesignElement: {
+    prototype: HTMLPageCollectUiUiScreenshotsToInspireDesignElement;
+    new (): HTMLPageCollectUiUiScreenshotsToInspireDesignElement;
+  };
+
   interface HTMLPageConfluencePanelMacroElement extends Components.PageConfluencePanelMacro, HTMLStencilElement {}
   var HTMLPageConfluencePanelMacroElement: {
     prototype: HTMLPageConfluencePanelMacroElement;
@@ -571,6 +585,12 @@ declare global {
     new (): HTMLPageFormatCurrencyInAngularElement;
   };
 
+  interface HTMLPageFreeZbrushAssetGamblersHatElement extends Components.PageFreeZbrushAssetGamblersHat, HTMLStencilElement {}
+  var HTMLPageFreeZbrushAssetGamblersHatElement: {
+    prototype: HTMLPageFreeZbrushAssetGamblersHatElement;
+    new (): HTMLPageFreeZbrushAssetGamblersHatElement;
+  };
+
   interface HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement extends Components.PageGettingPartsOfAUrlFromTheHttpservletrequestObject, HTMLStencilElement {}
   var HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement: {
     prototype: HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
@@ -611,6 +631,12 @@ declare global {
   var HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement: {
     prototype: HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
     new (): HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
+  };
+
+  interface HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement extends Components.PageHowToMakeYourRationalProjectUseAntForAutomaticBuild, HTMLStencilElement {}
+  var HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement: {
+    prototype: HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement;
+    new (): HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement;
   };
 
   interface HTMLPageHowToOptimizeAZsphereSketchInZbrushElement extends Components.PageHowToOptimizeAZsphereSketchInZbrush, HTMLStencilElement {}
@@ -671,6 +697,12 @@ declare global {
   var HTMLPageImNotBoredImThinkingElement: {
     prototype: HTMLPageImNotBoredImThinkingElement;
     new (): HTMLPageImNotBoredImThinkingElement;
+  };
+
+  interface HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement extends Components.PageImproveYourRationalOrEclipseBasedIdesSpellingDictionary, HTMLStencilElement {}
+  var HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement: {
+    prototype: HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement;
+    new (): HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement;
   };
 
   interface HTMLPageIndexOfItemWithinAngularNgforLoopElement extends Components.PageIndexOfItemWithinAngularNgforLoop, HTMLStencilElement {}
@@ -743,6 +775,12 @@ declare global {
   var HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement: {
     prototype: HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
     new (): HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
+  };
+
+  interface HTMLPageLifetimeElement extends Components.PageLifetime, HTMLStencilElement {}
+  var HTMLPageLifetimeElement: {
+    prototype: HTMLPageLifetimeElement;
+    new (): HTMLPageLifetimeElement;
   };
 
   interface HTMLPageLinuxAndUnixCommandsElement extends Components.PageLinuxAndUnixCommands, HTMLStencilElement {}
@@ -859,6 +897,12 @@ declare global {
     new (): HTMLPageNotesOnZbrushSlicecurveBrushElement;
   };
 
+  interface HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement extends Components.PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent, HTMLStencilElement {}
+  var HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement: {
+    prototype: HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
+    new (): HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
+  };
+
   interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {}
   var HTMLPagePhotosWeaponsPlatoonElement: {
     prototype: HTMLPagePhotosWeaponsPlatoonElement;
@@ -925,6 +969,12 @@ declare global {
     new (): HTMLPageRdfSyntaxExamplesElement;
   };
 
+  interface HTMLPageRemoveSignUpLinkOnWpsLoginPageElement extends Components.PageRemoveSignUpLinkOnWpsLoginPage, HTMLStencilElement {}
+  var HTMLPageRemoveSignUpLinkOnWpsLoginPageElement: {
+    prototype: HTMLPageRemoveSignUpLinkOnWpsLoginPageElement;
+    new (): HTMLPageRemoveSignUpLinkOnWpsLoginPageElement;
+  };
+
   interface HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement extends Components.PageRenderTheKeysAndValuesFromAMapInFreemarker, HTMLStencilElement {}
   var HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement: {
     prototype: HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
@@ -971,6 +1021,12 @@ declare global {
   var HTMLPageSetThePageTitleInAngularElement: {
     prototype: HTMLPageSetThePageTitleInAngularElement;
     new (): HTMLPageSetThePageTitleInAngularElement;
+  };
+
+  interface HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement extends Components.PageSetupCarbonLdpWithStardogContainerFromScratch, HTMLStencilElement {}
+  var HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement: {
+    prototype: HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement;
+    new (): HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement;
   };
 
   interface HTMLPageShowBothSidesOfAPlaneInZbrushElement extends Components.PageShowBothSidesOfAPlaneInZbrush, HTMLStencilElement {}
@@ -1329,6 +1385,7 @@ declare global {
     'page-change-canvas-background-color-in-zbrush': HTMLPageChangeCanvasBackgroundColorInZbrushElement;
     'page-classnotfound-does-not-always-mean-class-not-found': HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
     'page-cmd-chron-beaver-cage': HTMLPageCmdChronBeaverCageElement;
+    'page-collect-ui-ui-screenshots-to-inspire-design': HTMLPageCollectUiUiScreenshotsToInspireDesignElement;
     'page-confluence-panel-macro': HTMLPageConfluencePanelMacroElement;
     'page-convert-zbrush-polygroups-into-subtools': HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement;
     'page-copy-assets-from-node-modules-in-stencil-js': HTMLPageCopyAssetsFromNodeModulesInStencilJsElement;
@@ -1352,6 +1409,7 @@ declare global {
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
     'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement;
     'page-format-currency-in-angular': HTMLPageFormatCurrencyInAngularElement;
+    'page-free-zbrush-asset-gamblers-hat': HTMLPageFreeZbrushAssetGamblersHatElement;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
     'page-glossary-of-ldap-acronyms-and-terms': HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
     'page-home': HTMLPageHomeElement;
@@ -1359,6 +1417,7 @@ declare global {
     'page-how-to-apply-texture-in-zbrush': HTMLPageHowToApplyTextureInZbrushElement;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
     'page-how-to-find-large-images-and-files-in-ibm-wcm': HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement;
+    'page-how-to-make-your-rational-project-use-ant-for-automatic-build': HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': HTMLPageHowToOptimizeAZsphereSketchInZbrushElement;
     'page-how-to-shake-hands': HTMLPageHowToShakeHandsElement;
     'page-how-to-sketch-with-zspheres-in-zbrush': HTMLPageHowToSketchWithZspheresInZbrushElement;
@@ -1369,6 +1428,7 @@ declare global {
     'page-i-dare-you-to-touch-her': HTMLPageIDareYouToTouchHerElement;
     'page-identifying-large-objects-consuming-memory-in-java-heap': HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement;
     'page-im-not-bored-im-thinking': HTMLPageImNotBoredImThinkingElement;
+    'page-improve-your-rational-or-eclipse-based-ides-spelling-dictionary': HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement;
     'page-index-of-item-within-angular-ngfor-loop': HTMLPageIndexOfItemWithinAngularNgforLoopElement;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element;
     'page-install-oracle-java-8-on-ubuntu': HTMLPageInstallOracleJava8OnUbuntuElement;
@@ -1381,6 +1441,7 @@ declare global {
     'page-ldap-error-codes': HTMLPageLdapErrorCodesElement;
     'page-life-events': HTMLPageLifeEventsElement;
     'page-liferay-7-ubuntu-developer-vm-setup-log': HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
+    'page-lifetime': HTMLPageLifetimeElement;
     'page-linux-and-unix-commands': HTMLPageLinuxAndUnixCommandsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-through-websphere-portal-from-java-and-jsps': HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
@@ -1400,6 +1461,7 @@ declare global {
     'page-new-web-developer-toolkit-for-ibm-digital-experience': HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement;
     'page-notes-on-zbrush-sculptris-pro': HTMLPageNotesOnZbrushSculptrisProElement;
     'page-notes-on-zbrush-slicecurve-brush': HTMLPageNotesOnZbrushSlicecurveBrushElement;
+    'page-permitting-author-access-to-search-collection-in-wcm-search-component': HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
     'page-photos-weapons-platoon': HTMLPagePhotosWeaponsPlatoonElement;
     'page-pink-hearts': HTMLPagePinkHeartsElement;
     'page-pwa-with-ionic-angular-wordpress-api-1': HTMLPagePwaWithIonicAngularWordpressApi1Element;
@@ -1411,6 +1473,7 @@ declare global {
     'page-quotes-for-writers': HTMLPageQuotesForWritersElement;
     'page-ray-kelley-silver-star': HTMLPageRayKelleySilverStarElement;
     'page-rdf-syntax-examples': HTMLPageRdfSyntaxExamplesElement;
+    'page-remove-sign-up-link-on-wps-login-page': HTMLPageRemoveSignUpLinkOnWpsLoginPageElement;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement;
     'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement;
     'page-respond-to-button-click-with-observable': HTMLPageRespondToButtonClickWithObservableElement;
@@ -1419,6 +1482,7 @@ declare global {
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
+    'page-setup-carbon-ldp-with-stardog-container-from-scratch': HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement;
     'page-show-both-sides-of-a-plane-in-zbrush': HTMLPageShowBothSidesOfAPlaneInZbrushElement;
     'page-show-item-namesin-ibm-wcm-authoring': HTMLPageShowItemNamesinIbmWcmAuthoringElement;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
@@ -1523,6 +1587,7 @@ declare namespace LocalJSX {
   interface PageChangeCanvasBackgroundColorInZbrush {}
   interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {}
   interface PageCmdChronBeaverCage {}
+  interface PageCollectUiUiScreenshotsToInspireDesign {}
   interface PageConfluencePanelMacro {}
   interface PageConvertZbrushPolygroupsIntoSubtools {}
   interface PageCopyAssetsFromNodeModulesInStencilJs {}
@@ -1546,6 +1611,7 @@ declare namespace LocalJSX {
   interface PageFixForGitAfterMacosMojaveUpgrade {}
   interface PageFixValidationErrorsWhenUsingRenderrequestInAJsp {}
   interface PageFormatCurrencyInAngular {}
+  interface PageFreeZbrushAssetGamblersHat {}
   interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {}
   interface PageGlossaryOfLdapAcronymsAndTerms {}
   interface PageHome {}
@@ -1553,6 +1619,7 @@ declare namespace LocalJSX {
   interface PageHowToApplyTextureInZbrush {}
   interface PageHowToCheckUserAccessRoleInAWebspherePortalTheme {}
   interface PageHowToFindLargeImagesAndFilesInIbmWcm {}
+  interface PageHowToMakeYourRationalProjectUseAntForAutomaticBuild {}
   interface PageHowToOptimizeAZsphereSketchInZbrush {}
   interface PageHowToShakeHands {}
   interface PageHowToSketchWithZspheresInZbrush {}
@@ -1563,6 +1630,7 @@ declare namespace LocalJSX {
   interface PageIDareYouToTouchHer {}
   interface PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap {}
   interface PageImNotBoredImThinking {}
+  interface PageImproveYourRationalOrEclipseBasedIdesSpellingDictionary {}
   interface PageIndexOfItemWithinAngularNgforLoop {}
   interface PageInstallJavaPluginFor64bitFirefoxOnCentos64 {}
   interface PageInstallOracleJava8OnUbuntu {}
@@ -1575,6 +1643,7 @@ declare namespace LocalJSX {
   interface PageLdapErrorCodes {}
   interface PageLifeEvents {}
   interface PageLiferay7UbuntuDeveloperVmSetupLog {}
+  interface PageLifetime {}
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -1594,6 +1663,7 @@ declare namespace LocalJSX {
   interface PageNewWebDeveloperToolkitForIbmDigitalExperience {}
   interface PageNotesOnZbrushSculptrisPro {}
   interface PageNotesOnZbrushSlicecurveBrush {}
+  interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {}
   interface PagePhotosWeaponsPlatoon {}
   interface PagePinkHearts {}
   interface PagePwaWithIonicAngularWordpressApi1 {}
@@ -1605,6 +1675,7 @@ declare namespace LocalJSX {
   interface PageQuotesForWriters {}
   interface PageRayKelleySilverStar {}
   interface PageRdfSyntaxExamples {}
+  interface PageRemoveSignUpLinkOnWpsLoginPage {}
   interface PageRenderTheKeysAndValuesFromAMapInFreemarker {}
   interface PageResolving404ErrorsAccessingWcmContentThroughPocServlet {}
   interface PageRespondToButtonClickWithObservable {}
@@ -1613,6 +1684,7 @@ declare namespace LocalJSX {
   interface PageScriptForRotatingUnityGameObject90Degrees {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
+  interface PageSetupCarbonLdpWithStardogContainerFromScratch {}
   interface PageShowBothSidesOfAPlaneInZbrush {}
   interface PageShowItemNamesinIbmWcmAuthoring {}
   interface PageShrinkWindowsVmOnVmwareFusionForMac {}
@@ -1706,6 +1778,7 @@ declare namespace LocalJSX {
     'page-change-canvas-background-color-in-zbrush': PageChangeCanvasBackgroundColorInZbrush;
     'page-classnotfound-does-not-always-mean-class-not-found': PageClassnotfoundDoesNotAlwaysMeanClassNotFound;
     'page-cmd-chron-beaver-cage': PageCmdChronBeaverCage;
+    'page-collect-ui-ui-screenshots-to-inspire-design': PageCollectUiUiScreenshotsToInspireDesign;
     'page-confluence-panel-macro': PageConfluencePanelMacro;
     'page-convert-zbrush-polygroups-into-subtools': PageConvertZbrushPolygroupsIntoSubtools;
     'page-copy-assets-from-node-modules-in-stencil-js': PageCopyAssetsFromNodeModulesInStencilJs;
@@ -1729,6 +1802,7 @@ declare namespace LocalJSX {
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
     'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': PageFixValidationErrorsWhenUsingRenderrequestInAJsp;
     'page-format-currency-in-angular': PageFormatCurrencyInAngular;
+    'page-free-zbrush-asset-gamblers-hat': PageFreeZbrushAssetGamblersHat;
     'page-getting-parts-of-a-url-from-the-httpservletrequest-object': PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
     'page-glossary-of-ldap-acronyms-and-terms': PageGlossaryOfLdapAcronymsAndTerms;
     'page-home': PageHome;
@@ -1736,6 +1810,7 @@ declare namespace LocalJSX {
     'page-how-to-apply-texture-in-zbrush': PageHowToApplyTextureInZbrush;
     'page-how-to-check-user-access-role-in-a-websphere-portal-theme': PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
     'page-how-to-find-large-images-and-files-in-ibm-wcm': PageHowToFindLargeImagesAndFilesInIbmWcm;
+    'page-how-to-make-your-rational-project-use-ant-for-automatic-build': PageHowToMakeYourRationalProjectUseAntForAutomaticBuild;
     'page-how-to-optimize-a-zsphere-sketch-in-zbrush': PageHowToOptimizeAZsphereSketchInZbrush;
     'page-how-to-shake-hands': PageHowToShakeHands;
     'page-how-to-sketch-with-zspheres-in-zbrush': PageHowToSketchWithZspheresInZbrush;
@@ -1746,6 +1821,7 @@ declare namespace LocalJSX {
     'page-i-dare-you-to-touch-her': PageIDareYouToTouchHer;
     'page-identifying-large-objects-consuming-memory-in-java-heap': PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap;
     'page-im-not-bored-im-thinking': PageImNotBoredImThinking;
+    'page-improve-your-rational-or-eclipse-based-ides-spelling-dictionary': PageImproveYourRationalOrEclipseBasedIdesSpellingDictionary;
     'page-index-of-item-within-angular-ngfor-loop': PageIndexOfItemWithinAngularNgforLoop;
     'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': PageInstallJavaPluginFor64bitFirefoxOnCentos64;
     'page-install-oracle-java-8-on-ubuntu': PageInstallOracleJava8OnUbuntu;
@@ -1758,6 +1834,7 @@ declare namespace LocalJSX {
     'page-ldap-error-codes': PageLdapErrorCodes;
     'page-life-events': PageLifeEvents;
     'page-liferay-7-ubuntu-developer-vm-setup-log': PageLiferay7UbuntuDeveloperVmSetupLog;
+    'page-lifetime': PageLifetime;
     'page-linux-and-unix-commands': PageLinuxAndUnixCommands;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-through-websphere-portal-from-java-and-jsps': PageLoggingThroughWebspherePortalFromJavaAndJsps;
@@ -1777,6 +1854,7 @@ declare namespace LocalJSX {
     'page-new-web-developer-toolkit-for-ibm-digital-experience': PageNewWebDeveloperToolkitForIbmDigitalExperience;
     'page-notes-on-zbrush-sculptris-pro': PageNotesOnZbrushSculptrisPro;
     'page-notes-on-zbrush-slicecurve-brush': PageNotesOnZbrushSlicecurveBrush;
+    'page-permitting-author-access-to-search-collection-in-wcm-search-component': PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent;
     'page-photos-weapons-platoon': PagePhotosWeaponsPlatoon;
     'page-pink-hearts': PagePinkHearts;
     'page-pwa-with-ionic-angular-wordpress-api-1': PagePwaWithIonicAngularWordpressApi1;
@@ -1788,6 +1866,7 @@ declare namespace LocalJSX {
     'page-quotes-for-writers': PageQuotesForWriters;
     'page-ray-kelley-silver-star': PageRayKelleySilverStar;
     'page-rdf-syntax-examples': PageRdfSyntaxExamples;
+    'page-remove-sign-up-link-on-wps-login-page': PageRemoveSignUpLinkOnWpsLoginPage;
     'page-render-the-keys-and-values-from-a-map-in-freemarker': PageRenderTheKeysAndValuesFromAMapInFreemarker;
     'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': PageResolving404ErrorsAccessingWcmContentThroughPocServlet;
     'page-respond-to-button-click-with-observable': PageRespondToButtonClickWithObservable;
@@ -1796,6 +1875,7 @@ declare namespace LocalJSX {
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
+    'page-setup-carbon-ldp-with-stardog-container-from-scratch': PageSetupCarbonLdpWithStardogContainerFromScratch;
     'page-show-both-sides-of-a-plane-in-zbrush': PageShowBothSidesOfAPlaneInZbrush;
     'page-show-item-namesin-ibm-wcm-authoring': PageShowItemNamesinIbmWcmAuthoring;
     'page-shrink-windows-vm-on-vmware-fusion-for-mac': PageShrinkWindowsVmOnVmwareFusionForMac;
@@ -1896,6 +1976,7 @@ declare module "@stencil/core" {
       'page-change-canvas-background-color-in-zbrush': LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
       'page-classnotfound-does-not-always-mean-class-not-found': LocalJSX.PageClassnotfoundDoesNotAlwaysMeanClassNotFound & JSXBase.HTMLAttributes<HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement>;
       'page-cmd-chron-beaver-cage': LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
+      'page-collect-ui-ui-screenshots-to-inspire-design': LocalJSX.PageCollectUiUiScreenshotsToInspireDesign & JSXBase.HTMLAttributes<HTMLPageCollectUiUiScreenshotsToInspireDesignElement>;
       'page-confluence-panel-macro': LocalJSX.PageConfluencePanelMacro & JSXBase.HTMLAttributes<HTMLPageConfluencePanelMacroElement>;
       'page-convert-zbrush-polygroups-into-subtools': LocalJSX.PageConvertZbrushPolygroupsIntoSubtools & JSXBase.HTMLAttributes<HTMLPageConvertZbrushPolygroupsIntoSubtoolsElement>;
       'page-copy-assets-from-node-modules-in-stencil-js': LocalJSX.PageCopyAssetsFromNodeModulesInStencilJs & JSXBase.HTMLAttributes<HTMLPageCopyAssetsFromNodeModulesInStencilJsElement>;
@@ -1919,6 +2000,7 @@ declare module "@stencil/core" {
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;
       'page-fix-validation-errors-when-using-renderrequest-in-a-jsp': LocalJSX.PageFixValidationErrorsWhenUsingRenderrequestInAJsp & JSXBase.HTMLAttributes<HTMLPageFixValidationErrorsWhenUsingRenderrequestInAJspElement>;
       'page-format-currency-in-angular': LocalJSX.PageFormatCurrencyInAngular & JSXBase.HTMLAttributes<HTMLPageFormatCurrencyInAngularElement>;
+      'page-free-zbrush-asset-gamblers-hat': LocalJSX.PageFreeZbrushAssetGamblersHat & JSXBase.HTMLAttributes<HTMLPageFreeZbrushAssetGamblersHatElement>;
       'page-getting-parts-of-a-url-from-the-httpservletrequest-object': LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
       'page-glossary-of-ldap-acronyms-and-terms': LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
       'page-home': LocalJSX.PageHome & JSXBase.HTMLAttributes<HTMLPageHomeElement>;
@@ -1926,6 +2008,7 @@ declare module "@stencil/core" {
       'page-how-to-apply-texture-in-zbrush': LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
       'page-how-to-check-user-access-role-in-a-websphere-portal-theme': LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;
       'page-how-to-find-large-images-and-files-in-ibm-wcm': LocalJSX.PageHowToFindLargeImagesAndFilesInIbmWcm & JSXBase.HTMLAttributes<HTMLPageHowToFindLargeImagesAndFilesInIbmWcmElement>;
+      'page-how-to-make-your-rational-project-use-ant-for-automatic-build': LocalJSX.PageHowToMakeYourRationalProjectUseAntForAutomaticBuild & JSXBase.HTMLAttributes<HTMLPageHowToMakeYourRationalProjectUseAntForAutomaticBuildElement>;
       'page-how-to-optimize-a-zsphere-sketch-in-zbrush': LocalJSX.PageHowToOptimizeAZsphereSketchInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToOptimizeAZsphereSketchInZbrushElement>;
       'page-how-to-shake-hands': LocalJSX.PageHowToShakeHands & JSXBase.HTMLAttributes<HTMLPageHowToShakeHandsElement>;
       'page-how-to-sketch-with-zspheres-in-zbrush': LocalJSX.PageHowToSketchWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToSketchWithZspheresInZbrushElement>;
@@ -1936,6 +2019,7 @@ declare module "@stencil/core" {
       'page-i-dare-you-to-touch-her': LocalJSX.PageIDareYouToTouchHer & JSXBase.HTMLAttributes<HTMLPageIDareYouToTouchHerElement>;
       'page-identifying-large-objects-consuming-memory-in-java-heap': LocalJSX.PageIdentifyingLargeObjectsConsumingMemoryInJavaHeap & JSXBase.HTMLAttributes<HTMLPageIdentifyingLargeObjectsConsumingMemoryInJavaHeapElement>;
       'page-im-not-bored-im-thinking': LocalJSX.PageImNotBoredImThinking & JSXBase.HTMLAttributes<HTMLPageImNotBoredImThinkingElement>;
+      'page-improve-your-rational-or-eclipse-based-ides-spelling-dictionary': LocalJSX.PageImproveYourRationalOrEclipseBasedIdesSpellingDictionary & JSXBase.HTMLAttributes<HTMLPageImproveYourRationalOrEclipseBasedIdesSpellingDictionaryElement>;
       'page-index-of-item-within-angular-ngfor-loop': LocalJSX.PageIndexOfItemWithinAngularNgforLoop & JSXBase.HTMLAttributes<HTMLPageIndexOfItemWithinAngularNgforLoopElement>;
       'page-install-java-plugin-for-64bit-firefox-on-centos-6-4': LocalJSX.PageInstallJavaPluginFor64bitFirefoxOnCentos64 & JSXBase.HTMLAttributes<HTMLPageInstallJavaPluginFor64bitFirefoxOnCentos64Element>;
       'page-install-oracle-java-8-on-ubuntu': LocalJSX.PageInstallOracleJava8OnUbuntu & JSXBase.HTMLAttributes<HTMLPageInstallOracleJava8OnUbuntuElement>;
@@ -1948,6 +2032,7 @@ declare module "@stencil/core" {
       'page-ldap-error-codes': LocalJSX.PageLdapErrorCodes & JSXBase.HTMLAttributes<HTMLPageLdapErrorCodesElement>;
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
       'page-liferay-7-ubuntu-developer-vm-setup-log': LocalJSX.PageLiferay7UbuntuDeveloperVmSetupLog & JSXBase.HTMLAttributes<HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement>;
+      'page-lifetime': LocalJSX.PageLifetime & JSXBase.HTMLAttributes<HTMLPageLifetimeElement>;
       'page-linux-and-unix-commands': LocalJSX.PageLinuxAndUnixCommands & JSXBase.HTMLAttributes<HTMLPageLinuxAndUnixCommandsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-through-websphere-portal-from-java-and-jsps': LocalJSX.PageLoggingThroughWebspherePortalFromJavaAndJsps & JSXBase.HTMLAttributes<HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement>;
@@ -1967,6 +2052,7 @@ declare module "@stencil/core" {
       'page-new-web-developer-toolkit-for-ibm-digital-experience': LocalJSX.PageNewWebDeveloperToolkitForIbmDigitalExperience & JSXBase.HTMLAttributes<HTMLPageNewWebDeveloperToolkitForIbmDigitalExperienceElement>;
       'page-notes-on-zbrush-sculptris-pro': LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
       'page-notes-on-zbrush-slicecurve-brush': LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
+      'page-permitting-author-access-to-search-collection-in-wcm-search-component': LocalJSX.PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent & JSXBase.HTMLAttributes<HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement>;
       'page-photos-weapons-platoon': LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
       'page-pink-hearts': LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
       'page-pwa-with-ionic-angular-wordpress-api-1': LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
@@ -1978,6 +2064,7 @@ declare module "@stencil/core" {
       'page-quotes-for-writers': LocalJSX.PageQuotesForWriters & JSXBase.HTMLAttributes<HTMLPageQuotesForWritersElement>;
       'page-ray-kelley-silver-star': LocalJSX.PageRayKelleySilverStar & JSXBase.HTMLAttributes<HTMLPageRayKelleySilverStarElement>;
       'page-rdf-syntax-examples': LocalJSX.PageRdfSyntaxExamples & JSXBase.HTMLAttributes<HTMLPageRdfSyntaxExamplesElement>;
+      'page-remove-sign-up-link-on-wps-login-page': LocalJSX.PageRemoveSignUpLinkOnWpsLoginPage & JSXBase.HTMLAttributes<HTMLPageRemoveSignUpLinkOnWpsLoginPageElement>;
       'page-render-the-keys-and-values-from-a-map-in-freemarker': LocalJSX.PageRenderTheKeysAndValuesFromAMapInFreemarker & JSXBase.HTMLAttributes<HTMLPageRenderTheKeysAndValuesFromAMapInFreemarkerElement>;
       'page-resolving-404-errors-accessing-wcm-content-through-poc-servlet': LocalJSX.PageResolving404ErrorsAccessingWcmContentThroughPocServlet & JSXBase.HTMLAttributes<HTMLPageResolving404ErrorsAccessingWcmContentThroughPocServletElement>;
       'page-respond-to-button-click-with-observable': LocalJSX.PageRespondToButtonClickWithObservable & JSXBase.HTMLAttributes<HTMLPageRespondToButtonClickWithObservableElement>;
@@ -1986,6 +2073,7 @@ declare module "@stencil/core" {
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
+      'page-setup-carbon-ldp-with-stardog-container-from-scratch': LocalJSX.PageSetupCarbonLdpWithStardogContainerFromScratch & JSXBase.HTMLAttributes<HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement>;
       'page-show-both-sides-of-a-plane-in-zbrush': LocalJSX.PageShowBothSidesOfAPlaneInZbrush & JSXBase.HTMLAttributes<HTMLPageShowBothSidesOfAPlaneInZbrushElement>;
       'page-show-item-namesin-ibm-wcm-authoring': LocalJSX.PageShowItemNamesinIbmWcmAuthoring & JSXBase.HTMLAttributes<HTMLPageShowItemNamesinIbmWcmAuthoringElement>;
       'page-shrink-windows-vm-on-vmware-fusion-for-mac': LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
