@@ -11,6 +11,7 @@ import { HTMLStencilElement, JSXBase } from '@stencil/core/internal';
 
 export namespace Components {
   interface App404PageNotFound {}
+  interface AppBlog {}
   interface AppBlogFilter {
     'excludedTopics': string[];
   }
@@ -48,7 +49,6 @@ export namespace Components {
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
-  interface PageBlog {}
   interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
   interface PageBuildARenderingPluginIbmWcmPart1 {}
@@ -114,6 +114,10 @@ export namespace Components {
   interface PageLifeEvents {}
   interface PageLiferay7UbuntuDeveloperVmSetupLog {}
   interface PageLifetime {}
+  interface PageLifetimeModal {
+    'birthday': string;
+    'gender': string;
+  }
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -217,6 +221,12 @@ declare global {
   var HTMLApp404PageNotFoundElement: {
     prototype: HTMLApp404PageNotFoundElement;
     new (): HTMLApp404PageNotFoundElement;
+  };
+
+  interface HTMLAppBlogElement extends Components.AppBlog, HTMLStencilElement {}
+  var HTMLAppBlogElement: {
+    prototype: HTMLAppBlogElement;
+    new (): HTMLAppBlogElement;
   };
 
   interface HTMLAppBlogFilterElement extends Components.AppBlogFilter, HTMLStencilElement {}
@@ -385,12 +395,6 @@ declare global {
   var HTMLPageBindingToAZsphereArmatureElement: {
     prototype: HTMLPageBindingToAZsphereArmatureElement;
     new (): HTMLPageBindingToAZsphereArmatureElement;
-  };
-
-  interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {}
-  var HTMLPageBlogElement: {
-    prototype: HTMLPageBlogElement;
-    new (): HTMLPageBlogElement;
   };
 
   interface HTMLPageBookReviewMoreThanEverythingElement extends Components.PageBookReviewMoreThanEverything, HTMLStencilElement {}
@@ -781,6 +785,12 @@ declare global {
   var HTMLPageLifetimeElement: {
     prototype: HTMLPageLifetimeElement;
     new (): HTMLPageLifetimeElement;
+  };
+
+  interface HTMLPageLifetimeModalElement extends Components.PageLifetimeModal, HTMLStencilElement {}
+  var HTMLPageLifetimeModalElement: {
+    prototype: HTMLPageLifetimeModalElement;
+    new (): HTMLPageLifetimeModalElement;
   };
 
   interface HTMLPageLinuxAndUnixCommandsElement extends Components.PageLinuxAndUnixCommands, HTMLStencilElement {}
@@ -1348,6 +1358,7 @@ declare global {
   };
   interface HTMLElementTagNameMap {
     'app-404-page-not-found': HTMLApp404PageNotFoundElement;
+    'app-blog': HTMLAppBlogElement;
     'app-blog-filter': HTMLAppBlogFilterElement;
     'app-entry-meta': HTMLAppEntryMetaElement;
     'app-photo-card': HTMLAppPhotoCardElement;
@@ -1376,7 +1387,6 @@ declare global {
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
     'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     'page-binding-to-a-zsphere-armature': HTMLPageBindingToAZsphereArmatureElement;
-    'page-blog': HTMLPageBlogElement;
     'page-book-review-more-than-everything': HTMLPageBookReviewMoreThanEverythingElement;
     'page-books': HTMLPageBooksElement;
     'page-build-a-rendering-plugin-ibm-wcm-part-1': HTMLPageBuildARenderingPluginIbmWcmPart1Element;
@@ -1442,6 +1452,7 @@ declare global {
     'page-life-events': HTMLPageLifeEventsElement;
     'page-liferay-7-ubuntu-developer-vm-setup-log': HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement;
     'page-lifetime': HTMLPageLifetimeElement;
+    'page-lifetime-modal': HTMLPageLifetimeModalElement;
     'page-linux-and-unix-commands': HTMLPageLinuxAndUnixCommandsElement;
     'page-list-ibm-db2-commands': HTMLPageListIbmDb2CommandsElement;
     'page-logging-through-websphere-portal-from-java-and-jsps': HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement;
@@ -1541,6 +1552,7 @@ declare global {
 
 declare namespace LocalJSX {
   interface App404PageNotFound {}
+  interface AppBlog {}
   interface AppBlogFilter {
     'excludedTopics'?: string[];
   }
@@ -1578,7 +1590,6 @@ declare namespace LocalJSX {
   interface PageBendThingsInZbrushWithTheBendCurveModifier {}
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
-  interface PageBlog {}
   interface PageBookReviewMoreThanEverything {}
   interface PageBooks {}
   interface PageBuildARenderingPluginIbmWcmPart1 {}
@@ -1644,6 +1655,10 @@ declare namespace LocalJSX {
   interface PageLifeEvents {}
   interface PageLiferay7UbuntuDeveloperVmSetupLog {}
   interface PageLifetime {}
+  interface PageLifetimeModal {
+    'birthday'?: string;
+    'gender'?: string;
+  }
   interface PageLinuxAndUnixCommands {}
   interface PageListIbmDb2Commands {}
   interface PageLoggingThroughWebspherePortalFromJavaAndJsps {}
@@ -1741,6 +1756,7 @@ declare namespace LocalJSX {
 
   interface IntrinsicElements {
     'app-404-page-not-found': App404PageNotFound;
+    'app-blog': AppBlog;
     'app-blog-filter': AppBlogFilter;
     'app-entry-meta': AppEntryMeta;
     'app-photo-card': AppPhotoCard;
@@ -1769,7 +1785,6 @@ declare namespace LocalJSX {
     'page-bend-things-in-zbrush-with-the-bend-curve-modifier': PageBendThingsInZbrushWithTheBendCurveModifier;
     'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
     'page-binding-to-a-zsphere-armature': PageBindingToAZsphereArmature;
-    'page-blog': PageBlog;
     'page-book-review-more-than-everything': PageBookReviewMoreThanEverything;
     'page-books': PageBooks;
     'page-build-a-rendering-plugin-ibm-wcm-part-1': PageBuildARenderingPluginIbmWcmPart1;
@@ -1835,6 +1850,7 @@ declare namespace LocalJSX {
     'page-life-events': PageLifeEvents;
     'page-liferay-7-ubuntu-developer-vm-setup-log': PageLiferay7UbuntuDeveloperVmSetupLog;
     'page-lifetime': PageLifetime;
+    'page-lifetime-modal': PageLifetimeModal;
     'page-linux-and-unix-commands': PageLinuxAndUnixCommands;
     'page-list-ibm-db2-commands': PageListIbmDb2Commands;
     'page-logging-through-websphere-portal-from-java-and-jsps': PageLoggingThroughWebspherePortalFromJavaAndJsps;
@@ -1939,6 +1955,7 @@ declare module "@stencil/core" {
   export namespace JSX {
     interface IntrinsicElements {
       'app-404-page-not-found': LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
+      'app-blog': LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
       'app-blog-filter': LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
       'app-entry-meta': LocalJSX.AppEntryMeta & JSXBase.HTMLAttributes<HTMLAppEntryMetaElement>;
       'app-photo-card': LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
@@ -1967,7 +1984,6 @@ declare module "@stencil/core" {
       'page-bend-things-in-zbrush-with-the-bend-curve-modifier': LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
       'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
       'page-binding-to-a-zsphere-armature': LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
-      'page-blog': LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
       'page-book-review-more-than-everything': LocalJSX.PageBookReviewMoreThanEverything & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-build-a-rendering-plugin-ibm-wcm-part-1': LocalJSX.PageBuildARenderingPluginIbmWcmPart1 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart1Element>;
@@ -2033,6 +2049,7 @@ declare module "@stencil/core" {
       'page-life-events': LocalJSX.PageLifeEvents & JSXBase.HTMLAttributes<HTMLPageLifeEventsElement>;
       'page-liferay-7-ubuntu-developer-vm-setup-log': LocalJSX.PageLiferay7UbuntuDeveloperVmSetupLog & JSXBase.HTMLAttributes<HTMLPageLiferay7UbuntuDeveloperVmSetupLogElement>;
       'page-lifetime': LocalJSX.PageLifetime & JSXBase.HTMLAttributes<HTMLPageLifetimeElement>;
+      'page-lifetime-modal': LocalJSX.PageLifetimeModal & JSXBase.HTMLAttributes<HTMLPageLifetimeModalElement>;
       'page-linux-and-unix-commands': LocalJSX.PageLinuxAndUnixCommands & JSXBase.HTMLAttributes<HTMLPageLinuxAndUnixCommandsElement>;
       'page-list-ibm-db2-commands': LocalJSX.PageListIbmDb2Commands & JSXBase.HTMLAttributes<HTMLPageListIbmDb2CommandsElement>;
       'page-logging-through-websphere-portal-from-java-and-jsps': LocalJSX.PageLoggingThroughWebspherePortalFromJavaAndJsps & JSXBase.HTMLAttributes<HTMLPageLoggingThroughWebspherePortalFromJavaAndJspsElement>;

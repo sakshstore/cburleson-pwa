@@ -3,7 +3,8 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [1.5.2] - 2020-01-13
+
 - **Added** pages from legacy WordPress blog:
     - [/setup-carbon-ldp-with-stardog-container-from-scratch](https://codyburleson.com/setup-carbon-ldp-with-stardog-container-from-scratch)
     - [/how-to-make-your-rational-project-use-ant-for-automatic-build](https://codyburleson.com/how-to-make-your-rational-project-use-ant-for-automatic-build)
@@ -12,6 +13,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
     - [/remove-sign-up-link-on-wps-login-page](https://codyburleson.com/remove-sign-up-link-on-wps-login-page)
     - [/improve-your-rational-or-eclipse-based-ides-spelling-dictionary](https://codyburleson.com/improve-your-rational-or-eclipse-based-ides-spelling-dictionary)
     - [/collect-ui-ui-screenshots-to-inspire-design](https://codyburleson.com/collect-ui-ui-screenshots-to-inspire-design)
+    - [/lifetime](https://codyburleson.com/lifetime)
 
 ## [1.5.1] - 2020-01-11
 

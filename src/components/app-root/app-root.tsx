@@ -77,15 +77,13 @@ export class AppRoot {
 
         <ion-route-redirect from="/how-to-rig-a-mesh-with-zspheres-in-zbrush/" to='/rig-a-mesh-with-zspheres-in-zbrush' />
         <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
-        <ion-route-redirect from="/app/lifetime/" to='/lifetime' />
-        <ion-route-redirect from="/see-your-whole-life-in-a-sobering-glance" to='/lifetime' />
 
         <ion-route component="app-tabs">
           <ion-route url="/home" component="tab-home">
             <ion-route component="page-home"></ion-route>
           </ion-route>
           <ion-route url="/blog" component="tab-blog">
-            <ion-route component="page-blog"></ion-route>
+            <ion-route component="app-blog"></ion-route>
           </ion-route>
           <ion-route url="/books" component="tab-books">
             <ion-route component="page-books"></ion-route>
@@ -152,7 +150,7 @@ export class AppRoot {
     });
 
     return (
-      <ion-menu content-id="menu-content">
+      <ion-menu content-id="menu-content" menu-id="primaryNav">
             <ion-header>
               <ion-toolbar>
                 <ion-title>Menu</ion-title>

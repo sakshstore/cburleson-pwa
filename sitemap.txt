@@ -30,6 +30,7 @@ https://codyburleson.com/memories-of-momma-3
 https://codyburleson.com/memories-of-momma-2
 https://codyburleson.com/memories-of-momma-1
 https://codyburleson.com/killing-kittens
+https://codyburleson.com/collect-ui-ui-screenshots-to-inspire-design
 https://codyburleson.com/curated-list-of-ibm-digital-experience-resources
 https://codyburleson.com/copy-assets-from-node-modules-in-stencil-js
 https://codyburleson.com/show-both-sides-of-a-plane-in-zbrush
@@ -51,6 +52,7 @@ https://codyburleson.com/use-spotlight-to-display-reference-images-in-zbrush
 https://codyburleson.com/weld-multiple-subtools-in-zbrush
 https://codyburleson.com/female-anatomy-out-of-the-box-in-zbrush
 https://codyburleson.com/vs-code-cheat-sheet
+https://codyburleson.com/setup-carbon-ldp-with-stardog-container-from-scratch
 https://codyburleson.com/zbrush-keyboard-shortcuts
 https://codyburleson.com/use-micromesh-in-zbrush
 https://codyburleson.com/create-new-subtool-from-masked-area-in-zbrush
@@ -65,6 +67,7 @@ https://codyburleson.com/how-to-sketch-with-zspheres-in-zbrush
 https://codyburleson.com/about-polygroups-in-zbrush
 https://codyburleson.com/zbrush-resources-online
 https://codyburleson.com/how-to-optimize-a-zsphere-sketch-in-zbrush
+https://codyburleson.com/free-zbrush-asset-gamblers-hat
 https://codyburleson.com/how-to-adjust-zsphere-sketch-depth-in-zbrush
 https://codyburleson.com/rig-a-mesh-with-zspheres-in-zbrush
 https://codyburleson.com/binding-to-a-zsphere-armature
@@ -111,6 +114,7 @@ https://codyburleson.com/logging-with-spring-boot
 https://codyburleson.com/enhance-your-front-end-web-dev-workflow-with-emmet
 https://codyburleson.com/avoid-tracking-ga-page-views-in-atlassian-confluence
 https://codyburleson.com/set-the-page-title-in-angular
+https://codyburleson.com/lifetime
 https://codyburleson.com/im-not-bored-im-thinking
 https://codyburleson.com/format-currency-in-angular
 https://codyburleson.com/story-structure-diagram
@@ -129,6 +133,7 @@ https://codyburleson.com/how-to-start-a-simple-http-server-from-any-folder-on-a-
 https://codyburleson.com/eclipse-tip-format-source-code-on-save
 https://codyburleson.com/how-to-shake-hands
 https://codyburleson.com/a-javascript-implementation-of-java-util-map
+https://codyburleson.com/improve-your-rational-or-eclipse-based-ides-spelling-dictionary
 https://codyburleson.com/how-to-find-large-images-and-files-in-ibm-wcm
 https://codyburleson.com/fix-validation-errors-when-using-renderrequest-in-a-jsp
 https://codyburleson.com/touch-all-items-in-a-wcm-library
@@ -155,6 +160,7 @@ https://codyburleson.com/work-life-balance-is-overrated
 https://codyburleson.com/resolving-404-errors-accessing-wcm-content-through-poc-servlet
 https://codyburleson.com/shrink-windows-vm-on-vmware-fusion-for-mac
 https://codyburleson.com/user-impersonation-in-websphere-portal-video-demo
+https://codyburleson.com/how-to-make-your-rational-project-use-ant-for-automatic-build
 https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-2
 https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1
 https://codyburleson.com/websphere-federated-repository-lesson-learned
@@ -167,10 +173,12 @@ https://codyburleson.com/trim-fat-from-your-content
 https://codyburleson.com/access-the-was-console-from-websphere-portal-server
 https://codyburleson.com/logging-through-websphere-portal-from-java-and-jsps
 https://codyburleson.com/how-to-tail-websphere-portal-log-files-in-microsoft-windows
+https://codyburleson.com/permitting-author-access-to-search-collection-in-wcm-search-component
 https://codyburleson.com/user-impersonation-programming-in-websphere-portal
 https://codyburleson.com/find-java-classes-or-packages-contained-in-jar-files
 https://codyburleson.com/classnotfound-does-not-always-mean-class-not-found
 https://codyburleson.com/introduction-to-the-semantic-web-vision-and-technologies
+https://codyburleson.com/remove-sign-up-link-on-wps-login-page
 https://codyburleson.com/wcm-security-video-overview
 https://codyburleson.com/wcm-libraries-video-overview
 https://codyburleson.com/render-the-keys-and-values-from-a-map-in-freemarker

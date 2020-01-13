@@ -1,24 +1,24 @@
-import { Config } from '@ionic/core';
+// import { Config } from '@ionic/core';
 import { Component, Element, h, Listen, Prop } from '@stencil/core';
-import { BlogData } from '../../../services/blog-data';
-import { get, set } from '../../../services/storage';
+import { BlogData } from '../../services/blog-data';
+import { get, set } from '../../services/storage';
 
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { isLocal, SITENAME } from '../../helpers/utils';
 
 const EXCLUDE_TOPICS = 'excludeTopics';
 
 @Component({
-  tag: 'page-blog',
-  styleUrl: 'page-blog.css'
+  tag: 'app-blog',
+  styleUrl: 'app-blog.css'
 })
-export class PageBlog {
+export class AppBlog {
 
   title = 'Blog';
   excludeTopics: any = [];
 
   @Element() el: any;
 
-  @Prop({ context: 'config' }) config: Config;
+  // @Prop({ context: 'config' }) config: Config;
 
   @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
 
@@ -26,7 +26,7 @@ export class PageBlog {
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageBlog.componentWillLoad');
+      console.log('> AppBlog.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
 
@@ -39,7 +39,7 @@ export class PageBlog {
       })
       .catch(function (err) {
         if (isLocal()) {
-          console.log('< PageBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
+          console.log('< AppBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
         }
         // do nothing
         return [];
@@ -55,7 +55,7 @@ export class PageBlog {
   @Listen('ionModalDidDismiss', { target: 'body' })
   modalDidDismiss(event: CustomEvent) {
     if (isLocal()) {
-      console.log('> PageBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
+      console.log('> AppBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
     }
     if (event && typeof event.detail.data !== 'undefined') {
       this.excludeTopics = event.detail.data;
@@ -68,7 +68,7 @@ export class PageBlog {
   async updateContentList() {
 
     if (isLocal()) {
-      console.log('> PageBlog.updateContentList');
+      console.log('> AppBlog.updateContentList');
     }
 
     await BlogData.getContent(this.excludeTopics);
@@ -80,7 +80,7 @@ export class PageBlog {
 
   async presentFilter() {
     if (isLocal()) {
-      console.log('>> PageBlog.presentFilter');
+      console.log('>> AppBlog.presentFilter');
     }
 
     const modal = await this.modalCtrl.create({
