@@ -3,6 +3,7 @@ import { Component, h, Prop } from '@stencil/core';
 declare global {
     interface Window {
         disqusLoaded:boolean;
+        DISQUS: any;
     }
 }
 
