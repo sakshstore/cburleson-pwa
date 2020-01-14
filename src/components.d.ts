@@ -31,7 +31,6 @@ export namespace Components {
   interface GlsAdsenseAd {}
   interface GlsDisqus {
     'disable': boolean;
-    'pageId': any;
     'shortname': any;
   }
   interface GlsGcseSearchboxOnly {}
@@ -1584,7 +1583,6 @@ declare namespace LocalJSX {
   interface GlsAdsenseAd {}
   interface GlsDisqus {
     'disable'?: boolean;
-    'pageId'?: any;
     'shortname'?: any;
   }
   interface GlsGcseSearchboxOnly {}

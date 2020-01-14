@@ -262,7 +262,7 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <p><ion-button color="primary" routerDirection="back" href="/create-player-health-status-indicator-for-unity-gui-part-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/create-player-health-status-indicator-for-unity-gui-part-3">Next: Part 3 &gt;&gt;</ion-button></p>
 
-                            <gls-disqus shortname="codyburleson-com" page-id={document.location.pathname.substr(1)} disable={isLocal()}/>
+                            <gls-disqus shortname="codyburleson-com" disable={isLocal()}/>
                             
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

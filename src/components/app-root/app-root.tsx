@@ -5,6 +5,14 @@ import { PageData } from '../../services/page-data';
 
 declare let gtag: Function;
 
+declare global {
+  interface Window {
+      disqus_config: any;
+      DISQUS: any;
+      disqusLoaded: boolean;
+  }
+}
+
 @Component({
   tag: 'app-root'
 })
@@ -15,6 +23,8 @@ export class AppRoot {
   unfoundRoute: any;
 
   pageData: any = [];
+
+  disqus_config: any;
 
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
@@ -35,6 +45,9 @@ export class AppRoot {
       document.title = 'About | ' + SITENAME;
     }
 
+    let id = event.detail.to.substr(1);
+    console.log('id: %s', id);
+
     if ( ! isLocal() ) {
       if (event.detail.redirectedFrom !== null) {
         // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
@@ -43,6 +56,13 @@ export class AppRoot {
       } else {
         // otherwise, take the to...
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
+
+        this.disqus_config.page.identifier = id;
+        this.disqus_config.page.url = 'https://codyburleson.com/' + id;
+        window.DISQUS.reset({
+          reload: true
+        });
+
       }
     }
 
@@ -58,6 +78,14 @@ export class AppRoot {
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
 
+    // DISQUS STUFF...
+    let id = document.location.pathname.substr(1);
+    this.disqus_config = function disqus_config() {
+      this.page.identifier = id
+      this.page.url = 'https://codyburleson.com/' + id;
+    }
+    this.disqus_config = window.disqus_config || {};
+    //window.disqus_config = this.disqus_config;
   }
 
   renderRouter() {
