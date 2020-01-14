@@ -503,9 +503,7 @@ return this.page < this.totalPages;
                             <p>Remember that the source code can be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
 
                             <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-4">&lt;&lt; Previous: Part 4</ion-button></p>
-                            
-                            <gls-disqus shortname="codyburleson-com" disable={isLocal()}/>
-                            
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

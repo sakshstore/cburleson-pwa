@@ -517,8 +517,6 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
               <p>I hope you’ll join me on this project, contribute comments, or your own improvements.&nbsp;I intend to take the project further and will continue my “developer log” here, so stay tuned!</p>
 
               <p><ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-2">Next: Part 2 &gt;&gt;</ion-button></p>
-
-              <gls-disqus shortname="codyburleson-com" disable={isLocal()}/>
               
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
