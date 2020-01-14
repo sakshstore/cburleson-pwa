@@ -45,9 +45,6 @@ export class AppRoot {
       document.title = 'About | ' + SITENAME;
     }
 
-    let id = event.detail.to.substr(1);
-    console.log('id: %s', id);
-
     if ( ! isLocal() ) {
       if (event.detail.redirectedFrom !== null) {
         // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
@@ -57,8 +54,11 @@ export class AppRoot {
         // otherwise, take the to...
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
 
-        this.disqus_config.page.identifier = id;
-        this.disqus_config.page.url = 'https://codyburleson.com/' + id;
+        let id = event.detail.to.substr(1);
+        this.disqus_config = function disqus_config() {
+          this.page.identifier = id
+          this.page.url = 'https://codyburleson.com/' + id;
+        }
         window.DISQUS.reset({
           reload: true
         });
