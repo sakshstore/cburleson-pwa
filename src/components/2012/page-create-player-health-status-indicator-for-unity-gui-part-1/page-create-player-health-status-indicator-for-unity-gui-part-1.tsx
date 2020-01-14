@@ -6,7 +6,6 @@ import 'prismjs/components/prism-javascript.min.js';
 
 import { BlogData } from '../../../services/blog-data';
 
-
 @Component({
     tag: 'page-create-player-health-status-indicator-for-unity-gui-part-1',
 })
@@ -28,6 +27,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+
     }
 
     componentDidLoad() {
@@ -133,6 +133,8 @@ function OnGUI () {
                             <p>Until next time, enjoy the craft!</p>
 
                             <p><ion-button color="primary" routerDirection="forward" href="/create-player-health-status-indicator-for-unity-gui-part-2">Next: Part 2 &gt;&gt;</ion-button></p>
+
+                            <gls-disqus shortname="codyburleson-com" page-id={document.location.pathname.substr(1)} disable={isLocal()}/>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

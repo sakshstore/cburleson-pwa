@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.4] - 2020-01-14
+
+- **Added** New Disqus component test (only on a few pages; the Unity health status series).
+
 ## [1.5.3] - 2020-01-13
 
 - **Fixed** bug where personalizing the Life Time Calendar cause calendar config data to be written to local storage using the excludeTopics field. This broke the topics filter after use of [/lifetime](https://codyburleson.com/lifetime) calendar.

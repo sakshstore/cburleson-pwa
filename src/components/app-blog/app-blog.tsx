@@ -1,5 +1,5 @@
 // import { Config } from '@ionic/core';
-import { Component, Element, h, Listen, Prop } from '@stencil/core';
+import { Component, Element, h, Prop } from '@stencil/core';
 import { BlogData } from '../../services/blog-data';
 import { get, set } from '../../services/storage';
 

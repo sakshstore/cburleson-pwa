@@ -29,6 +29,11 @@ export namespace Components {
   interface AppSearch {}
   interface AppTabs {}
   interface GlsAdsenseAd {}
+  interface GlsDisqus {
+    'disable': boolean;
+    'pageId': any;
+    'shortname': any;
+  }
   interface GlsGcseSearchboxOnly {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
@@ -275,6 +280,12 @@ declare global {
   var HTMLGlsAdsenseAdElement: {
     prototype: HTMLGlsAdsenseAdElement;
     new (): HTMLGlsAdsenseAdElement;
+  };
+
+  interface HTMLGlsDisqusElement extends Components.GlsDisqus, HTMLStencilElement {}
+  var HTMLGlsDisqusElement: {
+    prototype: HTMLGlsDisqusElement;
+    new (): HTMLGlsDisqusElement;
   };
 
   interface HTMLGlsGcseSearchboxOnlyElement extends Components.GlsGcseSearchboxOnly, HTMLStencilElement {}
@@ -1367,6 +1378,7 @@ declare global {
     'app-search': HTMLAppSearchElement;
     'app-tabs': HTMLAppTabsElement;
     'gls-adsense-ad': HTMLGlsAdsenseAdElement;
+    'gls-disqus': HTMLGlsDisqusElement;
     'gls-gcse-searchbox-only': HTMLGlsGcseSearchboxOnlyElement;
     'page-7-quintessential-brushes-for-zbrush-beginners': HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
     'page-7-reasons-why-typescript-helps-you-kick-ass': HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
@@ -1570,6 +1582,11 @@ declare namespace LocalJSX {
   interface AppSearch {}
   interface AppTabs {}
   interface GlsAdsenseAd {}
+  interface GlsDisqus {
+    'disable'?: boolean;
+    'pageId'?: any;
+    'shortname'?: any;
+  }
   interface GlsGcseSearchboxOnly {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
   interface Page7ReasonsWhyTypescriptHelpsYouKickAss {}
@@ -1765,6 +1782,7 @@ declare namespace LocalJSX {
     'app-search': AppSearch;
     'app-tabs': AppTabs;
     'gls-adsense-ad': GlsAdsenseAd;
+    'gls-disqus': GlsDisqus;
     'gls-gcse-searchbox-only': GlsGcseSearchboxOnly;
     'page-7-quintessential-brushes-for-zbrush-beginners': Page7QuintessentialBrushesForZbrushBeginners;
     'page-7-reasons-why-typescript-helps-you-kick-ass': Page7ReasonsWhyTypescriptHelpsYouKickAss;
@@ -1964,6 +1982,7 @@ declare module "@stencil/core" {
       'app-search': LocalJSX.AppSearch & JSXBase.HTMLAttributes<HTMLAppSearchElement>;
       'app-tabs': LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
       'gls-adsense-ad': LocalJSX.GlsAdsenseAd & JSXBase.HTMLAttributes<HTMLGlsAdsenseAdElement>;
+      'gls-disqus': LocalJSX.GlsDisqus & JSXBase.HTMLAttributes<HTMLGlsDisqusElement>;
       'gls-gcse-searchbox-only': LocalJSX.GlsGcseSearchboxOnly & JSXBase.HTMLAttributes<HTMLGlsGcseSearchboxOnlyElement>;
       'page-7-quintessential-brushes-for-zbrush-beginners': LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
       'page-7-reasons-why-typescript-helps-you-kick-ass': LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
