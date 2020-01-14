@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.3] - 2020-01-13
+
+- **Fixed** bug where personalizing the Life Time Calendar cause calendar config data to be written to local storage using the excludeTopics field. This broke the topics filter after use of [/lifetime](https://codyburleson.com/lifetime) calendar.
+
+
 ## [1.5.2] - 2020-01-13
 
 - **Added** pages from legacy WordPress blog:

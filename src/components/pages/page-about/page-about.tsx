@@ -49,7 +49,7 @@ export class PageAbout {
           <img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cody-burleson-portrait-225x300.jpg" alt="Cody Burleson Portrait" width="225" height="300"></img>
         </div>
 
-        <p>Hi, I’m Cody Burleson and this is my home base on the web - my blog, online notebook, sketchbook, scrapbook and mad software science lab.</p>
+        <p>Hi, I’m Cody Burleson and this is my home base on the web - a blog, online notebook, sketchbook, scrapbook and mad software science lab.</p>
 
         <p>I love writing, game arts, visual effects, software development, and the great outdoors. I often share what I discover and learn, so if you're interested in any of these things, you might find something you like here.</p>
 

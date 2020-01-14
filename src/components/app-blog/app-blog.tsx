@@ -52,19 +52,6 @@ export class AppBlog {
 
   }
 
-  @Listen('ionModalDidDismiss', { target: 'body' })
-  modalDidDismiss(event: CustomEvent) {
-    if (isLocal()) {
-      console.log('> AppBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
-    }
-    if (event && typeof event.detail.data !== 'undefined') {
-      this.excludeTopics = event.detail.data;
-      // Set the excluded topics in local storage
-      set(EXCLUDE_TOPICS, event.detail.data);
-      this.updateContentList();
-    }
-  }
-
   async updateContentList() {
 
     if (isLocal()) {
@@ -89,8 +76,43 @@ export class AppBlog {
         excludedTopics: this.excludeTopics,
       }
     });
-    await modal.present();
+
+    // Lesson learned: it is better to listen for onDismiss directly on the instantiated modal 
+    // like I am doing below, rather than using a function with this listener annotion like this:
+    //  @Listen('ionModalDidDismiss', { target: 'body' })
+    // In this way, we are listening to and responding ONLY to THIS modal. I had an issue where
+    // I was accidentally listening to a whole other modal somewhere else in the app on accident
+    // because I was using the @Listen annotation' it was causing me to listen to ANY modal!
+    modal.onDidDismiss()
+    .then((data) => {
+        //const user = data['data']; // Here's your selected user!
+        console.log("-- PageLifetime.presentModal > modal.onDidDismiss() > data['data']: %o", data['data']);
+        // When the modal is dismissed, we get back data and set properties local to this 
+        // class (tyhe formProps) with what comes back from the modal form...
+        this.excludeTopics = data['data'];
+        // Set the excluded topics in local storage
+        set(EXCLUDE_TOPICS, data['data']);
+        this.updateContentList();
+
+    });
+
+    return await modal.present();
   }
+
+  /*
+  @Listen('ionModalDidDismiss', { target: 'body' })
+  modalDidDismiss(event: CustomEvent) {
+    if (isLocal()) {
+      console.log('> AppBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
+    }
+    if (event && typeof event.detail.data !== 'undefined') {
+      this.excludeTopics = event.detail.data;
+      // Set the excluded topics in local storage
+      set(EXCLUDE_TOPICS, event.detail.data);
+      this.updateContentList();
+    }
+  }
+ */
 
   createTopicList(item: any) {
     let topicString = item.topics[0];

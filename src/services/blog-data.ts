@@ -76,7 +76,9 @@ class BlogDataService {
 
     }
 
-    filterContent(item: any, excludeTopics: any[]) {
+    filterContent(item: any, excludeTopics: string[]) {
+
+        console.log('excludeTopics: %o', excludeTopics);
         // if any of the item's topics are not in the
         // exclude topics then this item passes the topic test
         let matchesTopics = false;
