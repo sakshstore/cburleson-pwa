@@ -202,6 +202,8 @@ export class AppRoutingModule {
               <p>Building on&nbsp;<a href="/pwa-with-ionic-angular-wordpress-api-2">Part 2</a>, I showed you how you can implement the single post view (a.k.a. the “content detail view”). So, now we can preview a list of WordPress posts and then read any individual one. However,&nbsp; at this point we’re only able to access the default number of posts returned from our REST API call,&nbsp; which is ten. In the next part of this series, we’ll implement Ionic’s Infinite Scroll (<a href="https://beta.ionicframework.com/docs/api/infinite-scroll/" rel="nofollow">ion-infinite-scroll</a>) to automatically fetch more posts when the user scrolls to the end. So, stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.</p>
 
               <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-2">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-4">Next: Part 4 &gt;&gt;</ion-button></p>
+              
+              <gls-disqus shortname="codyburleson-com" page-id={document.location.pathname.substr(1)} disable={isLocal()}/>
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

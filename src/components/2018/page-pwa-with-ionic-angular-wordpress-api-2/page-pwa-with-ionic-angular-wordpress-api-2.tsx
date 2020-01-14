@@ -246,6 +246,8 @@ Home
 
               <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-3">Next: Part 3 &gt;&gt;</ion-button></p>
 
+              <gls-disqus shortname="codyburleson-com" page-id={document.location.pathname.substr(1)} disable={isLocal()}/>
+              
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               <gls-adsense-ad />

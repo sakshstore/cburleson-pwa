@@ -1,5 +1,5 @@
 export const SITENAME = "Cody Burleson";
-export const SITEVERSION = "1.5.4";
+export const SITEVERSION = "1.5.5";
 
 /**
  * This function uses the window object to determine whether 
