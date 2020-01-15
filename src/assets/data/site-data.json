@@ -7,8 +7,7 @@
       "datePublished": "2019/12/31",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-prism-js-in-ionic-stencil-app",
@@ -19,8 +18,7 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "memories-of-momma-6",
@@ -31,7 +29,7 @@
       "topics": [
         "Memoir"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "memories-of-momma-5",
@@ -42,7 +40,7 @@
       "topics": [
         "Memoir"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "memories-of-momma-4",
@@ -53,7 +51,7 @@
       "topics": [
         "Memoir"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "memories-of-momma-3",
@@ -64,7 +62,7 @@
       "topics": [
         "Memoir"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "memories-of-momma-2",
@@ -75,7 +73,7 @@
       "topics": [
         "Memoir"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "memories-of-momma-1",
@@ -85,8 +83,7 @@
       "datePublished": "2019/05/11",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "killing-kittens",
@@ -97,8 +94,7 @@
       "dateModified": "2019/06/10",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "collect-ui-ui-screenshots-to-inspire-design",
@@ -107,8 +103,7 @@
       "datePublished": "2019/02/18",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "curated-list-of-ibm-digital-experience-resources",
@@ -117,8 +112,7 @@
       "datePublished": "2018/12/04",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "copy-assets-from-node-modules-in-stencil-js",
@@ -128,8 +122,7 @@
       "dateModified": "2019/11/07",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "show-both-sides-of-a-plane-in-zbrush",
@@ -138,8 +131,7 @@
       "datePublished": "2018/10/13",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "a-look-at-sparql-sql-for-semantic-web",
@@ -148,8 +140,7 @@
       "datePublished": "2018/10/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "change-canvas-background-color-in-zbrush",
@@ -159,8 +150,7 @@
       "dateModified": "2019/04/14",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "bend-things-in-zbrush-with-the-bend-curve-modifier",
@@ -170,8 +160,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "fix-for-git-after-macos-mojave-upgrade",
@@ -181,8 +170,7 @@
       "dateModified": "2019/10/02",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-5",
@@ -194,7 +182,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-4",
@@ -206,7 +194,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-3",
@@ -218,7 +206,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-2",
@@ -230,7 +218,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-1",
@@ -241,8 +229,7 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-apply-texture-in-zbrush",
@@ -252,8 +239,7 @@
       "datePublished": "2018/09/03",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-recipes-head-bob-or-breathe",
@@ -263,8 +249,7 @@
       "datePublished": "2018/09/03",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-recipes-look-toward-direction-of-velocity",
@@ -274,8 +259,7 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-recipes-look-toward-direction-of-movement",
@@ -285,8 +269,7 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-recipes-follow-object",
@@ -296,8 +279,7 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-spotlight-to-display-reference-images-in-zbrush",
@@ -308,8 +290,7 @@
       "dateModified": "2019/07/24",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "weld-multiple-subtools-in-zbrush",
@@ -320,8 +301,7 @@
       "dateModified": "2019/04/14",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "female-anatomy-out-of-the-box-in-zbrush",
@@ -331,8 +311,7 @@
       "datePublished": "2018/08/03",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "vs-code-cheat-sheet",
@@ -342,8 +321,7 @@
       "dateModified": "2020/01/11",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "setup-carbon-ldp-with-stardog-container-from-scratch",
@@ -352,8 +330,7 @@
       "datePublished": "2018/07/17",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "zbrush-keyboard-shortcuts",
@@ -364,8 +341,7 @@
       "dateModified": "2020/01/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-micromesh-in-zbrush",
@@ -375,8 +351,7 @@
       "datePublished": "2018/06/03",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "create-new-subtool-from-masked-area-in-zbrush",
@@ -387,8 +362,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "create-polygroup-from-mask-in-zbrush",
@@ -399,8 +373,7 @@
       "dateModified": "2019/08/05",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "notes-on-zbrush-slicecurve-brush",
@@ -409,8 +382,7 @@
       "datePublished": "2018/05/16",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "isolate-a-polygroup-in-zbrush",
@@ -421,8 +393,7 @@
       "dateModified": "2019/11/21",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "create-clothing-in-zbrush-extruding-masked-area",
@@ -433,8 +404,7 @@
       "dateModified": "2019/07/08",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "mirror-polygroup-on-subtool-in-zbrush",
@@ -445,8 +415,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "convert-zbrush-polygroups-into-subtools",
@@ -456,8 +425,7 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-auto-masking-by-polygroups-in-zbrush",
@@ -466,8 +434,7 @@
       "datePublished": "2018/05/05",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-sketch-with-zspheres-in-zbrush",
@@ -476,8 +443,7 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "about-polygroups-in-zbrush",
@@ -486,8 +452,7 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "zbrush-resources-online",
@@ -498,8 +463,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-optimize-a-zsphere-sketch-in-zbrush",
@@ -508,8 +472,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "free-zbrush-asset-gamblers-hat",
@@ -518,8 +481,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-adjust-zsphere-sketch-depth-in-zbrush",
@@ -528,8 +490,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "rig-a-mesh-with-zspheres-in-zbrush",
@@ -540,8 +501,7 @@
       "dateModified": "2019/12/05",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "binding-to-a-zsphere-armature",
@@ -550,8 +510,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "about-zsphere-smoothing-brushes",
@@ -560,8 +519,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "notes-on-zbrush-sculptris-pro",
@@ -571,8 +529,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-use-live-boolean-in-zbrush",
@@ -583,8 +540,7 @@
       "dateModified": "2019/11/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "apply-different-materials-to-subtools-in-zbrush",
@@ -594,8 +550,7 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "delete-hidden-geometry-in-zbrush",
@@ -606,8 +561,7 @@
       "dateModified": "2018/07/27",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-fibermesh-in-zbrush",
@@ -618,8 +572,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "make-a-zbrush-speed-sculpt-timelapse-video",
@@ -630,8 +583,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "javascript-ternary-operator-shortcut-to-the-if-statement",
@@ -640,8 +592,7 @@
       "datePublished": "2018/01/17",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-construct",
@@ -652,8 +603,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-list-classes",
@@ -664,8 +614,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-select",
@@ -676,8 +625,7 @@
       "dateModified": "2019/04/12",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "respond-to-button-click-with-observable",
@@ -688,8 +636,7 @@
       "dateModified": "2019/11/12",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "stories-of-slavery-as-told-by-ex-slaves",
@@ -699,8 +646,7 @@
       "datePublished": "2017/11/27",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "loneliness-and-a-shovel",
@@ -709,8 +655,7 @@
       "datePublished": "2017/10/28",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "liferay-7-ubuntu-developer-vm-setup-log",
@@ -719,8 +664,7 @@
       "datePublished": "2017/10/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "install-oracle-java-8-on-ubuntu",
@@ -730,8 +674,7 @@
       "datePublished": "2017/10/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "quotes-for-writers",
@@ -742,8 +685,7 @@
       "dateModified": "2019/09/30",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "docker-cheat-sheet",
@@ -754,8 +696,7 @@
       "dateModified": "2018/09/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "scene-and-sequel-pattern-for-writers",
@@ -765,8 +706,7 @@
       "datePublished": "2017/10/12",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "rdf-syntax-examples",
@@ -776,8 +716,7 @@
       "datePublished": "2017/08/31",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-ask",
@@ -788,8 +727,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-federation",
@@ -800,8 +738,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-filter",
@@ -812,8 +749,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-insert",
@@ -824,8 +760,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-limit",
@@ -836,8 +771,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-negation",
@@ -848,8 +782,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-order-by",
@@ -860,8 +793,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-count-all-statements",
@@ -872,8 +804,7 @@
       "dateModified": "2018/7/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-paging",
@@ -884,8 +815,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "sparql-examples-date-range",
@@ -896,8 +826,7 @@
       "dateModified": "2018/11/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "pink-hearts",
@@ -907,8 +836,7 @@
       "datePublished": "2017/07/15",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-use-wcm-categories-from-query-parameter-for-pzn",
@@ -917,8 +845,7 @@
       "datePublished": "2017/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "show-item-namesin-ibm-wcm-authoring",
@@ -927,8 +854,7 @@
       "datePublished": "2017/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "7-quintessential-brushes-for-zbrush-beginners",
@@ -939,8 +865,7 @@
       "dateModified": "2019/03/31",
       "topics": [
         "ZBrush"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "intellij-idea-cheat-sheet",
@@ -949,8 +874,7 @@
       "datePublished": "2017/06/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "use-spring-for-stardog-in-a-spring-boot-application",
@@ -959,8 +883,7 @@
       "datePublished": "2017/05/11",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "linux-and-unix-commands",
@@ -971,8 +894,7 @@
       "dateModified": "2018/12/05",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "serve-static-resources-with-spring-boot",
@@ -982,8 +904,7 @@
       "dateModified": "2018/09/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "confluence-panel-macro",
@@ -993,8 +914,7 @@
       "datePublished": "2017/04/04",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "logging-with-spring-boot",
@@ -1004,8 +924,7 @@
       "datePublished": "2017/04/04",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "enhance-your-front-end-web-dev-workflow-with-emmet",
@@ -1014,8 +933,7 @@
       "datePublished": "2017/03/10",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "avoid-tracking-ga-page-views-in-atlassian-confluence",
@@ -1024,8 +942,7 @@
       "datePublished": "2017/02/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "set-the-page-title-in-angular",
@@ -1036,8 +953,7 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "lifetime",
@@ -1048,8 +964,7 @@
       "dateModified": "2020/01/12",
       "topics": [
         "Uncategorized"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "im-not-bored-im-thinking",
@@ -1059,8 +974,7 @@
       "datePublished": "2016/08/12",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "format-currency-in-angular",
@@ -1071,8 +985,7 @@
       "dateModified": "2018/09/25",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "story-structure-diagram",
@@ -1083,8 +996,7 @@
       "dateModified": "2019/02/26",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "index-of-item-within-angular-ngfor-loop",
@@ -1095,8 +1007,7 @@
       "dateModified": "2018/09/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "quick-and-simple-caching-with-apache-commons-jcs",
@@ -1107,8 +1018,7 @@
       "dateModified": "2018/09/25",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "i-dare-you-to-touch-her",
@@ -1118,8 +1028,7 @@
       "datePublished": "2016/01/25",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "7-reasons-why-typescript-helps-you-kick-ass",
@@ -1129,8 +1038,7 @@
       "dateModified": "2018/07/26",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "new-web-developer-toolkit-for-ibm-digital-experience",
@@ -1139,8 +1047,7 @@
       "datePublished": "2015/10/05",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "better-error-messages-from-gulp-using-gulp-util",
@@ -1149,8 +1056,7 @@
       "datePublished": "2015/09/11",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "awesome-power-of-the-link-in-linked-data",
@@ -1159,8 +1065,7 @@
       "datePublished": "2015/07/28",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-get-rigidbody-from-object",
@@ -1170,8 +1075,7 @@
       "datePublished": "2015/04/01",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "identifying-large-objects-consuming-memory-in-java-heap",
@@ -1180,8 +1084,7 @@
       "datePublished": "2015/03/20",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "string-replace-helper-for-dust-js",
@@ -1190,8 +1093,7 @@
       "datePublished": "2014/10/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "meet-iife-the-quintessential-javascript-closure",
@@ -1200,8 +1102,7 @@
       "datePublished": "2014/10/23",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-start-a-simple-http-server-from-any-folder-on-a-mac",
@@ -1210,8 +1111,7 @@
       "datePublished": "2014/10/23",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "eclipse-tip-format-source-code-on-save",
@@ -1220,8 +1120,7 @@
       "datePublished": "2014/09/18",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-shake-hands",
@@ -1230,8 +1129,7 @@
       "datePublished": "2014/07/12",
       "topics": [
         "Uncategorized"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "a-javascript-implementation-of-java-util-map",
@@ -1241,8 +1139,7 @@
       "dateModified": "2019/12/02",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "improve-your-rational-or-eclipse-based-ides-spelling-dictionary",
@@ -1251,8 +1148,7 @@
       "datePublished": "2013/12/30",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-find-large-images-and-files-in-ibm-wcm",
@@ -1261,8 +1157,7 @@
       "datePublished": "2013/12/04",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "fix-validation-errors-when-using-renderrequest-in-a-jsp",
@@ -1271,8 +1166,7 @@
       "datePublished": "2013/11/08",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "touch-all-items-in-a-wcm-library",
@@ -1281,8 +1175,7 @@
       "datePublished": "2013/10/03",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "accessing-the-authenticated-websphere-portal-user-from-a-separate-web-app",
@@ -1291,8 +1184,7 @@
       "datePublished": "2013/09/21",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "getting-parts-of-a-url-from-the-httpservletrequest-object",
@@ -1303,8 +1195,7 @@
       "dateModified": "2018/09/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "mapping-to-a-view-in-spring-when-no-controller-logic-is-required",
@@ -1314,8 +1205,7 @@
       "dateModified": "2018/7/15",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "the-ia-files-005-navigation-breadth-and-depth",
@@ -1325,7 +1215,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "w3c-linked-data-platform-aims-to-reframe-the-web",
@@ -1334,8 +1224,7 @@
       "datePublished": "2013/06/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "script-for-rotating-unity-game-object-90-degrees",
@@ -1345,8 +1234,7 @@
       "datePublished": "2013/05/22",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "install-java-plugin-for-64bit-firefox-on-centos-6-4",
@@ -1355,8 +1243,7 @@
       "datePublished": "2013/05/03",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "automatically-build-and-include-one-eclipse-project-into-another",
@@ -1367,8 +1254,7 @@
       "dateModified": "2019/11/21",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "the-ia-files-004-taxonomies",
@@ -1378,7 +1264,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "musing-on-nostalgia",
@@ -1388,8 +1274,7 @@
       "datePublished": "2013/03/23",
       "topics": [
         "Memoir"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "define-a-servlet-using-java-annotations-instead-of-xml",
@@ -1398,8 +1283,7 @@
       "datePublished": "2013/03/23",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "the-ia-files-003-definitions-defined",
@@ -1409,7 +1293,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting",
@@ -1418,8 +1302,7 @@
       "datePublished": "2013/02/17",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-check-user-access-role-in-a-websphere-portal-theme",
@@ -1428,8 +1311,7 @@
       "datePublished": "2013/02/14",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "xmlaccess-samples",
@@ -1439,8 +1321,7 @@
       "dateModified": "2018/07/16",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "base22-consultants-creed",
@@ -1449,8 +1330,7 @@
       "datePublished": "2013/01/23",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "display-user-attributes-in-a-websphere-portal-theme",
@@ -1459,8 +1339,7 @@
       "datePublished": "2013/01/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide",
@@ -1470,7 +1349,7 @@
       "topics": [
         "Software Dev"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "the-ia-files-001-into-the-fire",
@@ -1480,8 +1359,7 @@
       "datePublished": "2013-01-17",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "work-life-balance-is-overrated",
@@ -1490,8 +1368,7 @@
       "datePublished": "2013/01/13",
       "topics": [
         "Uncategorized"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "resolving-404-errors-accessing-wcm-content-through-poc-servlet",
@@ -1500,8 +1377,7 @@
       "datePublished": "2013/01/12",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "shrink-windows-vm-on-vmware-fusion-for-mac",
@@ -1512,8 +1388,7 @@
       "dateModified": "2019/01/30",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "user-impersonation-in-websphere-portal-video-demo",
@@ -1522,8 +1397,7 @@
       "datePublished": "2013/01/04",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-make-your-rational-project-use-ant-for-automatic-build",
@@ -1532,8 +1406,7 @@
       "datePublished": "2012/12/30",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "build-a-rendering-plugin-ibm-wcm-part-2",
@@ -1542,8 +1415,7 @@
       "datePublished": "2012/12/27",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "build-a-rendering-plugin-ibm-wcm-part-1",
@@ -1552,8 +1424,7 @@
       "datePublished": "2012/12/26",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "websphere-federated-repository-lesson-learned",
@@ -1562,8 +1433,7 @@
       "datePublished": "2012/12/19",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-freebies-game-timer-cinematic-letterbox-and-fade-in-scripts",
@@ -1573,8 +1443,7 @@
       "datePublished": "2012/11/14",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "unity-preferences-your-built-in-keyboard-cheat-sheet",
@@ -1584,8 +1453,7 @@
       "datePublished": "2012/11/11",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-3",
@@ -1596,7 +1464,7 @@
       "topics": [
         "Unity"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-2",
@@ -1607,7 +1475,7 @@
       "topics": [
         "Unity"
       ],
-      "showInMenus": false
+      "hideFromMenus": true
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-1",
@@ -1617,8 +1485,7 @@
       "datePublished": "2012/10/13",
       "topics": [
         "Unity"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "trim-fat-from-your-content",
@@ -1628,8 +1495,7 @@
       "datePublished": "2011/08/19",
       "topics": [
         "Storycraft and Writing"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "access-the-was-console-from-websphere-portal-server",
@@ -1638,8 +1504,7 @@
       "datePublished": "2012/08/08",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "logging-through-websphere-portal-from-java-and-jsps",
@@ -1648,8 +1513,7 @@
       "datePublished": "2012/07/31",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "how-to-tail-websphere-portal-log-files-in-microsoft-windows",
@@ -1658,8 +1522,7 @@
       "datePublished": "2012/01/25",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "permitting-author-access-to-search-collection-in-wcm-search-component",
@@ -1668,8 +1531,7 @@
       "datePublished": "2011/09/25",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "user-impersonation-programming-in-websphere-portal",
@@ -1678,8 +1540,7 @@
       "datePublished": "2011/07/31",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "find-java-classes-or-packages-contained-in-jar-files",
@@ -1689,8 +1550,7 @@
       "datePublished": "2011/04/18",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "classnotfound-does-not-always-mean-class-not-found",
@@ -1699,8 +1559,7 @@
       "datePublished": "2011/02/06",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "introduction-to-the-semantic-web-vision-and-technologies",
@@ -1709,8 +1568,7 @@
       "datePublished": "2010/09/13",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "remove-sign-up-link-on-wps-login-page",
@@ -1719,8 +1577,7 @@
       "datePublished": "2010/06/14",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "wcm-security-video-overview",
@@ -1729,8 +1586,7 @@
       "datePublished": "2010/04/31",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "wcm-libraries-video-overview",
@@ -1739,8 +1595,7 @@
       "datePublished": "2010/01/02",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "render-the-keys-and-values-from-a-map-in-freemarker",
@@ -1750,8 +1605,7 @@
       "datePublished": "2009/12/24",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "ldap-error-codes",
@@ -1760,8 +1614,7 @@
       "datePublished": "2009/11/21",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "glossary-of-ldap-acronyms-and-terms",
@@ -1771,8 +1624,7 @@
       "dateModified": "2018/07/26",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "are-mashups-the-new-portals-and-gadgets-the-new-portlets",
@@ -1781,8 +1633,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "list-ibm-db2-commands",
@@ -1793,8 +1644,7 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     },
     {
       "id": "java-system-properties",
@@ -1803,8 +1653,7 @@
       "datePublished": "2008/10/29",
       "topics": [
         "Software Dev"
-      ],
-      "showInMenus": true
+      ]
     }
   ]
 }

@@ -131,7 +131,7 @@ export class AppBlog {
   }
 
   renderItem(item: any) {
-    if (item.showInMenus) {
+    if (! item.hideFromMenus) {
       return (
         <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
           <ion-thumbnail slot="start">
