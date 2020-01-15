@@ -12,18 +12,10 @@ export class GlsAdsenseAd {
 
     adsbygoogle:any;
 
-    componentWillRender() {
+    componentDidRender() {
         if( ! isLocal() ) {
-            this.injectScriptIntoHead();
             (this.adsbygoogle = window.adsbygoogle || []).push({});
         }
-    }
-
-    injectScriptIntoHead() {
-        var scriptElm = document.createElement('script'); scriptElm.type = 'text/javascript'; scriptElm.async = true;
-        scriptElm.src = 'https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js';
-        scriptElm.setAttribute('data-ad-client', 'ca-pub-7370676338719207');
-        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(scriptElm);
     }
 
     render() {
