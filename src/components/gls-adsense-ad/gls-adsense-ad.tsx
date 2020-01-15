@@ -12,7 +12,7 @@ export class GlsAdsenseAd {
 
     adsbygoogle:any;
 
-    componentDidRender() {
+    componentWillRender() {
         if( ! isLocal() ) {
             this.injectScriptIntoHead();
             (this.adsbygoogle = window.adsbygoogle || []).push({});
