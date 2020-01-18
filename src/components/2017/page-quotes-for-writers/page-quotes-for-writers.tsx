@@ -167,6 +167,11 @@ export class PageQuotesForWriters {
                                 <footer>Ray Bradbury</footer>
                             </blockquote>
 
+                            <blockquote>
+                                <p>Writing isn't hard. Landmine removal is hard. There are so many things in this world harder than spending an hour a night pretending to be somebody else. I don't mean to minimize your pain, but let's recognize that writing is fun. It's when we <em>don't</em> write that we complain about how hard it is.</p>
+                                <footer>Greg Coates</footer>
+                            </blockquote>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

@@ -47,9 +47,9 @@ export class PageZbrushChangeCanvasBackground {
                             <app-entry-meta header={this.header} />
                             <p>Here&#8217;s a quick note on how to change the canvas background color in ZBrush.</p>
 
-                            <p>In the Document palette, click on the Back button (as shown below). Continue to hold the left mouse button down and drag over any color within the app to select that color. If using a pen, continue to apply pressure while dragging out of the Back button region onto a color in any other region on the screen.</p>
+                            <p>In the Document palette, click on the Back button (as shown below). Continue to hold the left mouse button down and drag over any color within the app to select that color. You can drag over the variety of colors in the color picker that is to the left of the canvas, for example. If using a pen, continue to apply pressure while dragging out of the Back button region onto a color in any other region on the screen.</p>
 
-                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/10/zbrush-change-background-color-2-352x1024.jpg" alt="" /></p>
+                            <p><img style={{width:`50%`}} src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/10/zbrush-change-background-color-2-352x1024.jpg" alt="" /></p>
 
 
                         </ion-col>

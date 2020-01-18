@@ -47,10 +47,12 @@ export class PagedZbrushDleteHiddenGeometry {
                             <app-entry-meta header={this.header} />
 
                             <ul>
-                                <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and drag out a selection to select geometry to hide. Press <kbd>ALT</kbd> before releasing.</li>
+                                <li><kbd>CTRL</kbd> + <kbd>SHIFT</kbd> and drag out a selection to select geometry to hide. The selection area will appear green.</li>
+                                <li>Before releasing the left mouse button, or before lifting the stylus pen, press <kbd>ALT</kbd>. The selection area will turn red.</li>
                                 <li>In Tools &gt; Geometry &gt; Modify Topology, click Del Hidden.</li>
                                 <li>Optionally, in the same panel, you may click Close Holes to cap open holes.</li>
                             </ul>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />
