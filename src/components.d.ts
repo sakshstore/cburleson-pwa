@@ -30,8 +30,11 @@ export namespace Components {
   interface AppTabs {}
   interface GlsAdsenseAd {}
   interface GlsDisqus {
-    'disable': boolean;
-    'shortname': any;
+    'category': string;
+    'identifier': string;
+    'language': string;
+    'title': string;
+    'url': string;
   }
   interface GlsGcseSearchboxOnly {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}
@@ -1582,8 +1585,11 @@ declare namespace LocalJSX {
   interface AppTabs {}
   interface GlsAdsenseAd {}
   interface GlsDisqus {
-    'disable'?: boolean;
-    'shortname'?: any;
+    'category'?: string;
+    'identifier'?: string;
+    'language'?: string;
+    'title'?: string;
+    'url'?: string;
   }
   interface GlsGcseSearchboxOnly {}
   interface Page7QuintessentialBrushesForZbrushBeginners {}

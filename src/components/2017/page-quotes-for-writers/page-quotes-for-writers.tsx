@@ -172,6 +172,21 @@ export class PageQuotesForWriters {
                                 <footer>Greg Coates</footer>
                             </blockquote>
 
+                            <blockquote>
+                                <p>Becoming a writer was partly a matter of acquiring technique, but it was just as importantly a matter of the spirit and a habit of the mind. It was the willingness to sit in that chair for thousands of hours, receiving only occasional and minor recognition, enduring the grief of writing in the belief that somehow, despite my ignorance, something transformative was taking place. It was an act of faith, and faith would not be faith if it was not hard, if it was not a test, if it was not an act of willful ignorance, of believing in something that can neither be predicted nor proved by any scientific metric.</p>
+                                <footer>Viet Thanh Nguyen</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Becoming a writer was partly a matter of acquiring technique, but it was just as importantly a matter of the spirit and a habit of the mind. It was the willingness to sit in that chair for thousands of hours, receiving only occasional and minor recognition, enduring the grief of writing in the belief that somehow, despite my ignorance, something transformative was taking place. It was an act of faith, and faith would not be faith if it was not hard, if it was not a test, if it was not an act of willful ignorance, of believing in something that can neither be predicted nor proved by any scientific metric.</p>
+                                <footer>Viet Thanh Nguyen</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Like everyone, I know some big words, but I try my damndest not to use them.</p>
+                                <footer>Ernest Hemingway</footer>
+                            </blockquote>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

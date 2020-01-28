@@ -1,5 +1,6 @@
 export const SITENAME = "Cody Burleson";
-export const SITEVERSION = "1.5.14";
+export const SITEVERSION = "UNRELEASED 001";
+export const DISQUS_SHORTNAME = "codyburleson-com";
 
 /**
  * This function uses the window object to determine whether 
