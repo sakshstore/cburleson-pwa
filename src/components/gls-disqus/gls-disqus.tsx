@@ -1,4 +1,4 @@
-import { Component, h, Listen, Prop } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 import { isLocal } from '../../helpers/utils';
 import { dService } from './disqus-service';
 
@@ -61,7 +61,7 @@ export class GlsDisqus {
         if(isLocal()) {
           console.log('> GlsDisqus.componentDidRender > adding Disqus script....');
         }
-          this.addDisqusScript();
+        this.addDisqusScript();
       } else {
         if(isLocal()) {
           console.log('> GlsDisqus.componentDidRender > Disqus script exists; calling reset....');
@@ -69,6 +69,18 @@ export class GlsDisqus {
         this.reset();
       }
 
+    }
+
+    componentWillUpdate() {
+      if(isLocal()) {
+        console.log('>> GlsDisqus.componentWillUpdate');
+      }
+    }
+
+    componentDidUpdate() {
+      if(isLocal()) {
+        console.log('>> GlsDisqus.componentDidUpdate');
+      }
     }
 
     /** Add DISQUS script */
@@ -89,9 +101,7 @@ export class GlsDisqus {
     const self = this;
     setTimeout(
       () => {
-        
         console.log('-- GlsDisqus.reset() > Hello after 2 seconds');
-
         dService.DISQUS.reset({
           reload: true,
           config: self.getConfig()
@@ -128,6 +138,7 @@ export class GlsDisqus {
   }
 
   validateUrl(url: string) {
+    console.log(">> GlsDisqus.validateUrl('%s')", url);
     /** Validate URL input */
     if (url) {
       const r = /(http|https):\/\/(\w+:{0,1}\w*@)?(\S+)(:[0-9]+)?(\/|\/([\w#!:.?+=&%@!\-\/]))?/;
@@ -141,28 +152,4 @@ export class GlsDisqus {
     /** DISQUS will fallback to "Window.location.href" when URL is undefined */
     return undefined;
   }
-
-
-  @Listen('ionRouteDidChange')
-  routeDidChangeHandler(event: CustomEvent) {
-    if (isLocal()) {
-      console.log('> GlsDisqus.routeDidChangeHandler > event.detail: %o', event.detail);
-    }
-
-    /*
-    if ( ! isLocal() ) {
-      if (event.detail.redirectedFrom !== null) {
-        // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
-        // where they got redirected to (mainly '/' instead of 'blog'). If a redirection exists, take the redirectedFrom...
-        gtag('config', 'UA-21819432-1', { 'page_path': event.detail.redirectedFrom });
-      } else {
-        // otherwise, take the to...
-        gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
-
-      }
-    }
-    */
-
-  }
-
 }

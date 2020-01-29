@@ -1,5 +1,6 @@
 // import { Config } from '@ionic/core';
 import { Component, Element, h, Prop } from '@stencil/core';
+import { modalController } from '@ionic/core';
 import { BlogData } from '../../services/blog-data';
 import { get, set } from '../../services/storage';
 
@@ -20,7 +21,8 @@ export class AppBlog {
 
   // @Prop({ context: 'config' }) config: Config;
 
-  @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
+  //@Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
+  modalCtrl: any = modalController;
 
   data: any;
 

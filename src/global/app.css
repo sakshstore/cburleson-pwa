@@ -23,6 +23,17 @@
 
 @import "~prismjs/themes/prism-okaidia.css";
 
+/** 
+  * Bug fix for:
+  * https://github.com/ionic-team/ionic/issues/18734
+  *
+  */
+  /*
+ion-img {
+  min-height: 1px !important;
+}
+*/
+
 ion-content {
   -webkit-user-select: text;
   user-select: text;
@@ -197,14 +208,6 @@ img {
   height: auto;
   vertical-align: middle;
   border-style: none;
-}
-
-ion-img {
-  /** 
-    * Bug fix for:
-    * https://github.com/ionic-team/ionic/issues/18734
-    */
-  min-height: 1px !important;
 }
 
 ion-thumbnail {

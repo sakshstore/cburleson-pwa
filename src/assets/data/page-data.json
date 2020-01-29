@@ -3,21 +3,21 @@
             {
               "title": "Blog",
               "slug": "blog",
-              "icon": "ios-text",
+              "icon": "chatbox-ellipses-outline",
               "isTab" : true,
               "isMenu": true
             },
             {
               "title": "Books",
               "slug": "books",
-              "icon": "ios-book",
+              "icon": "book-outline",
               "isTab" : true,
               "isMenu": true
             },
             {
               "title": "About",
               "slug": "about",
-              "icon": "ios-information-circle",
+              "icon": "information-circle-outline",
               "isTab" : true,
               "isMenu": true
             }

@@ -17,7 +17,7 @@ export class PagePwaWithIonicAngularWordpressApi4 {
     // header for this individual item by id...
     header: any;
 
-    id:string;
+    id: string;
 
     async componentWillLoad() {
         if (isLocal()) {
@@ -252,8 +252,10 @@ Tagged X, Y, Z
 
                             <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-5">Next: Part 5 &gt;&gt;</ion-button></p>
 
-                            <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
-                            
+                            {/**
+              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
+               */}
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

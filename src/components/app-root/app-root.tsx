@@ -191,7 +191,7 @@ export class AppRoot {
             </ion-header>
             <ion-content forceOverscroll={false}>
               <ion-list>
-                <ion-list-header>Browse</ion-list-header>
+                {/* <ion-list-header>Browse</ion-list-header> */}
                 {pages}
               </ion-list>
             </ion-content>

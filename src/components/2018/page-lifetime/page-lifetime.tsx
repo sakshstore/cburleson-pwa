@@ -1,4 +1,5 @@
 import { Component, h, Element, Prop } from '@stencil/core';
+import { modalController } from '@ionic/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
 import * as d3 from "d3";
@@ -30,7 +31,9 @@ export class PageLifetime {
 
     @Element() el: HTMLElement;
 
-    @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
+    modalCtrl: any = modalController;
+
+    // @Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
 
     title = 'Blog';
 
