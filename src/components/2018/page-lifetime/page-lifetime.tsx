@@ -1,4 +1,4 @@
-import { Component, h, Element, Prop } from '@stencil/core';
+import { Component, h, Element } from '@stencil/core';
 import { modalController } from '@ionic/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 

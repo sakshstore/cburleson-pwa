@@ -1,4 +1,4 @@
-import { Component, Prop, h } from '@stencil/core';
+import { Component, h } from '@stencil/core';
 import { menuController } from '@ionic/core';
 import { isLocal } from '../../helpers/utils';
 import { PageData } from '../../services/page-data';
