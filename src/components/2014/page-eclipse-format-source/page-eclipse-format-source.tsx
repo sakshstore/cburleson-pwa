@@ -25,6 +25,9 @@ export class PageEclipseFormatSource {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -46,7 +49,7 @@ export class PageEclipseFormatSource {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg" width="100"/>Pressing <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> in the Eclipse editor will automatically format source code according to the default or specific formatter preference settings. However, if team members do not format consistently before committing code, relevant changes can become difficult to identify amongst code style changes. One way to alleviate this problem is to force Eclipse (or any Eclipse-based IDE) to format source code automatically on Save. Here’s how…</p>
+                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-eclipse.svg" width="100" />Pressing <kbd>CTRL</kbd> + <kbd>SHIFT</kbd> + <kbd>F</kbd> in the Eclipse editor will automatically format source code according to the default or specific formatter preference settings. However, if team members do not format consistently before committing code, relevant changes can become difficult to identify amongst code style changes. One way to alleviate this problem is to force Eclipse (or any Eclipse-based IDE) to format source code automatically on Save. Here’s how…</p>
 
                             <p class="clear">You can set this behavior globally or on a per-project basis. I would recommend that you enforce it at the project level since you can’t be sure that other developers will keep the global setting turned on. This will work in Eclipse or any Eclipse-based IDE such as Rational Application Developer or the Spring Tools Suite.</p>
 

@@ -209,7 +209,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
   // header for this individual item by id...
   header: any;
 
-  id:string;
+  id: string;
 
   async componentWillLoad() {
     if (isLocal()) {
@@ -222,6 +222,9 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
   // Use this if using source code blocks to be formatted by prism.js...
@@ -517,7 +520,7 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
               <p>I hope you’ll join me on this project, contribute comments, or your own improvements.&nbsp;I intend to take the project further and will continue my “developer log” here, so stay tuned!</p>
 
               <p><ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-2">Next: Part 2 &gt;&gt;</ion-button></p>
-              
+
               {/**
               <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
                */}

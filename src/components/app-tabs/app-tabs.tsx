@@ -26,7 +26,7 @@ export class AppTabs {
       console.log('> PageTabs.componentDidLoad');
     }
 
-    this.menuCtlr = await (this.menuCtlr as any).componentOnReady();
+    //this.menuCtlr = await (this.menuCtlr as any).componentOnReady();
     this.menuCtlr.enable(true);
   }
 

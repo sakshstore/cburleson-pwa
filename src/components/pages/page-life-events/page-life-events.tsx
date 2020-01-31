@@ -18,6 +18,7 @@ export class PageLifeEvents {
 
         // set document title for browser / tab / bookmark
         document.title = this.title + ' | ' + SITENAME;
+        
     }
 
     toggleSearch(){
@@ -38,7 +39,7 @@ export class PageLifeEvents {
                     <ion-title>About</ion-title>
                     <ion-buttons slot="end">
                         <ion-button onClick={() => this.toggleSearch()}>
-                        <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
                         </ion-button>
                     </ion-buttons>
                 </ion-toolbar>

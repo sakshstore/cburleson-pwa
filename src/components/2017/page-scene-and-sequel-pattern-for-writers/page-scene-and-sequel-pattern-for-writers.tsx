@@ -25,6 +25,9 @@ export class PageSceneAndSequelPatternForWriters {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -125,7 +128,7 @@ export class PageSceneAndSequelPatternForWriters {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad/>
+                            <gls-adsense-ad />
 
                         </ion-col>
                     </ion-row>

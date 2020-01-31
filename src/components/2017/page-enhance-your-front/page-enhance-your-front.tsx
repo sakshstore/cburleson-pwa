@@ -40,10 +40,13 @@ export class PageEnhanceYourFront {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     componentDidLoad() {
-    setTimeout(() => Prism.highlightAll(), 0)
+        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -76,7 +79,7 @@ export class PageEnhanceYourFront {
 
                             <p>At the end of the expression, just hit the Tab key. WebStorm will use Emmet to parse the text and spit out the intended HTML which, in this case, will be an unordered list with 5 list items (shown below):</p>
 
-<pre><code class="language-html">{`<ul>
+                            <pre><code class="language-html">{`<ul>
    <li></li>
    <li></li>
    <li></li>
@@ -92,11 +95,11 @@ export class PageEnhanceYourFront {
 
                             <p>You can use&nbsp;<code>&gt;</code>&nbsp;operator to nest elements inside each other:</p>
 
-<pre><code class="language-html">{`div>ul>li`}</code></pre>
+                            <pre><code class="language-html">{`div>ul>li`}</code></pre>
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<div>
+                            <pre><code class="language-html">{`<div>
     <ul>
         <li></li>
     </ul>
@@ -106,11 +109,11 @@ export class PageEnhanceYourFront {
 
                             <p>Use&nbsp;<code>+</code>&nbsp;operator to place elements near each other, on the same level:</p>
 
-<pre><code class="language-html">{`div+p+bq`}</code></pre>
+                            <pre><code class="language-html">{`div+p+bq`}</code></pre>
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<div></div>
+                            <pre><code class="language-html">{`<div></div>
 <p></p>
 <blockquote></blockquote>`}</code></pre>
 
@@ -122,7 +125,7 @@ export class PageEnhanceYourFront {
 
                             <p>Result:</p>
 
-<pre><code class="language-html">{`<ul>
+                            <pre><code class="language-html">{`<ul>
     <li></li>
     <li></li>
     <li></li>
@@ -138,7 +141,7 @@ export class PageEnhanceYourFront {
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<div>
+                            <pre><code class="language-html">{`<div>
     <header>
         <ul>
             <li><a href=""></a></li>
@@ -162,7 +165,7 @@ export class PageEnhanceYourFront {
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<div id="header"></div>
+                            <pre><code class="language-html">{`<div id="header"></div>
 <div class="page"></div>
 <div id="footer" class="class1 class2 class3"></div>`}</code></pre>
 
@@ -180,11 +183,11 @@ export class PageEnhanceYourFront {
 
                             <p>With multiplication&nbsp;<code>*</code>&nbsp;operator you can repeat elements, but with&nbsp;<code>$</code>&nbsp;you can&nbsp;<em>number</em>&nbsp;them. Place&nbsp;<code>$</code>&nbsp;operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:</p>
 
-<pre><code class="language-html">{`ul>li.item$*5`}</code></pre>
+                            <pre><code class="language-html">{`ul>li.item$*5`}</code></pre>
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<ul>
+                            <pre><code class="language-html">{`<ul>
     <li class="item1"></li>
     <li class="item2"></li>
     <li class="item3"></li>
@@ -198,7 +201,7 @@ export class PageEnhanceYourFront {
 
                             <p><strong>Result:</strong></p>
 
-<pre><code class="language-html">{`<ul>
+                            <pre><code class="language-html">{`<ul>
     <li class="item001"></li>
     <li class="item002"></li>
     <li class="item003"></li>
@@ -210,31 +213,31 @@ export class PageEnhanceYourFront {
 
                             <p>You can use curly braces to add text to element:</p>
 
-                                <pre><code class="language-html">{`a{Click me}`}</code></pre>
+                            <pre><code class="language-html">{`a{Click me}`}</code></pre>
 
-                                <p>Result:</p>
+                            <p>Result:</p>
 
-                                <pre><code class="language-html">{`<a href="">Click me</a>`}</code></pre>
+                            <pre><code class="language-html">{`<a href="">Click me</a>`}</code></pre>
 
-                                <h2>Greek Text</h2>
+                            <h2>Greek Text</h2>
 
-                                <p>You know &#8211; that filler text that designers use when they can&#8217;t think of real words that are relevant to a design&#8230;</p>
+                            <p>You know &#8211; that filler text that designers use when they can&#8217;t think of real words that are relevant to a design&#8230;</p>
 
-                                <pre><code class="language-html">{`lorem5`}</code></pre>
+                            <pre><code class="language-html">{`lorem5`}</code></pre>
 
-                                <p><strong>Result:</strong></p>
+                            <p><strong>Result:</strong></p>
 
-                                <pre><code class="language-html">{`Lorem ipsum dolor sit amet.`}</code></pre>
+                            <pre><code class="language-html">{`Lorem ipsum dolor sit amet.`}</code></pre>
 
-                                <h1>Holy shit example</h1>
+                            <h1>Holy shit example</h1>
 
-                                <p>Here&#8217;s a crazy example to give you an idea of what you can accomplish if you get bad ass with Emmet.</p>
+                            <p>Here&#8217;s a crazy example to give you an idea of what you can accomplish if you get bad ass with Emmet.</p>
 
-                                <pre><code class="language-html">{`nav#menuSystem.navMenu.isOpen>div#hotelLogo>div.navMenuIcon.logoIcon+div#arrowPointer+ul#navMenuMain>li.navMenuItem.navMenuItem$$*10>div.navMenuIcon{Item $}+a{Item $}`}</code></pre>
+                            <pre><code class="language-html">{`nav#menuSystem.navMenu.isOpen>div#hotelLogo>div.navMenuIcon.logoIcon+div#arrowPointer+ul#navMenuMain>li.navMenuItem.navMenuItem$$*10>div.navMenuIcon{Item $}+a{Item $}`}</code></pre>
 
-                                <p><strong>Result:</strong></p>
+                            <p><strong>Result:</strong></p>
 
-                                <pre><code class="language-html">{`<nav id="menuSystem" class="navMenu isOpen">
+                            <pre><code class="language-html">{`<nav id="menuSystem" class="navMenu isOpen">
    <div id="hotelLogo">
       <div class="navMenuIcon logoIcon"></div>
       <div id="arrowPointer"></div>
@@ -275,14 +278,14 @@ export class PageEnhanceYourFront {
 
 
                         </ion-col>
-                            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                                <gls-adsense-ad />
-                            </ion-col>
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                            <gls-adsense-ad />
+                        </ion-col>
                     </ion-row>
                 </ion-grid>
 
             </ion-content>
 
-                ];
-            }
+        ];
+    }
 }

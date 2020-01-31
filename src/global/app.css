@@ -28,11 +28,10 @@
   * https://github.com/ionic-team/ionic/issues/18734
   *
   */
-  /*
 ion-img {
   min-height: 1px !important;
 }
-*/
+
 
 ion-content {
   -webkit-user-select: text;

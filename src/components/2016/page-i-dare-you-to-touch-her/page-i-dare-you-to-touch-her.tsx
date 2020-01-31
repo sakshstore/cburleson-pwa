@@ -25,6 +25,9 @@ export class PageIDareYouToTouchHer {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -58,11 +61,11 @@ export class PageIDareYouToTouchHer {
                             <p>&quot;Of a lady,&quot; she'd add. &quot;A naked lady.&quot;</p>
 
                             <p>Then there would be silence again as we both imagined this gruesome scene. And on the way home, or the next day, and generally on just about every other day she’d point to a shack, or toward the dark shadows of an alley, or to a gutter, or just about any place that made a good frame for the dead and she’d ask it again, &quot;What if…&quot;.</p>
-                            
+
                             <p>One long summer of this game had left me with a strange desire to see one for real. So, when my mother invited us to see our aunt, Debbie, before they closed her coffin, we accepted.</p>
 
                             <p>&quot;I dare you to touch her,&quot; my sister said.</p>
-                            
+
                             <p>Why not? She was nothing like what I’d imagined. Her eyes and mouth were closed. No ants. No flies. No maggots. I was relieved. I reached over and I touched her on the nose and then jerked my hand back in a shock. My sister’s eyes got wide as she waited eagerly for my report.</p>
 
                             <p>&quot;She's cold,&quot; I said, &quot;and hard. She doesn’t feel real.&quot;</p>

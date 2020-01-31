@@ -21,7 +21,7 @@ export class PagePwaWithIonicAngularWordpressApi5 {
     // header for this individual item by id...
     header: any;
 
-    id:string;
+    id: string;
 
     async componentWillLoad() {
         if (isLocal()) {
@@ -34,6 +34,9 @@ export class PagePwaWithIonicAngularWordpressApi5 {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     componentDidLoad() {

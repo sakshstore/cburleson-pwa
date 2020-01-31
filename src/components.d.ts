@@ -57,6 +57,7 @@ export namespace Components {
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
   interface PageBookReviewMoreThanEverything {}
+  interface PageBookReviewTheGoldfinch {}
   interface PageBooks {}
   interface PageBuildARenderingPluginIbmWcmPart1 {}
   interface PageBuildARenderingPluginIbmWcmPart2 {}
@@ -414,6 +415,12 @@ declare global {
   var HTMLPageBookReviewMoreThanEverythingElement: {
     prototype: HTMLPageBookReviewMoreThanEverythingElement;
     new (): HTMLPageBookReviewMoreThanEverythingElement;
+  };
+
+  interface HTMLPageBookReviewTheGoldfinchElement extends Components.PageBookReviewTheGoldfinch, HTMLStencilElement {}
+  var HTMLPageBookReviewTheGoldfinchElement: {
+    prototype: HTMLPageBookReviewTheGoldfinchElement;
+    new (): HTMLPageBookReviewTheGoldfinchElement;
   };
 
   interface HTMLPageBooksElement extends Components.PageBooks, HTMLStencilElement {}
@@ -1402,6 +1409,7 @@ declare global {
     'page-better-error-messages-from-gulp-using-gulp-util': HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
     'page-binding-to-a-zsphere-armature': HTMLPageBindingToAZsphereArmatureElement;
     'page-book-review-more-than-everything': HTMLPageBookReviewMoreThanEverythingElement;
+    'page-book-review-the-goldfinch': HTMLPageBookReviewTheGoldfinchElement;
     'page-books': HTMLPageBooksElement;
     'page-build-a-rendering-plugin-ibm-wcm-part-1': HTMLPageBuildARenderingPluginIbmWcmPart1Element;
     'page-build-a-rendering-plugin-ibm-wcm-part-2': HTMLPageBuildARenderingPluginIbmWcmPart2Element;
@@ -1612,6 +1620,7 @@ declare namespace LocalJSX {
   interface PageBetterErrorMessagesFromGulpUsingGulpUtil {}
   interface PageBindingToAZsphereArmature {}
   interface PageBookReviewMoreThanEverything {}
+  interface PageBookReviewTheGoldfinch {}
   interface PageBooks {}
   interface PageBuildARenderingPluginIbmWcmPart1 {}
   interface PageBuildARenderingPluginIbmWcmPart2 {}
@@ -1808,6 +1817,7 @@ declare namespace LocalJSX {
     'page-better-error-messages-from-gulp-using-gulp-util': PageBetterErrorMessagesFromGulpUsingGulpUtil;
     'page-binding-to-a-zsphere-armature': PageBindingToAZsphereArmature;
     'page-book-review-more-than-everything': PageBookReviewMoreThanEverything;
+    'page-book-review-the-goldfinch': PageBookReviewTheGoldfinch;
     'page-books': PageBooks;
     'page-build-a-rendering-plugin-ibm-wcm-part-1': PageBuildARenderingPluginIbmWcmPart1;
     'page-build-a-rendering-plugin-ibm-wcm-part-2': PageBuildARenderingPluginIbmWcmPart2;
@@ -2008,6 +2018,7 @@ declare module "@stencil/core" {
       'page-better-error-messages-from-gulp-using-gulp-util': LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
       'page-binding-to-a-zsphere-armature': LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
       'page-book-review-more-than-everything': LocalJSX.PageBookReviewMoreThanEverything & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingElement>;
+      'page-book-review-the-goldfinch': LocalJSX.PageBookReviewTheGoldfinch & JSXBase.HTMLAttributes<HTMLPageBookReviewTheGoldfinchElement>;
       'page-books': LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
       'page-build-a-rendering-plugin-ibm-wcm-part-1': LocalJSX.PageBuildARenderingPluginIbmWcmPart1 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart1Element>;
       'page-build-a-rendering-plugin-ibm-wcm-part-2': LocalJSX.PageBuildARenderingPluginIbmWcmPart2 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart2Element>;

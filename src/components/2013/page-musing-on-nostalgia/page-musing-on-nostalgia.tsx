@@ -27,6 +27,9 @@ export class PageMusingOnNostalgia {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     componentDidLoad() {
@@ -66,7 +69,7 @@ export class PageMusingOnNostalgia {
 
                             <p>Look at those big, puffy keys and that red LED that just screams &quot;I'm on!&quot; She's a real beauty, isn't she? She was my second obsession (after the VIC 20); I was eleven or twelve years old when I got her. There was also, of course, the Atari 2600, but that’s a whole other story.</p>
 
-                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/C64_magazine.png" alt="" style={{maxWidth: `200px`}} />Anyway, I remember sitting for hours and hours with a copy of Commodore Magazine, typing in about twenty pages of BASIC code found in the middle pages. I had no freagin’ clue what the hell I was typing. All I knew was that if I got it right, my computer might do something awesome – play a song, render an 8-bit game like the Towers of Hanoi, or use my name in a story. I never got one of those programs to work. Not a one.</p>
+                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/C64_magazine.png" alt="" style={{ maxWidth: `200px` }} />Anyway, I remember sitting for hours and hours with a copy of Commodore Magazine, typing in about twenty pages of BASIC code found in the middle pages. I had no freagin’ clue what the hell I was typing. All I knew was that if I got it right, my computer might do something awesome – play a song, render an 8-bit game like the Towers of Hanoi, or use my name in a story. I never got one of those programs to work. Not a one.</p>
 
                             <p>I do remember the very first working program I wrote though. It went something like this:</p>
 

@@ -1,4 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
+import { BlogData } from '../../../services/blog-data';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
 @Component({
@@ -20,6 +21,7 @@ export class PageBooks {
       dateModified: "Oct 21, 2019"
     }]
 
+  /*
   reviewedItems = [{
     id: "/book-review-more-than-everything-by-vanessa-foster",
     title: "Book review - More Than Everything by Vanessa Foster",
@@ -27,12 +29,17 @@ export class PageBooks {
     thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2017/07/book-more-than-everything-thumb.jpg",
     datePublished: "Jul 20, 2017"
   }]
+  */
+  
+ reviewedItems: Array<any> = [];
 
-  componentWillLoad() {
+  async componentWillLoad() {
     if (isLocal()) {
       console.log('> PageProjects.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
+
+    this.reviewedItems = await BlogData.getPostsByTopic("Book Reviews");
   }
 
   toggleSearch(){
@@ -53,7 +60,7 @@ export class PageBooks {
           <ion-title>{this.title}</ion-title>
           <ion-buttons slot="end">
             <ion-button onClick={() => this.toggleSearch()}>
-              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+              <ion-icon slot="icon-only" name="search-outline"></ion-icon>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>

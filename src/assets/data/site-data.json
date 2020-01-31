@@ -1,6 +1,16 @@
 {
   "content": [
     {
+      "id": "book-review-the-goldfinch",
+      "title": "Book review - The Goldfinch by Donna Tartt",
+      "teaser": "A unique story with amazing prose, but a little too much fat.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2020/01/the-goldfinch-thumb.jpg",
+      "datePublished": "2020/01/30",
+      "topics": [
+        "Book Reviews"
+      ]
+    },
+    {
       "id": "delete-node-modules-folder-on-windows",
       "title": "How to delete the node_modules folder on Windows",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-npm.svg",
@@ -826,6 +836,16 @@
       "dateModified": "2018/11/22",
       "topics": [
         "Software Dev"
+      ]
+    },
+    {
+      "id": "book-review-more-than-everything-by-vanessa-foster",
+      "title": "Book review - More Than Everything by Vanessa Foster",
+      "teaser": "Lost, Broken, and on the Run From the FBI; a gripping memoir of resilience and liberation.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2017/07/book-more-than-everything-thumb.jpg",
+      "datePublished": "2017/07/20",
+      "topics": [
+        "Book Reviews"
       ]
     },
     {

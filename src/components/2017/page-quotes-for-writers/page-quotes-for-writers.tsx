@@ -24,6 +24,9 @@ export class PageQuotesForWriters {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     // Use this if using source code blocks to be formatted by prism.js...

@@ -116,6 +116,29 @@ class BlogDataService {
         return this.data.content.find(item => item.id === slug);
     }
 
+    async getPostsByTopic(topic: string) {
+
+        if (isLocal()) {
+            console.log('>> BlogDataService.getPostsByTopic("%s")', topic);
+        }
+
+        const data = await this.load();
+        const result: any = [];
+
+        data.content.forEach((item: any) => {
+            if(item.topics.includes(topic)) {
+                result.push(item);
+            }
+        });
+
+        if (isLocal()) {
+            console.log('<< BlogDataService.getPostsByTopic() < returning: %o', result);
+        }
+
+        return result;
+
+    }
+
 }
 // Singleton. See: https://www.joshmorony.com/using-services-providers-to-share-data-in-a-stencil-js-application/
 export const BlogData = new BlogDataService();
