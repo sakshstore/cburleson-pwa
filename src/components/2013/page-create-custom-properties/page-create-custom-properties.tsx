@@ -29,11 +29,14 @@ export class PageCreateCustomProperties {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
-     componentDidLoad() {
-     setTimeout(() => Prism.highlightAll(), 0)
-     }
+    componentDidLoad() {
+        setTimeout(() => Prism.highlightAll(), 0)
+    }
 
     render() {
         return [
@@ -56,13 +59,13 @@ export class PageCreateCustomProperties {
 
                             <p>Here’s an example wasadmin script (in Jython) that demonstrates how to create and/or update custom properties for resource environment providers. This one, in particular, is a good template for scripting the creation and/or updating of dynamic content spot mappings for a WebSphere Portal theme.</p>
 
-        <p>First, I want to give a shout out to <a href="http://www.linkedin.com/pub/gabriel-aberasturi/11/97a/52a" rel="nofollow">Gabriel Aberasturi</a>, System Analist at Grupo Versia who helped me find this long desired script by answering my question in LinkedIn; he pointed me to <a href="http://pic.dhe.ibm.com/infocenter/wasinfo/v7r0/index.jsp?topic=%2Fcom.ibm.websphere.express.doc%2Finfo%2Fexp%2Fae%2Ftxml_resourcecustom.html" rel="nofollow">IBM documentation for this</a> that none of my searches had returned. Also, after posting the original article, my friend Jared Piper, who works at the Neiman Marcus Group, provided a much improved script, which has now replaced my old example in this article. I could never be any good if it wasn’t for a strong community of people like Gabriel and Jared who take the time to help. That’s exactly why I blog what I learn – to give back. Where would any of us be without the virtual community that makes us stronger? I know I speak for everyone in ours when I say to Gabriel and those who take the time to share that we salute you.</p>
+                            <p>First, I want to give a shout out to <a href="http://www.linkedin.com/pub/gabriel-aberasturi/11/97a/52a" rel="nofollow">Gabriel Aberasturi</a>, System Analist at Grupo Versia who helped me find this long desired script by answering my question in LinkedIn; he pointed me to <a href="http://pic.dhe.ibm.com/infocenter/wasinfo/v7r0/index.jsp?topic=%2Fcom.ibm.websphere.express.doc%2Finfo%2Fexp%2Fae%2Ftxml_resourcecustom.html" rel="nofollow">IBM documentation for this</a> that none of my searches had returned. Also, after posting the original article, my friend Jared Piper, who works at the Neiman Marcus Group, provided a much improved script, which has now replaced my old example in this article. I could never be any good if it wasn’t for a strong community of people like Gabriel and Jared who take the time to help. That’s exactly why I blog what I learn – to give back. Where would any of us be without the virtual community that makes us stronger? I know I speak for everyone in ours when I say to Gabriel and those who take the time to share that we salute you.</p>
 
-<p>Anyway, here’s the script…</p>
+                            <p>Anyway, here’s the script…</p>
 
-<h2>Jython: Create dynamic content spot mappings</h2>
+                            <h2>Jython: Create dynamic content spot mappings</h2>
 
-<pre><code class="language-python">{`
+                            <pre><code class="language-python">{`
 # To execute, navigate to wp_profile/bin and use:
 # wsadmin -lang jython -user wpsadmin -password wpsadmin -conntype SOAP -host mojo.base22.com -port 10025 -f C:/workspace/themeScripts/updated_example.py
  

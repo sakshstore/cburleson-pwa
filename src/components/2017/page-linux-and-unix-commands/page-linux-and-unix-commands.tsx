@@ -28,6 +28,9 @@ export class PageLinuxAndUnixCommands {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
 
@@ -107,11 +110,11 @@ export class PageLinuxAndUnixCommands {
                                             <pre>tar -czvf name-of-archive.tar.gz /path/to/directory-or-file</pre>
                                         </td>
                                         <td><p>Compress an entire directory or single file.</p>
-                                        <p><em>Note: Be sure to add the .tar.gz in the archive file name yourself; the command doesn&#8217;t do it for you.<br />
-                                        </em></p>
-                                        <p>Here’s what the switches mean: -c: Create an archive. -z: Compress the archive with gzip. -v: Display progress in the terminal<br />
-                                            while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but<br />
-                                            it’s helpful. -f: Allows you to specify the filename of the archive.</p></td>
+                                            <p><em>Note: Be sure to add the .tar.gz in the archive file name yourself; the command doesn&#8217;t do it for you.<br />
+                                            </em></p>
+                                            <p>Here’s what the switches mean: -c: Create an archive. -z: Compress the archive with gzip. -v: Display progress in the terminal<br />
+                                                while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but<br />
+                                                it’s helpful. -f: Allows you to specify the filename of the archive.</p></td>
                                     </tr>
                                 </tbody>
                             </table>

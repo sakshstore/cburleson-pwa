@@ -24,6 +24,9 @@ export class PageQuotesForWriters {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     // Use this if using source code blocks to be formatted by prism.js...
@@ -170,6 +173,21 @@ export class PageQuotesForWriters {
                             <blockquote>
                                 <p>Writing isn't hard. Landmine removal is hard. There are so many things in this world harder than spending an hour a night pretending to be somebody else. I don't mean to minimize your pain, but let's recognize that writing is fun. It's when we <em>don't</em> write that we complain about how hard it is.</p>
                                 <footer>Greg Coates</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Becoming a writer was partly a matter of acquiring technique, but it was just as importantly a matter of the spirit and a habit of the mind. It was the willingness to sit in that chair for thousands of hours, receiving only occasional and minor recognition, enduring the grief of writing in the belief that somehow, despite my ignorance, something transformative was taking place. It was an act of faith, and faith would not be faith if it was not hard, if it was not a test, if it was not an act of willful ignorance, of believing in something that can neither be predicted nor proved by any scientific metric.</p>
+                                <footer>Viet Thanh Nguyen</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Becoming a writer was partly a matter of acquiring technique, but it was just as importantly a matter of the spirit and a habit of the mind. It was the willingness to sit in that chair for thousands of hours, receiving only occasional and minor recognition, enduring the grief of writing in the belief that somehow, despite my ignorance, something transformative was taking place. It was an act of faith, and faith would not be faith if it was not hard, if it was not a test, if it was not an act of willful ignorance, of believing in something that can neither be predicted nor proved by any scientific metric.</p>
+                                <footer>Viet Thanh Nguyen</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Like everyone, I know some big words, but I try my damndest not to use them.</p>
+                                <footer>Ernest Hemingway</footer>
                             </blockquote>
 
                         </ion-col>

@@ -25,6 +25,9 @@ export class PageZbrushNotesOnSlicecurveBrush {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -75,7 +78,7 @@ export class PageZbrushNotesOnSlicecurveBrush {
 
                             <p>Polygroup Tips:</p>
 
-                            <p>Press&nbsp;<strong>CTRL + SHIFT</strong>&nbsp;and click on a polygroup to isolate the polygroup, hiding all the others.<br/><strong>CTRL + SHIFT</strong>&nbsp;click on an empty area in the canvas to make all the polygroups visible again.</p>
+                            <p>Press&nbsp;<strong>CTRL + SHIFT</strong>&nbsp;and click on a polygroup to isolate the polygroup, hiding all the others.<br /><strong>CTRL + SHIFT</strong>&nbsp;click on an empty area in the canvas to make all the polygroups visible again.</p>
 
                             <h2>References</h2>
                             <ul>

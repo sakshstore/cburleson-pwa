@@ -80,15 +80,15 @@ export class PageLifetimeModal {
             <ion-label position="floating">Birthday</ion-label>
             <ion-datetime display-format="MMM/DD/YYYY" min="1930-01-01" max="2014-01-01" value={this.birthday}></ion-datetime>
           </ion-item>
-          <ion-radio-group>
+          <ion-radio-group value={this.gender}>
             <ion-list-header>Gender</ion-list-header>
             <ion-item>
               <ion-label>Male</ion-label>
-              <ion-radio value="male" checked={this.gender=='male' ? true : false}></ion-radio>
+              <ion-radio value="male"></ion-radio>
             </ion-item>
             <ion-item>
               <ion-label>Female</ion-label>
-              <ion-radio value="female" checked={this.gender=='female' ? true : false}></ion-radio>
+              <ion-radio value="female"></ion-radio>
             </ion-item>
           </ion-radio-group>
         </ion-list>

@@ -17,17 +17,22 @@ export class PagePwaWithIonicAngularWordpressApi4 {
     // header for this individual item by id...
     header: any;
 
+    id: string;
+
     async componentWillLoad() {
         if (isLocal()) {
             console.log('> PagePwaWithIonicAngularWordpressApi4.componentWillLoad');
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
-        let id = document.location.pathname.substr(1);
-        this.header = BlogData.getPostHeaderById(id);
+        this.id = document.location.pathname.substr(1);
+        this.header = BlogData.getPostHeaderById(this.id);
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+          }
     }
 
     componentDidLoad() {
@@ -249,6 +254,10 @@ Tagged X, Y, Z
                             <p>Building on&nbsp;<a href="/pwa-with-ionic-angular-wordpress-api-3">Part 3</a>, I showed you how you can implement infinite scroll functionality to page through all available WordPress posts. The app is starting to get useful, but there’s still a lot to do&nbsp; to make it&nbsp; cool. I’m not sure what I’ll tackle next, but I will continue to evolve the app, so stay tuned and remember that the evolving source code can always be cloned from GitHub at&nbsp;<a href="https://github.com/codyburleson/ionic-ng-wp-client" rel="nofollow">https://github.com/codyburleson/ionic-ng-wp-client</a>.\</p>
 
                             <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-3">&lt;&lt; Previous: Part 3</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-5">Next: Part 5 &gt;&gt;</ion-button></p>
+
+                            {/**
+              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
+               */}
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

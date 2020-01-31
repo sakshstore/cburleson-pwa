@@ -24,6 +24,9 @@ export class PageVsCodeCheatSheet {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -685,10 +688,10 @@ export class PageVsCodeCheatSheet {
                             <p>For other operating systems’ keyboard shortcuts and additional information, see <a
                                 href="https://code.visualstudio.com/docs/getstarted/keybindings">Key Bindings for Visual Studio Code</a>.</p>
 
-                            
+
                             <h2>Preference settings</h2>
 
-                            <p>Following is NOT an exhaustive list of all preference settings that are available. There are more, but these are just the ones I have so 
+                            <p>Following is NOT an exhaustive list of all preference settings that are available. There are more, but these are just the ones I have so
                                 far found useful.</p>
                             <p>To access settings, go to File &gt; Preferences &gt; Settings, or press <kbd>CTRL</kbd> + <kbd>,</kbd></p>
 

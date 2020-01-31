@@ -17,17 +17,22 @@ export class PagePwaWithIonicAngularWordpressApi3 {
   // header for this individual item by id...
   header: any;
 
+  id: string;
+
   async componentWillLoad() {
     if (isLocal()) {
       console.log('> PagePwaWithIonicAngularWordpressApi3.componentWillLoad');
     }
     // this.data = await BlogData.load();
     // Get the id from the URL path (slug)
-    let id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(id);
+    this.id = document.location.pathname.substr(1);
+    this.header = BlogData.getPostHeaderById(this.id);
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
   componentDidLoad() {
@@ -103,11 +108,9 @@ Tagged X, Y, Z
 </ion-card>
 </ion-content>`}</code></pre>
 
-              <p>Now, if you run ionic serve and preview the app, you can see that we have a Read More… button as shown below.</p>
+              <p>Now, if you run ionic serve and preview the app, you can see that we have a Read More… button.</p>
 
-              <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress15.jpg" alt="" /></p>
-
-              <p>Notice that we have a place holder for post categories and tags below the Read More… button. I’m not entirely sure that’s where I want&nbsp; it yet, but it’s a reminder for us to think about implementing later.</p>
+              <p>Notice that we also have a placeholder for post categories and tags below the Read More… button. I’m not entirely sure that’s where I want it yet, but it’s a reminder for us to think about implementing later.</p>
 
               <h2>Add the PostPage component</h2>
 
@@ -203,6 +206,10 @@ export class AppRoutingModule {
 
               <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-2">&lt;&lt; Previous: Part 2</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-4">Next: Part 4 &gt;&gt;</ion-button></p>
 
+                            {/**
+              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
+               */}
+              
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               <gls-adsense-ad />

@@ -25,6 +25,9 @@ export class PageZBrushAboutPolygroups {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -47,7 +50,7 @@ export class PageZBrushAboutPolygroups {
                             <app-entry-meta header={this.header} />
 
                             <p>Polygroups allow you to organize a single mesh with visual grouping information. Press <kbd>SHIFT</kbd> + <kbd>F</kbd> or press the Draw Polyframe button as shown selected in orange below to see the polygroups. Notice that the example image has six different polygroups as depicted with different colors.</p>
-                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-about-polygroups.png" alt=""/></p>
+                            <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/05/zbrush-about-polygroups.png" alt="" /></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

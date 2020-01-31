@@ -21,6 +21,7 @@ https://codyburleson.com/photos/ken-hicks
 https://codyburleson.com/photos/kevin-brooks
 https://codyburleson.com/photos/ray-kelley
 https://codyburleson.com/photos/stanley-hall
+https://codyburleson.com/book-review-the-goldfinch
 https://codyburleson.com/delete-node-modules-folder-on-windows
 https://codyburleson.com/use-prism-js-in-ionic-stencil-app
 https://codyburleson.com/memories-of-momma-6
@@ -101,6 +102,7 @@ https://codyburleson.com/sparql-examples-order-by
 https://codyburleson.com/sparql-examples-count-all-statements
 https://codyburleson.com/sparql-examples-paging
 https://codyburleson.com/sparql-examples-date-range
+https://codyburleson.com/book-review-more-than-everything-by-vanessa-foster
 https://codyburleson.com/pink-hearts
 https://codyburleson.com/how-to-use-wcm-categories-from-query-parameter-for-pzn
 https://codyburleson.com/show-item-namesin-ibm-wcm-authoring

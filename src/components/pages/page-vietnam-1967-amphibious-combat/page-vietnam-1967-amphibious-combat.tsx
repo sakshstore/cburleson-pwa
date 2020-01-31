@@ -15,6 +15,7 @@ export class PageVietnam1967AmphibiousCombat {
             console.log('> PageVietnam1967AmphibiousCombat.componentWillLoad');
         }
         document.title = this.title + ' | ' + SITENAME;
+        document.getElementById("meta-desc").setAttribute("content", "A documentary about Amphibious Warfare in Vietnam, I-Corps, 1967 by  Donald F. Teal, M.D.");
     }
 
     toggleSearch() {
@@ -35,7 +36,7 @@ export class PageVietnam1967AmphibiousCombat {
                     <ion-title>The Cage - Vietnam</ion-title>
                     <ion-buttons slot="end">
                         <ion-button onClick={() => this.toggleSearch()}>
-                            <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                            <ion-icon slot="icon-only" name="search-outline"></ion-icon>
                         </ion-button>
                     </ion-buttons>
                 </ion-toolbar>

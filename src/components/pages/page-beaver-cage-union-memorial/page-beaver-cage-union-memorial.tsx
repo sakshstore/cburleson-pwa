@@ -15,6 +15,7 @@ export class PageBeaverCageUnionMemorial {
             console.log('> PageBeaverCageUnionMemorial.componentWillLoad');
         }
         document.title = this.title + ' | ' + SITENAME;
+        document.getElementById("meta-desc").setAttribute("content", "A program (booklet) for memorial service held aboard the USS Okinawa on May 16, 1967.");
     }
 
     toggleSearch() {
@@ -35,7 +36,7 @@ export class PageBeaverCageUnionMemorial {
                     <ion-title>The Cage - Vietnam</ion-title>
                     <ion-buttons slot="end">
                         <ion-button onClick={() => this.toggleSearch()}>
-                            <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                            <ion-icon slot="icon-only" name="search-outline"></ion-icon>
                         </ion-button>
                     </ion-buttons>
                 </ion-toolbar>

@@ -16,6 +16,7 @@ export class PageCmdChronBeaverCage {
             console.log('> PageCmdChronBeaverCage.componentWillLoad');
         }
         document.title = this.title + ' | ' + SITENAME;
+        document.getElementById("meta-desc").setAttribute("content", "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.");
     }
 
     toggleSearch() {
@@ -36,7 +37,7 @@ export class PageCmdChronBeaverCage {
                     <ion-title>The Cage - Vietnam</ion-title>
                     <ion-buttons slot="end">
                         <ion-button onClick={() => this.toggleSearch()}>
-                            <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                            <ion-icon slot="icon-only" name="search-outline"></ion-icon>
                         </ion-button>
                     </ion-buttons>
                 </ion-toolbar>

@@ -21,6 +21,9 @@ export class PageZbrushKeyboardShortcuts {
     this.header = BlogData.getPostHeaderById(id);
 
     document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
   render() {
@@ -1332,7 +1335,7 @@ indicated in the top left of the brush icon in to brush palette. Following are s
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-               <gls-adsense-ad />
+              <gls-adsense-ad />
             </ion-col>
           </ion-row>
         </ion-grid>

@@ -16,6 +16,7 @@ export class PagePhotosWeaponsPlatoon {
             console.log('> PagePhotosWeaponsPlatoon.componentWillLoad');
         }
         document.title = this.title + ' | ' + SITENAME;
+        document.getElementById("meta-desc").setAttribute("content", "Photograph of Delta Co Weapons Platoon with most individuals identified.");
     }
 
     toggleSearch(){
@@ -36,7 +37,7 @@ export class PagePhotosWeaponsPlatoon {
                     <ion-title>The Cage - Vietnam</ion-title>
                     <ion-buttons slot="end">
                         <ion-button onClick={() => this.toggleSearch()}>
-                        <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+                        <ion-icon slot="icon-only" name="search-outline"></ion-icon>
                         </ion-button>
                     </ion-buttons>
                 </ion-toolbar>

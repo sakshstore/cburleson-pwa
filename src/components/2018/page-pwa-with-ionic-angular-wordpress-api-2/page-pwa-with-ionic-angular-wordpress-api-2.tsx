@@ -17,17 +17,22 @@ export class PagePwaWithIonicAngularWordpressApi2 {
   // header for this individual item by id...
   header: any;
 
+  id:string;
+
   async componentWillLoad() {
     if (isLocal()) {
       console.log('> PagePwaWithIonicAngularWordpressApi2.componentWillLoad');
     }
     // this.data = await BlogData.load();
     // Get the id from the URL path (slug)
-    let id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(id);
+    this.id = document.location.pathname.substr(1);
+    this.header = BlogData.getPostHeaderById(this.id);
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
   componentDidLoad() {
@@ -246,6 +251,10 @@ Home
 
               <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-3">Next: Part 3 &gt;&gt;</ion-button></p>
               
+                            {/**
+              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
+               */}
+
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               <gls-adsense-ad />

@@ -23,11 +23,14 @@ export class PageBookReviewMoreThanEverything {
       console.log('> PageCage.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
-  toggleSearch(){
-    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
-       this.el.querySelector("#searchbar").classList.remove('hidden');
+  toggleSearch() {
+    if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+      this.el.querySelector("#searchbar").classList.remove('hidden');
     } else {
       this.el.querySelector("#searchbar").classList.add('hidden');
     }
@@ -44,11 +47,11 @@ export class PageBookReviewMoreThanEverything {
           <ion-title>Books</ion-title>
           <ion-buttons slot="end">
             <ion-button onClick={() => this.toggleSearch()}>
-              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+              <ion-icon slot="icon-only" name="search-outline"></ion-icon>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
-        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
+        <gls-gcse-searchbox-only id="searchbar" class="hidden" />
       </ion-header>,
 
       <ion-content class="ion-padding">
@@ -59,7 +62,7 @@ export class PageBookReviewMoreThanEverything {
               <h1>{this.header.title}</h1>
               <app-entry-meta header={this.header} />
 
-              <p><a target="_blank"  href="https://www.amazon.com/gp/product/B00BJMV23M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00BJMV23M&linkCode=as2&tag=burtecgrollc-20&linkId=aa3ce7b2ab207d2e31ef02ef533a1054"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00BJMV23M&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=B00BJMV23M" width="1" height="1" alt="" />Vanessa Foster&#8217;s account of a misguided youth, fleeing the FBI from Texas all the way to Alaska, is everything a great memoir should be. It&#8217;s a love-crazed and drug-twisted adventure where one mishap after another unravels her world until little remains, but a helpless wish for grace and a humbled reliance on the aid of culinary angels. It&#8217;s also a poetic search through the colorful, but frayed and fading pieces of a once hopeful reality. She gropes desperately for a thread of meaning while fumbling with her exhilarating lover in his schizophrenic downward spiral. With all hopes, dreams, family, and innocence seemingly lost, she is finally relented with a gift of grace, illuminated with spiritual truth, and crowned a woman. In losing almost everything, she gains something that is more.</p>
+              <p><a target="_blank" href="https://www.amazon.com/gp/product/B00BJMV23M/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=B00BJMV23M&linkCode=as2&tag=burtecgrollc-20&linkId=aa3ce7b2ab207d2e31ef02ef533a1054"><img class="alignleft" src="//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=B00BJMV23M&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20" /></a><img src="//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=B00BJMV23M" width="1" height="1" alt="" />Vanessa Foster&#8217;s account of a misguided youth, fleeing the FBI from Texas all the way to Alaska, is everything a great memoir should be. It&#8217;s a love-crazed and drug-twisted adventure where one mishap after another unravels her world until little remains, but a helpless wish for grace and a humbled reliance on the aid of culinary angels. It&#8217;s also a poetic search through the colorful, but frayed and fading pieces of a once hopeful reality. She gropes desperately for a thread of meaning while fumbling with her exhilarating lover in his schizophrenic downward spiral. With all hopes, dreams, family, and innocence seemingly lost, she is finally relented with a gift of grace, illuminated with spiritual truth, and crowned a woman. In losing almost everything, she gains something that is more.</p>
 
               <p>Vanessa Foster delivers all the things we seek from a good story &#8211; escape, adventure, entertainment, spiritual retreat and self-discovery. And it&#8217;s all true.</p>
 
@@ -70,7 +73,7 @@ export class PageBookReviewMoreThanEverything {
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-            <iframe title=" More Than Everything by Vanessa Foster" style={{width: `120px`, height: `240px`}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=0615780873&asins=0615780873&linkId=a8b77a2c7c69ed9cab112ba6d16dd9d9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
+              <iframe title=" More Than Everything by Vanessa Foster" style={{ width: `120px`, height: `240px` }} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="//ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=0615780873&asins=0615780873&linkId=a8b77a2c7c69ed9cab112ba6d16dd9d9&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
 
             </ion-col>
           </ion-row>

@@ -20,6 +20,7 @@ export class PageCage {
       datePublished: "",
       dateModified: "February 6, 2019"
     },
+    
     {
       id: "/beaver-cage-union-memorial",
       title: "Beaver Cage/Union memorial service program",
@@ -166,7 +167,7 @@ export class PageCage {
           <ion-title>The Cage - Vietnam</ion-title>
           <ion-buttons slot="end">
             <ion-button onClick={() => this.toggleSearch()}>
-              <ion-icon slot="icon-only" name="ios-search"></ion-icon>
+              <ion-icon slot="icon-only" name="search-outline"></ion-icon>
             </ion-button>
           </ion-buttons>
         </ion-toolbar>

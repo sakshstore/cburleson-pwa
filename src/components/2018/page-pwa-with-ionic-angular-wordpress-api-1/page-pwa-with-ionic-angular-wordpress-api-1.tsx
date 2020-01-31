@@ -9,8 +9,6 @@ import 'prismjs/components/prism-yaml.min';
 
 import { BlogData } from '../../../services/blog-data';
 
-
-
 const CODE_1 = `$ cd ./ionic-ng-wp-client
 $ ionic serve`;
 
@@ -211,17 +209,22 @@ export class PagePwaWithIonicAngularWordpressApi1 {
   // header for this individual item by id...
   header: any;
 
+  id: string;
+
   async componentWillLoad() {
     if (isLocal()) {
       console.log('> PagePwaWithIonicAngularWordpressApi1.componentWillLoad');
     }
     // this.data = await BlogData.load();
     // Get the id from the URL path (slug)
-    let id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(id);
+    this.id = document.location.pathname.substr(1);
+    this.header = BlogData.getPostHeaderById(this.id);
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
   }
 
   // Use this if using source code blocks to be formatted by prism.js...
@@ -517,7 +520,11 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
               <p>I hope you’ll join me on this project, contribute comments, or your own improvements.&nbsp;I intend to take the project further and will continue my “developer log” here, so stay tuned!</p>
 
               <p><ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-2">Next: Part 2 &gt;&gt;</ion-button></p>
-              
+
+              {/**
+              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
+               */}
+
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               <gls-adsense-ad />

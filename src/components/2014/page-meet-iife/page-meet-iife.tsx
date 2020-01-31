@@ -28,10 +28,13 @@ export class PageMeetIife {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     componentDidLoad() {
-     setTimeout(() => Prism.highlightAll(), 0)
+        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -55,28 +58,28 @@ export class PageMeetIife {
 
                             <p>If you want to call yourself a JavaScript bad-ass, then there is at least one little code pattern you should know by heart: the Immediately Invoked Function Expression (IIFE). This pattern defines a function that is executed immediately and it looks like this:</p>
 
-<pre><code class="language-javascript">{`(function () {
+                            <pre><code class="language-javascript">{`(function () {
     alert("Hello world, I'm an IIFE!");
 }());`}</code></pre>
 
-<p>This is an important pattern primarily because it provides a closure for initialization code, which allows you to keep temporary variables out of the global scope. That is to say, it encloses code in a function that acts as a scope wrapper or sandbox and that is executed immediately after it’s created. I find it easier to remember this pattern by breaking it down into the following steps…</p>
+                            <p>This is an important pattern primarily because it provides a closure for initialization code, which allows you to keep temporary variables out of the global scope. That is to say, it encloses code in a function that acts as a scope wrapper or sandbox and that is executed immediately after it’s created. I find it easier to remember this pattern by breaking it down into the following steps…</p>
 
-<h3>JavaScript IIFE in 4 simple steps</h3>
+                            <h3>JavaScript IIFE in 4 simple steps</h3>
 
-<ol>
-<li>Define a function using a function expression.<br />
-<pre><code class="language-javascript">{`function() {};`}</code></pre></li>
-<li>Add a set of parentheses at the end, which causes the function to be executed immediately.<br />
-<pre><code class="language-javascript">{`function() {}();`}</code></pre></li>
-<li>Wrap the whole function in parentheses.<em>This is required because we’re not assigning the function to a variable.</em><br />
-<pre><code class="language-javascript">{`(function() {}());`}</code></pre></li>
-<li>Write the function body.<em>…in the usual spot between the curly braces.</em><br />
-<pre><code class="language-javascript">{`(function () {
+                            <ol>
+                                <li>Define a function using a function expression.<br />
+                                    <pre><code class="language-javascript">{`function() {};`}</code></pre></li>
+                                <li>Add a set of parentheses at the end, which causes the function to be executed immediately.<br />
+                                    <pre><code class="language-javascript">{`function() {}();`}</code></pre></li>
+                                <li>Wrap the whole function in parentheses.<em>This is required because we’re not assigning the function to a variable.</em><br />
+                                    <pre><code class="language-javascript">{`(function() {}());`}</code></pre></li>
+                                <li>Write the function body.<em>…in the usual spot between the curly braces.</em><br />
+                                    <pre><code class="language-javascript">{`(function () {
     alert("Hello world, I'm an IIFE!");
 }());`}</code></pre></li>
-</ol>
+                            </ol>
 
-<p>You can use this pattern any time you need to create a scope sandbox. You can also use it instead of jQuery’s <code>$( document ).ready()</code> when you’re actually able to follow the best-practice of loading render-blocking scripts last. You will almost certainly use this pattern when creating your own reusable JavaScript library or framework. When using an IIFE in your own library, you will likely use a more complex form – passing in parameters. In an upcoming post, I’ll show you how to do that, so stay tuned.</p>
+                            <p>You can use this pattern any time you need to create a scope sandbox. You can also use it instead of jQuery’s <code>$( document ).ready()</code> when you’re actually able to follow the best-practice of loading render-blocking scripts last. You will almost certainly use this pattern when creating your own reusable JavaScript library or framework. When using an IIFE in your own library, you will likely use a more complex form – passing in parameters. In an upcoming post, I’ll show you how to do that, so stay tuned.</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

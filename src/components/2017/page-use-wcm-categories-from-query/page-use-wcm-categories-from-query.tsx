@@ -25,6 +25,9 @@ export class PageUseWcmCategoriesFromQuery {
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+        if (this.header.teaser) {
+            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+        }
     }
 
     render() {
@@ -46,7 +49,7 @@ export class PageUseWcmCategoriesFromQuery {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png" alt="WebSphere Portal Logo"/> Here&#8217;s how to use query parameters from the HTPP request (or from the URL) in a personalization component. This page came from my raw notes and hasn&#8217;t yet been rewritten for the broader audience; sorry. Posting it anyway for those who won&#8217;t mind a little sloppiness.</p>
+                            <p><img class="alignleft" src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png" alt="WebSphere Portal Logo" /> Here&#8217;s how to use query parameters from the HTPP request (or from the URL) in a personalization component. This page came from my raw notes and hasn&#8217;t yet been rewritten for the broader audience; sorry. Posting it anyway for those who won&#8217;t mind a little sloppiness.</p>
 
                             <p>The personalization component must be rendered by the WCM servlet (the URL of which you can get from Previewing the component &#8211; DONT FORGET TO REMOVE NO CACHE PARAMS IN PROD). If you access it as rendered within the Web Content Viewer, the rule will not have access to the Request and won&#8217;t be able to get the request parameters.</p>
 
