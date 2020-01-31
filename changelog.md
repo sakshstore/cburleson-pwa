@@ -3,18 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [UNRELEASED 003] - 2020-01-28]
+## [1.5.16] - 2020-01-30]
 
-- Modify all existing posts and pages to set document meta description with teaser (previously, all Google search results were displaying meta description info for only index.html).
+- Added page [/book-review-the-goldfinch](https://codyburleson.com/book-review-the-goldfinch)
+- Modified all existing posts and pages to set document meta description with teaser (previously, all Google search results were displaying meta description info for only index.html).
 - Upgrade Ionic to version: 5.0.0-rc.2
-
-## [UNRELEASED 002] - 2020-01-28]
-
-- Upgrade Ionic to version: 5.0.0-rc.0
-
-## [UNRELEASED 001] - 2020-01-25]
-
-- New attempt at DISQUS component (STAGING)
 
 ## [1.5.15] - 2020-01-18
 
