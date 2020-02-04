@@ -1,5 +1,6 @@
 #!/usr/bin/env node
-// console.log('****** LULABLOG ******');
+
+// node app.js create page <slug>
 
 const fs = require('fs');
 const program = require('commander');
