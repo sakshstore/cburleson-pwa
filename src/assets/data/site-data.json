@@ -1229,7 +1229,7 @@
     },
     {
       "id": "the-ia-files-005-navigation-breadth-and-depth",
-      "title": "The IA Files 005 - Navigation breadth and depth",
+      "title": "The IA Files 5 - Navigation breadth and depth",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "datePublished": "2013-07-07",
       "topics": [
@@ -1278,7 +1278,7 @@
     },
     {
       "id": "the-ia-files-004-taxonomies",
-      "title": "The IA Files 004 - Taxonomies",
+      "title": "The IA Files 4 - Taxonomies",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "datePublished": "2013-03-28",
       "topics": [
@@ -1307,7 +1307,7 @@
     },
     {
       "id": "the-ia-files-003-definitions-defined",
-      "title": "The IA Files 003 - Definitions, defined",
+      "title": "The IA Files 3 - Definitions, defined",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "datePublished": "2013-02-22",
       "topics": [
@@ -1363,7 +1363,7 @@
     },
     {
       "id": "the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide",
-      "title": "The IA Files 002 - Concepts, crows, camels, and the cognitive divide",
+      "title": "The IA Files 2 - Concepts, crows, camels, and the cognitive divide",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "datePublished": "2013-01-19",
       "topics": [
@@ -1435,11 +1435,12 @@
       "datePublished": "2012/12/27",
       "topics": [
         "Software Dev"
-      ]
+      ],
+      "hideFromMenus": true
     },
     {
       "id": "build-a-rendering-plugin-ibm-wcm-part-1",
-      "title": "Build a Rendering Plugin to Integrate Velocity with IBM WCM - Part 1",
+      "title": "Build a Rendering Plugin to Integrate Velocity with IBM WCM",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2012/12/26",
       "topics": [

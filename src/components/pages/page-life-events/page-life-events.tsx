@@ -113,7 +113,7 @@ export class PageLifeEvents {
                                         <li>Started working as a Senior Managing Consultant for IBM (my former company, PwC Consulting was acquired by IBM).</li>
                                     </ul>
                                 </li>
-                                <li>2003
+                                <li><strong>2003</strong>
                                     <ul>
                                         <li>Oct 5 - Grandfather, Don Owen Baker, died.</li>
                                     </ul>
@@ -147,7 +147,7 @@ export class PageLifeEvents {
                                     <strong>2019</strong>
                                     <ul>
                                         <li>Left Base22 to start working as a Writer.</li>
-                                        <li>Granddaughter, Harlyn Faith Born.</li>
+                                        <li>Granddaughter, Harlyn Faith born.</li>
                                     </ul>
                                 </li>
                             </ul>

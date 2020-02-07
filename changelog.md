@@ -3,8 +3,14 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [unreleased]
+## [1.5.17] - 2020-02-06]
 
+- Added Series content menus to all multi-part series content: 
+    - [Memories of Momma](https://codyburleson.com/memories-of-momma-1)
+    - [Build a PWA with Ionic, Angular, and the WordPress REST API](https://codyburleson.com/pwa-with-ionic-angular-wordpress-api-1)
+    - [The IA Files](https://codyburleson.com//the-ia-files-001-into-the-fire)
+    - [Build a Rendering Plugin to Integrate Velocity with IBM WCM](https://codyburleson.com/build-a-rendering-plugin-ibm-wcm-part-1)
+- Added new page: [/about/experience](https://codyburleson.com/about/experience)
 - Modified page [/create-polygroup-from-mask-in-zbrush](https://codyburleson.com/create-polygroup-from-mask-in-zbrush); minor content edits to improve quality / readability.
 
 ## [1.5.16] - 2020-01-30]

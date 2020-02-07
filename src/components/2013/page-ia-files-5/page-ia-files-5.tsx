@@ -100,6 +100,34 @@ export class PageIAFiles1 {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <ion-card>
+                                <ion-card-header>
+                                    <ion-card-subtitle>The IA Files</ion-card-subtitle>
+                                    <ion-card-title>Series content</ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    <ion-list>
+                                        <ion-item href="/the-ia-files-001-into-the-fire">
+                                            <ion-label>Part 1 - Into the Fire</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide">
+                                            <ion-label>Part 2 - Concepts, crows, camels, and the cognitive divide</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/the-ia-files-003-definitions-defined">
+                                            <ion-label>Part 3 - Definitions, defined</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/the-ia-files-004-taxonomies">
+                                            <ion-label>Part 4 - Taxonomies</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/the-ia-files-005-navigation-breadth-and-depth">
+                                            <ion-icon name="chevron-forward-outline" slot="start"></ion-icon>
+                                            <ion-label>Part 5 - Navigation breadth and depth</ion-label>
+                                        </ion-item>
+                                    </ion-list>
+                                </ion-card-content>
+                            </ion-card>
+
                             <gls-adsense-ad />
                         </ion-col>
                     </ion-row>

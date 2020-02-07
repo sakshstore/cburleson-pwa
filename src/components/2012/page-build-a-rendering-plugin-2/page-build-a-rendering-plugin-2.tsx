@@ -256,8 +256,29 @@ public boolean render(final RenderingPluginModel p_model) throws RenderingPlugin
 
                             <p>Here’s the WAR and EAR projects for Rational or your Ecplipse-based IDE (unzip and import into your Rational workspace): <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/VelocityRenderPluginProject-Part2.zip">VelocityRenderPluginProject-Part2.zip</a></p>
 
+                            <p><ion-button color="primary" routerDirection="back" href="/build-a-rendering-plugin-ibm-wcm-part-1">&lt;&lt; Previous: Part 1</ion-button></p>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                        <ion-card>
+                                <ion-card-header>
+                                    <ion-card-subtitle>Build a Rendering Plugin to Integrate Velocity with IBM WCM</ion-card-subtitle>
+                                    <ion-card-title>Series content</ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    <ion-list>
+                                        <ion-item href="/build-a-rendering-plugin-ibm-wcm-part-1">
+                                            <ion-label>Part 1</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/build-a-rendering-plugin-ibm-wcm-part-2">
+                                        <ion-icon name="chevron-forward-outline" slot="start"></ion-icon>
+                                            <ion-label>Part 2</ion-label>
+                                        </ion-item>
+                                    </ion-list>
+                                </ion-card-content>
+                            </ion-card>
+
                             <gls-adsense-ad />
                         </ion-col>
                     </ion-row>

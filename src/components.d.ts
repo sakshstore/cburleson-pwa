@@ -84,6 +84,7 @@ export namespace Components {
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
   interface PageEnhanceYourFrontEndWebDevWorkflowWithEmmet {}
+  interface PageExperience {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -577,6 +578,12 @@ declare global {
   var HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement: {
     prototype: HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
     new (): HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
+  };
+
+  interface HTMLPageExperienceElement extends Components.PageExperience, HTMLStencilElement {}
+  var HTMLPageExperienceElement: {
+    prototype: HTMLPageExperienceElement;
+    new (): HTMLPageExperienceElement;
   };
 
   interface HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement extends Components.PageFemaleAnatomyOutOfTheBoxInZbrush, HTMLStencilElement {}
@@ -1436,6 +1443,7 @@ declare global {
     'page-docker-cheat-sheet': HTMLPageDockerCheatSheetElement;
     'page-eclipse-tip-format-source-code-on-save': HTMLPageEclipseTipFormatSourceCodeOnSaveElement;
     'page-enhance-your-front-end-web-dev-workflow-with-emmet': HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement;
+    'page-experience': HTMLPageExperienceElement;
     'page-female-anatomy-out-of-the-box-in-zbrush': HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement;
     'page-find-java-classes-or-packages-contained-in-jar-files': HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement;
     'page-fix-for-git-after-macos-mojave-upgrade': HTMLPageFixForGitAfterMacosMojaveUpgradeElement;
@@ -1647,6 +1655,7 @@ declare namespace LocalJSX {
   interface PageDockerCheatSheet {}
   interface PageEclipseTipFormatSourceCodeOnSave {}
   interface PageEnhanceYourFrontEndWebDevWorkflowWithEmmet {}
+  interface PageExperience {}
   interface PageFemaleAnatomyOutOfTheBoxInZbrush {}
   interface PageFindJavaClassesOrPackagesContainedInJarFiles {}
   interface PageFixForGitAfterMacosMojaveUpgrade {}
@@ -1844,6 +1853,7 @@ declare namespace LocalJSX {
     'page-docker-cheat-sheet': PageDockerCheatSheet;
     'page-eclipse-tip-format-source-code-on-save': PageEclipseTipFormatSourceCodeOnSave;
     'page-enhance-your-front-end-web-dev-workflow-with-emmet': PageEnhanceYourFrontEndWebDevWorkflowWithEmmet;
+    'page-experience': PageExperience;
     'page-female-anatomy-out-of-the-box-in-zbrush': PageFemaleAnatomyOutOfTheBoxInZbrush;
     'page-find-java-classes-or-packages-contained-in-jar-files': PageFindJavaClassesOrPackagesContainedInJarFiles;
     'page-fix-for-git-after-macos-mojave-upgrade': PageFixForGitAfterMacosMojaveUpgrade;
@@ -2045,6 +2055,7 @@ declare module "@stencil/core" {
       'page-docker-cheat-sheet': LocalJSX.PageDockerCheatSheet & JSXBase.HTMLAttributes<HTMLPageDockerCheatSheetElement>;
       'page-eclipse-tip-format-source-code-on-save': LocalJSX.PageEclipseTipFormatSourceCodeOnSave & JSXBase.HTMLAttributes<HTMLPageEclipseTipFormatSourceCodeOnSaveElement>;
       'page-enhance-your-front-end-web-dev-workflow-with-emmet': LocalJSX.PageEnhanceYourFrontEndWebDevWorkflowWithEmmet & JSXBase.HTMLAttributes<HTMLPageEnhanceYourFrontEndWebDevWorkflowWithEmmetElement>;
+      'page-experience': LocalJSX.PageExperience & JSXBase.HTMLAttributes<HTMLPageExperienceElement>;
       'page-female-anatomy-out-of-the-box-in-zbrush': LocalJSX.PageFemaleAnatomyOutOfTheBoxInZbrush & JSXBase.HTMLAttributes<HTMLPageFemaleAnatomyOutOfTheBoxInZbrushElement>;
       'page-find-java-classes-or-packages-contained-in-jar-files': LocalJSX.PageFindJavaClassesOrPackagesContainedInJarFiles & JSXBase.HTMLAttributes<HTMLPageFindJavaClassesOrPackagesContainedInJarFilesElement>;
       'page-fix-for-git-after-macos-mojave-upgrade': LocalJSX.PageFixForGitAfterMacosMojaveUpgrade & JSXBase.HTMLAttributes<HTMLPageFixForGitAfterMacosMojaveUpgradeElement>;

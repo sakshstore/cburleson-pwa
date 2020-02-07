@@ -122,6 +122,36 @@ export class PageMemoriesOfMomma6 {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
+                        <ion-card>
+                                <ion-card-header>
+                                    <ion-card-subtitle>Memories of Momma</ion-card-subtitle>
+                                    <ion-card-title>Series content</ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    <ion-list>
+                                        <ion-item href="/memories-of-momma-1">
+                                            <ion-label>Part 1</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/memories-of-momma-2">
+                                            <ion-label>Part 2</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/memories-of-momma-3">
+                                            <ion-label>Part 3</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/memories-of-momma-4">
+                                            <ion-label>Part 4</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/memories-of-momma-5">
+                                            <ion-label>Part 5</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/memories-of-momma-6">
+                                            <ion-icon name="chevron-forward-outline" slot="start"></ion-icon>
+                                            <ion-label>Part 6</ion-label>
+                                        </ion-item>
+                                    </ion-list>
+                                </ion-card-content>
+                            </ion-card>
+
                             <gls-adsense-ad />
 
                         </ion-col>

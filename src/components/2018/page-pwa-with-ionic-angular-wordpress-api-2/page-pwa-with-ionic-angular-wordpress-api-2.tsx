@@ -17,7 +17,7 @@ export class PagePwaWithIonicAngularWordpressApi2 {
   // header for this individual item by id...
   header: any;
 
-  id:string;
+  id: string;
 
   async componentWillLoad() {
     if (isLocal()) {
@@ -250,13 +250,40 @@ Home
               <p>I hope you’ll join me on this project, contribute comments, or your own improvements.&nbsp;I intend to take the project further and will continue my “developer log” here, so stay tuned!</p>
 
               <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-1">&lt;&lt; Previous: Part 1</ion-button> <ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-3">Next: Part 3 &gt;&gt;</ion-button></p>
-              
-                            {/**
+
+              {/**
               <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
                */}
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+              <ion-card>
+                <ion-card-header>
+                  <ion-card-subtitle>Build a PWA with Ionic, Angular, and the WordPress REST API</ion-card-subtitle>
+                  <ion-card-title>Series content</ion-card-title>
+                </ion-card-header>
+                <ion-card-content>
+                  <ion-list>
+                    <ion-item href="/pwa-with-ionic-angular-wordpress-api-1">
+                      <ion-label>Part 1</ion-label>
+                    </ion-item>
+                    <ion-item href="/pwa-with-ionic-angular-wordpress-api-2">
+                      <ion-icon name="chevron-forward-outline" slot="start"></ion-icon>
+                      <ion-label>Part 2</ion-label>
+                    </ion-item>
+                    <ion-item href="/pwa-with-ionic-angular-wordpress-api-3">
+                      <ion-label>Part 3</ion-label>
+                    </ion-item>
+                    <ion-item href="/pwa-with-ionic-angular-wordpress-api-4">
+                      <ion-label>Part 4</ion-label>
+                    </ion-item>
+                    <ion-item href="/pwa-with-ionic-angular-wordpress-api-5">
+                      <ion-label>Part 5</ion-label>
+                    </ion-item>
+                  </ion-list>
+                </ion-card-content>
+              </ion-card>
+
               <gls-adsense-ad />
             </ion-col>
           </ion-row>

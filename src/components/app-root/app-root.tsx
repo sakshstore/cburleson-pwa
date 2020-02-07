@@ -127,6 +127,9 @@ export class AppRoot {
           <ion-route url="/about" component="tab-about">
             <ion-route url="/life-events" component="page-life-events"></ion-route>
           </ion-route>
+          <ion-route url="/about" component="tab-about">
+            <ion-route url="/experience" component="page-experience"></ion-route>
+          </ion-route>
           <ion-route url="/beaver-cage-command-chron" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>
           </ion-route>

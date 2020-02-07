@@ -416,6 +416,8 @@ import org.apache.velocity.app.Velocity;`}</code></pre>
 
                             <p><code>[Velocity lib=”Web Content” cmpnt=”HTML – My Velocity Template” vars=”name=Velocity | project=Jakarta”]</code></p>
 
+                            <p><ion-button color="primary" routerDirection="forward" href="/build-a-rendering-plugin-ibm-wcm-part-2">Next: Part 2 &gt;&gt;</ion-button></p>
+
                             <h2>Reference Resources</h2>
 
                             <p>Following are some of the reference resources I used to research and write this article.</p>
@@ -433,6 +435,25 @@ import org.apache.velocity.app.Velocity;`}</code></pre>
                             </ul>
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+
+                            <ion-card>
+                                <ion-card-header>
+                                    <ion-card-subtitle>Build a Rendering Plugin to Integrate Velocity with IBM WCM</ion-card-subtitle>
+                                    <ion-card-title>Series content</ion-card-title>
+                                </ion-card-header>
+                                <ion-card-content>
+                                    <ion-list>
+                                        <ion-item href="/build-a-rendering-plugin-ibm-wcm-part-1">
+                                            <ion-icon name="chevron-forward-outline" slot="start"></ion-icon>
+                                            <ion-label>Part 1</ion-label>
+                                        </ion-item>
+                                        <ion-item href="/build-a-rendering-plugin-ibm-wcm-part-2">
+                                            <ion-label>Part 2</ion-label>
+                                        </ion-item>
+                                    </ion-list>
+                                </ion-card-content>
+                            </ion-card>
+
                             <gls-adsense-ad />
                         </ion-col>
                     </ion-row>

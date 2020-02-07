@@ -55,7 +55,7 @@ export class PageAbout {
 
         <h2>What I'm doing now</h2>
 
-        <p>I recently &quot;retired&quot; from 23 years in software to pursue my lifelong dream of being a writer and I am currently writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, The Cage, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
+        <p>I recently &quot;retired&quot; from 22 years in software to pursue my lifelong dream of being a writer and I am currently writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, The Cage, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
 
         <p><strong><ion-router-link href="/cage" routerDirection="forward">The Cage</ion-router-link></strong> (work-in-progress book)</p>
 
@@ -105,9 +105,23 @@ export class PageAbout {
 
         <h2>Etc...</h2>
 
-        <ul>
-          <li><strong><ion-router-link href="/about/life-events" routerDirection="forward">Life Events</ion-router-link></strong> - similar to the Facebook About page Life Events, here is my own.</li>
-        </ul>
+        <ion-list>
+
+          <ion-item lines="full" href="/about/experience" routerDirection="forward">
+              <ion-label text-wrap>
+              Experience
+              <p>My career history.</p>
+              </ion-label>
+          </ion-item>
+
+          <ion-item lines="full" href="/about/life-events" routerDirection="forward">
+              <ion-label text-wrap>
+              Life Events
+              <p>Similar to the Facebook About page's Life Events, here are some key life events of my own.</p>
+              </ion-label>
+          </ion-item>
+
+        </ion-list>
 
       </ion-content>
     ];
