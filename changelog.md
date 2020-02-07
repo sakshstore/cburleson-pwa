@@ -3,6 +3,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.18] - 2020-02-06]
+
+- Modified [/books](https://codyburleson.com/books) page with new category for 'What I'm reading now'
+
 ## [1.5.17] - 2020-02-06]
 
 - Added Series content menus to all multi-part series content: 
