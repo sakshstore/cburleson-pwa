@@ -165,6 +165,7 @@ export namespace Components {
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageSceneAndSequelPatternForWriters {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageSeaTigerNewspapers {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageSetupCarbonLdpWithStardogContainerFromScratch {}
@@ -1048,6 +1049,12 @@ declare global {
     new (): HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
   };
 
+  interface HTMLPageSeaTigerNewspapersElement extends Components.PageSeaTigerNewspapers, HTMLStencilElement {}
+  var HTMLPageSeaTigerNewspapersElement: {
+    prototype: HTMLPageSeaTigerNewspapersElement;
+    new (): HTMLPageSeaTigerNewspapersElement;
+  };
+
   interface HTMLPageServeStaticResourcesWithSpringBootElement extends Components.PageServeStaticResourcesWithSpringBoot, HTMLStencilElement {}
   var HTMLPageServeStaticResourcesWithSpringBootElement: {
     prototype: HTMLPageServeStaticResourcesWithSpringBootElement;
@@ -1521,6 +1528,7 @@ declare global {
     'page-rig-a-mesh-with-zspheres-in-zbrush': HTMLPageRigAMeshWithZspheresInZbrushElement;
     'page-scene-and-sequel-pattern-for-writers': HTMLPageSceneAndSequelPatternForWritersElement;
     'page-script-for-rotating-unity-game-object-90-degrees': HTMLPageScriptForRotatingUnityGameObject90DegreesElement;
+    'page-sea-tiger-newspapers': HTMLPageSeaTigerNewspapersElement;
     'page-serve-static-resources-with-spring-boot': HTMLPageServeStaticResourcesWithSpringBootElement;
     'page-set-the-page-title-in-angular': HTMLPageSetThePageTitleInAngularElement;
     'page-setup-carbon-ldp-with-stardog-container-from-scratch': HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement;
@@ -1736,6 +1744,7 @@ declare namespace LocalJSX {
   interface PageRigAMeshWithZspheresInZbrush {}
   interface PageSceneAndSequelPatternForWriters {}
   interface PageScriptForRotatingUnityGameObject90Degrees {}
+  interface PageSeaTigerNewspapers {}
   interface PageServeStaticResourcesWithSpringBoot {}
   interface PageSetThePageTitleInAngular {}
   interface PageSetupCarbonLdpWithStardogContainerFromScratch {}
@@ -1931,6 +1940,7 @@ declare namespace LocalJSX {
     'page-rig-a-mesh-with-zspheres-in-zbrush': PageRigAMeshWithZspheresInZbrush;
     'page-scene-and-sequel-pattern-for-writers': PageSceneAndSequelPatternForWriters;
     'page-script-for-rotating-unity-game-object-90-degrees': PageScriptForRotatingUnityGameObject90Degrees;
+    'page-sea-tiger-newspapers': PageSeaTigerNewspapers;
     'page-serve-static-resources-with-spring-boot': PageServeStaticResourcesWithSpringBoot;
     'page-set-the-page-title-in-angular': PageSetThePageTitleInAngular;
     'page-setup-carbon-ldp-with-stardog-container-from-scratch': PageSetupCarbonLdpWithStardogContainerFromScratch;
@@ -2133,6 +2143,7 @@ declare module "@stencil/core" {
       'page-rig-a-mesh-with-zspheres-in-zbrush': LocalJSX.PageRigAMeshWithZspheresInZbrush & JSXBase.HTMLAttributes<HTMLPageRigAMeshWithZspheresInZbrushElement>;
       'page-scene-and-sequel-pattern-for-writers': LocalJSX.PageSceneAndSequelPatternForWriters & JSXBase.HTMLAttributes<HTMLPageSceneAndSequelPatternForWritersElement>;
       'page-script-for-rotating-unity-game-object-90-degrees': LocalJSX.PageScriptForRotatingUnityGameObject90Degrees & JSXBase.HTMLAttributes<HTMLPageScriptForRotatingUnityGameObject90DegreesElement>;
+      'page-sea-tiger-newspapers': LocalJSX.PageSeaTigerNewspapers & JSXBase.HTMLAttributes<HTMLPageSeaTigerNewspapersElement>;
       'page-serve-static-resources-with-spring-boot': LocalJSX.PageServeStaticResourcesWithSpringBoot & JSXBase.HTMLAttributes<HTMLPageServeStaticResourcesWithSpringBootElement>;
       'page-set-the-page-title-in-angular': LocalJSX.PageSetThePageTitleInAngular & JSXBase.HTMLAttributes<HTMLPageSetThePageTitleInAngularElement>;
       'page-setup-carbon-ldp-with-stardog-container-from-scratch': LocalJSX.PageSetupCarbonLdpWithStardogContainerFromScratch & JSXBase.HTMLAttributes<HTMLPageSetupCarbonLdpWithStardogContainerFromScratchElement>;

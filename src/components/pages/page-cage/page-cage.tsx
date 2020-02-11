@@ -20,13 +20,19 @@ export class PageCage {
       datePublished: "",
       dateModified: "February 6, 2019"
     },
-    
     {
       id: "/beaver-cage-union-memorial",
       title: "Beaver Cage/Union memorial service program",
       teaser: "A program (booklet) for the memorial service held aboard the USS Okinawa on May 16, 1967, after the operations.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-union-memorial-thumb.jpg",
       datePublished: "1/8/2020"
+    },
+    {
+      id: "/sea-tiger-newspapers",
+      title: "Sea Tiger Newspapers",
+      teaser: "Digitized issues of the &quot;Sea Tiger&quot;, a weekly newspaper published by III MAF (Marine Amphibious Force) between 1965 and 1971.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-04-19_sea-tiger_thumb.jpg",
+      datePublished: "2/11/2020"
     }
   ]
 

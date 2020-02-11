@@ -3,11 +3,17 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [1.5.18] - 2020-02-06]
+## [1.5.19] - 2020-02-11
+
+- Added page [/sea-tiger-newspapers](https://codyburleson.com//sea-tiger-newspapers)
+- Modified page [/photos/kevin-brooks](https://codyburleson.com/photos/kevin-brooks); added additional descriptive info to a photograph provided from Kevin by email.
+- Update `@ionic/core` to version `5.0.0-rc.4`
+
+## [1.5.18] - 2020-02-06
 
 - Modified [/books](https://codyburleson.com/books) page with new category for 'What I'm reading now'
 
-## [1.5.17] - 2020-02-06]
+## [1.5.17] - 2020-02-06
 
 - Added Series content menus to all multi-part series content: 
     - [Memories of Momma](https://codyburleson.com/memories-of-momma-1)
@@ -17,7 +23,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 - Added new page: [/about/experience](https://codyburleson.com/about/experience)
 - Modified page [/create-polygroup-from-mask-in-zbrush](https://codyburleson.com/create-polygroup-from-mask-in-zbrush); minor content edits to improve quality / readability.
 
-## [1.5.16] - 2020-01-30]
+## [1.5.16] - 2020-01-30
 
 - Added page [/book-review-the-goldfinch](https://codyburleson.com/book-review-the-goldfinch)
 - Modified all existing posts and pages to set document meta description with teaser (previously, all Google search results were displaying meta description info for only index.html).

@@ -190,6 +190,16 @@ export class PageQuotesForWriters {
                                 <footer>Ernest Hemingway</footer>
                             </blockquote>
 
+                            <blockquote>
+                                <p>You must write it all out, at any cost. Writing is thinking. It is more than living, for it is being conscious of living.</p>
+                                <footer>Anne Morror Lindbergh</footer>
+                            </blockquote>
+
+                            <blockquote>
+                                <p>Perfectionism is the voice of the oppressor, the enemy of the people. It will keep you cramped and insane your whole life, and it is the main obstacle between you and a shitty first draft. I think perfectionism is based on the obsessive belief that if you run carefully enough, hitting each stepping-stone just right, you won’t have to die. The truth is that you will die anyway and that a lot of people who aren’t even looking at their feet are going to do a whole lot better than you, and have a lot more fun while they’re doing it.</p>
+                                <footer>Anne Lamott</footer>
+                            </blockquote>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

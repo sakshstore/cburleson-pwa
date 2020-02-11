@@ -1,0 +1,191 @@
+import { Component, Element, h } from '@stencil/core';
+import { isLocal, SITENAME } from '../../../helpers/utils';
+
+@Component({
+  tag: 'page-sea-tiger-newspapers',
+})
+export class PageSeaTigerNewspapers {
+
+  @Element() el: HTMLElement;
+
+  title = 'Sea Tiger Newspapers';
+
+  items = [
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-12-21_sea-tiger_vol2-no45.pdf",
+      title: "Sea Tiger, Vol II, No. 45",
+      teaser: "Christmas in Vietnam and a Prayer for Peace",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-12-21_sea-tiger_thumb.jpg",
+      datePublished: "1966/12/21"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-09-01_sea-tiger_vol3-no35.pdf",
+      title: "Sea Tiger, Vol. III, No. 35",
+      teaser: "GySgt. Jimmie Howard Awarded Medal of Honor",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-09-01_sea-tiger_thumb.jpg",
+      datePublished: "1967/09/01"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-11-24_sea-tiger_vol3-no47.pdf",
+      title: "Sea Tiger, Vol. III, No. 47",
+      teaser: "3rd Division CG Killed in Helo Crash",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-11-24_sea-tiger_thumb.jpg",
+      datePublished: "1967/11/24"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-02_sea-tiger_vol4-no5.pdf",
+      title: "Sea Tiger, Vol. IV, No. 5",
+      teaser: "3 NVA Soldiers Slain by Recon",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-02_sea-tiger_thumb.jpg",
+      datePublished: "1968/02/02"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-09_sea-tiger_vol4-no6.pdf",
+      title: "Sea Tiger, Vol. IV, No. 6",
+      teaser: "VC/NVA Assure Viet New Year's Starts With Bang",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-09_sea-tiger_thumb.jpg",
+      datePublished: "1968/02/09"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-16_sea-tiger_vol4-no7.pdf",
+      title: "Sea Tiger, Vol. IV, No. 7",
+      teaser: "NVA Bombarded by Arty, Bombs",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-02-16_sea-tiger_thumb.jpg",
+      datePublished: "1968/02/16"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-04-19_sea-tiger_vol4-no16.pdf",
+      title: "Sea Tiger, Vol. IV, No. 16",
+      teaser: "Khe Sanh Siege Lifted",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-04-19_sea-tiger_thumb.jpg",
+      datePublished: "1968/04/19"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-11-08_sea-tiger_vol4-no45.pdf",
+      title: "Sea Tiger, Vol. IV, No. 45",
+      teaser: "U.S.M.C. 193 Years - Birthday Recap",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-11-08_sea-tiger_thumb.jpg",
+      datePublished: "1968/11/08"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-12-13_sea-tiger_vol4-no47.pdf",
+      title: "Sea Tiger, Vol. IV, No. 47",
+      teaser: "Operation Meade River Stuns Enemy",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-12-13_sea-tiger_thumb.jpg",
+      datePublished: "1968/12/13"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-02-28_sea-tiger_vol5_no9.pdf",
+      title: "Sea Tiger, Vol. V, No. 9",
+      teaser: "Reds Lose 1,825 to 1stDiv",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-02-28_sea-tiger_thumb.jpg",
+      datePublished: "1969/02/28"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-03-07_sea-tiger_vol5-no10.pdf",
+      title: "Sea Tiger, Vol. V, No. 10",
+      teaser: "Four Years in Country - Fightin' Third...The Hill Humpers",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-03-07_sea-tiger_thumb.jpg",
+      datePublished: "1969/03/07"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-05-09_sea-tiger_vol5-no19.pdf",
+      title: "Sea Tiger, Vol. V, No. 19",
+      teaser: "With Charlie on the Run, III MAF Marks Fourth Anniversary",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-05-09_sea-tiger_thumb.jpg",
+      datePublished: "1969/05/09"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-05-30_sea-tiger_vol5-no22.pdf",
+      title: "Sea Tiger, Vol. V, No. 22",
+      teaser: "Enemy Dead Top 600 in Two Weeks",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-05-30_sea-tiger_thumb.jpg",
+      datePublished: "1969/05/30"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-06-20_sea-tiger_vol5-no25.pdf",
+      title: "Sea Tiger, Vol. V, No. 25",
+      teaser: "1st Div Gunmen Sweep 'Dodge City'",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-06-20_sea-tiger_thumb.jpg",
+      datePublished: "1969/06/20"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-07-18_sea-tiger_vol5-no29.pdf",
+      title: "Sea Tiger, Vol. V, No. 29",
+      teaser: "Enemy Dead Top 900 in 3rd Div Ops",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-07-18_sea-tiger_thumb.jpg",
+      datePublished: "1969/07/18"
+    }
+  ]
+
+  componentWillLoad() {
+    if (isLocal()) {
+      console.log('> PageCage.componentWillLoad');
+    }
+    document.title = this.title + ' | ' + SITENAME;
+  }
+
+  toggleSearch(){
+    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+       this.el.querySelector("#searchbar").classList.remove('hidden');
+    } else {
+      this.el.querySelector("#searchbar").classList.add('hidden');
+    }
+  }
+
+  render() {
+    return [
+      <ion-header>
+        <ion-toolbar color="primary">
+          <ion-buttons slot="start">
+            <ion-back-button defaultHref="/cage"></ion-back-button>
+          </ion-buttons>
+          <ion-title>The Cage - Vietnam</ion-title>
+          <ion-buttons slot="end">
+            <ion-button onClick={() => this.toggleSearch()}>
+              <ion-icon slot="icon-only" name="search-outline"></ion-icon>
+            </ion-button>
+          </ion-buttons>
+        </ion-toolbar>
+        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
+      </ion-header>,
+
+      <ion-content class="ion-padding">
+
+        <ion-grid>
+          <ion-row>
+            <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+
+              <h1>{this.title}</h1>
+
+              <p>The &quot;Sea Tiger&quot; was a weekly newspaper distributed throughout the III MAF area of northern South Vietnam and published by III MAF (Marine Amphibious Force). The first issue was published on November 10, 1965 and the last issue on April 14, 1971. This collection, donated by veteran, <a href="http://mikefishbaugh.homestead.com/">Mike Fishbaugh</a>, contains 14 issues of the Sea Tiger, published between December 21, 1966 and June 20, 1969 (it is not complete). According to the <a href="https://www.mcrdmuseum.org/">MCRD Museum Foundation</a>, the newspaper got its name from the Vietnamese words, &quot;Cop Bien,&quot; which mean, &quot;the Marines who came ashore from the sea to fight like tigers on their shores.&quot;</p>
+
+              <ion-list>
+                {this.items.map((item) =>
+                  <ion-item href={item.id} lines="none">
+                    <ion-thumbnail slot="start">
+                      <ion-img src={item.thumbnail} />
+                    </ion-thumbnail>
+                    <ion-label text-wrap>
+                      {item.title}
+                      <p innerHTML={item.teaser}></p>
+                      <p><em>Published {new Date(item.datePublished).toDateString()}</em></p>
+                    </ion-label>
+                  </ion-item>
+                )}
+              </ion-list>
+
+            </ion-col>
+
+            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+            </ion-col>
+
+          </ion-row>
+        </ion-grid>
+
+      </ion-content>
+
+
+    ];
+  }
+}

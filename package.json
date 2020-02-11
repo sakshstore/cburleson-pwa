@@ -1,7 +1,7 @@
 {
   "name": "cburleson-pwa",
   "private": true,
-  "version": "1.5.18",
+  "version": "1.5.19",
   "description": "cburleson-pwa",
   "license": "MIT",
   "files": [
@@ -17,7 +17,7 @@
     "prod.prerender": "node appGenSitemap.js && stencil build --prerender --watch --serve"
   },
   "dependencies": {
-    "@ionic/core": "5.0.0-rc.3",
+    "@ionic/core": "5.0.0-rc.4",
     "d3": "^5.15.0",
     "d3-tip": "^0.9.1",
     "moment": "^2.24.0",
