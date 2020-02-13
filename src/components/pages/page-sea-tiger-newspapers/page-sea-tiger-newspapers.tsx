@@ -12,12 +12,41 @@ export class PageSeaTigerNewspapers {
 
   items = [
     {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-10-21_sea-tiger_vol2-no39.pdf",
+      title: "Sea Tiger, Vol 2, No. 39",
+      teaser: "Gen. Davis Studies Troops in Vietnam",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-10-21_sea-tiger_thumb.jpg",
+      datePublished: "1966/10/21"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-11-30_sea-tiger_vol2-no43.pdf",
+      title: "Sea Tiger, Vol II, No. 43",
+      teaser: "'Prarie' frees 1,000 villagers from two years of oppression",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-11-30_sea-tiger_thumb.jpg",
+      datePublished: "1966/11/30"
+    },
+    {
       id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-12-21_sea-tiger_vol2-no45.pdf",
       title: "Sea Tiger, Vol II, No. 45",
       teaser: "Christmas in Vietnam and a Prayer for Peace",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1966-12-21_sea-tiger_thumb.jpg",
       datePublished: "1966/12/21"
     },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-05-12_sea-tiger_vol3-no19.pdf",
+      title: "Sea Tiger, Vol. III, No. 19",
+      teaser: "Aggressive Marine Reaction Prevents NVA Take-Over",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-05-12_sea-tiger_thumb.jpg",
+      datePublished: "1967/05/12"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-08-11_sea-tiger_vol3-no32.pdf",
+      title: "Sea Tiger, Vol III, No. 32",
+      teaser: "Recon Unit Pulled from NVA Trap",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-08-11_sea-tiger_thumb.jpg",
+      datePublished: "1967/08/11"
+    },
+  
     {
       id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-09-01_sea-tiger_vol3-no35.pdf",
       title: "Sea Tiger, Vol. III, No. 35",
@@ -73,6 +102,13 @@ export class PageSeaTigerNewspapers {
       teaser: "Operation Meade River Stuns Enemy",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-12-13_sea-tiger_thumb.jpg",
       datePublished: "1968/12/13"
+    },
+    {
+      id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-02-21_sea-tiger_vol5-no8.pdf",
+      title: "Sea Tiger, Vol , No. ",
+      teaser: "9th Delivers Punch to NVA Paunch",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-02-21_sea-tiger_thumb.jpg",
+      datePublished: "1969/02/21"
     },
     {
       id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1969-02-28_sea-tiger_vol5_no9.pdf",
@@ -158,7 +194,7 @@ export class PageSeaTigerNewspapers {
 
               <h1>{this.title}</h1>
 
-              <p>The &quot;Sea Tiger&quot; was a weekly newspaper distributed throughout the III MAF area of northern South Vietnam and published by III MAF (Marine Amphibious Force). The first issue was published on November 10, 1965 and the last issue on April 14, 1971. This collection, donated by veteran, <a href="http://mikefishbaugh.homestead.com/">Mike Fishbaugh</a>, contains 14 issues of the Sea Tiger, published between December 21, 1966 and June 20, 1969 (it is not complete). According to the <a href="https://www.mcrdmuseum.org/">MCRD Museum Foundation</a>, the newspaper got its name from the Vietnamese words, &quot;Cop Bien,&quot; which mean, &quot;the Marines who came ashore from the sea to fight like tigers on their shores.&quot;</p>
+              <p>The &quot;Sea Tiger&quot; was a weekly newspaper distributed throughout the III MAF area of northern South Vietnam and published by III MAF (Marine Amphibious Force). The first issue was published on November 10, 1965 and the last issue on April 14, 1971. This collection, donated by veteran, <a href="http://mikefishbaugh.homestead.com/">Mike Fishbaugh</a>, and others contains 20 issues of the Sea Tiger, published between December 21, 1966 and June 20, 1969 (it is not complete). According to the <a href="https://www.mcrdmuseum.org/">MCRD Museum Foundation</a>, the newspaper got its name from the Vietnamese words, &quot;Cop Bien,&quot; which mean, &quot;the Marines who came ashore from the sea to fight like tigers on their shores.&quot;</p>
 
               <ion-list>
                 {this.items.map((item) =>
