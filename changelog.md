@@ -3,9 +3,16 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.20] - 2020-02-12
+
+- Modified page [/quotes-for-writers](https://codyburleson.com/quotes-for-writers); added 1 new quote by Will Self.
+- Modified page [/beaver-cage-command-chron](https://codyburleson.com/beaver-cage-command-chron); added links to locations on Google Maps (not finished, but it's a start)
+- Revert to  `"@ionic/core": "5.0.0"`; just for safety to be on a release rather than a release candidate. 
+- Update `"@stencil/core"` to `"1.8.8"`
+
 ## [1.5.19] - 2020-02-11
 
-- Added page [/sea-tiger-newspapers](https://codyburleson.com//sea-tiger-newspapers)
+- Added page [/sea-tiger-newspapers](https://codyburleson.com/sea-tiger-newspapers)
 - Modified page [/photos/kevin-brooks](https://codyburleson.com/photos/kevin-brooks); added additional descriptive info to a photograph provided from Kevin by email.
 - Update `@ionic/core` to version `5.0.0-rc.4`
 

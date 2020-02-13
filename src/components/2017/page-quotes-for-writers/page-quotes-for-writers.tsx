@@ -200,6 +200,11 @@ export class PageQuotesForWriters {
                                 <footer>Anne Lamott</footer>
                             </blockquote>
 
+                            <blockquote>
+                                <p>Don't look back until you've written an entire draft, just begin each day from the last sentence you wrote the preceding day. This prevents those cringing feelings, and means that you have a substantial body of work before you get down to the real work which is all in the edit,</p>
+                                <footer>Will Self</footer>
+                            </blockquote>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

@@ -69,7 +69,7 @@ export class PageCmdChronBeaverCage {
                             </ul>
 
                             <p class="entry-meta">
-                                Last modified: February 6, 2019
+                                Last modified: February 12, 2020
                             </p>
                             <p class="entry-meta">
                                 Source:<br />
@@ -332,75 +332,53 @@ export class PageCmdChronBeaverCage {
 
                                 <p>
                                     The first part of the reporting period was spent training for Spec Ops. A LEX was held on Okinawa with conditions and circumstances
-                                    approximating those of RVN as closely as possible. The LEX was aborted one day early because of inclement
+                                    approximating those of <abbr title="Republic of Vietnam">RVN</abbr> as closely as possible. The LEX was aborted one day early because of inclement
                                     weather; and an advanced party to the SLF Camp at NB Subic Bay was detached, and the BLT backloaded
                                     and set sail on board the ships of TG 76.4.
                         </p>
                                 <p>
-                                    AKA 104, USS Seminole, received three days of upkeep at Kau Chung, Taiwan.
+                                    AKA 104, USS Seminole, received three days of upkeep at Kau Chung, Taiwan <code><em>(probably Kaohsiung, Taiwan)</em></code>.
                         </p>
                                 <p>
                                     Then orders were received, the advance party was withdrawn from NB Subic and TG 79.4 sailed for the territorial waters off
-                                    RVN. Two days later new orders were received, and the BLT sailed for and off loaded at the SLF Cam
-                                    NM Subic. After three days training at Subic Bay, new orders were again received and the BLT returned
+                                    RVN. Two days later new orders were received, and the <abbr title="Battalion Landing Team">BLT</abbr> sailed for and off loaded at the SLF Cam NM Subic. After three days training at Subic Bay, new orders were again received and the BLT returned
                                     to the territorial waters off RVN.
                         </p>
                                 <p>
-                                    On 28 April 1967 the BLT commenced Operation Beaver Cage. The first four days were in support of Operation Union. “D” Company
-                                    operated on the beach in the vicinity of BT 305361 while “A”, “B”, and “C” Companies and the BLT
-                                    command element operated inland, approximately 27 miles SSE of Da Nang AB. During this time only
-                                    light enemy contact was made, however the BLT suffered heat casualties and more than 100 personnel
-                                    were medevaced during this period.
+                                    On 28 April 1967 the BLT commenced Operation Beaver Cage. The first four days were in support of Operation Union. &quot;D&quot; Company operated on the beach in the vicinity of <a href="https://goo.gl/maps/YMGbC4CuZmv2ckqq5">BT 305361</a> while &quot;A&quot;, &quot;B&quot;, and &quot;C&quot; Companies and the BLT command element operated inland, approximately 27 miles SSE of Da Nang AB. During this time only light enemy contact was made, however the BLT suffered heat casualties and more than 100 personnel were medevaced during this period.
                         </p>
                                 <p>
-                                    After four days, the BLT shifted 5 miles north and set up Headquarters in vicinity of BT 128388, at Landing Zone Cardinal.
+                                    After four days, the BLT shifted 5 miles north and set up Headquarters in vicinity of <a href="https://goo.gl/maps/1UanH283FN65cKJAA">BT 128388, at Landing Zone Cardinal</a>.
                                     Companies were assigned individual TAOR’s and enemy contact began to increase in size and frequency.
                         </p>
-                                <p>On 2 May, both “A” and “C” Companies made contact with enemy units of platoon size, or greater.</p>
+                                <p>On 2 May, both &quot;A&quot; and &quot;C&quot; Companies made contact with enemy units of platoon size, or greater.</p>
+
+                                <p>On 4 May &quot;D&quot; Company, while crossing a <a href="https://goo.gl/maps/AkpJy9uk88ntxohg9">valley East of Hill 65, BT 094392</a> encountered intensive enemy resistance and had elements pinned down. Air and artillery support were called, and &quot;C&quot; Company was moved to <a href="https://goo.gl/maps/qaRe9hyPGBnrxSuP7">Hill 65</a> to be in a position to support. Air and artillery continued into the night and &quot;D&quot; Company elements in contact with the enemy withdrew to Hill 65 under cover of darkness.</p>
 
                                 <p>
-                                    On 4 May “D” Company, while crossing a valley East of Hill 65, BT 094392 encountered intensive enemy resistance and had elements
-                                    pinned down. Air and artillery support were called, and “C” Company was moved to Hill 65 to be in
-                                    a position to support. Air and artillery continued into the night and “D” Company elements in contact
-                                    with the enemy withdrew to Hill 65 under cover of darkness.
-                        </p>
-
-                                <p>
-                                    On 5 May “B”, “C”, and “D” Companies conducted extensive search and destroy operations in the valley, coordinates BT 0904
+                                    On 5 May &quot;B&quot;, &quot;C&quot;, and &quot;D&quot; Companies conducted extensive search and destroy operations in the valley, coordinates BT 0904
                                     west to BT 2041. That evening local Viet Cong attacked BLT supporting elements in the process of
                                     extracting from Landing Zone Cardinal. Landing Zone Cardinal came under enemy mortar and small arms
                                     fire. H&amp;S Compand and W/2/12 personnel in the zone reacted and supporting arms assistance was
                                     requested. Two hundred men and 3000 pounds of ammunition were evacuated in one and one half hours
                                     of gathering darkness under constant enemy fire without any friendly casualties. Enemy casualties
-                                    were 10 VC KIA confirmed and 20 VC KIA probable.
-                        </p>
-                                <p>
-                                    The command elements with “A” Company in reserve moved to Que Son, and “B”, “C”, and “D” Companies commenced to sweep the
-                                    valley west of Hill 65 in the vicinity of BT 060390. As the Companies swept the valley to the West,
-                                    enemy mortar attacks became frequent and small arms resistance was encountered. After four days the
-                                    companies reached the upper end of the valley and turned and began to sweep back down the valley
-                                    to the East.
-                        </p>
-                                <p>
-                                    On 10 May “B” and “C” Companies, leading the sweep in the vicinity of BT 030390, met small arms resistance. Both companies
+                                    were 10 VC KIA confirmed and 20 VC KIA probable.</p>
+
+                                <p>The command elements with “A” Company in reserve moved to Que Son, and &quot;B&quot;, &quot;C&quot;, and &quot;D&quot; Companies commenced to sweep the valley west of Hill 65 in the vicinity of BT 060390. As the Companies swept the valley to the West, enemy mortar attacks became frequent and small arms resistance was encountered. After four days the companies reached the upper end of the valley and turned and began to sweep back down the valley to the East.</p>
+
+                                <p>On 10 May &quot;B&quot; and &quot;C&quot; Companies, leading the sweep in the vicinity of BT 030390, met small arms resistance. Both companies
                                     were unable to either advance or break contact. Supporting arms were called in, but were hampered
-                                    by the closeness of contact. Additional help was requested and “C” Company, 1st Battalion, 5th Marines
+                                    by the closeness of contact. Additional help was requested and &quot;C&quot; Company, 1st Battalion, 5th Marines
                                     moved down the southern ridgeline and into the valley at BT 046384 to cut off enemy units moving
-                                    either into or out of the battle area. “D” Company split its personnel, sending two platoons to “B”
-                                    Company and one platoon to “C” Company. Forty personnel of Sparrow Hawk Platoon were inserted, however
+                                    either into or out of the battle area. &quot;D&quot; Company split its personnel, sending two platoons to &quot;B&quot;
+                                    Company and one platoon to &quot;C&quot; Company. Forty personnel of Sparrow Hawk Platoon were inserted, however
                                     the platoon met such resistance that further use of helicopters in the area became impractical. Supporting
                                     arms continued to strike at enemy contact whenever possible. By evening the backbone of the enemy
                                     attack had been broken, contact had lessened and resupply and medevac helicopters were able to reach
                                     the friendly units. May 10th, the most active day of Operation Beaver Cage had cost BLT 1/3 22KIA
-                                    and 88 WIA, and the enemy 181 KIA (confirmed), 136 KIA (probable), and 66 VC prisoners and detainees.
-                        </p>
-                                <p>
-                                    During the next two days “B”, “C” and “D” Companies continued sweeping the Valley to the west. On 12 May they arrived at
-                                    helicopter Landing Zone Quail in the vicinity of BT 060395 which had been secured by elements of
-                                    3d Battalion, 5th Marines. On this day all elements of BLT 1/3 were extracted from this zone or from
-                                    Landing Zone Magpie at Que Son, to the ships of TG 7<code>[6?]</code>.4. After 15 days, Operation Beaver Cage
-                                    was completed.
-                        </p>
+                                    and 88 WIA, and the enemy 181 KIA (confirmed), 136 KIA (probable), and 66 VC prisoners and detainees.</p>
+
+                                <p>During the next two days &quot;B&quot;, &quot;C&quot; and &quot;D&quot; Companies continued sweeping the Valley to the west. On 12 May they arrived at helicopter Landing Zone Quail in the vicinity of BT 060395 which had been secured by elements of 3d Battalion, 5th Marines. On this day all elements of BLT 1/3 were extracted from this zone or from <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">Landing Zone Magpie</a> at Que Son, to the ships of TG 76.4. After 15 days, Operation Beaver Cage was completed.</p>
 
                                 <a id="sequential-listing-of-significant-events"></a>
 
@@ -430,7 +408,7 @@ export class PageCmdChronBeaverCage {
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>7 April</h5>
-                                            <p>BrigGon METZGER visited BLT 1/3. Landing Exercise completed. BLT 1/3 backloaded on board the ships of TG 76.4</p>
+                                            <p>BrigGen METZGER visited BLT 1/3. Landing Exercise completed. BLT 1/3 backloaded on board the ships of TG 76.4</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
@@ -468,8 +446,8 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>28 April</h5>
                                             <p>Operation Beaver Cage commenced in support of Operation Union at 0700 with the landing
-                            of “C” Company at BT 186294, followed by “A” Company at BT 19<code>[8?]</code>265 by helicopter. “D”
-                                                Company, with attached tanks and ontos commenced amphibious landing at BT 305361 by LVT
+                            of &quot;C&quot; Company at BT 186294, followed by “A” Company at BT 19<code>[8?]</code>265 by helicopter. &quot;D&quot;
+                                                                    Company, with attached tanks and ontos commenced amphibious landing at <a href="https://goo.gl/maps/YMGbC4CuZmv2ckqq5">BT 305361</a> by LVT
                                                 at 0800. A/1/12 landed at Hill 29 while W/2/12 and the BLT Command Group Landed at BT
                                                 186294. Search and destroy operations were conducted in each company’s TAOR with light
                     resistance encountered. No friendly casualties were sustained while 5 VCS were captured.</p>
@@ -478,7 +456,7 @@ export class PageCmdChronBeaverCage {
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>29 April</h5>
-                                            <p>Search and destroy operations were conducted throughout the day while “<code>[B?]</code>” and “C”
+                                            <p>Search and destroy operations were conducted throughout the day while &quot;<code>[B?]</code>&quot; and &quot;C&quot;
                             Companies proceeded to BT 165277 to establish a new C.P. “A” Company was helilifted to
                             BT 149234. Landing Zones in the new TAOR were secured and W/2/12 and the BLT Command
                             Group were helilifted to the new C.P. Light resistance in the form of sniper fire was
@@ -490,7 +468,7 @@ export class PageCmdChronBeaverCage {
                                             <h5>30 April</h5>
                                             <p>Local search and destroy operations were conducted with light resistance encountered.
                             Mortars were used against various targets with unknown results. Tanks and Onto’s were
-                            backloaded aboard ship by LVT while “B” Company helilifted to BT 128388 and “D” Company
+                            backloaded aboard ship by LVT while &quot;B&quot; Company helilifted to BT 128388 and &quot;D&quot; Company
                             helilifted to 132399. One VC was wounded and captured, one killed, five probable VC KIA
                         and one U. S. WIA was sustained.</p>
                                         </ion-label>
@@ -500,9 +478,9 @@ export class PageCmdChronBeaverCage {
                                             <h5>1 May</h5>
                                             <p>Local search and destroy operations conducted by all companies. “A” Company spotted 75
                             – 100 VC near BT 169240. An artillery mission on […] excellent target coverage but unknown
-                            results. Groups of <code>[?]</code>0 – <code>[3?]</code>0 VC were engaged by “B” and “D” Companies in fire fights
-                                                and mortar attacks with unknown results. In late afternoon “A” Company, W/2/12 and the
-                                                BLT Command Group were helilifted to BT 128388 while “C” Company was helilifted to BT
+                            results. Groups of <code>[?]</code>0 – <code>[3?]</code>0 VC were engaged by &quot;B&quot; and &quot;D&quot; Companies in fire fights
+                                                                                        and mortar attacks with unknown results. In late afternoon “A” Company, W/2/12 and the
+                                                                                        BLT Command Group were helilifted to BT 128388 while &quot;C&quot; Company was helilifted to BT
                     132399. One VCS was captured, <code>[one?]</code> VC killed and one wounded.</p>
                                         </ion-label>
                                     </ion-item>
@@ -510,26 +488,26 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>2 May</h5>
                                             <p>Extensive search and destroy operations conducted by all companies with light contact
-                            with small groups of VC throughout the day. At 1930 “C” Company, digging in at BT 098385,
+                            with small groups of VC throughout the day. At 1930 &quot;C&quot; Company, digging in at BT 098385,
                             came under heavy 82mm mortar, <code>[?]</code>7mm recoiless rifle, automatic weapons and small arms
-                                                fire. 105mm and 107mm artillery fire was called in on targets at BT 166384 and BT 110374.
-                                                Ancestor Flareship, Spooky Gunship, Huey Gunshis and fixed wing airstrikes called in
-                                                on the same targets. The heavy fire and the advance of the VC units were effectively
-                                                stopped. 4 U.S. KIA, 14 WIA and 6 WIANE were sustained during the battle while 2 VC KIA
-                                                were confirmed. A thorough follow up search of the area was not conducted due to operational
+                                                                                        fire. 105mm and 107mm artillery fire was called in on targets at BT 166384 and BT 110374.
+                                                                                        Ancestor Flareship, Spooky Gunship, Huey Gunshis and fixed wing airstrikes called in
+                                                                                        on the same targets. The heavy fire and the advance of the VC units were effectively
+                                                                                        stopped. 4 U.S. KIA, 14 WIA and 6 WIANE were sustained during the battle while 2 VC KIA
+                                                                                        were confirmed. A thorough follow up search of the area was not conducted due to operational
                         commitments assigned by higher headquarters.</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>3 May</h5>
-                                            <p>Medevac and emergency resupply of “C” Company conducted at first light. Sparrow Hawk
+                                            <p>Medevac and emergency resupply of &quot;C&quot; Company conducted at first light. Sparrow Hawk
                             force inserted at BT 120384 to extract Reconnaissance element and attack area of possible
                             VC mortars. Search and destroy operations were continued by all companies with little
                             contact. At 1<code>[?]</code>30 an “A” Company water patrol made contact at BT 094356 and received
-                                                heavy automatic weapons and small arms fire. Artillery and HUIE Gunships were utilized
+                                                                                        heavy automatic weapons and small arms fire. Artillery and HUIE Gunships were utilized
                             to suppress the fire and four <code>[squads?]</code> were sent to assist the water patrol.This action
-                                                lasted into the late evening hours with the situation remaining unclear until the following
+                                                                                        lasted into the late evening hours with the situation remaining unclear until the following
                     day.</p>
                                         </ion-label>
                                     </ion-item>
@@ -539,16 +517,16 @@ export class PageCmdChronBeaverCage {
                                             <p>Search and destroy mission of TAOR continued by all companies. “A” Company’s casualties
                             from the previous night were med-evaced. The final count showed 14 KIA, [8?] WIA and
                             1 WIANE. Enemy casualties were <code>[3? or 8?]</code> KIA confirmed and 6 KIA probable. “A” Company
-                                                called in artillery mission on 60 to 70 VC at BT 096404 and BT 095405. Mortar and small
-                                                arms fire was received during scattered fire fights. “D” Company reported extensive tunnel
-                                                complexes throughout their operating area. Total casualties for the day included 11 U.S.
+                                                                                        called in artillery mission on 60 to 70 VC at BT 096404 and BT 095405. Mortar and small
+                                                                                        arms fire was received during scattered fire fights. &quot;D&quot; Company reported extensive tunnel
+                                                                                        complexes throughout their operating area. Total casualties for the day included 11 U.S.
                         KIA, 20 WIA, 6 WIANE. Enemy casualties were unknown.</p>
                                         </ion-label>
                                     </ion-item>
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>5 May</h5>
-                                            <p>“B” Company helolifted to BT 094392 to link up with “C” and “D” Companies to conduct
+                                            <p>&quot;B&quot; Company helolifted to BT 094392 to link up with &quot;C&quot; and &quot;D&quot; Companies to conduct
                             a search and destroy sweep of the area. Helolift of A/1/12. W/2/12 and Brave Command
                             Group to BT 031341 began at 1500. At 1815 the LZ at BT 1283[8?][8?] came under heavy
                             attack by 82mm mortars., automatic rifle and small arms fire. Klondike Gunships directed
@@ -562,7 +540,7 @@ export class PageCmdChronBeaverCage {
                                             <h5>6 May</h5>
                                             <p>Search and destroy operations encountered light resistance in the form of sporadic sniper
                             fire throughout the day. The positions of the companies at the end of the day were –
-                            “B” Company – BT 072395; “C” Company – BT 06239<code>[?]</code>; “D” Company – BT 057395. 4 U. S.
+                            &quot;B&quot; Company – BT 072395; &quot;C&quot; Company – BT 06239<code>[?]</code>; &quot;D&quot; Company – BT 057395. 4 U. S.
                     WIA were sustained during the period with 3 probable VC KIA.</p>
                                         </ion-label>
                                     </ion-item>
@@ -570,8 +548,8 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>7 May</h5>
                                             <p>Search and destroy operations continued with light resistance. The companies set up night
-                            defensive positions as follows: “[B?]” Company – BT 021383; “C” Company – BT 023399;
-                            “D” Company BT 03038[5?]. After setting in for the night “C” and “D” Companies received
+                            defensive positions as follows: &quot;[B?]&quot; Company – BT 021383; &quot;C&quot; Company – BT 023399;
+                            &quot;D&quot; Company BT 03038[5?]. After setting in for the night &quot;C&quot; and &quot;D&quot; Companies received
                             approximately 12 rounds of 82mm mortar fire. One U. S. KAI, six U. S. WIA sustained in
                             the attack. An artillery mission was fired on a reported VC Battalion at BT 055371 which
                     resulted in a secondary explosion.</p>
@@ -580,7 +558,7 @@ export class PageCmdChronBeaverCage {
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>8 May</h5>
-                                            <p>Search and destroy sweep by “B”, “C”, and “D” Companies continued with moderate resistance
+                                            <p>Search and destroy sweep by &quot;B&quot;, &quot;C&quot;, and &quot;D&quot; Companies continued with moderate resistance
                             from small arms and sporadic mortar attacks. 6 VCS were captured and 5 VC KIA confirmed
                             were counted. U. S. casualties were 3 KIA and 10 WIA. Airstrikes by Klondike and fixed
                     wing aircraft destroyed one mortar.</p>
@@ -598,11 +576,11 @@ export class PageCmdChronBeaverCage {
                                         <ion-label text-wrap>
                                             <h5>10 May</h5>
                                             <p>The direction of the search and destroy sweep was reversed and proceeded to the east
-                            from the north-south line through BT 0<code>[2?]</code>41. “B”, “C”, and “D” Companies came under
-                                                intensive attack by mortar, automatic and small arms fire from hill 110 to the south,
-                                                from the slopes to the north and trenchlines to the east. Four air strikes by fixed wing
-                                                aircraft and five by Klondike Gunships against various VC emplacements, along with coordinated
-                                                attacks by the Companies effectively silenced enemy opposition. U. S. casualties were
+                            from the north-south line through BT 0<code>[2?]</code>41. &quot;B&quot;, &quot;C&quot;, and &quot;D&quot; Companies came under
+                                                                                        intensive attack by mortar, automatic and small arms fire from hill 110 to the south,
+                                                                                        from the slopes to the north and trenchlines to the east. Four air strikes by fixed wing
+                                                                                        aircraft and five by Klondike Gunships against various VC emplacements, along with coordinated
+                                                                                        attacks by the Companies effectively silenced enemy opposition. U. S. casualties were
                             22 KIA and 8<code>[8?]</code> WIA. Enemy casualties were 181 (KIA confirmed), 136 KIA (probable),
                     and 66 VC prisoners and detainees.</p>
                                         </ion-label>
@@ -610,7 +588,7 @@ export class PageCmdChronBeaverCage {
                                     <ion-item>
                                         <ion-label text-wrap>
                                             <h5>11 May</h5>
-                                            <p>Movement of “B”, “C”, and “D” Companies to LZ until at <code>[…]</code> 060377 for backloading to
+                                            <p>Movement of &quot;B&quot;, &quot;C&quot;, and &quot;D&quot; Companies to LZ until at <code>[…]</code> 060377 for backloading to
                     ships of AR<code>[G?]</code> 76.4 continued throughout the day with no enemy contact.</p>
                                         </ion-label>
                                     </ion-item>
@@ -1142,13 +1120,13 @@ export class PageCmdChronBeaverCage {
                                                 <span class="text-underline">Concept of Operations</span>. Commencing at
                                                 H-Hour on D-Day <code>[…]</code> company will land over Red Beach, seizing and securing <code>[…]</code> approaches
                                                 thereto and conducting search and destroy operations in designated TAOR. At L-Hour on
-                                                D-Day, two <code>[…]</code> conduct helicopter assaults into LZ Thrush and <code>[…]</code> surrounding terrain
+                                                D-Day, two <code>[…]</code> conduct helicopter assaults into <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">LZ Thrush</a> and <code>[…]</code> surrounding terrain
                                                 and on order conduct search and destroy operations in assigned ZOA. One rifle company
                                                 will be <code>[…]</code> SLF Reserve aboard LPH to include Sparrow Hawk Force <code>[…]</code> to control of BLT
                                                 1/3. On order the BLT will conduct amphibious withdrawal.
                                     </li>
                                             <li>
-                                                <span class="text-underline">Company “C” (Rein).</span>
+                                                <span class="text-underline">Company &quot;C&quot; (Rein).</span>
                                                 <ol class="list-none">
                                                     <li>(1) Commencing at L-Hour, D-Day, conduct a helicopterborne assault to seize Landing
                                                         Zone Oriole.
@@ -1162,7 +1140,7 @@ export class PageCmdChronBeaverCage {
                                                 <span class="text-underline">Company “A” (Rein)</span>.
                                         <ol class="list-none">
                                                     <li>(1) Commencing on order on D-Day, conduct a helicopterborne assault to seize
-                                                        Landing Zone Thrush.
+                                                    <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">Landing Zone Thrush</a>.
                                             </li>
                                                     <li>(2) On order conduct search and destroy operations in designated ZOA. Seize BLT
                                                 Objectives 1,3,61,5,7, and 9.</li>
@@ -1170,7 +1148,7 @@ export class PageCmdChronBeaverCage {
                                                 </ol>
                                             </li>
                                             <li>
-                                                <span class="text-underline">Company “D” (Rein)</span>.
+                                                <span class="text-underline">Company &quot;D&quot; (Rein)</span>.
                                         <ol class="list-none">
                                                     <li>(1) Commencing ay H-Hour on D-Day conduct a waterborne assault by LVT’s over
                                                         Red Beach.
@@ -1209,12 +1187,12 @@ export class PageCmdChronBeaverCage {
                                             Bn</span>.
                                         <ol class="list-none">
                                                     <li>(1) General Support.</li>
-                                                    <li>(2) On order land over Blue Beach, provide engineer support for Company “D”.</li>
+                                                    <li>(2) On order land over Blue Beach, provide engineer support for Company &quot;D&quot;.</li>
                                                 </ol>
                                             </li>
                                             <li>
                                                 <span class="text-underline">BLT Reserve</span>.
-                                        <span class="text-underline">Company “B” (Rein)</span>
+                                        <span class="text-underline">Company &quot;B&quot; (Rein)</span>
                                                 <ol class="list-none">
                                                     <li>(1) Provide one platoor (Rein) for Sparrow Hawk Reaction force while aboard LPH,
                                                 in accordance with Annex N of reference (c).</li>
@@ -1251,9 +1229,9 @@ export class PageCmdChronBeaverCage {
                                                     <li>(7) AOA for operation is the land area contained within a ten nautical mile arc
                                                 centered on Grid Coordinates 299379, <a href="https://www.vietnam.ttu.edu/reports/images.php?img=/maps/PDF/6640-1.pdf">AMS
                                                     Series L7014, Sheet 6640I</a>. The seaward extension of the AOA is contained
-                                                            in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
-                                                            and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
-                                                            feet mean sea level and tunnels for the passage of civil air traffic will be
+                                                                    in a 25 nautical mile arc drawn from the same coordinate. Both arcs are terminated
+                                                                    and joined by the shoreline. Air space above the land and sea AOA from 0 – 25,000
+                                                                    feet mean sea level and tunnels for the passage of civil air traffic will be
                                                 promulgated by NOTAM as directed by COMUSMAVC.</li>
                                                     <li>(8) Fire support coordination IAW reference (c) and as modified below:</li>
                                                     <li>(9) Code name of Operation is “BEAVER CAGE”</li>
@@ -1261,10 +1239,10 @@ export class PageCmdChronBeaverCage {
                                                     <li>(11) Centered Red Beach Coordinates 299379.</li>
                                                     <li>(12) Centered LZ Coordinates are:
                                                 <ol class="list-none">
-                                                            <li>Oriole – 186294</li>
+                                                            <li><a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">Oriole – 186294</a></li>
                                                             <li>Canary – 206259</li>
                                                             <li>Parakeet – 195293</li>
-                                                            <li>Thrush – 198265</li>
+                                                            <li><a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">Thrush – 198265</a></li>
                                                             <li>Owl – 190284</li>
                                                         </ol>
                                                     </li>
@@ -1284,10 +1262,10 @@ export class PageCmdChronBeaverCage {
                                                     <li>(17) Marines with Vietnamese language ability will be used appropriately.</li>
                                                     <li>(18) Heliborne assault companies should be prepared to attack or defend NE if
                                                 required.</li>
-                                                    <li>(19) Company “B” and “W” Battery should be prepared for Heli-lift into any primary
+                                                    <li>(19) Company &quot;B&quot; and “W” Battery should be prepared for Heli-lift into any primary
                                                         or alternate LZ available.
                                             </li>
-                                                    <li>(20) Company “D” will notify the BLT Commander prior to landing of all desired
+                                                    <li>(20) Company &quot;D&quot; will notify the BLT Commander prior to landing of all desired
                                                         on-call waves.
                                             </li>
                                                     <li>(21) All assault companies will be completely familiar with all primary and alternate
@@ -1296,7 +1274,7 @@ export class PageCmdChronBeaverCage {
                                                     <li>(22) Any H&amp;I fires within 500 meters of battalion boundaries must be cleared
                                                         by the 5th Marine Regiment.
                                             </li>
-                                                    <li>(23) NGF will be in direct support of Company “D”.</li>
+                                                    <li>(23) NGF will be in direct support of Company &quot;D&quot;.</li>
                                                     <li>(24) This order is effective for planning upon receipt and for execution upon
                                                 order.</li>
                                                 </ol>
@@ -1777,26 +1755,10 @@ export class PageCmdChronBeaverCage {
                                 <h4>Intelligence</h4>
 
                                 <ol class="list-lower-latin">
-                                    <li>Information received fram higher echelon concerning the enemy's strength, location, disposition,
-                                        situation, tactics, capabilities and terrain prior to the operation was adequate, however, contact
-                                        was not made with any unit reported in the area of operations. Significant contact was made with
-                                        elements of the 105th MF Battalion reported by the Que Son distriot chief and confirmed by ITT
-                                personnel.</li>
-                                    <li>The first four days of the operation; the enemy contact consisted of sniper and harassing fire
-                                        in the vicinity of Landing Zone Oriole and Thrush and objectives 11, 12, and 13 on Red Beach.
-                                        Numerous tunnels and spider traps were uncovered and destroyed in the vacinity of Red Beach (BT
-                                        3037). An estimated <code>[...]</code> of rice was discovered in the vicinity of LZ Oriole and Thrush, rice
-                                was picked up and redistributed by Popular Forces.</li>
+                                    <li>Information received fram higher echelon concerning the enemy's strength, location, disposition, situation, tactics, capabilities and terrain prior to the operation was adequate, however, contact was not made with any unit reported in the area of operations. Significant contact was made with elements of the 105th MF Battalion reported by the Que Son distriot chief and confirmed by ITT personnel.</li>
+                                    <li>The first four days of the operation; the enemy contact consisted of sniper and harassing fire in the vicinity of Landing Zone Oriole and Thrush and objectives 11, 12, and 13 on Red Beach. Numerous tunnels and spider traps were uncovered and destroyed in the vacinity of Red Beach (BT 3037). An estimated <code>[...]</code> of rice was discovered in the vicinity of LZ Oriole and Thrush, rice was picked up and redistributed by Popular Forces.</li>
                                     <li>Search and Destroy operations in the vicinity of Landing Zone Cardinal were more active than
-                                        those reported for Landing Zone Oriole and Thrush. An estimated VC/NVA company was observed in
-                                        the vicinity of BT 1237 on 1 May. Interrogation of VCS revealed extensive tunnels complexes in
-                                        the village of Phu Thai (BT 0940) many tunnels were uncovered in that vicinity. Estimated VC/NVA
-                                        strength in the vicinity of Phu Thai was one company. Interrogation of VCS also revealed (not
-                                        yet confirmed) that the village of Phu Thai was the location of a VC dispensary staffed by two
-                                        VC/NVA corpsman and two female nurses and a 1500 meter tunnel that runs from the oenter of the
-                                        village to the mouatains NW (approx coord BT 087414), Overall estimate of enemy strength in the
-                                        vicinity of LZ Cardinal was reported to be two VC battalions observed by CAS and armed Huey aircraft
-                                the night of 5 May.</li>
+                                        those reported for Landing Zone Oriole and Thrush. An estimated VC/NVA company was observed in the vicinity of BT 1237 on 1 May. Interrogation of VCS revealed extensive tunnels complexes in the village of Phu Thai (BT 0940) many tunnels were uncovered in that vicinity. Estimated VC/NVA strength in the vicinity of Phu Thai was one company. Interrogation of VCS also revealed (not yet confirmed) that the village of Phu Thai was the location of a VC dispensary staffed by two VC/NVA corpsman and two female nurses and a 1500 meter tunnel that runs from the oenter of the village to the mouatains NW (approx coord BT 087414), Overall estimate of enemy strength in the vicinity of LZ Cardinal was reported to be two VC battalions observed by CAS and armed Huey aircraft the night of 5 May.</li>
                                     <li>The valley which runs east to west from a MSR (BT 0739 to 0139) contained the 105th VC/NVA MF
                                         Battalion. Initial contact consisted of harassing and sniper fire with two mortar attacks. The
                                         Que Son district chief reported elements of the 105th MF Battalion were operating in the valley,
@@ -1808,7 +1770,7 @@ export class PageCmdChronBeaverCage {
                                         of Hill 110 (BT 033385). Enemy losses for this engagement were sizable 40 VC/NCA KIA by body
                                         count and 70 KIA Probable. Major items of equipment captured were two 60mm mortar sights, two
                                         SKS Soviet 7.62mm Semiautomatic Carbines, one AK-47 7.62 Assault Rifle, one 7.62 Heavy Machine
-                                        Gun SG 43' & S.GM and one wooden mock up rifle. Captured Material: 2 NVA diaries, 3 wallets containing
+                                        Gun SG 43' &amp; S.GM and one wooden mock up rifle. Captured Material: 2 NVA diaries, 3 wallets containing
                                         pictures of NVA soldiers and anti Amerioan literature, 1 VC/NVA medical bag, I medical handbook,
                                         Equipment Destroyed: 25 rounds of 60mm mortar, 25 CHICOM Grenades, 500 rounds of small arms ammunition,
                                 punji traps and sticks and an assortment of VC/NVA 782 Equipment.</li>
@@ -1821,11 +1783,7 @@ export class PageCmdChronBeaverCage {
                                 <h4>Mission</h4>
 
                                 <ol class="list-lower-latin">
-                                    <li><span class="text-underline">Phase I</span>. Commencing at H-Hour on D-Day, land
-                                        by waterborne assault over Red Beach, and seize and secure the beach and approaches thereto.
-                                        Commencing at L-Hour on D-Day, land by helicopterborne assault into LZ's Oriole and Thrush, and
-                                        seize the LZ's and surropunding terrain.
-                            </li>
+                                    <li><span class="text-underline">Phase I</span>. Commencing at H-Hour on D-Day, land by waterborne assault over Red Beach, and seize and secure the beach and approaches thereto. Commencing at L-Hour on D-Day, land by helicopterborne assault into LZ's <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">Oriole</a> and <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">Thrush</a>, and seize the LZ's and surropunding terrain.</li>
                                     <li><span class="text-underline">Phase II</span>. On order conduct search and destroy
                                         operations within the designated TAOR and the additional zone of action within the AOA. Establish
                                         reserve rifle company aboard the LPH prepared to land by helicopter to be committed only with
@@ -1839,359 +1797,355 @@ export class PageCmdChronBeaverCage {
                                 <h4>Execution</h4>
 
                                 <ol class="list-lower-latin">
-                                    <li>L-Hour was designated as 280700 April 1967, with one company landing in LZ Oriole, Upon completion
-                                        of this landing, one company landed in LZ Thrush. H-Hour was designated as 280800 April 1967
-                                        with one company reinforced by tanks and ontos landing in LVT's over Red Beach. Search and destroy
-                                        operations were then conduoted from both LZ's and Red Beach, on order.
-                            </li>
+                                    <li>L-Hour was designated as 280700 April 1967, with one company landing in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole</a>, Upon completion of this landing, one company landed in <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">LZ Thrush</a>. H-Hour was designated as 280800 April 1967 with one company reinforced by tanks and ontos landing in LVT's over Red Beach. Search and destroy operations were then conduoted from both LZ's and Red Beach, on order.</li>
                                     <li>Chronological sequence of events from 271620 April 1967 through 121900 May 1967:
 
                                     <ion-list>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>271620</h5>
+                                                    <h5><abbr title="Apr 27, 1967 at 16:20 (4:20 PM)">271620</abbr></h5>
                                                     <p>CTG 79.4 received Initiating Directive for Operation beaver Cage.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>271800</h5>
+                                                    <h5><abbr title="Apr 27, 1967 at 18:00 (6:00 PM)">271800</abbr></h5>
                                                     <p>CTG 79.4 issued Frag Order #1 to BLT 1/3</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>271900</h5>
+                                                    <h5><abbr title="Apr 27, 1967 at 19:00 (7:00 PM)">271900</abbr></h5>
                                                     <p>BLT 1/3 issued Frag Order #1 to Operation Order 5-67 to all BLT Units.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280545</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 19:00 (5:45 AM)">280545</abbr></h5>
                                                     <p>Land the Landing Force received from CATF. L-Hour confirmed as 0700, H-Hour confirmed
                                                 as 0800.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280711</h5>
-                                                    <p>First two waves into LZ Oriole at coord 186294. No opposition. Co C securing
+                                                    <h5><abbr title="Apr 28, 1967 at 07:11 (7:11 AM)">280711</abbr></h5>
+                                                    <p>First two waves into <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at coord 186294</a>. No opposition. Co C securing
                                                 LZ.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280801</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 08:01 (8:01 AM)">280801</abbr></h5>
                                                     <p>First wave of LVT's touched down on Red Beach carrying assault waves of Co D.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280813</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 08:13 (8:13 AM)">280813</abbr></h5>
                                                     <p>Second wave of LVT's landed on Red Beach with remainder of Co D aboard. 10-15
-                                                        rounds sniper fire received from VIC 305361. Called for air strike which resulted
+                                                        rounds sniper fire received from VIC <a href="https://goo.gl/maps/YMGbC4CuZmv2ckqq5">305361</a>. Called for air strike which resulted
                                                     in good target coverage but negative results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280847</h5>
-                                                    <p>Co C secured objective #2 at coord 187293 and established security.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 08:47 (8:47 AM)">280847</abbr></h5>
+                                                    <p>Co C secured <a href="https://goo.gl/maps/ijXJGEpHj4HMgm7v7">objective #2 at coord 187293</a> and established security.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280858</h5>
-                                                    <p>First two waves of Co A into LZ Thrush at Coord 198265. Light sniper fire received.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 08:58 (8:58 AM)">280858</abbr></h5>
+                                                    <p>First two waves of Co A into <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">LZ Thrush at Coord 198265</a>. Light sniper fire received.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280900</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:00 AM)">280900</abbr></h5>
                                                     <p>Tank and Ontos serials requested ashore on Red Beach by Co D.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280900</h5>
-                                                    <p>Co D moving toward objective 11 at Coord 293371 from Red Beach.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:00 AM)">280900</abbr></h5>
+                                                    <p>Co D moving toward <a href="https://goo.gl/maps/CSk9dv3Wv3igmKCTA">objective 11 at Coord 293371</a> from Red Beach.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280919</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:19 AM)">280919</abbr></h5>
                                                     <p>Co A received Small Arms Fire VIC. 185265. Returned fire, killed one VC (Conf).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280935</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:35 AM)">280935</abbr></h5>
                                                     <p>A-1-12 commenced lift to Hill 29 with two MRC 109's followed by two 105's.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281100</h5>
-                                                    <p>Alpha Command Group landed in LZ Oriole, with recon unit.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 11:00 (11:00 AM)">281100</abbr></h5>
+                                                    <p>Alpha Command Group landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole</a>, with recon unit.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281130</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 11:30 (11:30 AM)">281130</abbr></h5>
                                                     <p>Co A uncovered 4,000 lbs of rice VIC. 195263.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281327</h5>
-                                                    <p>Movement of Co B to LZ Oriole commenced.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 13:27 (1:27 PM)">281327</abbr></h5>
+                                                    <p>Movement of Co B to <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole</a> commenced.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281435</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 14:35 (2:35 PM)">281435</abbr></h5>
                                                     <p>Co C reported discovery of 3,000 lbs of rice VIC. 183298. Co D detained two VCS
-                                                near Coord 295376. Co A captured 1 VCS.</p>
+                                                near Coord <a href="https://goo.gl/maps/5Gz6a5qs9oFVQGXa7">295376</a>. Co A captured 1 VCS.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281500</h5>
-                                                    <p>W-2-12 commenced move into LZ Oriole.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 15:00 (3:00 PM)">281500</abbr></h5>
+                                                    <p>W-2-12 commenced move into <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281555</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 15:55 (3:55 PM)">281555</abbr></h5>
                                                     <p>Co A received small arms fir VIC. 191262. Returned fire with unkown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281600</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 16:00 (4:00 PM)">281600</abbr></h5>
                                                     <p>Co C aprehended 2 VCS near Coord 183294.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281607</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 16:07 (4:07 PM)">281607</abbr></h5>
                                                     <p>Co A seized Objective #1 at Coord 191259.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281714</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 17:14 (5:14 PM)">281714</abbr></h5>
                                                     <p>Received CTG 79.4 Frag Order for operations 281700 to 291630.<br /> Co A reports
                                                     two tunnels at Coord 199255 and 198254.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281715</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 17:15 (5:15 PM)">281715</abbr></h5>
                                                     <p>Co C captured 2 VCS near 183294.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281730</h5>
-                                                    <p>Co D reached Objective # 11 at 293371. Helo lift commenced for Bravo Command
+                                                    <h5><abbr title="Apr 28, 1967 at 17:30 (5:30 PM)">281730</abbr></h5>
+                                                    <p>Co D reached <a href="https://goo.gl/maps/CSk9dv3Wv3igmKCTA">Objective # 11 at 293371</a>. Helo lift commenced for Bravo Command
                                                 Group.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281845</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 18:45 (6:45 PM)">281845</abbr></h5>
                                                     <p>BLT 1/3 Frag Order # 2 issued to BLT Units.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>282117</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 21:17 (9:17 PM)">282117</abbr></h5>
                                                     <p>Co D reports 5 VC located 100 meter from Objective # 11.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290440</h5>
-                                                    <p>Co C reports freshly dug fighting holes VIC. 185293.</p>
+                                                    <h5><abbr title="Apr 29, 1967 at 04:40 (4:40 AM)">290440</abbr></h5>
+                                                    <p>Co C reports freshly dug fighting holes VIC. <a href="https://goo.gl/maps/L6k4mWTojTAs4tACA">185293</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290450</h5>
-                                                    <p>Co D reports one VC seriously wounded VIC. 293372. VC later died of wounds.</p>
+                                                    <h5><abbr title="Apr 29, 1967 at 04:50 (4:50 AM)">290450</abbr></h5>
+                                                    <p>Co D reports one VC seriously wounded VIC. <a href="https://goo.gl/maps/575uC7MfSv5dB2iC6">293372</a>. VC later died of wounds.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290600</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 06:00 (6:00 AM)">290600</abbr></h5>
                                                     <p>Co D reports one VC wounded near Objective # 13 Coord 300364.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290700</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 07:00 (7:00 AM)">290700</abbr></h5>
                                                     <p>Co C and Co D have commenced attack on Objective #14 and #12, respectively.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290820</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 08:20 (8:20 AM)">290820</abbr></h5>
                                                     <p>Co B captured one VC weapon and wounded one VC in fire fight VIC. 195292.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290850</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 08:50 (8:50 AM)">290850</abbr></h5>
                                                     <p>CTG 79.4 ordered S &amp; D ops ceased. Co C and Co B to move on Objective # 4 at
                                                 Coiord 165277 with speed and caution.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290855</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 08:55 (8:55 AM)">290855</abbr></h5>
                                                     <p>Co D received sniper fire VIC. 289375. Returned fire with unknown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>290910</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 09:10 (9:10 AM)">290910</abbr></h5>
                                                     <p>Co A seized one VCS at 185265.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291030</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 10:30 (10:30 AM)">291030</abbr></h5>
                                                     <p>Co A ordered to prepare for helilift from Objective # 3 at 176268 to Objective
                                                         # 7 Coord 149243. Alpha Command Group and W-2-12 helilifted to Objective #4 at
-                                                    165277, from LZ Oriole.</p>
+                                                    165277, from <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole.</a></p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291150</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 11:50 (11:50 AM)">291150</abbr></h5>
                                                     <p>Co C receiving sniper fire from Objective #4 Coord 165277.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291200</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 12:00 (12:00 PM)">291200</abbr></h5>
                                                     <p>First elements Co A seized Objective # 7 Coord 149243.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291244</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 12:44 (10:30 AM)">291244</abbr></h5>
                                                     <p>Co C seized and secured Objective # 4 Coord 165277.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291250</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 12:50 (12:50 PM)">291250</abbr></h5>
                                                     <p>Co C receiving sniper fire at Objective # 4 Coord 165277.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291540</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 15:40 (3:40 pM)">291540</abbr></h5>
                                                     <p>One VC killed by Co D near Objective # 12 at 273393.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291700</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 17:00 (5:00 PM)">291700</abbr></h5>
                                                     <p>8 VCS captured by Co D VIC. 273392.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291856</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 18:56 (6:56 PM)">291856</abbr></h5>
                                                     <p>Frag Order from CTG 79.4 for operations 291930 to 301630.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>292330</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 23:30 (11:30 PM)">292330</abbr></h5>
                                                     <p>CTG 79.4 Frag order passed to all units.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>292340</h5>
-                                                    <p>CTG 79.4 Frag Order modified. Units conduct local S & D ops. Back load tanks,
+                                                    <h5><abbr title="Apr 29, 1967 at 23:40 (11:40 PM)">292340</abbr></h5>
+                                                    <p>CTG 79.4 Frag Order modified. Units conduct local S &amp; D ops. Back load tanks,
                                                 ontos and LVT's from Red Beach at 300700.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>292345</h5>
+                                                    <h5><abbr title="Apr 29, 1967 at 23:45 (11:45 PM)">292345</abbr></h5>
                                                     <p>Co D discovered one spider trap and one Hooch with punjistakes concealed under
                                                 a false deck at 282388. Destoryed same.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301140</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 11:40 (11:40 AM)">301140</abbr></h5>
                                                     <p>SAF delivered against Helos at Coord 159283. Co C fired 60mm mission on Coord
                                                 159283 with unknown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301155</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 11:55 (11:55 AM)">301155</abbr></h5>
                                                     <p>Co C spotted 10 VC in Rice paddy at 438286. Artillery mission fired with 5 enemy
                                                     KIA probable.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301330</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 13:30 (1:30 PM)">301330</abbr></h5>
                                                     <p>Co A receiving automnatic weapons from VIC. 143243. Artillery mission fired without
                                                     results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301500</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 15:00 (3:00 PM)">301500</abbr></h5>
                                                     <p>Recon killed one VC (Conf) and captured VC near Coord 159252. Also fired artillery
                                                 mission in that area with unkown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301520</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 15:20 (3:20 PM)">301520</abbr></h5>
                                                     <p>Co B receiving SAF during lift out from LZ at 175270. One USMC WIA.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301538</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 15:38 (3:38 PM)">301538</abbr></h5>
                                                     <p>Co B commenced landing in LZ Cardinal at Coord 128388. Receiving light sniper
                                                 fire.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301545</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 15:45 (3:45 PM)">301545</abbr></h5>
                                                     <p>Co D commenced landing in LZ Buzzard at Coord 132399. No opposition encountered.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301626</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 16:26 (4:26 PM)">301626</abbr></h5>
                                                     <p>Co A spotted 6 VC in tree line at Coord 148232. Fired 60mm mortars with unknown
                                                 results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301630</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 16:30 (4:30 PM)">301630</abbr></h5>
                                                     <p>Co A fired MG and 3.5 at pajama clad VC near objective # 7. Results unkown.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>302200</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 22:00 (10:00 PM)">302200</abbr></h5>
                                                     <p>Received Frag Order from CTG 79.4 on movement of Co A, W-2-12, and Command Group
                                                         to LZ Cardinal at coord 128388 on 1 May. Co C to be lifted to LZ Buzzard at 132399.
                                                 Co A will be lifted out of LZ Robin at 163242 Vice Wren at 145240.</p>
@@ -2199,125 +2153,125 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>010900</h5>
+                                                    <h5><abbr title="May 1, 1967 at 09:00 (9:00 AM)">010900</abbr></h5>
                                                     <p>Co D received small arms fire from 10 to 12 VC at 144399. VC located in caves
                                                 and tunnels in that vicinity, Co D sweeping area.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>010920</h5>
+                                                    <h5><abbr title="May 1, 1967 at 09:20 (9:20 AM)">010920</abbr></h5>
                                                     <p>Co A spotted 75 to 100 VC on trail near 169240. Artillery fire mission got excellent
                                                 target coverage. Results unknown.SAF also received from VIC. 165237.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>010930</h5>
+                                                    <h5><abbr title="May 1, 1967 at 09:30 (9:30 AM)">010930</abbr></h5>
                                                     <p>Co A captured one VCS at 155278.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011050</h5>
+                                                    <h5><abbr title="May 1, 1967 at 10:50 (10:50 AM)">011050</abbr></h5>
                                                     <p>First wave of Co A into LZ Cardinal. Receiving SAF on chopeprs out of LZ Robin.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011153</h5>
+                                                    <h5><abbr title="May 1, 1967 at 11:53 (11:53 AM)">011153</abbr></h5>
                                                     <p>Co D had firefight with approximately 10 VC near 135395. VC broke contact and
                                                 fled with negative results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011230</h5>
+                                                    <h5><abbr title="May 1, 1967 at 12:30 (12:30 PM)">011230</abbr></h5>
                                                     <p>Co B reported two VC in the open with weapons VIC. 128390. Fired and got one
                                                 VC KIA (Conf) and one VC KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011510</h5>
+                                                    <h5><abbr title="May 1, 1967 at 15:10 (3:10 PM)">011510</abbr></h5>
                                                     <p>Co B reported 15 VC in open at 113394. Fired 81 mortars with unknown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011825</h5>
+                                                    <h5><abbr title="May 1, 1967 at 18:25 (6:25 PM)">011825</abbr></h5>
                                                     <p>Received Frag Order for operations from 011900 to 021800 from CTG 79.4. Continue
                                                 S &amp; D Ops.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011856</h5>
+                                                    <h5><abbr title="May 1, 1967 at 18:56 (6:56 PM)">011856</abbr></h5>
                                                     <p>Helilift of Co A and W-2-12 to LZ Cardinal completed.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>012115</h5>
+                                                    <h5><abbr title="May 1, 1967 at 21:15 (9:15 PM)">012115</abbr></h5>
                                                     <p>Co B positions at LZ Cardinal probed by two VC. Illumination fired. VC fled.SAF
                                                 produced negative results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>020700</h5>
-                                                    <p>Co's A and C contiunuing Search and Destroy operations in VIC.1237 and 1239 respectively.</p>
+                                                    <h5><abbr title="May 2, 1967 at 07:00 (7:00 AM)">020700</abbr></h5>
+                                                    <p>Co's A and C contiunuing Search and Destroy operations in VIC. 1237 and 1239 respectively.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021005</h5>
+                                                    <h5><abbr title="May 2, 1967 at 10:05 (10:05 AM)">021005</abbr></h5>
                                                     <p>Co A received sniper fire from VIC. 125376. Fire returned with negative results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021030</h5>
+                                                    <h5><abbr title="May 2, 1967 at 10:30 (10:30 AM)">021030</abbr></h5>
                                                     <p>Co C received sniper fire and sighted three VC VIC 125388. Fire returned with
                                                 negative results. One small tunnel destroyed at same location.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021100</h5>
+                                                    <h5><abbr title="May 2, 1967 at 11:00 (11:00 AM)">021100</abbr></h5>
                                                     <p>Co A patrol blowing numerous caves discovered in vicinity of 120375.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021305</h5>
+                                                    <h5><abbr title="May 2, 1967 at 13:05 (1:05 PM)">021305</abbr></h5>
                                                     <p>Co C Killed woman running from advance party at 118397.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021445</h5>
+                                                    <h5><abbr title="May 2, 1967 at 14:45 (2:45 PM)">021445</abbr></h5>
                                                     <p>Co C taking automatic weapons fire VIC. 115398. Returned fire 81 and 60mm mortars
                                                 and automatic weapons fire.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021640</h5>
+                                                    <h5><abbr title="May 2, 1967 at 16:40 (4:40 PM)">021640</abbr></h5>
                                                     <p>Co D shot and wounded one VC in VIC. 129382. Three VCS came out of tunnel and
                                                     were captured.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021700</h5>
+                                                    <h5><abbr title="May 2, 1967 at 17:00 (5:00 PM)">021700</abbr></h5>
                                                     <p>Co A reported point platoon receiving 6 to 8 rounds of SAF from VIC. 120358.
                                                 Are searching area for VC.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>021930</h5>
+                                                    <h5><abbr title="May 2, 1967 at 19:30 (7:30 PM)">021930</abbr></h5>
                                                     <p>Co C under heavy fire from 116384. Co C located at 198385. Co C estimated it
                                                         was hit by a reinforced platoon. 105mm and 107mm fire was called in, and an emergency
                                                     air strike requested.</p>
@@ -2325,41 +2279,41 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>022100</h5>
+                                                    <h5><abbr title="May 2, 1967 at 21:00 (9:00 PM)">022100</abbr></h5>
                                                     <p>Action involving Co C continued. Sparrow Hawk Force alerted for possible insertion
                                                 to assist. Artillery missions continue firing VIC. 116384 and 110374.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>022200</h5>
+                                                    <h5><abbr title="May 2, 1967 at 22:00 (10:00 PM)">022200</abbr></h5>
                                                     <p>Flareship and UH1E Gunships reported on station to assist Co C. Co C receiving
                                                 mortar fire again. Air strikes on area commenced.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>022300</h5>
+                                                    <h5><abbr title="May 2, 1967 at 23:00 (11:00 PM)">022300</abbr></h5>
                                                     <p>Med-Evac and emergency resupply of ammo called for by Co C.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>030645</h5>
+                                                    <h5><abbr title="May 3, 1967 at 06:45 (6:45 AM)">030645</abbr></h5>
                                                     <p>Med-Evac and resupply commenced for Co C. Friendly casualties were 4 KIA; 14
                                                 WIAE; 6 WIANE. Enemy casualties were 2 KIA confirmed.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>030830</h5>
+                                                    <h5><abbr title="May 3, 1967 at 08:30 (8:30 AM)">030830</abbr></h5>
                                                     <p>Sparrow Hawk Force insterted at 120384 to extract Recon element and seize possible
                                                 enemy mortar positions.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>031830</h5>
+                                                    <h5><abbr title="May 3, 1967 at 18:30 (6:30 PM)">031830</abbr></h5>
                                                     <p>Co A water patrol killed two VC at 094356, then came under attack from same area.
                                                         Four squads commited to assist the water patrol ran into heavy automatic and
                                                         small arms fire. Artillery and UH1E Gunship support was immediately available
@@ -2368,111 +2322,111 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>032200</h5>
+                                                    <h5><abbr title="May 3, 1967 at 22:00 (10:00 PM)">032200</abbr></h5>
                                                     <p>All Co A units beyond perimeter at 094362 have returned with WIA's from action
                                                 near 094356 except for 14 men still cut off.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>032300</h5>
+                                                    <h5><abbr title="May 3, 1967 at 23:00 (11:00 PM)">032300</abbr></h5>
                                                     <p>Patrol which was cut off near 094356 has returned with WIA's.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040550</h5>
+                                                    <h5><abbr title="May 4, 1967 at 05:50 (5:00 AM)">040550</abbr></h5>
                                                     <p>Fire mission fired by A-1-12 at 090352 for Co A.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040625</h5>
+                                                    <h5><abbr title="May 4, 1967 at 06:25 (6:25 AM)">040625</abbr></h5>
                                                     <p>Co A reports 60 to 70 VC at 085360. Artillery Fire mission called with unkown
                                                 results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040907</h5>
+                                                    <h5><abbr title="May 4, 1967 at 09:07 (9:07 AM)">040907</abbr></h5>
                                                     <p>Brig Gen LaHue, ADC of 1st MarDiv visited BLT 1/3 CP at LZ Cardinal.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040935</h5>
+                                                    <h5><abbr title="May 4, 1967 at 09:35 (9:35 AM)">040935</abbr></h5>
                                                     <p>Co A Friendly and Enemy casualty report received. Friendly casualties 14 KIA;
                                                 8 WIAE; 1 WIANE. Enemey casualties 8 KIA (Conf); 6 KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040936</h5>
+                                                    <h5><abbr title="May 4, 1967 at 09:36 (9:36 AM)">040936</abbr></h5>
                                                     <p>Co D spotted 20 VC at 096404. Fired 81mm mortar mission. Received SAF same location.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040941</h5>
+                                                    <h5><abbr title="May 4, 1967 at 09:41 (9:41 AM)">040941</abbr></h5>
                                                     <p>Co D reports 20 VC confined in village at 095405.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>040953</h5>
+                                                    <h5><abbr title="May 4, 1967 at 09:53 (9:53 AM)">040953</abbr></h5>
                                                     <p>Co D requested Med-Evac for one USMC WIA at 098398. Found massive tunnel complex
                                                     at 085398 and 097404.Requested fire mission, negative results. Requested air.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041040</h5>
+                                                    <h5><abbr title="May 4, 1967 at 10:40 (10:40 AM)">041040</abbr></h5>
                                                     <p>Co D receiving mortar fire and SAF from 107405. Requested Artillery and fixed
                                                     wing support.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041131</h5>
+                                                    <h5><abbr title="May 4, 1967 at 11:31 (11:31 AM)">041131</abbr></h5>
                                                     <p>Co D has two WIA for emergency Med-Evac.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041510</h5>
+                                                    <h5><abbr title="May 4, 1967 at 15:10 (3:10 PM)">041510</abbr></h5>
                                                     <p>Co C moving near 082386 reports one WIA from SAF. Med-Evac Requested.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041520</h5>
+                                                    <h5><abbr title="May 4, 1967 at 15:20 (3:20 PM)">041520</abbr></h5>
                                                     <p>CAS mission for Co D at 085398 reported 100% on target with 65% coverage of target.
                                                 Further results unknown.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041800</h5>
+                                                    <h5><abbr title="May 4, 1967 at 18:00 (6:00 PM)">041800</abbr></h5>
                                                     <p>Co C moving to support Co D near hill 65 at 094393. Has Co D in visual contact,
                                                 receiving sporadic sniper fire.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>041928</h5>
+                                                    <h5><abbr title="May 4, 1967 at 19:28 (7:28 PM)">041928</abbr></h5>
                                                     <p>Fire mission at 100403 for Co D. One USMC WIA reported as result of fire mission.
                                                 Fire mission. Fire was on 50 VC in fortified position.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>042230</h5>
+                                                    <h5><abbr title="May 4, 1967 at 22:30 (10:30 PM)">042230</abbr></h5>
                                                     <p>Concept of operations for 5 May received from CTG 79.4.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>042325</h5>
+                                                    <h5><abbr title="May 4, 1967 at 23:25 (11:25 PM)">042325</abbr></h5>
                                                     <p>Co D reports all KIA extracted from Battle Zone to friendly lines. One M-60MG
                                                         with firing mechanism removed, one .45 Cal pistol and one M-16 rifle lost in
                                                         action. Total casualties: Friendly 11 KIA; 20 WIAE; 6<code>[?]</code> WIANE. Enemy Casualties
@@ -2481,62 +2435,62 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050120</h5>
+                                                    <h5><abbr title="May 5, 1967 at 01:20 (1:00 AM)">050120</abbr></h5>
                                                     <p>Co D called artillery illumination mission to observe VC moving in area.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050202</h5>
+                                                    <h5><abbr title="May 5, 1967 at 02:02 (2:02 AM)">050202</abbr></h5>
                                                     <p>Enemy appears to be slipping away to the SW. Distance too great for effective
                                                 SAF. One Co D patrol still in contact.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050500</h5>
+                                                    <h5><abbr title="May 5, 1967 at 05:00 (5:00 AM)">050500</abbr></h5>
                                                     <p>VC broke contact with Co D patrol. Continuing to move away to the southwest.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050618</h5>
+                                                    <h5><abbr title="May 5, 1967 at 06:18 (6:18 AM)">050618</abbr></h5>
                                                     <p>Co D receiving SAF and automatic weapons fire from 104403. Fire mission called
                                                 on 15 VC digging in Village at that location. Excellent coverage on target.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050955</h5>
+                                                    <h5><abbr title="May 5, 1967 at 09:55 (9:55 AM)">050955</abbr></h5>
                                                     <p>Co'd C and D attacking fortified positions at 116395, receiving sporadic fire.
                                                         Bravi Company maneuvering in trace of Co C and D after departing LZ Cardinal.
-                                                        Co B lifted to LZ Eagle at 095392. Co A lifted to LZ Magpie at 031341 from LZ
+                                                        Co B lifted to LZ Eagle at 095392. Co A lifted to <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie at 031341</a> from LZ
                                                 Finch at 095392.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>051405</h5>
+                                                    <h5><abbr title="May 5, 1967 at 14:05 (2:05 PM)">051405</abbr></h5>
                                                     <p>At 108382 Co B reported one man stepped on surprise firing device causing WIA's.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>051430</h5>
+                                                    <h5><abbr title="May 5, 1967 at 14:30 (2:30 PM)">051430</abbr></h5>
                                                     <p>Co's C and B sweeping objective near 097402. Co C reports huge tunnel complex
                                                 at 100402. Requests lights and demo to search and destroy this complex.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>051500</h5>
+                                                    <h5><abbr title="May 5, 1967 at 15:00 (3:00 PM)">051500</abbr></h5>
                                                     <p>CH-53, CH-46, and UH34D's arrived in LZ Cardinal without prior notification of
-                                                lift A-1-12 and Bravo Command Group to LZ Magpie at 031341.</p>
+                                                lift A-1-12 and Bravo Command Group to <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie at 031341</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>051815</h5>
+                                                    <h5><abbr title="May 5, 1967 at 18:15 (6:15 PM)">051815</abbr></h5>
                                                     <p>LZ Cardinal under heavy attack from 82mm mortars, and SAF and automatic wpns
                                                         fire from all sides. CAS called and response was immediate with 2 F-9's, 2 UH1E
                                                         Gunships and Puff assisting. 10 VC KIA (Conf) 20 VC KIA (Prob). One 82mm mortar
@@ -2545,149 +2499,149 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>052000</h5>
-                                                    <p>All elements safely out of LZ Cardinal and into LZ Magpie without casualties.</p>
+                                                    <h5><abbr title="May 5, 1967 at 20:00 (8:00 PM)">052000</abbr></h5>
+                                                    <p>All elements safely out of LZ Cardinal and into <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie</a> without casualties.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>061000</h5>
+                                                    <h5><abbr title="May 6, 1967 at 10:00 (10:00 AM)">061000</abbr></h5>
                                                     <p>6 VC reported by Co B digging in at 044376. Artillery mission fired. Results
                                                 unknown.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>061125</h5>
+                                                    <h5><abbr title="May 6, 1967 at 11:25 (11:25 AM)">061125</abbr></h5>
                                                     <p>Co C receiving sniper fire from 085393. 2 USMC WIA. Returned fire with 60mm mortars.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>061200</h5>
+                                                    <h5><abbr title="May 6, 1967 at 12:00 (12:00 PM)">061200</abbr></h5>
                                                     <p>Co B receiving light SAF near 090392. Returned fire with 3.5. 2 USMC WIA. 2 VC
                                                     KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>061730</h5>
+                                                    <h5><abbr title="May 6, 1967 at 17:30 (5:30 PM)">061730</abbr></h5>
                                                     <p>Co B reports 15 VC opened up on rear element of Company at 070389. Returned fire
                                                 with small arms and M-79. 5 Enemy KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>061815</h5>
+                                                    <h5><abbr title="May 6, 1967 at 18:15 (6:15 PM)">061815</abbr></h5>
                                                     <p>Co D reports receiving sniper fire from 060385.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>062045</h5>
-                                                    <p>Co A and BLT 1/3 CP at LZ Magpie. Co B at Coord 072395. Co C at 0623998. Co D
+                                                    <h5><abbr title="May 6, 1967 at 20:45 (8:45 PM)">062045</abbr></h5>
+                                                    <p>Co A and BLT 1/3 CP at <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie</a>. Co B at Coord 072395. Co C at 0623998. Co D
                                                     at 057395.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071045</h5>
+                                                    <h5><abbr title="May 7, 1967 at 10:45 (10:45 AM)">071045</abbr></h5>
                                                     <p>Company B receiving sniper fire from 2 or 3 persons at 050399. Returned fire
                                                     with 81mm mortars.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071215</h5>
+                                                    <h5><abbr title="May 7, 1967 at 12:15 (12:15 PM)">071215</abbr></h5>
                                                     <p>Co B received SAF from VIC. 050396. Returned fire. 3 enemy KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071345</h5>
+                                                    <h5><abbr title="May 7, 1967 at 13:45 (1:45 PM)">071345</abbr></h5>
                                                     <p>All companies turning in Flak Vests to increase mobility and decrease load.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071545</h5>
+                                                    <h5><abbr title="May 7, 1967 at 15:45 (3:45 PM)">071545</abbr></h5>
                                                     <p>Co D reported tunnel complex at 035375 containing some items of intelligence
                                                 value.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071700</h5>
+                                                    <h5><abbr title="May 7, 1967 at 17:00 (5:00 PM)">071700</abbr></h5>
                                                     <p>Co C reports two snipers VIC. 069398. Returned fire. One VC KIA (Conf) and one
                                                     VC KIA (Prob).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>071845</h5>
-                                                    <p>Position reports received from companies operating outside LZ Magpie. Co C Coord
+                                                    <h5><abbr title="May 7, 1967 at 18:45 (6:45 PM)">071845</abbr></h5>
+                                                    <p>Position reports received from companies operating outside <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie</a>. Co C Coord
                                                 023399; Co B Coord 021383; Co D Coor 030385.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>072050</h5>
+                                                    <h5><abbr title="May 7, 1967 at 20:50 (8:50 PM)">072050</abbr></h5>
                                                     <p>Fire Mission on reported VC Battalion of 300 men moving VIC. 055371 resulted
                                                 in a secondary explosion. More fire missions are being fired.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>072050</h5>
+                                                    <h5><abbr title="May 7, 1967 at 20:50 (8:50 PM)">072050</abbr></h5>
                                                     <p>Received Frag Order from CTG 79.4 for operations 8 May 1967. Co D reports movement
                                                 at 030388. Fired 81 mission.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>072137</h5>
+                                                    <h5><abbr title="May 7, 1967 at 20:50 (9:37 PM)">072137</abbr></h5>
                                                     <p>Co D reports it is under mnortar attack from Coord 038395. Artillery mission
                                                 fired. Friendly casualties: one KIA; 2 WIAE; 4 WIANE.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>072220</h5>
+                                                    <h5><abbr title="May 7, 1967 at 22:20 (10:20 PM)">072220</abbr></h5>
                                                     <p>Co C received six rounds of ineffective mortar fire on position from VIC. 031391.
                                                 Fire mission called on that location.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>072325</h5>
+                                                    <h5><abbr title="May 7, 1967 at 23:25 (11:25 PM)">072325</abbr></h5>
                                                     <p>Casualty figures at this point in the operation are Friendly: 30 KIA; 55 WIA;
                                                 30 WIANE. Enemy: 55 KIA (Conf); 77 KIA (Prob), 8 captured, and 24 VCS (Detained).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081035</h5>
+                                                    <h5><abbr title="May 8, 1967 at 10:35 (10:35 AM)">081035</abbr></h5>
                                                     <p>Co C captured 5 VCS of military age with packet of papers, money, fresh haircuts
                                                 and false or no ID cards.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081045</h5>
+                                                    <h5><abbr title="May 8, 1967 at 10:45 (10:45 AM)">081045</abbr></h5>
                                                     <p>Co C reported mortar attack on 023399 from VIC. 031391. Artillery and air requested.
                                                 81's attempted to return fire but were hit by incoming.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081102</h5>
+                                                    <h5><abbr title="May 8, 1967 at 11:02 (11:02 AM)">081102</abbr></h5>
                                                     <p>Co D receiving mortar fire. Co B 81's moving into <code>[...]</code> to assist Co C. Mortars
                                                 located by recon elements at 032392. Co D reports 3 WIANE, non serious.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081200</h5>
+                                                    <h5><abbr title="May 8, 1967 at 11:02 (12:00 PM)">081200</abbr></h5>
                                                     <p>More incoming mortars on Co C at 023399, 1UH1E Gunship and fixed wing attack
                                                         at 033393 and 033395 got 100% target coverage. One mortar position destroyed,
                                                 5 VC KIA (Conf). Friendly casualties 3 KIA; 8 WIAE; 2 WIANE.</p>
@@ -2695,61 +2649,61 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081343</h5>
+                                                    <h5><abbr title="May 8, 1967 at 13:43 (1:43 PM)">081343</abbr></h5>
                                                     <p>Recon reports 6 VC pinned down at 032379. Fire mission fired with unknown results.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081620</h5>
+                                                    <h5><abbr title="May 8, 1967 at 16:20 (4:20 PM)">081620</abbr></h5>
                                                     <p>Heavy punji trap area reported at coord 001371 by recon.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081725</h5>
+                                                    <h5><abbr title="May 8, 1967 at 17:25 (5:25 PM)">081725</abbr></h5>
                                                     <p>Frag warning order received by BLT 1/3 from CTG 79.4 to be prepared to reorient
                                                 operations toward LZ Cardinal.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>081935</h5>
+                                                    <h5><abbr title="May 8, 1967 at 19:35 (7:35 PM)">081935</abbr></h5>
                                                     <p>Co B captured one VCS at Coord 002370.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>082020</h5>
+                                                    <h5><abbr title="May 8, 1967 at 20:20 (8:20 PM)">082020</abbr></h5>
                                                     <p>Received intelligence report that one VC company was operating VIC. Coord 002370.
                                                 Passed to Co B.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>082400</h5>
+                                                    <h5><abbr title="May 8, 1967 at 24:00 (12:00 AM)">082400</abbr></h5>
                                                     <p>Received Frag order from CTG 79.4 for operations on 9 May 1967. Operations are
                                                         oriented toward LZ Cardinal over same route covered to arrive at present locations.
-                                                        Co A and BLT 1/3 CF remain at LZ Magpie. Present positions: Co B Coord 002375;
+                                                        Co A and BLT 1/3 CF remain at <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie</a>. Present positions: Co B Coord 002375;
                                                 Co C Coord 001370; Co D Coord 009386; Recon element Coord 021380.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>090455</h5>
+                                                    <h5><abbr title="May 9, 1967 at 04:55 (4:55 AM)">090455</abbr></h5>
                                                     <p>BLT 1/3 Frag order issued to units.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>090600</h5>
+                                                    <h5><abbr title="May 9, 1967 at 06:00 (6:00 AM)">090600</abbr></h5>
                                                     <p>Co's B, C and D are moving through area Coord 0137, 0138, 0139 on local search
                                                     and destroy operations.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>090640</h5>
+                                                    <h5><abbr title="May 9, 1967 at 06:40 (6:40 AM)">090640</abbr></h5>
                                                     <p>Co C receiving incoming mortar fire from VIC. 015375 and 012385. Co D firing
                                                         mortars to assist. Request for UH1E Gunship support. Co D also firing 3.5 and
                                                         M-60's on enemy positions. Co C using mortars to return fire. Co C received one
@@ -2758,32 +2712,32 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>090730</h5>
+                                                    <h5><abbr title="May 9, 1967 at 07:30 (7:30 AM)">090730</abbr></h5>
                                                     <p>CAS on VIC. of mortar positions. results: good target coverage Enemy casualties
                                                 unknown.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>090906</h5>
+                                                    <h5><abbr title="May 9, 1967 at 09:06 (9:06 AM)">090906</abbr></h5>
                                                     <p>Co B captured 7 VCS VIC. 010385.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>091005</h5>
+                                                    <h5><abbr title="May 9, 1967 at 1005 (10:05 AM)">091005</abbr></h5>
                                                     <p>Casualties as of 090900 May 1967 for BLT 1/3 KIA 33; WIAE 76; WIANE 21.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>091300</h5>
+                                                    <h5><abbr title="May 9, 1967 at 13:00 (1:00 PM)">091300</abbr></h5>
                                                     <p>Co D spotted 3 VC at 015403. One VC KIA (Prob) from SAF.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>091730</h5>
+                                                    <h5><abbr title="May 9, 1967 at 17:30 (5:30 PM)">091730</abbr></h5>
                                                     <p>CTG 79.4 issued SiteRep on Amphibious Withdrawal, confirming BLT 1/3 sweep to
                                                         the east toward the coast. Directed to coordinate sweep with 1stBn 5th Marines
                                                     on right flank.</p>
@@ -2791,89 +2745,89 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>091905</h5>
+                                                    <h5><abbr title="May 9, 1967 at 19:05 (7:05 PM)">091905</abbr></h5>
                                                     <p>Co D sighted 4 VC at 025403. Ambush in progress. VC escaped without contact.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>092230</h5>
+                                                    <h5><abbr title="May 9, 1967 at 22:30 (10:30 PM)">092230</abbr></h5>
                                                     <p>BLT 1/3 issued Frag Order # 11 to Op Order 5-67 for sweep operations on 10 May
                                                 67 East toward the coast.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100730</h5>
+                                                    <h5><abbr title="May 10, 1967 at 07:30 (7:30 AM)">100730</abbr></h5>
                                                     <p>Co's B and C at Phase line Alpha on north south line from 0241 through 020387
                                                 continuing sweep to east. Co D in trace moving down center of valley.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100740</h5>
+                                                    <h5><abbr title="May 10, 1967 at 07:40 (7:40 AM)">100740</abbr></h5>
                                                     <p>Bravo Co receiving SAF and automatic wpns fire from Hill 110 a<code>[...]</code> 033386.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100750</h5>
+                                                    <h5><abbr title="May 10, 1967 at 07:50 (7:50 AM)">100750</abbr></h5>
                                                     <p>Co C firing mortars on Hill 110, Co B returning fire on Hill 110 with 60 and
                                                 81mm mortars, 3.5 rkts and automatic wpns. Request for UH1E Gunship support.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100822</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:22 (8:22 AM)">100822</abbr></h5>
                                                     <p>Hill 100 being worked over by Gunships and automatic fire.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100830</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:30 (8:30 AM)">100830</abbr></h5>
                                                     <p>Co B reports one WIA. Request Med-Evac.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100848</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:48 (8:48 AM)">100848</abbr></h5>
                                                     <p>Co B reports VC moving toward Co B from left rear request Co C to check it out
                                                     and assist.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100849</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:49 (8:49 AM)">100849</abbr></h5>
                                                     <p>Co D reports Co C, 1/5 is 300 meter west of Hill 110 moving east.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100852</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:52 (8:52 AM)">100852</abbr></h5>
                                                     <p>Co B located at 034387; Co C at 034395; Co D at 025388.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100853</h5>
+                                                    <h5><abbr title="May 10, 1967 at 08:53 (8:53 AM)">100853</abbr></h5>
                                                     <p>Co B taking heavy sniper fire. Reports 20 VC moving East.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100906</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:06 (9:06 AM)">100906</abbr></h5>
                                                     <p>Co C moving 3d Plat to left flank of Co B.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100915</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:15 (9:15 AM)">100915</abbr></h5>
                                                     <p>Co B taking mortar fire at a rate of one round per minute.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>* 100925</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:25 (9:25 AM)">100925</abbr></h5>
                                                     <p>Co B pinned down by heavy fire. Suffering unknown number of KIA and WIA. Requesting
                                                         close air support. Co C attempting to envelope village at 035395 with one platoon
                                                 to stop enemy fire from that vicinity. Enveloping platoon receiving mortar fire.</p>
@@ -2881,47 +2835,47 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100930</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:30 (9:30 AM)">100930</abbr></h5>
                                                     <p>Request from Co B for Co C and D to link up on left and right flanks respectively.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100935</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:35 (9:35 AM)">100935</abbr></h5>
                                                     <p>Co C, 1/5 moving toward Hill 110 sweep toward the east. Air strike will be run
                                                 on Hill 110 prior to sweep.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100949</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:49 (9:49 AM)">100949</abbr></h5>
                                                     <p>Co B reports one company of VC wearing green uniforms and helmets, well camoflaged
                                                 and entrenched on Hill 100.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>100951</h5>
+                                                    <h5><abbr title="May 10, 1967 at 09:51 (9:51 AM)">100951</abbr></h5>
                                                     <p>Co C has one platoon pinned down by heavy fire from village at 035395.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101025</h5>
+                                                    <h5><abbr title="May 10, 1967 at 10:25 (10:25 AM)">101025</abbr></h5>
                                                     <p>Air strike run on VIC. 033385. 5 VC KIA (Prob) and a secondary explosion. Air
                                                 strike also run at Coord 025384. 5 VC KIA (Conf) KBA.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101030</h5>
+                                                    <h5><abbr title="May 10, 1967 at 10:30 (10:30 AM)">101030</abbr></h5>
                                                     <p>Current situation has Co B on stream facing Hill 110 with Co C on left flank
                                                 and Co B on right flank.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101039</h5>
+                                                    <h5><abbr title="May 10, 1967 at 10:39 (10:39 AM)">101039</abbr></h5>
                                                     <p>Co C, 1/5 sweeping Hill 110, has control of objective. Co C needs help on left
                                                         flank. Withdrawing platoon from right flank to assist left flank platoon pinned
                                                     down by heavy fire.</p>
@@ -2929,33 +2883,33 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101045</h5>
+                                                    <h5><abbr title="May 10, 1967 at 10:45 (10:45 AM)">101045</abbr></h5>
                                                     <p>One platoon of Co D moving down to left flank to assist Co C. Co B reports VC
                                                 moving east away from Hill 110.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101054</h5>
+                                                    <h5><abbr title="May 10, 1967 at 10:54 (10:54 AM)">101054</abbr></h5>
                                                     <p>Co C has VC in trench line directly in front of position delivering heavy fire.
                                                 Units are pinned down.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101210</h5>
+                                                    <h5><abbr title="May 10, 1967 at 12:10 (12:10 PM)">101210</abbr></h5>
                                                     <p>Heavy contact continuing. Air strike run on Coord 044387. 50% Coverage of target.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101259</h5>
+                                                    <h5><abbr title="May 10, 1967 at 12:59 (12:59 PM)">101259</abbr></h5>
                                                     <p>Co D now has two platoons commiited to right flank of Co B.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101340</h5>
+                                                    <h5><abbr title="May 10, 1967 at 13:40 (1:40 PM)">101340</abbr></h5>
                                                     <p>Co B reports approximately 6 KIA and 23 WIA, all friendly, in Co C zone. Sparrow
                                                         Hawk arrived in zone with 40 men at approximately 1300. Suffered 5 WIA almost
                                                 immediately. Remaining personnel pinned down in LZ.</p>
@@ -2963,14 +2917,14 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101536</h5>
+                                                    <h5><abbr title="May 10, 1967 at 15:36 (3:36 PM)">101536</abbr></h5>
                                                     <p>Heavy contact continues. Co B reports VC attempting to move out to the east,
                                                 after air strike throughout the area.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>101600</h5>
+                                                    <h5><abbr title="May 10, 1967 at 16:00 (4:00 PM)">101600</abbr></h5>
                                                     <p>Contact light. Units cosolidating positions and establishing perimeter for the
                                                         night. Co's B, C, and D under control of 1/5. Received Frag order for night activities
                                                     from 1/5.</p>
@@ -2978,27 +2932,27 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>102330</h5>
+                                                    <h5><abbr title="May 10, 1967 at 23:30 (11:30 PM)">102330</abbr></h5>
                                                     <p>Position report of Co's B, C, and D. Co B at 036389; Co C at 036391; Co D at
                                                 030389. Units tied together in a perimeter for the night.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>111100</h5>
+                                                    <h5><abbr title="May 11, 1967 at 11:00 (11:00 AM)">111100</abbr></h5>
                                                     <p>Casualties reported for action 10 May 1967. Friendly: 22 KIA, 62 WIAE, 26 WIANE,
                                                 Enemy: 86 KIA (Conf)</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>111645</h5>
-                                                    <p>Co'd B, C, D and Mini Cmd Group moving East toward LZ Quail at 060377.</p>
+                                                    <h5><abbr title="May 11, 1967 at 16:45 (4:45 PM)">111645</abbr></h5>
+                                                    <p>Co's B, C, D and Mini Cmd Group moving East toward <a href="https://goo.gl/maps/yNeVgvEC38rMU6dY7">LZ Quail at 060377</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>112100</h5>
+                                                    <h5><abbr title="May 11, 1967 at 21:00 (9:00 PM)">112100</abbr></h5>
                                                     <p>Position report on all units submitted to CTG 79.4. Co A and BLT 1/3 at Coord
                                                         044342; Mini Cmd Group at 044390; Co B at 044390; Co C at 045396; Co D 042392.
                                                 Perimeter established for night defense.</p>
@@ -3006,149 +2960,147 @@ export class PageCmdChronBeaverCage {
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>112200</h5>
+                                                    <h5><abbr title="May 11, 1967 at 22:00 (10:00 PM)">112200</abbr></h5>
                                                     <p>Frag Order received from CTG 79.4 for Amphibious withdrawal to ships of ARG 76.4.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>121400</h5>
-                                                    <p>All elements of Co's B, C, D and Mini Comd Group have departed LZ Quail at 060377.
+                                                    <h5><abbr title="May 12, 1967 at 14:00 (2:00 PM)">121400</abbr></h5>
+                                                    <p>All elements of Co's B, C, D and Mini Comd Group have departed <a href="https://goo.gl/maps/yNeVgvEC38rMU6dY7">LZ Quail at 060377</a>.
                                                 LZ Quail secured by 3/5.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>121900</h5>
+                                                    <h5><abbr title="May 12, 1967 at 14:00 (7:00 PM)">121900</abbr></h5>
                                                     <p>All Units of BLT 1/3 are aboard ships of ARG 76.4. Operation Beaver Cage completed.</p>
                                                 </ion-label>
                                             </ion-item>
                                         </ion-list>
                                     </li>
+
                                     <li>Recapitulation of major moves by helicopter of BLT 1/3 during Operation Beaver Cage.
 
                                     <ion-list>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280700 April 1967</h5>
-                                                    <p>C Company landed in LZ Oriole at Coord 186294.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 07:00 (7:00 AM)">280700</abbr> April 1967</h5>
+                                                    <p>C Company landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at Coord 186294</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280900</h5>
-                                                    <p>A Company landed in LZ Thrush at Coord 198265.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:00 AM)">280900</abbr></h5>
+                                                    <p>A Company landed in <a href="https://goo.gl/maps/5gsRL98MNU5pvFwJ6">LZ Thrush at Coord 198265</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>280935</h5>
+                                                    <h5><abbr title="Apr 28, 1967 at 09:00 (9:35 AM)">280935</abbr></h5>
                                                     <p>A-1-12 lifted to Hill 29 at Coord 2266320 with two 105's and 18 personnel</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281100</h5>
-                                                    <p>Alpha Command Group and Recon Platoon landed in LZ Oriole at Coord 186294.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 11:00 (11:00 AM)">281100</abbr></h5>
+                                                    <p>Alpha Command Group and Recon Platoon landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at Coord 186294</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281330</h5>
-                                                    <p>B Company landed in LZ Oriole at Coord 1866294.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 13:30 (1:30 PM)">281330</abbr></h5>
+                                                    <p>B Company landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at Coord 1866294</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281530</h5>
-                                                    <p>W-2-12 landed in LZ Oriole at Coord 185294.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 15:30 (3:30 PM)">281530</abbr></h5>
+                                                    <p>W-2-12 landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at Coord 185294</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>281730</h5>
-                                                    <p>Bravo Command Group landed in LZ Oriole at Coord 186294.</p>
+                                                    <h5><abbr title="Apr 28, 1967 at 17:30 (5:30 PM)">281730</abbr></h5>
+                                                    <p>Bravo Command Group landed in <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole at Coord 186294</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291030</h5>
-                                                    <p>Command Group and W-2-12 lifted from LZ Oriole to objective # 4 at Coord 165277.</p>
+                                                    <h5><abbr title="Apr 29, 1967 at 10:30 (10:30 AM)">291030</abbr></h5>
+                                                    <p>Command Group and W-2-12 lifted from <a href="https://goo.gl/maps/G9ohCPUjzFZ4RAX26">LZ Oriole</a> to objective # 4 at Coord 165277.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>291030</h5>
-                                                    <p>A Company lifted from objective # 3 at Coord 176268 to objective #7 at Coord
-                                                    149243 (LZ Wren).</p>
+                                                    <h5><abbr title="Apr 29, 1967 at 10:30 (10:30 AM)">291030</abbr></h5>
+                                                    <p>A Company lifted from objective # 3 at Coord 176268 to objective #7 at Coord 149243 (LZ Wren).</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301530</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 15:30 (3:30 PM)">301530</abbr></h5>
                                                     <p>B Company lifted from 165277 to LZ Cardinal at 128388.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>301700</h5>
+                                                    <h5><abbr title="Apr 30, 1967 at 17:00 (5:00 PM)">301700</abbr></h5>
                                                     <p>D Company lifted from 284388 to LZ Buzzard at Coord 132399.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011050 May 1967</h5>
+                                                    <h5><abbr title="May 1, 1967 at 10:50 (10:50 AM)">011050</abbr> May 1967</h5>
                                                     <p>A Company lifted from LZ Robin at Coordd 162242 to LZ Cardinal at Coord 128388.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011300</h5>
+                                                    <h5><abbr title="May 1, 1967 at 13:00 (1:00 PM)">011300</abbr></h5>
                                                     <p>C Company lifted from 165277 to LZ Buzzard at coord 132399.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>011500</h5>
+                                                    <h5><abbr title="May 1, 1967 at 15:00 (3:00 PM)">011500</abbr></h5>
                                                     <p>Command Group and W-2-12 lifted from 165277 to LZ Cardinal.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>020900</h5>
+                                                    <h5><abbr title="May 2, 1967 at 09:00 (9:00 AM)">020900</abbr></h5>
                                                     <p>A-1-12 lifted from Hill 29 at Coord 226320 and LSD to LZ Cardinal.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050700</h5>
+                                                    <h5><abbr title="May 5, 1967 at 07:00 (7:00 AM)">050700</abbr></h5>
                                                     <p>B Company lifted from LZ Cardinal at Coord 128388 to LZ Eagle at Coord 095392.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>050930</h5>
-                                                    <p>A Company lifted from LZ Finch at Coord 094358 to LZ Magpie at Coord 031341.</p>
+                                                    <h5><abbr title="May 5, 1967 at 09:30 (9:30 AM)">050930</abbr></h5>
+                                                    <p>A Company lifted from LZ Finch at Coord 094358 to <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie at Coord 031341</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>051500</h5>
-                                                    <p>A-1-12, W-2-12, Command Group (255 personnel) moved from LZ Cardinal to LZ Magpie
-                                                at Coord 031341.</p>
+                                                    <h5><abbr title="May 5, 1967 at 15:00 (3:00 PM)">051500</abbr></h5>
+                                                    <p>A-1-12, W-2-12, Command Group (255 personnel) moved from LZ Cardinal to <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie at Coord 031341</a>.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>120900</h5>
-                                                    <p>B, C, and D Companies lifted from LZ Quail at Coord 060377 to ships of ARG 76.4.</p>
+                                                    <h5><abbr title="May 12, 1967 at 09:00 (9:00 AM)">120900</abbr></h5>
+                                                    <p>B, C, and D Companies lifted from <a href="https://goo.gl/maps/yNeVgvEC38rMU6dY7">LZ Quail at Coord 060377</a> to ships of ARG 76.4.</p>
                                                 </ion-label>
                                             </ion-item>
                                             <ion-item>
                                                 <ion-label text-wrap>
-                                                    <h5>121200</h5>
-                                                    <p>A-1-12, W-2-12, Company A, and command group lifted from LZ Magpie at Coord 031341
-                                                to ships of ARG 76.4.</p>
+                                                    <h5><abbr title="May 12, 1967 at 12:00 (12:00 PM)">121200</abbr></h5>
+                                                    <p>A-1-12, W-2-12, Company A, and command group lifted from <a href="https://goo.gl/maps/DPda4SgfzN6memrb6">LZ Magpie at Coord 031341</a> to ships of ARG 76.4.</p>
                                                 </ion-label>
                                             </ion-item>
                                         </ion-list>
@@ -3157,9 +3109,7 @@ export class PageCmdChronBeaverCage {
 
                                 <h4>Results</h4>
 
-                                <p>Because of the requirement to move very rapidly and to cover large areas of terrain the Battalion
-                                    could not adequately search and destroy where heavy contact had occurred. Therefore, the enemy losses
-                            may have been much higher than these figures listed below.</p>
+                                <p>Because of the requirement to move very rapidly and to cover large areas of terrain the Battalion could not adequately search and destroy where heavy contact had occurred. Therefore, the enemy losses may have been much higher than these figures listed below.</p>
 
                                 <ol class="list-lower-latin">
                                     <li><span class="text-underline">Over all enemy losses</span>
