@@ -5,30 +5,28 @@
 
 .rightbar-unit {
     display: block;
-    width: 268px;
 }
 
-
 @media(min-width: 576px) {
-    .ad-container .rightbar-unit {
+    .ad-container {
         width:507px;
     }
 }
 
 @media(min-width: 768px) {
-    .ad-container .rightbar-unit {
+    .ad-container {
         width:228px;
     }
 }
 
 @media(min-width: 992px) {
-    .ad-container .rightbar-unit {
+    .ad-container {
         width:209px;
     }
 }
 
 @media(min-width: 1200px) {
-    .ad-container .rightbar-unit {
+    .ad-container {
         width:325px;
     }
 }
