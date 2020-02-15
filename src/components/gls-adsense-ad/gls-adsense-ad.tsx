@@ -22,9 +22,7 @@ export class GlsAdsenseAd {
     render() {
         return (
             <div class="ad-container">
-                <p>MOJO</p>
-            <ins class="adsbygoogle"
-                style={{ display: `block` }}
+            <ins class="adsbygoogle rightbar-unit"
                 data-ad-client="ca-pub-7370676338719207"
                 data-ad-slot="5178955087"></ins>
             </div>
