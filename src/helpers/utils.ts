@@ -1,5 +1,5 @@
 export const SITENAME = "Cody Burleson";
-export const SITEVERSION = "1.5.30";
+export const SITEVERSION = "1.5.31";
 export const DISQUS_SHORTNAME = "codyburleson-com";
 
 /**

@@ -6,18 +6,22 @@ declare global {
 }
 
 @Component({
-    tag: 'gls-adsense-ad',
-    styleUrl: 'gls-adsense-ad.css'
+    tag: 'gls-adsense-ad'
 })
 export class GlsAdsenseAd {
 
     adsbygoogle:any;
 
-    @Prop() adFormat: string = "rectangle, vertical";
+    /** Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)*/
+    @Prop() adFormat: string = "rectangle";
 
     componentDidRender() {
         if( ! isLocal() ) {
-            (this.adsbygoogle = window.adsbygoogle || []).push({});
+            // 3 seconds
+            setTimeout(function(){
+                (this.adsbygoogle = window.adsbygoogle || []).push({});
+            }, 3000);
+            
         }
     }
 
@@ -27,8 +31,7 @@ export class GlsAdsenseAd {
             <ins class="adsbygoogle rightbar-unit"
                 data-ad-client="ca-pub-7370676338719207"
                 data-ad-slot="5178955087" 
-                data-ad-format={this.adFormat
-                }
+                data-ad-format="auto"
                 data-full-width-responsive="true"></ins>
             </div>
         );
