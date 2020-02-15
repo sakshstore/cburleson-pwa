@@ -159,8 +159,7 @@ export class PageMemoriesOfMomma5 {
                                 </ion-card-content>
                             </ion-card>
 
-
-                            <gls-adsense-ad />
+                            <gls-adsense-ad ad-format="rectangle"/>
 
                         </ion-col>
                     </ion-row>

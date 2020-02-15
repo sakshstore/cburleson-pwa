@@ -1,4 +1,4 @@
-import { Component, h } from '@stencil/core';
+import { Component, h, Prop } from '@stencil/core';
 import { isLocal } from '../../helpers/utils';
 
 declare global {
@@ -13,6 +13,8 @@ export class GlsAdsenseAd {
 
     adsbygoogle:any;
 
+    @Prop() adFormat: string = "rectangle, vertical";
+
     componentDidRender() {
         if( ! isLocal() ) {
             (this.adsbygoogle = window.adsbygoogle || []).push({});
@@ -25,7 +27,8 @@ export class GlsAdsenseAd {
             <ins class="adsbygoogle rightbar-unit"
                 data-ad-client="ca-pub-7370676338719207"
                 data-ad-slot="5178955087" 
-                data-ad-format="rectangle, vertical"
+                data-ad-format={this.adFormat
+                }
                 data-full-width-responsive="true"></ins>
             </div>
         );
