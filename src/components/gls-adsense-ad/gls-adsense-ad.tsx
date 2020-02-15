@@ -6,7 +6,8 @@ declare global {
 }
 
 @Component({
-    tag: 'gls-adsense-ad'
+    tag: 'gls-adsense-ad',
+    styleUrl: 'gls-adsense-ad.css'
 })
 export class GlsAdsenseAd {
 
@@ -17,11 +18,7 @@ export class GlsAdsenseAd {
 
     componentDidRender() {
         if( ! isLocal() ) {
-            // 3 seconds
-            setTimeout(function(){
-                (this.adsbygoogle = window.adsbygoogle || []).push({});
-            }, 3000);
-            
+            (this.adsbygoogle = window.adsbygoogle || []).push({});
         }
     }
 
@@ -31,7 +28,7 @@ export class GlsAdsenseAd {
             <ins class="adsbygoogle rightbar-unit"
                 data-ad-client="ca-pub-7370676338719207"
                 data-ad-slot="5178955087" 
-                data-ad-format="auto"
+                data-ad-format={this.adFormat}
                 data-full-width-responsive="true"></ins>
             </div>
         );
