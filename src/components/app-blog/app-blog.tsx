@@ -175,7 +175,7 @@ export class AppBlog {
 
       <ion-content class="ion-padding">
 
-        <ion-grid fixed>
+        <ion-grid>
           <ion-row>
             <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
               <p>Click the control at top-right to filter by topics.</p>

@@ -20,7 +20,7 @@ export class GlsAdsenseAd {
 
     render() {
         return (
-            <div>
+            <div style={{width:`100%`}}>
             <ins class="adsbygoogle"
                 style={{ display: `block` }}
                 data-ad-client="ca-pub-7370676338719207"
