@@ -6,7 +6,8 @@ declare global {
 }
 
 @Component({
-    tag: 'gls-adsense-ad'
+    tag: 'gls-adsense-ad',
+    styleUrl: 'gls-adsense-ad.css'
 })
 export class GlsAdsenseAd {
 
