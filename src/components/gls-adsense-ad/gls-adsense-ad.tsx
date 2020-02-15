@@ -7,6 +7,7 @@ declare global {
 
 @Component({
     tag: 'gls-adsense-ad',
+    styleUrl: 'gls-adsense-ad.css'
 })
 export class GlsAdsenseAd {
 
@@ -20,13 +21,12 @@ export class GlsAdsenseAd {
 
     render() {
         return (
-            <div style={{width:`100%`}}>
+            <div class="ad-container">
+                <p>MOJO</p>
             <ins class="adsbygoogle"
                 style={{ display: `block` }}
                 data-ad-client="ca-pub-7370676338719207"
-                data-ad-slot="5178955087"
-                data-ad-format="auto"
-                data-full-width-responsive="true"></ins>
+                data-ad-slot="5178955087"></ins>
             </div>
         );
     }
