@@ -8,25 +8,25 @@
 }
 
 @media(min-width: 576px) {
-    .ad-container {
+    .ad-container .rightbar-unit {
         width:507px;
     }
 }
 
 @media(min-width: 768px) {
-    .ad-container {
+    .ad-container .rightbar-unit {
         width:228px;
     }
 }
 
 @media(min-width: 992px) {
-    .ad-container {
+    .ad-container .rightbar-unit {
         width:209px;
     }
 }
 
 @media(min-width: 1200px) {
-    .ad-container {
+    .ad-container .rightbar-unit {
         width:325px;
     }
 }

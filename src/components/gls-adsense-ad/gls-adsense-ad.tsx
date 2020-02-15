@@ -6,8 +6,7 @@ declare global {
 }
 
 @Component({
-    tag: 'gls-adsense-ad',
-    styleUrl: 'gls-adsense-ad.css'
+    tag: 'gls-adsense-ad'
 })
 export class GlsAdsenseAd {
 
@@ -15,7 +14,9 @@ export class GlsAdsenseAd {
 
     componentDidRender() {
         if( ! isLocal() ) {
-            (this.adsbygoogle = window.adsbygoogle || []).push({});
+            window.onload = function() {
+                (this.adsbygoogle = window.adsbygoogle || []).push({});
+            }
         }
     }
 
