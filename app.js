@@ -1,12 +1,14 @@
 #!/usr/bin/env node
 // Run this application like this:
 // node app.js help
+// node app.js v patch
 // node app.js create page <slug>
 
 const fs = require('fs');
 const program = require('commander');
 const inquirer = require('inquirer');
 const { exec } = require("child_process");
+const lineReplace = require('line-replace')
 
 // (patch, major, or minor): npm version <update_type>
 program
@@ -31,12 +33,25 @@ program
 
                 // (err, data) is the callback function that will be executed 
                 // once the file has been read...
+
+                let newVersion;
+
                 fs.readFile('./package.json', (err, data) => {
                     if (err) throw err;
                     let package = JSON.parse(data);
-                    console.log('Version is now: %', package.version);
+                    console.log('Version is now: %s', package.version);
+                    newVersion = package.version;
                 });
 
+
+                lineReplace({
+                    file: './src/helpers/utils.ts',
+                    line: 2,
+                    text: 'export const SITEVERSION = "' + newVersion + '";',
+                    addNewLine: true,
+                    onReplace
+                  })
+                  
 
             });
 
@@ -46,6 +61,13 @@ program
         
 
     });
+
+
+
+    function onReplace({file, line, text, replacedText}) {
+        console.log(line);                  
+    }
+
 
 program
     .command('create <type> <slug>') // sub-command name, coffeeType = type, required
