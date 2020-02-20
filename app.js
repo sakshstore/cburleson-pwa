@@ -1,10 +1,51 @@
 #!/usr/bin/env node
-
+// Run this application like this:
+// node app.js help
 // node app.js create page <slug>
 
 const fs = require('fs');
 const program = require('commander');
 const inquirer = require('inquirer');
+const { exec } = require("child_process");
+
+// (patch, major, or minor): npm version <update_type>
+program
+    .command('version <update_type>')
+    .alias('v')
+    .description('Change the version number with one of the semantic versioning release types (patch, major, or minor). The version number is changed in both package.json and helpers/utils.js')
+    .action(function(update_type){
+        console.log('Updating version; update_type: %s', update_type);
+        
+        if(update_type == 'patch' || update_type == 'major' || update_type == 'minor' ) {
+            // First, we update package.json with the normal npm command for updating the project version:
+            exec("npm version " + update_type, (error, stdout, stderr) => {
+                if (error) {
+                    console.log(`error: ${error.message}`);
+                    return;
+                }
+                if (stderr) {
+                    console.log(`stderr: ${stderr}`);
+                    return;
+                }
+                console.log(`stdout: ${stdout}`);
+
+                // (err, data) is the callback function that will be executed 
+                // once the file has been read...
+                fs.readFile('./package.json', (err, data) => {
+                    if (err) throw err;
+                    let package = JSON.parse(data);
+                    console.log('Version is now: %', package.version);
+                });
+
+
+            });
+
+        } else {
+            console.log('%s is an unrecognized update type. Please use one of patch, major, or minor.', update_type);
+        }
+        
+
+    });
 
 program
     .command('create <type> <slug>') // sub-command name, coffeeType = type, required

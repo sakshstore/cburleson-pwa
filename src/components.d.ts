@@ -28,12 +28,17 @@ export namespace Components {
   interface AppRoot {}
   interface AppSearch {}
   interface AppTabs {}
-  interface GlsAdsenseAd {}
+  interface GlsAdsenseAd {
+    /**
+    * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
+    */
+    'adFormat': string;
+  }
   interface GlsDisqus {
     'category': string;
     'identifier': string;
     'language': string;
-    'title': string;
+    'pageTitle': string;
     'url': string;
   }
   interface GlsGcseSearchboxOnly {}
@@ -1607,12 +1612,17 @@ declare namespace LocalJSX {
   interface AppRoot {}
   interface AppSearch {}
   interface AppTabs {}
-  interface GlsAdsenseAd {}
+  interface GlsAdsenseAd {
+    /**
+    * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
+    */
+    'adFormat'?: string;
+  }
   interface GlsDisqus {
     'category'?: string;
     'identifier'?: string;
     'language'?: string;
-    'title'?: string;
+    'pageTitle'?: string;
     'url'?: string;
   }
   interface GlsGcseSearchboxOnly {}

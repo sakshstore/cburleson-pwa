@@ -17,7 +17,7 @@ import { dService } from './disqus-service';
 export class GlsDisqus {
 
     @Prop() identifier: string;
-    @Prop() title: string;
+    @Prop() pageTitle: string;
     @Prop() category: string;
     @Prop() language: string;
     @Prop() url: string;
@@ -117,7 +117,7 @@ export class GlsDisqus {
     return function () {
       this.page.identifier = self.identifier;
       this.page.url = self.validateUrl(self.url);
-      this.page.title = self.title;
+      this.page.title = self.pageTitle;
       //this.category_id = self.category;
       //this.language = self.language;
 
