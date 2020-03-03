@@ -51,7 +51,7 @@ export class PageAbout {
 
         <p>Hi, I’m Cody Burleson and this is my home base on the web - a blog, online notebook, sketchbook, scrapbook and mad software science lab.</p>
 
-        <p>I love writing, game arts, visual effects, software development, and the great outdoors. I often share what I discover and learn, so if you're interested in any of these things, you might find something you like here.</p>
+        <p>These days, I'm into writing, computer game development, and the great outdoors. I often share what I discover and learn, so if you're interested in any of these things, you might find something you like here.</p>
 
         <h2>What I'm doing now</h2>
 

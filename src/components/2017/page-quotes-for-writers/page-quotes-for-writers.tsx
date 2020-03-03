@@ -205,6 +205,11 @@ export class PageQuotesForWriters {
                                 <footer>Will Self</footer>
                             </blockquote>
 
+                            <blockquote>
+                                <p>I don't need time, I need a deadline.</p>
+                                <footer>Duke Ellington</footer>
+                            </blockquote>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <gls-adsense-ad />

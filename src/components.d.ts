@@ -208,6 +208,7 @@ export namespace Components {
   interface PageUnityRecipesHeadBobOrBreathe {}
   interface PageUnityRecipesLookTowardDirectionOfMovement {}
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
+  interface PageUnrealEngineDocExpanded {}
   interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
   interface PageUseMicromeshInZbrush {}
@@ -1282,6 +1283,12 @@ declare global {
     new (): HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
   };
 
+  interface HTMLPageUnrealEngineDocExpandedElement extends Components.PageUnrealEngineDocExpanded, HTMLStencilElement {}
+  var HTMLPageUnrealEngineDocExpandedElement: {
+    prototype: HTMLPageUnrealEngineDocExpandedElement;
+    new (): HTMLPageUnrealEngineDocExpandedElement;
+  };
+
   interface HTMLPageUseAutoMaskingByPolygroupsInZbrushElement extends Components.PageUseAutoMaskingByPolygroupsInZbrush, HTMLStencilElement {}
   var HTMLPageUseAutoMaskingByPolygroupsInZbrushElement: {
     prototype: HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
@@ -1571,6 +1578,7 @@ declare global {
     'page-unity-recipes-head-bob-or-breathe': HTMLPageUnityRecipesHeadBobOrBreatheElement;
     'page-unity-recipes-look-toward-direction-of-movement': HTMLPageUnityRecipesLookTowardDirectionOfMovementElement;
     'page-unity-recipes-look-toward-direction-of-velocity': HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement;
+    'page-unreal-engine-doc-expanded': HTMLPageUnrealEngineDocExpandedElement;
     'page-use-auto-masking-by-polygroups-in-zbrush': HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
     'page-use-fibermesh-in-zbrush': HTMLPageUseFibermeshInZbrushElement;
     'page-use-micromesh-in-zbrush': HTMLPageUseMicromeshInZbrushElement;
@@ -1792,6 +1800,7 @@ declare namespace LocalJSX {
   interface PageUnityRecipesHeadBobOrBreathe {}
   interface PageUnityRecipesLookTowardDirectionOfMovement {}
   interface PageUnityRecipesLookTowardDirectionOfVelocity {}
+  interface PageUnrealEngineDocExpanded {}
   interface PageUseAutoMaskingByPolygroupsInZbrush {}
   interface PageUseFibermeshInZbrush {}
   interface PageUseMicromeshInZbrush {}
@@ -1988,6 +1997,7 @@ declare namespace LocalJSX {
     'page-unity-recipes-head-bob-or-breathe': PageUnityRecipesHeadBobOrBreathe;
     'page-unity-recipes-look-toward-direction-of-movement': PageUnityRecipesLookTowardDirectionOfMovement;
     'page-unity-recipes-look-toward-direction-of-velocity': PageUnityRecipesLookTowardDirectionOfVelocity;
+    'page-unreal-engine-doc-expanded': PageUnrealEngineDocExpanded;
     'page-use-auto-masking-by-polygroups-in-zbrush': PageUseAutoMaskingByPolygroupsInZbrush;
     'page-use-fibermesh-in-zbrush': PageUseFibermeshInZbrush;
     'page-use-micromesh-in-zbrush': PageUseMicromeshInZbrush;
@@ -2191,6 +2201,7 @@ declare module "@stencil/core" {
       'page-unity-recipes-head-bob-or-breathe': LocalJSX.PageUnityRecipesHeadBobOrBreathe & JSXBase.HTMLAttributes<HTMLPageUnityRecipesHeadBobOrBreatheElement>;
       'page-unity-recipes-look-toward-direction-of-movement': LocalJSX.PageUnityRecipesLookTowardDirectionOfMovement & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfMovementElement>;
       'page-unity-recipes-look-toward-direction-of-velocity': LocalJSX.PageUnityRecipesLookTowardDirectionOfVelocity & JSXBase.HTMLAttributes<HTMLPageUnityRecipesLookTowardDirectionOfVelocityElement>;
+      'page-unreal-engine-doc-expanded': LocalJSX.PageUnrealEngineDocExpanded & JSXBase.HTMLAttributes<HTMLPageUnrealEngineDocExpandedElement>;
       'page-use-auto-masking-by-polygroups-in-zbrush': LocalJSX.PageUseAutoMaskingByPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageUseAutoMaskingByPolygroupsInZbrushElement>;
       'page-use-fibermesh-in-zbrush': LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
       'page-use-micromesh-in-zbrush': LocalJSX.PageUseMicromeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseMicromeshInZbrushElement>;

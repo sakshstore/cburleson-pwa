@@ -1,6 +1,16 @@
 {
   "content": [
     {
+      "id": "unreal-engine-doc-expanded",
+      "title": "Unreal Engine Documentation, Expanded",
+      "teaser": "An expanded version of the Unreal Engine 4 documentation tree.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unreal-engine.jpg",
+      "datePublished": "2020/03/01",
+      "topics": [
+        "Game Dev"
+      ]
+    },
+    {
       "id": "book-review-the-goldfinch",
       "title": "Book review - The Goldfinch by Donna Tartt",
       "teaser": "A unique story with amazing prose, but a little too much fat.",
@@ -258,7 +268,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/09/03",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -268,7 +278,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -278,7 +288,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -288,7 +298,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2018/08/29",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -1094,7 +1104,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2015/04/01",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -1253,7 +1263,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2013/05/22",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -1463,7 +1473,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/14",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -1473,7 +1483,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/11",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {
@@ -1483,7 +1493,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/11/08",
       "topics": [
-        "Unity"
+        "Game Dev"
       ],
       "hideFromMenus": true
     },
@@ -1494,7 +1504,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/16",
       "topics": [
-        "Unity"
+        "Game Dev"
       ],
       "hideFromMenus": true
     },
@@ -1505,7 +1515,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
       "datePublished": "2012/10/13",
       "topics": [
-        "Unity"
+        "Game Dev"
       ]
     },
     {

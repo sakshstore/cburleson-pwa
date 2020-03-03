@@ -10,6 +10,10 @@ const inquirer = require('inquirer');
 const { exec } = require("child_process");
 const lineReplace = require('line-replace')
 
+function onReplace({file, line, text, replacedText}) {
+    console.log(line);                  
+}
+
 // (patch, major, or minor): npm version <update_type>
 program
     .command('version <update_type>')
@@ -43,30 +47,24 @@ program
                     newVersion = package.version;
                 });
 
-
                 lineReplace({
                     file: './src/helpers/utils.ts',
                     line: 2,
                     text: 'export const SITEVERSION = "' + newVersion + '";',
                     addNewLine: true,
                     onReplace
-                  })
-                  
+                })
 
             });
 
         } else {
             console.log('%s is an unrecognized update type. Please use one of patch, major, or minor.', update_type);
         }
-        
 
     });
 
 
 
-    function onReplace({file, line, text, replacedText}) {
-        console.log(line);                  
-    }
 
 
 program
