@@ -592,9 +592,7 @@ export class PageUnrealEngineDocExpanded {
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Toolbar/index.html"><span>Level
-                                        Editor Toolbar</span></a><br/>Collection of commands that provide quick access
-                                                                                                                                                                                to commonly used tools and operations.
-                            </p>
+                                        Editor Toolbar</span></a><br/>Collection of commands that provide quick access to commonly used tools and operations.</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/index.html"><span>Editor
@@ -606,57 +604,49 @@ export class PageUnrealEngineDocExpanded {
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ActorLocking/index.html"><span>Pilot
                                                 Actors in the Viewport</span></a> -A look at how to Pilot/Lock
-                Actors to the viewport camera for intuitive placement.
-                                    </p>
+                Actors to the viewport camera for intuitive placement.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/Basics/index.html"><span>Viewport
                                                 Basics</span></a><br/>Basic concepts and features of the Viewports in
-                Unreal Editor.
-                                    </p>
+                Unreal Editor.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/PIP/index.html"><span>Picture-in-Picture</span></a>
                                                                <br/>A viewport feature that creates a picture-in-picture for accurate camera
-                                                                placement.
-                                    </p>
+                                                                placement.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ShowFlags/index.html"><span>Viewport
                                                 Show Flags</span></a><br/>Descriptions of all of the available Show
-                Flags for the viewports.
-                                    </p>
+                Flags for the viewports.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ViewModes/index.html"><span>View
                                                 Modes</span></a><br/>Explanations for the available View Modes within
-                the viewports.
-                                    </p>
+                the viewports.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ViewportOptions/index.html"><span>Viewport
                                                 Options</span></a><br/>Explanations of the various options available
-                within the editor viewports.
-                                    </p>
+                within the editor viewports.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ViewportToolbar/index.html"><span>Viewport
                                                 Toolbar</span></a> -A rundown of the various tools available within
-                the viewports integrated toolbar.
-                                    </p>
+                the viewports integrated toolbar.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/UI/LevelEditor/Viewports/ViewportControls/index.html"><span>Viewport
                                                 Controls</span></a><br/>Learn about the various control schemes for
-                the editor's viewports.
-                                    </p>
+                the editor's viewports.</p>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -676,70 +666,53 @@ export class PageUnrealEngineDocExpanded {
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Levels/LevelsWindow/index.html"><span>Managing
-                                        Multiple Levels</span></a><br/>Use the Levels window to manage your persistent
-                                                                                                                                                                                level and sublevels.
+                                        Multiple Levels</span></a><br/>Use the Levels window to manage your persistent level and sublevels.
                             </p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Levels/WorldSettings/index.html"><span>World
-                                        Settings</span></a><br/>The **World Settings** tab enables you to set and
-                                                                                                                                                                                override Level-specific settings like base Game Mode and gravity.
-                            </p>
+                                        Settings</span></a><br/>The **World Settings** tab enables you to set and override Level-specific settings like base Game Mode and gravity.</p>
                                                 </li>
                                                 <li>
                                                     <p><a
                                                         href="https://docs.unrealengine.com/en-US/Engine/Levels/HowTo/ChangeDefaultLevel/index.html"><span>Change
-                                        Default Levels</span></a><br/>How to set the default editor and game Levels
-                                                                                                                                                                                for your project
-                            </p>
+                                        Default Levels</span></a><br/>How to set the default editor and game Levels for your project</p>
                                                 </li>
                                                 <li>
-                                                    <p><a
-                                                        href="https://docs.unrealengine.com/en-US/Engine/Levels/CollaborateWithSublevels/index.html"><span>Collaborate
-                                        with Sublevels</span></a><br/>You can use sublevels to collaborate with other
-                                                                                                                                                                                designers working in the same space.
-                            </p>
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Engine/Levels/CollaborateWithSublevels/index.html"><span>Collaborate
+                                        with Sublevels</span></a><br/>You can use sublevels to collaborate with other designers working in the same space.</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Levels/HowTo/Jacketing/index.html"><span>Finding
-                                        and Removing Fully Occluded Meshes</span></a><br/>Describes how you can
-                                                                                                                                                                                increase rendering performance by removing and simplifying geometry that is fully
-                                                                                                                                                                                occluded by other objects in the Level.
-                            </p>
+                                        and Removing Fully Occluded Meshes</span></a><br/>Describes how you can increase rendering performance by removing and simplifying geometry that is fully occluded by other objects in the Level.</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Levels/Variants/index.html"><span>Working
-                                        with Scene Variants</span></a><br/>The Variant Manager can help you switch
-                                                                                                                                                                                between different representations of your scene.
-                            </p>
+                                        with Scene Variants</span></a><br/>The Variant Manager can help you switch between different representations of your scene.</p>
                                                     <ul>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Levels/Variants/Overview/index.html"><span>Variant
                                                                     Manager
-                                                Overview</span></a><br/>What the Variant Manager is and how it works.
-                                    </p>
+                                                Overview</span></a><br/>What the Variant Manager is and how it works.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Levels/Variants/SwitchActor/index.html"><span>Using
                                                 the Switch Actor</span></a><br/>Use the Switch Actor to quickly toggle
-                visibility between mutually exclusive child Actors.
-                                    </p>
+                visibility between mutually exclusive child Actors.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Levels/Variants/CallingFunctions/index.html"><span>Calling
                                                 Functions on Variant Activation</span></a><br/>When you activate a
-                Variant, call a function instead of changing a property value.
-                                    </p>
+                Variant, call a function instead of changing a property value.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Levels/Variants/Scripting/index.html"><span>Scripting
                                                 the Variant Manager Setup</span></a><br/>Use Editor Scripting to set
-                up the Variant Manager with all your scene variants.
-                                    </p>
+                up the Variant Manager with all your scene variants.</p>
                                                         </li>
                                                     </ul>
                                                 </li>
@@ -747,140 +720,105 @@ export class PageUnrealEngineDocExpanded {
                                         </li>
                                         <li>
                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/index.html"><span>Actors
-                                and Geometry</span></a><br/>A definition of Actors and how they are used in level
-                                                                                                                                                                        design, including placement and manipulation techniques.
-                    </p>
+                                and Geometry</span></a><br/>A definition of Actors and how they are used in level</p>
                                             <ul>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Types/index.html"><span>Common
-                                        Actor Types</span></a><br/>Listing and descriptions of common types of Actors
-                                                                                                                                                                                used in levels.
-                            </p>
+                                        Actor Types</span></a><br/>Listing and descriptions of common types of Actors used in levels.</p>
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/3DText/index.html"><span>3D
-                                                Text</span></a><br/>Guide to placing 3D Text in Unreal Editor.
-                                    </p>
+                                                Text</span></a><br/>Guide to placing 3D Text in Unreal Editor.</p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Brushes/index.html"><span>Geometry
                                                 Brush Actors</span></a><br/>Guide to using Brushes to create level
-                geometry in Unreal Editor.
-                                    </p>
+                geometry in Unreal Editor.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/StaticMeshActor/index.html"><span>Static
                                                 Mesh Actors</span></a><br/>Guide to placing and working with
-                StaticMeshActors for creating world geometry in your environments.
-                                    </p>
+                StaticMeshActors for creating world geometry in your environments.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/SkeletalMeshActors/index.html"><span>Skeletal
                                                                     Mesh
-                                                Actors</span></a><br/>Creating and using Skeletal Mesh Actors
-                                    </p>
+                                                Actors</span></a><br/>Creating and using Skeletal Mesh Actors</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/CameraActors/index.html"><span>Camera
                                                 Actors</span></a><br/>Guide to placing and using Camera Actors within
-                the Editor.
-                                    </p>
+                the Editor.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/PlayerStart/index.html"><span>Player
-                                                Start</span></a><br/>Guide to using Player Starts.
-                                    </p>
+                                                Start</span></a><br/>Guide to using Player Starts.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/DecalActor/index.html"><span>Decal
                                                                     Actor User
-                                                Guide</span></a><br/>A guide to using the Deferred Decal actor.
-                                    </p>
+                                                Guide</span></a><br/>A guide to using the Deferred Decal actor.</p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Triggers/index.html"><span>Trigger
                                                 Actors</span></a><br/>Actor that can be activated and cause events to
-                occur in the level."
-                                    </p>
+                occur in the level.</p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Volumes/index.html"><span>Volumes
-                                                Reference</span></a><br/>Guide to placing and working with Volumes to
-                augment the behavior and setup of your levels.
-                                    </p>
+                                                Reference</span></a><br/>Guide to placing and working with Volumes to augment the behavior and setup of your levels.</p>
                                                             <ul>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Actors/Volumes/AudioVolumeDetails/index.html"><span>Audio
-                                                                            Volume
-                                                        Reference</span></a><br/>Audio Volume reference details
-                                            </p>
+                                                                            Volume Reference</span></a><br/>Audio Volume reference details</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Actors/Volumes/PainCausingVolumeDetails/index.html"><span>Pain-Causing
-                                                        Volume Reference</span></a><br/>Pain-Causing Volume reference
-                        details
-                                            </p>
+                                                        Volume Reference</span></a><br/>Pain-Causing Volume reference details</p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a
-                                                                        href="https://docs.unrealengine.com/en-US/Engine/Actors/Volumes/PhysicsVolumeDetails/index.html"><span>Physics
-                                                                            Volume
-                                                        Reference</span></a><br/>Physics Volume reference details
-                                            </p>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Volumes/PhysicsVolumeDetails/index.html"><span>Physics
+                                                                            Volume Reference</span></a><br/>Physics Volume reference details </p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Actors/TargetPoint/index.html"><span>Target
-                                                                    Point
-                                                Actors</span></a><br/>Guide to creating and using Target Actors.
-                                    </p>
+                                                                    Point Actors</span></a><br/>Guide to creating and using Target Actors.</p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Placement/index.html"><span>Placing
-                                        Actors</span></a><br/>Shows how you can place Actors such as props, lights,
-                                                                                                                                                                                cameras, etc. in your levels.
-                            </p>
+                                        Actors</span></a><br/>Shows how you can place Actors such as props, lights,</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Selection/index.html"><span>Selecting
-                                        Actors</span></a><br/>Overview of methods available for selecting Actors in
-                                                                                                                                                                                the Level Editor viewports.
-                            </p>
+                                        Actors</span></a><br/>Overview of methods available for selecting Actors in</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Transform/index.html"><span>Transforming
-                                        Actors</span></a><br/>Modifying the location, rotation, and scale of Actors
-                                                                                                                                                                                placed in levels.
-                            </p>
+                                        Actors</span></a><br/>Modifying the location, rotation, and scale of Actors</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Mobility/index.html"><span>Actor
-                                        Mobility</span></a><br/>Setting that controls whether an Actor will be allowed
-                                                                                                                                                                                to move or change in some way during gameplay.
-                            </p>
+                                        Mobility</span></a><br/>Setting that controls whether an Actor will be allowed</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Grouping/index.html"><span>Grouping
-                                        Actors</span></a><br/>Guide to creating and working with groups of actors
-                                                                                                                                                                                within Unreal Editor.
-                            </p>
+                                        Actors</span></a><br/>Guide to creating and working with groups of actors</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Actors/Merging/index.html"><span>Actor
-                                        Merging</span></a><br/>An overview of the Actor Merge tool that is used to
-                                                                                                                                                                                combine multiple Static Meshes into a single mesh inside UE4.
-                            </p>
+                                        Merging</span></a><br/>An overview of the Actor Merge tool that is used to</p>
                                                 </li>
                                             </ul>
                                         </li>
@@ -888,70 +826,49 @@ export class PageUnrealEngineDocExpanded {
                                             <p><a
                                                 href="https://docs.unrealengine.com/en-US/Engine/Components/index.html"><span>Components</span></a>
                                                <br/>A compendium of the different types of Components designed to be used as sub-objects
-                                                within an Actor.
-                    </p>
+                                                within an Actor.</p>
                                             <ul>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/AI/index.html"><span>AI
-                                        Components</span></a><br/>Components related to AI used for AI Perception and
-                                                                                                                                                                                Pawn Sensing are described.
-                            </p>
+                                        Components</span></a><br/>Components related to AI used for AI Perception and</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Audio/index.html"><span>Audio
-                                        Components</span></a><br/>An AudioComponent is used to create and control an
-                                                                                                                                                                                instance of sound.
-                            </p>
+                                        Components</span></a><br/>An AudioComponent is used to create and control an</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Camera/index.html"><span>Camera
-                                        Components</span></a><br/>Descriptions of the CameraComponent and
-                                                                                                                                                                                SpringArmComponent are provided.
-                            </p>
+                                        Components</span></a><br/>Descriptions of the CameraComponent and</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Lights/index.html"><span>Light
-                                        Components</span></a><br/>Descriptions of the different LightComponents that
-                                                                                                                                                                                can be used in Unreal Engine 4.
-                            </p>
+                                        Components</span></a><br/>Descriptions of the different LightComponents that</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Movement/index.html"><span>Movement
-                                        Components</span></a><br/>Any aspect of Movement, whether it's a Character or
-                                                                                                                                                                                a Projectile uses a Movement Component.
-                            </p>
+                                        Components</span></a><br/>Any aspect of Movement, whether it's a Character or</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Navigation/index.html"><span>Navigation
-                                        Components</span></a><br/>Allows applying selected AreaClass to navmesh, using
-                                                                                                                                                                                Volume's shape.
-                            </p>
+                                        Components</span></a><br/>Allows applying selected AreaClass to navmesh, using</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Paper2D/index.html"><span>Paper
-                                        2D Components</span></a><br/>Components used within Paper 2D such as
-                                                                                                                                                                                Flipbooks, Sprites or Tile Maps are described.
-                            </p>
+                                        2D Components</span></a><br/>Components used within Paper 2D such as</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Physics/index.html"><span>Physics
-                                        Components</span></a><br/>Components that are used with Physics are explained
-                                                                                                                                                                                including Destructible, Thruster or Force Components to name a few.
-                            </p>
+                                        Components</span></a><br/>Components that are used with Physics are explained</p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Components/Rendering/index.html"><span>Rendering
-                                        Components</span></a><br/>Several different types of Rendering based
-                                                                                                                                                                                Components are outlined, including ParticleSystemComponents, DecalComponets, and
-                                                                                                                                                                                BillboardComponents to name a few.
-                            </p>
+                                        Components</span></a><br/>Several different types of Rendering based</p>
                                                     <ul>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Components/Rendering/CableComponent/index.html"><span>Cable
                                                 Component</span></a><br/>A breakdown of the Cable
-                Component.
-                                    </p>
+                Component.</p>
                                                         </li>
                                                     </ul>
 
@@ -1002,141 +919,119 @@ export class PageUnrealEngineDocExpanded {
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/index.html"><span>Importing
-                                        Content</span></a><br/>Learn about how to import content that you've created
-                                                                                                                                                                                in other applications into your UE4 project.
-                            </p>
+                                        Content</span></a><br/>Learn about how to import content that you've created</p>
                                                     <ul>
                                                         <li>
-
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/index.html"><span>FBX
                                                 Content Pipeline</span></a><br/>Content import pipeline using the FBX
-                format for meshes, animations, materials, and textures.
-                                    </p>
+                format for meshes, animations, materials, and textures.</p>
                                                             <ul>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/Animations/index.html"><span>FBX
                                                         Animation Pipeline</span></a><br/>Setting up, exporting, and
                         importing animations for Skeletal Meshes using the FBX content
-                        pipeline.
-                                            </p>
+                        pipeline.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/AssetMetadataPipeline/index.html"><span>FBX
                                                         Asset Metadata Pipeline</span></a><br/>Describes how to get
                         custom user-defined attributes into Unreal through FBX, and how to
-                        work with them in the Unreal Editor using Blueprints and Python.
-                                            </p>
+                        work with them in the Unreal Editor using Blueprints and Python.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/BestPractices/index.html"><span>FBX
                                                         Best Practices</span></a><br/>Tips, tricks, and best practices
-                        for working with the FBX content pipeline in Unreal Engine 4.
-                                            </p>
+                        for working with the FBX content pipeline in Unreal Engine 4.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/ContentStandards/index.html"><span>External
                                                         Content Development Standards</span></a><br/>Image assets used
-                        in Materials to apply to surfaces or drawn on-screen by the HUD.
-                                            </p>
+                        in Materials to apply to surfaces or drawn on-screen by the HUD.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/FullScene/index.html"><span>Import
                                                         Into Level (FBX Scene Import)</span></a><br/>Using Import Into
-                        Level to bring full FBX scenes into Unreal Engine 4.
-                                            </p>
+                        Level to bring full FBX scenes into Unreal Engine 4.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/ImportOptions/index.html"><span>FBX
                                                         Import Options Reference</span></a><br/>Explanations of the
-                        options available in the FBX Import Options dialog.
-                                            </p>
+                        options available in the FBX Import Options dialog.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/MorphTargets/index.html"><span>FBX
                                                         Morph Target Pipeline</span></a><br/>Creating and importing
-                        Morph Targets for Skeletal Meshes using the FBX content pipeline.
-                                            </p>
+                        Morph Targets for Skeletal Meshes using the FBX content pipeline.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/QuicktimeViewer/index.html"><span>Viewing
                                                         FBX with QuickTime</span></a><br/>Guide to using the Quicktime
-                        FBX viewer to preview skeletal meshes and animations.
-                                            </p>
+                        FBX viewer to preview skeletal meshes and animations.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/SkeletalMeshes/index.html"><span>FBX
                                                         Skeletal Mesh Pipeline</span></a><br/>Setting up, exporting,
-                        and importing Skeletal Meshes using the FBX content pipeline.
-                                            </p>
+                        and importing Skeletal Meshes using the FBX content pipeline.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/StaticMeshes/index.html"><span>FBX
                                                         Static Mesh Pipeline</span></a><br/>Setting up, exporting, and
-                        importing Static Meshes using the FBX content pipeline.
-                                            </p>
+                        importing Static Meshes using the FBX content pipeline.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/index.html"><span>FBX
                                                         Import How-Tos</span></a><br/>How to import different types of
-                        content using the FBX Asset pipeline.
-                                            </p>
+                        content using the FBX Asset pipeline.</p>
                                                                     <ul>
                                                                         <li>
                                                                             <p><a href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingAnimations/index.html"
                                                                             ><span>How To
                                                                                  Import
-                                                                Animations</span></a><br/>Learn how to import
-                                animations.
-                                                    </p>
+                                                                Animations</span></a><br/>Learn how to import animations.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingLODs/index.html"><span>How
                                                                                     To
-                                                                Import Static Mesh LODs</span></a><br/>Learn how to import Static Mesh LODs.
-                                                    </p>
+                                                                Import Static Mesh LODs</span></a><br/>Learn how to import Static Mesh LODs.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingMaterials/index.html"><span>Importing
-                                                                Materials Reference</span></a><br/>Reference guide for importing materials.
-                                                    </p>
+                                                                Materials Reference</span></a><br/>Reference guide for importing materials.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingMeshes/index.html"><span>How
                                                                                     To
                                                                 Import Static Meshes</span></a><br/>Learn how to
-                                import static meshes.
-                                                    </p>
+                                import static meshes.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingSkeletalLODs/index.html"><span>How
                                                                                     To
                                                                 Import Skeletal Mesh LODs</span></a><br/>Learn how to
-                                import Skeletal Mesh LODs.
-                                                    </p>
+                                import Skeletal Mesh LODs.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/HowTo/ImportingSkeletalMeshes/index.html"><span>How
                                                                                     To
                                                                 Import Skeletal Meshes</span></a><br/>Learn how to
-                                import skeletal meshes.
-                                                    </p>
+                                import skeletal meshes.</p>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -1144,8 +1039,7 @@ export class PageUnrealEngineDocExpanded {
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/FBX/Materials/index.html"><span>FBX
                                                         Material Pipeline</span></a><br/>Guide to transferring basic
-                        materials and textures with meshes using the FBX content pipeline.
-                                            </p>
+                        materials and textures with meshes using the FBX content pipeline.</p>
                                                                 </li>
                                                             </ul>
 
@@ -1154,15 +1048,13 @@ export class PageUnrealEngineDocExpanded {
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/index.html"><span>Unreal
                                                 Datasmith</span></a><br/>Datasmith gets your design data into Unreal
-                quickly and easily.
-                                    </p>
+                quickly and easily.</p>
                                                             <ul>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/Overview/index.html"><span>Datasmith
                                                         Overview</span></a><br/>An overview of how Datasmith works,
-                        and what you should expect when you use it.
-                                            </p>
+                        and what you should expect when you use it.</p>
                                                                     <ul>
                                                                         <li>
                                                                             <p><a
@@ -1170,8 +1062,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 the Datasmith Import Process</span></a><br/>Contains
                                 details about specific issues in the way Datasmith imports
                                 scenes into Unreal, and next steps you can follow to work
-                                with the imported Assets in Unreal.
-                                                    </p>
+                                with the imported Assets in Unreal.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1179,8 +1070,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 the Datasmith Reimport Workflow</span></a> -
                                 Describes what happens when you reimport content that you
                                 brought into Unreal using Datasmith, and how you can take
-                                advantage of this iterative workflow.
-                                                    </p>
+                                advantage of this iterative workflow.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1188,8 +1078,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 the Datasmith Import Process</span></a><br/>Describes
                                 how to import Datasmith and CAD files using Blueprint or
                                 Python, and how to change the way your scene is transformed
-                                into Unreal Assets and Actors.
-                                                    </p>
+                                into Unreal Assets and Actors.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1197,8 +1086,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith Metadata</span></a><br/>Describes how you
                                 can get custom metadata about your Assets into Unreal, and
                                 how you can use Blueprint and Python scripting to work with
-                                that metadata both in the Editor and at runtime.
-                                                    </p>
+                                that metadata both in the Editor and at runtime.</p>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -1207,8 +1095,7 @@ export class PageUnrealEngineDocExpanded {
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/index.html"><span>Datasmith
                                                         Software Interop Guides</span></a><br/>Guides that describe
                         special considerations that you should know about when you use
-                        Datasmith to import content from different source applications.
-                                            </p>
+                        Datasmith to import content from different source applications.</p>
                                                                     <ul>
                                                                         <li>
                                                                             <p><a
@@ -1216,8 +1103,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith with 3ds Max</span></a><br/>Describes
                                 special considerations that apply only when you use
                                 Datasmith to bring scenes from Autodesk 3ds Max into the
-                                Unreal Editor.
-                                                    </p>
+                                Unreal Editor.</p>
                                                                             <ul>
                                                                                 <li>
                                                                                     <p><a
@@ -1225,8 +1111,7 @@ export class PageUnrealEngineDocExpanded {
                                                                                             the Datasmith Exporter Plugin for 3ds
                                                                         Max</span></a><br/>Describes how to install
                                         and uninstall the Datasmith Exporter plugin for 3ds
-                                        Max.
-                                                            </p>
+                                        Max.</p>
                                                                                 </li>
                                                                                 <li>
                                                                                     <p><a
@@ -1234,8 +1119,7 @@ export class PageUnrealEngineDocExpanded {
                                                                         Datasmith Content from 3ds Max</span></a> -
                                         Describes how to export a 3ds Max scene to a
                                         Datasmith file that you can import into Unreal
-                                        Engine.
-                                                            </p>
+                                        Engine.</p>
                                                                                 </li>
                                                                                 <li>
                                                                                     <p><a
@@ -1243,8 +1127,7 @@ export class PageUnrealEngineDocExpanded {
                                                                                             the Datasmith Export with
                                                                         MAXScript</span></a><br/>Describes the
                                         MAXScript interface exposed by Datasmith, and how to
-                                        use it to export your 3ds Max scene.
-                                                            </p>
+                                        use it to export your 3ds Max scene.</p>
                                                                                 </li>
                                                                                 <li>
                                                                                     <p><a
@@ -1252,8 +1135,7 @@ export class PageUnrealEngineDocExpanded {
                                                                         Conversion Settings</span></a><br/>Describes
                                         how to use the Datasmith Attributes Modifier in 3ds
                                         Max to specify selected conversion options for
-                                        specific objects in your 3ds Max scene.
-                                                            </p>
+                                        specific objects in your 3ds Max scene.</p>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -1263,8 +1145,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith with SketchUp Pro</span></a><br/>Describes
                                 special considerations that apply only when you use
                                 Datasmith to bring scenes from Trimble SketchUp Pro into the
-                                Unreal Editor.
-                                                    </p>
+                                Unreal Editor.</p>
                                                                             <ul>
                                                                                 <li>
                                                                                     <p><a
@@ -1272,8 +1153,7 @@ export class PageUnrealEngineDocExpanded {
                                                                                             the Datasmith Exporter Plugin for SketchUp
                                                                         Pro</span></a><br/>Describes how to install
                                         and uninstall the Datasmith Exporter plugin for
-                                        SketchUp Pro.
-                                                            </p>
+                                        SketchUp Pro.</p>
                                                                                 </li>
                                                                                 <li>
 
@@ -1292,24 +1172,21 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith with Cinema 4D</span></a><br/>Describes
                                 special considerations that apply only when you use
                                 Datasmith to bring scenes from Maxon Cinema 4D into the
-                                Unreal Editor.
-                                                    </p>
+                                Unreal Editor.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/Revit/index.html"><span>Using
                                                                 Datasmith with Revit</span></a><br/>Describes special
                                 considerations that apply only when you use Datasmith to
-                                bring scenes from Autodesk Revit into the Unreal Editor.
-                                                    </p>
+                                bring scenes from Autodesk Revit into the Unreal Editor.</p>
                                                                             <ul>
                                                                                 <li>
                                                                                     <p><a
                                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/Revit/InstallingExporterPlugin/index.html"><span>Installing
                                                                                             the Datasmith Exporter Plugin for
                                                                         Revit</span></a><br/>Describes how to install
-                                        the Datasmith Exporter plugin for Revit.
-                                                            </p>
+                                        the Datasmith Exporter plugin for Revit.</p>
                                                                                 </li>
                                                                                 <li>
                                                                                     <p><a
@@ -1317,8 +1194,7 @@ export class PageUnrealEngineDocExpanded {
                                                                         Datasmith Content from Revit</span></a> -
                                         Describes how to export a Revit scene into a
                                         Datasmith file that you can then import into the
-                                        Unreal Editor.
-                                                            </p>
+                                        Unreal Editor.</p>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -1327,16 +1203,14 @@ export class PageUnrealEngineDocExpanded {
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/CAD/index.html"><span>Using
                                                                 Datasmith with CAD File Formats</span></a> -
                                 Describes special considerations that apply when you use
-                                Datasmith to import content from CAD file formats.
-                                                    </p>
+                                Datasmith to import content from CAD file formats.</p>
                                                                             <ul>
                                                                                 <li>
                                                                                     <p><a
                                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/CAD/Retessellation/index.html"><span>Retessellating
                                                                         CAD Geometry</span></a><br/>How to change
                                         tessellation settings for individual Static Mesh
-                                        Assets imported by Datasmith from CAD files.
-                                                            </p>
+                                        Assets imported by Datasmith from CAD files.</p>
                                                                                 </li>
                                                                             </ul>
                                                                         </li>
@@ -1346,16 +1220,14 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith with IFC Files</span></a><br/>Describes
                                 special considerations that apply only when you use
                                 Datasmith to bring scenes from IFC files into the Unreal
-                                Editor.
-                                                    </p>
+                                Editor.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SoftwareInteropGuides/Rhino/index.html"><span>Using
                                                                 Datasmith with Rhino</span></a><br/>Describes special
                                 considerations that apply when you use Datasmith to import
-                                scenes from McNeel Rhinoceros 3D.
-                                                    </p>
+                                scenes from McNeel Rhinoceros 3D.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1363,8 +1235,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith with Deltagen and VRED</span></a> -
                                 Describes special considerations that apply when you use
                                 Datasmith to import scenes from 3DExcite Deltagen or
-                                Autodesk VRED.
-                                                    </p>
+                                Autodesk VRED.</p>
                                                                             <ul>
                                                                                 <li>
                                                                                     <p><a
@@ -1384,16 +1255,14 @@ export class PageUnrealEngineDocExpanded {
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/HowTo/index.html"><span>Datasmith
                                                         How-Tos</span></a><br/>How to carry out tasks in the Datasmith
-                        workflow.
-                                            </p>
+                        workflow.</p>
                                                                     <ul>
                                                                         <li>
                                                                             <p><a
                                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/HowTo/ModifyDSParentMaterial/index.html"><span>Modifying
                                                                 a Datasmith Master Material</span></a><br/>Describes
                                 what to do if you need to modify the Material graph for any
-                                Material Instance created by Datasmith.
-                                                    </p>
+                                Material Instance created by Datasmith.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1401,8 +1270,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith Content into Unreal Engine 4</span></a> -
                                 Detailed instructions on how to use Datasmith to bring files
                                 that you've created in supported 3D design applications into
-                                Unreal.
-                                                    </p>
+                                Unreal.</p>
                                                                         </li>
                                                                         <li>
                                                                             <p><a
@@ -1410,8 +1278,7 @@ export class PageUnrealEngineDocExpanded {
                                                                 Datasmith Content</span></a><br/>Detailed instructions
                                 on the various ways you can update Datasmith content that
                                 you've already imported into Unreal to pick up changes in
-                                the source material.
-                                                    </p>
+                                the source material.</p>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
@@ -1420,53 +1287,40 @@ export class PageUnrealEngineDocExpanded {
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/SupportedSoftwareAndFileTypes/index.html"><span>Datasmith
                                                         Supported Software and File Types</span></a><br/>Details all
                         the third-party software applications and data formats that
-                        Datasmith works with.
-                                            </p>
+                        Datasmith works with.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/ImportOptions/index.html"><span>Datasmith
                                                         Import Options</span></a><br/>Describes all the options you
-                        can set when you use Datasmith to import content into Unreal.
-                                            </p>
+                        can set when you use Datasmith to import content into Unreal.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/Datasmith/Platforms/index.html"><span>Datasmith-Supported
-                                                        Platforms</span></a><br/>Details what Datasmith features work
-                        on which different platforms.
-                                            </p>
+                                                        Platforms</span></a><br/>Details what Datasmith features work on which different platforms.</p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/AlembicImporter/index.html"><span>Alembic
-                                                File Importer</span></a><br/>Describes the Alembic File import process
-                along with import options.
-                                    </p>
+                                                File Importer</span></a><br/>Describes the Alembic File import process along with import options.</p>
                                                         </li>
                                                         <li>
                                                             <p><a
                                                                 href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/HowTo/index.html"><span>How
-                                                                    To Import
-                                                Content</span></a><br/>Learn how to import content to your UE4
-                project.
-                                    </p>
+                                                                    To Import Content</span></a><br/>Learn how to import content to your UE4 project.</p>
                                                             <ul>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/HowTo/EXRGuidelines/index.html"><span>Importing
-                                                        and Optimizing EXR Files</span></a><br/>Reference guide for
-                        optimizing EXR files in UE4.
-                                            </p>
+                                                        and Optimizing EXR Files</span></a><br/>Reference guide for optimizing EXR files in UE4.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
                                                                         href="https://docs.unrealengine.com/en-US/Engine/Content/Importing/HowTo/ContentBrowserImport/index.html"><span>How
-                                                        To Import Using the Import Button</span></a><br/>Learn how to
-                        add content using the Content Browser's Import function.
-                                            </p>
+                                                        To Import Using the Import Button</span></a><br/>Learn how to add content using the Content Browser's Import function.</p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a
@@ -7933,203 +7787,143 @@ export class PageUnrealEngineDocExpanded {
                                                             <ul>
                                                                 <li>
                                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/1/index.html"
-                                                                    ><span>1.1
-                                                       <br/>Setting up your Project</span></a><br />Learn how to set up your First Person Shooter project.
+                                                                    ><span>1.1 - Setting up your Project</span></a><br />Learn how to set up your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/2/index.html"
-                                                                    ><span>1.2
-                                                       <br/>Opening the Project in Visual Studio</span></a><br />Learn how to open your C++ project in Visual Studio.
+                                                                    ><span>1.2 - Opening the Project in Visual Studio</span></a><br />Learn how to open your C++ project in Visual Studio.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/3/index.html"
-                                                                    ><span>1.3 -
-                                                        Adding Log Messaging</span></a><br />Learn how to add log messaging to your game.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/3/index.html"><span>1.3 - Adding Log Messaging</span></a><br />Learn how to add log messaging to your game.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/4/index.html"
-                                                                    ><span>1.4 -
-                                                        Compiling the Project</span></a><br />Learn how to compile your first C++ class.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/4/index.html"><span>1.4 - Compiling the Project</span></a><br />Learn how to compile your first C++ class.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/5/index.html"
-                                                                    ><span>1.5
-                                                       <br/>Setting the Default Game Mode</span></a><br />Learn how to set the default game mode for your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/1/5/index.html"><span>1.5 - Setting the Default Game Mode</span></a><br />Learn how to set the default game mode for your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/index.html"
-                                                            ><span>2 -
-                                                Implementing your Character</span></a><br />How to implement your First Person Shooter character.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/index.html"><span>2 - Implementing your Character</span></a><br />How to implement your First Person Shooter character.
                                                             </p>
                                                             <ul>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/1/index.html"
-                                                                    ><span>2.1
-                                                       <br/>Making a New Character</span></a><br />Learn how to make a new character for your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/1/index.html"><span>2.1 - Making a New Character</span></a><br />Learn how to make a new character for your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/2/index.html"
-                                                                    ><span>2.2
-                                                       <br/>Setting up Axis Mapping</span></a><br />Learn how to set-up axis mapping for your First Person Shooter character.
+                                                                    ><span>2.2 - Setting up Axis Mapping</span></a><br />Learn how to set-up axis mapping for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/3/index.html"
-                                                                    ><span>2.3
-                                                       <br/>Implementing Character Movement Functions</span></a><br />Learn how to implement movement functions for your First Person Shooter character.
+                                                                    ><span>2.3 - Implementing Character Movement Functions</span></a><br />Learn how to implement movement functions for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/4/index.html"
-                                                                    ><span>2.4
-                                                       <br/>Implementing Mouse Camera Control</span></a><br />Learn how to implement mouse camera control for your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/4/index.html"><span>2.4 - Implementing Mouse Camera Control</span></a><br />Learn how to implement mouse camera control for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
                                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/5/index.html"
-                                                                    ><span>2.5
-                                                       <br/>Implementing Character Jumping</span></a><br />Learn how to implement jumping for your First Person Shooter character.
+                                                                    ><span>2.5 - Implementing Character Jumping</span></a><br />Learn how to implement jumping for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/6/index.html"
-                                                                    ><span>2.6
-                                                       <br/>Adding a Mesh to your Character</span></a><br />Learn how to add a mesh to your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/6/index.html"><span>2.6 - Adding a Mesh to your Character</span></a><br />Learn how to add a mesh to your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/7/index.html"
-                                                                    ><span>2.7
-                                                       <br/>Changing the Camera View</span></a><br />Learn how to change the camera view for your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/7/index.html"><span>2.7 - Changing the Camera View</span></a><br />Learn how to change the camera view for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/8/index.html"
-                                                                    ><span>2.8
-                                                       <br/>Add a First Person Mesh to your Character</span></a><br />Learn how to add a first person mesh to your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/2/8/index.html"><span>2.8 - Add a First Person Mesh to your Character</span></a><br />Learn how to add a first person mesh to your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/index.html"
-                                                            ><span>3
-                                               <br/>Implementing Projectiles</span></a><br />How to implement projectiles for your First Person Shooter game.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/index.html"><span>3 - Implementing Projectiles</span></a><br />How to implement projectiles for your First Person Shooter game.
                                                             </p>
                                                             <ul>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/1/index.html"
-                                                                    ><span>3.1
-                                                       <br/>Adding Projectiles to your Game</span></a><br />Learn how to add projectiles to your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/1/index.html"><span>3.1 - Adding Projectiles to your Game</span></a><br />Learn how to add projectiles to your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/2/index.html"
-                                                                    ><span>3.2
-                                                       <br/>Implementing Shooting</span></a><br />Learn how to shooting for your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/2/index.html"><span>3.2 - Implementing Shooting</span></a><br />Learn how to shooting for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/3/index.html"
-                                                                    ><span>3.3
-                                                       <br/>Setting up Projectile Collision and Lifetime</span></a><br />Learn how to set up collision and lifetime for your First Person Shooter projectiles.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/3/index.html"><span>3.3 - Setting up Projectile Collision and Lifetime</span></a><br />Learn how to set up collision and lifetime for your First Person Shooter projectiles.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/4/index.html"
-                                                                    ><span>3.4
-                                                       <br/>Getting Projectiles to Interact with the World</span></a><br />Learn how to get projectiles to interact with the world for your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/4/index.html"><span>3.4 - Getting Projectiles to Interact with the World</span></a><br />Learn how to get projectiles to interact with the world for your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/5/index.html"
-                                                                    ><span>3.5
-                                                       <br/>Adding Crosshairs to your Viewport</span></a><br />Learn how to add crosshairs to the viewport for your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/3/5/index.html"><span>3.5 - Adding Crosshairs to your Viewport</span></a><br />Learn how to add crosshairs to the viewport for your First Person Shooter project.
                                                                     </p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/index.html"
-                                                            ><span>4
-                                               <br/>Adding Character Animation</span></a><br />How to add animations to your First Person Shooter character.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/index.html"><span>4 - Adding Character Animation</span></a><br />How to add animations to your First Person Shooter character.
                                                             </p>
                                                             <ul>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/1/index.html"
-                                                                    ><span>4.1
-                                                       <br/>Animating your Character</span></a><br />Learn how to animate your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/1/index.html"><span>4.1 - Animating your Character</span></a><br />Learn how to animate your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/2/index.html"
-                                                                    ><span>4.2
-                                                       <br/>Setting up your Event Graph</span></a><br />Learn how to set-up an Event Graph for your First Person Shooter character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/2/index.html"><span>4.2 - Setting up your Event Graph</span></a><br />Learn how to set-up an Event Graph for your First Person Shooter character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/3/index.html"
-                                                                    ><span>4.3
-                                                       <br/>Adding an Animation State Machine</span></a><br />Learn how to add an animation state machine for your First Person character.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/3/index.html"><span>4.3 - Adding an Animation State Machine</span></a><br />Learn how to add an animation state machine for your First Person character.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/index.html"
-                                                                    ><span>4.4
-                                                       <br/>Adding Animation Transition States</span></a><br />How to add animation transition states to your First Person Shooter project.
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/index.html"><span>4.4 - Adding Animation Transition States</span></a><br />How to add animation transition states to your First Person Shooter project.
                                                                     </p>
                                                                     <ul>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/1/index.html"
-                                                                            ><span>4.4.1
-                                                               <br/>Add Idle to/from Run Transitions</span></a><br />Learn how to add idle to/from run state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/1/index.html"><span>4.4.1 - Add Idle to/from Run Transitions</span></a><br />Learn how to add idle to/from run state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/2/index.html"
-                                                                            ><span>4.4.2
-                                                               <br/>Add Idle to Jump Start Transition</span></a><br />Learn how to add idle to jump start state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/2/index.html"><span>4.4.2 - Add Idle to Jump Start Transition</span></a><br />Learn how to add idle to jump start state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/3/index.html"
-                                                                            ><span>4.4.3
-                                                               <br/>Add Run to Jump Start Transition</span></a><br />Learn how to add run to jump start state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/3/index.html"><span>4.4.3 - Add Run to Jump Start Transition</span></a><br />Learn how to add run to jump start state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/4/index.html"
-                                                                            ><span>4.4.4
-                                                               <br/>Add Jump Start to Jump Loop Transition</span></a><br />Learn how to add jump start to jump loop state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/4/index.html"><span>4.4.4 - Add Jump Start to Jump Loop Transition</span></a><br />Learn how to add jump start to jump loop state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/5/index.html"
-                                                                            ><span>4.4.5
-                                                               <br/>Add Jump Loop to Jump End Transition</span></a><br />Learn how to add jump loop to jump end state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/5/index.html"><span>4.4.5 - Add Jump Loop to Jump End Transition</span></a><br />Learn how to add jump loop to jump end state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                         <li>
-                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/6/index.html"
-                                                                            ><span>4.4.6
-                                                               <br/>Add Jump End to Idle Transition</span></a><br />Learn how to add jump end to idle state transitions your First Person Shooter character's animation state machine.
+                                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/4/6/index.html"><span>4.4.6 - Add Jump End to Idle Transition</span></a><br />Learn how to add jump end to idle state transitions your First Person Shooter character's animation state machine.
                                                                             </p>
                                                                         </li>
                                                                     </ul>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/5/index.html"
-                                                                    ><span>4.5
-                                                       <br/>Associating Animation &amp; Character Blueprints</span></a><br />Learn how to associate the Animation Blueprint with the Character Blueprint for your First Person Shooter project.
-                                                                    </p>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/FirstPersonShooter/4/5/index.html"><span>4.5 - Associating Animation &amp; Character Blueprints</span></a><br />Learn how to associate the Animation Blueprint with the Character Blueprint for your First Person Shooter project.</p>
                                                                 </li>
                                                             </ul>
                                                         </li>
@@ -8143,27 +7937,21 @@ export class PageUnrealEngineDocExpanded {
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/PlayerInput/index.html"
-                                                    ><span>Player Input and
-                                        Pawns</span></a><br />React to player input by extending the Pawn class.
+                                                    ><span>Player Input and Pawns</span></a><br />React to player input by extending the Pawn class.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/UMG/index.html"><span>User Interface With
-                                        UMG</span></a><br />Create a simple menu system using UMG.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/UMG/index.html"><span>User Interface With UMG</span></a><br />Create a simple menu system using UMG.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/VariablesTimersEvents/index.html"
-                                                    ><span>Variables,
-                                        Timers, and Events</span></a><br />Expose variables and functions to the editor, use timers, and override C++ functions with Blueprints.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Tutorials/VariablesTimersEvents/index.html"><span>Variables, Timers, and Events</span></a><br />Expose variables and functions to the editor, use timers, and override C++ functions with Blueprints.
                                                     </p>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/index.html"
-                                            ><span>Gameplay
-                                Architecture</span></a><br />Reference for creating and implementing gameplay classes.
+                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/index.html"><span>Gameplay Architecture</span></a><br />Reference for creating and implementing gameplay classes.
                                             </p>
                                             <ul>
                                                 <li>
@@ -8173,80 +7961,64 @@ export class PageUnrealEngineDocExpanded {
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Classes/index.html"
-                                                    ><span>Gameplay
-                                        Classes</span></a><br />Reference to creating and implementing gameplay classes.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Classes/index.html"><span>Gameplay Classes</span></a><br />Reference to creating and implementing gameplay classes.
                                                     </p>
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Classes/Specifiers/index.html"
-                                                            ><span>Class
-                                                Specifiers</span></a><br />Keywords used when declaring UClasses to specify how the class behaves with various aspects of the Engine and Editor.
+                                                            ><span>Class Specifiers</span></a><br />Keywords used when declaring UClasses to specify how the class behaves with various aspects of the Engine and Editor.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Functions/index.html"
-                                                    ><span>UFunctions</span></a><br />Reference to creating and implementing functions for gameplay classes.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Functions/index.html"><span>UFunctions</span></a><br />Reference to creating and implementing functions for gameplay classes.
                                                     </p>
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Functions/Specifiers/index.html"
-                                                            ><span>Function
-                                                Specifiers</span></a><br />Keywords used when declaring UFunctions to specify how the function behaves with various aspects of the Engine and Editor.
+                                                            ><span>Function Specifiers</span></a><br />Keywords used when declaring UFunctions to specify how the function behaves with various aspects of the Engine and Editor.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Metadata/index.html"
-                                                    ><span>Metadata
-                                        Specifiers</span></a><br />Metadata keywords used when declaring UClasses, UFunctions, UProperties, UEnums, and UInterfaces to specify how they behave with various aspects of the Engine and Editor.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Metadata/index.html"><span>Metadata Specifiers</span></a><br />Metadata keywords used when declaring UClasses, UFunctions, UProperties, UEnums, and UInterfaces to specify how they behave with various aspects of the Engine and Editor.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Properties/index.html"
-                                                    ><span>Properties</span></a><br />Reference for creating and implementing properties for gameplay classes.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Properties/index.html"><span>Properties</span></a><br />Reference for creating and implementing properties for gameplay classes.
                                                     </p>
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Properties/Specifiers/index.html"
-                                                            ><span>Property
-                                                Specifiers</span></a><br />Keywords used when declaring UProperties to specify how the property behaves with various aspects of the Engine and Editor.
+                                                            ><span>Property Specifiers</span></a><br />Keywords used when declaring UProperties to specify how the property behaves with various aspects of the Engine and Editor.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/index.html"
-                                                    ><span>Structs</span></a><br />Reference to creating and implementing structs for gameplay classes.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/index.html"><span>Structs</span></a><br />Reference to creating and implementing structs for gameplay classes.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/index.html"
-                                                            ><span>Struct
-                                                Specifiers</span></a><br />Keywords used when declaring gameplay structs to specify how the struct behaves with various aspects of the engine and editor.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/index.html"><span>Struct Specifiers</span></a><br />Keywords used when declaring gameplay structs to specify how the struct behaves with various aspects of the engine and editor.
                                                             </p>
                                                             <ul>
                                                                 <li>
-                                                                    <p><a
-                                                                        href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/Atomic/index.html"><span>Atomic</span></a>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/Atomic/index.html"><span>Atomic</span></a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a
-                                                                        href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/BlueprintType/index.html"><span>BlueprintType</span></a>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/BlueprintType/index.html"><span>BlueprintType</span></a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a
-                                                                        href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/Immutable/index.html"><span>Immutable</span></a>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/Immutable/index.html"><span>Immutable</span></a>
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a
-                                                                        href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/NoExport/index.html"><span>NoExport</span></a>
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Structs/Specifiers/NoExport/index.html"><span>NoExport</span></a>
                                                                     </p>
                                                                 </li>
                                                             </ul>
@@ -8254,187 +8026,154 @@ export class PageUnrealEngineDocExpanded {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Interfaces/index.html"
-                                                    ><span>Interfaces</span></a><br />Reference to creating and implementing interfaces.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Reference/Interfaces/index.html"><span>Interfaces</span></a><br />Reference to creating and implementing interfaces.
                                                     </p>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Plugins/index.html"
-                                            ><span>Plugins</span></a><br />How to create Unreal Engine plugins.
+                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Plugins/index.html"><span>Plugins</span></a><br />How to create Unreal Engine plugins.
                                             </p>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/index.html"
-                                            ><span>Deploying the
+                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/index.html"><span>Deploying the
                                 Engine</span></a><br />Learn what it takes to to deploy UE4 to a team.
                                             </p>
                                             <ul>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/index.html"
-                                                    ><span>UnrealGameSync
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/index.html"><span>UnrealGameSync
                                         (UGS)</span></a><br />An overview of UnrealGameSync (UGS), an internal tool used by developers to sync their Workspace with a project's stream.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/QuickStart/index.html"
-                                                            ><span>UGS Quick
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/QuickStart/index.html"><span>UGS Quick
                                                 Start</span></a><br />Learn how to get started using UnrealGameSync.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/Reference/index.html"
-                                                            ><span>UGS
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UnrealGameSync/Reference/index.html"><span>UGS
                                                 Reference</span></a><br />This page describes how to configure UGS for deployment as a studio.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UsinganInstalledBuild/index.html"
-                                                    ><span>Using
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/UsinganInstalledBuild/index.html"><span>Using
                                         an Installed Build</span></a><br />This page describes the Installed Build process, including an overview of how to write Installed Build scripts.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/SubmitBinariestoPerforce/index.html"
-                                                    ><span>Submitting
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Deployment/SubmitBinariestoPerforce/index.html"><span>Submitting
                                         Binaries to Perforce</span></a><br />This page describes how users can submit binaries to Perforce.
                                                     </p>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/index.html"
-                                            ><span>Online
+                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/index.html"><span>Online
                                 Subsystem</span></a><br />Overview of the various systems related to the online platform.
                                             </p>
                                             <ul>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/SessionInterface/index.html"
-                                                    ><span>Session
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/SessionInterface/index.html"><span>Session
                                         Interface</span></a><br />System for setting up advertisement of matches and handling matchmaking of players
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/Types/index.html"
-                                                    ><span>Online
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/Types/index.html"><span>Online
                                         Subsystem Types</span></a><br />Description of the major types defined in the online subsystem
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/OnlineUserInterface/index.html"
-                                                    ><span>Online User
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/OnlineUserInterface/index.html"><span>Online User
                                         Interface</span></a><br />Overview of the Online User Interface.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/AchievementsInterface/index.html"
-                                                    ><span>Achievements
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/AchievementsInterface/index.html"><span>Achievements
                                         Interface</span></a><br />Overview of the achievements interface
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/ExternalUIInterface/index.html"
-                                                    ><span>External UI Interface</span></a><br />Overview of the external UI interface
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/ExternalUIInterface/index.html"><span>External UI Interface</span></a><br />Overview of the external UI interface
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/FriendsInterface/index.html"
-                                                    ><span>Friends Interface</span></a><br />Overview of the friend interface
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/FriendsInterface/index.html"><span>Friends Interface</span></a><br />Overview of the friend interface
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/IdentityInterface/index.html"
-                                                    ><span>Identity
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/IdentityInterface/index.html"><span>Identity
                                         Interface</span></a><br />Online subsystems for managing player identity.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/LeaderboardInterface/index.html"
-                                                    ><span>Leaderboard
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/LeaderboardInterface/index.html"><span>Leaderboard
                                         Interface</span></a><br />Online subsystems for reading and updating leaderboards.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/PresenceInterface/index.html"
-                                                    ><span>Presence Interface</span></a><br />Overview of the presence interface.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/PresenceInterface/index.html"><span>Presence Interface</span></a><br />Overview of the presence interface.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/PurchaseInterface/index.html"
-                                                    ><span>Purchase
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/PurchaseInterface/index.html"><span>Purchase
                                         Interface</span></a><br />Online subsystems for executing in-game purchases.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/Steam/index.html"
-                                                    ><span>Online
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/Steam/index.html"><span>Online
                                         Subsystem Steam</span></a><br />An overview of Online Subsystem Steam, including how to set up your project for distribution on Valve's Steam platform.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/StoreInterface/index.html"
-                                                    ><span>Store
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/Online/StoreInterface/index.html"><span>Store
                                         Interface</span></a><br />Online subsystems for describing and filtering offers for in-game purchases.
                                                     </p>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/index.html"
-                                            ><span>Unreal
+                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/index.html"><span>Unreal
                                 Architecture</span></a><br />Explanations of the basic gameplay elements, Actors and Objects.
                                             </p>
                                             <ul>
                                                 <li>
-
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/index.html"
-                                                    ><span>Actors</span></a><br />Explanations of the basic gameplay elements, Actors and Objects.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/index.html"><span>Actors</span></a><br />Explanations of the basic gameplay elements, Actors and Objects.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle/index.html"
-                                                            ><span>Actor
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/ActorLifecycle/index.html"><span>Actor
                                                 Lifecycle</span></a><br />What actually happens when an Actor is loaded or spawned, and eventually dies.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Spawning/index.html"
-                                                            ><span>Spawning
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Spawning/index.html"><span>Spawning
                                                 Actors</span></a><br />Methods of creating new instances of Actors in gameplay code.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Ticking/index.html"
-                                                            ><span>Actor
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Ticking/index.html"><span>Actor
                                                 Ticking</span></a><br />Explanation of the ticking system used to update Actors each frame.
                                                             </p>
                                                         </li>
                                                         <li>
-
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Components/index.html"
-                                                            ><span>Components</span></a><br />Explanation of Components and descriptions of the various types available.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Actors/Components/index.html"><span>Components</span></a><br />Explanation of Components and descriptions of the various types available.
                                                             </p>
                                                         </li>
                                                     </ul>
-
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates/index.html"
-                                                    ><span>Delegates</span></a><br />Data types that reference and execute member functions on C++ objects.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates/index.html"><span>Delegates</span></a><br />Data types that reference and execute member functions on C++ objects.
                                                     </p>
                                                     <ul>
                                                         <li>
-
                                                             <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates/Dynamic/index.html"
                                                             ><span>Dynamic
                                                 Delegates</span></a><br />Delegates that can be serialized and support reflection.
                                                             </p>
                                                         </li>
                                                         <li>
-
                                                             <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Delegates/Events/index.html"
                                                             ><span>Events</span></a><br />Delegates that can be bound to multiple functions and execute them all at once.
                                                             </p>
@@ -8448,14 +8187,12 @@ export class PageUnrealEngineDocExpanded {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/index.html"
-                                                    ><span>String
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/index.html"><span>String
                                         Handling</span></a><br />An overview of the string classes available in UE4 and reference guides for FName, FText, and FString.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/CharacterEncoding/index.html"
-                                                            ><span>Character
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/CharacterEncoding/index.html"><span>Character
                                                 Encoding</span></a><br />Overview of character encodings used in Unreal Engine.
                                                             </p>
                                                         </li>
@@ -8465,13 +8202,11 @@ export class PageUnrealEngineDocExpanded {
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a
-                                                                href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/FString/index.html"><span>FString</span></a>
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/FString/index.html"><span>FString</span></a>
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/FText/index.html"
-                                                            ><span>FText</span></a><br />Product documentation including reference and guides for Unreal Engine 4
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/StringHandling/FText/index.html"><span>FText</span></a><br />Product documentation including reference and guides for Unreal Engine 4
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -8483,41 +8218,34 @@ export class PageUnrealEngineDocExpanded {
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Timers/index.html"
-                                                    ><span>Gameplay
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Timers/index.html"><span>Gameplay
                                         Timers</span></a><br />Timer construct for performing actions at set intervals.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TMap/index.html"
-                                                    ><span>TMap</span></a><br />TMaps are primarily defined by two types — a key type and a value type — which are stored as associated pairs in the map.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TMap/index.html"><span>TMap</span></a><br />TMaps are primarily defined by two types — a key type and a value type — which are stored as associated pairs in the map.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSet/index.html"
-                                                    ><span>TSet</span></a><br />TSets are a fast container class to store (usually) unique elements in a context where the order is irrelevant.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSet/index.html"><span>TSet</span></a><br />TSets are a fast container class to store (usually) unique elements in a context where the order is irrelevant.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a
-                                                        href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html"><span>TSubclassOf</span></a>
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/TSubclassOf/index.html"><span>TSubclassOf</span></a>
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Objects/Optimizations/index.html"
-                                                    ><span>Unreal Object
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/Objects/Optimizations/index.html"><span>Unreal Object
                                         Handling</span></a><br />Overview of the features of the UObject system.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/SmartPointerLibrary/index.html"
-                                                    ><span>Unreal
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/SmartPointerLibrary/index.html"><span>Unreal
                                         Smart Pointer Library</span></a><br />Custom implementation of shared pointers, including weak pointers and non-nullable shared references.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/SmartPointerLibrary/SharedPointer/index.html"
-                                                            ><span>Shared
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Programming/UnrealArchitecture/SmartPointerLibrary/SharedPointer/index.html"><span>Shared
                                                 Pointers</span></a><br />Smart pointers that support shared ownership, automatic invalidation, weak references, and more.
                                                             </p>
                                                         </li>
@@ -9977,174 +9705,140 @@ export class PageUnrealEngineDocExpanded {
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Hello World</span></a><br />An overview of the Blueprints example level, example 1.1: Hello World
+                                                            ><span>1.1 - Hello World</span></a><br />An overview of the Blueprints example level, example 1.1: Hello World
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Components</span></a><br />An overview of the Blueprints example level, example 1.2: Components
+                                                            ><span>1.2 - Components</span></a><br />An overview of the Blueprints example level, example 1.2: Components
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Variables</span></a><br />An overview of the Blueprints example level, example 1.3: Variables
+                                                            ><span>1.3 - Variables</span></a><br />An overview of the Blueprints example level, example 1.3: Variables
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>ConstructionScript</span></a><br />An overview of the Blueprints example level, example 1.4: ConstructionScript
+                                                            ><span>1.4 - ConstructionScript</span></a><br />An overview of the Blueprints example level, example 1.4: ConstructionScript
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Event Graph</span></a><br />An overview of the Blueprints example level, example 1.5: Event Graph
+                                                            ><span>1.5 - Event Graph</span></a><br />An overview of the Blueprints example level, example 1.5: Event Graph
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Simple Math</span></a><br />An overview of the Blueprints example level, example 1.6: Simple Math
+                                                            ><span>1.6 - Simple Math</span></a><br />An overview of the Blueprints example level, example 1.6: Simple Math
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Blueprints/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Flow Control</span></a><br />An overview of the Blueprints example level, example 1.7: Flow Control
+                                                            ><span>1.7 - Flow Control</span></a><br />An overview of the Blueprints example level, example 1.7: Flow Control
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Brushes/index.html"
-                                                    ><span>Geometry
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Brushes/index.html"><span>Geometry
                                         Editing Content Examples</span></a><br />An overview of the Geometry Editing Content Example map.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Cloth/index.html"
-                                                    ><span>Cloth
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Cloth/index.html"><span>Cloth
                                         Content Examples</span></a><br />Overview of the samples provided in the Cloth Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/index.html"
-                                                    ><span>Decals</span></a><br />An overview of the Decals example level
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/index.html"><span>Decals</span></a><br />An overview of the Decals example level
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_1/index.html"
-                                                            ><span>1.1
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_1/index.html"><span>1.1
                                                <br/>Basic Decal</span></a><br />An overview of the Decal example level, example 1.1: Basic Decal
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Decal Blend Modes</span></a><br />An overview of the Decal example level, example 1.2: Decal Blend Modes
+                                                            ><span>1.2 - Decal Blend Modes</span></a><br />An overview of the Decal example level, example 1.2: Decal Blend Modes
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Masked Decal</span></a><br />An overview of the Decal example level, example 1.3: Masked Decal
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_3/index.html"><span>1.3 - Masked Decal</span></a><br />An overview of the Decal example level, example 1.3: Masked Decal
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Projection on Multiple Surfaces</span></a><br />An overview of the Decal example level, example 1.4: Projection on Multiple Surfaces
+                                                            ><span>1.4 - Projection on Multiple Surfaces</span></a><br />An overview of the Decal example level, example 1.4: Projection on Multiple Surfaces
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Receives Decals Off</span></a><br />An overview of the Decal example level, example 1.5: Receives Decals Off
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_5/index.html"><span>1.5 - Receives Decals Off</span></a><br />An overview of the Decal example level, example 1.5: Receives Decals Off
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Sort Order</span></a><br />An overview of the Decal example level, example 1.6: Sort Order
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_6/index.html"><span>1.6 - Sort Order</span></a><br />An overview of the Decal example level, example 1.6: Sort Order
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Animated Decal Material</span></a><br />An overview of the Decal example level, example 1.7: Animated Decal Material
-                                                            </p>
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Decals/1_7/index.html"><span>1.7 - Animated Decal Material</span></a><br />An overview of the Decal example level, example 1.7: Animated Decal Material</p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Destructables/index.html"
-                                                    ><span>Destructibles
-                                        Content Examples</span></a><br />Overview of the samples provided in the Destructibles Content Examples.
+                                                    ><span>Destructibles Content Examples</span></a><br />Overview of the samples provided in the Destructibles Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/DynamicSceneShadows/index.html"
-                                                    ><span>Dynamic
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/DynamicSceneShadows/index.html"><span>Dynamic
                                         Scene Shadows</span></a><br />An overview of the Dynamic Scene Shadows Content Example map.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/index.html"
-                                                    ><span>Effects
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/index.html"><span>Effects
                                         Content Examples</span></a><br />Overview of the samples provided in the Effects Content Examples.
                                                     </p>
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_A/index.html"
-                                                            ><span>1.1<br/>CPU
+                                                            ><span>1.1 - CPU
                                                 and GPU Sprite Particles Comparison</span></a><br />An overview of the Effects Gallery example level.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_B/index.html"
-                                                            ><span>1.2<br/>GPU
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_B/index.html"><span>1.2 - GPU
                                                 Particles with Velocity Cone Module</span></a><br />An overview of the Effects Gallery example level.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_C/index.html"
-                                                            ><span>1.3<br/>GPU
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_C/index.html"><span>1.3 - GPU
                                                 Particles with Emitter Initial Location</span></a><br />An overview of the Effects Gallery example level.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_D/index.html"
-                                                            ><span>1.4<br/>GPU
+                                                            ><span>1.4 - GPU
                                                 Particles with Point Gravity</span></a><br />An overview of the Effects Gallery example level.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_E/index.html"
-                                                            ><span>1.5<br/>GPU
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_E/index.html"><span>1.5 - GPU
                                                 Particles with Scene Depth Collision</span></a><br />An overview of the Effects Gallery example level.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_F/index.html"
-                                                            ><span>1.6<br/>Random
-                                                Burst of Particles, Light, and Sound</span></a><br />An overview of the Effects Gallery example level.
-                                                            </p>
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_F/index.html"><span>1.6 - Random
+                                                Burst of Particles, Light, and Sound</span></a><br />An overview of the Effects Gallery example level.</p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_G/index.html"
-                                                            ><span>1.7 -
-                                                Particle Emission from Skeletal Mesh Bone</span></a><br />An overview of the Effects Gallery example level.
-                                                            </p>
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_G/index.html"><span>1.7 - Particle Emission from Skeletal Mesh Bone</span></a><br />An overview of the Effects Gallery example level.</p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/1_H/index.html"
                                                             ><span>1.8 -
-                                                Translucent Particle Shadow Casting</span></a><br />An overview of the Effects Gallery example level.
-                                                            </p>
+                                                Translucent Particle Shadow Casting</span></a><br />An overview of the Effects Gallery example level.</p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/EffectsGallery/2_A/index.html"
@@ -10210,38 +9904,38 @@ export class PageUnrealEngineDocExpanded {
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_1/index.html"
-                                                            ><span>1.1<br/>Static Mesh</span></a><br />Static Mesh
+                                                            ><span>1.1 - Static Mesh</span></a><br />Static Mesh
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_2/index.html"
-                                                            ><span>1.2<br/>Import Mesh LODs</span></a><br />Import Mesh LODs
+                                                            ><span>1.2 - Import Mesh LODs</span></a><br />Import Mesh LODs
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_3/index.html"
-                                                            ><span>1.3<br/>Import Normals</span></a><br />Import Normals
+                                                            ><span>1.3 - Import Normals</span></a><br />Import Normals
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_4/index.html"
-                                                            ><span>1.4<br/>Skeletal Mesh</span></a><br />Skeletal Mesh
+                                                            ><span>1.4 - Skeletal Mesh</span></a><br />Skeletal Mesh
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_5/index.html"
-                                                            ><span>1.5<br/>Animation</span></a><br />Animation
+                                                            ><span>1.5 - Animation</span></a><br />Animation
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_6/index.html"
-                                                            ><span>1.6<br/>Drag and Drop
+                                                            ><span>1.6 - Drag and Drop
                                                 Animation</span></a><br />Drag and Drop Animation
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/ImportOptions/1_7/index.html"
-                                                            ><span>1.7<br/>Morph Targets</span></a><br />Morph Targets
+                                                            ><span>1.7 - Morph Targets</span></a><br />Morph Targets
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -10280,136 +9974,109 @@ export class PageUnrealEngineDocExpanded {
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/LevelDesign/1/index.html"
-                                                            ><span>1
-                                               <br/>Prototype Pass</span></a><br />An overview of the Level Design level, example 1: Prototype Pass
+                                                            ><span>1 - Prototype Pass</span></a><br />An overview of the Level Design level, example 1: Prototype Pass
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/LevelDesign/2/index.html"
-                                                            ><span>2
-                                               <br/>Meshing Pass</span></a><br />An overview of the Level Design level, example 2: Meshing Pass
+                                                            ><span>2 - Meshing Pass</span></a><br />An overview of the Level Design level, example 2: Meshing Pass
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/LevelDesign/3/index.html"
-                                                            ><span>3
-                                               <br/>Lighting Pass</span></a><br />An overview of the Level Design level, example 3: Lighting Pass
+                                                            ><span>3 - Lighting Pass</span></a><br />An overview of the Level Design level, example 3: Lighting Pass
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/LevelDesign/4/index.html"
-                                                            ><span>4
-                                               <br/>Polish Pass</span></a><br />An overview of the Level Design level, example 4: Polish Pass
+                                                            ><span>4 - Polish Pass</span></a><br />An overview of the Level Design level, example 4: Polish Pass
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/index.html"
-                                                    ><span>Lighting
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/index.html"><span>Lighting
                                         Content Examples</span></a><br />Overview of the samples provided in the Lighting Content Examples.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Point Light</span></a><br />An overview of the Lighting example level, example 1.1: Point Light
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_1/index.html"><span>1.1 - Point Light</span></a><br />An overview of the Lighting example level, example 1.1: Point Light
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Spot Light</span></a><br />An overview of the Lighting example level, example 1.2: Spot Light
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_2/index.html"><span>1.2 - Spot Light</span></a><br />An overview of the Lighting example level, example 1.2: Spot Light
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Directional Light</span></a><br />An overview of the Lighting example level, example 1.3: Directional Light
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/1_3/index.html"><span>1.3 - Directional Light</span></a><br />An overview of the Lighting example level, example 1.3: Directional Light
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/2_1/index.html"
-                                                            ><span>2.1
-                                               <br/>Static Light</span></a><br />An overview of the Lighting example level, example 2.1: Static Light
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/2_1/index.html"><span>2.1 - Static Light</span></a><br />An overview of the Lighting example level, example 2.1: Static Light
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/2_2/index.html"
-                                                            ><span>2.2
-                                               <br/>Stationary Light</span></a><br />An overview of the Lighting example level, example 2_2: Stationary Light
+                                                            ><span>2.2 - Stationary Light</span></a><br />An overview of the Lighting example level, example 2_2: Stationary Light
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/2_3/index.html"
-                                                            ><span>2.3
-                                               <br/>Movable Light</span></a><br />An overview of the Lighting example level, example 2_3: Movable Light
+                                                            ><span>2.3 - Movable Light</span></a><br />An overview of the Lighting example level, example 2_3: Movable Light
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/3_1/index.html"
-                                                            ><span>3.1
-                                               <br/>IES Light Profiles</span></a><br />An overview of the Lighting example level, example 3.1: IES Light Profiles
+                                                            ><span>3.1 - IES Light Profiles</span></a><br />An overview of the Lighting example level, example 3.1: IES Light Profiles
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/3_2/index.html"
-                                                            ><span>3.2
-                                               <br/>Light Functions</span></a><br />An overview of the Lighting example level, example 3.2: Light Functions
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/3_2/index.html"><span>3.2 - Light Functions</span></a><br />An overview of the Lighting example level, example 3.2: Light Functions
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/4_1/index.html"
-                                                            ><span>4.1
-                                               <br/>Falloff Exponent</span></a><br />An overview of the Lighting example level, example 4.1: Falloff Exponent
+                                                            ><span>4.1 - Falloff Exponent</span></a><br />An overview of the Lighting example level, example 4.1: Falloff Exponent
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/4_2/index.html"
-                                                            ><span>4.2
-                                               <br/>Inverse Square Falloff</span></a><br />An overview of the Lighting example level, example 4.2: Inverse Square Falloff
+                                                            ><span>4.2 - Inverse Square Falloff</span></a><br />An overview of the Lighting example level, example 4.2: Inverse Square Falloff
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/4_3/index.html"
-                                                            ><span>4.3
-                                               <br/>Indirect Lighting</span></a><br />An overview of the Lighting example level, example 4.3: Indirect Lighting
+                                                            ><span>4.3 - Indirect Lighting</span></a><br />An overview of the Lighting example level, example 4.3: Indirect Lighting
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/5_1/index.html"
-                                                            ><span>5.1
-                                               <br/>Source Radius</span></a><br />An overview of the Lighting example level, example 5.1: Source Radius (Static Lights)
+                                                            ><span>5.1 - Source Radius</span></a><br />An overview of the Lighting example level, example 5.1: Source Radius (Static Lights)
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/5_2/index.html"
-                                                            ><span>5.2
-                                               <br/>Lightsource Radius</span></a><br />An overview of the Lighting example level, example 5.2: Lightsource Radius (Effect on Reflections)
+                                                            ><span>5.2 - Lightsource Radius</span></a><br />An overview of the Lighting example level, example 5.2: Lightsource Radius (Effect on Reflections)
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/5_3/index.html"
-                                                            ><span>5.3
-                                               <br/>Lightsource Length</span></a><br />An overview of the Lighting example level, example 5.3: Lightsource Length (Effect on Reflections)
+                                                            ><span>5.3 - Lightsource Length</span></a><br />An overview of the Lighting example level, example 5.3: Lightsource Length (Effect on Reflections)
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/6_1/index.html"
-                                                            ><span>6.1
-                                               <br/>Shadow Bias</span></a><br />An overview of the Lighting example level, example 6.1: Self Shadowing Accuracy
+                                                            ><span>6.1 - Shadow Bias</span></a><br />An overview of the Lighting example level, example 6.1: Self Shadowing Accuracy
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/6_2/index.html"
-                                                            ><span>6.2
-                                               <br/>Shadow Filter Sharpen</span></a><br />An overview of the Lighting example level, example 6.2: Shadow Filter Sharpen (Movable Lights)
+                                                            ><span>6.2 - Shadow Filter Sharpen</span></a><br />An overview of the Lighting example level, example 6.2: Shadow Filter Sharpen (Movable Lights)
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Lighting/5_4/index.html"
-                                                            ><span>5.4
-                                               <br/>Soft Source Radius</span></a><br />An overview of the Lighting example level, example 5.4: Specular Scale
+                                                            ><span>5.4 - Soft Source Radius</span></a><br />An overview of the Lighting example level, example 5.4: Specular Scale
                                                             </p>
                                                         </li>
                                                     </ul>
@@ -10422,92 +10089,76 @@ export class PageUnrealEngineDocExpanded {
                                                     <ul>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Base Color</span></a><br />An overview of the Material Nodes example level, example 1.1: Base Color.
+                                                            ><span>1.1 - Base Color</span></a><br />An overview of the Material Nodes example level, example 1.1: Base Color.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_10/index.html"
-                                                            ><span>1.10
-                                               <br/>World Position Offset</span></a><br />An overview of the Material Nodes example level, example 1.10: World Position Offset.
+                                                            ><span>1.10 - World Position Offset</span></a><br />An overview of the Material Nodes example level, example 1.10: World Position Offset.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_11/index.html"
-                                                            ><span>1.11
-                                               <br/>World Displacement</span></a><br />An overview of the Material Nodes example level, example 1.11: World Displacement.
+                                                            ><span>1.11 - World Displacement</span></a><br />An overview of the Material Nodes example level, example 1.11: World Displacement.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_12/index.html"
-                                                            ><span>1.12
-                                               <br/>Tessellation Multiplier</span></a><br />An overview of the Material Nodes example level, example 1.12: Tessellation Multiplier.
+                                                            ><span>1.12 - Tessellation Multiplier</span></a><br />An overview of the Material Nodes example level, example 1.12: Tessellation Multiplier.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_13/index.html"
-                                                            ><span>1.13
-                                               <br/>Sub Surface Color</span></a><br />An overview of the Material Nodes example level, example 1.13: Sub Surface Color.
+                                                            ><span>1.13 - Sub Surface Color</span></a><br />An overview of the Material Nodes example level, example 1.13: Sub Surface Color.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_14/index.html"
-                                                            ><span>1.14
-                                               <br/>Refraction</span></a><br />An overview of the Material Nodes example level, example 1.14: Refraction.
+                                                            ><span>1.14 - Refraction</span></a><br />An overview of the Material Nodes example level, example 1.14: Refraction.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Metallic</span></a><br />An overview of the Material Nodes example level, example 1.2: Metallic.
+                                                            ><span>1.2 - Metallic</span></a><br />An overview of the Material Nodes example level, example 1.2: Metallic.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Specular</span></a><br />An overview of the Material Nodes example level, example 1.3: Specular.
+                                                            ><span>1.3 - Specular</span></a><br />An overview of the Material Nodes example level, example 1.3: Specular.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Roughness</span></a><br />An overview of the Material Nodes example level, example 1.4: Roughness.
+                                                            ><span>1.4 - Roughness</span></a><br />An overview of the Material Nodes example level, example 1.4: Roughness.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Emissive</span></a><br />An overview of the Material Nodes example level, example 1.5: Emissive.
+                                                            ><span>1.5 - Emissive</span></a><br />An overview of the Material Nodes example level, example 1.5: Emissive.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Opacity</span></a><br />An overview of the Material Nodes example level, example 1.6: Opacity.
+                                                            ><span>1.6 - Opacity</span></a><br />An overview of the Material Nodes example level, example 1.6: Opacity.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Opacity SubSurface Material</span></a><br />An overview of the Material Nodes example level, example 1.7: Opacity and SubSurface Material.
+                                                            ><span>1.7 - Opacity SubSurface Material</span></a><br />An overview of the Material Nodes example level, example 1.7: Opacity and SubSurface Material.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_8/index.html"
-                                                            ><span>1.8<br/>Opacity Mask</span></a><br />An overview of the Material Nodes example level, example 1.8: Opacity Mask.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_8/index.html"><span>1.8 - Opacity Mask</span></a><br />An overview of the Material Nodes example level, example 1.8: Opacity Mask.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_9/index.html"
-                                                            ><span>1.9<br/>Normal</span></a><br />An overview of the Material Nodes example level, example 1.9: Normal.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MaterialNodes/1_9/index.html"><span>1.9 - Normal</span></a><br />An overview of the Material Nodes example level, example 1.9: Normal.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Materials/index.html"
-                                                    ><span>Materials
-                                        Content Examples</span></a><br />Overview of the samples provided in the Materials Content Examples.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Materials/index.html"><span>Materials Content Examples</span></a><br />Overview of the samples provided in the Materials Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
@@ -10517,20 +10168,17 @@ export class PageUnrealEngineDocExpanded {
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Matinee/index.html"
-                                                    ><span>Matinee
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Matinee/index.html"><span>Matinee
                                         Content Examples</span></a><br />Overview of the samples provided in the Matinee Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MorphTargets/index.html"
-                                                    ><span>Morph
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MorphTargets/index.html"><span>Morph
                                         Targets Content Examples</span></a><br />Overview of the samples provided in the Morph Targets Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/index.html"
-                                                    ><span>Mouse
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/index.html"><span>Mouse
                                         Interface</span></a><br />An overview and breakdown of the Mouse Interaction.
                                                     </p>
                                                     <ul>
@@ -10541,8 +10189,7 @@ export class PageUnrealEngineDocExpanded {
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/LevelBlueprint/index.html"
-                                                            ><span>Level
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/LevelBlueprint/index.html"><span>Level
                                                 Blueprint</span></a><br />An overview of the Level Blueprint setup used in the Mouse Interface Demolet
                                                             </p>
                                                         </li>
@@ -10553,385 +10200,278 @@ export class PageUnrealEngineDocExpanded {
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/SettingsAndCursors/index.html"
-                                                            ><span>Mouse
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/MouseInterface/SettingsAndCursors/index.html"><span>Mouse
                                                 Interaction Properties</span></a><br />A breakdown of the properties and cursors used for mouse interaction.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/index.html"
-                                                    ><span>Navmesh
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/index.html"><span>Navmesh
                                         Content Examples</span></a><br />Overview of the samples provided in the Navmesh Content Examples.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_1/index.html"
-                                                            ><span>1.1
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_1/index.html"><span>1.1
                                                <br/>Simple Navigation</span></a><br />An overview of the NavMesh example level, example 1.1: Simple Navigation.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_2/index.html"
-                                                            ><span>1.2
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_2/index.html"><span>1.2
                                                <br/>Nav Link Proxy</span></a><br />An overview of the NavMesh example level, example 1.2: Nav Link Proxy.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_3/index.html"
-                                                            ><span>1.3
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NavMesh/1_3/index.html"><span>1.3
                                                <br/>Rebuild</span></a><br />An overview of the NavMesh example level, example 1.3: Rebuild.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/index.html"
-                                                    ><span>Networking
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/index.html"><span>Networking
                                         Content Examples</span></a><br />Overview of the samples provided in the Network Features Content Example map.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Actor Replication</span></a><br />An overview of the Network Features example level, example 1.1: Actor Replication
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_1/index.html"><span>1.1 - Actor Replication</span></a><br />An overview of the Network Features example level, example 1.1: Actor Replication
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_2/index.html"
-                                                            ><span>1.2
-                                                                <br/>Detecting Network Authority and Remote Clients in
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_2/index.html"><span>1.2 - Detecting Network Authority and Remote Clients in
                                                 Blueprints</span></a><br />An overview of the Network Features example level, example 1.2: Detecting Network Authority and Remote Clients in Blueprints.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Variable Replication</span></a><br />An overview of the Network Features example level, example 1.3: Variable Replication.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_3/index.html"><span>1.3 - Variable Replication</span></a><br />An overview of the Network Features example level, example 1.3: Variable Replication.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Variable Replication [RepNotify]</span></a><br />An overview of the Network Features example level, example 1.4: Variable Replication (RepNotify).
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_4/index.html"><span>1.4 - Variable Replication [RepNotify]</span></a><br />An overview of the Network Features example level, example 1.4: Variable Replication (RepNotify).
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Function Replication</span></a><br />An overview of the Network Features example level, example 1.5: Function Replication (Remote Procedure Call).
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/1_5/index.html"><span>1.5 - Function Replication</span></a><br />An overview of the Network Features example level, example 1.5: Function Replication (Remote Procedure Call).
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_1/index.html"
-                                                            ><span>2.1
-                                               <br/>Network Relevancy [Part 1<br/>Not Replicated At All]</span></a><br />An overview of the Network Features example level, example 2.1: Network Relevancy (Part 1<br/>Not Replicated At All).
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_1/index.html"><span>2.1 - Network Relevancy [Part 1<br/>Not Replicated At All]</span></a><br />An overview of the Network Features example level, example 2.1: Network Relevancy (Part 1<br/>Not Replicated At All).
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_2/index.html"
-                                                            ><span>2.2
-                                                                <br/>Network Relevancy [Part 2<br/>Function Replication Solution
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_2/index.html"><span>2.2 - Network Relevancy [Part 2<br/>Function Replication Solution
                                                 Attempt]</span></a><br />An overview of the Network Features example level, example 2.2: Network Relevancy (Part 2<br/>Function Replication Solution Attempt).
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_3/index.html"
-                                                            ><span>2.3
-                                                                <br/>Network Relevancy [Part 3<br/>Variable Replication Solution
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_3/index.html"><span>2.3 - Network Relevancy [Part 3<br/>Variable Replication Solution
                                                 Attempt]</span></a><br />An overview of the Network Features example level, example 2.3: Network Relevancy (Part 3<br/>Variable Replication Solution Attempt).
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_4/index.html"
-                                                            ><span>2.4
-                                               <br/>Network Relevancy [Part 4<br/>Combination Solution]</span></a><br />An overview of the Network Features example level, example 2.4: Network Relevancy (Part 4<br/>Combination Solution).
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Networking/2_4/index.html"><span>2.4 - Network Relevancy [Part 4<br/>Combination Solution]</span></a><br />An overview of the Network Features example level, example 2.4: Network Relevancy (Part 4<br/>Combination Solution).
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Paper2D/index.html"
-                                                    ><span>Paper
-                                        2D Content Examples</span></a><br />Overview of the samples provided in the Paper 2D Content Examples.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Paper2D/index.html"><span>Paper 2D Content Examples</span></a><br />Overview of the samples provided in the Paper 2D Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/index.html"
-                                                    ><span>Physics
-                                        Content Examples</span></a><br />Overview of the samples provided in the Physics Content Examples.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/index.html"><span>Physics Content Examples</span></a><br />Overview of the samples provided in the Physics Content Examples.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Simulating Physics</span></a><br />An overview of the Physics example level, example 1.1: Object SImulating Physics
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_1/index.html"><span>1.1 - Simulating Physics</span></a><br />An overview of the Physics example level, example 1.1: Object SImulating Physics
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>SkeletalMesh RigidBody</span></a><br />An overview of the Physics example level, example 1.2: SkeletalMesh RigidBody Simulating Physics
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_2/index.html"><span>1.2 - SkeletalMesh RigidBody</span></a><br />An overview of the Physics example level, example 1.2: SkeletalMesh RigidBody Simulating Physics
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Radial Force / Impulse</span></a><br />An overview of the Physics example level, example 1.3: Radial Force / Impulse
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_3/index.html"><span>1.3 - Radial Force / Impulse</span></a><br />An overview of the Physics example level, example 1.3: Radial Force / Impulse
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Thruster</span></a><br />An overview of the Physics example level, example 1.4: Thruster
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_4/index.html"><span>1.4 - Thruster</span></a><br />An overview of the Physics example level, example 1.4: Thruster
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>PhysicsConstraints</span></a><br />An overview of the Physics example level, example 1.5: PhysicsContraints
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_5/index.html"><span>1.5 - PhysicsConstraints</span></a><br />An overview of the Physics example level, example 1.5: PhysicsContraints
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Angular Motors</span></a><br />An overview of the Physics example level, example 1.6: PhysicsConstraints Angular Motors
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_6/index.html"><span>1.6 - Angular Motors</span></a><br />An overview of the Physics example level, example 1.6: PhysicsConstraints Angular Motors
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Linear Motors</span></a><br />An overview of the Physics example level, example 1.7: PhysicsContraints Linear Motors
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_7/index.html"><span>1.7 - Linear Motors</span></a><br />An overview of the Physics example level, example 1.7: PhysicsContraints Linear Motors
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_8/index.html"
-                                                            ><span>1.8
-                                               <br/>Breakable Constraints</span></a><br />An overview of the Physics example level, example 1.8: Breakable Physics Constraints
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Physics/1_8/index.html"><span>1.8 - Breakable Constraints</span></a><br />An overview of the Physics example level, example 1.8: Breakable Physics Constraints
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PivotPainter/index.html"
-                                                    ><span>Pivot
-                                        Painter Content Examples</span></a><br />Overview of the samples provided in the Pivot Painter Content Examples.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PivotPainter/index.html"><span>Pivot Painter Content Examples</span></a><br />Overview of the samples provided in the Pivot Painter Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/index.html"
-                                                    ><span>Post
-                                        Processing Content Examples</span></a><br />Overview of the samples provided in the Post Processing Content Examples
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/index.html"><span>Post Processing Content Examples</span></a><br />Overview of the samples provided in the Post Processing Content Examples
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Default Settings</span></a><br />An overview of the Post Processing example level, example 1.1: Default Settings
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_1/index.html"><span>1.1 - Default Settings</span></a><br />An overview of the Post Processing example level, example 1.1: Default Settings
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_10/index.html"
-                                                            ><span>1.10
-                                               <br/>Global Illumination</span></a><br />An overview of the Post Processing example level, example 1.10: Global Illumination
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_10/index.html"><span>1.10 - Global Illumination</span></a><br />An overview of the Post Processing example level, example 1.10: Global Illumination
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_11/index.html"
-                                                            ><span>1.11
-                                               <br/>Depth of Field</span></a><br />An overview of the Post Processing example level, example 1.11: Depth of Field
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_11/index.html"><span>1.11 - Depth of Field</span></a><br />An overview of the Post Processing example level, example 1.11: Depth of Field
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_12/index.html"
-                                                            ><span>1.12
-                                               <br/>Motion Blur</span></a><br />An overview of the Post Processing example level, example 1.12: Motion Blur
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_12/index.html"><span>1.12 - Motion Blur</span></a><br />An overview of the Post Processing example level, example 1.12: Motion Blur
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_13/index.html"
-                                                            ><span>1.13
-                                               <br/>Screen Percentage</span></a><br />An overview of the Post Processing example level, example 1.13: Screen Percentage
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_13/index.html"><span>1.13 - Screen Percentage</span></a><br />An overview of the Post Processing example level, example 1.13: Screen Percentage
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_14/index.html"
-                                                            ><span>1.14
-                                               <br/>AA Method</span></a><br />An overview of the Post Processing example level, example 1.14: AA Method
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_14/index.html"><span>1.14 - AA Method</span></a><br />An overview of the Post Processing example level, example 1.14: AA Method
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_15/index.html"
-                                                            ><span>1.15
-                                               <br/>Blendables</span></a><br />An overview of the Post Processing example level, example 1.16: Blendables
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_15/index.html"><span>1.15 - Blendables</span></a><br />An overview of the Post Processing example level, example 1.16: Blendables
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_16/index.html"
-                                                            ><span>1.16
-                                               <br/>Priorities</span></a><br />An overview of the Post Processing example level, example 1.17: Priorities
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_16/index.html"><span>1.16 - Priorities</span></a><br />An overview of the Post Processing example level, example 1.17: Priorities
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_17/index.html"
-                                                            ><span>1.17
-                                               <br/>Blend Radius and Weight</span></a><br />An overview of the Post Processing example level, example 1.18: Blend Radius and Weight
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_17/index.html"><span>1.17 - Blend Radius and Weight</span></a><br />An overview of the Post Processing example level, example 1.18: Blend Radius and Weight
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_18/index.html"
-                                                            ><span>1.18
-                                               <br/>Unbound</span></a><br />An overview of the Post Processing example level, example 1.19: Unbound
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_18/index.html"><span>1.18 - Unbound</span></a><br />An overview of the Post Processing example level, example 1.19: Unbound
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Film</span></a><br />An overview of the Post Processing example level, example 1.2: Film
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_2/index.html"><span>1.2 - Film</span></a><br />An overview of the Post Processing example level, example 1.2: Film
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Scene Color</span></a><br />An overview of the Post Processing example level, example 1.3: Scene Color
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_3/index.html"><span>1.3 - Scene Color</span></a><br />An overview of the Post Processing example level, example 1.3: Scene Color
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Bloom</span></a><br />An overview of the Post Processing example level, example 1.4: Bloom
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_4/index.html"><span>1.4 - Bloom</span></a><br />An overview of the Post Processing example level, example 1.4: Bloom
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Ambient Cubemap</span></a><br />An overview of the Post Processing example level, example 1.5: Ambient Cubemap
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_5/index.html"><span>1.5 - Ambient Cubemap</span></a><br />An overview of the Post Processing example level, example 1.5: Ambient Cubemap
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Eye Adaptation</span></a><br />An overview of the Post Processing example level, example 1.6: Eye Adaptation
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_6/index.html"><span>1.6 - Eye Adaptation</span></a><br />An overview of the Post Processing example level, example 1.6: Eye Adaptation
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Lens Flare</span></a><br />An overview of the Post Processing example level, example 1.7: Lens Flare
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_7/index.html"><span>1.7 - Lens Flare</span></a><br />An overview of the Post Processing example level, example 1.7: Lens Flare
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_8/index.html"
-                                                            ><span>1.8
-                                               <br/>Ambient Occlusion</span></a><br />An overview of the Post Processing example level, example 1.8: Ambient Occlusion
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_8/index.html"><span>1.8 - Ambient Occlusion</span></a><br />An overview of the Post Processing example level, example 1.8: Ambient Occlusion
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_9/index.html"
-                                                            ><span>1.9
-                                               <br/>Screenspace Reflection</span></a><br />An overview of the Post Processing example level, example 1.9: Screenspace Reflection
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/PostProcessing/1_9/index.html"><span>1.9 - Screenspace Reflection</span></a><br />An overview of the Post Processing example level, example 1.9: Screenspace Reflection
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/index.html"
-                                                    ><span>Reflections
-                                        Content Examples</span></a><br />Overview of the samples provided in the Reflections Content Examples.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/index.html"><span>Reflections Content Examples</span></a><br />Overview of the samples provided in the Reflections Content Examples.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_1/index.html"
-                                                            ><span>1.1
-                                               <br/>Reflections Metallic Materials</span></a><br />An overview of the Reflections example level, example 1.1: Reflections Metallic Materials
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_1/index.html"><span>1.1 - Reflections Metallic Materials</span></a><br />An overview of the Reflections example level, example 1.1: Reflections Metallic Materials
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_2/index.html"
-                                                            ><span>1.2
-                                               <br/>Reflections Non-Metallic Materials</span></a><br />An overview of the Reflections example level, example 1.2: Reflections Non-Metallic Materials
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_2/index.html"><span>1.2 - Reflections Non-Metallic Materials</span></a><br />An overview of the Reflections example level, example 1.2: Reflections Non-Metallic Materials
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_3/index.html"
-                                                            ><span>1.3
-                                               <br/>Box Reflection Capture Actor</span></a><br />An overview of the Reflections example level, example 1.3: Box Reflection Capture Actor
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_3/index.html"><span>1.3 - Box Reflection Capture Actor</span></a><br />An overview of the Reflections example level, example 1.3: Box Reflection Capture Actor
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_4/index.html"
-                                                            ><span>1.4
-                                               <br/>Sphere Reflection Capture Actor</span></a><br />An overview of the Reflections example level, example 1.4: Sphere Reflection Capture Actor
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_4/index.html"><span>1.4 - Sphere Reflection Capture Actor</span></a><br />An overview of the Reflections example level, example 1.4: Sphere Reflection Capture Actor
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_5/index.html"
-                                                            ><span>1.5
-                                               <br/>Screenspace Reflections</span></a><br />An overview of the Reflections example level, example 1.5: Screenspace  Reflections
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_5/index.html"><span>1.5 - Screenspace Reflections</span></a><br />An overview of the Reflections example level, example 1.5: Screenspace  Reflections
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_6/index.html"
-                                                            ><span>1.6
-                                               <br/>Scene Capture Cube</span></a><br />An overview of the Reflections example level, example 1.6: Scene Capture Cube
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_6/index.html"><span>1.6 - Scene Capture Cube</span></a><br />An overview of the Reflections example level, example 1.6: Scene Capture Cube
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Reflections/1_7/index.html"
-                                                            ><span>1.7
-                                               <br/>Scene Capture 2D</span></a><br />An overview of the Reflections example level, example 1.7: Scene Capture 2D
+                                                            ><span>1.7 - Scene Capture 2D</span></a><br />An overview of the Reflections example level, example 1.7: Scene Capture 2D
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/StaticMeshes/index.html"
-                                                    ><span>Static
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/StaticMeshes/index.html"><span>Static
                                         Meshes Content Examples</span></a><br />Overview of the samples provided in the Static Meshes Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Volumes/index.html"
-                                                    ><span>Volumes
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/Volumes/index.html"><span>Volumes
                                         Content Examples</span></a><br />Overview of the samples provided in the Volumes Content Examples.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NiagaraEffects/index.html"
-                                                    ><span>Niagara
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/ContentExamples/NiagaraEffects/index.html"><span>Niagara
                                         Content Examples</span></a><br />An overview of the Niagara Particle System examples provided in the Content Examples project.
                                                     </p>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>
-                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/index.html"
-                                            ><span>Example
+                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/index.html"><span>Example
                                 Game Projects</span></a><br />Full sample games demonstrating the implementation of various genres.
                                             </p>
                                             <ul>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/PlatformerGame/index.html"
-                                                    ><span>Platformer Game
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/PlatformerGame/index.html"><span>Platformer Game
                                         Sample</span></a><br />Overview of the Platformer Sample Game.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ShooterGame/index.html"
-                                                    ><span>Shooter
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ShooterGame/index.html"><span>Shooter
                                         Game</span></a><br />Documentation for the C++ example game project ShooterGame
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/StrategyGame/index.html"
-                                                    ><span>Strategy
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/StrategyGame/index.html"><span>Strategy
                                         Game</span></a><br />Documentation covering the Tower Defense Game.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/UnrealMatch3/index.html"
-                                                    ><span>Unreal
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/UnrealMatch3/index.html"><span>Unreal
                                         Match 3 Game</span></a><br />Sample game that shows best practices for mobile game development including Paper2D, UMG, leaderboards, achievements, in-app purchases, ads, and more.
                                                     </p>
                                                     <ul>
@@ -10944,70 +10484,59 @@ export class PageUnrealEngineDocExpanded {
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/index.html"
-                                                    ><span>Action
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/index.html"><span>Action
                                         RPG Game</span></a><br />A sample game that shows how to use the Ability System plugin.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/BuildingGameplayInCPPforActionRPG/index.html"
-                                                            ><span>Building
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/BuildingGameplayInCPPforActionRPG/index.html"><span>Building
                                                 Gameplay in C++ for Action RPG</span></a><br />A guide to describe how the gameplay systems in Action RPG were built.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/index.html"
-                                                            ><span>Gameplay
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/index.html"><span>Gameplay
                                                 Abilities in Action RPG</span></a><br />Going over how gameplay abilities are using in ARPG.
                                                             </p>
                                                             <ul>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/AttributesandEffects/index.html"
-                                                                    ><span>Attributes
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/AttributesandEffects/index.html"><span>Attributes
                                                         and Effects In ARPG</span></a><br />Taking a look at how attributes and effects are used in ARPG.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/MeleeAbilitiesInARPG/index.html"
-                                                                    ><span>Melee
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/MeleeAbilitiesInARPG/index.html"><span>Melee
                                                         Abilities In ARPG</span></a><br />Going over how Melee Abilities are setup in ARPG.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/SkillAbilitiesInARPG/index.html"
-                                                                    ><span>Skill
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/SkillAbilitiesInARPG/index.html"><span>Skill
                                                         Abilities In ARPG</span></a><br />Going over how skills are setup and work in ARPG.
                                                                     </p>
                                                                 </li>
                                                                 <li>
-                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/ExecutingAbilitiesInARPG/index.html"
-                                                                    ><span>Executing
+                                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/GameplayAbilitiesinActionRPG/ExecutingAbilitiesInARPG/index.html"><span>Executing
                                                         Abilities In ARPG</span></a><br />This sections goes over how to execute the abilities that have been created.
                                                                     </p>
                                                                 </li>
                                                             </ul>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/BalancingBlueprintAndCPP/index.html"
-                                                            ><span>Balancing
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/BalancingBlueprintAndCPP/index.html"><span>Balancing
                                                 Blueprint and C++</span></a><br />Describe how to make a combination Blueprint/C++ game, and decisions you might make along the way.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/AddSoulsPerKill/index.html"
-                                                            ><span>Adding
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/AddSoulsPerKill/index.html"><span>Adding
                                                 a Random Amount of Souls Per Kill</span></a><br />Going over how to award the player a random amount of souls for each vanquished enemy.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/AddingAPickUp/index.html"
-                                                            ><span>Adding
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/AddingAPickUp/index.html"><span>Adding
                                                 A Pick Up</span></a><br />Taking a look at creating an item that can be placed in the world as a player pickup.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/MigratingContent/index.html"
-                                                            ><span>Migrating
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/SampleGames/ARPG/MigratingContent/index.html"><span>Migrating
                                                 Content</span></a><br />Showing how to migrate content from any UE4 project into Action RPG.
                                                             </p>
                                                         </li>
@@ -11029,106 +10558,87 @@ export class PageUnrealEngineDocExpanded {
                                         </li>
                                         <li>
                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/index.html"><span>Engine
-                                Feature Examples</span></a><br/>Full scenes demonstrating particular features or
-                                                                                                                                                                        approaches to specific challenges.
-                    </p>
+                                Feature Examples</span></a><br/>Full scenes demonstrating particular features or approaches to specific challenges.</p>
                                             <ul>
                                                 <li>
                                                     <p><a
                                                         href="https://docs.unrealengine.com/en-US/Resources/Showcases/ArchVisInterior/index.html"><span>Archviz
-                                        Interior Rendering</span></a><br/>An overview of creating photo realistic
-                                                                                                                                                                                architectural visualization interiors using Unreal Engine's rendering features.
-                            </p>
+                                        Interior Rendering</span></a><br/>An overview of creating photo realistic architectural visualization interiors using Unreal Engine's rendering features.</p>
                                                 </li>
                                                 <li>
                                                     <p><a
                                                         href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/index.html"><span>Blueprints</span></a>
-                                                       <br/>An overview of the Blueprint Examples Showcase included with UE4.
-                            </p>
+                                                       <br/>An overview of the Blueprint Examples Showcase included with UE4.</p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/Butterfly/index.html"
-                                                            ><span>Butterfly</span></a><br />An overview of the Butterfly Blueprint.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/Butterfly/index.html"><span>Butterfly</span></a><br />An overview of the Butterfly Blueprint.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/CommentaryBox/index.html"
-                                                            ><span>Commentary
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/CommentaryBox/index.html"><span>Commentary
                                                 Box</span></a><br />An overview of the Commentary Box Blueprint.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/FogSheet/index.html"
-                                                            ><span>Fog Sheet and Light
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/FogSheet/index.html"><span>Fog Sheet and Light
                                                 Beams</span></a><br />An overview of the Fog Sheet Blueprint.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/Foliage/index.html"
-                                                            ><span>Randomly Generated
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/Foliage/index.html"><span>Randomly Generated
                                                 Foliage</span></a><br />An overview of the Foliage Blueprint.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/SecurityCameraAndAlarm/index.html"
-                                                            ><span>Security
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/SecurityCameraAndAlarm/index.html"><span>Security
                                                 Camera Switcher Button</span></a><br />An overview of the Security Camera and Alarm Blueprints.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/SecurityDoor/index.html"
-                                                            ><span>Security Camera,
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintExamples/SecurityDoor/index.html"><span>Security Camera,
                                                 Alarm, and Door</span></a><br />An overview of the Security Door Blueprints.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintMultiplayer/index.html"
-                                                    ><span>Multiplayer
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/BlueprintMultiplayer/index.html"><span>Multiplayer
                                         Shootout</span></a><br />Breaking down the Blueprint Multiplayer Showcase and how it was constructed.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/index.html"
-                                                    ><span>Particle
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/index.html"><span>Particle
                                         Effects</span></a><br />An overview of the Effects example included with UE4.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/FireExamples/index.html"
-                                                            ><span>Fire
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/FireExamples/index.html"><span>Fire
                                                 Examples</span></a><br />An overview of the Fire Effects that exist as a part of the Particle Effects example included with UE4.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/SnowExamples/index.html"
-                                                            ><span>Snow
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/SnowExamples/index.html"><span>Snow
                                                 Examples</span></a><br />An overview of the Snow Effects that exist as a part of the Particle Effects example included with UE4.
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/WaterExamples/index.html"
-                                                            ><span>Water
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Effects/WaterExamples/index.html"><span>Water
                                                 Examples</span></a><br />An overview of the Water Effects that exist as a part of the Particle Effects example included with UE4.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Infiltrator/index.html"
-                                                    ><span>Infiltrator
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Infiltrator/index.html"><span>Infiltrator
                                         Demo</span></a><br />An overview of the real time Infiltrator Demo
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/MatineeFightScene/index.html"
-                                                    ><span>Matinee</span></a><br />An overview of the Matinee example and how it was constructed.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/MatineeFightScene/index.html"><span>Matinee</span></a><br />An overview of the Matinee example and how it was constructed.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html"
-                                                    ><span>Mission
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/MissionAR/index.html"><span>Mission
                                         AR</span></a><br />Recreate the mission to the Moon using Unreal Engine and HoloLens 2
                                                     </p>
                                                 </li>
@@ -11139,14 +10649,12 @@ export class PageUnrealEngineDocExpanded {
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/PixelStreamingShowcase/index.html"
-                                                    ><span>Pixel
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/PixelStreamingShowcase/index.html"><span>Pixel
                                         Streaming Demo</span></a><br />The Pixel Streaming Demo showcase demonstrates how you can design Unreal Engine content for viewers to experience as a live stream in a Web browser or mobile device.
                                                     </p>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/RealisticRendering/index.html"
-                                                    ><span>Realistic
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/RealisticRendering/index.html"><span>Realistic
                                         Rendering</span></a><br />An overview of the Realistic Rendering included with UE4.
                                                     </p>
                                                     <ul>
@@ -11163,73 +10671,61 @@ export class PageUnrealEngineDocExpanded {
                                                             </p>
                                                         </li>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/RealisticRendering/NightSceneNoLights/index.html"
-                                                            ><span>Night
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/RealisticRendering/NightSceneNoLights/index.html"><span>Night
                                                 No Lights Scene Lighting</span></a><br />An overview of the Night scene from the Realistic Rendering demolet included with UE4.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
-                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Reflections/index.html"
-                                                    ><span>Reflections</span></a><br />An overview of the Reflections Example included with UE4.
+                                                    <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Reflections/index.html"><span>Reflections</span></a><br />An overview of the Reflections Example included with UE4.
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/SequencerSubway/index.html"
-                                                    ><span>Sequencer
-                                        Subway</span></a><br />The Sequencer example shows how to create film-quality cinematic sequences using Unreal Engine 4's Sequencer Editor.
+                                                    ><span>Sequencer Subway</span></a><br />The Sequencer example shows how to create film-quality cinematic sequences using Unreal Engine 4's Sequencer Editor.
                                                     </p>
                                                 </li>
                                                 <li>
 
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/SpatialAudioTemple/index.html"
-                                                    ><span>Spatial
-                                        Audio Temple</span></a><br />Showcasing spatialization technologies in the new Unreal Audio Engine.
+                                                    ><span>Spatial Audio Temple</span></a><br />Showcasing spatialization technologies in the new Unreal Audio Engine.
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Stylized/index.html"
-                                                    ><span>Stylized
-                                        Rendering</span></a><br />An overview of the Stylized Rendering showcase included with UE4.
+                                                    ><span>Stylized Rendering</span></a><br />An overview of the Stylized Rendering showcase included with UE4.
                                                     </p>
                                                     <ul>
                                                         <li>
-                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Stylized/Landscape/index.html"
-                                                            ><span>Stylized
-                                                Rendering Landscape</span></a><br />An overview of the Landscape effects used in the Stylized Rendering showcase included with UE4.
+                                                            <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Stylized/Landscape/index.html"><span>Stylized Rendering Landscape</span></a><br />An overview of the Landscape effects used in the Stylized Rendering showcase included with UE4.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Stylized/Materials/index.html"
-                                                            ><span>Stylized
-                                                Rendering Materials</span></a><br />An overview of the special case Materials used in the Stylized Rendering showcase included with UE4.
+                                                            ><span>Stylized Rendering Materials</span></a><br />An overview of the special case Materials used in the Stylized Rendering showcase included with UE4.
                                                             </p>
                                                         </li>
                                                         <li>
                                                             <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/Stylized/PostProcessing/index.html"
-                                                            ><span>Stylized
-                                                Rendering Post Processing</span></a><br />An overview of the post processing effects used in the Stylized Rendering showcase included with UE4.
+                                                            ><span>Stylized Rendering Post Processing</span></a><br />An overview of the post processing effects used in the Stylized Rendering showcase included with UE4.
                                                             </p>
                                                         </li>
                                                     </ul>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/DigitalHumans/index.html"
-                                                    ><span>Digital
-                                        Humans</span></a><br />Creating believable characters using high-quality character shader techniques, data scans of Actors, and improved geometry workflow
+                                                    ><span>Digital Humans</span></a><br />Creating believable characters using high-quality character shader techniques, data scans of Actors, and improved geometry workflow
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Platforms/AR/HandheldAR/FaceARSample/index.html"
-                                                    ><span>Face
-                                        AR Sample</span></a><br />A sample showcasing Apple's ARKit facial tracking capabilities within Unreal Engine.
+                                                    ><span>Face AR Sample</span></a><br />A sample showcasing Apple's ARKit facial tracking capabilities within Unreal Engine.
                                                     </p>
                                                 </li>
                                                 <li>
                                                     <p><a href="https://docs.unrealengine.com/en-US/Resources/Showcases/VirtualStudio/index.html"
-                                                    ><span>Virtual
-                                        Studio</span></a><br />The Virtual Studio showcases Unreal Engine's ability to exchange video feeds with professional grade SDI cards and devices.
+                                                    ><span>Virtual Studio</span></a><br />The Virtual Studio showcases Unreal Engine's ability to exchange video feeds with professional grade SDI cards and devices.
                                                     </p>
                                                 </li>
                                             </ul>

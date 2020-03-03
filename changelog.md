@@ -3,6 +3,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.5.35] - 2020-03-03
+
+- Added new post: [http://localhost:3333/unreal-engine-doc-expanded](https://codyburleson.com/http://localhost:3333/unreal-engine-doc-expanded)
+- Removed Google AdSense component (it was not working consistently)
+
 ## [1.5.32] - 2020-02-15
 
 - Testing Google AdSense correction; attempt 11
