@@ -139,6 +139,7 @@ export namespace Components {
   interface PageLonelinessAndAShovel {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMarinePlatoon1561966 {}
   interface PageMeetIifeTheQuintessentialJavascriptClosure {}
   interface PageMemoriesOfMomma1 {}
   interface PageMemoriesOfMomma2 {}
@@ -869,6 +870,12 @@ declare global {
     new (): HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
   };
 
+  interface HTMLPageMarinePlatoon1561966Element extends Components.PageMarinePlatoon1561966, HTMLStencilElement {}
+  var HTMLPageMarinePlatoon1561966Element: {
+    prototype: HTMLPageMarinePlatoon1561966Element;
+    new (): HTMLPageMarinePlatoon1561966Element;
+  };
+
   interface HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement extends Components.PageMeetIifeTheQuintessentialJavascriptClosure, HTMLStencilElement {}
   var HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement: {
     prototype: HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
@@ -1509,6 +1516,7 @@ declare global {
     'page-loneliness-and-a-shovel': HTMLPageLonelinessAndAShovelElement;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
+    'page-marine-platoon-156-1966': HTMLPageMarinePlatoon1561966Element;
     'page-meet-iife-the-quintessential-javascript-closure': HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
     'page-memories-of-momma-1': HTMLPageMemoriesOfMomma1Element;
     'page-memories-of-momma-2': HTMLPageMemoriesOfMomma2Element;
@@ -1731,6 +1739,7 @@ declare namespace LocalJSX {
   interface PageLonelinessAndAShovel {}
   interface PageMakeAZbrushSpeedSculptTimelapseVideo {}
   interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {}
+  interface PageMarinePlatoon1561966 {}
   interface PageMeetIifeTheQuintessentialJavascriptClosure {}
   interface PageMemoriesOfMomma1 {}
   interface PageMemoriesOfMomma2 {}
@@ -1928,6 +1937,7 @@ declare namespace LocalJSX {
     'page-loneliness-and-a-shovel': PageLonelinessAndAShovel;
     'page-make-a-zbrush-speed-sculpt-timelapse-video': PageMakeAZbrushSpeedSculptTimelapseVideo;
     'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
+    'page-marine-platoon-156-1966': PageMarinePlatoon1561966;
     'page-meet-iife-the-quintessential-javascript-closure': PageMeetIifeTheQuintessentialJavascriptClosure;
     'page-memories-of-momma-1': PageMemoriesOfMomma1;
     'page-memories-of-momma-2': PageMemoriesOfMomma2;
@@ -2132,6 +2142,7 @@ declare module "@stencil/core" {
       'page-loneliness-and-a-shovel': LocalJSX.PageLonelinessAndAShovel & JSXBase.HTMLAttributes<HTMLPageLonelinessAndAShovelElement>;
       'page-make-a-zbrush-speed-sculpt-timelapse-video': LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
       'page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required': LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
+      'page-marine-platoon-156-1966': LocalJSX.PageMarinePlatoon1561966 & JSXBase.HTMLAttributes<HTMLPageMarinePlatoon1561966Element>;
       'page-meet-iife-the-quintessential-javascript-closure': LocalJSX.PageMeetIifeTheQuintessentialJavascriptClosure & JSXBase.HTMLAttributes<HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement>;
       'page-memories-of-momma-1': LocalJSX.PageMemoriesOfMomma1 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma1Element>;
       'page-memories-of-momma-2': LocalJSX.PageMemoriesOfMomma2 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma2Element>;

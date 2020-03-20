@@ -46,6 +46,14 @@ export class PageCage {
       dateModified: ""
     },
     {
+      id: "/marine-platoon-156-san-diego-1966",
+      title: "U.S. Marine Corps Platoon 156 - San Diego, 1966",
+      teaser: "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/marine-platoon-156_san-diego_1966_thumb.jpg",
+      datePublished: "3/12/2020",
+      dateModified: ""
+    },
+    {
       id: "/photos/curt-bruce",
       title: "Tour of Duty Photos from Curt Bruce",
       teaser: "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",
@@ -127,6 +135,15 @@ export class PageCage {
       datePublished: "",
       dateModified: "Dec 18, 2018"
     },
+    {
+      id: "/photos/cavazos-center",
+      title: "Vietnam War Photographs from the Martin Cavazos Center",
+      teaser: "A collection of photos presented in honor of Martin Cavazos (Delta Co., 1st Batallion / 3rd Marines; KIA May 5, 1967); originally from the Martin Cavazos Center in Sebastian, Texas.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/cavazos-center_thumb.jpg",
+      datePublished: "Mar 13, 2020",
+      dateModified: ""
+    },
+    
   ]
 
   videoItems = [

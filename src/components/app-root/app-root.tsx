@@ -148,6 +148,9 @@ export class AppRoot {
           <ion-route url="/d-1-3-weapons-platoon" component="tab-books">
             <ion-route component="page-photos-weapons-platoon"></ion-route>
           </ion-route>
+          <ion-route url="/marine-platoon-156-san-diego-1966" component="tab-books">
+            <ion-route component="page-marine-platoon-156-1966"></ion-route>
+          </ion-route>
           <ion-route url="/ray-kelley-silver-star" component="tab-books">
             <ion-route component="page-ray-kelley-silver-star"></ion-route>
           </ion-route>

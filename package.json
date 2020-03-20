@@ -17,10 +17,9 @@
     "prod.prerender": "node appGenSitemap.js && stencil build --prerender --watch --serve"
   },
   "dependencies": {
-    "@ionic/core": "^5.0.1",
+    "@ionic/core": "^5.0.5",
     "d3": "^5.15.0",
     "d3-tip": "^0.9.1",
-    "ionicons": "^5.0.0",
     "moment": "^2.24.0",
     "prismjs": "^1.19.0"
   },

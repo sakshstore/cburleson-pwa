@@ -81,7 +81,7 @@ export class PageLifeEvents {
                                 <li>
                                     <strong>1994</strong>
                                     <ul>
-                                        <li>Nov 5 - Married Karlisa Anne McKenney.</li>
+                                        <li>Nov 5 - Married Karlisa Ann McKenney.</li>
                                     </ul>
                                 </li>
                                 <li><strong>1995</strong>

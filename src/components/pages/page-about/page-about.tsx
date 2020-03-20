@@ -55,47 +55,10 @@ export class PageAbout {
 
         <h2>What I'm doing now</h2>
 
-        <p>I recently &quot;retired&quot; from 22 years in software to pursue my lifelong dream of being a writer and I am currently writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, The Cage, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
+        <p>
+          After a twenty-two year career in software, I've decided to pursue my lifelong dream of being a writer and I am now spending most of my time writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, <em>The Cage</em>, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
 
         <p><strong><ion-router-link href="/cage" routerDirection="forward">The Cage</ion-router-link></strong> (work-in-progress book)</p>
-
-        {/*
-        <h3 class="clear">Follow me</h3>
-
-        <p>I'm not very active on social media, but, for what it's worth, I can also be found here:</p>
-
-        <ion-list>
-          <ion-item href="http://www.youtube.com/c/CodyBurleson22">
-            <ion-label>On YouTube</ion-label>
-            <ion-icon name="logo-youtube" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href="https://twitter.com/@cody_d_burleson">
-            <ion-label>On Twitter</ion-label>
-            <ion-icon name="logo-twitter" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href="https://www.instagram.com/cody_burleson/">
-            <ion-label>On Instagram</ion-label>
-            <ion-icon name="logo-instagram" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href=" https://www.pinterest.com/codyburleso7161/">
-            <ion-label>On Pinterest</ion-label>
-            <ion-icon name="logo-pinterest" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href="https://www.facebook.com/cody.burleson.22">
-            <ion-label>On Facebook</ion-label>
-            <ion-icon name="logo-facebook" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href="https://www.linkedin.com/in/cody-burleson/">
-            <ion-label>On LinkedIn</ion-label>
-            <ion-icon name="logo-linkedin" slot="start"></ion-icon>
-          </ion-item>
-          <ion-item href="https://github.com/codyburleson">
-            <ion-label>On Github</ion-label>
-            <ion-icon name="logo-github" slot="start"></ion-icon>
-          </ion-item>
-        </ion-list>
-
-        */}
 
         <h2 class="clear">About this site (technology)</h2>
 
