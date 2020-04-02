@@ -1,7 +1,15 @@
 # Changelog
+
 All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
+
+## [1.6.0]
+
+- Added new page, [Contact](https://codyburleson.com/contact)
+- Modified contents of page, [Linux and Unix commands](https://codyburleson.com/linux-and-unix-commands/); added `pwd` command and wrapped existing commands in HTML code tags for improved legibility
+- Updated `@ionic/core` from `^5.0.5` to `5.0.7`
+- Updated `@stencil/core` from `^1.8.11` to `1.12.0`
 
 ## [1.5.36] - 2020-03-20
 

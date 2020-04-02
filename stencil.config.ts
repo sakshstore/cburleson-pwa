@@ -6,13 +6,14 @@ import { Config } from '@stencil/core';
 // Start:
 // See: Environment variables with StencilJS
 // https://medium.com/stencil-tricks/environment-variables-with-stenciljs-57e9da591280
-let globalScript: string = 'src/global/app.ts';
+//let globalScript: string = 'src/global/app.ts';
 
 const dev: boolean =
   process.argv && process.argv.indexOf('--dev') > -1;
-if (dev) {
-  globalScript = 'src/global/app-dev.ts';
-}
+
+//  if (dev) {
+  //globalScript = 'src/global/app-dev.ts';
+//}
 // End: env vars
 
 export const config: Config = {
@@ -21,8 +22,8 @@ export const config: Config = {
     baseUrl: 'https://localhost:3333/',
     serviceWorker: null
   }],
-  //globalScript: 'src/global/app.ts',
-  globalScript: globalScript,
+  globalScript: 'src/global/app.ts',
+  //globalScript: globalScript,
   globalStyle: 'src/global/app.css',
   copy: [{
     src: '../ads.txt',

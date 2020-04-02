@@ -56,7 +56,7 @@ export class PageAbout {
         <h2>What I'm doing now</h2>
 
         <p>
-          After a twenty-two year career in software, I've decided to pursue my lifelong dream of being a writer and I am now spending most of my time writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, <em>The Cage</em>, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
+          After a twenty-two year career in software, I've decided to pursue my lifelong dream of being a writer and I am now spending a lot of my time writing a nonfiction book about the 1st Battalion, 3rd Marines in the Vietnam War. It goes by the working title, <em>The Cage</em>, which refers to Operation Beaver Cage, a key event in the story. For more information about the work, or to join the project mailing list, see:</p>
 
         <p><strong><ion-router-link href="/cage" routerDirection="forward">The Cage</ion-router-link></strong> (work-in-progress book)</p>
 

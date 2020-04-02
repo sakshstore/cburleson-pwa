@@ -3,6 +3,8 @@ https://codyburleson.com/blog
 https://codyburleson.com/books
 https://codyburleson.com/about
 https://codyburleson.com/about/life-events
+https://codyburleson.com/about/experience
+https://codyburleson.com/contact
 https://codyburleson.com/beaver-cage-command-chron
 https://codyburleson.com/beaver-cage-union-memorial
 https://codyburleson.com/cage
@@ -21,6 +23,9 @@ https://codyburleson.com/photos/ken-hicks
 https://codyburleson.com/photos/kevin-brooks
 https://codyburleson.com/photos/ray-kelley
 https://codyburleson.com/photos/stanley-hall
+https://codyburleson.com/photos/cavazos-center
+https://codyburleson.com/sea-tiger-newspapers
+https://codyburleson.com/beaver-cage-union-memorial
 https://codyburleson.com/unreal-engine-doc-expanded
 https://codyburleson.com/book-review-the-goldfinch
 https://codyburleson.com/delete-node-modules-folder-on-windows

@@ -59,7 +59,7 @@ export class PageDockerCheatSheet {
                             <p><code>docker rm $(docker ps -a -q)</code></p>
                             <p>To <strong>remove all images</strong>:</p>
                             <p><code>docker rmi $(docker images -q)</code></p>
-                            <p>Warning: Executing the commands shown above&nbsp;<em>will</em> destroy <em>all</em>your containers and images; it will not be possible to restore&nbsp;them.</p>
+                            <p>Warning: Executing the commands shown above <em>will</em> destroy <em>all</em> your containers and images; it will not be possible to restore them.</p>
                             <h2>List images</h2>
                             <p><code>docker images</code></p>
                             <h2>Remove an image</h2>

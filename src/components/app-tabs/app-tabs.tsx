@@ -1,6 +1,5 @@
 import { Component, h } from '@stencil/core';
 import { menuController } from '@ionic/core';
-import { isLocal } from '../../helpers/utils';
 import { PageData } from '../../services/page-data';
 
 @Component({
@@ -9,24 +8,14 @@ import { PageData } from '../../services/page-data';
 })
 export class AppTabs {
 
-  //@Prop({ connect: 'ion-menu-controller' }) menuCtrl: HTMLIonMenuControllerElement;
-
   data: any;
   menuCtlr: any = menuController;
 
   async componentWillLoad() {
-    if (isLocal()) {
-      console.log('> AppTabs.componentWillLoad');
-    }
     this.data = await PageData.load();
   }
 
   async componentDidLoad() {
-    if (isLocal()) {
-      console.log('> PageTabs.componentDidLoad');
-    }
-
-    //this.menuCtlr = await (this.menuCtlr as any).componentOnReady();
     this.menuCtlr.enable(true);
   }
 

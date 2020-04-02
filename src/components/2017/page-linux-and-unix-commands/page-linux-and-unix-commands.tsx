@@ -58,12 +58,6 @@ export class PageLinuxAndUnixCommands {
                             <app-entry-meta header={this.header} />
 
                             <p>My collection of handy Linux, Unix, and Mac OS terminal commands.</p>
-                            <p>Other references</p>
-                            <ul>
-                                <li><a href="https://tiswww.case.edu/php/chet/bash/bashref.html" rel="nofollow">Bash Reference Manual</a></li>
-                                <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh" rel="nofollow">Bash Cheatsheet</a></li>
-                                <li><a href="http://www.learnshell.org/" rel="nofollow">Learn Shell</a></li>
-                            </ul>
 
                             <h2>Change file permissions</h2>
 
@@ -76,17 +70,16 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>chmod +x filename.ext</td>
+                                        <td><code>chmod +x filename.ext</code></td>
                                         <td>Give execute access to a file.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>sudo chmod -R 777 workspace</td>
-                                        <td>-R means<br />
-                                            <em>RECURSIVE</em></td>
+                                        <td><code>sudo chmod -R 777 workspace</code></td>
+                                        <td><code>-R</code> means <em>RECURSIVE</em></td>
                                     </tr>
                                     <tr role="row">
-                                        <td>sudo chown -R basejump workspace</td>
-                                        <td>Take ownership of a file. basejump (user) and workspace (directory)</td>
+                                        <td><code>sudo chown -R basejump workspace</code></td>
+                                        <td>Take ownership of a file. basejump (the user) and workspace (the directory)</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -102,19 +95,19 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>tar -zxvf file.tar.gz</td>
+                                        <td><code>tar -zxvf file.tar.gz</code></td>
                                         <td>To extract one or more members from an archive:</td>
                                     </tr>
                                     <tr role="row">
                                         <td>
-                                            <pre>tar -czvf name-of-archive.tar.gz /path/to/directory-or-file</pre>
+                                            <code>tar -czvf name-of-archive.tar.gz /path/to/directory-or-file</code>
                                         </td>
                                         <td><p>Compress an entire directory or single file.</p>
-                                            <p><em>Note: Be sure to add the .tar.gz in the archive file name yourself; the command doesn&#8217;t do it for you.<br />
+                                            <p><em>Note: Be sure to add the <code>.tar.gz</code> in the archive file name yourself; the command doesn't do it for you.<br />
                                             </em></p>
-                                            <p>Here’s what the switches mean: -c: Create an archive. -z: Compress the archive with gzip. -v: Display progress in the terminal<br />
-                                                while creating the archive, also known as “verbose” mode. The v is always optional in these commands, but<br />
-                                                it’s helpful. -f: Allows you to specify the filename of the archive.</p></td>
+                                            <p>Here's what the switches mean: <code>-c</code>: Create an archive. <code>-z</code>: Compress the archive with gzip. <code>-v</code>: Display progress in the terminal<br />
+                                                while creating the archive, also known as &quot;verbose&quot; mode. The <code>v</code> is always optional in these commands, but<br />
+                                                it's helpful. <code>-f</code>: Allows you to specify the filename of the archive.</p></td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -130,10 +123,10 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>alias p=&lt;command&gt;</td>
+                                        <td><code>alias p=&quot;&lt;command&gt;&quot;</code></td>
                                         <td><p>Create shortcut aliases to common commands.</p>
                                             <p>For example:</p>
-                                            <div>alias p=&#8221;open /x/yx/z&#8221; to open a particular directory in Finder</div>
+                                            <div><code>alias p=&quot;open /x/yx/z&quot;</code> to open a particular directory in Finder</div>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -150,21 +143,25 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>mv &lt;oldDirName&gt; &lt;newDirName&gt;</td>
+                                        <td><code>pwd</code></td>
+                                        <td>Print working directory (the directory you're currently in).</td>
+                                    </tr>
+                                    <tr role="row">
+                                        <td><code>mv &lt;oldDirName&gt; &lt;newDirName&gt;</code></td>
                                         <td>Rename a directory. Be aware: this is actually a move command. So, you&#8217;re just moving<br />
                                             the directory from one name to another in the same path.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>rmdir</td>
+                                        <td><code>rmdir</code></td>
                                         <td>Remove an empty directory</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>rm -rf &lt;dirName&gt;</td>
+                                        <td><code>rm -rf &lt;dirName&gt;</code></td>
                                         <td>Forcefully remove a directory recursively.
                                         <p><em>Remove the f switch to be prompted for each sub-directory and file inside.</em></p></td>
                                     </tr>
                                     <tr role="row">
-                                        <td>cp -rf present/directory /desire/directory</td>
+                                        <td><code>cp -rf present/directory /desire/directory</code></td>
                                         <td>Copy an entire directory, its subdirectories, and files.
                                         <p><em>Remove the f switch to be prompted for each sub-directory and file inside.</em></p></td>
                                     </tr>
@@ -182,13 +179,13 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>sudo &lt;command&gt;</td>
+                                        <td><code>sudo &lt;command&gt;</code></td>
                                         <td>Execute command as the root user.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>sudo !!</td>
-                                        <td>Execute the last command as root user. (!!) represents the last command<br />
-                                            you just tried to run, but couldn&#8217;t because of permission issues.</td>
+                                        <td><code>sudo !!</code></td>
+                                        <td>Execute the last command as root user. (<code>!!</code>) represents the last command<br />
+                                            you just tried to run, but couldn't because of permission issues.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -204,7 +201,7 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>./startTest.sh &amp;</td>
+                                        <td><code>./startTest.sh &amp;</code></td>
                                         <td>Start the execution in the background, which will allow you to kill your SSH terminal<br />
                                             without killing the process itself.</td>
                                     </tr>
@@ -222,13 +219,13 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>cd / find . -size +10000000c -print</td>
+                                        <td><code>cd / find . -size +10000000c -print</code></td>
                                         <td>Prints out the names of all files with size &gt; 10mb.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>cd / sudo du -sm *</td>
+                                        <td><code>cd / sudo du -sm *</code></td>
                                         <td>Examine the size of the directories under /. You can then navigate into<br />
-                                            any given subdirectory and execute dm -sm * again to see which subdirectories are the largest.</td>
+                                            any given subdirectory and execute <code>du -sm *</code> again to see which subdirectories are the largest.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -244,7 +241,7 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>df -h</td>
+                                        <td><code>df -h</code></td>
                                         <td>Inspect disk space and usage (in MB or GB)</td>
                                     </tr>
                                 </tbody>
@@ -261,7 +258,7 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>printenv</td>
+                                        <td><code>printenv</code></td>
                                         <td>Prints all currently set environment variables and values.</td>
                                     </tr>
                                 </tbody>
@@ -278,48 +275,47 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>mv</td>
+                                        <td><code>mv</code></td>
                                         <td>Rename a file</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>rm</td>
+                                        <td><code>rm</code></td>
                                         <td>Remove a file</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>rm -f</td>
+                                        <td><code>rm -f</code></td>
                                         <td>Forcefully remove a file</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>rm -i</td>
+                                        <td><code>rm -i</code></td>
                                         <td>Interactively remove a file</td>
                                     </tr>
                                 </tbody>
                             </table>
 
-                            <p>If you are not certain about removing files that match a pattern you supply, it is always good to run rm interactively (rm<br />
-                                –i) to prompt before every removal.</p>
+                            <p>If you are not certain about removing files that match a pattern you supply, it is always good to run rm interactively (<code>rm –i</code>) to prompt before every removal.</p>
 
                             <h2>Switch user</h2>
 
                             <table class="table table-bordered table-striped">
                                 <thead>
                                     <tr role="row">
-                                        <th>>Command</th>
+                                        <th>Command</th>
                                         <th>Usage</th>
                                     </tr>
                                 </thead>
                                 <tbody>
                                     <tr role="row">
-                                        <td>su &#8211; &lt;username&gt;</td>
+                                        <td><code>su &#8211; &lt;username&gt;</code></td>
                                         <td>Switch to the given user, loading their profile. You may have to use sudo su &#8211; &lt;username&gt;.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>su</td>
+                                        <td><code>su</code></td>
                                         <td>Without a username means to just switch to root user.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>whoami</td>
-                                        <td>&#8220;Who Am I?&#8221; Prints the current user.</td>
+                                        <td><code>whoami</code></td>
+                                        <td>&quot;Who Am I?&quot; Prints the current user.</td>
                                     </tr>
                                 </tbody>
                             </table>
@@ -335,27 +331,26 @@ export class PageLinuxAndUnixCommands {
                                 </thead>
                                 <tbody aria-live="polite" aria-relevant="all">
                                     <tr role="row">
-                                        <td>cat</td>
+                                        <td><code>cat</code></td>
                                         <td>Used for viewing files that are not very long; it does not provide any scroll-back.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>tac</td>
+                                        <td><code>tac</code></td>
                                         <td>Used to look at a file backwards, starting with the last line.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>less</td>
-                                        <td>Used to view larger files because it is a paging program; it pauses at each<br />
-                                            screenful of text, provides scroll-back capabilities, and lets you search and navigate within the file. Note:<br />
-                                            Use / to search for a pattern in the forward direction and ? for a pattern in the backward direction. Press<br />
-                                            Q to quit.</td>
+                                        <td><code>less</code></td>
+                                        <td>Used to view larger files because it is a paging program; it pauses at each 
+                                            screenful of text, provides scroll-back capabilities, and lets you search and navigate within the file. Note:
+                                            Use / to search for a pattern in the forward direction and ? for a pattern in the backward direction. Press <kbd>Q</kbd> to quit.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>tail</td>
+                                        <td><code>tail</code></td>
                                         <td>Used to print the last 10 lines of a file by default. You can change the<br />
                                             number of lines by doing -n 15 or just -15 if you wanted to look at the last 15 lines instead of the default.</td>
                                     </tr>
                                     <tr role="row">
-                                        <td>head</td>
+                                        <td><code>head</code></td>
                                         <td>The opposite of tail; by default it prints the first 10 lines of a file.</td>
                                     </tr>
                                 </tbody>
@@ -370,11 +365,11 @@ sudo reboot`}</code></pre>
 
                             <h2>Use pipes</h2>
 
-                            <p>The UNIX/Linux philosophy is to have many simple and short programs (or commands) cooperate together to produce quite complex results, rather than have one complex program with many possible options and modes of operation. In order to accomplish this, extensive use of pipes is made; you can pipe the output of one command or program into another as its input. In order to do this we use the vertical-bar, |, (pipe symbol) between commands as in: $ command1 | command2 | command3 The above represents what we often call a pipeline and allows Linux to combine the actions of several commands into one. This is extraordinarily efficient because command2 and command3 do not have to wait for the previous pipeline commands to complete before they can begin hacking at the data in their input streams; on multiple CPU or core systems the available computing power is much better utilized and things get done quicker. In addition there is no need to save output in (temporary) files between the stages in the pipeline, which saves disk space and reduces reading and writing from disk, which is often the slowest bottleneck in getting something done.</p>
+                            <p>The UNIX/Linux philosophy is to have many simple and short programs (or commands) cooperate together to produce quite complex results, rather than have one complex program with many possible options and modes of operation. In order to accomplish this, extensive use of pipes is made; you can pipe the output of one command or program into another as its input. In order to do this we use the vertical-bar, <code>|</code>, (pipe symbol) between commands as in: <code>$ command1 | command2 | command3</code> This represents what we often call a pipeline and allows Linux to combine the actions of several commands into one. This is extraordinarily efficient because command2 and command3 do not have to wait for the previous pipeline commands to complete before they can begin hacking at the data in their input streams; on multiple CPU or core systems the available computing power is much better utilized and things get done quicker. In addition there is no need to save output in (temporary) files between the stages in the pipeline, which saves disk space and reduces reading and writing from disk, which is often the slowest bottleneck in getting something done.</p>
 
                             <h2>Split a large text file into smaller parts</h2>
 
-                            <p>The Linux split command can help you break up really large text files into smaller, more manageable parts.</p>
+                            <p>The Linux <code>split</code> command can help you break up really large text files into smaller, more manageable parts.</p>
 
                             <p><code>split -l &lt;line-numbers&gt; &lt;source-file&gt; &lt;destination-file-prefix&gt;</code></p>
 
@@ -384,7 +379,7 @@ sudo reboot`}</code></pre>
 
                             <h2>Fast string replace using stream editor (sed)</h2>
 
-                            <p>If you need to replace strings in a very large file or many files, you can use sed, the streaming editor. It&#8217;s very fast because it uses streaming. This sure beats opening individual files in some editor and then using a find and replace function. The string positions expect regex, so be careful fo special characters.</p>
+                            <p>If you need to replace strings in a very large file or many files, you can use <code>sed</code>, the streaming editor. It's very fast because it uses streaming. This sure beats opening individual files in some editor and then using a find and replace function. The string positions expect regex, so be careful fo special characters.</p>
 
                             <p><code>sed 's/&lt;original-string&gt;/&lt;revised-string&gt;/' &lt;source-file&gt; &gt; &lt;new-file&gt;</code></p>
 
@@ -408,7 +403,12 @@ sudo reboot`}</code></pre>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            <h5>Related Web Resources</h5>
+                            <ul>
+                                <li><a href="https://tiswww.case.edu/php/chet/bash/bashref.html" rel="nofollow">Bash Reference Manual</a></li>
+                                <li><a href="https://github.com/LeCoupa/awesome-cheatsheets/blob/master/languages/bash.sh" rel="nofollow">Bash Cheatsheet</a></li>
+                                <li><a href="http://www.learnshell.org/" rel="nofollow">Learn Shell</a></li>
+                            </ul>
                         </ion-col>
                     </ion-row>
                 </ion-grid>

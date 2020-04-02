@@ -5,16 +5,6 @@ import { PageData } from '../../services/page-data';
 
 declare let gtag: Function;
 
-/* DISQUS STUFF
-declare global {
-  interface Window {
-      disqus_config: any;
-      DISQUS: any;
-      disqusLoaded: boolean;
-  }
-}
-*/
-
 @Component({
   tag: 'app-root'
 })
@@ -32,9 +22,10 @@ export class AppRoot {
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
   @Listen('ionRouteDidChange')
   routeDidChangeHandler(event: CustomEvent) {
-    if (isLocal()) {
-      console.log('> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
-    }
+    
+    //if (isLocal()) {
+      //console.log('> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
+    //}
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
     if (event.detail.to == '/home') {
@@ -45,6 +36,8 @@ export class AppRoot {
       document.title = 'Books | ' + SITENAME;
     } else if (event.detail.to == '/about') {
       document.title = 'About | ' + SITENAME;
+    } else if (event.detail.to == '/contact') {
+      document.title = 'Contact | ' + SITENAME;
     }
 
     if ( ! isLocal() ) {
@@ -55,25 +48,13 @@ export class AppRoot {
       } else {
         // otherwise, take the to...
         gtag('config', 'UA-21819432-1', { 'page_path': event.detail.to });
-
-
-        /* DISQUS STUFF...
-        let id = event.detail.to.substr(1);
-        this.disqus_config = function disqus_config() {
-          this.page.identifier = id
-          this.page.url = 'https://codyburleson.com/' + id;
-        }
-        window.DISQUS.reset({
-          reload: true
-        });
-        */
-
       }
     }
 
   }
 
   async componentWillLoad() {
+    
     if (isLocal()) {
       console.log('> AppRoot.componentWillLoad');
     }
@@ -83,15 +64,6 @@ export class AppRoot {
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
 
-    // DISQUS STUFF...
-    /*
-    let id = document.location.pathname.substr(1);
-    this.disqus_config = function disqus_config() {
-      this.page.identifier = id
-      this.page.url = 'https://codyburleson.com/' + id;
-    }
-    this.disqus_config = window.disqus_config || {};
-    */
   }
 
   renderRouter() {
@@ -112,9 +84,6 @@ export class AppRoot {
         <ion-route-redirect from="/display/ZN/Mirror+polygroup+on+a+subtool" to='/mirror-polygroup-on-subtool-in-zbrush' />
 
         <ion-route component="app-tabs">
-          <ion-route url="/home" component="tab-home">
-            <ion-route component="page-home"></ion-route>
-          </ion-route>
           <ion-route url="/blog" component="tab-blog">
             <ion-route component="app-blog"></ion-route>
           </ion-route>
@@ -129,6 +98,9 @@ export class AppRoot {
           </ion-route>
           <ion-route url="/about" component="tab-about">
             <ion-route url="/experience" component="page-experience"></ion-route>
+          </ion-route>
+          <ion-route url="/contact" component="tab-contact">
+            <ion-route component="page-contact"></ion-route>
           </ion-route>
           <ion-route url="/beaver-cage-command-chron" component="tab-books">
             <ion-route component="page-cmd-chron-beaver-cage"></ion-route>

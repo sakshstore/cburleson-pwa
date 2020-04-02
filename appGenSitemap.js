@@ -14,6 +14,8 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     siteMapText += 'https://codyburleson.com/books\r\n';
     siteMapText += 'https://codyburleson.com/about\r\n';
     siteMapText += 'https://codyburleson.com/about/life-events\r\n';
+    siteMapText += 'https://codyburleson.com/about/experience\r\n';
+    siteMapText += 'https://codyburleson.com/contact\r\n';
     siteMapText += 'https://codyburleson.com/beaver-cage-command-chron\r\n';
     siteMapText += 'https://codyburleson.com/beaver-cage-union-memorial\r\n';
     siteMapText += 'https://codyburleson.com/cage\r\n';
@@ -32,8 +34,11 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     siteMapText += 'https://codyburleson.com/photos/kevin-brooks\r\n';
     siteMapText += 'https://codyburleson.com/photos/ray-kelley\r\n';
     siteMapText += 'https://codyburleson.com/photos/stanley-hall\r\n';
+    siteMapText += 'https://codyburleson.com/photos/cavazos-center\r\n';
+    siteMapText += 'https://codyburleson.com/sea-tiger-newspapers\r\n';
+    siteMapText += 'https://codyburleson.com/beaver-cage-union-memorial\r\n';
 
-    let count = 23;
+    let count = 28;
     
     siteData.content.forEach((item) => {
         siteMapText += 'https://codyburleson.com/' + item.id + '\r\n';

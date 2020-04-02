@@ -20,6 +20,13 @@
               "icon": "information-circle-outline",
               "isTab" : true,
               "isMenu": true
+            },
+            {
+              "title": "Contact",
+              "slug": "contact",
+              "icon": "mail-outline",
+              "isTab" : true,
+              "isMenu": true
             }
     ]
 }
