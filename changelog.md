@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.2]
+
+- Added the contact page back in, now that I have the back-end platform running under an SSL certificate.
+- Modified page [/cavazos-center](https://codyburleson.com/photos/cavazos-center); added outro content to clarify source of photographs.
+
 ## [1.6.1]
 
 - Temporarily removed contact page from menu until HTTPS can be enabled on the back-end service.

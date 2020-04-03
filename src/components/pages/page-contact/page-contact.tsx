@@ -73,9 +73,8 @@ export class PageAbout {
         formData.append('text', this.text);
         formData.append('key', this.apiKey);
 
-
         // See: https://www.tjvantoll.com/2015/09/13/fetch-and-errors/
-        fetch("http://54.200.22.89/send-mail",
+        fetch("//codyburleson.cloud/send-mail",
           {
             body: formData,
             method: "post"

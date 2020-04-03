@@ -93,6 +93,8 @@ export class AppPhotos {
 
                             <ion-grid class="card-grid">{gridRows}</ion-grid>
 
+                            <div innerHTML={this.data.pageOutro}></div>
+
                         </ion-col>
                     </ion-row>
                 </ion-grid>
