@@ -58,20 +58,14 @@ export class PageSparqlExamplesConstruct {
 						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
 							<h1>{this.header.title}</h1>
 							<app-entry-meta header={this.header} />
-
 							<p>Construct a graph giving ontology structure (the class hierarchy, properties, domains and ranges)</p>
-
-							<pre><code class="language-sparql">{`CONSTRUCT { ?s ?p ?o . } 
+<pre><code class="language-sparql">{`CONSTRUCT { ?s ?p ?o . } 
 WHERE { VALUES ?p { rdfs:subClassOf rdfs:subPropertyOf rdfs:domain rdfs:range} ?s ?p ?o }
 `}</code></pre>
-
-							<p>Note that when a reasoner is enabled classes may typically be inferred to be rdfs:subClassOf themselves and rdfs:subClassOf any parent class, not just the direct parent.</p>
-
+							<p>Note that when a reasoner is enabled classes may typically be inferred to be <code>rdfs:subClassOf</code> themselves and <code>rdfs:subClassOf</code> any parent class, not just the direct parent.</p>
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
 							<gls-adsense-ad />
-
 						</ion-col>
 					</ion-row>
 				</ion-grid>

@@ -1,6 +1,5 @@
 # How to add a new main menu page
 
-- Add the page to the if/else if block under the comment for issue #5
 - Add the page to src/assets/data/page-data.json
 - Copy a page folder such as `pages/about`
 - Rename the folder, the css file, and the tsx file

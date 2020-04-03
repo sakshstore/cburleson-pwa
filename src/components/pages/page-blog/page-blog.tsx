@@ -1,34 +1,30 @@
-// import { Config } from '@ionic/core';
 import { Component, Element, h } from '@stencil/core';
 import { modalController } from '@ionic/core';
-import { BlogData } from '../../services/blog-data';
-import { get, set } from '../../services/storage';
+import { BlogData } from '../../../services/blog-data';
+import { get, set } from '../../../services/storage';
 
-import { isLocal, SITENAME } from '../../helpers/utils';
+import { isLocal, SITENAME } from '../../../helpers/utils';
 
 const EXCLUDE_TOPICS = 'excludeTopics';
 
 @Component({
-  tag: 'app-blog',
-  styleUrl: 'app-blog.css'
+  tag: 'page-blog',
+  styleUrl: 'page-blog.css'
 })
-export class AppBlog {
+export class PageBlog {
 
   title = 'Blog';
   excludeTopics: any = [];
 
   @Element() el: any;
 
-  // @Prop({ context: 'config' }) config: Config;
-
-  //@Prop({ connect: 'ion-modal-controller' }) modalCtrl: HTMLIonModalControllerElement;
   modalCtrl: any = modalController;
 
   data: any;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> AppBlog.componentWillLoad');
+      console.log('> PageBlog.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
 
@@ -41,7 +37,7 @@ export class AppBlog {
       })
       .catch(function (err) {
         if (isLocal()) {
-          console.log('< AppBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
+          console.log('< PageBlog.componentWillLoad < No exclude topics saved; returning empty array. [%o]', err);
         }
         // do nothing
         return [];
@@ -57,7 +53,7 @@ export class AppBlog {
   async updateContentList() {
 
     if (isLocal()) {
-      console.log('> AppBlog.updateContentList');
+      console.log('> PageBlog.updateContentList');
     }
 
     await BlogData.getContent(this.excludeTopics);
@@ -69,7 +65,7 @@ export class AppBlog {
 
   async presentFilter() {
     if (isLocal()) {
-      console.log('>> AppBlog.presentFilter');
+      console.log('>> PageBlog.presentFilter');
     }
 
     const modal = await this.modalCtrl.create({
@@ -100,21 +96,6 @@ export class AppBlog {
 
     return await modal.present();
   }
-
-  /*
-  @Listen('ionModalDidDismiss', { target: 'body' })
-  modalDidDismiss(event: CustomEvent) {
-    if (isLocal()) {
-      console.log('> AppBlog.modalDidDismiss > event.detail.data: %o', event.detail.data);
-    }
-    if (event && typeof event.detail.data !== 'undefined') {
-      this.excludeTopics = event.detail.data;
-      // Set the excluded topics in local storage
-      set(EXCLUDE_TOPICS, event.detail.data);
-      this.updateContentList();
-    }
-  }
- */
 
   createTopicList(item: any) {
     let topicString = item.topics[0];

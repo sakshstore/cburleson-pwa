@@ -8,8 +8,6 @@ import { HTMLStencilElement, JSXBase } from "@stencil/core/internal";
 export namespace Components {
     interface App404PageNotFound {
     }
-    interface AppBlog {
-    }
     interface AppBlogFilter {
         "excludedTopics": string[];
     }
@@ -34,13 +32,6 @@ export namespace Components {
           * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
          */
         "adFormat": string;
-    }
-    interface GlsDisqus {
-        "category": string;
-        "identifier": string;
-        "language": string;
-        "pageTitle": string;
-        "url": string;
     }
     interface GlsGcseSearchboxOnly {
     }
@@ -74,6 +65,8 @@ export namespace Components {
     }
     interface PageBase22ConsultantsCreed {
     }
+    interface PageBeaverCageCommandChron {
+    }
     interface PageBeaverCageUnionMemorial {
     }
     interface PageBendThingsInZbrushWithTheBendCurveModifier {
@@ -82,7 +75,9 @@ export namespace Components {
     }
     interface PageBindingToAZsphereArmature {
     }
-    interface PageBookReviewMoreThanEverything {
+    interface PageBlog {
+    }
+    interface PageBookReviewMoreThanEverythingByVanessaFoster {
     }
     interface PageBookReviewTheGoldfinch {
     }
@@ -97,8 +92,6 @@ export namespace Components {
     interface PageChangeCanvasBackgroundColorInZbrush {
     }
     interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {
-    }
-    interface PageCmdChronBeaverCage {
     }
     interface PageCollectUiUiScreenshotsToInspireDesign {
     }
@@ -125,6 +118,8 @@ export namespace Components {
     interface PageCreatePolygroupFromMaskInZbrush {
     }
     interface PageCuratedListOfIbmDigitalExperienceResources {
+    }
+    interface PageD13WeaponsPlatoon {
     }
     interface PageDefineAServletUsingJavaAnnotationsInsteadOfXml {
     }
@@ -234,7 +229,7 @@ export namespace Components {
     }
     interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
     }
-    interface PageMarinePlatoon1561966 {
+    interface PageMarinePlatoon156SanDiego1966 {
     }
     interface PageMeetIifeTheQuintessentialJavascriptClosure {
     }
@@ -261,8 +256,6 @@ export namespace Components {
     interface PageNotesOnZbrushSlicecurveBrush {
     }
     interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {
-    }
-    interface PagePhotosWeaponsPlatoon {
     }
     interface PagePinkHearts {
     }
@@ -422,12 +415,6 @@ declare global {
         prototype: HTMLApp404PageNotFoundElement;
         new (): HTMLApp404PageNotFoundElement;
     };
-    interface HTMLAppBlogElement extends Components.AppBlog, HTMLStencilElement {
-    }
-    var HTMLAppBlogElement: {
-        prototype: HTMLAppBlogElement;
-        new (): HTMLAppBlogElement;
-    };
     interface HTMLAppBlogFilterElement extends Components.AppBlogFilter, HTMLStencilElement {
     }
     var HTMLAppBlogFilterElement: {
@@ -475,12 +462,6 @@ declare global {
     var HTMLGlsAdsenseAdElement: {
         prototype: HTMLGlsAdsenseAdElement;
         new (): HTMLGlsAdsenseAdElement;
-    };
-    interface HTMLGlsDisqusElement extends Components.GlsDisqus, HTMLStencilElement {
-    }
-    var HTMLGlsDisqusElement: {
-        prototype: HTMLGlsDisqusElement;
-        new (): HTMLGlsDisqusElement;
     };
     interface HTMLGlsGcseSearchboxOnlyElement extends Components.GlsGcseSearchboxOnly, HTMLStencilElement {
     }
@@ -578,6 +559,12 @@ declare global {
         prototype: HTMLPageBase22ConsultantsCreedElement;
         new (): HTMLPageBase22ConsultantsCreedElement;
     };
+    interface HTMLPageBeaverCageCommandChronElement extends Components.PageBeaverCageCommandChron, HTMLStencilElement {
+    }
+    var HTMLPageBeaverCageCommandChronElement: {
+        prototype: HTMLPageBeaverCageCommandChronElement;
+        new (): HTMLPageBeaverCageCommandChronElement;
+    };
     interface HTMLPageBeaverCageUnionMemorialElement extends Components.PageBeaverCageUnionMemorial, HTMLStencilElement {
     }
     var HTMLPageBeaverCageUnionMemorialElement: {
@@ -602,11 +589,17 @@ declare global {
         prototype: HTMLPageBindingToAZsphereArmatureElement;
         new (): HTMLPageBindingToAZsphereArmatureElement;
     };
-    interface HTMLPageBookReviewMoreThanEverythingElement extends Components.PageBookReviewMoreThanEverything, HTMLStencilElement {
+    interface HTMLPageBlogElement extends Components.PageBlog, HTMLStencilElement {
     }
-    var HTMLPageBookReviewMoreThanEverythingElement: {
-        prototype: HTMLPageBookReviewMoreThanEverythingElement;
-        new (): HTMLPageBookReviewMoreThanEverythingElement;
+    var HTMLPageBlogElement: {
+        prototype: HTMLPageBlogElement;
+        new (): HTMLPageBlogElement;
+    };
+    interface HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement extends Components.PageBookReviewMoreThanEverythingByVanessaFoster, HTMLStencilElement {
+    }
+    var HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement: {
+        prototype: HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement;
+        new (): HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement;
     };
     interface HTMLPageBookReviewTheGoldfinchElement extends Components.PageBookReviewTheGoldfinch, HTMLStencilElement {
     }
@@ -649,12 +642,6 @@ declare global {
     var HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement: {
         prototype: HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
         new (): HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
-    };
-    interface HTMLPageCmdChronBeaverCageElement extends Components.PageCmdChronBeaverCage, HTMLStencilElement {
-    }
-    var HTMLPageCmdChronBeaverCageElement: {
-        prototype: HTMLPageCmdChronBeaverCageElement;
-        new (): HTMLPageCmdChronBeaverCageElement;
     };
     interface HTMLPageCollectUiUiScreenshotsToInspireDesignElement extends Components.PageCollectUiUiScreenshotsToInspireDesign, HTMLStencilElement {
     }
@@ -733,6 +720,12 @@ declare global {
     var HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement: {
         prototype: HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
         new (): HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+    };
+    interface HTMLPageD13WeaponsPlatoonElement extends Components.PageD13WeaponsPlatoon, HTMLStencilElement {
+    }
+    var HTMLPageD13WeaponsPlatoonElement: {
+        prototype: HTMLPageD13WeaponsPlatoonElement;
+        new (): HTMLPageD13WeaponsPlatoonElement;
     };
     interface HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement extends Components.PageDefineAServletUsingJavaAnnotationsInsteadOfXml, HTMLStencilElement {
     }
@@ -1052,11 +1045,11 @@ declare global {
         prototype: HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
         new (): HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
     };
-    interface HTMLPageMarinePlatoon1561966Element extends Components.PageMarinePlatoon1561966, HTMLStencilElement {
+    interface HTMLPageMarinePlatoon156SanDiego1966Element extends Components.PageMarinePlatoon156SanDiego1966, HTMLStencilElement {
     }
-    var HTMLPageMarinePlatoon1561966Element: {
-        prototype: HTMLPageMarinePlatoon1561966Element;
-        new (): HTMLPageMarinePlatoon1561966Element;
+    var HTMLPageMarinePlatoon156SanDiego1966Element: {
+        prototype: HTMLPageMarinePlatoon156SanDiego1966Element;
+        new (): HTMLPageMarinePlatoon156SanDiego1966Element;
     };
     interface HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement extends Components.PageMeetIifeTheQuintessentialJavascriptClosure, HTMLStencilElement {
     }
@@ -1135,12 +1128,6 @@ declare global {
     var HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement: {
         prototype: HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
         new (): HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
-    };
-    interface HTMLPagePhotosWeaponsPlatoonElement extends Components.PagePhotosWeaponsPlatoon, HTMLStencilElement {
-    }
-    var HTMLPagePhotosWeaponsPlatoonElement: {
-        prototype: HTMLPagePhotosWeaponsPlatoonElement;
-        new (): HTMLPagePhotosWeaponsPlatoonElement;
     };
     interface HTMLPagePinkHeartsElement extends Components.PagePinkHearts, HTMLStencilElement {
     }
@@ -1594,7 +1581,6 @@ declare global {
     };
     interface HTMLElementTagNameMap {
         "app-404-page-not-found": HTMLApp404PageNotFoundElement;
-        "app-blog": HTMLAppBlogElement;
         "app-blog-filter": HTMLAppBlogFilterElement;
         "app-entry-meta": HTMLAppEntryMetaElement;
         "app-photo-card": HTMLAppPhotoCardElement;
@@ -1603,7 +1589,6 @@ declare global {
         "app-search": HTMLAppSearchElement;
         "app-tabs": HTMLAppTabsElement;
         "gls-adsense-ad": HTMLGlsAdsenseAdElement;
-        "gls-disqus": HTMLGlsDisqusElement;
         "gls-gcse-searchbox-only": HTMLGlsGcseSearchboxOnlyElement;
         "page-7-quintessential-brushes-for-zbrush-beginners": HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
         "page-7-reasons-why-typescript-helps-you-kick-ass": HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
@@ -1620,11 +1605,13 @@ declare global {
         "page-avoid-tracking-ga-page-views-in-atlassian-confluence": HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement;
         "page-awesome-power-of-the-link-in-linked-data": HTMLPageAwesomePowerOfTheLinkInLinkedDataElement;
         "page-base22-consultants-creed": HTMLPageBase22ConsultantsCreedElement;
+        "page-beaver-cage-command-chron": HTMLPageBeaverCageCommandChronElement;
         "page-beaver-cage-union-memorial": HTMLPageBeaverCageUnionMemorialElement;
         "page-bend-things-in-zbrush-with-the-bend-curve-modifier": HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement;
         "page-better-error-messages-from-gulp-using-gulp-util": HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement;
         "page-binding-to-a-zsphere-armature": HTMLPageBindingToAZsphereArmatureElement;
-        "page-book-review-more-than-everything": HTMLPageBookReviewMoreThanEverythingElement;
+        "page-blog": HTMLPageBlogElement;
+        "page-book-review-more-than-everything-by-vanessa-foster": HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement;
         "page-book-review-the-goldfinch": HTMLPageBookReviewTheGoldfinchElement;
         "page-books": HTMLPageBooksElement;
         "page-build-a-rendering-plugin-ibm-wcm-part-1": HTMLPageBuildARenderingPluginIbmWcmPart1Element;
@@ -1632,7 +1619,6 @@ declare global {
         "page-cage": HTMLPageCageElement;
         "page-change-canvas-background-color-in-zbrush": HTMLPageChangeCanvasBackgroundColorInZbrushElement;
         "page-classnotfound-does-not-always-mean-class-not-found": HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement;
-        "page-cmd-chron-beaver-cage": HTMLPageCmdChronBeaverCageElement;
         "page-collect-ui-ui-screenshots-to-inspire-design": HTMLPageCollectUiUiScreenshotsToInspireDesignElement;
         "page-confluence-panel-macro": HTMLPageConfluencePanelMacroElement;
         "page-contact": HTMLPageContactElement;
@@ -1646,6 +1632,7 @@ declare global {
         "page-create-player-health-status-indicator-for-unity-gui-part-3": HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
         "page-create-polygroup-from-mask-in-zbrush": HTMLPageCreatePolygroupFromMaskInZbrushElement;
         "page-curated-list-of-ibm-digital-experience-resources": HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+        "page-d-1-3-weapons-platoon": HTMLPageD13WeaponsPlatoonElement;
         "page-define-a-servlet-using-java-annotations-instead-of-xml": HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement;
         "page-delete-hidden-geometry-in-zbrush": HTMLPageDeleteHiddenGeometryInZbrushElement;
         "page-delete-node-modules-folder-on-windows": HTMLPageDeleteNodeModulesFolderOnWindowsElement;
@@ -1699,7 +1686,7 @@ declare global {
         "page-loneliness-and-a-shovel": HTMLPageLonelinessAndAShovelElement;
         "page-make-a-zbrush-speed-sculpt-timelapse-video": HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement;
         "page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required": HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement;
-        "page-marine-platoon-156-1966": HTMLPageMarinePlatoon1561966Element;
+        "page-marine-platoon-156-san-diego-1966": HTMLPageMarinePlatoon156SanDiego1966Element;
         "page-meet-iife-the-quintessential-javascript-closure": HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement;
         "page-memories-of-momma-1": HTMLPageMemoriesOfMomma1Element;
         "page-memories-of-momma-2": HTMLPageMemoriesOfMomma2Element;
@@ -1713,7 +1700,6 @@ declare global {
         "page-notes-on-zbrush-sculptris-pro": HTMLPageNotesOnZbrushSculptrisProElement;
         "page-notes-on-zbrush-slicecurve-brush": HTMLPageNotesOnZbrushSlicecurveBrushElement;
         "page-permitting-author-access-to-search-collection-in-wcm-search-component": HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
-        "page-photos-weapons-platoon": HTMLPagePhotosWeaponsPlatoonElement;
         "page-pink-hearts": HTMLPagePinkHeartsElement;
         "page-pwa-with-ionic-angular-wordpress-api-1": HTMLPagePwaWithIonicAngularWordpressApi1Element;
         "page-pwa-with-ionic-angular-wordpress-api-2": HTMLPagePwaWithIonicAngularWordpressApi2Element;
@@ -1794,8 +1780,6 @@ declare global {
 declare namespace LocalJSX {
     interface App404PageNotFound {
     }
-    interface AppBlog {
-    }
     interface AppBlogFilter {
         "excludedTopics"?: string[];
     }
@@ -1820,13 +1804,6 @@ declare namespace LocalJSX {
           * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
          */
         "adFormat"?: string;
-    }
-    interface GlsDisqus {
-        "category"?: string;
-        "identifier"?: string;
-        "language"?: string;
-        "pageTitle"?: string;
-        "url"?: string;
     }
     interface GlsGcseSearchboxOnly {
     }
@@ -1860,6 +1837,8 @@ declare namespace LocalJSX {
     }
     interface PageBase22ConsultantsCreed {
     }
+    interface PageBeaverCageCommandChron {
+    }
     interface PageBeaverCageUnionMemorial {
     }
     interface PageBendThingsInZbrushWithTheBendCurveModifier {
@@ -1868,7 +1847,9 @@ declare namespace LocalJSX {
     }
     interface PageBindingToAZsphereArmature {
     }
-    interface PageBookReviewMoreThanEverything {
+    interface PageBlog {
+    }
+    interface PageBookReviewMoreThanEverythingByVanessaFoster {
     }
     interface PageBookReviewTheGoldfinch {
     }
@@ -1883,8 +1864,6 @@ declare namespace LocalJSX {
     interface PageChangeCanvasBackgroundColorInZbrush {
     }
     interface PageClassnotfoundDoesNotAlwaysMeanClassNotFound {
-    }
-    interface PageCmdChronBeaverCage {
     }
     interface PageCollectUiUiScreenshotsToInspireDesign {
     }
@@ -1911,6 +1890,8 @@ declare namespace LocalJSX {
     interface PageCreatePolygroupFromMaskInZbrush {
     }
     interface PageCuratedListOfIbmDigitalExperienceResources {
+    }
+    interface PageD13WeaponsPlatoon {
     }
     interface PageDefineAServletUsingJavaAnnotationsInsteadOfXml {
     }
@@ -2020,7 +2001,7 @@ declare namespace LocalJSX {
     }
     interface PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
     }
-    interface PageMarinePlatoon1561966 {
+    interface PageMarinePlatoon156SanDiego1966 {
     }
     interface PageMeetIifeTheQuintessentialJavascriptClosure {
     }
@@ -2047,8 +2028,6 @@ declare namespace LocalJSX {
     interface PageNotesOnZbrushSlicecurveBrush {
     }
     interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {
-    }
-    interface PagePhotosWeaponsPlatoon {
     }
     interface PagePinkHearts {
     }
@@ -2202,7 +2181,6 @@ declare namespace LocalJSX {
     }
     interface IntrinsicElements {
         "app-404-page-not-found": App404PageNotFound;
-        "app-blog": AppBlog;
         "app-blog-filter": AppBlogFilter;
         "app-entry-meta": AppEntryMeta;
         "app-photo-card": AppPhotoCard;
@@ -2211,7 +2189,6 @@ declare namespace LocalJSX {
         "app-search": AppSearch;
         "app-tabs": AppTabs;
         "gls-adsense-ad": GlsAdsenseAd;
-        "gls-disqus": GlsDisqus;
         "gls-gcse-searchbox-only": GlsGcseSearchboxOnly;
         "page-7-quintessential-brushes-for-zbrush-beginners": Page7QuintessentialBrushesForZbrushBeginners;
         "page-7-reasons-why-typescript-helps-you-kick-ass": Page7ReasonsWhyTypescriptHelpsYouKickAss;
@@ -2228,11 +2205,13 @@ declare namespace LocalJSX {
         "page-avoid-tracking-ga-page-views-in-atlassian-confluence": PageAvoidTrackingGaPageViewsInAtlassianConfluence;
         "page-awesome-power-of-the-link-in-linked-data": PageAwesomePowerOfTheLinkInLinkedData;
         "page-base22-consultants-creed": PageBase22ConsultantsCreed;
+        "page-beaver-cage-command-chron": PageBeaverCageCommandChron;
         "page-beaver-cage-union-memorial": PageBeaverCageUnionMemorial;
         "page-bend-things-in-zbrush-with-the-bend-curve-modifier": PageBendThingsInZbrushWithTheBendCurveModifier;
         "page-better-error-messages-from-gulp-using-gulp-util": PageBetterErrorMessagesFromGulpUsingGulpUtil;
         "page-binding-to-a-zsphere-armature": PageBindingToAZsphereArmature;
-        "page-book-review-more-than-everything": PageBookReviewMoreThanEverything;
+        "page-blog": PageBlog;
+        "page-book-review-more-than-everything-by-vanessa-foster": PageBookReviewMoreThanEverythingByVanessaFoster;
         "page-book-review-the-goldfinch": PageBookReviewTheGoldfinch;
         "page-books": PageBooks;
         "page-build-a-rendering-plugin-ibm-wcm-part-1": PageBuildARenderingPluginIbmWcmPart1;
@@ -2240,7 +2219,6 @@ declare namespace LocalJSX {
         "page-cage": PageCage;
         "page-change-canvas-background-color-in-zbrush": PageChangeCanvasBackgroundColorInZbrush;
         "page-classnotfound-does-not-always-mean-class-not-found": PageClassnotfoundDoesNotAlwaysMeanClassNotFound;
-        "page-cmd-chron-beaver-cage": PageCmdChronBeaverCage;
         "page-collect-ui-ui-screenshots-to-inspire-design": PageCollectUiUiScreenshotsToInspireDesign;
         "page-confluence-panel-macro": PageConfluencePanelMacro;
         "page-contact": PageContact;
@@ -2254,6 +2232,7 @@ declare namespace LocalJSX {
         "page-create-player-health-status-indicator-for-unity-gui-part-3": PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
         "page-create-polygroup-from-mask-in-zbrush": PageCreatePolygroupFromMaskInZbrush;
         "page-curated-list-of-ibm-digital-experience-resources": PageCuratedListOfIbmDigitalExperienceResources;
+        "page-d-1-3-weapons-platoon": PageD13WeaponsPlatoon;
         "page-define-a-servlet-using-java-annotations-instead-of-xml": PageDefineAServletUsingJavaAnnotationsInsteadOfXml;
         "page-delete-hidden-geometry-in-zbrush": PageDeleteHiddenGeometryInZbrush;
         "page-delete-node-modules-folder-on-windows": PageDeleteNodeModulesFolderOnWindows;
@@ -2307,7 +2286,7 @@ declare namespace LocalJSX {
         "page-loneliness-and-a-shovel": PageLonelinessAndAShovel;
         "page-make-a-zbrush-speed-sculpt-timelapse-video": PageMakeAZbrushSpeedSculptTimelapseVideo;
         "page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required": PageMappingToAViewInSpringWhenNoControllerLogicIsRequired;
-        "page-marine-platoon-156-1966": PageMarinePlatoon1561966;
+        "page-marine-platoon-156-san-diego-1966": PageMarinePlatoon156SanDiego1966;
         "page-meet-iife-the-quintessential-javascript-closure": PageMeetIifeTheQuintessentialJavascriptClosure;
         "page-memories-of-momma-1": PageMemoriesOfMomma1;
         "page-memories-of-momma-2": PageMemoriesOfMomma2;
@@ -2321,7 +2300,6 @@ declare namespace LocalJSX {
         "page-notes-on-zbrush-sculptris-pro": PageNotesOnZbrushSculptrisPro;
         "page-notes-on-zbrush-slicecurve-brush": PageNotesOnZbrushSlicecurveBrush;
         "page-permitting-author-access-to-search-collection-in-wcm-search-component": PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent;
-        "page-photos-weapons-platoon": PagePhotosWeaponsPlatoon;
         "page-pink-hearts": PagePinkHearts;
         "page-pwa-with-ionic-angular-wordpress-api-1": PagePwaWithIonicAngularWordpressApi1;
         "page-pwa-with-ionic-angular-wordpress-api-2": PagePwaWithIonicAngularWordpressApi2;
@@ -2404,7 +2382,6 @@ declare module "@stencil/core" {
     export namespace JSX {
         interface IntrinsicElements {
             "app-404-page-not-found": LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
-            "app-blog": LocalJSX.AppBlog & JSXBase.HTMLAttributes<HTMLAppBlogElement>;
             "app-blog-filter": LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
             "app-entry-meta": LocalJSX.AppEntryMeta & JSXBase.HTMLAttributes<HTMLAppEntryMetaElement>;
             "app-photo-card": LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
@@ -2413,7 +2390,6 @@ declare module "@stencil/core" {
             "app-search": LocalJSX.AppSearch & JSXBase.HTMLAttributes<HTMLAppSearchElement>;
             "app-tabs": LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
             "gls-adsense-ad": LocalJSX.GlsAdsenseAd & JSXBase.HTMLAttributes<HTMLGlsAdsenseAdElement>;
-            "gls-disqus": LocalJSX.GlsDisqus & JSXBase.HTMLAttributes<HTMLGlsDisqusElement>;
             "gls-gcse-searchbox-only": LocalJSX.GlsGcseSearchboxOnly & JSXBase.HTMLAttributes<HTMLGlsGcseSearchboxOnlyElement>;
             "page-7-quintessential-brushes-for-zbrush-beginners": LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
             "page-7-reasons-why-typescript-helps-you-kick-ass": LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
@@ -2430,11 +2406,13 @@ declare module "@stencil/core" {
             "page-avoid-tracking-ga-page-views-in-atlassian-confluence": LocalJSX.PageAvoidTrackingGaPageViewsInAtlassianConfluence & JSXBase.HTMLAttributes<HTMLPageAvoidTrackingGaPageViewsInAtlassianConfluenceElement>;
             "page-awesome-power-of-the-link-in-linked-data": LocalJSX.PageAwesomePowerOfTheLinkInLinkedData & JSXBase.HTMLAttributes<HTMLPageAwesomePowerOfTheLinkInLinkedDataElement>;
             "page-base22-consultants-creed": LocalJSX.PageBase22ConsultantsCreed & JSXBase.HTMLAttributes<HTMLPageBase22ConsultantsCreedElement>;
+            "page-beaver-cage-command-chron": LocalJSX.PageBeaverCageCommandChron & JSXBase.HTMLAttributes<HTMLPageBeaverCageCommandChronElement>;
             "page-beaver-cage-union-memorial": LocalJSX.PageBeaverCageUnionMemorial & JSXBase.HTMLAttributes<HTMLPageBeaverCageUnionMemorialElement>;
             "page-bend-things-in-zbrush-with-the-bend-curve-modifier": LocalJSX.PageBendThingsInZbrushWithTheBendCurveModifier & JSXBase.HTMLAttributes<HTMLPageBendThingsInZbrushWithTheBendCurveModifierElement>;
             "page-better-error-messages-from-gulp-using-gulp-util": LocalJSX.PageBetterErrorMessagesFromGulpUsingGulpUtil & JSXBase.HTMLAttributes<HTMLPageBetterErrorMessagesFromGulpUsingGulpUtilElement>;
             "page-binding-to-a-zsphere-armature": LocalJSX.PageBindingToAZsphereArmature & JSXBase.HTMLAttributes<HTMLPageBindingToAZsphereArmatureElement>;
-            "page-book-review-more-than-everything": LocalJSX.PageBookReviewMoreThanEverything & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingElement>;
+            "page-blog": LocalJSX.PageBlog & JSXBase.HTMLAttributes<HTMLPageBlogElement>;
+            "page-book-review-more-than-everything-by-vanessa-foster": LocalJSX.PageBookReviewMoreThanEverythingByVanessaFoster & JSXBase.HTMLAttributes<HTMLPageBookReviewMoreThanEverythingByVanessaFosterElement>;
             "page-book-review-the-goldfinch": LocalJSX.PageBookReviewTheGoldfinch & JSXBase.HTMLAttributes<HTMLPageBookReviewTheGoldfinchElement>;
             "page-books": LocalJSX.PageBooks & JSXBase.HTMLAttributes<HTMLPageBooksElement>;
             "page-build-a-rendering-plugin-ibm-wcm-part-1": LocalJSX.PageBuildARenderingPluginIbmWcmPart1 & JSXBase.HTMLAttributes<HTMLPageBuildARenderingPluginIbmWcmPart1Element>;
@@ -2442,7 +2420,6 @@ declare module "@stencil/core" {
             "page-cage": LocalJSX.PageCage & JSXBase.HTMLAttributes<HTMLPageCageElement>;
             "page-change-canvas-background-color-in-zbrush": LocalJSX.PageChangeCanvasBackgroundColorInZbrush & JSXBase.HTMLAttributes<HTMLPageChangeCanvasBackgroundColorInZbrushElement>;
             "page-classnotfound-does-not-always-mean-class-not-found": LocalJSX.PageClassnotfoundDoesNotAlwaysMeanClassNotFound & JSXBase.HTMLAttributes<HTMLPageClassnotfoundDoesNotAlwaysMeanClassNotFoundElement>;
-            "page-cmd-chron-beaver-cage": LocalJSX.PageCmdChronBeaverCage & JSXBase.HTMLAttributes<HTMLPageCmdChronBeaverCageElement>;
             "page-collect-ui-ui-screenshots-to-inspire-design": LocalJSX.PageCollectUiUiScreenshotsToInspireDesign & JSXBase.HTMLAttributes<HTMLPageCollectUiUiScreenshotsToInspireDesignElement>;
             "page-confluence-panel-macro": LocalJSX.PageConfluencePanelMacro & JSXBase.HTMLAttributes<HTMLPageConfluencePanelMacroElement>;
             "page-contact": LocalJSX.PageContact & JSXBase.HTMLAttributes<HTMLPageContactElement>;
@@ -2456,6 +2433,7 @@ declare module "@stencil/core" {
             "page-create-player-health-status-indicator-for-unity-gui-part-3": LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
             "page-create-polygroup-from-mask-in-zbrush": LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
             "page-curated-list-of-ibm-digital-experience-resources": LocalJSX.PageCuratedListOfIbmDigitalExperienceResources & JSXBase.HTMLAttributes<HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement>;
+            "page-d-1-3-weapons-platoon": LocalJSX.PageD13WeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPageD13WeaponsPlatoonElement>;
             "page-define-a-servlet-using-java-annotations-instead-of-xml": LocalJSX.PageDefineAServletUsingJavaAnnotationsInsteadOfXml & JSXBase.HTMLAttributes<HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement>;
             "page-delete-hidden-geometry-in-zbrush": LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
             "page-delete-node-modules-folder-on-windows": LocalJSX.PageDeleteNodeModulesFolderOnWindows & JSXBase.HTMLAttributes<HTMLPageDeleteNodeModulesFolderOnWindowsElement>;
@@ -2509,7 +2487,7 @@ declare module "@stencil/core" {
             "page-loneliness-and-a-shovel": LocalJSX.PageLonelinessAndAShovel & JSXBase.HTMLAttributes<HTMLPageLonelinessAndAShovelElement>;
             "page-make-a-zbrush-speed-sculpt-timelapse-video": LocalJSX.PageMakeAZbrushSpeedSculptTimelapseVideo & JSXBase.HTMLAttributes<HTMLPageMakeAZbrushSpeedSculptTimelapseVideoElement>;
             "page-mapping-to-a-view-in-spring-when-no-controller-logic-is-required": LocalJSX.PageMappingToAViewInSpringWhenNoControllerLogicIsRequired & JSXBase.HTMLAttributes<HTMLPageMappingToAViewInSpringWhenNoControllerLogicIsRequiredElement>;
-            "page-marine-platoon-156-1966": LocalJSX.PageMarinePlatoon1561966 & JSXBase.HTMLAttributes<HTMLPageMarinePlatoon1561966Element>;
+            "page-marine-platoon-156-san-diego-1966": LocalJSX.PageMarinePlatoon156SanDiego1966 & JSXBase.HTMLAttributes<HTMLPageMarinePlatoon156SanDiego1966Element>;
             "page-meet-iife-the-quintessential-javascript-closure": LocalJSX.PageMeetIifeTheQuintessentialJavascriptClosure & JSXBase.HTMLAttributes<HTMLPageMeetIifeTheQuintessentialJavascriptClosureElement>;
             "page-memories-of-momma-1": LocalJSX.PageMemoriesOfMomma1 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma1Element>;
             "page-memories-of-momma-2": LocalJSX.PageMemoriesOfMomma2 & JSXBase.HTMLAttributes<HTMLPageMemoriesOfMomma2Element>;
@@ -2523,7 +2501,6 @@ declare module "@stencil/core" {
             "page-notes-on-zbrush-sculptris-pro": LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
             "page-notes-on-zbrush-slicecurve-brush": LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
             "page-permitting-author-access-to-search-collection-in-wcm-search-component": LocalJSX.PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent & JSXBase.HTMLAttributes<HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement>;
-            "page-photos-weapons-platoon": LocalJSX.PagePhotosWeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPagePhotosWeaponsPlatoonElement>;
             "page-pink-hearts": LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
             "page-pwa-with-ionic-angular-wordpress-api-1": LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
             "page-pwa-with-ionic-angular-wordpress-api-2": LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;

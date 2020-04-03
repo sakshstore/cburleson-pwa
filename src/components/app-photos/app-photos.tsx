@@ -80,10 +80,8 @@ export class AppPhotos {
                 <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
             </ion-header>,
 
-            <ion-content>
-                <ion-grid fixed>
-                    <ion-row>
-                        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+            <ion-content class="ion-padding">
+               
 
                             <h1>{this.data.pageTitle}</h1>
 
@@ -95,9 +93,6 @@ export class AppPhotos {
 
                             <div innerHTML={this.data.pageOutro}></div>
 
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
             </ion-content>,
 
         ];

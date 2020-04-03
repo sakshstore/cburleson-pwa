@@ -2,9 +2,9 @@ import { Component, Element, h } from '@stencil/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
 @Component({
-    tag: 'page-photos-weapons-platoon',
+    tag: 'page-d-1-3-weapons-platoon',
 })
-export class PagePhotosWeaponsPlatoon {
+export class PageD13WeaponsPlatoon {
 
     @Element() el: HTMLElement;
 
@@ -13,7 +13,7 @@ export class PagePhotosWeaponsPlatoon {
 
     componentWillLoad() {
         if (isLocal()) {
-            console.log('> PagePhotosWeaponsPlatoon.componentWillLoad');
+            console.log('> PageD13WeaponsPlatoon.componentWillLoad');
         }
         document.title = this.title + ' | ' + SITENAME;
         document.getElementById("meta-desc").setAttribute("content", "Photograph of Delta Co Weapons Platoon with most individuals identified.");
@@ -44,10 +44,7 @@ export class PagePhotosWeaponsPlatoon {
                 <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
             </ion-header>,
 
-            <ion-content>
-                <ion-grid fixed>
-                    <ion-row>
-                        <ion-col size-xs="12" size-sm="12" size-md="12" size-lg="12" size-xl="12">
+            <ion-content class="ion-padding">
 
                             <h1>{this.title}</h1>
 
@@ -111,9 +108,7 @@ export class PagePhotosWeaponsPlatoon {
                                 <ion-item><ion-label text-wrap>55. Mike Logue</ion-label></ion-item>
                                 <ion-item><ion-label text-wrap>56. Alan Burleson</ion-label></ion-item>
                             </ion-list>
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
+
             </ion-content>
 
         ];

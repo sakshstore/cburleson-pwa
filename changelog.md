@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [unreleased]
+
+- Modified page, [/unreal-engine-doc-expanded](https://codyburleson.com/unreal-engine-doc-expanded); removed unused sidebar, so now the content fills the page from left-to-right and is not squished (especially on a mobile device)
+- Modified page, [/sparql-examples-limit](https://codyburleson.com/sparql-examples-limit); added HTML &lt;code/&gt; tags to improve legibility.
+- Modified page, [/sparql-examples-construct](https://codyburleson.com/sparql-examples-construct); added HTML &lt;code/&gt; tags to improve legibility.
+- Refactored router code so that more is dynamic and defined in the data json files; this is a step towards consolidating and simplifying the use of the different page types.
+
 ## [1.6.2]
 
 - Added the contact page back in, now that I have the back-end platform running under an SSL certificate.

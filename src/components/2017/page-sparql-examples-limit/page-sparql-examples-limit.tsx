@@ -50,15 +50,12 @@ export class PageSparqlExamplesLimit {
 			</ion-header>,
 
 			<ion-content class="ion-padding">
-
 				<ion-grid>
 					<ion-row>
 						<ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
 							<h1>{this.header.title}</h1>
 							<app-entry-meta header={this.header} />
-
 							<h3>Limit the number of results returned</h3>
-
 							<pre><code class="language-sparql">{`PREFIX rdfs:<http://www.w3.org/2000/01/rdf-schema#>
 PREFIX bc: <http://www.base22.com/ontologies/2010/5/bc.owl#>
 
@@ -67,14 +64,12 @@ WHERE {
   ?subject bc:hasEmployer <http://www.base22.com/ontologies/2010/5/my-contacts.owl#IBM> .
            ?subject bc:hasBusinessEmail ?email .
 } LIMIT 5`}</code></pre>
-
-							<p>The LIMIT keyword is used after the WHERE clause, followed by a numerical value. In this case, of course, only 5 results are returned.</p>
-
+							<p>The <code>LIMIT</code> keyword is used after the <code>WHERE</code> clause, followed by a numerical value. In this case, of course, only 5 results are returned.</p>
 							<ul>
-								<li>LIMIT is a solution modifier that limits the number of rows returned from a query. SPARQL has two other solution modifiers:
-	<ul>
-										<li>ORDER BY for sorting query solutions on the value of one or more variables</li>
-										<li>OFFSET, used in conjunction with LIMIT and ORDER BY to take a slice of a sorted solution set (e.g. for paging)</li>
+								<li><code>LIMIT</code> is a solution modifier that limits the number of rows returned from a query. SPARQL has two other solution modifiers:
+								<ul>
+										<li><code>ORDER BY</code> for sorting query solutions on the value of one or more variables</li>
+										<li><code>OFFSET</code>, used in conjunction with <code>LIMIT</code> and <code>ORDER BY</code> to take a slice of a sorted solution set (e.g. for paging)</li>
 									</ul>
 								</li>
 							</ul>

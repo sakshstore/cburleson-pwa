@@ -2,9 +2,9 @@ import { Component, Element, h } from '@stencil/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
 @Component({
-  tag: 'page-book-review-more-than-everything',
+  tag: 'page-book-review-more-than-everything-by-vanessa-foster',
 })
-export class PageBookReviewMoreThanEverything {
+export class PageBookReviewMoreThanEverythingByVanessaFoster {
 
   @Element() el: HTMLElement;
 
@@ -20,7 +20,7 @@ export class PageBookReviewMoreThanEverything {
 
   componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageCage.componentWillLoad');
+      console.log('> PageBookReviewMoreThanEverythingByVanessaFoster.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
     if (this.header.teaser) {

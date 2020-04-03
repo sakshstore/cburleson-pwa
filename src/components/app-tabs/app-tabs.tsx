@@ -26,8 +26,8 @@ export class AppTabs {
 
     this.data.pages.map((item) => {
       if(item.isTab) {
-        tabs.push( <ion-tab tab={'tab-' + item.slug}><ion-nav></ion-nav></ion-tab>);
-        tabButtons.push(  <ion-tab-button tab={'tab-' + item.slug}><ion-icon name={item.icon}></ion-icon><ion-label>{item.title}</ion-label></ion-tab-button> );
+        tabs.push( <ion-tab tab={'tab-' + item.id}><ion-nav></ion-nav></ion-tab>);
+        tabButtons.push(  <ion-tab-button tab={'tab-' + item.id}><ion-icon name={item.icon}></ion-icon><ion-label>{item.title}</ion-label></ion-tab-button> );
       }
     });
 

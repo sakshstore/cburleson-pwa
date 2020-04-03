@@ -46,7 +46,7 @@ export class PageSeaTigerNewspapers {
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-08-11_sea-tiger_thumb.jpg",
       datePublished: "1967/08/11"
     },
-  
+
     {
       id: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1967-09-01_sea-tiger_vol3-no35.pdf",
       title: "Sea Tiger, Vol. III, No. 35",
@@ -161,9 +161,9 @@ export class PageSeaTigerNewspapers {
     document.title = this.title + ' | ' + SITENAME;
   }
 
-  toggleSearch(){
-    if(this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
-       this.el.querySelector("#searchbar").classList.remove('hidden');
+  toggleSearch() {
+    if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {
+      this.el.querySelector("#searchbar").classList.remove('hidden');
     } else {
       this.el.querySelector("#searchbar").classList.add('hidden');
     }
@@ -183,41 +183,29 @@ export class PageSeaTigerNewspapers {
             </ion-button>
           </ion-buttons>
         </ion-toolbar>
-        <gls-gcse-searchbox-only id="searchbar"class="hidden"/>
+        <gls-gcse-searchbox-only id="searchbar" class="hidden" />
       </ion-header>,
 
       <ion-content class="ion-padding">
 
-        <ion-grid>
-          <ion-row>
-            <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+        <h1>{this.title}</h1>
 
-              <h1>{this.title}</h1>
+        <p>The &quot;Sea Tiger&quot; was a weekly newspaper distributed throughout the III MAF area of northern South Vietnam and published by III MAF (Marine Amphibious Force). The first issue was published on November 10, 1965 and the last issue on April 14, 1971. This collection, donated by veteran, <a href="http://mikefishbaugh.homestead.com/">Mike Fishbaugh</a>, and others contains 20 issues of the Sea Tiger, published between December 21, 1966 and June 20, 1969 (it is not complete). According to the <a href="https://www.mcrdmuseum.org/">MCRD Museum Foundation</a>, the newspaper got its name from the Vietnamese words, &quot;Cop Bien,&quot; which mean, &quot;the Marines who came ashore from the sea to fight like tigers on their shores.&quot;</p>
 
-              <p>The &quot;Sea Tiger&quot; was a weekly newspaper distributed throughout the III MAF area of northern South Vietnam and published by III MAF (Marine Amphibious Force). The first issue was published on November 10, 1965 and the last issue on April 14, 1971. This collection, donated by veteran, <a href="http://mikefishbaugh.homestead.com/">Mike Fishbaugh</a>, and others contains 20 issues of the Sea Tiger, published between December 21, 1966 and June 20, 1969 (it is not complete). According to the <a href="https://www.mcrdmuseum.org/">MCRD Museum Foundation</a>, the newspaper got its name from the Vietnamese words, &quot;Cop Bien,&quot; which mean, &quot;the Marines who came ashore from the sea to fight like tigers on their shores.&quot;</p>
-
-              <ion-list>
-                {this.items.map((item) =>
-                  <ion-item href={item.id} lines="none">
-                    <ion-thumbnail slot="start">
-                      <ion-img src={item.thumbnail} />
-                    </ion-thumbnail>
-                    <ion-label text-wrap>
-                      {item.title}
-                      <p innerHTML={item.teaser}></p>
-                      <p><em>Published {new Date(item.datePublished).toDateString()}</em></p>
-                    </ion-label>
-                  </ion-item>
-                )}
-              </ion-list>
-
-            </ion-col>
-
-            <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-            </ion-col>
-
-          </ion-row>
-        </ion-grid>
+        <ion-list>
+          {this.items.map((item) =>
+            <ion-item href={item.id} lines="none">
+              <ion-thumbnail slot="start">
+                <ion-img src={item.thumbnail} />
+              </ion-thumbnail>
+              <ion-label text-wrap>
+                {item.title}
+                <p innerHTML={item.teaser}></p>
+                <p><em>Published {new Date(item.datePublished).toDateString()}</em></p>
+              </ion-label>
+            </ion-item>
+          )}
+        </ion-list>
 
       </ion-content>
 
