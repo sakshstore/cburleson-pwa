@@ -21,6 +21,14 @@ export class PageCage {
       dateModified: "February 6, 2019"
     },
     {
+      id: "/slf-after-action-cage-union",
+      title: "Special Landing Force, After Action Report, BEAVER CAGE/UNION",
+      teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/slf-after-action-cage-union-thumb.jpg",
+      datePublished: "April 9, 2020",
+      dateModified: "April 9, 2020"
+    },
+    {
       id: "/beaver-cage-union-memorial",
       title: "Beaver Cage/Union memorial service program",
       teaser: "A program (booklet) for the memorial service held aboard the USS Okinawa on May 16, 1967, after the operations.",

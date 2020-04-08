@@ -85,6 +85,11 @@
       "title": "Experience",
       "tab": "about",
       "parent": "about"
+    },
+    {
+      "id":"slf-after-action-cage-union",
+      "title":"Special Landing Force, After Action Report, BEAVER CAGE/UNION",
+      "tab": "books"
     }
   ]
 }

@@ -333,9 +333,7 @@ export class PageBeaverCageCommandChron {
                                     weather; and an advanced party to the SLF Camp at NB Subic Bay was detached, and the BLT backloaded
                                     and set sail on board the ships of TG 76.4.
                         </p>
-                    <p>
-                        AKA 104, USS Seminole, received three days of upkeep at Kau Chung, Taiwan <code><em>(probably Kaohsiung, Taiwan)</em></code>.
-                        </p>
+                    <p>AKA 104, USS Seminole, received three days of upkeep at Kaohsiung, Taiwan.</p>
                     <p>
                         Then orders were received, the advance party was withdrawn from NB Subic and TG 79.4 sailed for the territorial waters off
                                     RVN. Two days later new orders were received, and the <abbr title="Battalion Landing Team">BLT</abbr> sailed for and off loaded at the SLF Cam NM Subic. After three days training at Subic Bay, new orders were again received and the BLT returned

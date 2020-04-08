@@ -305,6 +305,8 @@ export namespace Components {
     }
     interface PageShrinkWindowsVmOnVmwareFusionForMac {
     }
+    interface PageSlfAfterActionCageUnion {
+    }
     interface PageSparqlExamplesAsk {
     }
     interface PageSparqlExamplesConstruct {
@@ -1273,6 +1275,12 @@ declare global {
         prototype: HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
         new (): HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
     };
+    interface HTMLPageSlfAfterActionCageUnionElement extends Components.PageSlfAfterActionCageUnion, HTMLStencilElement {
+    }
+    var HTMLPageSlfAfterActionCageUnionElement: {
+        prototype: HTMLPageSlfAfterActionCageUnionElement;
+        new (): HTMLPageSlfAfterActionCageUnionElement;
+    };
     interface HTMLPageSparqlExamplesAskElement extends Components.PageSparqlExamplesAsk, HTMLStencilElement {
     }
     var HTMLPageSparqlExamplesAskElement: {
@@ -1724,6 +1732,7 @@ declare global {
         "page-show-both-sides-of-a-plane-in-zbrush": HTMLPageShowBothSidesOfAPlaneInZbrushElement;
         "page-show-item-namesin-ibm-wcm-authoring": HTMLPageShowItemNamesinIbmWcmAuthoringElement;
         "page-shrink-windows-vm-on-vmware-fusion-for-mac": HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement;
+        "page-slf-after-action-cage-union": HTMLPageSlfAfterActionCageUnionElement;
         "page-sparql-examples-ask": HTMLPageSparqlExamplesAskElement;
         "page-sparql-examples-construct": HTMLPageSparqlExamplesConstructElement;
         "page-sparql-examples-count-all-statements": HTMLPageSparqlExamplesCountAllStatementsElement;
@@ -2077,6 +2086,8 @@ declare namespace LocalJSX {
     }
     interface PageShrinkWindowsVmOnVmwareFusionForMac {
     }
+    interface PageSlfAfterActionCageUnion {
+    }
     interface PageSparqlExamplesAsk {
     }
     interface PageSparqlExamplesConstruct {
@@ -2324,6 +2335,7 @@ declare namespace LocalJSX {
         "page-show-both-sides-of-a-plane-in-zbrush": PageShowBothSidesOfAPlaneInZbrush;
         "page-show-item-namesin-ibm-wcm-authoring": PageShowItemNamesinIbmWcmAuthoring;
         "page-shrink-windows-vm-on-vmware-fusion-for-mac": PageShrinkWindowsVmOnVmwareFusionForMac;
+        "page-slf-after-action-cage-union": PageSlfAfterActionCageUnion;
         "page-sparql-examples-ask": PageSparqlExamplesAsk;
         "page-sparql-examples-construct": PageSparqlExamplesConstruct;
         "page-sparql-examples-count-all-statements": PageSparqlExamplesCountAllStatements;
@@ -2525,6 +2537,7 @@ declare module "@stencil/core" {
             "page-show-both-sides-of-a-plane-in-zbrush": LocalJSX.PageShowBothSidesOfAPlaneInZbrush & JSXBase.HTMLAttributes<HTMLPageShowBothSidesOfAPlaneInZbrushElement>;
             "page-show-item-namesin-ibm-wcm-authoring": LocalJSX.PageShowItemNamesinIbmWcmAuthoring & JSXBase.HTMLAttributes<HTMLPageShowItemNamesinIbmWcmAuthoringElement>;
             "page-shrink-windows-vm-on-vmware-fusion-for-mac": LocalJSX.PageShrinkWindowsVmOnVmwareFusionForMac & JSXBase.HTMLAttributes<HTMLPageShrinkWindowsVmOnVmwareFusionForMacElement>;
+            "page-slf-after-action-cage-union": LocalJSX.PageSlfAfterActionCageUnion & JSXBase.HTMLAttributes<HTMLPageSlfAfterActionCageUnionElement>;
             "page-sparql-examples-ask": LocalJSX.PageSparqlExamplesAsk & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesAskElement>;
             "page-sparql-examples-construct": LocalJSX.PageSparqlExamplesConstruct & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesConstructElement>;
             "page-sparql-examples-count-all-statements": LocalJSX.PageSparqlExamplesCountAllStatements & JSXBase.HTMLAttributes<HTMLPageSparqlExamplesCountAllStatementsElement>;

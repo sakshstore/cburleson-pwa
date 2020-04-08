@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.6.4]
+
+- Added new page, [/slf-after-action-cage-union](https://codyburleson.com/slf-after-action-cage-union)
+
 ## [1.6.3]
 
 - Modified page, [/unreal-engine-doc-expanded](https://codyburleson.com/unreal-engine-doc-expanded); removed unused sidebar, so now the content fills the page from left-to-right and is not squished (especially on a mobile device)
