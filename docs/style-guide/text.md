@@ -1,5 +1,10 @@
 # Text
 
+## Titles
+
+- Follow [Common Title Capitalization Rules](https://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html)
+- Use [this tool](https://capitalizemytitle.com/)
+
 ## Quotes
 
 The blockquote element is already styled by CSS, so it needs no CSS class. Use a footer element within do 

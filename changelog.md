@@ -4,6 +4,13 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+
+## [unreleased]
+
+- Modified content of page: [/photos/kevin-brooks](https://codyburleson.com/photos/kevin-brooks); added information regarding Kevin's recent passing.
+- Modified content of page: [/memories-of-momma-6](https://codyburleson.com/memories-of-momma-6); removed introductory paragraph, which was really only relevant in the context of Facebook, where the content was originally posted.
+- Refactored routing for all Cage pages that are not `/photos/...` pages so that a) they 'live' under the parent URL `/cage/...` instead of being flat and b) they have redirects from the old flat URLs to the new hierarchical structure. Users can now 'back-up' to the parent page via URL navigation and paving the way for a future breadcrumb trail.
+
 ## [1.6.4]
 
 - Added new page, [/slf-after-action-cage-union](https://codyburleson.com/slf-after-action-cage-union)
