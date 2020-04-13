@@ -5,7 +5,7 @@ All notable changes to this project will be documented in this file.
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 
-## [unreleased]
+## [1.6.5]
 
 - Modified content of page: [/photos/kevin-brooks](https://codyburleson.com/photos/kevin-brooks); added information regarding Kevin's recent passing.
 - Modified content of page: [/memories-of-momma-6](https://codyburleson.com/memories-of-momma-6); removed introductory paragraph, which was really only relevant in the context of Facebook, where the content was originally posted.
