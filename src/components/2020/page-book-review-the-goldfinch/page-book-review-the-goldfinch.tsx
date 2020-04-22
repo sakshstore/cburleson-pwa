@@ -57,7 +57,8 @@ export class PageBookReviewTheGoldfinch {
                             <p>Now, all that being said, I just know this is the kind of book that others will love as a lifetime favorite. I purposely took the reading as an exercise in the healthy practice of immersion (something better and more attentive to do other than social media). But I kept asking myself, &quot;Am I just spoiled by instant gratification now? Do I lack patience?&quot; Maybe. Or maybe 25% of this book could have been removed with nothing essential lost.</p>
 
                         </ion-col>
-                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
+                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5" style={{textAlign:`center`}}>
+                        <p><em>As an Amazon Associate<br/> I earn from <br/>qualifying purchases.</em></p>
                         <iframe  style={{width: `120px`, height: `240px`}} marginwidth="0" marginheight="0" scrolling="no" frameborder="0" src="https://ws-na.amazon-adsystem.com/widgets/q?ServiceVersion=20070822&OneJS=1&Operation=GetAdHtml&MarketPlace=US&source=ac&ref=qf_sp_asin_til&ad_type=product_link&tracking_id=burtecgrollc-20&marketplace=amazon&region=US&placement=0316055441&asins=0316055441&linkId=86ff5a4aca1bc07bd4ae6a198e236ca1&show_border=false&link_opens_in_new_window=false&price_color=333333&title_color=0066c0&bg_color=ffffff"></iframe>
                         </ion-col>
                     </ion-row>

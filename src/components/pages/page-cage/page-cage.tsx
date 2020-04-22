@@ -46,22 +46,6 @@ export class PageCage {
 
   photoItems = [
     {
-      id: "/d-1-3-weapons-platoon",
-      title: "Weapons Platoon - D 1/3 Marines, Vietnam",
-      teaser: "Photograph of Delta Co Weapons Platoon with most individuals identified.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/delta-weapons-plt-thumb.jpg",
-      datePublished: "",
-      dateModified: ""
-    },
-    {
-      id: "/marine-platoon-156-san-diego-1966",
-      title: "U.S. Marine Corps Platoon 156 - San Diego, 1966",
-      teaser: "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/marine-platoon-156_san-diego_1966_thumb.jpg",
-      datePublished: "3/12/2020",
-      dateModified: ""
-    },
-    {
       id: "/photos/curt-bruce",
       title: "Tour of Duty Photos from Curt Bruce",
       teaser: "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",
@@ -144,6 +128,14 @@ export class PageCage {
       dateModified: "Dec 18, 2018"
     },
     {
+      id: "/marine-platoon-156-san-diego-1966",
+      title: "U.S. Marine Corps Platoon 156 - San Diego, 1966",
+      teaser: "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/marine-platoon-156_san-diego_1966_thumb.jpg",
+      datePublished: "3/12/2020",
+      dateModified: ""
+    },
+    {
       id: "/photos/cavazos-center",
       title: "Vietnam War Photographs from the Martin Cavazos Center",
       teaser: "A collection of photos presented in honor of Martin Cavazos (Delta Co., 1st Batallion / 3rd Marines; KIA May 5, 1967); originally from the Martin Cavazos Center in Sebastian, Texas.",
@@ -151,7 +143,14 @@ export class PageCage {
       datePublished: "Mar 13, 2020",
       dateModified: ""
     },
-    
+    {
+      id: "/d-1-3-weapons-platoon",
+      title: "Weapons Platoon - D 1/3 Marines, Vietnam",
+      teaser: "Photograph of Delta Co Weapons Platoon with most individuals identified.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/delta-weapons-plt-thumb.jpg",
+      datePublished: "",
+      dateModified: ""
+    }
   ]
 
   videoItems = [
@@ -170,6 +169,21 @@ export class PageCage {
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-1967-amphibious-combat-thumb.jpg",
       datePublished: "Nov 9, 2019",
       dateModified: "Nov 9, 2019"
+    }
+  ]
+
+  referenceItems = [
+    {
+      "id": "vietnam-war-reference-resources",
+      "title": "Vietnam War Reference Resources",
+      "teaser": "My ever-growing compendium of resources for research about the Vietnam War.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-war-ref-resources_thumb.jpg",
+      "datePublished": "2020/04/21",
+      "topics": [
+        "The Cage - Vietnam"
+      ],
+      "parentHref": "/cage",
+      "parentTitle": "The Cage - Vietnam"
     }
   ]
 
@@ -255,6 +269,22 @@ export class PageCage {
 
               <ion-list>
                 {this.videoItems.map((item) =>
+                  <ion-item href={item.id} lines="full">
+                    <ion-thumbnail slot="start">
+                      <ion-img src={item.thumbnail} />
+                    </ion-thumbnail>
+                    <ion-label text-wrap>
+                      {item.title}
+                      <p innerHTML={item.teaser}></p>
+                    </ion-label>
+                  </ion-item>
+                )}
+              </ion-list>
+
+              <h3>Reference Resources</h3>
+
+              <ion-list>
+                {this.referenceItems.map((item) =>
                   <ion-item href={item.id} lines="full">
                     <ion-thumbnail slot="start">
                       <ion-img src={item.thumbnail} />

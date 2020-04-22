@@ -119,6 +119,8 @@ export namespace Components {
     }
     interface PageCuratedListOfIbmDigitalExperienceResources {
     }
+    interface PageD13Platoon {
+    }
     interface PageD13WeaponsPlatoon {
     }
     interface PageDefineAServletUsingJavaAnnotationsInsteadOfXml {
@@ -388,6 +390,8 @@ export namespace Components {
     interface PageUserImpersonationProgrammingInWebspherePortal {
     }
     interface PageVietnam1967AmphibiousCombat {
+    }
+    interface PageVietnamWarReferenceResources {
     }
     interface PageVsCodeCheatSheet {
     }
@@ -722,6 +726,12 @@ declare global {
     var HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement: {
         prototype: HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
         new (): HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+    };
+    interface HTMLPageD13PlatoonElement extends Components.PageD13Platoon, HTMLStencilElement {
+    }
+    var HTMLPageD13PlatoonElement: {
+        prototype: HTMLPageD13PlatoonElement;
+        new (): HTMLPageD13PlatoonElement;
     };
     interface HTMLPageD13WeaponsPlatoonElement extends Components.PageD13WeaponsPlatoon, HTMLStencilElement {
     }
@@ -1527,6 +1537,12 @@ declare global {
         prototype: HTMLPageVietnam1967AmphibiousCombatElement;
         new (): HTMLPageVietnam1967AmphibiousCombatElement;
     };
+    interface HTMLPageVietnamWarReferenceResourcesElement extends Components.PageVietnamWarReferenceResources, HTMLStencilElement {
+    }
+    var HTMLPageVietnamWarReferenceResourcesElement: {
+        prototype: HTMLPageVietnamWarReferenceResourcesElement;
+        new (): HTMLPageVietnamWarReferenceResourcesElement;
+    };
     interface HTMLPageVsCodeCheatSheetElement extends Components.PageVsCodeCheatSheet, HTMLStencilElement {
     }
     var HTMLPageVsCodeCheatSheetElement: {
@@ -1640,6 +1656,7 @@ declare global {
         "page-create-player-health-status-indicator-for-unity-gui-part-3": HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element;
         "page-create-polygroup-from-mask-in-zbrush": HTMLPageCreatePolygroupFromMaskInZbrushElement;
         "page-curated-list-of-ibm-digital-experience-resources": HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement;
+        "page-d-1-3-platoon": HTMLPageD13PlatoonElement;
         "page-d-1-3-weapons-platoon": HTMLPageD13WeaponsPlatoonElement;
         "page-define-a-servlet-using-java-annotations-instead-of-xml": HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement;
         "page-delete-hidden-geometry-in-zbrush": HTMLPageDeleteHiddenGeometryInZbrushElement;
@@ -1774,6 +1791,7 @@ declare global {
         "page-user-impersonation-in-websphere-portal-video-demo": HTMLPageUserImpersonationInWebspherePortalVideoDemoElement;
         "page-user-impersonation-programming-in-websphere-portal": HTMLPageUserImpersonationProgrammingInWebspherePortalElement;
         "page-vietnam-1967-amphibious-combat": HTMLPageVietnam1967AmphibiousCombatElement;
+        "page-vietnam-war-reference-resources": HTMLPageVietnamWarReferenceResourcesElement;
         "page-vs-code-cheat-sheet": HTMLPageVsCodeCheatSheetElement;
         "page-w3c-linked-data-platform-aims-to-reframe-the-web": HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement;
         "page-wcm-libraries-video-overview": HTMLPageWcmLibrariesVideoOverviewElement;
@@ -1899,6 +1917,8 @@ declare namespace LocalJSX {
     interface PageCreatePolygroupFromMaskInZbrush {
     }
     interface PageCuratedListOfIbmDigitalExperienceResources {
+    }
+    interface PageD13Platoon {
     }
     interface PageD13WeaponsPlatoon {
     }
@@ -2170,6 +2190,8 @@ declare namespace LocalJSX {
     }
     interface PageVietnam1967AmphibiousCombat {
     }
+    interface PageVietnamWarReferenceResources {
+    }
     interface PageVsCodeCheatSheet {
     }
     interface PageW3cLinkedDataPlatformAimsToReframeTheWeb {
@@ -2243,6 +2265,7 @@ declare namespace LocalJSX {
         "page-create-player-health-status-indicator-for-unity-gui-part-3": PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3;
         "page-create-polygroup-from-mask-in-zbrush": PageCreatePolygroupFromMaskInZbrush;
         "page-curated-list-of-ibm-digital-experience-resources": PageCuratedListOfIbmDigitalExperienceResources;
+        "page-d-1-3-platoon": PageD13Platoon;
         "page-d-1-3-weapons-platoon": PageD13WeaponsPlatoon;
         "page-define-a-servlet-using-java-annotations-instead-of-xml": PageDefineAServletUsingJavaAnnotationsInsteadOfXml;
         "page-delete-hidden-geometry-in-zbrush": PageDeleteHiddenGeometryInZbrush;
@@ -2377,6 +2400,7 @@ declare namespace LocalJSX {
         "page-user-impersonation-in-websphere-portal-video-demo": PageUserImpersonationInWebspherePortalVideoDemo;
         "page-user-impersonation-programming-in-websphere-portal": PageUserImpersonationProgrammingInWebspherePortal;
         "page-vietnam-1967-amphibious-combat": PageVietnam1967AmphibiousCombat;
+        "page-vietnam-war-reference-resources": PageVietnamWarReferenceResources;
         "page-vs-code-cheat-sheet": PageVsCodeCheatSheet;
         "page-w3c-linked-data-platform-aims-to-reframe-the-web": PageW3cLinkedDataPlatformAimsToReframeTheWeb;
         "page-wcm-libraries-video-overview": PageWcmLibrariesVideoOverview;
@@ -2445,6 +2469,7 @@ declare module "@stencil/core" {
             "page-create-player-health-status-indicator-for-unity-gui-part-3": LocalJSX.PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 & JSXBase.HTMLAttributes<HTMLPageCreatePlayerHealthStatusIndicatorForUnityGuiPart3Element>;
             "page-create-polygroup-from-mask-in-zbrush": LocalJSX.PageCreatePolygroupFromMaskInZbrush & JSXBase.HTMLAttributes<HTMLPageCreatePolygroupFromMaskInZbrushElement>;
             "page-curated-list-of-ibm-digital-experience-resources": LocalJSX.PageCuratedListOfIbmDigitalExperienceResources & JSXBase.HTMLAttributes<HTMLPageCuratedListOfIbmDigitalExperienceResourcesElement>;
+            "page-d-1-3-platoon": LocalJSX.PageD13Platoon & JSXBase.HTMLAttributes<HTMLPageD13PlatoonElement>;
             "page-d-1-3-weapons-platoon": LocalJSX.PageD13WeaponsPlatoon & JSXBase.HTMLAttributes<HTMLPageD13WeaponsPlatoonElement>;
             "page-define-a-servlet-using-java-annotations-instead-of-xml": LocalJSX.PageDefineAServletUsingJavaAnnotationsInsteadOfXml & JSXBase.HTMLAttributes<HTMLPageDefineAServletUsingJavaAnnotationsInsteadOfXmlElement>;
             "page-delete-hidden-geometry-in-zbrush": LocalJSX.PageDeleteHiddenGeometryInZbrush & JSXBase.HTMLAttributes<HTMLPageDeleteHiddenGeometryInZbrushElement>;
@@ -2579,6 +2604,7 @@ declare module "@stencil/core" {
             "page-user-impersonation-in-websphere-portal-video-demo": LocalJSX.PageUserImpersonationInWebspherePortalVideoDemo & JSXBase.HTMLAttributes<HTMLPageUserImpersonationInWebspherePortalVideoDemoElement>;
             "page-user-impersonation-programming-in-websphere-portal": LocalJSX.PageUserImpersonationProgrammingInWebspherePortal & JSXBase.HTMLAttributes<HTMLPageUserImpersonationProgrammingInWebspherePortalElement>;
             "page-vietnam-1967-amphibious-combat": LocalJSX.PageVietnam1967AmphibiousCombat & JSXBase.HTMLAttributes<HTMLPageVietnam1967AmphibiousCombatElement>;
+            "page-vietnam-war-reference-resources": LocalJSX.PageVietnamWarReferenceResources & JSXBase.HTMLAttributes<HTMLPageVietnamWarReferenceResourcesElement>;
             "page-vs-code-cheat-sheet": LocalJSX.PageVsCodeCheatSheet & JSXBase.HTMLAttributes<HTMLPageVsCodeCheatSheetElement>;
             "page-w3c-linked-data-platform-aims-to-reframe-the-web": LocalJSX.PageW3cLinkedDataPlatformAimsToReframeTheWeb & JSXBase.HTMLAttributes<HTMLPageW3cLinkedDataPlatformAimsToReframeTheWebElement>;
             "page-wcm-libraries-video-overview": LocalJSX.PageWcmLibrariesVideoOverview & JSXBase.HTMLAttributes<HTMLPageWcmLibrariesVideoOverviewElement>;

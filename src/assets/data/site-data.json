@@ -1,6 +1,18 @@
 {
   "content": [
     {
+      "id": "vietnam-war-reference-resources",
+      "title": "Vietnam War Reference Resources",
+      "teaser": "My ever-growing compendium of resources for research about the Vietnam War.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-war-ref-resources_thumb.jpg",
+      "datePublished": "2020/04/21",
+      "topics": [
+        "The Cage - Vietnam"
+      ],
+      "parentHref": "/cage",
+      "parentTitle": "The Cage - Vietnam"
+    },
+    {
       "id": "unreal-engine-doc-expanded",
       "title": "Unreal Engine Documentation, Expanded",
       "teaser": "An expanded version of the Unreal Engine 4 documentation tree.",

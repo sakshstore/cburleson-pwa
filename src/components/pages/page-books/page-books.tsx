@@ -15,7 +15,7 @@ export class PageBooks {
     {
       id: "/cage",
       title: "The Cage",
-      teaser: "The true story of the Special Landing Force of 1st Batallion, 3rd Marines in the Vietnam War.",
+      teaser: "The true story of the Special Landing Force of 1st Battalion, 3rd Marines in the Vietnam War.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
       datePublished: "",
       dateModified: "Oct 21, 2019"
@@ -88,31 +88,6 @@ export class PageBooks {
               </ion-label>
             </ion-item>
           )}
-        </ion-list>
-
-        <h2>What I'm reading now</h2>
-
-        <ion-list>
-          <ion-item href="https://www.amazon.com/gp/product/0470876417/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0470876417&linkCode=as2&tag=burtecgrollc-20&linkId=51c55c7c2a01f1a42f28ef993b86f3f3" lines="none">
-            <ion-thumbnail slot="start">
-              <ion-img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0470876417&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20" />
-            </ion-thumbnail>
-            <ion-label text-wrap>
-              Business Model Generation<img src="https://ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=0470876417" width="1" height="1" alt="" style={{ border: `none !important;`, margin: `0px !important;` }} />
-              <p>A Handbook for Visionaries, Game Changers, and Challengers</p>
-            </ion-label>
-          </ion-item>
-
-          <ion-item href="https://www.amazon.com/gp/product/0307887898/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0307887898&linkCode=as2&tag=burtecgrollc-20&linkId=c836769d37b349d4f25805d6845b53b7" lines="none">
-            <ion-thumbnail slot="start">
-              <ion-img src="https://ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0307887898&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20" />
-            </ion-thumbnail>
-            <ion-label text-wrap>
-              The Lean Startup<img src="https://ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=0307887898" width="1" height="1" alt="" style={{ border: `none !important;`, margin: `0px !important;` }} />
-              <p>How Today's Entrepreneurs Use Continuous Innovation to Create Radically Successful Businesses</p>
-            </ion-label>
-          </ion-item>
-
         </ion-list>
 
       </ion-content>
