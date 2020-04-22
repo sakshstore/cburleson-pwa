@@ -42,42 +42,42 @@ export class PageVietnamWarReferenceResources {
             id: "https://www.amazon.com/gp/product/081735445X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=081735445X&linkCode=as2&tag=burtecgrollc-20&linkId=4bc9680db4f725854d5a796407d6a520",
             title: "Con Thien: The Hill of Angels",
             teaser: "by James P. Coan (2004)",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=081735445X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_con-thien_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=081735445X"
         },
         {
             id: "https://www.amazon.com/gp/product/0891418490/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0891418490&linkCode=as2&tag=burtecgrollc-20&linkId=00b2ec1097e1eecd18726c994696ea51",
             title: "The Hill Fights: The First Battle of Khe Sanh",
             teaser: "by Edward F. Murphy (2003).",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0891418490&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_first-battle-khe-sanh_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=0891418490"
         },
         {
             id: "https://www.amazon.com/gp/product/0700621105/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0700621105&linkCode=as2&tag=burtecgrollc-20&linkId=059eebc0363906fa87a97587b7e7bff9",
             title: "The Morenci Marines: A Tale of Small Town America and the Vietnam War",
             teaser: "by Kyle Longley (2013).",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0700621105&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_morenci-marines_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=0700621105"
         },
         {
             id: "https://www.amazon.com/gp/product/044021310X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=044021310X&linkCode=as2&tag=burtecgrollc-20&linkId=9a889f403486e065b0e20f230a7769db",
             title: "Operation BUFFALO: USMC Fight for the DMZ",
             teaser: "by Keith William Nolan (1991).",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=044021310X&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_operation-buffalo_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=044021310X"
         },
         {
             id: "https://www.amazon.com/gp/product/0760338019/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0760338019&linkCode=as2&tag=burtecgrollc-20&linkId=79b00920641b37b1781e5c7b6e24493f",
             title: "Road of 10,000 Pains: The Destruction of the 2nd NVA Division by the U.S. Marines, 1967",
             teaser: "by Otto J. Lehrack (2010).",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=0760338019&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_road-of-10000-pains_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=0760338019"
         },
         {
             id: "https://www.amazon.com/gp/product/1555716253/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=1555716253&linkCode=as2&tag=burtecgrollc-20&linkId=3e52a0e0984267221658d2e2cfa741af",
             title: "Where We Were in Vietnam: A Comprehensive Guide to the Firebases and Militar",
             teaser: "by Michael P. Kelley (2002)",
-            thumbnail: "//ws-na.amazon-adsystem.com/widgets/q?_encoding=UTF8&MarketPlace=US&ASIN=1555716253&ServiceVersion=20070822&ID=AsinImage&WS=1&Format=_SL250_&tag=burtecgrollc-20",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_where-we-were-in-vietnam_thumb.jpg",
             hiddenImage: "//ir-na.amazon-adsystem.com/e/ir?t=burtecgrollc-20&l=am2&o=1&a=1555716253"
         }
     ]
