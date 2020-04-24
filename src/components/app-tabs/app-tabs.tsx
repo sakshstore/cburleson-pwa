@@ -1,6 +1,6 @@
 import { Component, h } from '@stencil/core';
 import { menuController } from '@ionic/core';
-import { PageData } from '../../services/page-data';
+import { BlogData } from '../../services/blog-data';
 
 @Component({
   tag: 'app-tabs',
@@ -12,7 +12,7 @@ export class AppTabs {
   menuCtlr: any = menuController;
 
   async componentWillLoad() {
-    this.data = await PageData.load();
+    this.data = await BlogData.load();
   }
 
   async componentDidLoad() {

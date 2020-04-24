@@ -1,4 +1,42 @@
 {
+  "pages": [
+    {
+      "id": "blog",
+      "title": "Blog",
+      "icon": "chatbox-ellipses-outline",
+      "isTab": true,
+      "menus": [
+        "main"
+      ]
+    },
+    {
+      "id": "books",
+      "title": "Books",
+      "icon": "book-outline",
+      "isTab": true,
+      "menus": [
+        "main"
+      ]
+    },
+    {
+      "id": "about",
+      "title": "About",
+      "icon": "information-circle-outline",
+      "isTab": true,
+      "menus": [
+        "main"
+      ]
+    },
+    {
+      "id": "contact",
+      "title": "Contact",
+      "icon": "mail-outline",
+      "isTab": true,
+      "menus": [
+        "main"
+      ]
+    }
+  ],
   "content": [
     {
       "id": "cage",
@@ -1559,7 +1597,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/handshake-thumbnail.jpg",
       "datePublished": "2014/07/12",
       "topics": [
-        "Uncategorized"
+        "Opinion"
       ],
       "menus": [
         "blog"
@@ -1857,7 +1895,7 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/thumbnail-writing-hand.svg",
       "datePublished": "2013/01/13",
       "topics": [
-        "Uncategorized"
+        "Opinion"
       ],
       "menus": [
         "blog"

@@ -1,7 +1,7 @@
 import { Component, h, Listen } from '@stencil/core';
 import { isLocal, SITENAME } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
-import { PageData } from '../../services/page-data';
+// import { PageData } from '../../services/page-data';
 
 declare let gtag: Function;
 
@@ -14,7 +14,7 @@ export class AppRoot {
 
   unfoundRoute: any;
 
-  pageData: any = [];
+  //pageData: any = [];
 
   // See: How To Properly Add Google Analytics Tracking to Your Angular Web App...
   // https://medium.com/@PurpleGreenLemon/how-to-properly-add-google-analytics-tracking-to-your-angular-web-app-bc7750713c9e
@@ -26,7 +26,7 @@ export class AppRoot {
     //}
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
-    this.pageData.pages.map((item) => {
+    this.data.pages.map((item) => {
       if (event.detail.to == ('/' + item.id)) {
         document.title = item.title + ' | ' + SITENAME;
       }
@@ -51,7 +51,7 @@ export class AppRoot {
       console.log('> AppRoot.componentWillLoad');
     }
 
-    this.pageData = await PageData.load();
+    //this.pageData = await PageData.load();
 
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
@@ -65,8 +65,6 @@ export class AppRoot {
     const pageRoutes = [];
 
     this.data.content.map((item) => {
-
-      
 
         // It is not required to add the "tab" : "blog" attribute set to an item in site-data.json
         // because we assume that is the majority home for content and we don't want to have to 
@@ -98,7 +96,7 @@ export class AppRoot {
     });
 
     // Primary nav routes are expected to have parent tabs with a corresponding id (i.e. the 'blog' page goes to the 'blog' tab)
-    this.pageData.pages.map((item) => {
+    this.data.pages.map((item) => {
       if (item.isTab) {
         // The item is defined as a tab (primary item) because it has an "isTab" attribute and the value is `true`; thus, generate this...
         // <ion-route url="/blog" component="tab-blog">
@@ -185,7 +183,7 @@ export class AppRoot {
 
     const pages = [];
 
-    this.pageData.pages.map((item) => {
+    this.data.pages.map((item) => {
       // Render item as a main menu item only if the "menus" array of the 
       // given item exists and also contains the menu name "main"
       if (item.menus && item.menus.indexOf('main') > -1) {

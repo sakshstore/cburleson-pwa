@@ -16,7 +16,7 @@ class BlogDataService {
         if (isLocal()) {
             console.log('> BlogDataService.load');
         }
-        
+
         if (this.data) {
             if (isLocal()) {
                 console.log('< BlogDataService.load < returning cached data: \n %o', this.data);
@@ -81,14 +81,16 @@ class BlogDataService {
         // if any of the item's topics are not in the
         // exclude topics then this item passes the topic test
         let matchesTopics = false;
-        item.topics.forEach((topicName: string) => {
-            if (excludeTopics.indexOf(topicName) === -1) {
-                matchesTopics = true;
-            }
-        });
+        if (item.topics) {
+            item.topics.forEach((topicName: string) => {
+                if (excludeTopics.indexOf(topicName) === -1) {
+                    matchesTopics = true;
+                }
+            });
 
-        // all tests must be true if it should not be hidden
-        item.hide = !(matchesTopics);
+            // all tests must be true if it should not be hidden
+            item.hide = !(matchesTopics);
+        }
     }
 
     async getTopics() {
@@ -125,7 +127,7 @@ class BlogDataService {
         const result: any = [];
 
         data.content.forEach((item: any) => {
-            if(item.topics && item.topics.includes(topic)) {
+            if (item.topics && item.topics.includes(topic)) {
                 result.push(item);
             }
         });

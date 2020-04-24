@@ -1,5 +1,5 @@
 import { Config } from '@ionic/core';
-import { Component, Element, h, Listen, Prop, State } from '@stencil/core';
+import { Component, Element, forceUpdate, h, Listen, Prop, State } from '@stencil/core';
 import { isLocal } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
 
@@ -60,7 +60,7 @@ export class AppBlogFilter {
     this.topics.forEach(topic => {
       topic.isChecked = true;
     });
-    this.el.forceUpdate();
+    forceUpdate(this.el);
   }
 
   @Listen('ionChange')
