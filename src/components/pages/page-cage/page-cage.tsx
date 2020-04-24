@@ -13,7 +13,7 @@ export class PageCage {
 
   recordItems = [
     {
-      id: "/beaver-cage-command-chron",
+      id: "/cage/beaver-cage-command-chron",
       title: "Operation Beaver Cage - Command Chronology",
       teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
@@ -21,7 +21,7 @@ export class PageCage {
       dateModified: "February 6, 2019"
     },
     {
-      id: "/slf-after-action-cage-union",
+      id: "/cage/slf-after-action-cage-union",
       title: "Special Landing Force, After Action Report, BEAVER CAGE/UNION",
       teaser: "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/slf-after-action-cage-union-thumb.jpg",
@@ -29,14 +29,14 @@ export class PageCage {
       dateModified: "April 9, 2020"
     },
     {
-      id: "/beaver-cage-union-memorial",
+      id: "/cage/beaver-cage-union-memorial",
       title: "Beaver Cage/Union memorial service program",
       teaser: "A program (booklet) for the memorial service held aboard the USS Okinawa on May 16, 1967, after the operations.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-union-memorial-thumb.jpg",
       datePublished: "1/8/2020"
     },
     {
-      id: "/sea-tiger-newspapers",
+      id: "/cage/sea-tiger-newspapers",
       title: "Sea Tiger Newspapers",
       teaser: "Digitized issues of the &quot;Sea Tiger&quot;, a weekly newspaper published by III MAF (Marine Amphibious Force) between 1965 and 1971.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-04-19_sea-tiger_thumb.jpg",
@@ -135,7 +135,7 @@ export class PageCage {
       dateModified: "Dec 18, 2018"
     },
     {
-      id: "/marine-platoon-156-san-diego-1966",
+      id: "/cage/marine-platoon-156-san-diego-1966",
       title: "U.S. Marine Corps Platoon 156 - San Diego, 1966",
       teaser: "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/marine-platoon-156_san-diego_1966_thumb.jpg",
@@ -151,7 +151,7 @@ export class PageCage {
       dateModified: ""
     },
     {
-      id: "/d-1-3-weapons-platoon",
+      id: "/cage/d-1-3-weapons-platoon",
       title: "Weapons Platoon - D 1/3 Marines, Vietnam",
       teaser: "Photograph of Delta Co Weapons Platoon with most individuals identified.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/delta-weapons-plt-thumb.jpg",
@@ -162,7 +162,7 @@ export class PageCage {
 
   videoItems = [
     {
-      id: "/ray-kelley-silver-star",
+      id: "/cage/ray-kelley-silver-star",
       title: "Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War",
       teaser: "Silver Star Medal presentation ceremony for Ray (&quot;Machine Gun&quot;) Kelley.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/ray-kelley-silver-star-thumb.jpg",
@@ -170,7 +170,7 @@ export class PageCage {
       dateModified: "Nov 9, 2019"
     },
     {
-      id: "/vietnam-1967-amphibious-combat",
+      id: "/cage/vietnam-1967-amphibious-combat",
       title: "Vietnam, 1967 - Amphibious Combat",
       teaser: "A documentary about Amphibious Warfare in Vietnam, I-Corps, 1967 by  Donald F. Teal, M.D.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-1967-amphibious-combat-thumb.jpg",
@@ -181,7 +181,7 @@ export class PageCage {
 
   referenceItems = [
     {
-      "id": "vietnam-war-reference-resources",
+      "id": "/vietnam-war-reference-resources",
       "title": "Vietnam War Reference Resources",
       "teaser": "My ever-growing compendium of resources for research about the Vietnam War.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-war-ref-resources_thumb.jpg",

@@ -103,9 +103,9 @@ export class PageVietnamWarReferenceResources {
             <ion-header>
                 <ion-toolbar color="primary">
                     <ion-buttons slot="start">
-                        <ion-back-button defaultHref={this.header.parentHref} />
+                        <ion-back-button defaultHref="/cage" />
                     </ion-buttons>
-                    <ion-title>{this.header.parentTitle}</ion-title>
+                    <ion-title>The Cage - Vietnam</ion-title>
                 </ion-toolbar>
             </ion-header>,
 
