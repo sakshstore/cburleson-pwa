@@ -1,7 +1,6 @@
 // SITEVERSION must always be line #2 because it is replaced by line number
-export const SITEVERSION = "1.6.7";
+export const SITEVERSION = "1.7.0";
 export const SITENAME = "Cody Burleson";
-export const DISQUS_SHORTNAME = "codyburleson-com";
 
 /**
  * This function uses the window object to determine whether 

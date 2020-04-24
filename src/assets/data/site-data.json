@@ -77,9 +77,6 @@
       "tab": "books",
       "parent": "cage"
     },
-
-
-
     {
       "id": "life-events",
       "title": "Life Events",
@@ -128,9 +125,6 @@
       "tab": "books",
       "parent": "cage"
     },
-
-
-
     {
       "id": "unreal-engine-doc-expanded",
       "title": "Unreal Engine Documentation, Expanded",

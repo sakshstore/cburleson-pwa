@@ -4,9 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## [in-progress]
+## [1.7.0]
 
 - Added some person identifications to [/cage/d-1-3-platoon](https://codyburleson.com/cage/d-1-3-platoon) and also unhid the page (making it public)
+- Modified page: [/vietnam-war-reference-resources](https://codyburleson.com/cage/vietnam-war-reference-resources); added new reference to William (Bill) Taylor's coming book, &quot;13 Months - A Vietnam War Story&quot;
+- Did more refactoring of the posts/pages system; was able to eliminate `page-data.json` file as well as the `PageData` service.
 
 ## [1.6.7]
 

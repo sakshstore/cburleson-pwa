@@ -521,10 +521,6 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p><ion-button color="primary" routerDirection="forward" href="/pwa-with-ionic-angular-wordpress-api-2">Next: Part 2 &gt;&gt;</ion-button></p>
 
-              {/**
-              <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
-               */}
-
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
               <ion-card>

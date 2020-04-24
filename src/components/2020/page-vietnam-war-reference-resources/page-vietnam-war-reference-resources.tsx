@@ -39,6 +39,13 @@ export class PageVietnamWarReferenceResources {
 
     books = [
         {
+            id: "http://13months.net/",
+            title: "13 Months",
+            teaser: "Memoir of Charlie Co., 1/3 Marine, W.V. Taylor - soon to be published)",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_13-months_thumb.jpg",
+            hiddenImage: ""
+        },
+        {
             id: "https://www.amazon.com/gp/product/081735445X/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=081735445X&linkCode=as2&tag=burtecgrollc-20&linkId=4bc9680db4f725854d5a796407d6a520",
             title: "Con Thien: The Hill of Angels",
             teaser: "by James P. Coan (2004)",

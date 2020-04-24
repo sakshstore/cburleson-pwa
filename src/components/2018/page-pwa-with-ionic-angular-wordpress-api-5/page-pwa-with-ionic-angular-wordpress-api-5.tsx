@@ -509,10 +509,6 @@ return this.page < this.totalPages;
 
                             <p><ion-button color="primary" routerDirection="back" href="/pwa-with-ionic-angular-wordpress-api-4">&lt;&lt; Previous: Part 4</ion-button></p>
 
-                            {/**
-                             <gls-disqus url={'https://codyburleson.com/' + this.id} identifier={this.id} title={this.header.title} category="" language="" />
-                            */}
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                             <ion-card>
