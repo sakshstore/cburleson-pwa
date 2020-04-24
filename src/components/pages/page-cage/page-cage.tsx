@@ -46,6 +46,13 @@ export class PageCage {
 
   photoItems = [
     {
+      id: "/cage/d-1-3-platoon",
+      title: "3rd Platoon - D 1/3 Marines, Vietnam",
+      teaser: "Photograph of Delta Co 3rd Platoon with most individuals identified.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/j-h-platoon_thumb.jpg",
+      datePublished: "2020/04/23"
+    },
+    {
       id: "/photos/curt-bruce",
       title: "Tour of Duty Photos from Curt Bruce",
       teaser: "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [in-progress]
+
+- Added some person identifications to [/cage/d-1-3-platoon](https://codyburleson.com/cage/d-1-3-platoon) and also unhid the page (making it public)
+
 ## [1.6.7]
 
 - Modified all affiliate images to Amazon books to be local images so they not blocked by ad blockers.
