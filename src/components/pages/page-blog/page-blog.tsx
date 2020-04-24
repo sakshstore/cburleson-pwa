@@ -51,15 +51,10 @@ export class PageBlog {
   }
 
   async updateContentList() {
-
     if (isLocal()) {
       console.log('> PageBlog.updateContentList');
     }
-
     await BlogData.getContent(this.excludeTopics);
-    // this.shownSessions = data.shownSessions;
-    // this.groups = data.groups;
-
     this.el.forceUpdate();
   }
 
@@ -113,8 +108,17 @@ export class PageBlog {
     }
   }
 
+  // This will check the "menus" array of the given item
+  // to see if it contains the menu 
+  menuContains(item, menuName) {
+    return (item.menus.indexOf(menuName) > -1);
+  }
+
+
   renderItem(item: any) {
-    if (! item.hideFromMenus) {
+    // Render only if the "menus" array of the given item contains the menu name "blog"
+    if (item.menus.indexOf('blog') > -1) {
+    //if (! item.hideFromMenus) {
       return (
         <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
           <ion-thumbnail slot="start">

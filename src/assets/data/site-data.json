@@ -8,6 +8,9 @@
       "datePublished": "2020/04/21",
       "topics": [
         "The Cage - Vietnam"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -19,6 +22,9 @@
       "dateModified": "2020/03/03",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -29,6 +35,9 @@
       "datePublished": "2020/01/30",
       "topics": [
         "Book Reviews"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -38,6 +47,9 @@
       "datePublished": "2019/12/31",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -49,6 +61,9 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -60,7 +75,7 @@
       "topics": [
         "Memoir"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "memories-of-momma-5",
@@ -71,7 +86,7 @@
       "topics": [
         "Memoir"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "memories-of-momma-4",
@@ -82,7 +97,7 @@
       "topics": [
         "Memoir"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "memories-of-momma-3",
@@ -93,7 +108,7 @@
       "topics": [
         "Memoir"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "memories-of-momma-2",
@@ -104,7 +119,7 @@
       "topics": [
         "Memoir"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "memories-of-momma-1",
@@ -114,6 +129,9 @@
       "datePublished": "2019/05/11",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -125,6 +143,9 @@
       "dateModified": "2019/06/10",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -134,6 +155,9 @@
       "datePublished": "2019/02/18",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -143,6 +167,9 @@
       "datePublished": "2018/12/04",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -153,6 +180,9 @@
       "dateModified": "2019/11/07",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -162,6 +192,9 @@
       "datePublished": "2018/10/13",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -171,6 +204,9 @@
       "datePublished": "2018/10/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -181,6 +217,9 @@
       "dateModified": "2019/04/14",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -191,6 +230,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -201,6 +243,9 @@
       "dateModified": "2019/10/02",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -213,7 +258,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-4",
@@ -225,7 +270,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-3",
@@ -237,7 +282,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-2",
@@ -249,7 +294,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "pwa-with-ionic-angular-wordpress-api-1",
@@ -260,6 +305,9 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -270,6 +318,9 @@
       "datePublished": "2018/09/03",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -280,6 +331,9 @@
       "datePublished": "2018/09/03",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -290,6 +344,9 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -300,6 +357,9 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -310,6 +370,9 @@
       "datePublished": "2018/08/29",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -321,6 +384,9 @@
       "dateModified": "2019/07/24",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -332,6 +398,9 @@
       "dateModified": "2019/04/14",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -342,6 +411,9 @@
       "datePublished": "2018/08/03",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -352,6 +424,9 @@
       "dateModified": "2020/01/11",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -361,6 +436,9 @@
       "datePublished": "2018/07/17",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -372,6 +450,9 @@
       "dateModified": "2020/01/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -382,6 +463,9 @@
       "datePublished": "2018/06/03",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -393,6 +477,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -404,6 +491,9 @@
       "dateModified": "2020/02/04",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -413,6 +503,9 @@
       "datePublished": "2018/05/16",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -424,6 +517,9 @@
       "dateModified": "2019/11/21",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -435,6 +531,9 @@
       "dateModified": "2019/07/08",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -446,6 +545,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -456,6 +558,9 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -465,6 +570,9 @@
       "datePublished": "2018/05/05",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -474,6 +582,9 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -483,6 +594,9 @@
       "datePublished": "2018/05/05",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -494,6 +608,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -503,6 +620,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -512,6 +632,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -521,6 +644,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -532,6 +658,9 @@
       "dateModified": "2019/12/05",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -541,6 +670,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -550,6 +682,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -560,6 +695,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -571,6 +709,9 @@
       "dateModified": "2019/11/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -581,6 +722,9 @@
       "datePublished": "2018/04/22",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -592,6 +736,9 @@
       "dateModified": "2020/01/07",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -603,6 +750,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -614,6 +764,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -623,6 +776,9 @@
       "datePublished": "2018/01/17",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -634,6 +790,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -645,6 +804,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -656,6 +818,9 @@
       "dateModified": "2019/04/12",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -667,6 +832,9 @@
       "dateModified": "2019/11/12",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -677,6 +845,9 @@
       "datePublished": "2017/11/27",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -686,6 +857,9 @@
       "datePublished": "2017/10/28",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -695,6 +869,9 @@
       "datePublished": "2017/10/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -705,6 +882,9 @@
       "datePublished": "2017/10/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -716,6 +896,9 @@
       "dateModified": "2020/02/11",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -727,6 +910,9 @@
       "dateModified": "2018/09/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -737,6 +923,9 @@
       "datePublished": "2017/10/12",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -747,6 +936,9 @@
       "datePublished": "2017/08/31",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -758,6 +950,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -769,6 +964,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -780,6 +978,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -791,6 +992,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -802,6 +1006,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -813,6 +1020,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -824,6 +1034,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -835,6 +1048,9 @@
       "dateModified": "2018/7/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -846,6 +1062,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -857,6 +1076,9 @@
       "dateModified": "2018/11/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -867,6 +1089,9 @@
       "datePublished": "2017/07/20",
       "topics": [
         "Book Reviews"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -877,6 +1102,9 @@
       "datePublished": "2017/07/15",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -886,6 +1114,9 @@
       "datePublished": "2017/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -895,6 +1126,9 @@
       "datePublished": "2017/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -906,6 +1140,9 @@
       "dateModified": "2019/03/31",
       "topics": [
         "ZBrush"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -915,6 +1152,9 @@
       "datePublished": "2017/06/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -924,6 +1164,9 @@
       "datePublished": "2017/05/11",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -935,6 +1178,9 @@
       "dateModified": "2020/03/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -945,6 +1191,9 @@
       "dateModified": "2018/09/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -955,6 +1204,9 @@
       "datePublished": "2017/04/04",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -965,6 +1217,9 @@
       "datePublished": "2017/04/04",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -974,6 +1229,9 @@
       "datePublished": "2017/03/10",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -983,6 +1241,9 @@
       "datePublished": "2017/02/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -994,6 +1255,9 @@
       "dateModified": "2018/07/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1005,6 +1269,9 @@
       "dateModified": "2020/01/12",
       "topics": [
         "Uncategorized"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1015,6 +1282,9 @@
       "datePublished": "2016/08/12",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1026,6 +1296,9 @@
       "dateModified": "2018/09/25",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1037,6 +1310,9 @@
       "dateModified": "2019/02/26",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1048,6 +1324,9 @@
       "dateModified": "2018/09/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1059,6 +1338,9 @@
       "dateModified": "2018/09/25",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1069,6 +1351,9 @@
       "datePublished": "2016/01/25",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1079,6 +1364,9 @@
       "dateModified": "2018/07/26",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1088,6 +1376,9 @@
       "datePublished": "2015/10/05",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1097,6 +1388,9 @@
       "datePublished": "2015/09/11",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1106,6 +1400,9 @@
       "datePublished": "2015/07/28",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1116,6 +1413,9 @@
       "datePublished": "2015/04/01",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1125,6 +1425,9 @@
       "datePublished": "2015/03/20",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1134,6 +1437,9 @@
       "datePublished": "2014/10/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1143,6 +1449,9 @@
       "datePublished": "2014/10/23",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1152,6 +1461,9 @@
       "datePublished": "2014/10/23",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1161,6 +1473,9 @@
       "datePublished": "2014/09/18",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1170,6 +1485,9 @@
       "datePublished": "2014/07/12",
       "topics": [
         "Uncategorized"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1180,6 +1498,9 @@
       "dateModified": "2019/12/02",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1189,6 +1510,9 @@
       "datePublished": "2013/12/30",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1198,6 +1522,9 @@
       "datePublished": "2013/12/04",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1207,6 +1534,9 @@
       "datePublished": "2013/11/08",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1216,6 +1546,9 @@
       "datePublished": "2013/10/03",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1225,6 +1558,9 @@
       "datePublished": "2013/09/21",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1236,6 +1572,9 @@
       "dateModified": "2018/09/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1246,6 +1585,9 @@
       "dateModified": "2018/7/15",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1256,7 +1598,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "w3c-linked-data-platform-aims-to-reframe-the-web",
@@ -1265,6 +1607,9 @@
       "datePublished": "2013/06/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1275,6 +1620,9 @@
       "datePublished": "2013/05/22",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1284,6 +1632,9 @@
       "datePublished": "2013/05/03",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1295,6 +1646,9 @@
       "dateModified": "2019/11/21",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1305,7 +1659,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "musing-on-nostalgia",
@@ -1315,6 +1669,9 @@
       "datePublished": "2013/03/23",
       "topics": [
         "Memoir"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1324,6 +1681,9 @@
       "datePublished": "2013/03/23",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1334,7 +1694,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting",
@@ -1343,6 +1703,9 @@
       "datePublished": "2013/02/17",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1352,6 +1715,9 @@
       "datePublished": "2013/02/14",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1362,6 +1728,9 @@
       "dateModified": "2018/07/16",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1371,6 +1740,9 @@
       "datePublished": "2013/01/23",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1380,6 +1752,9 @@
       "datePublished": "2013/01/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1390,7 +1765,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "the-ia-files-001-into-the-fire",
@@ -1400,6 +1775,9 @@
       "datePublished": "2013-01-17",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1409,6 +1787,9 @@
       "datePublished": "2013/01/13",
       "topics": [
         "Uncategorized"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1418,6 +1799,9 @@
       "datePublished": "2013/01/12",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1429,6 +1813,9 @@
       "dateModified": "2019/01/30",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1438,6 +1825,9 @@
       "datePublished": "2013/01/04",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1447,6 +1837,9 @@
       "datePublished": "2012/12/30",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1457,7 +1850,7 @@
       "topics": [
         "Software Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "build-a-rendering-plugin-ibm-wcm-part-1",
@@ -1466,6 +1859,9 @@
       "datePublished": "2012/12/26",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1475,6 +1871,9 @@
       "datePublished": "2012/12/19",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1485,6 +1884,9 @@
       "datePublished": "2012/11/14",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1495,6 +1897,9 @@
       "datePublished": "2012/11/11",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1506,7 +1911,7 @@
       "topics": [
         "Game Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-2",
@@ -1517,7 +1922,7 @@
       "topics": [
         "Game Dev"
       ],
-      "hideFromMenus": true
+      "menus": []
     },
     {
       "id": "create-player-health-status-indicator-for-unity-gui-part-1",
@@ -1527,6 +1932,9 @@
       "datePublished": "2012/10/13",
       "topics": [
         "Game Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1537,6 +1945,9 @@
       "datePublished": "2011/08/19",
       "topics": [
         "Storycraft and Writing"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1546,6 +1957,9 @@
       "datePublished": "2012/08/08",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1555,6 +1969,9 @@
       "datePublished": "2012/07/31",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1564,6 +1981,9 @@
       "datePublished": "2012/01/25",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1573,6 +1993,9 @@
       "datePublished": "2011/09/25",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1582,6 +2005,9 @@
       "datePublished": "2011/07/31",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1592,6 +2018,9 @@
       "datePublished": "2011/04/18",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1601,6 +2030,9 @@
       "datePublished": "2011/02/06",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1610,6 +2042,9 @@
       "datePublished": "2010/09/13",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1619,6 +2054,9 @@
       "datePublished": "2010/06/14",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1628,6 +2066,9 @@
       "datePublished": "2010/04/31",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1637,6 +2078,9 @@
       "datePublished": "2010/01/02",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1647,6 +2091,9 @@
       "datePublished": "2009/12/24",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1656,6 +2103,9 @@
       "datePublished": "2009/11/21",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1666,6 +2116,9 @@
       "dateModified": "2018/07/26",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1675,6 +2128,9 @@
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/webpage-icon.png",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1686,6 +2142,9 @@
       "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     },
     {
@@ -1695,6 +2154,9 @@
       "datePublished": "2008/10/29",
       "topics": [
         "Software Dev"
+      ],
+      "menus": [
+        "blog"
       ]
     }
   ]
