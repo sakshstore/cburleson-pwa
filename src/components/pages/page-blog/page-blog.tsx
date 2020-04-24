@@ -1,4 +1,4 @@
-import { Component, Element, h } from '@stencil/core';
+import { Component, Element, forceUpdate, h } from '@stencil/core';
 import { modalController } from '@ionic/core';
 import { BlogData } from '../../../services/blog-data';
 import { get, set } from '../../../services/storage';
@@ -55,7 +55,7 @@ export class PageBlog {
       console.log('> PageBlog.updateContentList');
     }
     await BlogData.getContent(this.excludeTopics);
-    this.el.forceUpdate();
+    forceUpdate(this.el);
   }
 
   async presentFilter() {
