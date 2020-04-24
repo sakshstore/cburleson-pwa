@@ -116,8 +116,8 @@ export class PageBlog {
 
 
   renderItem(item: any) {
-    // Render only if the "menus" array of the given item contains the menu name "blog"
-    if (item.menus.indexOf('blog') > -1) {
+    // Render only if the "menus" array of the given item exists and also contains the menu name "blog"
+    if (item.menus && item.menus.indexOf('blog') > -1) {
     //if (! item.hideFromMenus) {
       return (
         <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
