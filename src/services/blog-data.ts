@@ -104,7 +104,6 @@ class BlogDataService {
             console.log('> BlogDataService.getPostHeaderById("%s")', slug);
         }
 
-
         // FIX FOR #54 - URLs that end with fwd slash load appropriate page, but do not render
         // If the given slug ends with fwd slash, strip it off so that we find the post header;
         // the router can then send by urls that either end in fwd slash, or don't. In either case, the 
@@ -126,7 +125,7 @@ class BlogDataService {
         const result: any = [];
 
         data.content.forEach((item: any) => {
-            if(item.topics.includes(topic)) {
+            if(item.topics && item.topics.includes(topic)) {
                 result.push(item);
             }
         });

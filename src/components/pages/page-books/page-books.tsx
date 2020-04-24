@@ -39,6 +39,30 @@ export class PageBooks {
     }
   }
 
+  renderReviewItem(item: any) {
+    // NOTE: Duplicate code to what page-blog uses!
+    // Except without: Tagged {this.createTopicList(item)}
+
+    let itemHref = '/' + item.id + '/';
+    if (item.parent) {
+      itemHref = '/' + item.parent + itemHref;
+    }
+
+    return (
+      <ion-item href={itemHref} hidden={item.hide} lines="full">
+        <ion-thumbnail slot="start">
+          <ion-img src={item.thumbnail} />
+        </ion-thumbnail>
+        <ion-label text-wrap>
+          {item.title}
+          <p innerHTML={item.teaser}></p>
+          <p><em>Posted {new Date(item.datePublished).toDateString()}</em></p>
+        </ion-label>
+      </ion-item>
+    )
+  }
+
+
   render() {
     return [
       <ion-header>
@@ -78,15 +102,7 @@ export class PageBooks {
 
         <ion-list>
           {this.reviewedItems.map((item) =>
-            <ion-item href={item.id} lines="none">
-              <ion-thumbnail slot="start">
-                <ion-img src={item.thumbnail} />
-              </ion-thumbnail>
-              <ion-label text-wrap>
-                {item.title}
-                <p innerHTML={item.teaser}></p>
-              </ion-label>
-            </ion-item>
+            this.renderReviewItem(item)
           )}
         </ion-list>
 

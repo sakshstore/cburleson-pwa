@@ -19,7 +19,7 @@ export class PageWcmSecurity {
         }
         // this.data = await BlogData.load();
         // Get the id from the URL path (slug)
-        let id = document.location.pathname.substr(1);
+        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark

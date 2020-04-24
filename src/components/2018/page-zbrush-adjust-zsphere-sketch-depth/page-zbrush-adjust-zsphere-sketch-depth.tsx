@@ -19,7 +19,7 @@ export class PageZBrushAdjustZsphereSketchDepth {
             console.log('> PageZBrushAdjustZsphereSketchDepth.componentWillLoad');
         }
 
-        let id = document.location.pathname.substr(1);
+        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
         this.header = BlogData.getPostHeaderById(id);
 
         document.title = this.header.title + ' | ' + SITENAME;

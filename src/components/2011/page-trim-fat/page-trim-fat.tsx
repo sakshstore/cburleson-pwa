@@ -18,7 +18,7 @@ export class PageTrimFat {
             console.log('> PageTrimFat.componentWillLoad');
         }
 
-        let id = document.location.pathname.substr(1);
+        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
         this.header = BlogData.getPostHeaderById(id);
 
         document.title = this.header.title + ' | ' + SITENAME;

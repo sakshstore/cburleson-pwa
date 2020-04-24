@@ -5,105 +5,36 @@
       "title": "Blog",
       "icon": "chatbox-ellipses-outline",
       "isTab": true,
-      "isMenu": true
+      "menus": [
+        "main"
+      ]
     },
     {
       "id": "books",
       "title": "Books",
       "icon": "book-outline",
       "isTab": true,
-      "isMenu": true
+      "menus": [
+        "main"
+      ]
     },
     {
       "id": "about",
       "title": "About",
       "icon": "information-circle-outline",
       "isTab": true,
-      "isMenu": true
+      "menus": [
+        "main"
+      ]
     },
     {
       "id": "contact",
       "title": "Contact",
       "icon": "mail-outline",
       "isTab": true,
-      "isMenu": true
-    },
-    {
-      "id": "cage",
-      "title": "The Cage",
-      "tab": "books"
-    },
-    {
-      "id": "book-review-more-than-everything-by-vanessa-foster",
-      "title": "Book review - More Than Everything by Vanessa Foster",
-      "tab": "books"
-    },
-    {
-      "id": "life-events",
-      "title": "Life Events",
-      "tab": "about",
-      "parent": "about"
-    },
-    {
-      "id": "experience",
-      "title": "Experience",
-      "tab": "about",
-      "parent": "about"
-    },
-    {
-      "id": "d-1-3-weapons-platoon",
-      "title": "Weapons Platoon - D 1/3 Marines, Vietnam",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "marine-platoon-156-san-diego-1966",
-      "title": "U.S. Marine Corps Platoon 156 - San Diego, 1966",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "d-1-3-platoon",
-      "title": "3rd Platoon - D 1/3 Marines, Vietnam",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "ray-kelley-silver-star",
-      "title": "Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "vietnam-1967-amphibious-combat",
-      "title": "Vietnam, 1967 - Amphibious Combat",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "sea-tiger-newspapers",
-      "title": "Sea Tiger Newspapers",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "beaver-cage-union-memorial",
-      "title": "Beaver Cage/Union memorial service program",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id":"slf-after-action-cage-union",
-      "title":"Special Landing Force, After Action Report, BEAVER CAGE/UNION",
-      "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "beaver-cage-command-chron",
-      "title": "Operation Beaver Cage",
-      "subtitle": "Command Chronology from the Vietnam War",
-      "tab": "books",
-      "parent": "cage"
+      "menus": [
+        "main"
+      ]
     }
   ]
 }

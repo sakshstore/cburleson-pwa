@@ -32,13 +32,13 @@ export class PageTemplatePage {
         if (isLocal()) {
             console.log('> PageTemplatePage.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substr(1);
+
+        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
         this.header = BlogData.getPostHeaderById(id);
 
         // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
+
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }

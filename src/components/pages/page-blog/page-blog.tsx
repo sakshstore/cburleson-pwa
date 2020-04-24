@@ -118,9 +118,15 @@ export class PageBlog {
   renderItem(item: any) {
     // Render only if the "menus" array of the given item exists and also contains the menu name "blog"
     if (item.menus && item.menus.indexOf('blog') > -1) {
-    //if (! item.hideFromMenus) {
+
+
+      let itemHref = '/' + item.id + '/';
+      if(item.parent) {
+        itemHref = '/' + item.parent + itemHref;
+      }
+
       return (
-        <ion-item href={'/' + item.id + '/'} hidden={item.hide} lines="full">
+        <ion-item href={itemHref} hidden={item.hide} lines="full">
           <ion-thumbnail slot="start">
             <ion-img src={item.thumbnail} />
           </ion-thumbnail>
