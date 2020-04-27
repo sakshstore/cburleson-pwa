@@ -11,7 +11,7 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     let siteData = JSON.parse(data);
 
     let siteMapText = '';
-    let count = 17;
+    let count = 18;
 
     siteMapText += 'https://codyburleson.com\r\n';
 
@@ -32,6 +32,7 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     siteMapText += 'https://codyburleson.com/photos/ray-kelley\r\n';
     siteMapText += 'https://codyburleson.com/photos/stanley-hall\r\n';
     siteMapText += 'https://codyburleson.com/photos/cavazos-center\r\n';
+    siteMapText += 'https://codyburleson.com/photos/tom-harrison\r\n';
 
     siteData.content.forEach((item) => {
         if(typeof item.parent == 'undefined') {
