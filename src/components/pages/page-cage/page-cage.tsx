@@ -129,10 +129,18 @@ export class PageCage {
     {
       id: "/photos/stanley-hall",
       title: "Tour of Duty Photos from Stanley Hall",
-      teaser: "Photographs from Stanley &quot;Doc&quot; Hall (a Corpsman in Delta Co) taken during his tour of duty (around April 1967).",
+      teaser: "Photographs from Stanley &quot;Doc&quot; Hall (a Corpsman in Delta Co) taken during his tour of duty.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-stanley-hall-thumb.jpg",
       datePublished: "",
       dateModified: "Dec 18, 2018"
+    },
+    {
+      id: "/photos/tom-harrison",
+      title: "Tour of Duty Photos from Tom Harrison",
+      teaser: "Photographs from Thomas Harrison (Charlie Co) taken during his tour of duty.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-tom-harrison-thumb.jpg",
+      datePublished: "4/28/2020",
+      dateModified: ""
     },
     {
       id: "/cage/marine-platoon-156-san-diego-1966",

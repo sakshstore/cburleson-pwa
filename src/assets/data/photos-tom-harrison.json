@@ -7,6 +7,21 @@
     "imagesURL": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-tom-harrison/",
     "photos": [
         {
+            "id": "tom-harrison_008",
+            "subtitle": "Khe Sanh",
+            "content": "Scott (last name), Dula, Jenkens at haircut time."
+        },
+        {
+            "id": "tom-harrison_009",
+            "subtitle": "Khe Sanh",
+            "content": "Dula &amp; Widner in back of our gun hole. The gun is covered up."
+        },
+        {
+            "id": "tom-harrison_010",
+            "subtitle": "Khe Sanh",
+            "content": "Helfer in doorway of our hooch with wet clothes hanging on &quot;line.&quot; In the far background, center of photo is Hill 881. To the right of the photo (just out view) is Hill 861."
+        },
+        {
             "id": "tom-harrison_001a",
             "subtitle": "Air Strike - Operation Cochise",
             "content": ""
@@ -28,18 +43,18 @@
         },
         {
             "id": "tom-harrison_004",
-            "subtitle": "",
-            "content": "(l-R) (Hartmen sp?), Rowe, Cpl. Hughes"
+            "subtitle": "In Squad Bay on the USS Okinawa (LPH-3)",
+            "content": "(L-R) Mike Hartman, Rowe, Cpl. John Hughes"
         },
         {
             "id": "tom-harrison_005",
-            "subtitle": "(Chu Lai sp?)",
-            "content": "(Burkett sp?)"
+            "subtitle": "Chu Lai",
+            "content": "Ken Burkitt"
         },
         {
             "id": "tom-harrison_006",
-            "subtitle": "",
-            "content": "(L-R) Me, Miller, (Unk?)."
+            "subtitle": "Operation Cochise",
+            "content": "(L-R on flag) Me, Miller, and <em>unidentified</em>."
         },
         {
             "id": "tom-harrison_007",
@@ -47,29 +62,14 @@
             "content": "Hartman"
         },
         {
-            "id": "tom-harrison_008",
-            "subtitle": "Khe Sanh",
-            "content": "Scott, Dula, (Jenkiens ?) at haircut time."
-        },
-        {
-            "id": "tom-harrison_009",
-            "subtitle": "Khe Sanh",
-            "content": "Dula &amp; Widner in back of our gun hole. The gun is covered up."
-        },
-        {
-            "id": "tom-harrison_010",
-            "subtitle": "Center Hill 881 - (Rt-off pict 861 ?)",
-            "content": "Helfer in doorway of our hooch with wet clothes hanging on &quot;line.&quot;"
+            "id": "tom-harrison_011b",
+            "subtitle": "Burning &quot;gook&quot; houses.",
+            "content": "<em>Note: The derogatory term, &quot;gook,&quot; which appeared in the handwritten description on the back of this photo is reprinted as originally written for its factual and historical significance.</em></em>"
         },
         {
             "id": "tom-harrison_011a",
             "subtitle": "",
             "content": ""
-        },
-        {
-            "id": "tom-harrison_011b",
-            "subtitle": "",
-            "content": "Burning &quot;gook&quot; houses."
         },
         {
             "id": "tom-harrison_012",
@@ -78,43 +78,43 @@
         },
         {
             "id": "tom-harrison_014",
-            "subtitle": "",
-            "content": "Helfer"
+            "subtitle": "Operation Buffalo",
+            "content": "Helfer. This and the following two photos were taken just after the big fight on Operation Buffalo. The temperature was extremely hot."
         },
         {
             "id": "tom-harrison_015",
-            "subtitle": "",
+            "subtitle": "Operation Buffalo",
             "content": "Me, at right."
         },
         {
             "id": "tom-harrison_016",
             "subtitle": "Operation Buffalo",
-            "content": "(L-R) Belts, Thompson, Parker, Bacon"
+            "content": "(L-R) Belts, Thompson, Parker, Roger Bacon"
         },
         {
             "id": "tom-harrison_017",
-            "subtitle": "(L-R) Unk, (Bosman?), Helfer, (Belts?), Rowe",
-            "content": ""
+            "subtitle": "On the hangar Deck of the USS Okinawa (LPH-3)",
+            "content": "(L-R) unidentified, Boseman, Helfer, Belts, Rowe"
         },
         {
             "id": "tom-harrison_018",
             "subtitle": "At (Chu Lai sp?)",
-            "content": "(L-R) (George Norbut sp?) - KIA, me, (Unk?)"
+            "content": "(L-R) George Norbut, who later stepped on a mine that killed him on Sept 2, 1967, me, <em>unditentified</em>"
         },
         {
             "id": "tom-harrison_019",
             "subtitle": "",
-            "content": "At right, Don Bumgardner. At left, <em>?</em>."
+            "content": "At right, Don Bumgardner. At left, <em>unditentified</em>."
         },
         {
             "id": "tom-harrison_020",
             "subtitle": "",
-            "content": "(L-R) Hartman, Kalwara, (Bosman?, (Unk?), me, (Burkett sp?))"
+            "content": "(L-R) Hartman, Kalwara, Boseman, <em>unidentified</em>, me, Ken Burkitt"
         },
         {
             "id": "tom-harrison_021",
             "subtitle": "Operation Buffalo",
-            "content": "(Unk?), Helfer, me"
+            "content": "<em>unidentified</em>, Helfer, and me"
         }
     ]
 }

@@ -4,6 +4,10 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.2]
+
+- Revised new page [/photos/tom-harrison](https://codyburleson.com/photos/tom-harrison) with Tom's input and published with link coming from the [cage](https://codyburleson.com/cage) page.
+
 ## [1.7.1]
 
 - Added new page [/photos/tom-harrison](https://codyburleson.com/photos/tom-harrison) for review and revision with Tom's input before link publishing.
