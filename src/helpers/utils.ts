@@ -1,5 +1,5 @@
 // SITEVERSION must always be line #2 because it is replaced by line number
-export const SITEVERSION = "1.7.2";
+export const SITEVERSION = "1.7.3";
 export const SITENAME = "Cody Burleson";
 
 /**

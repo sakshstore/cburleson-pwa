@@ -122,7 +122,7 @@ export class PageCage {
       id: "/photos/ray-kelley",
       title: "Tour of Duty Photos from Ray Kelley",
       teaser: "Photographs from Ray &quot;Machine Gun&quot; Kelley (a Machine Gunner in Delta Co) taken during his tour of duty.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ray-kelley-thumb.jpg",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ray-kelley-v2-thumb.jpg",
       datePublished: "",
       dateModified: "Dec 18, 2018"
     },

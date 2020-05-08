@@ -41,7 +41,7 @@ export class PageVietnamWarReferenceResources {
         {
             id: "http://13months.net/",
             title: "13 Months",
-            teaser: "Memoir of Charlie Co., 1/3 Marine, W.V. Taylor - soon to be published)",
+            teaser: "Memoir of Charlie Co., 1/3 Marine, William (Bill) Taylor; soon to be published",
             thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/book_13-months_thumb.jpg",
             hiddenImage: ""
         },
