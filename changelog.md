@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.4]
+
+- Added new page: [/photos/dennis-mannion](https://codyburleson.com/photos/dennis-mannion)
+- Content update to page: [/cage/vietnam-war-reference-resources](https://codyburleson.com/cage/vietnam-war-reference-resources)
+- Text change to page: [/photos/ray-kelley](https://codyburleson.com/photos/ray-kelley)
 
 ## [1.7.3]
 

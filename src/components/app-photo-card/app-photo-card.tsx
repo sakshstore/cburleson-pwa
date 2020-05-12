@@ -22,10 +22,18 @@ export class AppPhotoCard {
         }
     }
 
+    createHiResLink(item) {
+        console.log('createHiResLink() > item: %o', item);
+        if(! item.skipHiRes) {
+            var hiResImagePath = this.imagePath + this.item.id + '.jpg';
+            return <p><a href={hiResImagePath} class="button">View hi-res image...</a></p>
+        }
+    }
+
     render() {
 
         var smallImagePath = this.imagePath + this.item.id + '-sm.jpg';
-        var hiResImagePath = this.imagePath + this.item.id + '.jpg';
+        //var hiResImagePath = this.imagePath + this.item.id + '.jpg';
 
         return (
             <ion-card>
@@ -36,7 +44,8 @@ export class AppPhotoCard {
                 </ion-card-header>
                 <ion-card-content>
                     <div innerHTML={this.item.content}></div>
-                    <p><a href={hiResImagePath} class="button">View hi-res image...</a></p>
+                    {this.createHiResLink(this.item)}
+                    {/*<p><a href={hiResImagePath} class="button">View hi-res image...</a></p>*/}
                     {/* <p>ID: {this.item.id}</p> */}
                 </ion-card-content>
             </ion-card>

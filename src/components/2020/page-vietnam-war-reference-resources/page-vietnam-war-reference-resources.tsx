@@ -22,6 +22,13 @@ export class PageVietnamWarReferenceResources {
             dateListed: "2020/04/21",
         },
         {
+            id: "http://dlagrza.com/1stBn3rdMar.htm",
+            title: "dlagrza.com - 1st Battalion, 3rd Marines (Vietnam 21Dec66 to 11Dec67)",
+            teaser: "Historical info and photos from the personal website of Oscar De La Garza, Jr. USMC (deceased, Oct 17, 2010, pancreatic cancer).",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/dlagrza-com_thumb.jpg",
+            dateListed: "2020/05/11",
+        },
+        {
             id: "https://www.cah.utexas.edu/news/materials_in_action/kb_the_vietnam_war.php",
             title: "Vietnam War Resources at the Briscoe Center",
             teaser: "Published by the University of Texas at Austin, this archive contains News Media History, Photojournalism, Congressional and Political Collections, and Oral Histories.",
@@ -34,7 +41,7 @@ export class PageVietnamWarReferenceResources {
             teaser: "Published by Texas Tech University, this archive contains 7 million pages of documents, photographs, slides, negatives, oral histories, artifacts, moving images, sound recordings, and maps.",
             thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/texas-tech_thumb.jpg",
             dateListed: "2020/04/21",
-        },
+        }
     ]
 
     books = [

@@ -143,6 +143,14 @@ export class PageCage {
       dateModified: ""
     },
     {
+      id: "/photos/dennis-mannion",
+      title: "Tour of Duty Photos of Dennis Mannion",
+      teaser: "Photographs of Dennis J. Mannion (Delta Co) taken around and during his tour of duty.",
+      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-dennis-mannion-thumb.jpg",
+      datePublished: "5/11/2020",
+      dateModified: ""
+    },
+    {
       id: "/cage/marine-platoon-156-san-diego-1966",
       title: "U.S. Marine Corps Platoon 156 - San Diego, 1966",
       teaser: "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
