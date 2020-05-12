@@ -50,7 +50,8 @@ export class PageCage {
       title: "3rd Platoon - D 1/3 Marines, Vietnam",
       teaser: "Photograph of Delta Co 3rd Platoon with most individuals identified.",
       thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/j-h-platoon_thumb.jpg",
-      datePublished: "2020/04/23"
+      datePublished: "2020/04/24",
+      dateModified: "2020/05/12"
     },
     {
       id: "/photos/curt-bruce",

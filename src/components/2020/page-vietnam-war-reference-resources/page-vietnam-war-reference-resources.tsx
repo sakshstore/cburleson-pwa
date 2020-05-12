@@ -29,6 +29,20 @@ export class PageVietnamWarReferenceResources {
             dateListed: "2020/05/11",
         },
         {
+            id: "http://326marinesinvietnam.com/KevinsLibrary.aspx",
+            title: "List of Viet Nam Books",
+            teaser: "A searchable database of about 400 books on the Vietnam War published on the 326marinesinvietnam.com website.",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/list-of-nam-books_thumb.jpg",
+            dateListed: "2020/05/12",
+        },
+        {
+            id: "http://www.recordsofwar.com/vietnam/usmc/1stBn3rdMarines.htm",
+            title: "Records of War - 1st Battalion, 3rd Marines",
+            teaser: "A list of declassified records pertaining to the 1st Battalion, 3rd Marines (primary source of the listed documents is the Texas Tech University Virtual Vietnam Archive). ",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/records-of-war_thumb.jpg",
+            dateListed: "2020/05/12",
+        },
+        {
             id: "https://www.cah.utexas.edu/news/materials_in_action/kb_the_vietnam_war.php",
             title: "Vietnam War Resources at the Briscoe Center",
             teaser: "Published by the University of Texas at Austin, this archive contains News Media History, Photojournalism, Congressional and Political Collections, and Oral Histories.",

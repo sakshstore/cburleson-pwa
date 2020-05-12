@@ -87,11 +87,11 @@ export class PageD13Platoon {
                     <ion-item><ion-label text-wrap>35. unidentified</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>36. Dennis Mannion (KIA, Operation Beaver Cage)</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>37. Gary Culp</ion-label></ion-item>
-                    <ion-item><ion-label text-wrap>38. unidentified Corpsman</ion-label></ion-item>
+                    <ion-item><ion-label text-wrap>38. Believed to be Corpsman Elwood C. ("Doc") Sovey Jr</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>39. unidentified</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>40. Sgt. Milton Hall (KIA, Operation Union I, a few days after Beaver Cage)</ion-label></ion-item>
-                    <ion-item><ion-label text-wrap>41. Lt. Templeton (Platoon Commander)</ion-label></ion-item>
-                    <ion-item><ion-label text-wrap>42. Bill Cansdale (WIA, Operation Beaver Cage)</ion-label></ion-item>
+                    <ion-item><ion-label text-wrap>41. 2nd Lt. Charles Templeton or Templin (spelling unconfirmed); Platoon Commander</ion-label></ion-item>
+                    <ion-item><ion-label text-wrap>42. SSgt Bill Cansdale (WIA, Operation Beaver Cage)</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>43. unidentified</ion-label></ion-item>
                     <ion-item><ion-label text-wrap>44. unidentified</ion-label></ion-item>
                 </ion-list>
