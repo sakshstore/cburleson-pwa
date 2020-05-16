@@ -1,15 +1,20 @@
 import { Component, h } from '@stencil/core';
 import { isLocal, SITENAME } from '../../../helpers/utils';
-import Prism from "prismjs"
+//import Prism from "prismjs"
 import { BlogData } from '../../../services/blog-data';
+//import '@deckdeckgo/highlight-code';
 
+import { defineCustomElements as deckDeckGoElement} from '@deckdeckgo/highlight-code/dist/loader';
+deckDeckGoElement();
 
+/*
 const CODE_1 = `<tr *ngFor="#item of data">
      <td><a href="#">{{ item.invoiceNo }}</a></td>
      <td>{{ item.invoiceDate }}</td>
      <td>{{ item.invoiceStatus }}</td>
      <td class="right aligned">{{ item.invoiceTotal | currency:'USD':true:'1.2-2' }}</td>
 </tr>`;
+*/
 
 @Component({
     tag: 'page-format-currency-in-angular',
@@ -39,9 +44,10 @@ export class PageFormatCurrencyInAngular {
         }
     }
 
+    /*
     componentDidLoad() {
         setTimeout(() => Prism.highlightAll(), 0)
-    }
+    }*/
 
     render() {
         return [
@@ -62,14 +68,20 @@ export class PageFormatCurrencyInAngular {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-                            <h1>{this.header.title}</h1>
-
-                            <p class="entry-meta">
-                                Posted on <time>{new Date(this.header.datePublished).toDateString()}</time> (last modified <time>{new Date(this.header.dateModified).toDateString()}</time>)
-                            </p>
-
                             <p>In Angular, to format a currency, use the currency pipe on a number as shown here.</p>
-                            <pre><code class="language-html">{CODE_1}</code></pre>
+                            {/* <pre><code class="language-html">{CODE_1}</code></pre> */}
+
+<deckgo-highlight-code language="html">
+<code slot="code">
+{`<tr *ngFor="#item of data">
+     <td><a href="#">{{ item.invoiceNo }}</a></td>
+     <td>{{ item.invoiceDate }}</td>
+     <td>{{ item.invoiceStatus }}</td>
+     <td class="right aligned">{{ item.invoiceTotal | currency:'USD':true:'1.2-2' }}</td>
+</tr>`}
+</code>
+</deckgo-highlight-code>
+
                             <ul>
                                 <li>The first parameter, <code>'USD'</code>, of the pipe is an ISO currency code (e.g. ‘<code>USD</code>’,’<code>EUR</code>’, etc.)</li>
                                 <li>The second parameter, <code>true</code>, is an optional boolean to specify whether or not you want to render the currency symbol (‘<code>$</code>’, ‘<code>€</code>’); default is false</li>

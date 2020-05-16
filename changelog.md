@@ -4,6 +4,15 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.9 - May 16, 2020]
+
+- Update `package.json`:
+    - Update prismjs from `^1.19.0` to `^1.20.0`
+    - Add git repository info
+    - Add bugs (issues) URL
+    - Add new package: `"@deckdeckgo/highlight-code": "^1.0.5"`
+- Update page with initial test for new deckdeckgo/highlight-code to replace former way of using Prismjs: [/format-currency-in-angular](https://codyburleson.com/format-currency-in-angular)
+
 ## [1.7.8 - May 15, 2020]
 
 - Update package, `@stencil/core` from 1.12.0 to 1.13.0
