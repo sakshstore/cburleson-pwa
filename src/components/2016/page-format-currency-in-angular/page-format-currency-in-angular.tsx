@@ -4,8 +4,8 @@ import { isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 //import '@deckdeckgo/highlight-code';
 
-import { defineCustomElements as deckDeckGoElement} from '@deckdeckgo/highlight-code/dist/loader';
-deckDeckGoElement();
+//import { defineCustomElements as deckDeckGoElement} from '@deckdeckgo/highlight-code/dist/loader';
+//deckDeckGoElement();
 
 /*
 const CODE_1 = `<tr *ngFor="#item of data">
