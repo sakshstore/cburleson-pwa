@@ -67,17 +67,15 @@ import { Title } from '@angular/platform-browser';
     template: \`< h1 > MyApp</h1>\`
                 })
 export class MyAppComponent {
-                        constructor(private titleService: Title) {}
+    constructor(private titleService: Title) {}
 
-
-                    ngOnInit() {
-                        this.setTitle('My Web Page Title');
-                }
-            
+    ngOnInit() {
+        this.setTitle('My Web Page Title');
+    }
             
     public setTitle( newTitle: string) {
-                        this.titleService.setTitle(newTitle);
-                }
+        this.titleService.setTitle(newTitle);
+    }
 }`}</code></pre>
 
                             <p>The service automatically creates the title&nbsp;element in the head if needed and also sets the value. &nbsp;The service also has a getter method to get the title.</p>

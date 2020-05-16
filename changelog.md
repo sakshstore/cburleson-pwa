@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.7.8 - May 15, 2020]
+
+- Update package, `@stencil/core` from 1.12.0 to 1.13.0
+- Content update (addition) to page: [/cage/vietnam-war-reference-resources](https://codyburleson.com/cage/vietnam-war-reference-resources)]; added Pentagon Papers and Records of War - Task Group Reports
+
 ## [1.7.7 - May 12, 2020]
 
 - Minor content edit to page: [/photos/dennis-mannion](https://codyburleson.com/photos/dennis-mannion)

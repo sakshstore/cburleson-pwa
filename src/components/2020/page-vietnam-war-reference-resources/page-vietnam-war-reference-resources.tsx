@@ -13,7 +13,7 @@ export class PageVietnamWarReferenceResources {
     // header for this individual item by id...
     header: any;
 
-    websites = [
+    webresources = [
         {
             id: "https://onethreemarines.com/",
             title: "onethreemarines.com",
@@ -36,11 +36,25 @@ export class PageVietnamWarReferenceResources {
             dateListed: "2020/05/12",
         },
         {
+            id: "https://www.archives.gov/research/pentagon-papers",
+            title: "Pentagon Papers",
+            teaser: "Available from the National Archives and officially titled &quot;Report of the Office of the Secretary of Defense Vietnam Task Force,&quot; this is the complete report commissioned by Secretary of Defense Robert McNamara in 1967 - a comprehensive and formerly top-secret study of the history of United States involvement in Vietnam from World War II to the present.",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/pentagon-papers_thumb.jpg",
+            dateListed: "2020/05/12",
+        },
+        {
             id: "http://www.recordsofwar.com/vietnam/usmc/1stBn3rdMarines.htm",
             title: "Records of War - 1st Battalion, 3rd Marines",
             teaser: "A list of declassified records pertaining to the 1st Battalion, 3rd Marines (primary source of the listed documents is the Texas Tech University Virtual Vietnam Archive). ",
             thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/records-of-war_thumb.jpg",
             dateListed: "2020/05/12",
+        },
+        {
+            id: "http://www.recordsofwar.com/vietnam/usmc/TaskGroupRpts.htm",
+            title: "Records of War - Task Group Reports",
+            teaser: "A list of declassified records pertaining to various Task Groups including 79.4 Special Landing Force &quot;ALFA.&quot; (primary source of the listed documents is the Texas Tech University Virtual Vietnam Archive). ",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/records-of-war_thumb.jpg",
+            dateListed: "2020/05/15",
         },
         {
             id: "https://www.cah.utexas.edu/news/materials_in_action/kb_the_vietnam_war.php",
@@ -150,7 +164,7 @@ export class PageVietnamWarReferenceResources {
                             <h2>Websites</h2>
 
                             <ion-list>
-                                {this.websites.map((item) =>
+                                {this.webresources.map((item) =>
                                     <ion-item href={item.id} lines="none">
                                         <ion-thumbnail slot="start">
                                             <ion-img src={item.thumbnail} />
