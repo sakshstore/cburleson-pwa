@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-build-a-rendering-plugin-ibm-wcm-part-2',
@@ -10,15 +11,9 @@ export class PageBuildARenderingPlugin2 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageBuildARenderingPlugin2.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -64,9 +59,7 @@ export class PageBuildARenderingPlugin2 {
 
                             <p>VelocityPlugin.java (<a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/08/VelocityRenderPluginProject-Part2.zip">download it, zipped</a>)</p>
 
-<deckgo-highlight-code language="java" line-numbers>
-<code slot="code">
-{`// These constants typically go at the top of the class, but are placed just above
+<deckgo-highlight-code language="java" line-numbers><code slot="code">{`// These constants typically go at the top of the class, but are placed just above
 // this method for simplicity of this documentation...
   
 public static final String CMPNT_NAME = "cmpnt";
@@ -180,9 +173,7 @@ public boolean render(final RenderingPluginModel p_model) throws RenderingPlugin
     }
  
     return renderBody;
-}`}
-</code>
-</deckgo-highlight-code>
+}`}</code></deckgo-highlight-code>
 
                             <p>Here’s some information about what’s going on with the code above:</p>
 
@@ -225,8 +216,7 @@ public boolean render(final RenderingPluginModel p_model) throws RenderingPlugin
 
                             <p>The plugin is now to a point where you can have some real fun with it. All we’ve done in our example is replace the variables <em>$name</em> and <em>$project</em> with the values we injected into the Velocity context. Without adding anymore to the plugin, there is a whole lot more VTL we could use. For just one simple example, you can use if/else statements, like this:</p>
 
-<deckgo-highlight-code language="velocity">
-<code slot="code">
+<deckgo-highlight-code language="velocity"><code slot="code">
 {`#if( $foo < 10 )
  Go North
 #elseif( $foo == 10 )
@@ -235,9 +225,7 @@ public boolean render(final RenderingPluginModel p_model) throws RenderingPlugin
  Go South
 #else
  Go West
-#end`}
-</code>
-</deckgo-highlight-code>
+#end`}</code></deckgo-highlight-code>
 
                             <p>&nbsp;</p>
 

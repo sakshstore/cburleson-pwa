@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-a-look-at-sparql-sql-for-semantic-web',
@@ -10,15 +11,9 @@ export class PageALookAtSparql {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageALookAtSparql.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -133,8 +128,6 @@ WHERE {
     ont:numberOfEmployees ?num_employees .
     FILTER (?num_employees > 398300 && lang(?company_name) = "en") .
 } ORDER BY DESC(?num_employees) LIMIT 250`}</code></deckgo-highlight-code>
-
-
 
                             <p><a href="http://dbpedia.org/snorql/?query=PREFIX+ont%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0ASELECT+%3Fcompany_name+%3Fnum_employees%0D%0AWHERE+{%0D%0A++++%3Fcompany+a+ont%3ACompany%3B%0D%0A+++++++++++++rdfs%3Alabel+%3Fcompany_name+%3B%0D%0A+++++++++++++ont%3AnumberOfEmployees+%3Fnum_employees+.%0D%0A++++FILTER+%28%3Fnum_employees+%3E+398300+%26%26+lang%28%3Fcompany_name%29+%3D+%22en%22%29+.%0D%0A}+ORDER+BY+DESC%28%3Fnum_employees%29+LIMIT+250" rel="nofollow">Enter this query for me</a>.</p>
 

@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
 	tag: 'page-sparql-examples-negation',
@@ -10,10 +11,6 @@ export class PageSparqlExamplesNegation {
 	header: any;
 
 	async componentWillLoad() {
-		if (isLocal()) {
-			console.log('>> PageTemplatePage.componentWillLoad');
-		}
-		
 		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
@@ -54,12 +51,8 @@ WHERE {
   MINUS { ?person rdfs:seeAlso ?url }
 }`}</code></deckgo-highlight-code>
 
-
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-							
-
 						</ion-col>
 					</ion-row>
 				</ion-grid>

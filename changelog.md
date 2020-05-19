@@ -4,6 +4,12 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.1 - May 19, 2020]
+
+- Load DuckDuckGo Highlight Code component only on pages that use it (rather than global on `index.html`).
+- Remove most `console.log` statements
+- Made ALL content titles conform to the style guide (AP Style for titles) 
+
 ## [1.8.0 - May 19, 2020]
 
 - Remove all legacy references to `<gls-adsense-ad />`

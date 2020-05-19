@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-javascript-ternary-operator-shortcut-to-the-if-statement',
@@ -10,14 +11,9 @@ export class PageJavaScriptTernary {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageJavaScriptTernary.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -51,20 +47,17 @@ export class PageJavaScriptTernary {
 function getFee(isMember) {
   return (isMember ? "$2.00" : "$10.00");
 }
- 
- 
+
 // Another example
 // var foo = (a === b) ? 1 : 2;
 var foo = (a === b)
   ? 1
   : 2;`}</code></deckgo-highlight-code>
 
-
                             <p>See also: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" rel="nofollow">Conditional (ternary) Operator</a>, MDN web docs</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

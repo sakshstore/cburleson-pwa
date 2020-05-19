@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -122,10 +122,6 @@ export class PageVietnamWarReferenceResources {
     ]
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageVietnamWarReferenceResources.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

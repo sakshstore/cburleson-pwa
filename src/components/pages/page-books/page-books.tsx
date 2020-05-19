@@ -1,6 +1,6 @@
 import { Component, Element, h } from '@stencil/core';
 import { BlogData } from '../../../services/blog-data';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 
 @Component({
   tag: 'page-books'
@@ -17,11 +17,6 @@ export class PageBooks {
   reviewedItems: Array<any>;
 
   async componentWillLoad() {
-
-    if (isLocal()) {
-      console.log('>> PageBooks.componentWillLoad');
-    }
-
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPageHeaderById(id);
 

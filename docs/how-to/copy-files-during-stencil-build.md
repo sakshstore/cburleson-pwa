@@ -1,4 +1,4 @@
-# Copy files during Stencil build 
+# Copy Files During Stencil Build 
 
 To copy files from one place to another during the Stencil build process, use the
 `stencil.config.js` file and configure as such:

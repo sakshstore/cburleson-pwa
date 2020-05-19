@@ -373,8 +373,6 @@ export namespace Components {
     }
     interface PageStringReplaceHelperForDustJs {
     }
-    interface PageTemplatePage {
-    }
     interface PageTheIaFiles001IntoTheFire {
     }
     interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {
@@ -1497,12 +1495,6 @@ declare global {
         prototype: HTMLPageStringReplaceHelperForDustJsElement;
         new (): HTMLPageStringReplaceHelperForDustJsElement;
     };
-    interface HTMLPageTemplatePageElement extends Components.PageTemplatePage, HTMLStencilElement {
-    }
-    var HTMLPageTemplatePageElement: {
-        prototype: HTMLPageTemplatePageElement;
-        new (): HTMLPageTemplatePageElement;
-    };
     interface HTMLPageTheIaFiles001IntoTheFireElement extends Components.PageTheIaFiles001IntoTheFire, HTMLStencilElement {
     }
     var HTMLPageTheIaFiles001IntoTheFireElement: {
@@ -1889,7 +1881,6 @@ declare global {
         "page-stories-of-slavery-as-told-by-ex-slaves": HTMLPageStoriesOfSlaveryAsToldByExSlavesElement;
         "page-story-structure-diagram": HTMLPageStoryStructureDiagramElement;
         "page-string-replace-helper-for-dust-js": HTMLPageStringReplaceHelperForDustJsElement;
-        "page-template-page": HTMLPageTemplatePageElement;
         "page-the-ia-files-001-into-the-fire": HTMLPageTheIaFiles001IntoTheFireElement;
         "page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide": HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement;
         "page-the-ia-files-003-definitions-defined": HTMLPageTheIaFiles003DefinitionsDefinedElement;
@@ -2295,8 +2286,6 @@ declare namespace LocalJSX {
     }
     interface PageStringReplaceHelperForDustJs {
     }
-    interface PageTemplatePage {
-    }
     interface PageTheIaFiles001IntoTheFire {
     }
     interface PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide {
@@ -2543,7 +2532,6 @@ declare namespace LocalJSX {
         "page-stories-of-slavery-as-told-by-ex-slaves": PageStoriesOfSlaveryAsToldByExSlaves;
         "page-story-structure-diagram": PageStoryStructureDiagram;
         "page-string-replace-helper-for-dust-js": PageStringReplaceHelperForDustJs;
-        "page-template-page": PageTemplatePage;
         "page-the-ia-files-001-into-the-fire": PageTheIaFiles001IntoTheFire;
         "page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide": PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide;
         "page-the-ia-files-003-definitions-defined": PageTheIaFiles003DefinitionsDefined;
@@ -2760,7 +2748,6 @@ declare module "@stencil/core" {
             "page-stories-of-slavery-as-told-by-ex-slaves": LocalJSX.PageStoriesOfSlaveryAsToldByExSlaves & JSXBase.HTMLAttributes<HTMLPageStoriesOfSlaveryAsToldByExSlavesElement>;
             "page-story-structure-diagram": LocalJSX.PageStoryStructureDiagram & JSXBase.HTMLAttributes<HTMLPageStoryStructureDiagramElement>;
             "page-string-replace-helper-for-dust-js": LocalJSX.PageStringReplaceHelperForDustJs & JSXBase.HTMLAttributes<HTMLPageStringReplaceHelperForDustJsElement>;
-            "page-template-page": LocalJSX.PageTemplatePage & JSXBase.HTMLAttributes<HTMLPageTemplatePageElement>;
             "page-the-ia-files-001-into-the-fire": LocalJSX.PageTheIaFiles001IntoTheFire & JSXBase.HTMLAttributes<HTMLPageTheIaFiles001IntoTheFireElement>;
             "page-the-ia-files-002-concepts-crows-camels-and-the-cognitive-divide": LocalJSX.PageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivide & JSXBase.HTMLAttributes<HTMLPageTheIaFiles002ConceptsCrowsCamelsAndTheCognitiveDivideElement>;
             "page-the-ia-files-003-definitions-defined": LocalJSX.PageTheIaFiles003DefinitionsDefined & JSXBase.HTMLAttributes<HTMLPageTheIaFiles003DefinitionsDefinedElement>;

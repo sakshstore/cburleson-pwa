@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-fix-for-git-after-macos-mojave-upgrade',
@@ -10,10 +11,6 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageFixForGitAfterMacosMojaveUpgrade.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

@@ -1,62 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-const CODE_3 = `SELECT ?predicate (COUNT(*)AS ?frequency)
-WHERE {?subject ?predicate ?object}
-GROUP BY ?predicate
-ORDER BY DESC(?frequency)
-LIMIT 10`;
-const CODE_4 = `PREFIX rank:&lt;http://www.ontotext.com/owlim/RDFRank#&gt;
-SELECT ?n
-WHERE {?n rank:hasRDFRank ?r }
-ORDER BY DESC(?r)
-LIMIT 100`;
-const CODE_5 = `PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-SELECT ?subject ?label
-WHERE { ?subject rdfs:label ?label } LIMIT 100`;
-const CODE_6 = `PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
-SELECT ?subject ?label
-WHERE {
-    ?subject rdf:type &lt;http://codyburleson.com/hyperg#Organization&gt; .
-    ?subject rdfs:label ?label
-} LIMIT 100`;
-const CODE_7 = `PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX bc: &lt;http://www.base22.com/ontologies/2010/5/bc.owl#&gt;
-SELECT ?subject
-WHERE { ?subject bc:hasEmployer &lt;http://www.base22.com/ontologies/2010/5/my-contacts.owl#IBM&gt; } LIMIT 100`;
-const CODE_8 = `PREFIX rdf: &lt;http://www.w3.org/1999/02/22-rdf-syntax-ns#&gt;
- 
-SELECT DISTINCT ?type
-WHERE {
-    ?s a ?type.
-}`;
-const CODE_9 = `PREFIX bc: &lt;http://base22.com/ont/bc#&gt;
- 
-SELECT DISTINCT ?type
-WHERE {
-    ?subject a ?type.
-    FILTER( STRSTARTS(STR(?type),str(bc:)) )
-}`;
-const CODE_10 = `PREFIX foaf: <http://xmlns.com/foaf/0.1/>
-PREFIX card: <http://www.w3.org/People/Berners-Lee/card#>
-SELECT ?homepage
-FROM <http://www.w3.org/People/Berners-Lee/card>
-WHERE {
-    card:i foaf:knows ?known .
-    ?known foaf:homepage ?homepage .
-}`;
-const CODE_11 = `PREFIX rdfs: &lt;http://www.w3.org/2000/01/rdf-schema#&gt;
-PREFIX type: &lt;http://dbpedia.org/class/yago/&gt;
-PREFIX prop: &lt;http://dbpedia.org/property/&gt;
-SELECT ?country_name ?population
-WHERE {
-    ?country a type:LandlockedCountries ;
-    rdfs:label ?country_name ;
-    prop:populationEstimate ?population .
-    FILTER (?population &gt; 15000000) .
-}`;
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-sparql-examples-select',
@@ -66,10 +11,6 @@ export class PageSparqlExamplesSelect {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageSparqlExamplesSelect.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
@@ -121,47 +62,84 @@ WHERE {
 
                             <h2>Find and order most used predicates</h2>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_3}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`SELECT ?predicate (COUNT(*)AS ?frequency)
+WHERE {?subject ?predicate ?object}
+GROUP BY ?predicate
+ORDER BY DESC(?frequency)
+LIMIT 10`}</code></deckgo-highlight-code>
 
                             <h2>Select the top 100 nodes in the RDF graph</h2>
 
                             <p>RDF Rank is a <a href="http://ontotext.com/products/graphdb/" rel="nofollow">GraphDB</a> extension. It is similar to Page Rank and it identifies “important” nodes in an RDF graph based on their interconnectedness. It is accessed using the <code>rank:hasRDFRank</code> system predicate.</p>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_4}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX rank:<http://www.ontotext.com/owlim/RDFRank#>
+SELECT ?n
+WHERE {?n rank:hasRDFRank ?r }
+ORDER BY DESC(?r)
+LIMIT 100`}</code></deckgo-highlight-code>
 
                             <h2>Find anything with a label</h2>
 
                             <p>The following query will find all triples where subject and object are joined by <code>rdfs:label</code>. In other words, anything that has been defined as having a label.</p>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_5}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+SELECT ?subject ?label
+WHERE { ?subject rdfs:label ?label } LIMIT 100`}</code></deckgo-highlight-code>
 
                             <h2>Find instances by class with a label</h2>
 
                             <p>The following example query will get the labels of anything of the class type (<code>rdf:type</code>) Organization.</p>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_6}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+SELECT ?subject ?label
+WHERE {
+    ?subject rdf:type <http://codyburleson.com/hyperg#Organization> .
+    ?subject rdfs:label ?label
+} LIMIT 100`}</code></deckgo-highlight-code>
 
                             <h2>Find all subjects with a given object property</h2>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_7}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX bc: <http://www.base22.com/ontologies/2010/5/bc.owl#>
+SELECT ?subject
+WHERE { ?subject bc:hasEmployer <http://www.base22.com/ontologies/2010/5/my-contacts.owl#IBM> } LIMIT 100`}</code></deckgo-highlight-code>
 
                             <p>From my contacts ontology, I find all IBMers (i.e. the <code>hasEmployer</code> predicate points to the individual IBM, which is an object of type Organization).</p>
 
                             <h2>Find all classes</h2>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_8}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{ `PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ 
+ SELECT DISTINCT ?type
+ WHERE {
+     ?s a ?type.
+ }`}</code></deckgo-highlight-code>
 
                             <p>The SPARQL keyword&nbsp;<strong>a</strong>&nbsp;is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
 
                             <h2>Find all classes with a given prefix</h2>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_9}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX bc: <http://base22.com/ont/bc#>
+ 
+ SELECT DISTINCT ?type
+ WHERE {
+     ?subject a ?type.
+     FILTER( STRSTARTS(STR(?type),str(bc:)) )
+ }`}</code></deckgo-highlight-code>
 
                             <p>The SPARQL keyword <strong>a</strong> is a shortcut for the common predicate <code>rdf:type</code>, giving the class of a resource.</p>
 
                             <h2>Query from a particular graph on the web</h2>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_10}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX foaf: <http://xmlns.com/foaf/0.1/>
+PREFIX card: <http://www.w3.org/People/Berners-Lee/card#>
+SELECT ?homepage
+FROM <http://www.w3.org/People/Berners-Lee/card>
+WHERE {
+    card:i foaf:knows ?known .
+    ?known foaf:homepage ?homepage .
+}`}</code></deckgo-highlight-code>
 
                             <p>The <code>FROM</code> keyword lets us specify the target graph in the query itself.<br />Of interest also in the query shown above:<br />By using <code>?known</code> as an object of one triple and the subject of another, we traverse multiple links in the graph.</p>
 
@@ -169,7 +147,16 @@ WHERE {
 
                             <p>Find me all landlocked countries with a population greater than 15 million</p>
 
-                            <deckgo-highlight-code><code slot="code">{CODE_11}</code></deckgo-highlight-code>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#>
+PREFIX type: <http://dbpedia.org/class/yago/>
+PREFIX prop: <http://dbpedia.org/property/>
+SELECT ?country_name ?population
+WHERE {
+    ?country a type:LandlockedCountries ;
+    rdfs:label ?country_name ;
+    prop:populationEstimate ?population .
+    FILTER (?population > 15000000) .
+}`}</code></deckgo-highlight-code>
 
                             <p>You can try this one at the <a href="http://dbpedia.org/sparql" rel="nofollow">DBPedia SPARQL endpoint</a>.</p>
                             <ul>

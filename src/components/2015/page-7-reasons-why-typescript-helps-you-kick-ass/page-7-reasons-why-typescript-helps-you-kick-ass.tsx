@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-7-reasons-why-typescript-helps-you-kick-ass',
@@ -10,14 +11,9 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> Page7ReasonsWhyTypescriptHelpsYouKickAss.componentWillLoad');
-        }
-
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -228,13 +224,8 @@ class Clock implements IClock {
 
                             <p>But not me. I like to kick ass.</p>
 
-
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

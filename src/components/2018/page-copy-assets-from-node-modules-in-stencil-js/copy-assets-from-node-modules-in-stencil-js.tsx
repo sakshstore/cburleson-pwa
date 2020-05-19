@@ -1,7 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-copy-assets-from-node-modules-in-stencil-js',
@@ -11,10 +11,6 @@ export class PageCopyAssetsFromNodeModulesInStencilJs {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageCopyAssetsFromNodeModulesInStencilJs.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
@@ -55,7 +51,7 @@ export class PageCopyAssetsFromNodeModulesInStencilJs {
                             <p>First, I added these as dev dependencies using npm. For one example:</p>
                             <p><code>npm install boostrap --save-dev</code></p>
                             <p>The next goal was to make sure that these assets were copied to the <code>www/assets</code> directory during the build process. Copying resources from one location to another can be achieved with the <code>copy</code> config specified with <code>src</code> and <code>dest</code> in the <code>stencil.config.ts</code> file as shown below.</p>
-                            <deckgo-highlight-code language="yaml"><code slot="code">{`copy: [
+                            <deckgo-highlight-code><code slot="code">{`copy: [
     { src: '../node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'assets/css/bootstrap.min.css'},
     { src: '../node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'assets/js/bootstrap.min.js'},
     { src: '../node_modules/jquery/dist/jquery.slim.min.js', dest: 'assets/js/jquery.slim.min.js'},

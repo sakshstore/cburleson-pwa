@@ -1,10 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
-
-
-
-
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-create-player-health-status-indicator-for-unity-gui-part-1',
@@ -14,15 +11,9 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -98,6 +89,7 @@ var frameWidth : int = 266;
 var frameHeight: int = 65;
 var frameMarginLeft : int = 10;
 var frameMarginTop: int = 10;
+
 function OnGUI () {
     GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );
     GUI.DrawTexture( Rect(healthMarginLeft,healthMarginTop,healthWidth + healthMarginLeft, healthHeight), foregroundTexture, ScaleMode.ScaleAndCrop, true, 0 );
@@ -137,8 +129,6 @@ function OnGUI () {
                 </ion-grid>
 
             </ion-content>
-
-
 
         ];
     }

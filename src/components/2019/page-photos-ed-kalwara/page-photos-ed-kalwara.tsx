@@ -1,5 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -403,14 +403,9 @@ export class PagePhotosEdKalwara {
     }
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PagePhotosEdKalwara.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);

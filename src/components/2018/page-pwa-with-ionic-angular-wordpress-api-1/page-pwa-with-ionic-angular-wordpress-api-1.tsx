@@ -1,196 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-const CODE_1 = `$ cd ./ionic-ng-wp-client
-$ ionic serve`;
-
-const CODE_3 = `$ docker-compose stop
-$ docker-compose up -d`;
-
-const CODE_4 = `[{"id":1,"date":"2018-09-08T18:33:28","date_gmt":"2018-09-08T18:33:28","guid":{"rendered":"http:\/\/localhost:8080\/?p=1"},"modified":"2018-09-08T18:33:28","modified_gmt":"2018-09-08T18:33:28","slug":"hello-world","status":"publish","type":"post","link":"http:\/\/localhost:8080\/hello-world\/","title":{"rendered":"Hello world!"},"content":{"rendered":"<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!<\/p>\n","protected":false},"excerpt":{"rendered":"<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!<\/p>\n","protected":false},"author":1,"featured_media":0,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[1],"tags":[],"_links":{"self":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/posts\/1"}],"collection":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/posts"}],"about":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/types\/post"}],"author":[{"embeddable":true,"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/users\/1"}],"replies":
-...etc., etc,...`;
-
-const CODE_5 = `export const environment = {
-    production: true,
-    endpointURL: 'http://localhost:8080/wp-json/'
-};`;
-
-const CODE_6 = `export const environment = {
-    production: false,
-    endpointURL: 'http://localhost:8080/wp-json/'
-};`;
-
-const CODE_7 = `import {environment} from '../../environments/environment';
-const ENDPOINT_URL = environment.endpointURL;`;
-
-const CODE_8 = `import { Injectable } from '@angular/core';
-@Injectable({
-  providedIn: 'root'
-})
-export class DataService {
-  constructor() { }
-}`;
-
-const CODE_9 = `import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
-const ENDPOINT_URL = environment.endpointURL;
-@Injectable({
-    providedIn: 'root'
-})
-export class DataService {
-    constructor() {
-    }
-}`;
-
-const CODE_10 = `import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { RouteReuseStrategy } from '@angular/router';
-import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
-import { SplashScreen } from '@ionic-native/splash-screen/ngx';
-import { StatusBar } from '@ionic-native/status-bar/ngx';
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './app-routing.module';
-import { HttpClientModule } from '@angular/common/http';
-@NgModule({
-  declarations: [AppComponent],
-  entryComponents: [],
-  imports: [
-    BrowserModule,
-    HttpClientModule,
-    IonicModule.forRoot(),
-    AppRoutingModule
-  ],
-  providers: [
-    StatusBar,
-    SplashScreen,
-    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
-  ],
-  bootstrap: [AppComponent]
-})
-export class AppModule {}`;
-
-const CODE_11 = `import { Injectable } from '@angular/core';
-import { environment } from '../../environments/environment';
-import { HttpClient } from '@angular/common/http';
-import 'rxjs/add/operator/map';
-import {of} from 'rxjs/observable/of';
-const ENDPOINT_URL = environment.endpointURL;
-@Injectable({
-    providedIn: 'root'
-})
-export class DataService {
-    items: any[];
-    constructor(private http: HttpClient) { }
-    /**
-     * Gets a page of posts or all posts formerly fetched
-     */
-    getPosts(): any {
-        if (this.items) {
-            // The of operator accepts a number of items as parameters, and returns an Observable that emits each of
-            // these parameters, in order, as its emitted sequence. In this case, we will only be returning this.items
-            // to any subscriber.
-            return of(this.items);
-        } else {
-            // http.get() creates an observable.
-            // map() creates and returns its own new observable from the observable that http.get() created,
-            // which we can then subscribe to. Therefore, we can subscribe to the result of this method.
-            //
-            // The Map operator applies a function of your choosing to each item emitted by the source Observable, and
-            // returns an Observable that emits the results of these function applications.
-            return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed').map(this.processPostData, this);
-        }
-    }
-    // A place for post-processing, before making the fetched data available to view.
-    processPostData(data: any[]) {
-        // Do post-processing code here (if useful)
-        this.items = data;
-        return this.items;
-    }
-}`;
-
-const CODE_12 = `import {Component, OnInit} from '@angular/core';
-import {DataService} from '../shared/data.service';
-@Component({
-  selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-})
-export class HomePage implements OnInit {
-    items: any[];
-    constructor(public dataService: DataService) {
-    }
-    ngOnInit() {
-        console.log('>> ngOnInit');
-        this.dataService.getPosts().subscribe((data: any[]) => {
-            this.items = data;
-            console.log('ngOnInit() > items: %o', this.items);
-        });
-    }
-}`;
-
-const CODE_13 = `<ion-header>
-<ion-toolbar>
-  <ion-buttons slot="start">
-    <ion-menu-button></ion-menu-button>
-  </ion-buttons>
-  <ion-title>
-    Home
-  </ion-title>
-</ion-toolbar>
-</ion-header>
-<ion-content padding>
-<ion-list>
-  <ion-item *ngFor="let item of items">
-    <span [innerHTML]="">{{item.title.rendered}}</span>
-    <div class="item-note" slot="end">
-      {{item.id}}
-    </div>
-  </ion-item>
-</ion-list>
-</ion-content>`;
-
-const CODE_14 = `import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http';
-import { HomePage } from './home.page';
-describe('HomePage', () => {
-  let component: HomePage;
-  let fixture: ComponentFixture<HomePage>;
-  beforeEach(async(() => {
-    TestBed.configureTestingModule({
-      declarations: [ HomePage ],
-      imports: [
-        HttpClientModule
-      ],
-      schemas: [CUSTOM_ELEMENTS_SCHEMA],
-    })
-      .compileComponents();
-  }));
-  beforeEach(() => {
-    fixture = TestBed.createComponent(HomePage);
-    component = fixture.componentInstance;
-    fixture.detectChanges();
-  });
-  it('should create', () => {
-    expect(component).toBeTruthy();
-  });
-});`;
-
-const CODE_15 = `import { TestBed } from '@angular/core/testing';
-import { HttpClientModule } from '@angular/common/http';
-import { DataService } from './data.service';
-describe('DataService', () => {
-  beforeEach(() => TestBed.configureTestingModule({
-    imports: [
-      HttpClientModule
-    ],
-  }));
-  it('should be created', () => {
-    const service: DataService = TestBed.get(DataService);
-    expect(service).toBeTruthy();
-  });
-});`;
+import '@deckdeckgo/highlight-code';
 
 @Component({
   tag: 'page-pwa-with-ionic-angular-wordpress-api-1'
@@ -200,10 +11,6 @@ export class PagePwaWithIonicAngularWordpressApi1 {
   header: any;
 
   async componentWillLoad() {
-    if (isLocal()) {
-      console.log('>> PagePwaWithIonicAngularWordpressApi1.componentWillLoad');
-    }
-
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
 
@@ -279,7 +86,8 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
               <p>Now we can run the Ionic app to see what the sidemenu template has given us as a starting point. Change into the newly created project’s directory and run the app…</p>
 
-              <deckgo-highlight-code language="bash"><code slot="code">{CODE_1}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="bash"><code slot="code">{`$ cd ./ionic-ng-wp-client
+$ ionic serve`}</code></deckgo-highlight-code>
 
               <p>The ionic serve command will spawn the app in your web browser and it should look something like this:</p>
 
@@ -352,7 +160,8 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>If you want to stop and restart the containers, run:</p>
 
-              <deckgo-highlight-code language="html"><code slot="code">{CODE_3}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="html"><code slot="code">{`$ docker-compose stop
+$ docker-compose up -d`}</code></deckgo-highlight-code>
 
               <p>Complete the WordPress setup in the browser. Since this is just a local development environment, I would recommend using a username and password that are simple to remember. wordpress / wordpress, for example.</p>
 
@@ -384,7 +193,8 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>This time, you should see a lot of JSON in your browser, which confirms that the REST endpoint is now accessible.</p>
 
-              <deckgo-highlight-code language="json"><code slot="code">{CODE_4}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="json"><code slot="code">{`[{"id":1,"date":"2018-09-08T18:33:28","date_gmt":"2018-09-08T18:33:28","guid":{"rendered":"http:\/\/localhost:8080\/?p=1"},"modified":"2018-09-08T18:33:28","modified_gmt":"2018-09-08T18:33:28","slug":"hello-world","status":"publish","type":"post","link":"http:\/\/localhost:8080\/hello-world\/","title":{"rendered":"Hello world!"},"content":{"rendered":"<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!<\/p>\n","protected":false},"excerpt":{"rendered":"<p>Welcome to WordPress. This is your first post. Edit or delete it, then start writing!<\/p>\n","protected":false},"author":1,"featured_media":0,"comment_status":"open","ping_status":"open","sticky":false,"template":"","format":"standard","meta":[],"categories":[1],"tags":[],"_links":{"self":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/posts\/1"}],"collection":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/posts"}],"about":[{"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/types\/post"}],"author":[{"embeddable":true,"href":"http:\/\/localhost:8080\/wp-json\/wp\/v2\/users\/1"}],"replies":
+...etc., etc,...`}</code></deckgo-highlight-code>
 
               <h2>Store the API URL</h2>
 
@@ -394,15 +204,22 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p><strong>src/environments/environment.prod.ts</strong></p>
 
-              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_5}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="javascript"><code slot="code">{`export const environment = {
+    production: true,
+    endpointURL: 'http://localhost:8080/wp-json/'
+};`}</code></deckgo-highlight-code>
 
               <p><strong>src/environments/environment.ts</strong></p>
 
-              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_6}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="javascript"><code slot="code">{ `export const environment = {
+    production: false,
+    endpointURL: 'http://localhost:8080/wp-json/'
+};`}</code></deckgo-highlight-code>
 
               <p>Later, this allow us to get the URL from our environment by using:</p>
 
-              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_7}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="javascript"><code slot="code">{`import {environment} from '../../environments/environment';
+const ENDPOINT_URL = environment.endpointURL;`}</code></deckgo-highlight-code>
 
               <p>Commit the change…</p>
 
@@ -441,13 +258,28 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>Take a look at <code>data.service.ts</code>. Here’s what the Ionic CLI generated for us.</p>
 
-              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_8}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="javascript"><code slot="code">{`import { Injectable } from '@angular/core';
+@Injectable({
+  providedIn: 'root'
+})
+export class DataService {
+  constructor() { }
+}`}</code></deckgo-highlight-code>
 
               <p>In keeping with good Angular style practice, the CLI appended <code>Service</code>, so the name is <code>DataService</code>.</p>
 
               <p>We can add the import and a constant for the ENDPOINT_URL, which we’ll need later when we flesh out the service.</p>
 
-              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_9}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="javascript"><code slot="code">{`import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
+const ENDPOINT_URL = environment.endpointURL;
+@Injectable({
+    providedIn: 'root'
+})
+export class DataService {
+    constructor() {
+    }
+}`}</code></deckgo-highlight-code>
 
               <h3>Install RxJS dependencies</h3>
 
@@ -457,15 +289,95 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>We also need to add the&nbsp;<code>HttpClientModule</code> to the imports in <code>src/app/app.module.ts</code> so that <code>app.module.ts</code> should then look like this:</p>
 
-              <deckgo-highlight-code><code slot="code">{CODE_10}</code></deckgo-highlight-code>
+              <deckgo-highlight-code><code slot="code">{`import { NgModule } from '@angular/core';
+import { BrowserModule } from '@angular/platform-browser';
+import { RouteReuseStrategy } from '@angular/router';
+import { IonicModule, IonicRouteStrategy } from '@ionic/angular';
+import { SplashScreen } from '@ionic-native/splash-screen/ngx';
+import { StatusBar } from '@ionic-native/status-bar/ngx';
+import { AppComponent } from './app.component';
+import { AppRoutingModule } from './app-routing.module';
+import { HttpClientModule } from '@angular/common/http';
+@NgModule({
+  declarations: [AppComponent],
+  entryComponents: [],
+  imports: [
+    BrowserModule,
+    HttpClientModule,
+    IonicModule.forRoot(),
+    AppRoutingModule
+  ],
+  providers: [
+    StatusBar,
+    SplashScreen,
+    { provide: RouteReuseStrategy, useClass: IonicRouteStrategy }
+  ],
+  bootstrap: [AppComponent]
+})
+export class AppModule {}`}</code></deckgo-highlight-code>
 
               <p>Next, we’ll add methods to fetch post data from the API endpoint. Update <code>src/app/shared/data.service.ts</code> with the following code…</p>
 
-              <deckgo-highlight-code><code slot="code">{CODE_11}</code></deckgo-highlight-code>
+              <deckgo-highlight-code><code slot="code">{`import { Injectable } from '@angular/core';
+import { environment } from '../../environments/environment';
+import { HttpClient } from '@angular/common/http';
+import 'rxjs/add/operator/map';
+import {of} from 'rxjs/observable/of';
+const ENDPOINT_URL = environment.endpointURL;
+@Injectable({
+    providedIn: 'root'
+})
+export class DataService {
+    items: any[];
+    constructor(private http: HttpClient) { }
+    /**
+     * Gets a page of posts or all posts formerly fetched
+     */
+    getPosts(): any {
+        if (this.items) {
+            // The of operator accepts a number of items as parameters, and returns an Observable that emits each of
+            // these parameters, in order, as its emitted sequence. In this case, we will only be returning this.items
+            // to any subscriber.
+            return of(this.items);
+        } else {
+            // http.get() creates an observable.
+            // map() creates and returns its own new observable from the observable that http.get() created,
+            // which we can then subscribe to. Therefore, we can subscribe to the result of this method.
+            //
+            // The Map operator applies a function of your choosing to each item emitted by the source Observable, and
+            // returns an Observable that emits the results of these function applications.
+            return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed').map(this.processPostData, this);
+        }
+    }
+    // A place for post-processing, before making the fetched data available to view.
+    processPostData(data: any[]) {
+        // Do post-processing code here (if useful)
+        this.items = data;
+        return this.items;
+    }
+}`}</code></deckgo-highlight-code>
 
               <p>Now we we’ll add methods for the Home view to communicate with the DataService. Update <code>src/app/home/home.page.ts</code> with the following code…</p>
 
-              <deckgo-highlight-code><code slot="code">{CODE_12}</code></deckgo-highlight-code>
+              <deckgo-highlight-code><code slot="code">{`import {Component, OnInit} from '@angular/core';
+import {DataService} from '../shared/data.service';
+@Component({
+  selector: 'app-home',
+  templateUrl: 'home.page.html',
+  styleUrls: ['home.page.scss'],
+})
+export class HomePage implements OnInit {
+    items: any[];
+    constructor(public dataService: DataService) {
+    }
+    ngOnInit() {
+        console.log('>> ngOnInit');
+        this.dataService.getPosts().subscribe((data: any[]) => {
+            this.items = data;
+            console.log('ngOnInit() > items: %o', this.items);
+        });
+    }
+}`}</code></deckgo-highlight-code>
 
               <p>Now if you run <code>ionic serve</code> and inspect the console, you should see that post items are being returned from WordPress and logged to the console…</p>
 
@@ -473,7 +385,26 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>Sweet! Now we’ll put those items into the view using&nbsp;<code>ion-list</code> and <code>ion-item</code>. Update <code>src/app/home/home.page.html</code> with the following code…</p>
 
-              <deckgo-highlight-code language="html"><code slot="code">{CODE_13}</code></deckgo-highlight-code>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+<ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-menu-button></ion-menu-button>
+  </ion-buttons>
+  <ion-title>
+    Home
+  </ion-title>
+</ion-toolbar>
+</ion-header>
+<ion-content padding>
+<ion-list>
+  <ion-item *ngFor="let item of items">
+    <span [innerHTML]="">{{item.title.rendered}}</span>
+    <div class="item-note" slot="end">
+      {{item.id}}
+    </div>
+  </ion-item>
+</ion-list>
+</ion-content>`}</code></deckgo-highlight-code>
 
               <p>Now, when you run the app with <code>ionic serve</code>, you should see something similar to the following.</p>
 
@@ -483,11 +414,49 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>In <code>src/app/home/home.page.spec.ts</code>, import the <code>HTTPClientModule</code> and then add the <code>HttpClientModule</code> into an <code>imports</code> stanza in the <code>TestBed</code> configuration, similar to how it’s done in <code>app.module.ts</code>. When you’re done, the <code>home.page.spec.ts</code> file should look like this:</p>
 
-              <deckgo-highlight-code><code slot="code">{CODE_14}</code></deckgo-highlight-code>
+              <deckgo-highlight-code><code slot="code">{`import { CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
+import { async, ComponentFixture, TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { HomePage } from './home.page';
+describe('HomePage', () => {
+  let component: HomePage;
+  let fixture: ComponentFixture<HomePage>;
+  beforeEach(async(() => {
+    TestBed.configureTestingModule({
+      declarations: [ HomePage ],
+      imports: [
+        HttpClientModule
+      ],
+      schemas: [CUSTOM_ELEMENTS_SCHEMA],
+    })
+      .compileComponents();
+  }));
+  beforeEach(() => {
+    fixture = TestBed.createComponent(HomePage);
+    component = fixture.componentInstance;
+    fixture.detectChanges();
+  });
+  it('should create', () => {
+    expect(component).toBeTruthy();
+  });
+});`}</code></deckgo-highlight-code>
 
               <p>We need to do the same for the <code>data.service.spec.ts</code> file. When you’re done, the file should look like this:</p>
 
-              <deckgo-highlight-code><code slot="code">{CODE_15}</code></deckgo-highlight-code>
+              <deckgo-highlight-code><code slot="code">{`import { TestBed } from '@angular/core/testing';
+import { HttpClientModule } from '@angular/common/http';
+import { DataService } from './data.service';
+describe('DataService', () => {
+  beforeEach(() => TestBed.configureTestingModule({
+    imports: [
+      HttpClientModule
+    ],
+  }));
+  it('should be created', () => {
+    const service: DataService = TestBed.get(DataService);
+    expect(service).toBeTruthy();
+  });
+});`}</code></deckgo-highlight-code>
 
               <p>Now, if you run ng test, all tests should pass. Great! It’s a good time to commit this stable check-point. I’m doing so with the following commit message:</p>
 

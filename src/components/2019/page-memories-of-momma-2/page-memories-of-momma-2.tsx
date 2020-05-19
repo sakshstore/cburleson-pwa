@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,10 +12,6 @@ export class PageMemoriesOfMomma2 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageMemoriesOfMomma2.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

@@ -1,5 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-import { isLocal, SITENAME, SITEVERSION } from '../../../helpers/utils';
+import { SITENAME, SITEVERSION } from '../../../helpers/utils';
 
 @Component({
   tag: 'page-about',
@@ -12,9 +12,6 @@ export class PageAbout {
   title = 'About';
 
   async componentWillLoad() {
-    if (isLocal()) {
-      console.log('>> PageAbout.componentWillLoad');
-    }
     document.title = this.title + ' | ' + SITENAME;
   }
 

@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -11,10 +11,6 @@ export class PageZBrush7QuintessentialBrushes {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageZBrush7QuintessentialBrushes.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

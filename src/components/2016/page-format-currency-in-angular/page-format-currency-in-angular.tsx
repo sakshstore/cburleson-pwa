@@ -1,26 +1,19 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-format-currency-in-angular',
 })
 export class PageFormatCurrencyInAngular {
 
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
-        if (isLocal()) {
-            console.log('-- PageFormatCurrencyInAngular.componentDidLoad > header by id: %o', BlogData.getPostHeaderById(id));
-        }
-        // set internal property for use inside the page content H1
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -70,9 +63,6 @@ export class PageFormatCurrencyInAngular {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

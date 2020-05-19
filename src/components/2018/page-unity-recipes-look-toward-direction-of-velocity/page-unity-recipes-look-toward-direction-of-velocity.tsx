@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-unity-recipes-look-toward-direction-of-velocity'
@@ -10,14 +11,9 @@ export class PageUnityRecipesLookTowardDirectionOfVelocity {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageUnityRecipesLookTowardDirectionOfVelocity.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -46,9 +42,7 @@ export class PageUnityRecipesLookTowardDirectionOfVelocity {
 
                             <p>The following C# script for Unity can be used to make an object look toward the direction of its current velocity.</p>
 
-<deckgo-highlight-code language="csharp">
-<code slot="code">
-{`using System.Collections;
+<deckgo-highlight-code language="csharp"><code slot="code">{`using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -61,9 +55,8 @@ public class MyController : MonoBehaviour {
     void lookTowardDirectionOfVelocity() {
         transform.rotation = Quaternion.LookRotation(player.GetComponent().velocity);
     }
-}`}
-</code>
-</deckgo-highlight-code>
+}`}</code></deckgo-highlight-code>
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                         </ion-col>

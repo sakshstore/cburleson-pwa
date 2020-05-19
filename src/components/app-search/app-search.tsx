@@ -12,7 +12,6 @@ export class AppSearch {
         if (isLocal()) {
             console.log('>> AppSearch.componentWillLoad');
         }
-        
         document.title = this.title + ' | ' + SITENAME;
     }
 

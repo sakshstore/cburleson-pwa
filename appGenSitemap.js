@@ -11,7 +11,7 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     let siteData = JSON.parse(data);
 
     let siteMapText = '';
-    let count = 4;
+    let count = 5;
 
     siteMapText += 'https://codyburleson.com\r\n';
     siteMapText += 'https://codyburleson.com/blog\r\n';

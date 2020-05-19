@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-user-impersonation-programming-in-websphere-portal',
@@ -10,15 +11,10 @@ export class PageUserImpersonationProgramming {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageUserImpersonationProgramming.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -50,8 +46,7 @@ export class PageUserImpersonationProgramming {
 
                             <p>First, you’ll need to access the ImpersonationService in your theme or portlet code. The example below uses a JNDI lookup, which can be expensive, so be sure to put these kinds of things in an init method.</p>
 
-<deckgo-highlight-code language="java"><code slot="code">
-{`try {
+                            <deckgo-highlight-code language="java"><code slot="code">{`try {
   portletServiceHome = (com.ibm.portal.portlet.service.PortletServiceHome)ctx.lookup(com.ibm.portal.portlet.service.impersonation.ImpersonationService.JNDI_NAME);
   if(portletServiceHome != null) {
     impersonationHome = (com.ibm.portal.portlet.service.impersonation.ImpersonationService) portletServiceHome.getPortletService(com.ibm.portal.portlet.service.impersonation.ImpersonationService.class);
@@ -66,9 +61,9 @@ export class PageUserImpersonationProgramming {
 }
 `}</code></deckgo-highlight-code>
 
-<p>That’s how the PageBuilder theme does it. Here’s another example from the SPIs JavaDoc on how to perform the JNDI lookup to acquire the service object:</p>
+                            <p>That’s how the PageBuilder theme does it. Here’s another example from the SPIs JavaDoc on how to perform the JNDI lookup to acquire the service object:</p>
 
-<deckgo-highlight-code language="java"><code slot="code">{`com.ibm.portal.portlet.service.PortletServiceHome psh;
+                            <deckgo-highlight-code language="java"><code slot="code">{`com.ibm.portal.portlet.service.PortletServiceHome psh;
 javax.naming.Context ctx = new javax.naming.InitialContext();
  
 try {

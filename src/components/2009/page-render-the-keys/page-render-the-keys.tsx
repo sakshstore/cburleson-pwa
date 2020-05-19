@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-render-the-keys-and-values-from-a-map-in-freemarker',
@@ -10,14 +11,9 @@ export class PageRenderTheKeys {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageRenderTheKeys.componentWillLoad');
-        }
-
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -48,35 +44,27 @@ export class PageRenderTheKeys {
 
                             <p>The following code snippet shows how to get the values of a Map (e.g. HashMap) from within a Freemarker template.</p>
 
-                            <deckgo-highlight-code>
-                                <code slot="code">
-                                    {`<#assign m = myMap>
+                            <deckgo-highlight-code><code slot="code">{`<#assign m = myMap>
 <#assign values = m?values>
          
 <ul>
      <#list values as myObject>
      <li>$\{myObject.myPropery\}</li>
      </#list>
-</ul>`}
-                                </code>
-                            </deckgo-highlight-code>
+</ul>`}</code></deckgo-highlight-code>
 
                             <h2>Render the keys of a Map</h2>
 
                             <p>You can do a similar thing with the keys of a map as shown below.</p>
 
-                            <deckgo-highlight-code>
-                                <code slot="code">
-                                    {`<#assign m = myMap>
+                            <deckgo-highlight-code><code slot="code">{`<#assign m = myMap>
 <#assign keys = m?keys>
          
 <ul>
      <#list keys as key>
      <li>$\{key\}</li>
      </#list>
-</ul>`}
-                                </code>
-                            </deckgo-highlight-code>
+</ul>`}</code></deckgo-highlight-code>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

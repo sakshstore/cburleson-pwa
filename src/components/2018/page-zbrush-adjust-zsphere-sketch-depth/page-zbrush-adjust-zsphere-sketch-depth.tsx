@@ -1,7 +1,6 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-how-to-adjust-zsphere-sketch-depth-in-zbrush',
@@ -11,10 +10,6 @@ export class PageZBrushAdjustZsphereSketchDepth {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageZBrushAdjustZsphereSketchDepth.componentWillLoad');
-        }
-
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

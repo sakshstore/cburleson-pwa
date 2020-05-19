@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -10,10 +10,6 @@ export class PageZbrushChangeCanvasBackground {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageChangeCanvasBackgroundColorInZbrush.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 

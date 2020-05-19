@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,15 +12,9 @@ export class PageClassNotFound {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageClassNotFound.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);

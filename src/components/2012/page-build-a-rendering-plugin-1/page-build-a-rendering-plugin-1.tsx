@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-build-a-rendering-plugin-ibm-wcm-part-1',
@@ -10,15 +11,9 @@ export class PageBuildARenderingPlugin1 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageBuildARenderingPlugin1.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -173,9 +168,7 @@ export class PageBuildARenderingPlugin1 {
 
                             <p>Copy the following code, and replace the contents of the VelocityPlugin.java file. This will give us something simple that we can use to perform another test to ensure the plugin is visible in the WCM Authoring interface and usable in WCM content.</p>
 
-<deckgo-highlight-code language="java">
-<code slot="code">
-{`package com.base22.wcm.plugin.rendering;
+                            <deckgo-highlight-code language="java"><code slot="code">{`package com.base22.wcm.plugin.rendering;
  
  import java.io.IOException;
  import java.io.Writer;
@@ -288,8 +281,7 @@ export class PageBuildARenderingPlugin1 {
          return renderBody;
      }
  }`}
-</code>
-</deckgo-highlight-code>
+                            </code></deckgo-highlight-code>
 
                             <h2>Step Six – Create plugin.xml File</h2>
 
@@ -297,17 +289,13 @@ export class PageBuildARenderingPlugin1 {
 
                             <p><strong>WEB-INF/plugin.xml</strong></p>
 
-<deckgo-highlight-code language="xml">
-<code slot="code">
-{`<?xml version="1.0" encoding="UTF-8"?>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<?xml version="1.0" encoding="UTF-8"?>
 <?eclipse version="3.0"?>
 <plugin id="com.base22.wcm.VelocityPlugin" name="Velocity Rendering Plugin" version="1.0.0" provider-name="Base22">
    <extension point="com.ibm.workplace.wcm.api.RenderingPlugin" id="VelocityPlugin">
      <provider class="com.base22.wcm.plugin.rendering.VelocityPlugin"/>
    </extension>
-</plugin>`}
-</code>
-</deckgo-highlight-code>
+</plugin>`}</code></deckgo-highlight-code>
 
                             <p>Pete Raleigh, IBM WebSphere Portal Consultant at IBM, posted the following comment on LinkedIn. While he was referring to Custom Workflow Actions and not WCM plugins, both use the same plugin.xml mechanism, so I thought I’d repost his comment here. Though I have not tested it, it may also hold true in this case. Thanks, Pete!</p>
 
@@ -357,9 +345,7 @@ export class PageBuildARenderingPlugin1 {
 
                             <p>One quick and simple way to validate functionality is to add a main method to your class. This will allow you execute the class in order to perform some quick validation tests outside of the normal deployment to WebSphere. First, add the following two methods two the VelocityPlugin.java file.</p>
 
-<deckgo-highlight-code language="java">
-<code slot="code">
-{`public String getRenderedTemplate() {
+                            <deckgo-highlight-code language="java"><code slot="code">{`public String getRenderedTemplate() {
  
       /* first, we init the runtime engine. Defaults are fine. */
       Velocity.init();
@@ -380,19 +366,13 @@ export class PageBuildARenderingPlugin1 {
 public static void main(String[] args) {
     VelocityPlugin plugin = new VelocityPlugin();
     System.out.println( plugin.getRenderedTemplate() );
-}`}
-</code>
-</deckgo-highlight-code>
+}`}</code></deckgo-highlight-code>
 
                             <p>Note that with the addition of these methods, you’ll also need to add the following imports:</p>
 
-<deckgo-highlight-code language="java">
-<code slot="code">
-{`import java.io.StringWriter;
+                            <deckgo-highlight-code language="java"><code slot="code">{`import java.io.StringWriter;
 import org.apache.velocity.VelocityContext;
-import org.apache.velocity.app.Velocity;`}
-</code>
-</deckgo-highlight-code>
+import org.apache.velocity.app.Velocity;`}</code></deckgo-highlight-code>
 
                             <ul>
                                 <li>The main method initializes an instance of the VelocityPlugin class and then calls the getRenderedTemplate() method – printing the resulting string to the console.</li>

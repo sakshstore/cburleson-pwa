@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-fix-validation-errors-when-using-renderrequest-in-a-jsp',
@@ -10,10 +11,6 @@ export class PageFixAnnoying {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageFixAnnoying.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
@@ -44,7 +41,7 @@ export class PageFixAnnoying {
 
                             <p>When you use renderRequest, renderResponse, and portletConfig objects in a JSP, your Rational or Eclipse-based IDE will usually give a validation error – "renderRequest cannot be resolved," for example. Having red-x validation errors in your IDE is annoying as all-hell, so here’s a nice work-around for that…</p>
 
-                            <deckgo-highlight-code language="java" line-numbers><code slot="code">{`<%@ page import="javax.portlet.RenderRequest" %>
+                            <deckgo-highlight-code language="xml" line-numbers><code slot="code">{`<%@ page import="javax.portlet.RenderRequest" %>
 <%@ taglib uri="http://java.sun.com/portlet" prefix="portlet"%>
   
 <%!

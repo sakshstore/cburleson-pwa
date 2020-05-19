@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
   tag: 'page-rdf-syntax-examples',
@@ -10,14 +11,9 @@ export class PageRdfSyntaxExamples {
   header: any;
 
   async componentWillLoad() {
-    if (isLocal()) {
-      console.log('>> PageRdfSyntaxExamples.componentWillLoad');
-    }
-
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
 
-    // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
     if (this.header.teaser) {
       document.getElementById("meta-desc").setAttribute("content", this.header.teaser);

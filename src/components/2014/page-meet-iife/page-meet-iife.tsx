@@ -1,7 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-meet-iife-the-quintessential-javascript-closure',
@@ -11,14 +11,9 @@ export class PageMeetIife {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageMeetIife.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -56,13 +51,13 @@ export class PageMeetIife {
 
                             <ol>
                                 <li>Define a function using a function expression.<br />
-                                    <deckgo-highlight-code language="javascript"><code slot="code">{`function() {};`}</code></deckgo-highlight-code></li>
+                                <deckgo-highlight-code language="javascript"><code slot="code">{`function() {};`}</code></deckgo-highlight-code></li>
                                 <li>Add a set of parentheses at the end, which causes the function to be executed immediately.<br />
-                                    <deckgo-highlight-code language="javascript"><code slot="code">{`function() {}();`}</code></deckgo-highlight-code></li>
+                                <deckgo-highlight-code language="javascript"><code slot="code">{`function() {}();`}</code></deckgo-highlight-code></li>
                                 <li>Wrap the whole function in parentheses.<em>This is required because we’re not assigning the function to a variable.</em><br />
-                                    <deckgo-highlight-code language="javascript"><code slot="code">{`(function() {}());`}</code></deckgo-highlight-code></li>
+                                <deckgo-highlight-code language="javascript"><code slot="code">{`(function() {}());`}</code></deckgo-highlight-code></li>
                                 <li>Write the function body.<em>…in the usual spot between the curly braces.</em><br />
-                                    <deckgo-highlight-code language="javascript"><code slot="code">{`(function () {
+                                <deckgo-highlight-code language="javascript"><code slot="code">{`(function () {
     alert("Hello world, I'm an IIFE!");
 }());`}</code></deckgo-highlight-code></li>
                             </ol>
@@ -71,7 +66,6 @@ export class PageMeetIife {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

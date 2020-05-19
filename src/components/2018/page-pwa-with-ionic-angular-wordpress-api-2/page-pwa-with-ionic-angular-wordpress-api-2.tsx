@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
   tag: 'page-pwa-with-ionic-angular-wordpress-api-2',
@@ -10,10 +11,6 @@ export class PagePwaWithIonicAngularWordpressApi2 {
   header: any;
 
   async componentWillLoad() {
-    if (isLocal()) {
-      console.log('>> PagePwaWithIonicAngularWordpressApi2.componentWillLoad');
-    }
-
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
 

@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-a-javascript-implementation-of-java-util-map',
@@ -10,14 +11,9 @@ export class PageAJavascriptImplementationOfJavaUtilMap {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageAJavascriptImplementationOfJavaUtilMap.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -344,13 +340,8 @@ myMap.forEach(myCallback);`}</code></deckgo-highlight-code>
 
                             <p><a href="https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map" rel="nofollow">https://gist.github.com/codyburleson/089157ed8eca114da8c4#file-javascript-map</a></p>
 
-
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

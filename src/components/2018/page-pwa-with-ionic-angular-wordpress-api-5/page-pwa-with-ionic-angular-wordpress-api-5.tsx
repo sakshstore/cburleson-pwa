@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -10,14 +10,9 @@ export class PagePwaWithIonicAngularWordpressApi5 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-          console.log('>> PagePwaWithIonicAngularWordpressApi5.componentWillLoad');
-        }
-    
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
     
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
           document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -540,7 +535,6 @@ export class DataService {
                                 </ion-card-content>
                             </ion-card>
 
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

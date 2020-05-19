@@ -1,6 +1,6 @@
 import { Component, h, Element } from '@stencil/core';
 import { modalController } from '@ionic/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 
 import * as d3 from "d3";
 import d3Tip from "d3-tip"
@@ -64,10 +64,6 @@ export class PageLifetime {
     lifeExpectFemale = 81;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageLifetime.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
@@ -82,9 +78,6 @@ export class PageLifetime {
     //}
 
     componentDidRender() {
-        if (isLocal()) {
-            console.log('>> PageLifetime.componentDidRender');
-        }
         //const graphContainerElement = this.el.querySelector('#graph');
         //if(isLocal()){
           // console.log('- PageLifetime.componentDidRender #graph.clientWidth: ' + graphContainerElement.clientWidth);
@@ -94,10 +87,6 @@ export class PageLifetime {
     }
 
     initCalendarData(birthday) {
-
-        if (isLocal) {
-            console.log('>> PageLifetime.initCalendarData(%o)', birthday);
-        }
 
         let weekNum = 1;
         let weekDate = birthday;
@@ -152,10 +141,6 @@ export class PageLifetime {
     }
 
     renderGraph() {
-
-        if (isLocal()) {
-            console.log('>> PageLifetime.renderGraph()');
-        }
 
         // TO DO: get actual birthday from form...
         let birthday = moment.utc(this.formProps.birthday); // Get from form option
@@ -285,9 +270,6 @@ export class PageLifetime {
     }
 
     async presentModal() {
-        if (isLocal()) {
-            console.log('>> PageLifetime.presentModal');
-        }
 
         const modal = await this.modalCtrl.create({
             component: 'page-lifetime-modal',

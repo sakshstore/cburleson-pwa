@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-install-oracle-java-8-on-ubuntu',
@@ -10,14 +11,9 @@ export class PageInstallOracleJava8OnUbuntu {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageInstallOracleJava8OnUbuntu.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -87,12 +83,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></deckg
                             <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
 sudo apt-get remove oracle-java8-installer`}</code></deckgo-highlight-code>
 
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

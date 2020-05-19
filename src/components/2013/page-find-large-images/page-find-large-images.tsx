@@ -1,11 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
-
-
-
-
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-how-to-find-large-images-and-files-in-ibm-wcm',
@@ -15,15 +11,9 @@ export class PageFindLargeImages {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageFindLargeImages.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);

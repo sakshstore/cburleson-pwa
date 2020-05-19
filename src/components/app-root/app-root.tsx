@@ -47,16 +47,8 @@ export class AppRoot {
   }
 
   async componentWillLoad() {
-
-    if (isLocal()) {
-      console.log('>> AppRoot.componentWillLoad');
-    }
-
-    //this.pageData = await PageData.load();
-
     // This helps handle undefined routes ("page not found" cases)
     this.data = await BlogData.load();
-
   }
 
   renderRouter() {

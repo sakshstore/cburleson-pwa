@@ -1,5 +1,5 @@
 import { Component, Prop, h } from '@stencil/core';
-import { isLocal } from '../../helpers/utils';
+// import { isLocal } from '../../helpers/utils';
 
 @Component({
     tag: 'app-photo-grid'
@@ -36,12 +36,6 @@ export class AppPhotoGrid {
      * located). In an AWS S3 bucket folder, for example: image-path="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-jack-depope/"
      */
     @Prop() imagePath: string;
-
-    componentWillLoad() {
-        if(isLocal) {
-            console.log('>> AppPhotoGrid.componentWillLoad()');
-        }
-    }
 
     render() {
 

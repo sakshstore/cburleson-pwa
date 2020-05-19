@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-liferay-7-ubuntu-developer-vm-setup-log',
@@ -10,14 +11,9 @@ export class PageLiferay7Ubuntu {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageLiferay7Ubuntu.componentWillLoad');
-        }
-
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -72,7 +68,6 @@ export class PageLiferay7Ubuntu {
                                 <li><span class="badge badge-secondary">SNAPSHOT: CLEAN INSTALL W VMWARE TOOLS</span></li>
                             </ul>
 
-
                             <h1>Update Ubuntu</h1>
 
                             <deckgo-highlight-code language="bash"><code slot="code">{`developer@ubuntu:~$ sudo su -
@@ -112,7 +107,6 @@ apt-get install oracle-java8-installer`}</code></deckgo-highlight-code>
 java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
 Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></deckgo-highlight-code>
-
 
                             <h1>Fix for network service discovery disabled</h1>
 
@@ -247,8 +241,6 @@ cd Downloads
 unzip liferay-ce.zip
 sudo mv liferay-ce-portal-7.0-ga4/ /opt/liferay-ce`}</code></deckgo-highlight-code>
 
-
-
                             <p>Notice that during the move operation, the directory was renamed to simpley &#8220;liferay-ce&#8221;.</p>
 
                             <p>Next, we&#8217;ll do a similar procedure for Liferay DXP.</p>
@@ -256,7 +248,6 @@ sudo mv liferay-ce-portal-7.0-ga4/ /opt/liferay-ce`}</code></deckgo-highlight-co
                             <h1>Unzip and Move Liferay DXP</h1>
 
                             <p>In a terminal&#8230;</p>
-
 
                             <deckgo-highlight-code language="bash"><code slot="code">{`cd ~
 cd Downloads
@@ -290,7 +281,6 @@ rm -rf liferay-dxp.zip`}</code></deckgo-highlight-code>
 CREATE DATABASE liferaydxp CHARACTER SET utf8 COLLATE utf8_bin;`}</code></deckgo-highlight-code>
 
                             <p>Create the Liferay database user by running this command. Replace &#8216;liferayuser&#8217; and &#8216;liferaypass&#8217; with a username and password of your choice. If Liferay is not running on the same server as your MySQL database server, replace &#8216;localhost&#8217; with the hostname or IP address of the Liferay server.</p>
-
 
                             <deckgo-highlight-code language="bash"><code slot="code">{`GRANT ALL PRIVILEGES ON liferayce.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';
 GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';`}</code></deckgo-highlight-code>
@@ -365,8 +355,6 @@ jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
                             <p><span class="badge badge-secondary">SNAPSHOT: PORTAL-EXT.PROPERTIES CREATED</span></p>
 
                             <p>I corrected the above files AFTER creating this snapshot, so the values shown above are what they SHOULD be for this snapshot. If you go back to this snapshot for some reason or use any between this one up to and including BUMP TOMCAT, you need to revise the files above as shown above.</p>
-
-
 
                             <h1>Remove Libre Office from the VM</h1>
 
@@ -471,7 +459,6 @@ sudo apt remove account-plugin-facebook account-plugin-flickr`}</code></deckgo-h
 
                             <p>Note (OPTIONAL)</p>
 
-
                             <p>We will use the existing liferay-ce bundle outside of the workspace (/opt/liferay-ce). But if you wanted to use a bundle within the workspace, after the project is created, in the Gradle Tasks view execute Bundle &gt; initBundle</p>
 
                             <p>When that&#8217;s done running, refresh the workspace in the IDE and you&#8217;ll see the bundle&#8230;</p>
@@ -514,7 +501,6 @@ jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
                             <p>Again, however, we need to keep the defaults in the web browser configuration and accept the License, but Add Create Sample Data!</p>
 
                             <p>And then, again, restart the portal (this time, from within the IDE).</p>
-
 
                             <p>After creating the Liferay Project Workspace, you should see:</p>
 
@@ -596,7 +582,6 @@ jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

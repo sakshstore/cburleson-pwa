@@ -1,5 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-import { isLocal } from '../../helpers/utils';
+// import { isLocal } from '../../helpers/utils';
 
 @Component({
     tag: 'app-404-page-not-found',
@@ -13,14 +13,9 @@ export class App404PageNotFound {
     pathname: string;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> App404PageNotFound.componentWillLoad');
-        }
-
         this.pathname = window.location.pathname;
         document.title = this.title + ' : ' + this.pathname;
     }
-
 
     toggleSearch() {
         if (this.el.querySelector("#searchbar").classList.contains(`hidden`)) {

@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-xmlaccess-samples',
@@ -10,14 +11,9 @@ export class PageXmlaccessSamples {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageXmlaccessSamples.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -50,7 +46,6 @@ export class PageXmlaccessSamples {
 
                             <p>Found in&nbsp;<code>&lt;PortalServer-root&gt;/doc/xml-samples.</code><br />
                                 (<em>list made from samples found in IBM WebSphere Portal version 8</em>)</p>
-
 
                             <ion-grid>
                                 <ion-row>
@@ -127,8 +122,6 @@ export class PageXmlaccessSamples {
                             <deckgo-highlight-code language="bash"><code slot="code">{`/usr/IBM/WebSphere/PortalServer/bin/xmlaccess.sh -user wpsadmin -password <password> -url http://<host>:<port>/wps/config -in /usr/IBM/WebSphere/PortalServer/doc/xml-samples/ExportThemesAndSkins.xml -out /home/<user-home>/ExportThemesAndSkins_result.xml`}</code></deckgo-highlight-code>
 
                             <p><em>In the command above, you should modify the paths if they differ on your server and you must also replace &lt;password&gt;, &lt;host&gt;, &lt;port&gt;, and &lt;user-home&gt; with values appropriate to your own environment.</em></p>
-
-
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">

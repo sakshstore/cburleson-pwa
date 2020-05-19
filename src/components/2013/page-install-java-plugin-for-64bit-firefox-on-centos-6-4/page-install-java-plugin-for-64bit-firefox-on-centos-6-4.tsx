@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-install-java-plugin-for-64bit-firefox-on-centos-6-4',
@@ -10,15 +11,9 @@ export class PageInstallJavaPluginFor64bitFirefoxOnCentos64 {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageInstallJavaPluginFor64bitFirefoxOnCentos64.componentWillLoad');
-        }
-        
-        
-                let id = extractIdFromDocumentPath();
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -103,9 +98,6 @@ cd /usr/java`}</code></deckgo-highlight-code>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

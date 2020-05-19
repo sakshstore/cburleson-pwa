@@ -1,8 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-use-spring-for-stardog-in-a-spring-boot-application',
@@ -12,14 +11,9 @@ export class PageUseSpringForStardog {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageUseSpringForStardog.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
- 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -420,10 +414,8 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></deckgo-highlight-code>
 
                             <p>There is also some useful information in the <a href="https://github.com/stardog-union/stardog-spring/blob/master/stardog-spring/docs/QUICKSTART.txt" rel="nofollow">QUICKSTART.txt</a> file on GitHub that you might find useful, so be sure to check it out.</p>
 
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

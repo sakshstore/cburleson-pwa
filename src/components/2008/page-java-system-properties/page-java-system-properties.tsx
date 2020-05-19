@@ -1,6 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
+import '@deckdeckgo/highlight-code';
 
 @Component({
     tag: 'page-java-system-properties',
@@ -10,10 +11,6 @@ export class PageJavaSystemProperties {
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('>> PageJavaSystemProperties.componentWillLoad');
-        }
-        
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
@@ -44,9 +41,7 @@ export class PageJavaSystemProperties {
 
                             <p>Following are a list of the standard system properties which can be accessed in Java code by using the System.getProperty methods. For example&#8230;</p>
 
-<deckgo-highlight-code language="java">
-<code slot="code">{`System.getProperty("path.separator");`}</code>
-</deckgo-highlight-code>
+                            <deckgo-highlight-code language="java"><code slot="code">{`System.getProperty("path.separator");`}</code></deckgo-highlight-code>
 
                             <table class="table table-bordered table-striped" role="grid">
                                 <thead>

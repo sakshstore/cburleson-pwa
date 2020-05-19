@@ -1,7 +1,3 @@
-title capitalization
-- the title, main sections and subsections should follow Title Capitalization (rules) (online tool - option 1)
-
-
 
 sections and subsections
 - the structure of the article should be organized in Sections and Subsections
