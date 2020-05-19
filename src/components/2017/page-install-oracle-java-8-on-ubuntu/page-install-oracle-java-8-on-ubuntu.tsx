@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-install-oracle-java-8-on-ubuntu',
 })
 export class PageInstallOracleJava8OnUbuntu {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageInstallOracleJava8OnUbuntu.componentWillLoad');
+            console.log('>> PageInstallOracleJava8OnUbuntu.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -66,7 +53,7 @@ export class PageInstallOracleJava8OnUbuntu {
 
                             <p>You probably want to confirm first that a version of Java is not already installed. If so, you can do that with the&nbsp;java -version command as shown below…</p>
 
-                            <pre><code class="language-bash">{`developer@ubuntu:~$ java -version
+                            <deckgo-highlight-code language="bash"><code slot="code">{`developer@ubuntu:~$ java -version
 The program 'java' can be found in the following packages:
  * default-jre
  * gcj-5-jre-headless
@@ -75,36 +62,36 @@ The program 'java' can be found in the following packages:
  * gcj-4.9-jre-headless
  * openjdk-9-jre-headless
 Try: sudo apt install <selected package>
-developer@ubuntu:~$`}</code></pre>
+developer@ubuntu:~$`}</code></deckgo-highlight-code>
 
                             <p>Change to root…</p>
 
-                            <pre><code class="language-bash">{`sudo su -
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
 (enter password)
 apt-get install software-properties-common
 add-apt-repository ppa:webupd8team/java
 apt-get update
-apt-get install oracle-java8-installer`}</code></pre>
+apt-get install oracle-java8-installer`}</code></deckgo-highlight-code>
 
                             <p>Check if Java is successfully installed</p>
 
-                            <pre><code class="language-bash">{`java -version
+                            <deckgo-highlight-code language="bash"><code slot="code">{`java -version
 java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
-Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></pre>
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></deckgo-highlight-code>
 
                             <h2>Procedure to uninstall</h2>
 
                             <p>If, for some reason, you want to undo this operation and uninstall Oracle Java 8 from Ubuntu, you can then execute the following:</p>
 
-                            <pre><code class="language-bash">{`sudo su -
-sudo apt-get remove oracle-java8-installer`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
+sudo apt-get remove oracle-java8-installer`}</code></deckgo-highlight-code>
 
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

@@ -1,11 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -13,29 +7,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageSetupCarbon {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageSetupCarbon.componentWillLoad');
+            console.log('>> PageSetupCarbon.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -71,23 +58,23 @@ export class PageSetupCarbon {
 
                             <p>Navigate into the directory and create a resources directory inside of it&#8230;</p>
 
-                            <pre><code class="language-bash">{`cd stardog-docker-jontutcher/
-mkdir resources`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`cd stardog-docker-jontutcher/
+mkdir resources`}</code></deckgo-highlight-code>
 
                             <p>Put the Stardog license key file into the resources directory. The file must be named stardog-license-key.bin. You can obtain a license key for the 30 day enterprise trial or community edition at <a href="https://www.stardog.com/">stardog.com</a>. The license key will be picked up from the resources directory and built into the image when we build from the dockerfile.</p>
 
                             <p>Back out of the resources directory and run the docker build command.</p>
 
-                            <pre><code class="language-bash">{`cd ..
-docker build --tag stardog:latest .`}</code></pre>
+<deckgo-highlight-code language="bash"><code slot="code">{`cd ..
+docker build --tag stardog:latest .`}</code></deckgo-highlight-code>
 
                             <p>Now use the following command to run the container.</p>
 
-                            <pre><code class="language-bash">{`docker run \\
+<deckgo-highlight-code language="bash"><code slot="code">{`docker run \\
     -d -p 5820:5820 \\
     --name stardog-instance \\
     -v /Users/cburleson/data/stardog:/stardog \\
-    stardog:latest`}</code></pre>
+    stardog:latest`}</code></deckgo-highlight-code>
 
                             <p>Note that the -v parameter should point to your Stardog data directory on your host machine. If you do not have an existing Stardog data directory, you should create an empty one and refer to that.</p>
 
@@ -121,14 +108,14 @@ docker build --tag stardog:latest .`}</code></pre>
 
                             <p>The prerequisites are set. So, now we can spin up a Carbon server with the following Docker command. Be sure to replace the -v parameter with the path you created for your persistent Carbon directory. Leave everything after the colon in tact (don&#8217;t touch the part, <code>:/opt/carbonldp/shared</code>). At the time of this writing, the latest version of Carbon is 1.0.x-alpha. If there is a later version by the time you read this, you can use that. Also be sure to change the name of the carbonldp.repository.id parameter to the name of the database you created for Carbon in the Stardog server. You can name the container whatever you want. It&#8217;s typical to call it &#8220;carbonldp&#8221;, but in my case, I&#8217;m running it with the container named &#8220;carbonldp-industrial&#8221; This allows me to have multiple carbon containers for different purposes. As per my own settings, the full command is as follows:</p>
 
-                            <pre><code class="language-bash">{`docker run -d --name carbonldp-industrial -p 8083:8083 \\
+                            <deckgo-highlight-code language="bash"><code slot="code">{`docker run -d --name carbonldp-industrial -p 8083:8083 \\
     -v /Users/cburleson/data/carbonldp-industrial:/opt/carbonldp/shared \\
     --link stardog-instance:stardog-instance carbonldp/carbonldp-platform:1.0.x-alpha \\
     --carbonldp.repository.type="stardog" \\
     --carbonldp.repository.url="http://stardog-instance:5820/" \\
     --carbonldp.repository.username="admin" \\
     --carbonldp.repository.password="admin" \\
-    --carbonldp.repository.id="carbonldp-industrial"`}</code></pre>
+    --carbonldp.repository.id="carbonldp-industrial"`}</code></deckgo-highlight-code>
 
                             <p>In order for the two containers to communicate with one another, they are linked with Docker <code>link</code> parameter.  The value of that parameter is the container (&lt;name or id&gt;:alias or &lt;name or id&gt;). In my case, <code>stardog-instance:stardog-instance</code>, where <code>stardog-instance</code> is the name of the Stardog container and also referred to in the <code>carbonldp.repository.url</code> value.</p>
 
@@ -146,7 +133,7 @@ docker build --tag stardog:latest .`}</code></pre>
 
                             <p>If Carbon started up successfully, its logs should resemble the following:</p>
 
-                            <pre><code class="language-bash">{`├┬---------------------------------------------------------------------------------------------------┤
+                            <deckgo-highlight-code language="bash"><code slot="code">{`├┬---------------------------------------------------------------------------------------------------┤
  ¦ Platform: v1.0.0-alpha.13 (Build: 2018-04-12T16:39:27+0000)
  ¦
  ¦ https://carbonldp.com
@@ -163,17 +150,17 @@ DEBUG [   c.c.s.a.t.JWTokenAuthenticationFilter] -- Initializing filter 'jwToken
 DEBUG [   c.c.s.a.t.JWTokenAuthenticationFilter] -- Filter 'jwTokenAuthenticationFilter' configured successfully
 DEBUG [ c.c.s.a.a.AnonymousAuthenticationFilter] -- Initializing filter 'anonymousAuthenticationFilter'
 DEBUG [ c.c.s.a.a.AnonymousAuthenticationFilter] -- Filter 'anonymousAuthenticationFilter' configured successfully
-INFO  [                         c.c.Application] -- Started Application in 11.816 seconds (JVM running for 13.061)`}</code></pre>
+INFO  [                         c.c.Application] -- Started Application in 11.816 seconds (JVM running for 13.061)`}</code></deckgo-highlight-code>
 
                             <p><strong>Verify Carbon data in the Stardog server</strong></p>
 
                             <p>For an additional validation, you can verify that the database in Stardog has some preliminary Carbon-specific data in it. In the Stardog web console at <code>http://localhost:5820/</code>, navigate to the database you created for Carbon, click on &gt;_ Query and run the following SPARQL query for Types:</p>
 
-                            <pre><code class="language-sparql">{`select distinct ?type ?label 
+<deckgo-highlight-code><code slot="code">{`select distinct ?type ?label 
 where { 
   ?s a ?type . 
   OPTIONAL { ?type rdfs:label ?label } 
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>You should see Carbon-specific types in the results as shown below&#8230;</p>
 
@@ -187,7 +174,7 @@ where {
 
                             <p>The browser should return an RDF response similar to the following (the platform meta, which includes the build date and version):</p>
 
-                            <pre><code class="language-sparql">{`<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
   <rdf:Description rdf:about="http://localhost:8083/.system/platform/">
     <rdf:type rdf:resource="http://www.w3.org/ns/ldp#Container"/>
     <rdf:type rdf:resource="https://carbonldp.com/ns/v1/platform#RequiredSystemDocument"/>
@@ -209,7 +196,7 @@ where {
     <rdf:Description rdf:about="http://localhost:8083/.system/platform/">
     <instance xmlns="https://carbonldp.com/ns/v1/platform#" rdf:nodeID="node1ciktjenqx53"/>
   </rdf:Description>
-</rdf:RDF>`}</code></pre>
+</rdf:RDF>`}</code></deckgo-highlight-code>
 
                             <p>You&#8217;re good to go! You may, however, wish to use the Carbon LDP Workbench as well.</p>
 
@@ -217,10 +204,10 @@ where {
 
                             <p>The Carbon LDP Workbench provides a visual interface to your Carbon instance data. You can spin up the workbench with the following command:</p>
 
-                            <pre><code class="language-bash">{`docker run -d --name carbonldp-workbench -p 8000:80 \\
+                            <deckgo-highlight-code language="bash"><code slot="code">{`docker run -d --name carbonldp-workbench -p 8000:80 \\
     -e "CARBON_HOST=localhost:8083" \\
     -e "CARBON_PROTOCOL=http" \\
-    carbonldp/carbonldp-workbench:1.0.x-alpha`}</code></pre>
+    carbonldp/carbonldp-workbench:1.0.x-alpha`}</code></deckgo-highlight-code>
 
                             <p>You can then access the Workbench at the following URL:</p>
 
@@ -262,7 +249,6 @@ where {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

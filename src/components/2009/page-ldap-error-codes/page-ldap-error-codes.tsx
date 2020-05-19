@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -9,16 +9,14 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageLdapErrorCodes {
 
-    title = 'Blog';
-
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageLdapErrorCodes.componentWillLoad');
+            console.log('>> PageLdapErrorCodes.componentWillLoad');
         }
 
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
         document.title = this.header.title + ' | ' + SITENAME;
@@ -43,6 +41,7 @@ export class PageLdapErrorCodes {
                 <ion-grid>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
@@ -310,7 +309,6 @@ export class PageLdapErrorCodes {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

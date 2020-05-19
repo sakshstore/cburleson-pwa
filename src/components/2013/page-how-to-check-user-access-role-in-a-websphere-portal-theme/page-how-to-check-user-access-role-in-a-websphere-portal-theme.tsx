@@ -1,7 +1,7 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
-import Prism from "prismjs"
+
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,29 +12,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageHowToCheckUserAccessRoleInAWebspherePortalTheme.componentWillLoad');
+            console.log('>> PageHowToCheckUserAccessRoleInAWebspherePortalTheme.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -62,7 +55,7 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
 
                             <p>In the default Portal 8.0 theme, for example, you can find the following code stanza, which is used to determine whether or not a Help link should be shown in the UI. The snippet is in /themes/html/dynamicSpots/commonActions.jsp and it looks like this:</p>
 
-                            <pre><code class="language-xml">{`<%-- Help icon - only displayed for users with admin or editor role --%>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<%-- Help icon - only displayed for users with admin or editor role --%>
 <portal-logic:if loggedIn="yes" line="1">
     <c:set var="admin" value="<%=com.ibm.portal.ac.data.RoleType.ADMIN%>"/>
     <c:if test="$\{wp.ac[wp.selectionModel.selected].hasPermission[admin]\}">
@@ -72,11 +65,11 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
         </a>
     </li>
     </c:if>
-</portal-logic:if`}</code></pre>
+</portal-logic:if`}</code></deckgo-highlight-code>
 
                             <p>First, a JSTL variable, admin, is being set with the value of a RoleType constant representing the Administrator role. The AccessControlRuntimeModelBean is exposed as an EL bean called wp.ac, which has a hasPermission method that takes the RoleType as parameter. That’s the part, written in expression language, that looks like this:</p>
 
-                            <pre><code class="language-xml">{`$\{wp.ac[wp.selectionModel.selected].hasPermission[admin]\}`}</code></pre>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`$\{wp.ac[wp.selectionModel.selected].hasPermission[admin]\}`}</code></deckgo-highlight-code>
 
                             <p>So, you can use the same general stanza to check whether or not the current user is in a given role on a given resource.</p>
 
@@ -84,19 +77,19 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
 
                             <p>Here’s a general template you can use to copy/paste from. When replacing and , remember to eliminate the less-than and greater-than symbols.</p>
 
-                            <pre><code class="language-xml">{`<portal-logic:if loggedIn="yes">
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<portal-logic:if loggedIn="yes">
     <c:if test="$\{wp.ac[wp.selectionModel.selected].hasPermission[<role_type_var>]\}">
         ... render something ...
     </li>
-</portal-logic:if></pre>`}</code></pre>
+</portal-logic:if>`}</code></deckgo-highlight-code>
 
                             <p>And here’s a useful variation, which checks against a named portal page, rather than the currently selected page.</p>
 
-                            <pre><code class="language-xml">{`<portal-logic:if loggedIn="yes">
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<portal-logic:if loggedIn="yes">
     <c:if test="$\{wp.ac[wp.navigationModel['uniquename']].hasPermission[<role_type_var>]\}">
         ... render something ...
     </li>
-</portal-logic:if></pre>`}</code></pre>
+</portal-logic:if>`}</code></deckgo-highlight-code>
 
                             <p><strong>Role Types:</strong></p>
 
@@ -126,9 +119,6 @@ export class PageHowToCheckUserAccessRoleInAWebspherePortalTheme {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

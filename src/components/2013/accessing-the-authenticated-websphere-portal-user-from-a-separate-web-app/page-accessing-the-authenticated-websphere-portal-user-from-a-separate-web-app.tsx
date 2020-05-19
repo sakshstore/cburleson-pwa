@@ -1,8 +1,8 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
+
+
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,29 +12,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp {
 
-        title = 'Blog';
-
-        // header for this individual item by id...
         header: any;
 
         async componentWillLoad() {
                 if (isLocal()) {
-                        console.log('> PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp.componentWillLoad');
+                        console.log('>> PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp.componentWillLoad');
                 }
-                // this.data = await BlogData.load();
-                // Get the id from the URL path (slug)
-                let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+                
+                
+                        let id = extractIdFromDocumentPath();
                 this.header = BlogData.getPostHeaderById(id);
 
-                // set document title for browser / tab / bookmark
+         
                 document.title = this.header.title + ' | ' + SITENAME;
                 if (this.header.teaser) {
                         document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
                 }
-        }
-
-        componentDidLoad() {
-                setTimeout(() => Prism.highlightAll(), 0)
         }
 
         render() {
@@ -60,16 +53,16 @@ export class PageAccessingTheAuthenticatedWebspherePortalUserFromASeparateWebApp
 
                                                         <p>If the user was logged in to the portal, I expected to get a name for the Principal from the HTTPServletRequest object using the following code:</p>
 
-                                                        <pre><code class="language-java">{`Principal principal = (Principal) request.getUserPrincipal();
+                                                        <deckgo-highlight-code language="java"><code slot="code">{`Principal principal = (Principal) request.getUserPrincipal();
 if(principal != null) {
      System.out.println("username: " + principal.getName());
 } else {
      System.out.prinln("Principal is null!");
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                                                         <p>But, this did not work. The Principal was null. And of course, I couldn’t get what I needed using the Portal User Management Architecture (PUMA) either using code similar to the following…</p>
 
-                                                        <pre><code class="language-java">{`String userCnFromPuma = null;
+                                                        <deckgo-highlight-code language="java"><code slot="code">{`String userCnFromPuma = null;
 PumaHome home = null;
 try {
         // ------------------------------------------
@@ -106,7 +99,7 @@ try {
 } catch (Exception e) {
         e.printStackTrace();
         System.out.println("Exception occurred while looking up PuamHome");
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 
                                                         <p>Following is a solution&#8230;</p>
@@ -123,7 +116,7 @@ try {
 
                                                         <p>After making these changes, the source of your application.xml file should look something like this:</p>
 
-                                                        <pre><code class="language-xml">{`<?xml version="1.0" encoding="UTF-8"?>
+                                                        <deckgo-highlight-code language="xml"><code slot="code">{`<?xml version="1.0" encoding="UTF-8"?>
 <application id="Application_ID" version="1.4" xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/application_1_4.xsd">
         <display-name>mywebappEAR</display-name>
         <module id="WebModule_1377797584294">
@@ -147,14 +140,14 @@ try {
                 No users in the enterprise.</description>
                 <role-name>No Role</role-name>
         </security-role>
-</application>`}</code></pre>
+</application>`}</code></deckgo-highlight-code>
 
 
                                                         <h2 >Add auth constraints to the deployment descriptor for the WAR</h2>
 
                                                         <p>Finally, added auth constraints to the deployment descriptor for the WAR. That is to say – modify the WEB-INF/web.xml file in the dynamic web app project by adding the following:</p>
 
-                                                        <pre><code class="language-xml">{`<security-constraint id="SecurityConstraint_1">
+                                                        <deckgo-highlight-code language="xml"><code slot="code">{`<security-constraint id="SecurityConstraint_1">
         <web-resource-collection id="WebResourceCollection_1">
                 <web-resource-name/>
                 <url-pattern>/*</url-pattern>
@@ -184,7 +177,7 @@ try {
 <security-role id="SecurityRole_3">
         <description>No role</description>
         <role-name>No Role</role-name>
-</security-role>`}</code></pre>
+</security-role>`}</code></deckgo-highlight-code>
 
                                                         <p>The HTTP methods you wish to protect with the transport-guarantee are up to you. In my case, I used the very same settings as what is defined for the “/myportal” path in WebSphere Portal.</p>
 
@@ -203,7 +196,7 @@ try {
 
                                                 </ion-col>
                                                 <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                                                        <gls-adsense-ad />>
+                                                        >
                         </ion-col>
                                         </ion-row>
                                 </ion-grid>

@@ -1,41 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
 	tag: 'page-sparql-examples-ask',
 })
 export class PageSparqlExamplesAsk {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesAsk.componentWillLoad');
+			console.log('>> PageSparqlExamplesAsk.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
-		// set document title for browser / tab / bookmark
 		document.title = this.header.title + ' | ' + SITENAME;
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -61,13 +46,13 @@ export class PageSparqlExamplesAsk {
 
 							<p>You can also try this one against DBPedia&#8230;</p>
 
-							<pre><code class="language-sparql">{`PREFIX prop: <http://dbpedia.org/property/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX prop: <http://dbpedia.org/property/>
 ASK
 {
 <http://dbpedia.org/resource/Amazon_River> prop:length ?amazon .
 <http://dbpedia.org/resource/Nile> prop:length ?nile .
 FILTER(?amazon > ?nile) .
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 							<p>The answer is: false.</p>
 
@@ -75,22 +60,22 @@ FILTER(?amazon > ?nile) .
 
 							<p>Does a triple with the given subject URI exist?</p>
 
-							<pre><code class="language-sparql">{`ASK { <http://example.org/carbon/ldp/main/people> ?p ?o> }`}</code></pre>
+							<deckgo-highlight-code><code slot="code">{`ASK { <http://example.org/carbon/ldp/main/people> ?p ?o> }`}</code></deckgo-highlight-code>
 
 							<p>Returns true or false.</p>
 
 							<p>Does Fred have grandchildren?</p>
 
-							<pre><code class="language-sparql">{`PREFIX: <http://bedrock/>  
+							<deckgo-highlight-code><code slot="code">{`PREFIX: <http://bedrock/>  
 ASK  
-WHERE {  :fred :hasChild :?child . :?child :hasChild :?grandchild. }`}</code></pre>
+WHERE {  :fred :hasChild :?child . :?child :hasChild :?grandchild. }`}</code></deckgo-highlight-code>
 
 							<p>Where :fred has any child, see if that child has any child identified by the placeholder, :?child, then use the value of that placeholder to ask whether or not that child itself also has a child, which will be the :?grandchild.</p>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

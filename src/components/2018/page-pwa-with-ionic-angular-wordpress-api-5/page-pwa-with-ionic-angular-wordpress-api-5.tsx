@@ -1,47 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-typescript.min';
-import 'prismjs/components/prism-json.min';
-import 'prismjs/components/prism-apacheconf.min';
-// import 'prismjs/components/prism-php.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-pwa-with-ionic-angular-wordpress-api-5',
 })
 export class PagePwaWithIonicAngularWordpressApi5 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
-
-    id: string;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PagePwaWithIonicAngularWordpressApi5.componentWillLoad');
+          console.log('>> PagePwaWithIonicAngularWordpressApi5.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        this.id = document.location.pathname.substr(1);
-        this.header = BlogData.getPostHeaderById(this.id);
-
-        // set document title for browser / tab / bookmark
+    
+        let id = extractIdFromDocumentPath();
+        this.header = BlogData.getPostHeaderById(id);
+    
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
-            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+          document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
-    }
+      }
 
     render() {
         return [
@@ -105,43 +86,43 @@ export class PagePwaWithIonicAngularWordpressApi5 {
 
                             <p>Our menu of pages is generated from the public appPages array in AppComponent. Modify <code>src/app/app.component.ts</code> so that the <code>appPages</code> array now looks like this…</p>
 
-                            <pre><code class="language-ts">{`public appPages = [
-{
-title: 'Home',
-url: '/home',
-icon: 'home'
-},
-{
-title: 'List',
-url: '/list',
-icon: 'list'
-},
-{
-title: 'Login',
-url: '/login',
-icon: 'unlock'
-}
-]`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`public appPages = [
+  {
+    title: 'Home',
+    url: '/home',
+    icon: 'home'
+  },
+  {
+    title: 'List',
+    url: '/list',
+    icon: 'list'
+  },
+  {
+    title: 'Login',
+    url: '/login',
+    icon: 'unlock'
+  }
+]`}</code></deckgo-highlight-code>
 
                             <p>Now, if you open <code>src/app/app-routing.module.ts</code>, you will find that the Ionic CLI already placed a route entry. We only need to change that entry so that the route uses all lower case for the login route and we want to move it above the <code>:slug</code> route as follows…</p>
 
-                            <pre><code class="language-ts">{`const routes: Routes = [
-{
-path: '',
-redirectTo: 'home',
-pathMatch: 'full'
-},
-{
-path: 'home',
-loadChildren: './home/home.module#HomePageModule'
-},
-{
-path: 'list',
-loadChildren: './list/list.module#ListPageModule'
-},
-{path: 'login', loadChildren: './login/login.module#LoginPageModule'},
-{path: ':slug', loadChildren: './post/post.module#PostPageModule'}
-];`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`const routes: Routes = [
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: './home/home.module#HomePageModule'
+  },
+  {
+    path: 'list',
+    loadChildren: './list/list.module#ListPageModule'
+  },
+  {path: 'login', loadChildren: './login/login.module#LoginPageModule'},
+  {path: ':slug', loadChildren: './post/post.module#PostPageModule'}
+];`}</code></deckgo-highlight-code>
 
                             <p>Now if you run the app with <code>ionic serve</code>, we can see the new menu item and we can navigate the the Login page.</p>
 
@@ -155,45 +136,53 @@ loadChildren: './list/list.module#ListPageModule'
 
                             <p>Run the <code>ionic generate</code> command, select the <code>service</code> type from the list of options, and then enter &quot;Authentication&quot; for the Name/path of the service. Now open the newly generated file, <code>src/app/shared/authentication.service.ts</code> and modify it as follows…</p>
 
-                            <pre><code class="language-ts">{`import {Injectable} from '@angular/core';
+                            <deckgo-highlight-code><code slot="code">{`import {Injectable} from '@angular/core';
 import {environment} from '../../environments/environment';
 import {HttpClient, HttpHeaders} from '@angular/common/http';
+
 const ENDPOINT_URL = environment.endpointURL;
+
 @Injectable({
 providedIn: 'root'
 })
 export class AuthenticationService {
-private user: any;
-constructor(private http: HttpClient) {
-}
-/**
-* Login to WordPress via JWT. Returns object with the following shape:
-* {
-*      token: "eyJ0eXAiOiJKV1QiLCJhbGci...",
-*      user_email: "someuser@somewhere.com",
-*      user_nicename: "wordpress",
-*      user_display_name: "wordpress"
-* }
-*/
-doLogin(username, password) {
-return this.http.post(ENDPOINT_URL + 'jwt-auth/v1/token', {
-username: username,
-password: password
-});
-}
-validateAuthToken(token) {
-let headers = new HttpHeaders();
-headers = headers.set('Authorization', 'Basic ' + token);
-return this.http.post(ENDPOINT_URL + 'jwt-auth/v1/token/validate?token=' + token,
-{}, {headers: headers});
-}
-getUser() {
-return this.user;
-}
-setUser(user) {
-this.user = user;
-}
-}`}</code></pre>
+  
+    private user: any;
+  
+    constructor(private http: HttpClient) {
+    }
+
+    /**
+    * Login to WordPress via JWT. Returns object with the following shape:
+    * {
+    *      token: "eyJ0eXAiOiJKV1QiLCJhbGci...",
+    *      user_email: "someuser@somewhere.com",
+    *      user_nicename: "wordpress",
+    *      user_display_name: "wordpress"
+    * }
+    */
+    doLogin(username, password) {
+       return this.http.post(ENDPOINT_URL + 'jwt-auth/v1/token', {
+         username: username,
+         password: password
+      });
+   }
+   
+   validateAuthToken(token) {
+      let headers = new HttpHeaders();
+      headers = headers.set('Authorization', 'Basic ' + token);
+      return this.http.post(ENDPOINT_URL + 'jwt-auth/v1/token/validate?token=' + token,
+           {}, {headers: headers});
+    }
+
+    getUser() {
+        return this.user;
+    }
+
+    setUser(user) {
+        this.user = user;
+    }
+}`}</code></deckgo-highlight-code>
 
                             <p>This service is written to use a JSON web token based login, which requires the installation and configuration of a WordPress plugin, which is described next.</p>
 
@@ -229,7 +218,7 @@ this.user = user;
 
                             <p>After editing the <code>.htaccess</code> file for the JWT plugin, mine now looks like this:</p>
 
-                            <pre><code class="language-apacheconf">{`# BEGIN WordPress
+                            <deckgo-highlight-code language="apacheconf"><code slot="code">{`# BEGIN WordPress
 <IfModule mod_rewrite.c>
 RewriteEngine On
 RewriteBase /
@@ -240,7 +229,7 @@ RewriteCond %{HTTP:Authorization} ^(.*)
 RewriteRule . /index.php [L]
 RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
 </IfModule>
-# END WordPress`}</code></pre>
+# END WordPress`}</code></deckgo-highlight-code>
 
 
                             <p>Next, you can then run the following command to edit the <code>wp-config.php</code> file…</p>
@@ -249,10 +238,10 @@ RewriteRule ^(.*) - [E=HTTP_AUTHORIZATION:%1]
 
                             <p>Add the following to the file:</p>
 
-                            <pre><code>{`/** WordPress JWT Authentication for WP REST API **/
+                            <deckgo-highlight-code><code slot="code">{`/** WordPress JWT Authentication for WP REST API **/
 /** You can generate secret keys with this URL: https://api.wordpress.org/secret-key/1.1/salt/ **/
 define('JWT_AUTH_SECRET_KEY', 'EBgvg4a,bmBYrTf&|-f5{~W0WoZH]&([JCp{GN\`4[Zg4- vX-W|(3!a Ck.-OPd5');
-define('JWT_AUTH_CORS_ENABLE', true);`}</code></pre>
+define('JWT_AUTH_CORS_ENABLE', true);`}</code></deckgo-highlight-code>
 
                             <p><em>Note that as stated in the comment in the snippet above, you can&nbsp;generate secret keys with this URL: <a href="https://api.wordpress.org/secret-key/1.1/salt/">https://api.wordpress.org/secret-key/1.1/salt/</a></em></p>
 
@@ -270,28 +259,28 @@ define('JWT_AUTH_CORS_ENABLE', true);`}</code></pre>
 
                             <p>Now, we need a login form on the Login page. Edit <code>src/app/login/login.page.html</code> to be as follows…</p>
 
-                            <pre><code class="language-html">{`<ion-header>
-<ion-toolbar>
-<ion-buttons slot="start">
-<ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-title>Login</ion-title>
-</ion-toolbar>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
 </ion-header>
 <ion-content padding>
-<div class="alert alert-danger" role="alert" *ngIf="error_message">{{error_message}}</div>
-<form [formGroup]="login_form" (ngSubmit)="login(login_form.value)">
-<ion-item>
-<ion-label color="primary">Username</ion-label>
-<ion-input type="text" formControlName="username" placeholder="Enter username" required></ion-input>
-</ion-item>
-<ion-item>
-<ion-label color="primary">Password</ion-label>
-<ion-input type="password" formControlName="password" placeholder="Enter password" required></ion-input>
-</ion-item>
-<ion-button expand="full"  type="submit">Login</ion-button>
-</form>
-</ion-content>`}</code></pre>
+  <div class="alert alert-danger" role="alert" *ngIf="error_message">{{error_message}}</div>
+  <form [formGroup]="login_form" (ngSubmit)="login(login_form.value)">
+    <ion-item>
+    <ion-label color="primary">Username</ion-label>
+      <ion-input type="text" formControlName="username" placeholder="Enter username" required></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label color="primary">Password</ion-label>
+      <ion-input type="password" formControlName="password" placeholder="Enter password" required></ion-input>
+    </ion-item>
+    <ion-button expand="full"  type="submit">Login</ion-button>
+  </form>
+</ion-content>`}</code></deckgo-highlight-code>
 
                             <p>This will give us a simple login form like this…</p>
                             <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form.jpg" alt="" /></p>
@@ -300,18 +289,19 @@ define('JWT_AUTH_CORS_ENABLE', true);`}</code></pre>
 
                             <p>When the user enters invalid credentials, we want the error message to show in a nice red alert block. For this, I’ve borrowed a styles and class names from Bootstrap 4 (even though Bootstrap is not included in the project). Edit <code>src/app/login/login.page.scss</code> to be as follows.</p>
 
-                            <pre><code class="language-css">{`.alert {
-position: relative;
-padding: .75rem 1.25rem;
-margin-bottom: 1rem;
-border: 1px solid transparent;
-border-radius: .25rem;
+                            <deckgo-highlight-code language="css"><code slot="code">{`.alert {
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
 }
+
 .alert-danger {
-color: #721c24;
-background-color: #f8d7da;
-border-color: #f5c6cb;
-}`}</code></pre>
+  color: #721c24;
+  background-color: #f8d7da;
+  border-color: #f5c6cb;
+}`}</code></deckgo-highlight-code>
                             <p>Of course, we might move these styles in the future to make them global (for now, they apply only to the LoginPage component).&nbsp;This will give us a simple red-boxed error prompt like this…</p>
 
                             <p><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/09/ionpress-login-form-err.jpg" alt="" /></p>
@@ -320,85 +310,88 @@ border-color: #f5c6cb;
 
                             <p>Since we’re using a form now, we’ll need to import the ReactiveFormsModule into the module for the LoginPage component. Edit <code>src/app/login/login.module.ts</code>. We just need to add <code>ReactiveFormsModule</code> to the <code>@NgModule</code> imports section. The full file should then look like this…</p>
 
-                            <pre><code class="language-ts">{`import {NgModule} from '@angular/core';
+                            <deckgo-highlight-code><code slot="code">{`import {NgModule} from '@angular/core';
 import {CommonModule} from '@angular/common';
 import {ReactiveFormsModule} from '@angular/forms';
 import {Routes, RouterModule} from '@angular/router';
 import {IonicModule} from '@ionic/angular';
 import {LoginPage} from './login.page';
+
 const routes: Routes = [
-{
-path: '',
-component: LoginPage
-}
-];
+  {
+    path: '',
+    component: LoginPage
+  }];
 @NgModule({
-imports: [
-CommonModule,
-ReactiveFormsModule,
-IonicModule,
-RouterModule.forChild(routes)
-],
-declarations: [LoginPage]
+  imports: [
+    CommonModule,
+    ReactiveFormsModule,
+    IonicModule,
+    RouterModule.forChild(routes)
+  ],
+  declarations: [LoginPage]
 })
 export class LoginPageModule {
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>Modify the LoginPage component</h2>
 
                             <p>Edit <code>src/app/login/login.page.ts</code> to be as follows…</p>
 
-                            <pre><code class="language-ts">{`import {Component, OnInit} from '@angular/core';
+                            <deckgo-highlight-code><code slot="code">{`import {Component, OnInit} from '@angular/core';
 import {Validators, FormBuilder, FormGroup, FormControl} from '@angular/forms';
 import {Router} from '@angular/router';
 import {LoadingController} from '@ionic/angular';
 import {AuthenticationService} from '../shared/authentication.service';
 import {DataService} from '../shared/data.service';
+
 @Component({
 selector: 'app-login',
 templateUrl: './login.page.html',
 styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-login_form: FormGroup;
-error_message: string;
-constructor(
-public formBuilder: FormBuilder,
-public loadingController: LoadingController,
-public authenticationService: AuthenticationService,
-public dataService: DataService,
-private router: Router) {
-}
-ngOnInit() {
-this.login_form = this.formBuilder.group({
-username: new FormControl('', Validators.compose([
-Validators.required
-])),
-password: new FormControl('', Validators.required)
-});
-}
-async login(value) {
-const loading = await this.loadingController.create({
-duration: 5000,
-message: 'Please wait...'
-});
-loading.present();
-this.authenticationService.doLogin(value.username, value.password)
-.subscribe(res => {
+  
+    login_form: FormGroup;
+    error_message: string;
+  constructor(
+    public formBuilder: FormBuilder,
+    public loadingController: LoadingController,
+    public authenticationService: AuthenticationService,
+    public dataService: DataService,
+    private router: Router) {}
+
+  ngOnInit() {
+    this.login_form = this.formBuilder.group({
+      username: new FormControl('', Validators.compose([
+        Validators.required
+      ])),
+      password: new FormControl('', Validators.required)
+    });
+  }
+
+  async login(value) {
+    const loading = await this.loadingController.create({
+      duration: 5000,
+      message: 'Please wait...'
+    });
+    loading.present();
+    this.authenticationService.doLogin(value.username, value.password)
+    .subscribe(res => {
     this.authenticationService.setUser(res);
     // Reset the post items so that next time, they are completely
     // reloaded for the newly authenticated user...
     this.dataService.items = [];
     loading.dismiss();
-    this.router.navigateByUrl('home');
-},
-err => {
-    this.error_message = 'Invalid credentials.';
-    loading.dismiss();
-    console.log(err);
-});
-}
-}`}</code></pre>
+     this.router.navigateByUrl('home');
+     },
+    err => {
+      this.error_message = 'Invalid credentials.';
+      loading.dismiss();
+      console.log(err);
+    });
+  }
+}`}</code></deckgo-highlight-code>
 
                             <p>What’s going on here?</p>
 
@@ -406,7 +399,7 @@ err => {
                                 <li>In the login() function, we display an Ionic loading controller.</li>
                                 <li>We then pass credentials from the form to the authentication service.</li>
                                 <li>If the login is successful…
-<ul>
+                                    <ul>
                                         <li>The service returns a user object. For now, we give the user object back to the singleton service (with <code>setUser()</code>). Probably, in the future, we should make this step unnecessary by automatically setting the user in the service itself. But… we’re going in iterative steps here. We’ll get to that someday soon.</li>
                                         <li>We clear out the list of posts from the DataService so that they’ll be completely reloaded. This ensures that any private posts that may now be available to the authenticated user will be loaded when we return to the Home page.</li>
                                         <li>We dismiss the loading spinner.</li>
@@ -420,70 +413,79 @@ err => {
 
                             <p>Finally, we just need to modify the DataService. Edit <code>src/app/shared/data.service.ts</code> to be as follows…</p>
 
-                            <pre><code class="language-ts">{`import {Injectable} from '@angular/core';
+                            <deckgo-highlight-code><code slot="code">{`import {Injectable} from '@angular/core';
 import {environment} from '../../environments/environment';
 import {HttpClient, HttpResponse} from '@angular/common/http';
 import 'rxjs/add/operator/map';
 import {of} from 'rxjs/observable/of';
 import {Observable} from 'rxjs';
 import {AuthenticationService} from './authentication.service';
+
 const ENDPOINT_URL = environment.endpointURL;
+
 @Injectable({
 providedIn: 'root'
 })
 export class DataService {
-items: any[] = [];
-page = 1;
-totalPages = 1;
-constructor(private http: HttpClient, public authenticationService: AuthenticationService) {
-}
-/**
-* Gets a page of posts or all posts formerly fetched
-*/
-getPosts(): any {
-if (this.items.length > 0) {
-return of(this.items);
-} else {
-const user = this.authenticationService.getUser();
-if (user) {
-return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&status=any&token=' + user.token,
-    {observe: 'response', headers: {'Authorization': 'Bearer ' + user.token}})
-    .map(this.processPostData, this);
-} else {
-return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed', {observe: 'response'})
-    .map(this.processPostData, this);
-}
-}
-}
-/**
-* Gets the next page of posts
-*/
-getMorePosts(): any {
-this.page++;
-return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&page=' + this.page, {observe: 'response'})
-.map(this.processPostData, this);
-}
-// A place for post-processing, before making the fetched data available to view.
-processPostData(resp: HttpResponse<any[]>) {
-this.totalPages = +resp.headers.get('X-WP-TotalPages'); // unary (+) operator casts the string to a number
-resp.body.forEach((item: any) => {
-this.items.push(item);
-});
-return this.items;
-}
-getPostBySlug(slug): any {
-return this.items.find(item => item.slug === slug);
-}
-hasMorePosts() {
-return this.page < this.totalPages;
-}
-}`}</code></pre>
+
+  items: any[] = [];
+  page = 1;
+  totalPages = 1;
+
+  constructor(private http: HttpClient, public authenticationService: AuthenticationService) {
+  }
+
+  /**
+  * Gets a page of posts or all posts formerly fetched
+  */
+  getPosts(): any {
+    if (this.items.length > 0) {
+      return of(this.items);
+    } else {
+      const user = this.authenticationService.getUser();
+      if (user) {
+        return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&status=any&token=' + user.token,
+            {observe: 'response', headers: {'Authorization': 'Bearer ' + user.token}})
+            .map(this.processPostData, this);
+      } else {
+        return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed', {observe: 'response'})
+            .map(this.processPostData, this);
+      }
+    }
+  }
+
+  /**
+  * Gets the next page of posts
+  */
+  getMorePosts(): any {
+    this.page++;
+    return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&page=' + this.page, {observe: 'response'})
+        .map(this.processPostData, this);
+  }
+
+  // A place for post-processing, before making the fetched data available to view.
+  processPostData(resp: HttpResponse<any[]>) {
+    this.totalPages = +resp.headers.get('X-WP-TotalPages'); // unary (+) operator casts the string to a number
+    resp.body.forEach((item: any) => {
+      this.items.push(item);
+    });
+    return this.items;
+  }
+
+  getPostBySlug(slug): any {
+    return this.items.find(item => item.slug === slug);
+  }
+
+  hasMorePosts() {
+    return this.page < this.totalPages;
+  }
+}`}</code></deckgo-highlight-code>
 
                             <p>In the <code>getPosts()</code> function, we now look for a user object. If we find it, that means we are authenticated (we have a token to use). If we have a user, we use the following snippet instead of the former one.</p>
 
-                            <pre><code class="language-ts">{`return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&status=any&token=' + user.token,
+                            <deckgo-highlight-code><code slot="code">{`return this.http.get(ENDPOINT_URL + 'wp/v2/posts?_embed&status=any&token=' + user.token,
 {observe: 'response', headers: {'Authorization': 'Bearer ' + user.token}})
-.map(this.processPostData, this);`}</code></pre>
+.map(this.processPostData, this);`}</code></deckgo-highlight-code>
 
                             <p>We’re doing three things different here now.</p>
 
@@ -538,7 +540,7 @@ return this.page < this.totalPages;
                                 </ion-card-content>
                             </ion-card>
 
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

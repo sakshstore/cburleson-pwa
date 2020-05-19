@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-yaml.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -12,29 +8,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageCopyAssetsFromNodeModulesInStencilJs {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageCopyAssetsFromNodeModulesInStencilJs.componentWillLoad');
+            console.log('>> PageCopyAssetsFromNodeModulesInStencilJs.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -67,18 +55,18 @@ export class PageCopyAssetsFromNodeModulesInStencilJs {
                             <p>First, I added these as dev dependencies using npm. For one example:</p>
                             <p><code>npm install boostrap --save-dev</code></p>
                             <p>The next goal was to make sure that these assets were copied to the <code>www/assets</code> directory during the build process. Copying resources from one location to another can be achieved with the <code>copy</code> config specified with <code>src</code> and <code>dest</code> in the <code>stencil.config.ts</code> file as shown below.</p>
-                            <pre><code class="language-yaml">{`copy: [
+                            <deckgo-highlight-code language="yaml"><code slot="code">{`copy: [
     { src: '../node_modules/bootstrap/dist/css/bootstrap.min.css', dest: 'assets/css/bootstrap.min.css'},
     { src: '../node_modules/bootstrap/dist/js/bootstrap.min.js', dest: 'assets/js/bootstrap.min.js'},
     { src: '../node_modules/jquery/dist/jquery.slim.min.js', dest: 'assets/js/jquery.slim.min.js'},
     { src: '../node_modules/popper.js/dist/popper.min.js', dest: 'assets/js/popper.min.js'}
-]`}</code></pre>
+]`}</code></deckgo-highlight-code>
                             <p>With that configuration, Stencil.js copies the resources to the specified locations within <code>www/assets</code> whenever the build is executed (such as when running <code>npm start</code>.</p>
                             <p>For more information see: <a href="https://stenciljs.com/docs/config/#copy">Stencil Config &#8211; copy</a></p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

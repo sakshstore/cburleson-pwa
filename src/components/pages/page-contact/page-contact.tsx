@@ -19,7 +19,7 @@ export class PageAbout {
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageContact.componentWillLoad');
+      console.log('>> PageContact.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
   }

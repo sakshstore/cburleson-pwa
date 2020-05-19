@@ -1,42 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-import 'prismjs/components/prism-typescript.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
   tag: 'page-pwa-with-ionic-angular-wordpress-api-2',
 })
 export class PagePwaWithIonicAngularWordpressApi2 {
 
-  title = 'Blog';
-
-  // header for this individual item by id...
   header: any;
-
-  id: string;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PagePwaWithIonicAngularWordpressApi2.componentWillLoad');
+      console.log('>> PagePwaWithIonicAngularWordpressApi2.componentWillLoad');
     }
-    // this.data = await BlogData.load();
-    // Get the id from the URL path (slug)
-    this.id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(this.id);
 
-    // set document title for browser / tab / bookmark
+    let id = extractIdFromDocumentPath();
+    this.header = BlogData.getPostHeaderById(id);
+
     document.title = this.header.title + ' | ' + SITENAME;
     if (this.header.teaser) {
       document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
     }
-  }
-
-  componentDidLoad() {
-    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   render() {
@@ -55,6 +39,7 @@ export class PagePwaWithIonicAngularWordpressApi2 {
         <ion-grid>
           <ion-row>
             <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+              
               <h1>{this.header.title}</h1>
               <app-entry-meta header={this.header} />
 
@@ -82,28 +67,26 @@ export class PagePwaWithIonicAngularWordpressApi2 {
 
               <p>Modify <code>src/app/home/home.page.html</code> with the following.</p>
 
-              <pre><code class="language-html">{`<ion-header>
-<ion-toolbar>
-<ion-buttons slot="start">
-<ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-title>
-Home
-</ion-title>
-</ion-toolbar>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content padding>
-<ion-card *ngFor="let item of items">
-<ion-card-header>
-<ion-card-subtitle>{{item.date}}</ion-card-subtitle>
-<ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
-</ion-card-header>
-<ion-card-content>
-<div [innerHTML]="item.excerpt.rendered"></div>
-</ion-card-content>
-</ion-card>
+    <ion-card *ngFor="let item of items">
+        <ion-card-header>
+            <ion-card-subtitle>{{item.date}}</ion-card-subtitle>
+            <ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div [innerHTML]="item.excerpt.rendered"></div>
+        </ion-card-content>
+    </ion-card>
 
-</ion-content>`}</code></pre>
+</ion-content>`}</code></deckgo-highlight-code>
 
               <p>Now, if you run ionic serve, the result should look something like this.</p>
 
@@ -113,19 +96,19 @@ Home
 
               <p>There’s something important to point out here, however. Notice, that for the title and the excerpt, we used an Angular technique to render them as innerHTML? We did this with the following two lines.</p>
 
-              <pre><code class="language-html">{`...
+              <deckgo-highlight-code language="html"><code slot="code">{`...
 <ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
 ...
 <div [innerHTML]="item.excerpt.rendered"></div>
-...`}</code></pre>
+...`}</code></deckgo-highlight-code>
 
               <p>You might have thought to do it this way instead.</p>
 
-              <pre><code class="language-html">{`...
+              <deckgo-highlight-code language="html"><code slot="code">{`...
 <ion-card-title>{{item.title.rendered}}</ion-card-title>
 ...
 <div>{{item.excerpt.rendered}}</div>
-...`}</code></pre>
+...`}</code></deckgo-highlight-code>
 
               <p>In the second case, Angular does not interpret and decode special HTML characters. In other words, it will render the raw data, but it will not render the HTML as it should be. The <code>[innerHTML]=""</code> trick fixes this.</p>
 
@@ -143,60 +126,62 @@ Home
 
               <p>Add a <code>dateFormat</code>&nbsp;field to the configuration by changing both <code>src/environment/environment.ts</code> and <code>environment.prod.ts</code> to the following.</p>
 
-              <pre><code class="language-ts">{`// For dateFormat options, see: https://angular.io/api/common/DatePipe
+              <deckgo-highlight-code><code slot="code">{`// For dateFormat options, see: https://angular.io/api/common/DatePipe
 export const environment = {
 production: false,
 endpointURL: 'http://localhost:8080/wp-json/',
 dateFormat: 'MMM d, y'
-};`}</code></pre>
+};`}</code></deckgo-highlight-code>
 
               <p>Then, in <code>home.page.html</code>, make sure the DatePipe is changed to be&nbsp;<code>&#123;&#123; item.date | date:dateFormat &#125;&#125;</code>. All of <code>home.page.html</code> should then look like this…</p>
 
-              <pre><code class="language-html">{`<ion-header>
-<ion-toolbar>
-<ion-buttons slot="start">
-<ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-title>
-Home
-</ion-title>
-</ion-toolbar>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content padding>
-<ion-card *ngFor="let item of items">
-<ion-card-header>
-<ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
-<ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
-</ion-card-header>
-<ion-card-content>
-<div [innerHTML]="item.excerpt.rendered"></div>
-</ion-card-content>
-</ion-card>
-</ion-content>`}</code></pre>
+    <ion-card *ngFor="let item of items">
+        <ion-card-header>
+            <ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
+            <ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
+        </ion-card-header>
+       <ion-card-content>
+           <div [innerHTML]="item.excerpt.rendered"></div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>`}</code></deckgo-highlight-code>
 
               <p>And finally, we need to have the dateFormat&nbsp; field also in the HomPage component. We’ll import the environment file and pass the value through with <code>dateFormat = environment.dateFormat</code>. Modify <code>src/app/home/home.page.ts</code> to the following.</p>
 
-              <pre><code class="language-ts">{`import {Component, OnInit} from '@angular/core';
+              <deckgo-highlight-code><code slot="code">{`import {Component, OnInit} from '@angular/core';
 import {DataService} from '../shared/data.service';
 import {environment} from '../../environments/environment';
+
 @Component({
 selector: 'app-home',
 templateUrl: 'home.page.html',
 styleUrls: ['home.page.scss'],
 })
 export class HomePage implements OnInit {
-items: any[];
-dateFormat = environment.dateFormat;
-constructor(public dataService: DataService) {
-}
-ngOnInit() {
-console.log('> ngOnInit');
-this.dataService.getPosts().subscribe((data: any[]) => {
-this.items = data;
-console.log('ngOnInit() > items: %o', this.items);
-});
-}
-}`}</code></pre>
+
+  items: any[];
+  dateFormat = environment.dateFormat;
+  
+  constructor(public dataService: DataService) {
+  }
+
+  ngOnInit() {
+    console.log('>> ngOnInit');
+    this.dataService.getPosts().subscribe((data: any[]) => {
+    this.items = data;
+      console.log('ngOnInit() > items: %o', this.items);
+    });
+  }
+}`}</code></deckgo-highlight-code>
 
               <p>Now, when users edit the environment file to point to their own WordPress endpoint, they can also configure the date format to their liking. This is a good check-point to make a commit.</p>
 
@@ -206,32 +191,30 @@ console.log('ngOnInit() > items: %o', this.items);
 
               <p>If a featured image is included with the post, we want that to render in the cards. This is as simple as adding the following line in our cards.</p>
 
-              <pre><code class="language-html">{`<ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>`}</code></pre>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>`}</code></deckgo-highlight-code>
 
               <p>Because some items do not have a featured image, we’ve used ngIf to avoid errors. To add this line in the proper place, modify <code>home.page.html</code> to the following.</p>
 
-              <pre><code class="language-html">{`<ion-header>
-<ion-toolbar>
-<ion-buttons slot="start">
-<ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-title>
-Home
-</ion-title>
-</ion-toolbar>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+    <ion-toolbar>
+        <ion-buttons slot="start">
+            <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Home</ion-title>
+    </ion-toolbar>
 </ion-header>
 <ion-content padding>
-<ion-card *ngFor="let item of items">
-<ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>
-<ion-card-header>
-<ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
-<ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
-</ion-card-header>
-<ion-card-content>
-<div [innerHTML]="item.excerpt.rendered"></div>
-</ion-card-content>
-</ion-card>
-</ion-content>`}</code></pre>
+    <ion-card *ngFor="let item of items">
+        <ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>
+        <ion-card-header>
+            <ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
+            <ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
+        </ion-card-header>
+        <ion-card-content>
+            <div [innerHTML]="item.excerpt.rendered"></div>
+        </ion-card-content>
+    </ion-card>
+</ion-content>`}</code></deckgo-highlight-code>
 
               <p>Now, if we run <code>ionic serve</code> and examine the result, items with featured images look like this.</p>
 
@@ -280,7 +263,7 @@ Home
                 </ion-card-content>
               </ion-card>
 
-              <gls-adsense-ad />
+              
             </ion-col>
           </ion-row>
         </ion-grid>

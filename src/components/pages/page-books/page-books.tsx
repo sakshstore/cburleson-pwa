@@ -1,6 +1,6 @@
 import { Component, Element, h } from '@stencil/core';
 import { BlogData } from '../../../services/blog-data';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
 @Component({
   tag: 'page-books'
@@ -11,23 +11,26 @@ export class PageBooks {
 
   title = 'Books';
 
-  writingItems = [
-    {
-      id: "/cage",
-      title: "The Cage",
-      teaser: "The true story of the Special Landing Force of 1st Battalion, 3rd Marines in the Vietnam War.",
-      thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
-      datePublished: "",
-      dateModified: "Oct 21, 2019"
-    }]
+  header: any;
 
-  reviewedItems: Array<any> = [];
+  writingItems: Array<any>;
+  reviewedItems: Array<any>;
 
   async componentWillLoad() {
+
     if (isLocal()) {
-      console.log('> PageProjects.componentWillLoad');
+      console.log('>> PageBooks.componentWillLoad');
     }
-    document.title = this.title + ' | ' + SITENAME;
+
+    let id = extractIdFromDocumentPath();
+    this.header = BlogData.getPageHeaderById(id);
+
+    document.title = this.header.title + ' | ' + SITENAME;
+    if (this.header.teaser) {
+      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
+    }
+
+    this.writingItems = await BlogData.getPostsByMenu("books-i-am-writing");
     this.reviewedItems = await BlogData.getPostsByTopic("Book Reviews");
   }
 
@@ -62,7 +65,6 @@ export class PageBooks {
     )
   }
 
-
   render() {
     return [
       <ion-header>
@@ -70,7 +72,7 @@ export class PageBooks {
           <ion-buttons slot="start">
             <ion-menu-button></ion-menu-button>
           </ion-buttons>
-          <ion-title>{this.title}</ion-title>
+          <ion-title>{this.header.title}</ion-title>
           <ion-buttons slot="end">
             <ion-button onClick={() => this.toggleSearch()}>
               <ion-icon slot="icon-only" name="search-outline"></ion-icon>

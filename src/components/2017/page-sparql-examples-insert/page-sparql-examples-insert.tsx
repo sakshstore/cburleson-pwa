@@ -1,31 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
 	tag: 'page-sparql-examples-insert',
 })
 export class PageSparqlExamplesInsert {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageTemplatePage.componentWillLoad');
+			console.log('>> PageTemplatePage.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
 		// set document title for browser / tab / bookmark
@@ -33,11 +22,6 @@ export class PageSparqlExamplesInsert {
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -60,32 +44,32 @@ export class PageSparqlExamplesInsert {
 							<app-entry-meta header={this.header} />
 
 							<p>Insert some statements</p>
-							<pre><code class="language-sparql">{`PREFIX <http://bedrock/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX <http://bedrock/>
 INSERT DATA {
     :fred :hasSpouse :wilma .
     :fred :hasChild :pebbles .
     :wilma :hasChild :pebbles .
     :pebbles :hasSpouse :bamm-bamm ;
         :hasChild :roxy, :chip.
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 							<p>Insert data into a named graph</p>
 
-							<pre><code class="language-sparql">{`INSERT DATA
+							<deckgo-highlight-code><code slot="code">{`INSERT DATA
 {
      GRAPH <http://example.org/myGraph> 
      {
           <http://example.org/subject> <http://example.org/predicate> <http://example.org/object>
      }
 }
-`}</code></pre>
+`}</code></deckgo-highlight-code>
 
 							<p>Inserts into a specific Graph. You can insert as many Triples as you want within a single command (only one is used in the example for brevity)</p>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

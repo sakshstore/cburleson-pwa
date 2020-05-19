@@ -1,10 +1,6 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-import Prism from "prismjs"
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
-
 
 const CODE_1 = `<script src="https://unpkg.com/@reactivex/rxjs@5.3.0/dist/global/Rx.js"></script>
 <button>Click me</button>`;
@@ -43,29 +39,21 @@ Rx.Observable.fromEvent(button, 'click').
 })
 export class PageRespondToButtonClickWithObservable {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageRespondToButtonClickWithObservable.componentWillLoad');
+            console.log('>> PageRespondToButtonClickWithObservable.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -89,17 +77,17 @@ export class PageRespondToButtonClickWithObservable {
 
                             <p>A recipe for responding to a button click with an RxJS Observable.</p>
                             <p><strong>HTML</strong></p>
-                            <pre><code class="language-html">{CODE_1}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{CODE_1}</code></deckgo-highlight-code>
                             <p><b>JavaScript</b></p>
-                            <pre><code class="language-js">{CODE_2}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{CODE_2}</code></deckgo-highlight-code>
                             <p>The observable is created by the operator, <code>fromEvent</code>, which takes an “element” and an event name as parameters. It will listens for events of that name (i.e. 'click') taking place on that element. It returns an Observable that emits those events. An “element” may be a simple DOM element, or a NodeList, jQuery element, Zepto Element, Angular element, Ember.js element, or EventEmitter. This operator also takes an optional third parameter: a function that accepts the arguments from the event handler as parameters and returns an item to be emitted by the resulting Observable in place of the event.</p>
                             <h2 id="Respondtoabuttonclickwithanobservable-Alternativeimporting">Alternative importing</h2>
                             <p>If you're using a JavaScript modules approach (such as with TypeScript),  you could do something like the following instead of using the <code>&lt;script&gt;</code> element for importing as shown above.</p>
-                            <pre><code class="language-js">{CODE_3}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{CODE_3}</code></deckgo-highlight-code>
                             <h2 id="Respondtoabuttonclickwithanobservable-Creatingyourownobserver">Creating your own observer</h2>
                             <p>Alternatively, you could create your on observer to listen to the click event. Since RxJS provides the <code>fromEvent</code> operator, this is unnecessary. However, showing how this <em>could</em> be done provides a good example of how to create your own observers without use of the RxJS operators.</p>
                             <p><strong>JavaScript</strong></p>
-                            <pre><code class="language-js">{CODE_4}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{CODE_4}</code></deckgo-highlight-code>
                             <h2>References</h2>
 
                             <p>
@@ -111,7 +99,7 @@ export class PageRespondToButtonClickWithObservable {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

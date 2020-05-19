@@ -1,10 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-properties.min.js';
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -12,29 +7,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageLiferay7Ubuntu {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageLiferay7Ubuntu.componentWillLoad');
+            console.log('>> PageLiferay7Ubuntu.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -88,10 +75,10 @@ export class PageLiferay7Ubuntu {
 
                             <h1>Update Ubuntu</h1>
 
-                            <pre><code class="language-bash">{`developer@ubuntu:~$ sudo su -
+                            <deckgo-highlight-code language="bash"><code slot="code">{`developer@ubuntu:~$ sudo su -
 [sudo] password for developer:<
 root@ubuntu:~# dev <-password
-root@ubuntu:~# apt-get update && apt-get upgrade`}</code></pre>
+root@ubuntu:~# apt-get update && apt-get upgrade`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: UBUNTU UPDATE &amp; UPGRADE</span></p>
 
@@ -99,7 +86,7 @@ root@ubuntu:~# apt-get update && apt-get upgrade`}</code></pre>
 
                             <p>Note by the following command that Java is not installed&#8230;</p>
 
-                            <pre><code class="language-bash">{`developer@ubuntu:~$ java -version
+                            <deckgo-highlight-code language="bash"><code slot="code">{`developer@ubuntu:~$ java -version
 The program 'java' can be found in the following packages:
  * default-jre
  * gcj-5-jre-headless
@@ -108,23 +95,23 @@ The program 'java' can be found in the following packages:
  * gcj-4.9-jre-headless
  * openjdk-9-jre-headless
 Try: sudo apt install <selected package>
-developer@ubuntu:~$`}</code></pre>
+developer@ubuntu:~$`}</code></deckgo-highlight-code>
 
                             <p>Change to root&#8230;</p>
 
-                            <pre><code class="language-bash">{`sudo su -
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
 (enter password)
 apt-get install software-properties-common
 add-apt-repository ppa:webupd8team/java
 apt-get update
-apt-get install oracle-java8-installer`}</code></pre>
+apt-get install oracle-java8-installer`}</code></deckgo-highlight-code>
 
                             <p>Check if Java is successfully installed</p>
 
-                            <pre><code class="language-bash">{`java -version
+                            <deckgo-highlight-code language="bash"><code slot="code">{`java -version
 java version "1.8.0_111"
 Java(TM) SE Runtime Environment (build 1.8.0_111-b14)
-Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></pre>
+Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></deckgo-highlight-code>
 
 
                             <h1>Fix for network service discovery disabled</h1>
@@ -141,8 +128,8 @@ Java HotSpot(TM) 64-Bit Server VM (build 25.111-b14, mixed mode)`}</code></pre
 
                             <p>To disable it, you must edit the file <code>/etc/default/avahi-daemon</code> as root:</p>
 
-                            <pre><code class="language-bash">{`sudo -i
-gedit /etc/default/avahi-daemon`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo -i
+gedit /etc/default/avahi-daemon`}</code></deckgo-highlight-code>
 
                             <p>and add this line (or change it if already exists to):</p>
 
@@ -156,8 +143,8 @@ gedit /etc/default/avahi-daemon`}</code></pre>
 
                             <h2>Fix</h2>
 
-                            <pre><code class="language-bash">{`sudo apt-get remove sane-utils
-sudo apt-get remove colord`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo apt-get remove sane-utils
+sudo apt-get remove colord`}</code></deckgo-highlight-code>
 
                             <p>Worked for me, 16.04 running XFCE, but i&#8217;ve no need for color profiles.</p>
 
@@ -172,10 +159,10 @@ sudo apt-get remove colord`}</code></pre>
                             <p>You&#8217;ll need MySQL 5.6 for the latest version of Liferay (at this point in time).</p>
 
 
-                            <pre><code class="language-bash">{`sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo add-apt-repository 'deb http://archive.ubuntu.com/ubuntu trusty universe'
 sudo apt-get update
 sudo apt install mysql-server-5.6
-sudo apt install mysql-client-5.6`}</code></pre>
+sudo apt install mysql-client-5.6`}</code></deckgo-highlight-code>
 
                             <h2>MySQL root credentials</h2>
 
@@ -199,9 +186,9 @@ sudo apt install mysql-client-5.6`}</code></pre>
                             <p>Once the MySQL installation is completed, start the MySQL server and enable the service on system boot:</p>
 
 
-                            <pre><code class="language-bash">{`sudo su -
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
 systemctl restart mysql
-systemctl enable mysql`}</code></pre>
+systemctl enable mysql`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: ENABLE MYSQL ON BOOT</span></p>
 
@@ -209,24 +196,24 @@ systemctl enable mysql`}</code></pre>
 
                             <p>Install MySQL Workbench using the APT package manager:</p>
 
-                            <pre><code class="language-bash">{`sudo apt install mysql-workbench`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo apt install mysql-workbench`}</code></deckgo-highlight-code>
 
                             <h2>Run MySQL Workbench</h2>
 
                             <p>Launch MySQL Workbench from the terminal:</p>
 
-                            <pre><code class="language-bash">{`mysql-workbench`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`mysql-workbench`}</code></deckgo-highlight-code>
 
                             <p>To view more launch options from the command line interface, use the <code>--help</code> option:</p>
 
-                            <pre><code class="language-bash">{`/usr/bin/mysql-workbench --help`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`/usr/bin/mysql-workbench --help`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: MYSQL WORKBENCH</span></p>
 
                             <h1>Secure the MySQL installation</h1>
 
-                            <pre><code class="language-bash">{`sudo su -
-mysql_secure_installation`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo su -
+mysql_secure_installation`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: SECURE MYSQL INSTALLATION</span></p>
 
@@ -255,10 +242,10 @@ mysql_secure_installation`}</code></pre>
 
                             <p>In a terminal&#8230;</p>
 
-                            <pre><code class="language-bash">{`cd ~
+                            <deckgo-highlight-code language="bash"><code slot="code">{`cd ~
 cd Downloads
 unzip liferay-ce.zip
-sudo mv liferay-ce-portal-7.0-ga4/ /opt/liferay-ce`}</code></pre>
+sudo mv liferay-ce-portal-7.0-ga4/ /opt/liferay-ce`}</code></deckgo-highlight-code>
 
 
 
@@ -271,10 +258,10 @@ sudo mv liferay-ce-portal-7.0-ga4/ /opt/liferay-ce`}</code></pre>
                             <p>In a terminal&#8230;</p>
 
 
-                            <pre><code class="language-bash">{`cd ~
+                            <deckgo-highlight-code language="bash"><code slot="code">{`cd ~
 cd Downloads
 unzip liferay-dxp.zip
-sudo mv liferay-dxp-digital-enterprise-7.0-sp4/ /opt/liferay-dxp`}</code></pre>
+sudo mv liferay-dxp-digital-enterprise-7.0-sp4/ /opt/liferay-dxp`}</code></deckgo-highlight-code>
 
                             <p>Notice that during the move operation, the directory was renamed to simpley &#8220;liferay-ce&#8221;.</p>
 
@@ -282,10 +269,10 @@ sudo mv liferay-dxp-digital-enterprise-7.0-sp4/ /opt/liferay-dxp`}</code></pre>
 
                             <p>Now we can delete the original archive files to clean up and free some space&#8230;</p>
 
-                            <pre><code class="language-bash">{`cd ~
+                            <deckgo-highlight-code language="bash"><code slot="code">{`cd ~
 cd Downloads
 rm -rf liferay-ce.zip
-rm -rf liferay-dxp.zip`}</code></pre>
+rm -rf liferay-dxp.zip`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: LIFERAY CE AND DXP IN PLACE</span></p>
 
@@ -295,18 +282,18 @@ rm -rf liferay-dxp.zip`}</code></pre>
 
                             <p>Run the &#8216;<code>mysql</code>&#8216; command as a MySQL super user. The default user is &#8216;root&#8217; with a blank password.</p>
 
-                            <pre><code class="language-bash">{`mysql -h localhost -u root -pfruityrooty22`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`mysql -h localhost -u root -pfruityrooty22`}</code></deckgo-highlight-code>
 
                             <p>Create an empty Liferay database schema by running this command:</p>
 
-                            <pre><code class="language-bash">{`CREATE DATABASE liferayce CHARACTER SET utf8 COLLATE utf8_bin;
-CREATE DATABASE liferaydxp CHARACTER SET utf8 COLLATE utf8_bin;`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`CREATE DATABASE liferayce CHARACTER SET utf8 COLLATE utf8_bin;
+CREATE DATABASE liferaydxp CHARACTER SET utf8 COLLATE utf8_bin;`}</code></deckgo-highlight-code>
 
                             <p>Create the Liferay database user by running this command. Replace &#8216;liferayuser&#8217; and &#8216;liferaypass&#8217; with a username and password of your choice. If Liferay is not running on the same server as your MySQL database server, replace &#8216;localhost&#8217; with the hostname or IP address of the Liferay server.</p>
 
 
-                            <pre><code class="language-bash">{`GRANT ALL PRIVILEGES ON liferayce.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';
-GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`GRANT ALL PRIVILEGES ON liferayce.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';
+GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFIED BY 'liferay_db_user22';`}</code></deckgo-highlight-code>
 
                             <h2>liferay_db_user credentials</h2>
 
@@ -317,13 +304,13 @@ GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFI
                                     <tr>
                                         <th>User</th>
                                         <td>
-                                            <pre>liferay_db_user</pre>
+                                            <code>liferay_db_user</code>
                                         </td>
                                     </tr>
                                     <tr>
                                         <th>Password</th>
                                         <td>
-                                            <pre>liferay_db_user22</pre>
+                                            <code>liferay_db_user22</code>
                                         </td>
                                     </tr>
                                 </tbody>
@@ -333,7 +320,7 @@ GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFI
 
                             <p>If you want, you can execute the following command to fire up the MySQL Workbench to verify:</p>
 
-                            <pre><code class="language-bash">{`mysql-workbench`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`mysql-workbench`}</code></deckgo-highlight-code>
 
                             <p>You should see the following&#8230;</p>
 
@@ -349,23 +336,23 @@ GRANT ALL PRIVILEGES ON liferaydxp.* TO 'liferay_db_user'@'localhost' IDENTIFI
 
                             <p><strong>portal-ext.properties for liferay-ce</strong></p>
 
-                            <pre><code class="language-properties">{`#
+                            <deckgo-highlight-code language="properties"><code slot="code">{`#
 # MySQL
 #
 jdbc.default.driverClassName=com.mysql.jdbc.Driver
 jdbc.default.url=jdbc:mysql://localhost/liferayce?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 jdbc.default.username=liferay_db_user
-jdbc.default.password=liferay_db_user22`}</code></pre>
+jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
 
                             <p><strong>portal-ext.properties for liferay-dxp</strong></p>
 
-                            <pre><code class="language-properties">{`#
+                            <deckgo-highlight-code language="properties"><code slot="code">{`#
 # MySQL
 #
 jdbc.default.driverClassName=com.mysql.jdbc.Driver
 jdbc.default.url=jdbc:mysql://localhost/liferaydxp?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 jdbc.default.username=liferay_db_user
-jdbc.default.password=liferay_db_user22`}</code></pre>
+jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
 
                             <p>Note:</p>
 
@@ -385,9 +372,9 @@ jdbc.default.password=liferay_db_user22`}</code></pre>
 
                             <p>This is a developer VM; we don&#8217;t need it.</p>
 
-                            <pre><code class="language-bash">{`sudo apt-get remove --purge libreoffice*
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo apt-get remove --purge libreoffice*
 sudo apt-get clean
-sudo apt-get autoremove`}</code></pre>
+sudo apt-get autoremove`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">SNAPSHOT: LIBREOFFICE* REMOVED</span></p>
 
@@ -395,20 +382,20 @@ sudo apt-get autoremove`}</code></pre>
 
                             <p>In each Liferay home directory, navigate into the tomcat/bin directory and edit the setenv.sh file. You want to change</p>
 
-                            <pre>Xmx2048m -XX:MaxPermSize=1024m</pre>
+                            <code>Xmx2048m -XX:MaxPermSize=1024m</code>
 
                             <p>It should look something like this after you change it&#8230;</p>
 
                             <p><strong>setenv.sh</strong></p>
 
-                            <pre><code class="language-properties">{`CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=true  -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2048m -XX:MaxPermSize=1024m"`}</code></pre>
+                            <deckgo-highlight-code language="properties"><code slot="code">{`CATALINA_OPTS="$CATALINA_OPTS -Dfile.encoding=UTF8 -Djava.net.preferIPv4Stack=true  -Dorg.apache.catalina.loader.WebappClassLoader.ENABLE_CLEAR_REFERENCES=false -Duser.timezone=GMT -Xmx2048m -XX:MaxPermSize=1024m"`}</code></deckgo-highlight-code>
 
                             <p><span class="badge badge-secondary">BUMP TOMCAT MEM</span></p>
 
                             <h1>Start Liferay CE and complete configuration</h1>
 
-                            <pre><code class="language-bash">{`/opt/liferay-ce/tomcat-8.0.32/bin/startup.sh
-tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`/opt/liferay-ce/tomcat-8.0.32/bin/startup.sh
+tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></deckgo-highlight-code>
 
                             <p>The application may take some time to be fully started; that&#8217;s why we follow the log file for details.</p>
 
@@ -424,8 +411,8 @@ tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></pre>
 
                             <p>Now, we should shut down this portal and do the same for the liferay-dxp instance.</p>
 
-                            <pre><code class="language-bash">{`/opt/liferay-ce/tomcat-8.0.32/bin/shutdown.sh
-tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`/opt/liferay-ce/tomcat-8.0.32/bin/shutdown.sh
+tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></deckgo-highlight-code>
 
                             <p>Again, now, you must start the liferay instance. Answer YES to the Terms agreement in the web browser and enter a new password. For the new poassword, I just entered &#8220;test&#8221; again.</p>
 
@@ -460,8 +447,8 @@ tail -f /opt/liferay-ce/tomcat-8.0.32/logs/catalina.out`}</code></pre>
 
                             <p>Who has time for games?</p>
 
-                            <pre><code class="language-bash">{`sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
-sudo apt remove account-plugin-facebook account-plugin-flickr`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo apt remove aisleriot gnome-mahjongg gnome-mines gnome-sudoku
+sudo apt remove account-plugin-facebook account-plugin-flickr`}</code></deckgo-highlight-code>
 
                             <p>Also while we&#8217;re at it, go to Ubuntu Software &gt; Installed and remove:</p>
 
@@ -493,22 +480,22 @@ sudo apt remove account-plugin-facebook account-plugin-flickr`}</code></pre>
 
                             <p>Modify the gradle.properties file. Uncomment and change the liferay.workspace.home.dir as shown below. This is what the gradle deploy tasks will use when executing deploy.</p>
 
-                            <pre><code class="language-bash">{`liferay.workspace.home.dir=/opt/liferay-ce`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`liferay.workspace.home.dir=/opt/liferay-ce`}</code></deckgo-highlight-code>
 
                             <p>Modify the bundles &gt; config &gt; local &gt; portal-ext.properties so that it points to your local database as so&#8230;</p>
 
-                            <pre><code class="language-properties">{`#
+                            <deckgo-highlight-code language="properties"><code slot="code">{`#
 # MySQL
 #
 
 jdbc.default.driverClassName=com.mysql.jdbc.Driver
 jdbc.default.url=jdbc:mysql://localhost/liferayce?useUnicode=true&characterEncoding=UTF-8&useFastDateParsing=false
 jdbc.default.username=liferay_db_user
-jdbc.default.password=liferay_db_user22`}</code></pre>
+jdbc.default.password=liferay_db_user22`}</code></deckgo-highlight-code>
 
                             <p>Also, edit gradle.properties and uncomment the following line so that the local config is what is used:</p>
 
-                            <pre><code class="language-properties">{`liferay.workspace.environment=local`}</code></pre>
+                            <deckgo-highlight-code language="properties"><code slot="code">{`liferay.workspace.environment=local`}</code></deckgo-highlight-code>
 
                             <p>Later, you can change that line for another configuration.</p>
 
@@ -609,7 +596,7 @@ jdbc.default.password=liferay_db_user22`}</code></pre>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

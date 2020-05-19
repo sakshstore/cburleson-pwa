@@ -1,29 +1,22 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-memories-of-momma-3',
 })
 export class PageMemoriesOfMomma3 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageMemoriesOfMomma3.componentWillLoad');
+            console.log('>> PageMemoriesOfMomma3.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -111,8 +104,6 @@ export class PageMemoriesOfMomma3 {
                                     </ion-list>
                                 </ion-card-content>
                             </ion-card>
-
-                            <gls-adsense-ad ad-format="rectangle"/>
 
                         </ion-col>
                     </ion-row>

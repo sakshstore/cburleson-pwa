@@ -14,11 +14,10 @@ export class App404PageNotFound {
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> App404PageNotFound.componentWillLoad');
+            console.log('>> App404PageNotFound.componentWillLoad');
         }
 
         this.pathname = window.location.pathname;
-
         document.title = this.title + ' : ' + this.pathname;
     }
 

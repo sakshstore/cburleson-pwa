@@ -33,7 +33,6 @@ export class AppPhotoCard {
     render() {
 
         var smallImagePath = this.imagePath + this.item.id + '-sm.jpg';
-        //var hiResImagePath = this.imagePath + this.item.id + '.jpg';
 
         return (
             <ion-card>
@@ -45,8 +44,6 @@ export class AppPhotoCard {
                 <ion-card-content>
                     <div innerHTML={this.item.content}></div>
                     {this.createHiResLink(this.item)}
-                    {/*<p><a href={hiResImagePath} class="button">View hi-res image...</a></p>*/}
-                    {/* <p>ID: {this.item.id}</p> */}
                 </ion-card-content>
             </ion-card>
         );

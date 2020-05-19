@@ -1,38 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-
-import 'prismjs/components/prism-turtle.min.js';
-// import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
   tag: 'page-rdf-syntax-examples',
 })
 export class PageRdfSyntaxExamples {
 
-  title = 'Blog';
-
-  // header for this individual item by id...
   header: any;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageRdfSyntaxExamples.componentWillLoad');
+      console.log('>> PageRdfSyntaxExamples.componentWillLoad');
     }
-    // this.data = await BlogData.load();
-    // Get the id from the URL path (slug)
-    let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+
+    let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
 
     // set document title for browser / tab / bookmark
@@ -40,10 +22,6 @@ export class PageRdfSyntaxExamples {
     if (this.header.teaser) {
       document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
     }
-  }
-
-  componentDidLoad() {
-    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   render() {
@@ -71,7 +49,7 @@ export class PageRdfSyntaxExamples {
 
               <p>An XML-based syntax for RDF graphs that was the first standard format for serializing RDF.</p>
 
-              <pre><code class="language-xml">{`<?xml version="1.0" encoding="utf-8"?>
+              <deckgo-highlight-code language="xml"><code slot="code">{`<?xml version="1.0" encoding="utf-8"?>
 <rdf:RDF
   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
   xmlns:gr="http://purl.org/goodrelations/v1#">
@@ -89,7 +67,7 @@ export class PageRdfSyntaxExamples {
       </gr:OpeningHoursSpecification>
     </gr:hasOpeningHoursSpecification>
   </gr:Location>
-</rdf:RDF>`}</code></pre>
+</rdf:RDF>`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TR/rdf-syntax-grammar/" rel="nofollow">RDF 1.1 XML Syntax</a></p>
 
@@ -97,7 +75,7 @@ export class PageRdfSyntaxExamples {
 
               <p>A compact, human-friendly format.</p>
 
-              <pre><code class="language-turtle">{`@prefix gr: <http://purl.org/goodrelations/v1#> .
+              <deckgo-highlight-code language="turtle"><code slot="code">{`@prefix gr: <http://purl.org/goodrelations/v1#> .
  
  <http://www.acme.com/#store>
    a gr:Location ;
@@ -107,7 +85,7 @@ export class PageRdfSyntaxExamples {
      gr:opens "08:00:00" ;
      gr:closes "20:00:00" ;
      gr:hasOpeningHoursDayOfWeek gr:Wednesday, gr:Monday, gr:Tuesday, gr:Thursday, gr:Friday
-   ] .`}</code></pre>
+   ] .`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TeamSubmission/turtle/" rel="nofollow">Turtle – Terse RDF Triple Language</a></p>
 
@@ -115,7 +93,7 @@ export class PageRdfSyntaxExamples {
 
               <p>A very simple, easy-to-parse, line-based format that is not as compact as Turtle.</p>
 
-              <pre><code class="language-turtle">{`<http://www.acme.com/#store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#Location> .
+              <deckgo-highlight-code language="turtle"><code slot="code">{`<http://www.acme.com/#store> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#Location> .
 <http://www.acme.com/#store> <http://purl.org/goodrelations/v1#hasOpeningHoursSpecification> _:b0 .
 <http://www.acme.com/#store> <http://purl.org/goodrelations/v1#name> "Hepp's Happy Burger Restaurant" .
 _:b0 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://purl.org/goodrelations/v1#OpeningHoursSpecification> .
@@ -125,7 +103,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
 _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Thursday> .
 _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Friday> .
 _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Tuesday> .
-_:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Monday> .`}</code></pre>
+_:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.org/goodrelations/v1#Monday> .`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TR/n-triples/" rel="nofollow">RDF 1.1 N-Triples</a></p>
 
@@ -133,7 +111,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
 
               <p>A non-standard serialization that is very similar to Turtle, but has some additional features, such as the ability to define inference rules.</p>
 
-              <pre><code class="language-turtle">{`@prefix gr: <http://purl.org/goodrelations/v1#> .
+              <deckgo-highlight-code language="turtle"><code slot="code">{`@prefix gr: <http://purl.org/goodrelations/v1#> .
  
  <http://www.acme.com/#store> a gr:Location;
      gr:hasOpeningHoursSpecification [ a gr:OpeningHoursSpecification;
@@ -144,7 +122,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
                  gr:Thursday,
                  gr:Tuesday,
                  gr:Wednesday ];
-     gr:name "Hepp's Happy Burger Restaurant" .`}</code></pre>
+     gr:name "Hepp's Happy Burger Restaurant" .`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TeamSubmission/n3/" rel="nofollow">Notation3 (N3): A readable RDF syntax</a></p>
 
@@ -152,7 +130,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
 
               <p>a JSON-based serialization (for Linked Data).</p>
 
-              <pre><code class="language-json">{`{
+              <deckgo-highlight-code language="json"><code slot="code">{`{
   "@context": {
     "gr": "http://purl.org/goodrelations/v1#"
   },
@@ -181,7 +159,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
     "gr:opens": "08:00:00"
   },
   "gr:name": "Hepp's Happy Burger Restaurant"
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TR/json-ld/" rel="nofollow">JSON-LD 1.0</a></p>
 
@@ -189,7 +167,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
 
               <p>Not really an RDF syntax, but rather – a compatible format. “RDFa is an extension to HTML5 that helps you markup things like People, Places, Events, Recipes and Reviews. Search Engines and Web Services use this markup to generate better search listings and give you better visibility on the Web, so that people can find your website more easily.” – <a href="https://rdfa.info/" rel="nofollow">rdfa.info</a></p>
 
-              <pre><code class="language-xml">{`<div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+              <deckgo-highlight-code language="html"><code slot="code">{`<div xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns="http://www.w3.org/1999/xhtml"
      xmlns:gr="http://purl.org/goodrelations/v1#">
@@ -212,7 +190,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
       </div>
       <div property="gr:name" content="Hepp's Happy Burger Restaurant"/>
    </div>
-</div>`}</code></pre>
+</div>`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://rdfa.info/" rel="nofollow">RDFa</a></p>
 
@@ -220,7 +198,7 @@ _:b0 <http://purl.org/goodrelations/v1#hasOpeningHoursDayOfWeek> <http://purl.or
 
               <p>Also not really an RDF syntax, but a compatible format. This mechanism allows machine-readable data to be embedded in HTML documents in an easy-to-write manner, with an unambiguous parsing model.</p>
 
-              <pre><code class="language-xml">{`<div itemscope itemtype="http://purl.org/goodrelations/v1#Location" itemid="http://www.acme.com/#store">
+              <deckgo-highlight-code language="html"><code slot="code">{`<div itemscope itemtype="http://purl.org/goodrelations/v1#Location" itemid="http://www.acme.com/#store">
   <span itemprop="name">Hepp's Happy Burger Restaurant</span>
   <div itemprop="hasOpeningHoursSpecification" itemscope
        itemtype="http://purl.org/goodrelations/v1#OpeningHoursSpecification">
@@ -238,7 +216,7 @@ Opening hours: Mo-Fri,
      <meta itemprop="opens" content="08:00:00">8:00 a.m. -
      <meta itemprop="closes" content="20:00:00">8:00 p.m.
   </div>
-</div>`}</code></pre>
+</div>`}</code></deckgo-highlight-code>
 
               <p>See also:&nbsp;<a href="https://www.w3.org/TR/microdata/" rel="nofollow">HTML Microdata</a></p>
 
@@ -254,9 +232,6 @@ Opening hours: Mo-Fri,
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-              <gls-adsense-ad />
-
             </ion-col>
           </ion-row>
         </ion-grid>

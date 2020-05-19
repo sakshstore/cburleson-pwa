@@ -1,24 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-how-to-optimize-a-zsphere-sketch-in-zbrush',
 })
 export class PageZbrushOptimizeZsphereSketch {
 
-    title = 'Blog';
-
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageZbrushOptimizeZsphereSketch.componentWillLoad');
+            console.log('>> PageZbrushOptimizeZsphereSketch.componentWillLoad');
         }
 
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
         document.title = this.header.title + ' | ' + SITENAME;
@@ -66,7 +62,7 @@ export class PageZbrushOptimizeZsphereSketch {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

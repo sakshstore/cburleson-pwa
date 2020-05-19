@@ -1,23 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
   tag: 'page-zbrush-keyboard-shortcuts',
 })
 export class PageZbrushKeyboardShortcuts {
 
-  title = 'ZBrush Keyboard Shortcuts';
-
   header: any;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageZbrushKeyboardShortcuts.componentWillLoad');
+      console.log('>> PageZbrushKeyboardShortcuts.componentWillLoad');
     }
 
-    let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+    let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
 
     document.title = this.header.title + ' | ' + SITENAME;
@@ -42,8 +39,8 @@ export class PageZbrushKeyboardShortcuts {
         <ion-grid>
           <ion-row>
             <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-              <h1>{this.title}</h1>
-
+              
+              <h1>{this.header.title}</h1>
               <app-entry-meta header={this.header} />
 
               <p>My notes on ZBrush keyboard shortcuts (hotkeys) and control. This page is derived largely from the ZBrush Online Documentation, © 2020 by Pixologic, Inc. I have reproduced much of the <a href="http://docs.pixologic.com/user-guide/keyboard-shortcuts/" rel="nofollow">Keyboard Shortcut</a>&nbsp;documentation here for the purpose of personal study and with the hope of adding additional notes that may be helpful to others who, like me, are new to the software.</p>
@@ -1335,7 +1332,7 @@ indicated in the top left of the brush icon in to brush palette. Following are s
 
             </ion-col>
             <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-              <gls-adsense-ad />
+              
             </ion-col>
           </ion-row>
         </ion-grid>

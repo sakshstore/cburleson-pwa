@@ -86,7 +86,6 @@ export class PageBlog {
         // Set the excluded topics in local storage
         set(EXCLUDE_TOPICS, data['data']);
         this.updateContentList();
-
     });
 
     return await modal.present();

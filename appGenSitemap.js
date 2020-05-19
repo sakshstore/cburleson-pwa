@@ -11,29 +11,13 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     let siteData = JSON.parse(data);
 
     let siteMapText = '';
-    let count = 19;
+    let count = 4;
 
     siteMapText += 'https://codyburleson.com\r\n';
-
     siteMapText += 'https://codyburleson.com/blog\r\n';
     siteMapText += 'https://codyburleson.com/books\r\n';
     siteMapText += 'https://codyburleson.com/about\r\n';
     siteMapText += 'https://codyburleson.com/contact\r\n';
-
-    siteMapText += 'https://codyburleson.com/photos\r\n';
-    siteMapText += 'https://codyburleson.com/photos/curt-bruce\r\n';
-    siteMapText += 'https://codyburleson.com/photos/ed-kalwara\r\n';
-    siteMapText += 'https://codyburleson.com/photos/gary-culp\r\n';
-    siteMapText += 'https://codyburleson.com/photos/jack-depope\r\n';
-    siteMapText += 'https://codyburleson.com/photos/james-haight\r\n';
-    siteMapText += 'https://codyburleson.com/photos/jim-shipp\r\n';
-    siteMapText += 'https://codyburleson.com/photos/ken-hicks\r\n';
-    siteMapText += 'https://codyburleson.com/photos/kevin-brooks\r\n';
-    siteMapText += 'https://codyburleson.com/photos/ray-kelley\r\n';
-    siteMapText += 'https://codyburleson.com/photos/stanley-hall\r\n';
-    siteMapText += 'https://codyburleson.com/photos/cavazos-center\r\n';
-    siteMapText += 'https://codyburleson.com/photos/tom-harrison\r\n';
-    siteMapText += 'https://codyburleson.com/photos/dennis-mannion\r\n';
 
     siteData.content.forEach((item) => {
         if(typeof item.parent == 'undefined') {

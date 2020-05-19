@@ -1,41 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-java-system-properties',
 })
 export class PageJavaSystemProperties {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageJavaSystemProperties.componentWillLoad');
+            console.log('>> PageJavaSystemProperties.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -57,10 +42,11 @@ export class PageJavaSystemProperties {
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
-
                             <p>Following are a list of the standard system properties which can be accessed in Java code by using the System.getProperty methods. For example&#8230;</p>
 
-                            <pre><code class="language-java">{`System.getProperty("path.separator");`}</code></pre>
+<deckgo-highlight-code language="java">
+<code slot="code">{`System.getProperty("path.separator");`}</code>
+</deckgo-highlight-code>
 
                             <table class="table table-bordered table-striped" role="grid">
                                 <thead>
@@ -186,7 +172,6 @@ export class PageJavaSystemProperties {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

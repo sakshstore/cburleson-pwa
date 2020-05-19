@@ -1,43 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
 	tag: 'page-sparql-examples-federation',
 })
 export class PageSparqlExamplesFederation {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesFederation.componentWillLoad');
+			console.log('>> PageSparqlExamplesFederation.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
-		// set document title for browser / tab / bookmark
 		document.title = this.header.title + ' | ' + SITENAME;
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -62,7 +45,7 @@ export class PageSparqlExamplesFederation {
 							<h2>Federate data from 2 endpoints</h2>
 							<p>Find the birth dates of all of the actors in Star Trek: The Motion Picture.<br />
 								Try this on ARQ.</p>
-							<pre><code class="language-sparql">{`PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX movie: <http://data.linkedmdb.org/resource/movie/>
 PREFIX dbpedia: <http://dbpedia.org/ontology/>
 PREFIX foaf: <http://xmlns.com/foaf/0.1/>
 SELECT ?actor_name ?birth_date
@@ -76,13 +59,13 @@ WHERE {
     ?actor2 a dbpedia:Actor ; foaf:name ?actor_name_en ; dbpedia:birthDate ?birth_date .
     FILTER(STR(?actor_name_en) = ?actor_name)
   }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 							<p>The <code>SERVICE</code> keyword is used to send part of a query against a remote SPARQL endpoint.</p>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

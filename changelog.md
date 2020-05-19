@@ -4,6 +4,23 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.0 - May 19, 2020]
+
+- Remove all legacy references to `<gls-adsense-ad />`
+- Replace all legacy uses of Prism.js for the new `@deckdeckgo/highlight-code` component
+- Fix for [issue #83](https://github.com/codyburleson/cburleson-pwa/issues/83) - URLs with trailing slashes do not work
+- Implement `getPostsByMenu(menu: string)` in `services/blog-data.ts`
+    - Refactor: Remove `vietnam-war-reference-resources` from 'blog' menu and include in `cage-ref-resources` menu of `site-data.json` file.
+    - Modify page, [/cage](https://codyburleson.com/cage) to fetch ref resources from `cage-ref-resources` menu using Blog Service
+    - Modify page, [/cage](https://codyburleson.com/cage) to fetch `recordItems` from `cage-documents` menu using Blog Service
+    - Modify page, [/books](https://codyburleson.com/books) to fetch `writingItems` from `books-i-am-writing` menu using Blog Service
+- Added `getPageHeaderById()` method to Blog Service; it's pretty much a copy of `getPostHeaderById()` (for now) (a step in the pages/posts consolidation)
+- Moved all pages except blog, book, contact, and about out of /pages directory and into dated folders (a step in the pages/posts consolidation)
+- Created `app-hoto-grid` component (a step in the pages/posts consolidation)
+- Create `app-list-menu` component and use it on pages [/blog](https://codyburleson.com/blog) and [/cage](https://codyburleson.com/cage)
+- Fix [issue #35](https://github.com/codyburleson/cburleson-pwa/issues/35) Get prismjs showing line numbers on pages that refer to them #35
+- Conformed some (but not all) titles to style guideline for page titles (AP style)
+
 ## [1.7.10 - May 16, 2020]
 
 - Former test (`1.7.9.`) failed on iOS; changed method of importing `@deckdeckgo/highlight-code` to using script tags in index.html (from unpkg CDN) instead of component import using the npm package and testing again.

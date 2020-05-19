@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-csharp.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-unity-recipes-look-toward-direction-of-movement'
 })
 export class PageUnityRecipesLookTowardDirectionOfMovement {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageUnityRecipesLookTowardDirectionOfMovement.componentWillLoad');
+            console.log('>> PageUnityRecipesLookTowardDirectionOfMovement.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -57,38 +44,41 @@ export class PageUnityRecipesLookTowardDirectionOfMovement {
                             <app-entry-meta header={this.header} />
                             <p>The following C# script for Unity can be used to make an object look (turn smoothly) toward the direction it is being moved.</p>
 
-                            <pre><code class="language-csharp line-numbers">{`using System.Collections;
+<deckgo-highlight-code language="csharp" line-numbers="true">
+<code slot="code">
+{`using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+
 public class MyController : MonoBehaviour
 {
-private void Update()
-{
-smoothLookTowardDirectionOfMovement();
-}
-void smoothLookTowardDirectionOfMovement()
-{
-float moveHorizontal = moveHorizontal = Input.GetAxis("Horizontal");
-float moveVertical = moveVertical = Input.GetAxis("Vertical");
-Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
-if (moveHorizontal != 0 || moveVertical != 0)
-{
-    transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
-}
-}
-}`}</code></pre>
+     private void Update()
+     {
+          smoothLookTowardDirectionOfMovement();
+     }
 
-                            <p>In line 23, <code>Quaternion.Slerp</code> takes three arguments: two quaternions and a float. It interpolates the rotation between the two quaternions with the speed of the given float value (0.0 is no movement while 1.0 is instant movement). The code interpolates the rotation between the current rotation (<code>transform.rotation</code>) and the movement rotation(<code>Quaternion.LookRotation</code>) with a speed of 0.15F. This gives the object a smooth turn instead of an instant turn. The <code>if</code> statement that wraps the code at line 21 keeps the object from instantly flipping or reverting direction when no inputs are being applied.</p>
+     void smoothLookTowardDirectionOfMovement()
+     {
+          float moveHorizontal = moveHorizontal = Input.GetAxis("Horizontal");
+          float moveVertical = moveVertical = Input.GetAxis("Vertical");
+          Vector3 movement = new Vector3(moveHorizontal, 0.0f, moveVertical);
+          if (moveHorizontal != 0 || moveVertical != 0)
+          {
+              transform.rotation = Quaternion.Slerp(transform.rotation, Quaternion.LookRotation(movement), 0.15F);
+          }
+     }
+}`}
+</code>
+</deckgo-highlight-code>
 
-                            <p>For instant (non-smooth) rotation, line 23 can be replaced with the following:</p>
+                            <p>In line 19, <code>Quaternion.Slerp</code> takes three arguments: two quaternions and a float. It interpolates the rotation between the two quaternions with the speed of the given float value (0.0 is no movement while 1.0 is instant movement). The code interpolates the rotation between the current rotation (<code>transform.rotation</code>) and the movement rotation(<code>Quaternion.LookRotation</code>) with a speed of 0.15F. This gives the object a smooth turn instead of an instant turn. The <code>if</code> statement that wraps the code at line 17 keeps the object from instantly flipping or reverting direction when no inputs are being applied.</p>
+
+                            <p>For instant (non-smooth) rotation, line 19 can be replaced with the following:</p>
 
                             <p><code>transform.rotation = Quaternion.LookRotation(movement);</code></p>
 
-
-
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

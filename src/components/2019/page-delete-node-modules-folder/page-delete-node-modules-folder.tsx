@@ -1,41 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-delete-node-modules-folder-on-windows',
 })
 export class PageDeleteNodeModulesFolder {
 
-    title = 'How to delete the node_modules folder on Windows';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageDeleteNodeModulesFolder.componentWillLoad');
+            console.log('>> PageDeleteNodeModulesFolder.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -65,17 +50,23 @@ export class PageDeleteNodeModulesFolder {
 
                             <p>The solution I use is to install <a href="https://github.com/isaacs/rimraf" rel="nofollow">RimRaf</a> globally with npm and then use it to delete the folder. RimRaf is an implementation of the UNIX/LINUX command <code>rm -rf</code> for Node, which removes directories and their contents recursively. First, enter this command to install RimRaf from npm:</p>
 
-                            <pre><code class="language-bash">{`npm install rimraf -g`}</code></pre>
-
+<deckgo-highlight-code language="bash">
+<code slot="code">
+{`npm install rimraf -g`}
+</code>
+</deckgo-highlight-code>
                             <p>Once it is installed, you can use the following command from within the project directory that contains the node_modules folder...</p>
 
-                            <pre><code class="language-bash">{`rimraf node_modules`}</code></pre>
+<deckgo-highlight-code language="bash">
+<code slot="code">
+{`rimraf node_modules`}
+</code>
+</deckgo-highlight-code>
 
                             <p>That's it! It works and it's easy to remember and execute.</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

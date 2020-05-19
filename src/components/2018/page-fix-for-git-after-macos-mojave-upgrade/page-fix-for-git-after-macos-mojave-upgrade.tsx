@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-fix-for-git-after-macos-mojave-upgrade',
 })
 export class PageFixForGitAfterMacosMojaveUpgrade {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageFixForGitAfterMacosMojaveUpgrade.componentWillLoad');
+            console.log('>> PageFixForGitAfterMacosMojaveUpgrade.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -53,22 +40,24 @@ export class PageFixForGitAfterMacosMojaveUpgrade {
                 <ion-grid>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
                             <p>Recently, I upgraded my macOS to Mojave and ran into the following error after running the <code>git init</code> command.</p>
 
-                            <pre><code class="language-bash">{`xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), 
-    missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`}</code></pre>
+<deckgo-highlight-code language="bash"><code slot="code">{`xcrun: error: invalid active developer path (/Library/Developer/CommandLineTools), 
+    missing xcrun at: /Library/Developer/CommandLineTools/usr/bin/xcrun`}</code></deckgo-highlight-code>
 
                             <p>I was able to fix this by running the following command in a terminal…</p>
-                            <p><code>xcode-select --install</code></p>
-                            <p>Accept the license and install xcode-select when the associated install prompt window appears. You should then be back in business (at least, I was).</p>
 
+
+<deckgo-highlight-code language="bash"><code slot="code">{`xcode-select --install`}</code></deckgo-highlight-code>
+
+                            <p>Accept the license and install xcode-select when the associated install prompt window appears. You should then be back in business (at least, I was).</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

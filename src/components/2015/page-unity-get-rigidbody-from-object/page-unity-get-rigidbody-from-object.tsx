@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-csharp.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-unity-get-rigidbody-from-object',
 })
 export class PageUnityGetRigidbodyFromObject {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageUnityGetRigidbodyFromObject.componentWillLoad');
+            console.log('>> PageUnityGetRigidbodyFromObject.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -58,7 +45,7 @@ export class PageUnityGetRigidbodyFromObject {
 
                             <p>Here’s how to get the rigidbody from an object the script is applied to in Unity. The example shown is in C#.</p>
 
-                            <pre><code class="language-csharp">{`using UnityEngine;
+                            <deckgo-highlight-code language="csharp"><code slot="code">{`using UnityEngine;
 using System.Collections;
 public class PlayerController : MonoBehaviour {
   private Rigidbody rb;
@@ -80,13 +67,13 @@ public class PlayerController : MonoBehaviour {
     Vector3 movement = new Vector3 (moveHorizontal,0.0f,moveVertical);
     rb.AddForce (movement);
   }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

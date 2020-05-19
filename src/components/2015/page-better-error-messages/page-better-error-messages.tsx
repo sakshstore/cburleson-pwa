@@ -1,41 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-// import 'prismjs/components/prism-javascript.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-better-error-messages-from-gulp-using-gulp-util',
 })
 export class PagePageBetterErrorMessages {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PagePageBetterErrorMessages.componentWillLoad');
+            console.log('>> PagePageBetterErrorMessages.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -63,12 +50,12 @@ export class PagePageBetterErrorMessages {
 
                             <h3>Example Problem – Useless Error Message</h3>
 
-                            <pre><code class="language-">{`events.js:85
+                            <deckgo-highlight-code><code slot="code">{`events.js:85
       throw er; // Unhandled 'error' event
             ^
 Error
     at new Parser (C:\git\frontend\node_modules\gulp-less\node_modules\less\lib\less\parser.js:333:27)
-    at Object.less.render (C:\git\frontend\node_modules\gulp-less\node_modules\less\lib\less\index.js:18:22)`}</code></pre>
+    at Object.less.render (C:\git\frontend\node_modules\gulp-less\node_modules\less\lib\less\index.js:18:22)`}</code></deckgo-highlight-code>
 
 
                             <p>Pretty useless. The only thing one can discern from the error is that it has something to do with the less parser. But what? Who the #$@% knows.</p>
@@ -78,7 +65,7 @@ Error
                             <h3>Example Solution: Improved Error Message</h3>
 
 
-                            <pre><code class="language-">{`[15:52:20] { [Error: Unrecognised input in file C:\git\frontend\dev\less\theme.less line no. 2449]
+                            <deckgo-highlight-code><code slot="code">{`[15:52:20] { [Error: Unrecognised input in file C:\git\frontend\dev\less\theme.less line no. 2449]
   type: 'Parse',
   message: 'Unrecognised input in file C:\\git\\frontend\\dev\\less\\theme.less line no. 2449',
   filename: 'C:\\git\\frontend\\dev\\less\\theme.less',
@@ -93,7 +80,7 @@ Error
      ' .btn-main-green:hover {background-color: #2B872B; color:white;}' ],
   lineNumber: 2449,
   fileName: 'C:\\git\\frontend\\dev\\less\\theme.less',
-  ...etc...`}</code></pre>
+  ...etc...`}</code></deckgo-highlight-code>
 
                             <p>This error message is much improved. It tells us exactly which less file is failing the parser. It also tells us the precise failing line number, and it even gives us an extract of the CSS around that line number. Without even opening the file, we can see the erroneous colon after the CSS class, <code>.btn-main-green: &#123;</code>.</p>
 
@@ -122,7 +109,7 @@ Error
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

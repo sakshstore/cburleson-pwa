@@ -1,39 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-import Prism from "prismjs"
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-glossary-of-ldap-acronyms-and-terms',
 })
 export class PageGlossaryOfLdapAcronymsAndTerms {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageTemplatePage.componentWillLoad');
+            console.log('>> PageTemplatePage.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -52,6 +40,7 @@ export class PageGlossaryOfLdapAcronymsAndTerms {
                 <ion-grid>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
+                            
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
@@ -79,7 +68,9 @@ export class PageGlossaryOfLdapAcronymsAndTerms {
                                 LDAP Data Interchange Format<br />
                                 Example LDIF file with organizational and person entries:</p>
 
-                            <pre><code class="language-">{`dn: o=burlesontech.com
+<deckgo-highlight-code>
+<code slot="code">
+{`dn: o=burlesontech.com
 objectclass: top
 objectclass: organization
 o: burlesontech.com
@@ -99,7 +90,9 @@ cn: Cody Burleson
 sn: Burleson
 givenname: Cody
 uid: cburleson
-ou: marketing`}</code></pre>
+ou: marketing`}
+</code>
+</deckgo-highlight-code>
 
                             <p><strong>o</strong><br />Organization</p>
                             <p><strong>OID</strong><br />Object Identifier used to uniquely name each entity in the LDAP schema. The syntax is a string of numbers separated by periods. For example:</p>
@@ -133,9 +126,6 @@ ou: marketing`}</code></pre>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -8,26 +8,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageBookReviewTheGoldfinch {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
-        if (isLocal()) {
-            console.log('> PageBookReviewTheGoldfinch.componentWillLoad');
-        }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
 
+        if (isLocal()) {
+            console.log('>> PageBookReviewTheGoldfinch.componentWillLoad');
+        }
+
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
+
     }
 
     render() {
@@ -57,9 +53,8 @@ export class PageBookReviewTheGoldfinch {
 
                             <p>Now, all that being said, I just know this is the kind of book that others will love as a lifetime favorite. I purposely took the reading as an exercise in the healthy practice of immersion (something better and more attentive to do other than social media). But I kept asking myself, &quot;Am I just spoiled by instant gratification now? Do I lack patience?&quot; Maybe. Or maybe 25% of this book could have been removed with nothing essential lost.</p>
 
-                            
-
                             <p>Shop now: <a href="https://www.amazon.com/gp/product/0316055441/ref=as_li_tl?ie=UTF8&camp=1789&creative=9325&creativeASIN=0316055441&linkCode=as2&tag=burtecgrollc-20&linkId=44c0d508a6b8b1e675867b973a449108">The Goldfinch | Amazon</a></p>
+                            
                             <p><em>As an Amazon Associate I earn from qualifying purchases.</em></p>
 
                         </ion-col>

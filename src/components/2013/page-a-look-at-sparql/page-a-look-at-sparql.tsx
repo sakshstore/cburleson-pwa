@@ -1,41 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-a-look-at-sparql-sql-for-semantic-web',
 })
 export class PageALookAtSparql {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageALookAtSparql.componentWillLoad');
+            console.log('>> PageALookAtSparql.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -103,9 +90,9 @@ export class PageALookAtSparql {
 
                             <p><a href="http://dbpedia.org/About" rel="nofollow"><img src="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2018/07/sparql-sql-for-sem-web-7.png" alt="" />DBpedia</a> is a crowd-sourced community effort to extract structured information from Wikipedia. Because it is exposed as a SPARQL endpoint, we can use it to ask interesting questions about the information in Wikipedia. So, let’s get our feet wet, shall we? Point your web browser here: <a href="http://dbpedia.org/snorql/" rel="nofollow">http://dbpedia.org/snorql/</a>, and submit the following query:</p>
 
-                            <pre><code class="language-sparql">{`SELECT ?p ?o WHERE {
+                            <deckgo-highlight-code><code slot="code">{`SELECT ?p ?o WHERE {
     <http://dbpedia.org/resource/IBM> ?p ?o .
-} LIMIT 200`}</code></pre>
+} LIMIT 200`}</code></deckgo-highlight-code>
 
                             <p><a href="http://dbpedia.org/snorql/?query=SELECT+%3Fp+%3Fo+WHERE+{%0D%0A+++++%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FIBM%3E+%3Fp+%3Fo+.%0D%0A}+LIMIT+200%0D%0A" rel="nofollow">Enter this query for me</a></p>
 
@@ -115,9 +102,9 @@ export class PageALookAtSparql {
 
                             <p>An interesting property, to me is dbpedia:ontology/numberOfEmployees. At the time of this writing, the value was 434,246 employees. That seems like a big number, but I’m not entirely sure. Before I say, “wow,” I want to compare with some other companies that I think of as being ‘big’. I can easily just replace the subject in the query with another company, such as the shipping, freight, logistics and supply chain management company, UPS.</p>
 
-                            <pre><code class="language-sparql">{`SELECT ?p ?o WHERE {
+                            <deckgo-highlight-code><code slot="code">{`SELECT ?p ?o WHERE {
     <http://dbpedia.org/resource/United_Parcel_Service> ?p ?o .
-} LIMIT 100`}</code></pre>
+} LIMIT 100`}</code></deckgo-highlight-code>
 
                             <p><a href="http://dbpedia.org/snorql/?query=SELECT+%3Fp+%3Fo+WHERE+{%0D%0A+++++%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FUnited_Parcel_Service%3E+%3Fp+%3Fo+.%0D%0A}+LIMIT+100" rel="nofollow">Enter this query for me</a>.</p>
 
@@ -125,19 +112,19 @@ export class PageALookAtSparql {
 
                             <p>Of course, I can look at the results and see that UPS has fewer employees than IBM – 398,300 total at the time of this blog post. I could also use a slightly different kind of query to ask the question, “Is IBM bigger than UPS in terms of the total number of employees?” For the next query, you must first switch the results format from ‘Browse’ to ‘as XML’ or ‘as XML + XSLT’.</p>
 
-                            <pre><code class="language-sparql">{`PREFIX ont: <http://dbpedia.org/ontology/>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX ont: <http://dbpedia.org/ontology/>
 
 ASK {
     <http://dbpedia.org/resource/IBM> ont:numberOfEmployees ?ibm .
     <http://dbpedia.org/resource/United_Parcel_Service&gt; ont:numberOfEmployees ?ups .
     FILTER(?ibm > ?ups) .
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p><a href="http://dbpedia.org/sparql?default-graph-uri=http%3A%2F%2Fdbpedia.org&amp;query=PREFIX+owl%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2002%2F07%2Fowl%23%3E%0D%0APREFIX+xsd%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2001%2FXMLSchema%23%3E%0D%0APREFIX+rdfs%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2000%2F01%2Frdf-schema%23%3E%0D%0APREFIX+rdf%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F1999%2F02%2F22-rdf-syntax-ns%23%3E%0D%0APREFIX+foaf%3A+%3Chttp%3A%2F%2Fxmlns.com%2Ffoaf%2F0.1%2F%3E%0D%0APREFIX+dc%3A+%3Chttp%3A%2F%2Fpurl.org%2Fdc%2Felements%2F1.1%2F%3E%0D%0APREFIX+%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2F%3E%0D%0APREFIX+dbpedia2%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fproperty%2F%3E%0D%0APREFIX+dbpedia%3A+%3Chttp%3A%2F%2Fdbpedia.org%2F%3E%0D%0APREFIX+skos%3A+%3Chttp%3A%2F%2Fwww.w3.org%2F2004%2F02%2Fskos%2Fcore%23%3E%0D%0APREFIX+ont%3A+%3Chttp%3A%2F%2Fdbpedia.org%2Fontology%2F%3E%0D%0A%0D%0AASK%0D%0A{%0D%0A++%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FIBM%3E+ont%3AnumberOfEmployees+%3Fibm+.%0D%0A++%3Chttp%3A%2F%2Fdbpedia.org%2Fresource%2FUnited_Parcel_Service%3E+ont%3AnumberOfEmployees+%3Fups+.%0D%0A++FILTER%28%3Fibm+%3E+%3Fups%29+.%0D%0A}%0D%0A" rel="nofollow">Enter this query for me</a>.</p>
 
                             <p>Here’s a more sophisticated query for all companies that have more than 398300 employees, filtered for English labels only, and ordered by number of employees descending.</p>
 
-                            <pre><code class="language-sparql">{`PREFIX ont: <http://dbpedia.org/ontology/>
+                            <deckgo-highlight-code><code slot="code">{`PREFIX ont: <http://dbpedia.org/ontology/>
 
 SELECT ?company_name ?num_employees
 WHERE {
@@ -145,7 +132,7 @@ WHERE {
     rdfs:label ?company_name ;
     ont:numberOfEmployees ?num_employees .
     FILTER (?num_employees > 398300 && lang(?company_name) = "en") .
-} ORDER BY DESC(?num_employees) LIMIT 250`}</code></pre>
+} ORDER BY DESC(?num_employees) LIMIT 250`}</code></deckgo-highlight-code>
 
 
 
@@ -166,9 +153,6 @@ WHERE {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

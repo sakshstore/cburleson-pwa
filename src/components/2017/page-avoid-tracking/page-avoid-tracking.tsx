@@ -1,45 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-
-// And any, but ONLY the languages you need to use with prism...
-
-// import 'prismjs/components/prism-javascript.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-avoid-tracking-ga-page-views-in-atlassian-confluence',
 })
 export class PageAvoidTracking {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageAvoidTracking.componentWillLoad');
+            console.log('>> PageAvoidTracking.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -69,7 +51,7 @@ export class PageAvoidTracking {
 
                             <p>Before modification, your Google Analytics tracking code should look something like this.</p>
 
-                            <pre><code class="language-html">{`<script>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -78,11 +60,11 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 ga('create', 'UA-XXXXXXXX-X', 'auto');
 ga('send', 'pageview');
  
-</script>`}</code></pre>
+</script>`}</code></deckgo-highlight-code>
 
                             <p>Now, to avoid tracking pages for an administrative user (or any particular user or set of users, for that matter), you can wrap the ga() function calls in an IF check. In the following code, we use the Confluence AJS object to determine whether or not the authenticated user is an administrative user. If that&#8217;s true, we do not reach the ga() functions and thus, the pageview is not tracked. In all other cases, however, the pageview will be tracked.</p>
 
-                            <pre><code class="language-html">{`<script>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<script>
 (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
@@ -92,7 +74,7 @@ if(! AJS.params.isConfluenceAdmin) {
     ga('create', 'UA-XXXXXXXX-X', 'auto');
     ga('send', 'pageview');
 }
-</script>`}</code></pre>
+</script>`}</code></deckgo-highlight-code>
 
                             <p>You could use console.log statements to test this in your local browser.</p>
 
@@ -101,7 +83,7 @@ if(! AJS.params.isConfluenceAdmin) {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

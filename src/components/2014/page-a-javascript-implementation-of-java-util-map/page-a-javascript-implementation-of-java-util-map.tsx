@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-import 'prismjs/components/prism-javascript.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-a-javascript-implementation-of-java-util-map',
 })
 export class PageAJavascriptImplementationOfJavaUtilMap {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageAJavascriptImplementationOfJavaUtilMap.componentWillLoad');
+            console.log('>> PageAJavascriptImplementationOfJavaUtilMap.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -64,16 +51,16 @@ export class PageAJavascriptImplementationOfJavaUtilMap {
 
                             <p>As you can see from the example below, using this map is just like using a map in Java.</p>
 
-                            <pre><code class="language-javascript">{`var myMap = new Map();
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var myMap = new Map();
 myMap.put('myKey1',"Hello World!");
 myMap.put('myKey2',{'prop1':'How','prop2':' are you?'});
  
 console.log( myMap.get('myKey1') );
-console.log( myMap.get('myKey2').prop1 + myMap.get('myKey2').prop2);`}</code></pre>
+console.log( myMap.get('myKey2').prop1 + myMap.get('myKey2').prop2);`}</code></deckgo-highlight-code>
 
                             <h2>JavaScript Map</h2>
 
-                            <pre><code class="language-javascript">{`/**
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`/**
 * An object that maps keys to values. A map cannot contain duplicate keys; each key can map to at most one value.
 * For those familiar with the Java programming language, this is similar to a HashMap; it implements most of the
 * methods defined by Java's java.util.Map interface.
@@ -169,11 +156,11 @@ function Map() {
             callback(item);
         }
     }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p><strong>Test Class</strong></p>
 
-                            <pre><code class="language-javascript">{`/**
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`/**
 * =============================
 * Map Test Cases
 * =============================
@@ -232,7 +219,7 @@ assert( myMap.size() == 1 , "size should be 1 after removing item under 'key1'."
  
 // Finally, test the clear()
 myMap.clear();
-assert( myMap.size() == 0 , "size should be 0 after clearing lookup table.");`}</code></pre>
+assert( myMap.size() == 0 , "size should be 0 after clearing lookup table.");`}</code></deckgo-highlight-code>
 
                             <h2>JavaScript Map API</h2>
 
@@ -273,11 +260,11 @@ assert( myMap.size() == 0 , "size should be 0 after clearing lookup table.");`}<
 
                             <p>Executes the given callback for each entry in this map until all entries have been processed. The given callback will be passed a map entry as parameter. So, for example…</p>
 
-                            <pre><code class="language-javascript">{`function myCallback(mapEntryItem) {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`function myCallback(mapEntryItem) {
      console.log('I will process this item: ' + mapEntryItem.text);
 }
  
-myMap.forEach(myCallback);`}</code></pre>
+myMap.forEach(myCallback);`}</code></deckgo-highlight-code>
 
                             <p>Parameters:</p>
 
@@ -362,7 +349,7 @@ myMap.forEach(myCallback);`}</code></pre>
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

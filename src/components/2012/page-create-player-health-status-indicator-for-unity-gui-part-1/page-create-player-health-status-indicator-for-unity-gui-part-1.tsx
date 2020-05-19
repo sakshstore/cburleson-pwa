@@ -1,8 +1,8 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
-import Prism from "prismjs"
-import 'prismjs/components/prism-javascript.min.js';
+
+
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -11,30 +11,23 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1.componentWillLoad');
+            console.log('>> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
 
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -92,7 +85,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart1 {
 
                             <p>Below you will find a simple starter script that will allow us to get something showing in the GUI quickly. We’ll explain this code line-by-line in the next article of this series and then later, we’ll improve it.</p>
 
-                            <pre><code class="language-javascript">{`#pragma strict
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`#pragma strict
 // JavaScript
 var backgroundTexture : Texture;
 var foregroundTexture : Texture;
@@ -109,7 +102,7 @@ function OnGUI () {
     GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );
     GUI.DrawTexture( Rect(healthMarginLeft,healthMarginTop,healthWidth + healthMarginLeft, healthHeight), foregroundTexture, ScaleMode.ScaleAndCrop, true, 0 );
     GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth,frameMarginTop + frameHeight), frameTexture, ScaleMode.ScaleToFit, true, 0 );
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>Create an empty GameObject, attach the Javascript and associate the textures</h2>
 
@@ -139,9 +132,6 @@ function OnGUI () {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

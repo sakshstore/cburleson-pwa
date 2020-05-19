@@ -1,6 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -9,17 +8,14 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageZBrushAdjustZsphereSketchDepth {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageZBrushAdjustZsphereSketchDepth.componentWillLoad');
+            console.log('>> PageZBrushAdjustZsphereSketchDepth.componentWillLoad');
         }
 
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
         document.title = this.header.title + ' | ' + SITENAME;
@@ -58,7 +54,7 @@ export class PageZBrushAdjustZsphereSketchDepth {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

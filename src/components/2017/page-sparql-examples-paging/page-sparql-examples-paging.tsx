@@ -1,42 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
 	tag: 'page-sparql-examples-paging',
 })
 export class PageSparqlExamplesPaging {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesPaging.componentWillLoad');
+			console.log('>> PageSparqlExamplesPaging.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
-		// set document title for browser / tab / bookmark
 		document.title = this.header.title + ' | ' + SITENAME;
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -59,7 +43,7 @@ export class PageSparqlExamplesPaging {
 							<app-entry-meta header={this.header} />
 
 							<p>Retrieve the second page of names and emails of people in Tim Berners-Lee&#8217;s FOAF file, given that each page has 10 people. Try this on <a href="http://sparql.org/sparql.html" rel="nofollow">ARQ</a>.</p>
-							<pre><code class="language-sparql">{`PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX foaf:  <http://xmlns.com/foaf/0.1/>
 
 SELECT ?name ?email
 FROM <http://www.w3.org/People/Berners-Lee/card>
@@ -68,12 +52,12 @@ WHERE {
         ?person foaf:name ?name
       } ORDER BY ?name LIMIT 10 OFFSET 10 }
     OPTIONAL { ?person foaf:mbox ?email }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

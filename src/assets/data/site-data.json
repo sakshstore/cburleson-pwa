@@ -12,6 +12,7 @@
     {
       "id": "books",
       "title": "Books",
+      "teaser": "Books I'm writing as well as books I've read and reviewed.",
       "icon": "book-outline",
       "isTab": true,
       "menus": [
@@ -41,26 +42,63 @@
     {
       "id": "cage",
       "title": "The Cage",
-      "tab": "books"
+      "teaser": "The true story of the Special Landing Force of 1st Battalion, 3rd Marines in the Vietnam War.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/books/cage-book-thumb.jpg",
+      "datePublished": "2018/10/21",
+      "dateModified": "2020/05/11",
+      "tab": "books",
+      "menus": ["books-i-am-writing"]
     },
     {
-      "id": "sea-tiger-newspapers",
-      "title": "Sea Tiger Newspapers",
+      "id": "beaver-cage-command-chron",
+      "title": "Operation Beaver Cage - Command Chronology",
+      "subtitle": "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
+      "teaser": "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-cmd-chron-thumb.jpg",
+      "datePublished": "2018/10/21",
+      "dateModified": "2020/02/12",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus" : [
+        "cage-documents"
+      ]
     },
     {
       "id":"slf-after-action-cage-union",
       "title":"Special Landing Force, After Action Report, BEAVER CAGE/UNION",
+      "teaser": "Declassified record of the Vietnam War chronicling Apr 1 to May 13, 1967.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/slf-after-action-cage-union-thumb.jpg",
+      "datePublished": "2020/04/09",
+      "dateModified": "2020/04/09",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus" : [
+        "cage-documents"
+      ]
     },
     {
-      "id": "beaver-cage-command-chron",
-      "title": "Operation Beaver Cage",
-      "subtitle": "Command Chronology from the Vietnam War",
+      "id": "beaver-cage-union-memorial",
+      "title": "Operation Beaver Cage/Union Memorial Service Program",
+      "teaser": "A program (booklet) for the memorial service held aboard the USS Okinawa on May 16, 1967, after the operations.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/beaver-cage-union-memorial-thumb.jpg",
+      "datePublished": "2020/01/08",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus" : [
+        "cage-documents"
+      ]
+    },
+    {
+      "id": "sea-tiger-newspapers",
+      "title": "Sea Tiger Newspapers",
+      "teaser": "Digitized issues of the &quot;Sea Tiger&quot;, a weekly newspaper published by III MAF (Marine Amphibious Force) between 1965 and 1971.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/files/sea-tiger/1968-04-19_sea-tiger_thumb.jpg",
+      "datePublished": "2020/02/11",
+      "tab": "books",
+      "parent": "cage",
+      "menus" : [
+        "cage-documents"
+      ]
     },
     {
       "id": "vietnam-war-reference-resources",
@@ -73,7 +111,7 @@
         "The Cage - Vietnam"
       ],
       "menus": [
-        "blog"
+        "cage-ref-resources"
       ],
       "tab": "books",
       "parent": "cage"
@@ -81,50 +119,212 @@
     {
       "id": "life-events",
       "title": "Life Events",
+      "datePublished": "2019/12/11",
       "tab": "about",
       "parent": "about"
     },
     {
       "id": "experience",
       "title": "Experience",
+      "datePublished": "2020/02/06",
       "tab": "about",
       "parent": "about"
     },
     {
-      "id": "d-1-3-weapons-platoon",
-      "title": "Weapons Platoon - D 1/3 Marines, Vietnam",
+      "id": "d-1-3-platoon",
+      "title": "3rd Platoon - D 1/3 Marines, Vietnam",
+      "teaser": "Photograph of Delta Co 3rd Platoon with most individuals identified.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/j-h-platoon_thumb.jpg",
+      "datePublished": "2020/04/24",
+      "dateModified": "2020/05/12",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-curt-bruce",
+      "title": "Tour of Duty Photos From Curt Bruce",
+      "teaser": "Photographs from Curt Bruce (Delta Co) taken during his 1965 – 1966 tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-curt-bruce-thumb.jpg",
+      "datePublished": "2019/08/08",
+      "dateModified": "2019/08/08",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-ed-kalwara",
+      "title": "Tour of Duty Photos From Ed Kalwara",
+      "teaser": "Photographs from Ed Kalwara taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ed-kalwara-thumb.jpg",
+      "datePublished": "2019/12/11",
+      "dateModified": "2020/02/10",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-gary-culp",
+      "title": "Tour of Duty Photos From Gary Culp",
+      "teaser": "Photographs from Gary Culp (Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-gary-culp-thumb.jpg",
+      "datePublished": "2019/10/03",
+      "dateModified": "2019/10/03",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-jack-depope",
+      "title": "Tour of Duty Photos From Jack DePope",
+      "teaser": "Photographs from Jack &quot;Doc&quot; DePope (a Corpsman in Delta Co) taken during his 1966 – 1967 tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jack-depope-thumb.jpg",
+      "datePublished": "2018/09/23",
+      "dateModified": "2019/07/31",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-james-haight",
+      "title": "Tour of Duty Photos From James Haight",
+      "teaser": "Photographs from James Haight (Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-james-haight-thumb.jpg",
+      "datePublished": "2019/02/14",
+      "dateModified": "2020/01/04",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-jim-shipp",
+      "title": "Tour of Duty Photos From Jim Shipp",
+      "teaser": "Photograph from Jim Shipp (Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-jim-shipp-thumb.jpg",
+      "datePublished": "2019/10/07",
+      "dateModified": "2019/10/07",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-ken-hicks",
+      "title": "Tour of Duty Photos From Ken Hicks",
+      "teaser": "Photographs from Ken Hicks (Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ken-hicks-thumb.jpg",
+      "datePublished": "2019/09/09",
+      "dateModified": "2019/09/09",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"],
+      "hidden": true
+    },
+    {
+      "id": "photos-kevin-brooks",
+      "title": "Tour of Duty Photos From Kevin Brooks",
+      "teaser": "Photographs from Kevin Brooks (Charlie Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-kevin-brooks-thumb.jpg",
+      "datePublished": "2019/11/05",
+      "dateModified": "2020/02/07",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-ray-kelley",
+      "title": "Tour of Duty Photos From Ray Kelley",
+      "teaser": "Photographs from Ray &quot;Machine Gun&quot; Kelley (a Machine Gunner in Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-ray-kelley-v2-thumb.jpg",
+      "datePublished": "2018/09/23",
+      "dateModified": "2020/05/11",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-stanley-hall",
+      "title": "Tour of Duty Photos From Stanley Hall",
+      "teaser": "Photographs from Stanley &quot;Doc&quot; Hall (a Corpsman in Delta Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-stanley-hall-thumb.jpg",
+      "datePublished": "2018/09/08",
+      "dateModified": "2018/12/18",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-tom-harrison",
+      "title": "Tour of Duty Photos From Tom Harrison",
+      "teaser": "Photographs from Thomas Harrison (Charlie Co) taken during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-tom-harrison-thumb.jpg",
+      "datePublished": "2020/04/26",
+      "dateModified": "2020/04/26",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "photos-dennis-mannion",
+      "title": "Tour of Duty Photos of Dennis Mannion",
+      "teaser": "Photographs of Dennis J. Mannion (Delta Co) taken around and during his tour of duty.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/photos-dennis-mannion-thumb.jpg",
+      "datePublished": "2020/05/11",
+      "dateModified": "2020/05/12",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
     },
     {
       "id": "marine-platoon-156-san-diego-1966",
       "title": "U.S. Marine Corps Platoon 156 - San Diego, 1966",
+      "teaser": "Marine Platoon 156, San Diego, 1966 (platoon of Martin Cavazos, Delta Co.)",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/marine-platoon-156_san-diego_1966_thumb.jpg",
+      "datePublished": "2020/03/12",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus": ["cage-photos"]
     },
     {
-      "id": "d-1-3-platoon",
-      "title": "3rd Platoon - D 1/3 Marines, Vietnam",
+      "id": "photos-cavazos-center",
+      "title": "Vietnam War Photographs From the Martin Cavazos Center",
+      "teaser": "A collection of photos presented in honor of Martin Cavazos (Delta Co., 1st Batallion / 3rd Marines; KIA May 5, 1967); originally from the Martin Cavazos Center in Sebastian, Texas.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/cavazos-center_thumb.jpg",
+      "datePublished": "2020/03/13",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus": ["cage-photos"]
+    },
+    {
+      "id": "d-1-3-weapons-platoon",
+      "title": "Weapons Platoon - D 1/3 Marines, Vietnam",
+      "teaser": "Photograph of Delta Co Weapons Platoon with most individuals identified.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/delta-weapons-plt-thumb.jpg",
+      "datePublished": "2018/08/15",
+      "tab": "books",
+      "parent": "cage",
+      "menus": ["cage-photos"]
     },
     {
       "id": "ray-kelley-silver-star",
       "title": "Silver Star Ceremony Honoring L/Cpl. Raymond Kelley - Vietnam War",
+      "teaser": "Silver Star Medal presentation ceremony for Ray (&quot;Machine Gun&quot;) Kelley.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/ray-kelley-silver-star-thumb.jpg",
+      "datePublished": "2019/11/09",
+      "dateModified": "2019/11/09",
       "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus" : ["cage-videos"]
     },
     {
       "id": "vietnam-1967-amphibious-combat",
       "title": "Vietnam, 1967 - Amphibious Combat",
+      "teaser": "A documentary about Amphibious Warfare in Vietnam, I-Corps, 1967 by  Donald F. Teal, M.D.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/vietnam-1967-amphibious-combat-thumb.jpg",
+      "datePublished": "2019/11/09",
+      "dateModified": "2019/11/09",
       "tab": "books",
-      "parent": "cage"
-    },
-    {
-      "id": "beaver-cage-union-memorial",
-      "title": "Beaver Cage/Union memorial service program",
-      "tab": "books",
-      "parent": "cage"
+      "parent": "cage",
+      "menus" : ["cage-videos"]
     },
     {
       "id": "unreal-engine-doc-expanded",
@@ -142,7 +342,7 @@
     },
     {
       "id": "book-review-the-goldfinch",
-      "title": "Book review - The Goldfinch by Donna Tartt",
+      "title": "Book Review - The Goldfinch by Donna Tartt",
       "teaser": "A unique story with amazing prose, but a little too much fat.",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2020/01/the-goldfinch-thumb.jpg",
       "datePublished": "2020/01/30",
@@ -157,23 +357,9 @@
     },
     {
       "id": "delete-node-modules-folder-on-windows",
-      "title": "How to delete the node_modules folder on Windows",
+      "title": "How to Delete the node_modules Folder on Windows",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-npm.svg",
       "datePublished": "2019/12/31",
-      "topics": [
-        "Software Dev"
-      ],
-      "menus": [
-        "blog"
-      ]
-    },
-    {
-      "id": "use-prism-js-in-ionic-stencil-app",
-      "title": "How to use Prism.js in Ionic Stencil app",
-      "teaser": "Procedure for using the Prism.js syntax highlighter in an Ionic / Stencil app.",
-      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
-      "datePublished": "2019/11/07",
-      "dateModified": "2019/11/22",
       "topics": [
         "Software Dev"
       ],
@@ -260,7 +446,7 @@
     },
     {
       "id": "collect-ui-ui-screenshots-to-inspire-design",
-      "title": "Collect UI - screenshots to inspire your next design",
+      "title": "Collect UI - Screenshots to Inspire Your Next Design",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2019/02/collectui.com-thumbnail.png",
       "datePublished": "2019/02/18",
       "topics": [
@@ -272,7 +458,7 @@
     },
     {
       "id": "curated-list-of-ibm-digital-experience-resources",
-      "title": "Curated list of IBM Digital Experience resources",
+      "title": "Curated List of IBM Digital Experience Resources",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-websphere.png",
       "datePublished": "2018/12/04",
       "topics": [
@@ -284,7 +470,7 @@
     },
     {
       "id": "copy-assets-from-node-modules-in-stencil-js",
-      "title": "How to copy assets from node_modules in Stencil.js",
+      "title": "How to Copy Assets From node_modules in Stencil.js",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-stencil.svg",
       "datePublished": "2018/12/13",
       "dateModified": "2019/11/07",
@@ -297,7 +483,7 @@
     },
     {
       "id": "show-both-sides-of-a-plane-in-zbrush",
-      "title": "How to show both sides of a plane in ZBrush",
+      "title": "How to Show Both Sides of a Plane in Zbrush",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/10/13",
       "topics": [
@@ -309,7 +495,7 @@
     },
     {
       "id": "a-look-at-sparql-sql-for-semantic-web",
-      "title": "A look at SPARQL - SQL for the Semantic Web",
+      "title": "A Look at SPARQL - SQL for the Semantic Web",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-semantic-web.svg",
       "datePublished": "2018/10/13",
       "topics": [
@@ -321,7 +507,7 @@
     },
     {
       "id": "change-canvas-background-color-in-zbrush",
-      "title": "How to change canvas background color in ZBrush",
+      "title": "How to Change Canvas Background Color in ZBrush",
       "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-zbrush.svg",
       "datePublished": "2018/10/07",
       "dateModified": "2019/04/14",

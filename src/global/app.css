@@ -21,8 +21,6 @@
 @import "~@ionic/core/css/text-transformation.css";
 @import "~@ionic/core/css/flex-utils.css";
 
-@import "~prismjs/themes/prism-okaidia.css";
-
 /** 
   * Bug fix for:
   * https://github.com/ionic-team/ionic/issues/18734

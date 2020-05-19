@@ -1,40 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-xmlaccess-samples',
 })
 export class PageXmlaccessSamples {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageXmlaccessSamples.componentWillLoad');
+            console.log('>> PageXmlaccessSamples.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -137,7 +124,7 @@ export class PageXmlaccessSamples {
 
                             <p>Following is an example of how one of these scripts might be executed on a UNIX system:</p>
 
-                            <pre><code class="language-bash">{`/usr/IBM/WebSphere/PortalServer/bin/xmlaccess.sh -user wpsadmin -password <password> -url http://<host>:<port>/wps/config -in /usr/IBM/WebSphere/PortalServer/doc/xml-samples/ExportThemesAndSkins.xml -out /home/<user-home>/ExportThemesAndSkins_result.xml`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`/usr/IBM/WebSphere/PortalServer/bin/xmlaccess.sh -user wpsadmin -password <password> -url http://<host>:<port>/wps/config -in /usr/IBM/WebSphere/PortalServer/doc/xml-samples/ExportThemesAndSkins.xml -out /home/<user-home>/ExportThemesAndSkins_result.xml`}</code></deckgo-highlight-code>
 
                             <p><em>In the command above, you should modify the paths if they differ on your server and you must also replace &lt;password&gt;, &lt;host&gt;, &lt;port&gt;, and &lt;user-home&gt; with values appropriate to your own environment.</em></p>
 

@@ -1,8 +1,8 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
-import Prism from "prismjs"
-import 'prismjs/components/prism-properties.min';
+
+
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,29 +12,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageFindLargeImages {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageFindLargeImages.componentWillLoad');
+            console.log('>> PageFindLargeImages.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -68,15 +61,15 @@ export class PageFindLargeImages {
 
                             <p>The following lines should be added to the WCMConfigService.properties file in &lt;Portal directory&gt;/wcm/shared/app/config/wcmservices</p>
 
-                            <pre><code class="language-properties">{`connect.businesslogic.module.findlargeresources.class=com.ibm.workplace.wcm.services.statistics.FindLargeResourcesModule
+                            <deckgo-highlight-code language="properties"><code slot="code">{`connect.businesslogic.module.findlargeresources.class=com.ibm.workplace.wcm.services.statistics.FindLargeResourcesModule
 connect.businesslogic.module.findlargeresources.remoteaccess=true
-connect.businesslogic.module.findlargeresources.autoload=false`}</code></pre>
+connect.businesslogic.module.findlargeresources.autoload=false`}</code></deckgo-highlight-code>
 
                             <p>Also, append findlargeresources to this key: ‘connect.businesslogic.module’</p>
 
                             <p>For example:</p>
 
-                            <pre><code class="language-properties">{`connect.businesslogic.module=template,multi_template,web,mail,form,aggregator,default,ajpe,federatedproxy,ajpecatselect,memberfixer,versioningenablement,workflowenablement,itemdispatcher,plutouploadfile,plutodownloadfile,ensureusermanagement,pdmproxy,synd,subs,syndication,refreshallitems,unlocklibrary,findlargeresources,custom`}</code></pre>
+                            <deckgo-highlight-code language="properties"><code slot="code">{`connect.businesslogic.module=template,multi_template,web,mail,form,aggregator,default,ajpe,federatedproxy,ajpecatselect,memberfixer,versioningenablement,workflowenablement,itemdispatcher,plutouploadfile,plutodownloadfile,ensureusermanagement,pdmproxy,synd,subs,syndication,refreshallitems,unlocklibrary,findlargeresources,custom`}</code></deckgo-highlight-code>
 
                             <p>Restart the server for the changes to take effect. You should then be able to execute the module by entering a URL in your browser, similar to the following:</p>
 
@@ -88,7 +81,6 @@ connect.businesslogic.module.findlargeresources.autoload=false`}</code></pre>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

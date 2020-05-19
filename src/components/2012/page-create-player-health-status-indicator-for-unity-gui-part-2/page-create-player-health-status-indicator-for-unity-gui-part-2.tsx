@@ -1,42 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-javascript.min.js';
-
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-create-player-health-status-indicator-for-unity-gui-part-2',
 })
 export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2.componentWillLoad');
+            console.log('>> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -73,7 +59,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart2 {
 
                             <p>Our Javascript for the Health Status Indicator is very simple at this point, but it’s going to get a bit more complex. For that reason, it’s very important that you learn about this in phases. Let’s start by taking a look at the full script so that we have the whole thing in mind and then we’ll break it down line by line.</p>
 
-                            <pre><code class="language-javascript">{`#pragma strict
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`#pragma strict
 // JavaScript
 var backgroundTexture : Texture;
 var foregroundTexture : Texture;
@@ -90,7 +76,7 @@ function OnGUI () {
 GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );
 GUI.DrawTexture( Rect(healthMarginLeft,healthMarginTop,healthWidth + healthMarginLeft, healthHeight), foregroundTexture, ScaleMode.ScaleAndCrop, true, 0 );
 GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth,frameMarginTop + frameHeight), frameTexture, ScaleMode.ScaleToFit, true, 0 );
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 
                             <h2>UnityScript is very much, but not exactly like JavaScript</h2>
@@ -107,11 +93,11 @@ GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWid
 
                             <p><strong>Dynamically typed variable declaration</strong></p>
 
-                            <pre><code class="language-javascript">{`var healthWidth = 199;`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var healthWidth = 199;`}</code></deckgo-highlight-code>
 
                             <p><strong>Statically typed variable declaration</strong></p>
 
-                            <pre><code class="language-javascript">{`var healthWidth: int = 199;`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var healthWidth: int = 199;`}</code></deckgo-highlight-code>
 
                             <p>See the difference there? In the dynamically typed example, the variable healthWidth is a number, but it could also be used for a string or a boolean or some other type because we didn’t specify the type. In the statically typed example, we declared the variable as an int (a.k.a. an integer, which is just simple kind of number).</p>
 
@@ -123,23 +109,23 @@ GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWid
 
                             <p>The second line of our script starts with two forward-slashes, which indicates that it’s just a comment.</p>
 
-                            <pre><code class="language-javascript">{`// JavaScript`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`// JavaScript`}</code></deckgo-highlight-code>
 
                             <p>A comment is just a note inside of your program that helps you and other developers understand something. Humans can read comments in the code, but the engine will just ignore them. In this case, we’re just throwing in a note that the format of the script is JavaScript and not some other language that Unity also supports such as C#.</p>
 
                             <p>Two forward slashes are for single-line comments. If you want to have multiple lines of commentary in a single block, you can use the following:</p>
 
-                            <pre><code class="language-javascript">{`/* This is an example 
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`/* This is an example 
 of a multi-line comment. 
-Are we having fun yet? */`}</code></pre>
+Are we having fun yet? */`}</code></deckgo-highlight-code>
 
                             <h2>Global variables and the Unity Inspector</h2>
 
                             <p>The next three lines of the code define three global variables, each of the type Texture.</p>
 
-                            <pre><code class="language-javascript">{`var backgroundTexture : Texture;
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var backgroundTexture : Texture;
 var foregroundTexture : Texture;
-var frameTexture : Texture;`}</code></pre>
+var frameTexture : Texture;`}</code></deckgo-highlight-code>
 
                             <p>Global variables are usually declared at the very top of a script and not inside of any function. This makes them available for access from anywhere in the script. Where a variable is available for access is known as the variable’s <em>scope</em>, so variables outside of any function are said to have <em>global scope</em>.</p>
 
@@ -157,8 +143,8 @@ var frameTexture : Texture;`}</code></pre>
 
                             <p>The next two lines in our script specify the default width and the height of the green health bar image.</p>
 
-                            <pre><code class="language-javascript">{`var healthWidth: int = 199;
-var healthHeight: int = 30;`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var healthWidth: int = 199;
+var healthHeight: int = 30;`}</code></deckgo-highlight-code>
 
                             <p>Later in the script, we use these numbers to establish a size for the rectangle that we render the texture on. We got those pixel dimensions from the drawing program we used when we saved the file. When a file is an image, you can usually get its dimensions just by inspecting the properties of the file. In Windows, you can right-click, select Properties from the context menu, and then select the Details tab of the resulting dialog. On a Mac, you can right-click and select Get Info.</p>
 
@@ -168,8 +154,8 @@ var healthHeight: int = 30;`}</code></pre>
 
                             <p>The next two lines of code specify the distance from the left and top of the screen where the green health bar’s rectangular texture should begin.</p>
 
-                            <pre><code class="language-javascript">{`var healthMarginLeft: int = 41;
-var healthMarginTop: int = 38;`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var healthMarginLeft: int = 41;
+var healthMarginTop: int = 38;`}</code></deckgo-highlight-code>
 
                             <p>We will use the healthMarginLeft variable to specify the horizontal position (from the left of the screen) where the texture’s rectangle will begin. And Similarly, we’ll use the healthMarginTop to specify the vertical position from the top of the screen.</p>
                             <p>In computer graphics, we often refer to the horizontal axis as <em>x </em>and the vertical axis as <em>y</em>. The top-most and left-most position on the screen is expressed as position (0,0) in (x,y).</p>
@@ -182,10 +168,10 @@ var healthMarginTop: int = 38;`}</code></pre>
 
                             <p>The next four lines are very similar to the last four we’ve looked at. They do the same thing, but they define a width, height, and margins for the background texture and top frame texture.</p>
 
-                            <pre><code class="language-javascript">{`var frameWidth : int = 266;
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`var frameWidth : int = 266;
 var frameHeight: int = 65;
 var frameMarginLeft : int = 10;
-var frameMarginTop: int = 10;`}</code></pre>
+var frameMarginTop: int = 10;`}</code></deckgo-highlight-code>
 
                             <p>To keep things as simple as possible, we cropped the background layer and the top-most layer images exactly the same size. That way, we can use the same dimensions and margins to position and render those two layers. The green health bar was an exception, which we cropped uniquely because it has to shrink or stretch to represent losing or gaining health.</p>
 
@@ -193,13 +179,13 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <p>The next stanza in the code is where the GUI functionality is really pulled together. When a script contains the OnGUI() function and is enabled in the game, it gets called every frame just like the Update() function.</p>
 
-                            <pre><code class="language-javascript">{`function OnGUI () {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`function OnGUI () {
 ...
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>It is within this function that we create the GUI controls that will be seen on the screen. Which brings us to the first line of code within the function – the creation of a GUI texture. Think of a GUI texture as a 2D image that is parallel to the screen facing the user.</p>
 
-                            <pre><code class="language-javascript">{`GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></deckgo-highlight-code>
 
                             <p>This method can be understood by looking at the documentation in the Unity API. Take a moment now to <a href="http://docs.unity3d.com/Documentation/ScriptReference/GUI.DrawTexture.html" target="_blank" rel="noopener noreferrer">review the API documentation for the GUI.DrawTexture function</a> in the Unity API documentation.</p>
 
@@ -209,7 +195,7 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <h2>GUI.DrawTexture</h2>
 
-                            <pre><code class="language-javascript">{`static function DrawTexture (position, image, scaleMode, alphaBlend, imageAspect) : void`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`static function DrawTexture (position, image, scaleMode, alphaBlend, imageAspect) : void`}</code></deckgo-highlight-code>
 
                             <p>Everything within the parenthesis represent values that you pass into the function when you call it. Below, we provide the type of each value and a description.</p>
 
@@ -225,11 +211,11 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <p>So, now that we kind of understand how the GUI.DrawTexture() function works, let’s take another look at the line we use to draw the first layer (the red that shows through when the green health bar is shrunk).</p>
 
-                            <pre><code class="language-javascript">{`GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`GUI.DrawTexture( Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight), backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></deckgo-highlight-code>
 
                             <p>Let’s break it down a little. Starting with the function call itself:</p>
 
-                            <pre><code class="language-javascript">{`GUI.DrawTexture(`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`GUI.DrawTexture(`}</code></deckgo-highlight-code>
 
                             <p>GUI is an object that Unity engine makes available to us. We know this because it’s documented in the API. The object has several functions that you could call from it using the dot notation. If you type the word GUI in the Unity editor and then a period character, the code completer should show a pop-up menu of the functions that are available on that object.</p>
 
@@ -237,13 +223,13 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <p>The next thing that is passed into the function is the Rect which defines the position and size of the rectangle on the screen.</p>
 
-                            <pre><code class="language-javascript">{`Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight)`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`Rect(frameMarginLeft,frameMarginTop, frameMarginLeft + frameWidth, frameMarginTop + frameHeight)`}</code></deckgo-highlight-code>
 
                             <p>To construct a Rect object we can use Rect(left, top, width, height). Instead of hard-coding values, we put variables in those spots. But notice that when we define the width and height, we add the margin. Since the rectangle will start after the margin, then we must increase the size of the rectangle by the amount of the margin.</p>
 
                             <p>Anyway, the statement then continues with…</p>
 
-                            <pre><code class="language-javascript">{`, backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`, backgroundTexture, ScaleMode.ScaleToFit, true, 0 );`}</code></deckgo-highlight-code>
 
                             <p>The backgroundTexture is a reference to the image that you drag and drop into the variable’s slot in the Inspector when using the script. The meaning of the rest of the values has already been described above.</p>
 
@@ -253,7 +239,7 @@ var frameMarginTop: int = 10;`}</code></pre>
 
                             <h2>Drawing the middle layer (the green bar)</h2>
 
-                            <pre><code class="language-javascript">{`GUI.DrawTexture( Rect(healthMarginLeft,healthMarginTop,healthWidth + healthMarginLeft, healthHeight), foregroundTexture, ScaleMode.ScaleAndCrop, true, 0 );`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`GUI.DrawTexture( Rect(healthMarginLeft,healthMarginTop,healthWidth + healthMarginLeft, healthHeight), foregroundTexture, ScaleMode.ScaleAndCrop, true, 0 );`}</code></deckgo-highlight-code>
 
                             <p>Notice that the ScaleMode used in the DrawTexture function is different than what’s defined for the bottom and top layers. That’s because the size of the green bar in the middle layer is going to change size as the game is played. If the ScaleMode is not set just so, the texture will do some strange things when sized.</p>
 
@@ -267,9 +253,6 @@ var frameMarginTop: int = 10;`}</code></pre>
                             
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

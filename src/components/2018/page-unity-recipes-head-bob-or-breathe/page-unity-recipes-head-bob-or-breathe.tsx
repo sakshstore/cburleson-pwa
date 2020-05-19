@@ -1,41 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-csharp.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-unity-recipes-head-bob-or-breathe',
 })
 export class PageUnityRecipesHeadBobOrBreathe {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageUnityRecipesHeadBobOrBreathe.componentWillLoad');
+            console.log('>> PageUnityRecipesHeadBobOrBreathe.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -59,25 +45,31 @@ export class PageUnityRecipesHeadBobOrBreathe {
 
                             <p>Here’s a handy Unity script that, when applied to a game object, will give the object a repetitive, but smooth upward and downward movement. This effect is often used to make a “head bob” or to make a player object look like it’s breathing; especially when it’s in idle state. This kind of effect can be achieved by animating the object before importing it (in a program like Blender, for example), but it can also be achieved with a sine wave function as provided by this script. The same or a similar script can also be used to make a main menu camera bob or to make lights breathe. Here it is:</p>
 
-                            <pre><code class="language-csharp">{`using System.Collections;
+<deckgo-highlight-code language="csharp">
+<code slot="code">
+{`using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class Breathe : MonoBehaviour
-{
-Vector3 startPos;
-public float amplitude = 10f;
-public float period = 5f;
-protected void Start()
-{
-startPos = transform.position;
-}
-protected void Update()
-{
-float theta = Time.timeSinceLevelLoad / period;
-float distance = amplitude * Mathf.Sin(theta);
-transform.position = startPos + Vector3.up * distance;
-}
-}`}</code></pre>
+
+public class Breathe : MonoBehaviour {
+    
+    Vector3 startPos;
+    public float amplitude = 10f;
+    public float period = 5f;
+    
+    protected void Start() {
+        startPos = transform.position;
+    }
+    
+    protected void Update() {
+        float theta = Time.timeSinceLevelLoad / period;
+        float distance = amplitude * Mathf.Sin(theta);
+        transform.position = startPos + Vector3.up * distance;
+    }
+
+}`}
+</code>
+</deckgo-highlight-code>
 
                             <p>After applying the script, you will need to adjust the float values for the amplitude and period to your liking.</p>
                             <h2>References</h2>
@@ -87,7 +79,6 @@ transform.position = startPos + Vector3.up * distance;
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-typescript.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -12,31 +8,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PagePwaWithIonicAngularWordpressApi3 {
 
-  title = 'Blog';
-
-  // header for this individual item by id...
   header: any;
-
-  id: string;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PagePwaWithIonicAngularWordpressApi3.componentWillLoad');
+      console.log('>> PagePwaWithIonicAngularWordpressApi3.componentWillLoad');
     }
-    // this.data = await BlogData.load();
-    // Get the id from the URL path (slug)
-    this.id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(this.id);
+
+    let id = extractIdFromDocumentPath();
+    this.header = BlogData.getPostHeaderById(id);
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
     if (this.header.teaser) {
       document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
     }
-  }
-
-  componentDidLoad() {
-    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   render() {
@@ -80,33 +66,31 @@ export class PagePwaWithIonicAngularWordpressApi3 {
 
               <p>Next, we’ll add the Read More… button to each post preview card. At the same time, we’ll put in a place holder for displaying the post categories and tags, which we may implement a little later down the road. Update <code>src/app/home/home.page.html</code> with the following…</p>
 
-              <pre><code class="language-html">{`<ion-header>
-<ion-toolbar>
-<ion-buttons slot="start">
-<ion-menu-button></ion-menu-button>
-</ion-buttons>
-<ion-title>
-Home
-</ion-title>
-</ion-toolbar>
+              <deckgo-highlight-code language="html"><code slot="code">{`<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>Home</ion-title>
+  </ion-toolbar>
 </ion-header>
 <ion-content padding>
-<ion-card *ngFor="let item of items">
-<ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>
-<ion-card-header>
-<ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
-<ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
-</ion-card-header>
-<ion-card-content>
-<div [innerHTML]="item.excerpt.rendered"></div>
-<div>
-<ion-button href="/{{item.slug}}" routerDirection="root" color="primary" size="small">Read more...</ion-button>
-</div>
-Posted in W<br/>
-Tagged X, Y, Z
-</ion-card-content>
-</ion-card>
-</ion-content>`}</code></pre>
+  <ion-card *ngFor="let item of items">
+    <ion-img *ngIf="item._embedded['wp:featuredmedia']" [src]="item._embedded['wp:featuredmedia'][0].source_url"></ion-img>
+    <ion-card-header>
+      <ion-card-subtitle>{{ item.date | date:dateFormat }}</ion-card-subtitle>
+      <ion-card-title [innerHTML]="item.title.rendered"></ion-card-title>
+    </ion-card-header>
+    <ion-card-content>
+        <div [innerHTML]="item.excerpt.rendered"></div>
+        <div>
+          <ion-button href="/{{item.slug}}" routerDirection="root" color="primary" size="small">Read more...</ion-button>
+        </div>
+        Posted in W<br/>
+        Tagged X, Y, Z
+    </ion-card-content>
+  </ion-card>
+</ion-content>`}</code></deckgo-highlight-code>
 
               <p>Now, if you run ionic serve and preview the app, you can see that we have a Read More… button.</p>
 
@@ -128,9 +112,9 @@ Tagged X, Y, Z
 
               <p>Modify <code>src/app/shared/data.service.ts</code> by adding the following function for the PostPage component to call.</p>
 
-              <pre><code class="language-ts">{`getPostBySlug(slug): any {
+              <deckgo-highlight-code><code slot="code">{`getPostBySlug(slug): any {
 return this.items.find(item => item.slug === slug);
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
               <p>This takes the post slug and passes it through an RxJS <code>find</code> function, which searches for an element that matches the conditions defined by the specified predicate, and returns the first occurrence within the entire Observable sequence. In this case, we’ll be searching through the array of posts that have been loaded – returning the one that has the given slug. The slug is the URL segment that identifies the post. We use it to maintain clean URLs that match the WordPress Post name (/%postname%/) permalink structure that we set up in Part 1.</p>
 
@@ -138,22 +122,24 @@ return this.items.find(item => item.slug === slug);
 
               <p>Modify <code>src/app/post/post.page.ts</code> to be as follows.</p>
 
-              <pre><code class="language-ts">{`import { Component, OnInit } from '@angular/core';
+              <deckgo-highlight-code><code slot="code">{`import { Component, OnInit } from '@angular/core';
 import {ActivatedRoute} from '@angular/router';
 import {DataService} from '../shared/data.service';
+
 @Component({
 selector: 'app-post',
 templateUrl: './post.page.html',
 styleUrls: ['./post.page.scss'],
 })
 export class PostPage implements OnInit {
-item: any;
-constructor(private route: ActivatedRoute, public dataService: DataService) { }
-ngOnInit() {
-const itemSlug = this.route.snapshot.paramMap.get('slug');
-this.item = this.dataService.getPostBySlug(itemSlug);
-}
-}`}</code></pre>
+
+  item: any;
+  constructor(private route: ActivatedRoute, public dataService: DataService) { }
+  ngOnInit() {
+    const itemSlug = this.route.snapshot.paramMap.get('slug');
+    this.item = this.dataService.getPostBySlug(itemSlug);
+  }
+}`}</code></deckgo-highlight-code>
 
               <p>In the <code>ngOnInit()</code> function, we set the <code>item</code> field based on the item given back from the <code>DataService</code>. This is done by passing the item’s slug which is a route param that we can read out of the <code>ActivatedRoute</code>. So now, we just need to configure the parameterized route.</p>
 
@@ -161,36 +147,40 @@ this.item = this.dataService.getPostBySlug(itemSlug);
 
               <p>When we used the Ionic CLI to create the <code>PostPage</code> component, it automatically added the following entry to the routing module (in <code>src/app/app-routing.module.ts</code>).</p>
 
-              <pre><code class="language-ts">{`{ path: 'Post', loadChildren: './post/post.module#PostPageModule' }`}</code></pre>
+              <deckgo-highlight-code><code slot="code">{`{ path: 'Post', loadChildren: './post/post.module#PostPageModule' }`}</code></deckgo-highlight-code>
 
               <p>Change the path from <code>'Post'</code> to <code>':slug'</code>. The colon signifies a named parameter, which we read by name from the <code>ActivatedRoute</code>.</p>
 
               <p>The entire <code>app-routing.module.ts</code> file should&nbsp; now look like this:</p>
 
-              <pre><code class="language-ts">{`import {NgModule} from '@angular/core';
+              <deckgo-highlight-code><code slot="code">{`import {NgModule} from '@angular/core';
 import {Routes, RouterModule} from '@angular/router';
+
 const routes: Routes = [
-{
-path: '',
-redirectTo: 'home',
-pathMatch: 'full'
-},
-{
-path: 'home',
-loadChildren: './home/home.module#HomePageModule'
-},
-{
-path: 'list',
-loadChildren: './list/list.module#ListPageModule'
-},
-{path: ':slug', loadChildren: './post/post.module#PostPageModule'}
+  {
+    path: '',
+    redirectTo: 'home',
+    pathMatch: 'full'
+  },
+  {
+    path: 'home',
+    loadChildren: './home/home.module#HomePageModule'
+  },
+  {
+    path: 'list',
+    loadChildren: './list/list.module#ListPageModule'
+  },
+  {
+    path: ':slug', loadChildren: './post/post.module#PostPageModule'
+  }
 ];
+
 @NgModule({
 imports: [RouterModule.forRoot(routes)],
 exports: [RouterModule]
 })
 export class AppRoutingModule {
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
               <p>And that’s it! If we run the app now with <code>ionic serve</code>, we can click on the Read More… button in a post preview card to load the full post. Here’s what one of our dummy content items looks like now, loaded up into the Post view.</p>
 
@@ -235,7 +225,7 @@ export class AppRoutingModule {
                 </ion-card-content>
               </ion-card>
 
-              <gls-adsense-ad />
+              
             </ion-col>
           </ion-row>
         </ion-grid>

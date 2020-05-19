@@ -1,32 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
 	tag: 'page-sparql-examples-order-by',
 })
 export class PageSparqlExamplesOrderBy {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesOrderBy.componentWillLoad');
+			console.log('>> PageSparqlExamplesOrderBy.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
 		// set document title for browser / tab / bookmark
@@ -34,10 +22,6 @@ export class PageSparqlExamplesOrderBy {
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -61,7 +45,7 @@ export class PageSparqlExamplesOrderBy {
 
 							<p>Order by the highest population<br />
 								Here&#8217;s a similar query for DBPedia &#8211; this time, ordered by highest population first and filtered by language (&#8220;en&#8221;).</p>
-							<pre><code class="language-sparql">{`PREFIX type: <http://dbpedia.org/class/yago/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX type: <http://dbpedia.org/class/yago/>
 PREFIX prop: <http://dbpedia.org/property/>
 SELECT ?country_name ?population
 WHERE {
@@ -69,12 +53,12 @@ WHERE {
              rdfs:label ?country_name ;
              prop:populationEstimate ?population .
     FILTER (?population > 15000000 && langMatches(lang(?country_name), "en")) .
-} ORDER BY DESC(?population)`}</code></pre>
+} ORDER BY DESC(?population)`}</code></deckgo-highlight-code>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

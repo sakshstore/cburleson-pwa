@@ -1,30 +1,20 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-import Prism from "prismjs"
-
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
 	tag: 'page-sparql-examples-construct',
 })
 export class PageSparqlExamplesConstruct {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesConstruct.componentWillLoad');
+			console.log('>> PageSparqlExamplesConstruct.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
 		// set document title for browser / tab / bookmark
@@ -32,11 +22,6 @@ export class PageSparqlExamplesConstruct {
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	// Use this if using source code blocks to be formatted by prism.js...
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -59,13 +44,13 @@ export class PageSparqlExamplesConstruct {
 							<h1>{this.header.title}</h1>
 							<app-entry-meta header={this.header} />
 							<p>Construct a graph giving ontology structure (the class hierarchy, properties, domains and ranges)</p>
-<pre><code class="language-sparql">{`CONSTRUCT { ?s ?p ?o . } 
+<deckgo-highlight-code><code slot="code">{`CONSTRUCT { ?s ?p ?o . } 
 WHERE { VALUES ?p { rdfs:subClassOf rdfs:subPropertyOf rdfs:domain rdfs:range} ?s ?p ?o }
-`}</code></pre>
+`}</code></deckgo-highlight-code>
 							<p>Note that when a reasoner is enabled classes may typically be inferred to be <code>rdfs:subClassOf</code> themselves and <code>rdfs:subClassOf</code> any parent class, not just the direct parent.</p>
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-							<gls-adsense-ad />
+							
 						</ion-col>
 					</ion-row>
 				</ion-grid>

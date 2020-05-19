@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -9,21 +9,16 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageMemoriesOfMomma2 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageMemoriesOfMomma2.componentWillLoad');
+            console.log('>> PageMemoriesOfMomma2.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
@@ -99,8 +94,6 @@ export class PageMemoriesOfMomma2 {
                                     </ion-list>
                                 </ion-card-content>
                             </ion-card>
-
-                            <gls-adsense-ad ad-format="rectangle"/>
 
                         </ion-col>
                     </ion-row>

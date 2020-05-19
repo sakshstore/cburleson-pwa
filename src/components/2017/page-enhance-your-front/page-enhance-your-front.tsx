@@ -1,52 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-
-// And any, but ONLY the languages you need to use with prism...
-
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import 'prismjs/components/prism-turtle.min.js';
-// import 'prismjs/components/prism-sparql.min.js';
-// import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-enhance-your-front-end-web-dev-workflow-with-emmet',
 })
 export class PageEnhanceYourFront {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageEnhanceYourFront.componentWillLoad');
+            console.log('>> PageEnhanceYourFront.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -75,17 +50,17 @@ export class PageEnhanceYourFront {
 
                             <p>Here&#8217;s a simple example of a basic expression in the Emmet syntax. Try typing the following in an HTML page in your IDE. If your using VS Code, you simply hit ENTER or RETURN after the expression. If you&#8217;re using an IntelliJ product like WebStorm or IDEA, you have to press TAB after the expression.</p>
 
-                            <pre><code class="language-html">{`ul>li*10`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`ul>li*10`}</code></deckgo-highlight-code>
 
                             <p>At the end of the expression, just hit the Tab key. WebStorm will use Emmet to parse the text and spit out the intended HTML which, in this case, will be an unordered list with 5 list items (shown below):</p>
 
-                            <pre><code class="language-html">{`<ul>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<ul>
    <li></li>
    <li></li>
    <li></li>
    <li></li>
    <li></li>
-</ul>`}</code></pre>
+</ul>`}</code></deckgo-highlight-code>
 
                             <p>For details, you can refer to&nbsp;the&nbsp;<a href="http://docs.emmet.io/" rel="nofollow">Emmet Documentation</a>, but for convenience, I&#8217;m including the most common stuff below. There&#8217;s a lot more to it though, so if you like what you see here, be sure to RTFM.</p>
 
@@ -95,53 +70,53 @@ export class PageEnhanceYourFront {
 
                             <p>You can use&nbsp;<code>&gt;</code>&nbsp;operator to nest elements inside each other:</p>
 
-                            <pre><code class="language-html">{`div>ul>li`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`div>ul>li`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<div>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<div>
     <ul>
         <li></li>
     </ul>
-</div>`}</code></pre>
+</div>`}</code></deckgo-highlight-code>
 
                             <h2>Sibling</h2>
 
                             <p>Use&nbsp;<code>+</code>&nbsp;operator to place elements near each other, on the same level:</p>
 
-                            <pre><code class="language-html">{`div+p+bq`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`div+p+bq`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<div></div>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<div></div>
 <p></p>
-<blockquote></blockquote>`}</code></pre>
+<blockquote></blockquote>`}</code></deckgo-highlight-code>
 
                             <h2>Multiplication</h2>
 
                             <p>With&nbsp;<code>*</code>&nbsp;operator you can define how many times element should be outputted:</p>
 
-                            <pre><code class="language-html">{`ul>li*5`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`ul>li*5`}</code></deckgo-highlight-code>
 
                             <p>Result:</p>
 
-                            <pre><code class="language-html">{`<ul>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<ul>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
     <li></li>
-</ul>`}</code></pre>
+</ul>`}</code></deckgo-highlight-code>
 
                             <h1>Grouping</h1>
 
                             <p>Parenthesises are used by Emmets’ power users for grouping subtrees in complex abbreviations:</p>
 
-                            <pre><code class="language-html">{`div>(header>ul>li*2>a)+footer>p`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`div>(header>ul>li*2>a)+footer>p`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<div>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<div>
     <header>
         <ul>
             <li><a href=""></a></li>
@@ -151,7 +126,7 @@ export class PageEnhanceYourFront {
     <footer>
         <p></p>
     </footer>
-</div>`}</code></pre>
+</div>`}</code></deckgo-highlight-code>
 
                             <p>If you’re working with browser’s DOM, you may think of groups as Document Fragments: each group contains abbreviation subtree and all the following elements are inserted at the same level as the first element of group.</p>
 
@@ -161,83 +136,83 @@ export class PageEnhanceYourFront {
 
                             <p>In CSS, you use elem#id and elem.class notation to reach the elements with specified id or class attributes. In Emmet, you can use the very same syntax to add these attributes to specified element:</p>
 
-                            <pre><code class="language-html">{`div#header+div.page+div#footer.class1.class2.class3`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`div#header+div.page+div#footer.class1.class2.class3`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<div id="header"></div>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<div id="header"></div>
 <div class="page"></div>
-<div id="footer" class="class1 class2 class3"></div>`}</code></pre>
+<div id="footer" class="class1 class2 class3"></div>`}</code></deckgo-highlight-code>
 
                             <h2>Custom attributes</h2>
 
                             <p>You can use&nbsp;<code>[attr]</code>&nbsp;notation (as in CSS) to add custom attributes to your element:</p>
 
-                            <pre><code class="language-html">{`td[title="Hello world!" colspan=3]`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`td[title="Hello world!" colspan=3]`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<td title="Hello world!" colspan="3"></td>`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<td title="Hello world!" colspan="3"></td>`}</code></deckgo-highlight-code>
 
                             <h2>Item numbering</h2>
 
                             <p>With multiplication&nbsp;<code>*</code>&nbsp;operator you can repeat elements, but with&nbsp;<code>$</code>&nbsp;you can&nbsp;<em>number</em>&nbsp;them. Place&nbsp;<code>$</code>&nbsp;operator inside element’s name, attribute’s name or attribute’s value to output current number of repeated element:</p>
 
-                            <pre><code class="language-html">{`ul>li.item$*5`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`ul>li.item$*5`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<ul>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<ul>
     <li class="item1"></li>
     <li class="item2"></li>
     <li class="item3"></li>
     <li class="item4"></li>
     <li class="item5"></li>
-</ul>`}</code></pre>
+</ul>`}</code></deckgo-highlight-code>
 
                             <p>You can use multiple&nbsp;<code>$</code>&nbsp;in a row to pad number with zeroes:</p>
 
-                            <pre><code class="language-html">{`ul>li.item$$*5`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`ul>li.item$$*5`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<ul>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<ul>
     <li class="item001"></li>
     <li class="item002"></li>
     <li class="item003"></li>
     <li class="item004"></li>
     <li class="item005"></li>
-</ul>`}</code></pre>
+</ul>`}</code></deckgo-highlight-code>
 
                             <h2>Text</h2>
 
                             <p>You can use curly braces to add text to element:</p>
 
-                            <pre><code class="language-html">{`a{Click me}`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`a{Click me}`}</code></deckgo-highlight-code>
 
                             <p>Result:</p>
 
-                            <pre><code class="language-html">{`<a href="">Click me</a>`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`<a href="">Click me</a>`}</code></deckgo-highlight-code>
 
                             <h2>Greek Text</h2>
 
                             <p>You know &#8211; that filler text that designers use when they can&#8217;t think of real words that are relevant to a design&#8230;</p>
 
-                            <pre><code class="language-html">{`lorem5`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`lorem5`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`Lorem ipsum dolor sit amet.`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`Lorem ipsum dolor sit amet.`}</code></deckgo-highlight-code>
 
                             <h1>Holy shit example</h1>
 
                             <p>Here&#8217;s a crazy example to give you an idea of what you can accomplish if you get bad ass with Emmet.</p>
 
-                            <pre><code class="language-html">{`nav#menuSystem.navMenu.isOpen>div#hotelLogo>div.navMenuIcon.logoIcon+div#arrowPointer+ul#navMenuMain>li.navMenuItem.navMenuItem$$*10>div.navMenuIcon{Item $}+a{Item $}`}</code></pre>
+                            <deckgo-highlight-code language="html"><code slot="code">{`nav#menuSystem.navMenu.isOpen>div#hotelLogo>div.navMenuIcon.logoIcon+div#arrowPointer+ul#navMenuMain>li.navMenuItem.navMenuItem$$*10>div.navMenuIcon{Item $}+a{Item $}`}</code></deckgo-highlight-code>
 
                             <p><strong>Result:</strong></p>
 
-                            <pre><code class="language-html">{`<nav id="menuSystem" class="navMenu isOpen">
+                            <deckgo-highlight-code language="html"><code slot="code">{`<nav id="menuSystem" class="navMenu isOpen">
    <div id="hotelLogo">
       <div class="navMenuIcon logoIcon"></div>
       <div id="arrowPointer"></div>
@@ -274,12 +249,12 @@ export class PageEnhanceYourFront {
             <a>Item 10</a></li>
       </ul>
    </div>
-</nav>`}</code></pre>
+</nav>`}</code></deckgo-highlight-code>
 
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

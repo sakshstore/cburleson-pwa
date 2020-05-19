@@ -20,20 +20,20 @@ export class PageLifetimeModal {
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageLifetimeModal.componentWillLoad');
+      console.log('>> PageLifetimeModal.componentWillLoad');
     }
   }
 
   apply() {
     if (isLocal()) {
-      console.log('> PageLifetimeModal.apply');
+      console.log('>> PageLifetimeModal.apply');
     }
     this.dismiss();
   }
 
   dismiss(data?: any) {
     if (isLocal()) {
-      console.log('> PageLifetimeModal.dismiss > data: %o', data);
+      console.log('>> PageLifetimeModal.dismiss > data: %o', data);
     }
     // dismiss this modal and pass back data
     // This can be captured, with the passed back data in page-lifetime.tsx under this annotation...

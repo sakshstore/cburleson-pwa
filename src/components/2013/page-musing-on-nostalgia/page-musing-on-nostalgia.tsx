@@ -1,39 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-musing-on-nostalgia',
 })
 export class PageMusingOnNostalgia {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageMusingOnNostalgia.componentWillLoad');
+            console.log('>> PageMusingOnNostalgia.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -73,9 +61,9 @@ export class PageMusingOnNostalgia {
 
                             <p>I do remember the very first working program I wrote though. It went something like this:</p>
 
-                            <pre class="clear"><code class="language-">{`10 PRINT "WHAT IS YOUR NAME"; INPUT A$
+                            <deckgo-highlight-code><code slot="code">{`10 PRINT "WHAT IS YOUR NAME"; INPUT A$
 20 PRINT "HI, " + A$
-30 PRINT "IT IS NICE TO MEET YOU"`}</code></pre>
+30 PRINT "IT IS NICE TO MEET YOU"`}</code></deckgo-highlight-code>
 
                             <p>I wanted to make the characters type across the screen like they did on that green CRT in the movie War Games. Remember that one? With Mathew Broderick? “SHALL WE PLAY A GAME?” I couldn’t figure it out, but my teacher in middle school later showed me how to do it with a <em>for loop</em> on a TRS-80 (a.k.a Trash-80).</p>
 
@@ -87,7 +75,6 @@ export class PageMusingOnNostalgia {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
                         </ion-col>
                     </ion-row>
                 </ion-grid>

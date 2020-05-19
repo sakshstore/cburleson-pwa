@@ -13,7 +13,7 @@ export class PageAbout {
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PageAbout.componentWillLoad');
+      console.log('>> PageAbout.componentWillLoad');
     }
     document.title = this.title + ' | ' + SITENAME;
   }
@@ -61,7 +61,7 @@ export class PageAbout {
 
         <h2 class="clear">About this site (technology)</h2>
 
-        <p>This site was developed using the Ionic Framework and Stencil.js. While the site also uses some helper libraries like Prismjs (for code syntax highlighting), it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the popular JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
+        <p>This site was developed using the Ionic Framework and Stencil.js. While the site also uses some 3rd-party components like <a href="https://github.com/deckgo/deckdeckgo/tree/master/webcomponents/highlight-code">DeckDeckGo's Highlight Code component</a> (for code syntax highlighting), it does not use a big JavaScript framework like Angular, React, or Vue. My goal was to see what could be accomplished without using one of the popular JavaScript frameworks. What you see here is the result; I've used only pure, W3C standards-compliant web components. For now, everything is just coded by hand, but in the future, I hope to write some Node.js scripts that help facilitate maintenance. Want to see the actual code? You can find the <a href="https://github.com/codyburleson/cburleson-pwa" rel="nofollow">source code here</a> on GitHub.</p>
 
         <p>Site version: {SITEVERSION}; for history of changes, see the <a href="https://github.com/codyburleson/cburleson-pwa/blob/master/changelog.md" rel="nofollow">changelog</a> on GitHub.</p>
 

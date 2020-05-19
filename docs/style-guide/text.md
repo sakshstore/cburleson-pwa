@@ -3,7 +3,7 @@
 ## Titles
 
 - Follow [Common Title Capitalization Rules](https://grammar.yourdictionary.com/capitalization/rules-for-capitalization-in-titles.html)
-- Use [this tool](https://capitalizemytitle.com/)
+- Use [this tool](https://capitalizemytitle.com/); follow the Associated Press (AP), Title Case style
 
 ## Quotes
 

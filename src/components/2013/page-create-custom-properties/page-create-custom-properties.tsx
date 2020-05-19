@@ -1,41 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-python.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-create-custom-properties-for-a-resource-environment-provider-using-wasadmin-scripting',
 })
 export class PageCreateCustomProperties {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageCreateCustomProperties.componentWillLoad');
+            console.log('>> PageCreateCustomProperties.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -65,7 +52,7 @@ export class PageCreateCustomProperties {
 
                             <h2>Jython: Create dynamic content spot mappings</h2>
 
-                            <pre><code class="language-python">{`
+                            <deckgo-highlight-code language="python"><code slot="code">{`
 # To execute, navigate to wp_profile/bin and use:
 # wsadmin -lang jython -user wpsadmin -password wpsadmin -conntype SOAP -host mojo.base22.com -port 10025 -f C:/workspace/themeScripts/updated_example.py
  
@@ -124,11 +111,11 @@ for property in themePropertyList:
 AdminConfig.save()
  
 # Display finished message
-print "Config Saved."`}</code></pre>
+print "Config Saved."`}</code></deckgo-highlight-code>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

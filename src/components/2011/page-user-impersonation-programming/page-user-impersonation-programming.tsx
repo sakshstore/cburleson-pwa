@@ -1,42 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-user-impersonation-programming-in-websphere-portal',
 })
 export class PageUserImpersonationProgramming {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageUserImpersonationProgramming.componentWillLoad');
+            console.log('>> PageUserImpersonationProgramming.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -64,7 +50,8 @@ export class PageUserImpersonationProgramming {
 
                             <p>First, you’ll need to access the ImpersonationService in your theme or portlet code. The example below uses a JNDI lookup, which can be expensive, so be sure to put these kinds of things in an init method.</p>
 
-                            <pre><code class="language-java">{`try {
+<deckgo-highlight-code language="java"><code slot="code">
+{`try {
   portletServiceHome = (com.ibm.portal.portlet.service.PortletServiceHome)ctx.lookup(com.ibm.portal.portlet.service.impersonation.ImpersonationService.JNDI_NAME);
   if(portletServiceHome != null) {
     impersonationHome = (com.ibm.portal.portlet.service.impersonation.ImpersonationService) portletServiceHome.getPortletService(com.ibm.portal.portlet.service.impersonation.ImpersonationService.class);
@@ -76,9 +63,12 @@ export class PageUserImpersonationProgramming {
   // impersonation is not present
 } catch ( com.ibm.portal.portlet.service.PortletServiceUnavailableException psue ) {
   // impersonation is not present
-}</pre>
+}
+`}</code></deckgo-highlight-code>
+
 <p>That’s how the PageBuilder theme does it. Here’s another example from the SPIs JavaDoc on how to perform the JNDI lookup to acquire the service object:</p>
-<pre class="EnlighterJSRAW" data-enlighter-language="java">com.ibm.portal.portlet.service.PortletServiceHome psh;
+
+<deckgo-highlight-code language="java"><code slot="code">{`com.ibm.portal.portlet.service.PortletServiceHome psh;
 javax.naming.Context ctx = new javax.naming.InitialContext();
  
 try {
@@ -93,7 +83,7 @@ try {
     impersonationService.doImpersonate(request, response, request.getParameter(FORM_TEXT));
 } catch (Exception e) {
     // error handling
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>Using the ImpersonationService in Your Java Code</h2>
 
@@ -128,9 +118,6 @@ try {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

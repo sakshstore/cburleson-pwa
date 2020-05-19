@@ -1,41 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-linux-and-unix-commands',
 })
 export class PageLinuxAndUnixCommands {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageLinuxAndUnixCommands.componentWillLoad');
+            console.log('>> PageLinuxAndUnixCommands.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -358,10 +344,10 @@ export class PageLinuxAndUnixCommands {
 
                             <h2>Update the OS packages</h2>
 
-                            <pre><code class="language-bash">{`sudo apt-get update
+                            <deckgo-highlight-code language="bash"><code slot="code">{`sudo apt-get update
 sudo apt-get upgrade
 sudo apt-get dist-upgrade
-sudo reboot`}</code></pre>
+sudo reboot`}</code></deckgo-highlight-code>
 
                             <h2>Use pipes</h2>
 

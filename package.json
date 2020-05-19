@@ -1,7 +1,7 @@
 {
   "name": "cburleson-pwa",
   "private": true,
-  "version": "1.7.10",
+  "version": "1.8.0",
   "description": "cburleson-pwa",
   "license": "MIT",
   "files": [
@@ -20,8 +20,7 @@
     "@ionic/core": "5.1.0",
     "d3": "^5.15.0",
     "d3-tip": "^0.9.1",
-    "moment": "^2.24.0",
-    "prismjs": "^1.20.0"
+    "moment": "^2.24.0"
   },
   "devDependencies": {
     "@stencil/core": "1.13.0",

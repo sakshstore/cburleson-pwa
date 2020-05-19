@@ -1,41 +1,27 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-
-import 'prismjs/components/prism-javascript.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-javascript-ternary-operator-shortcut-to-the-if-statement',
 })
 export class PageJavaScriptTernary {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageJavaScriptTernary.componentWillLoad');
+            console.log('>> PageJavaScriptTernary.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if(this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -60,7 +46,7 @@ export class PageJavaScriptTernary {
 
                             <p>The conditional (ternary) operator is the only JavaScript operator that takes three operands and it is frequently used as a shortcut for the if statement.</p>
 
-                            <pre><code class="language-js">{`// If isMember (first argument) evaluates to true, return "$2:00" (first expression),
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`// If isMember (first argument) evaluates to true, return "$2:00" (first expression),
 // else return "$10.00" (second expression)
 function getFee(isMember) {
   return (isMember ? "$2.00" : "$10.00");
@@ -71,14 +57,14 @@ function getFee(isMember) {
 // var foo = (a === b) ? 1 : 2;
 var foo = (a === b)
   ? 1
-  : 2;`}</code></pre>
+  : 2;`}</code></deckgo-highlight-code>
 
 
                             <p>See also: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Operators/Conditional_Operator" rel="nofollow">Conditional (ternary) Operator</a>, MDN web docs</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

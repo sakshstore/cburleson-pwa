@@ -1,10 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-import Prism from "prismjs"
-import 'prismjs/components/prism-javascript.min.js';
-
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -13,29 +8,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3.componentWillLoad');
+            console.log('>> PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -82,7 +70,7 @@ export class PageCreatePlayerHealthStatusIndicatorForUnityGuiPart3 {
 
                             <p>Finally paste the following code into the EnemyBehaviorScript, save the script and run the game to see the health shrink away to fatality! If it’s more convenient, you can also just <a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/2012/11/EnemyBehaviorScript.js">download the EnemyBehaviorScript.js file</a> and import it into Unity.</p>
 
-                            <pre><code class="language-javascript">{`#pragma strict
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`#pragma strict
 private var guiHealth : GameObject;
 private var healthBarScript: HealthBarScript;
 /*
@@ -120,14 +108,14 @@ function increaseHealth() {
    if(healthBarScript.healthWidth < 199) {
        healthBarScript.healthWidth = healthBarScript.healthWidth + 1;
    }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>How it Works</h2>
 
                             <p>You may notice that we declared our global variables as private this time.</p>
 
-                            <pre><code class="language-javascript">{`private var guiHealth : GameObject;
-private var healthBarScript: HealthBarScript;`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`private var guiHealth : GameObject;
+private var healthBarScript: HealthBarScript;`}</code></deckgo-highlight-code>
 
                             <p>By declaring them global (outside of any function in the script), they are available for use by any function in the script. By declaring them private, we ensure that they will not create properties in the Unity Inspector panel that might distract you or other developers on your team. For this script, they’re not mean to be used in the Inspector.</p>
 
@@ -139,27 +127,27 @@ private var healthBarScript: HealthBarScript;`}</code></pre>
 
                             <p>Back to the Start() method…</p>
 
-                            <pre><code class="language-javascript">{`function Start() {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`function Start() {
     guiHealth = GameObject.Find("GUI Health");
     healthBarScript = guiHealth.GetComponent("HealthBarScript");
     ...
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>When you use a Start() method in a behavior script, it gets called only once in the lifetime of the behavior. So, it’s a good place to initialize objects. In this case, we’re making guiHealth represent the GameObject that can be found in the game by the name ‘GUI Health’. The we make healthBarScript represent the script named ‘HealthBarScript’ that we expect to be attached to the guiHealth GameObject that we just found. Since the HealthBarScript is attached to a GameObject, we need to access the GameObject in the scene first. The, once we have access to it, we can use .getComponent() to get components attached to that object.</p>
 
                             <p>Now the next lines are just there to set the initial health. You can comment one out and uncomment the other and vise-versa.</p>
 
-                            <pre><code class="language-javascript">{`// Uncomment the line below and call reduceHealth() in the Update() method to watch health decrease
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`// Uncomment the line below and call reduceHealth() in the Update() method to watch health decrease
 healthBarScript.healthWidth = 199;
 // Uncomment the line below and call increaseHealth() in the Update() method to watch health increase
-// healthBarScript.healthWidth = -8;`}</code></pre>
+// healthBarScript.healthWidth = -8;`}</code></deckgo-highlight-code>
 
                             <p>You also want to toggle the comments on the reduceHealth() and increaseHealth() calls respectively.</p>
 
-                            <pre><code class="language-javascript">{`function Update() {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`function Update() {
      reduceHealth();
      //increaseHealth();
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>By toggling those comments, you can watch the health shrink or grow; just a simple acid-test to prove that it works.</p>
 
@@ -177,9 +165,6 @@ healthBarScript.healthWidth = 199;
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-
-                            <gls-adsense-ad />
-
                         </ion-col>
                     </ion-row>
                 </ion-grid>

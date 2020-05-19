@@ -1,12 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-import 'prismjs/components/prism-typescript.min';
-import 'prismjs/components/prism-json.min';
-import 'prismjs/components/prism-yaml.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 const CODE_1 = `$ cd ./ionic-ng-wp-client
@@ -128,7 +121,7 @@ export class HomePage implements OnInit {
     constructor(public dataService: DataService) {
     }
     ngOnInit() {
-        console.log('> ngOnInit');
+        console.log('>> ngOnInit');
         this.dataService.getPosts().subscribe((data: any[]) => {
             this.items = data;
             console.log('ngOnInit() > items: %o', this.items);
@@ -204,32 +197,21 @@ describe('DataService', () => {
 })
 export class PagePwaWithIonicAngularWordpressApi1 {
 
-  title = 'Blog';
-
-  // header for this individual item by id...
   header: any;
-
-  id: string;
 
   async componentWillLoad() {
     if (isLocal()) {
-      console.log('> PagePwaWithIonicAngularWordpressApi1.componentWillLoad');
+      console.log('>> PagePwaWithIonicAngularWordpressApi1.componentWillLoad');
     }
-    // this.data = await BlogData.load();
-    // Get the id from the URL path (slug)
-    this.id = document.location.pathname.substr(1);
-    this.header = BlogData.getPostHeaderById(this.id);
+
+    let id = extractIdFromDocumentPath();
+    this.header = BlogData.getPostHeaderById(id);
 
     // set document title for browser / tab / bookmark
     document.title = this.header.title + ' | ' + SITENAME;
     if (this.header.teaser) {
       document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
     }
-  }
-
-  // Use this if using source code blocks to be formatted by prism.js...
-  componentDidLoad() {
-    setTimeout(() => Prism.highlightAll(), 0)
   }
 
   render() {
@@ -297,7 +279,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
               <p>Now we can run the Ionic app to see what the sidemenu template has given us as a starting point. Change into the newly created project’s directory and run the app…</p>
 
-              <pre><code class="language-bash">{CODE_1}</code></pre>
+              <deckgo-highlight-code language="bash"><code slot="code">{CODE_1}</code></deckgo-highlight-code>
 
               <p>The ionic serve command will spawn the app in your web browser and it should look something like this:</p>
 
@@ -327,7 +309,7 @@ export class PagePwaWithIonicAngularWordpressApi1 {
 
               <p>In the project’s root directory, create a file called <code>docker-compose.yml</code> with the following contents.</p>
 
-              <pre><code class="language-yml">{`version: "2"
+              <deckgo-highlight-code language="yml"><code slot="code">{`version: "2"
 services:
 my-wpdb:
 image: mariadb
@@ -344,7 +326,7 @@ ports:
 links:
 - my-wpdb:mysql
 environment:
-WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
+WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></deckgo-highlight-code>
 
               <p>This file will create the LAMP stack we need to run WordPress using two containers – one for the database and one for the web server. We are using official Docker images and one is the official WordPress image. It’s also has a shell script that automatically connects to the database container, creates a database, clones WordPress files, and sets up the wp-config based on environment variables that we pass to it (see the official image page for all the options).</p>
 
@@ -370,7 +352,7 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>If you want to stop and restart the containers, run:</p>
 
-              <pre><code class="language-html">{CODE_3}</code></pre>
+              <deckgo-highlight-code language="html"><code slot="code">{CODE_3}</code></deckgo-highlight-code>
 
               <p>Complete the WordPress setup in the browser. Since this is just a local development environment, I would recommend using a username and password that are simple to remember. wordpress / wordpress, for example.</p>
 
@@ -402,7 +384,7 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>This time, you should see a lot of JSON in your browser, which confirms that the REST endpoint is now accessible.</p>
 
-              <pre><code class="language-json">{CODE_4}</code></pre>
+              <deckgo-highlight-code language="json"><code slot="code">{CODE_4}</code></deckgo-highlight-code>
 
               <h2>Store the API URL</h2>
 
@@ -412,15 +394,15 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p><strong>src/environments/environment.prod.ts</strong></p>
 
-              <pre><code class="language-js">{CODE_5}</code></pre>
+              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_5}</code></deckgo-highlight-code>
 
               <p><strong>src/environments/environment.ts</strong></p>
 
-              <pre><code class="language-js">{CODE_6}</code></pre>
+              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_6}</code></deckgo-highlight-code>
 
               <p>Later, this allow us to get the URL from our environment by using:</p>
 
-              <pre><code class="language-js">{CODE_7}</code></pre>
+              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_7}</code></deckgo-highlight-code>
 
               <p>Commit the change…</p>
 
@@ -459,13 +441,13 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>Take a look at <code>data.service.ts</code>. Here’s what the Ionic CLI generated for us.</p>
 
-              <pre><code class="language-js">{CODE_8}</code></pre>
+              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_8}</code></deckgo-highlight-code>
 
               <p>In keeping with good Angular style practice, the CLI appended <code>Service</code>, so the name is <code>DataService</code>.</p>
 
               <p>We can add the import and a constant for the ENDPOINT_URL, which we’ll need later when we flesh out the service.</p>
 
-              <pre><code class="language-js">{CODE_9}</code></pre>
+              <deckgo-highlight-code language="javascript"><code slot="code">{CODE_9}</code></deckgo-highlight-code>
 
               <h3>Install RxJS dependencies</h3>
 
@@ -475,15 +457,15 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>We also need to add the&nbsp;<code>HttpClientModule</code> to the imports in <code>src/app/app.module.ts</code> so that <code>app.module.ts</code> should then look like this:</p>
 
-              <pre><code class="language-ts">{CODE_10}</code></pre>
+              <deckgo-highlight-code><code slot="code">{CODE_10}</code></deckgo-highlight-code>
 
               <p>Next, we’ll add methods to fetch post data from the API endpoint. Update <code>src/app/shared/data.service.ts</code> with the following code…</p>
 
-              <pre><code class="language-ts">{CODE_11}</code></pre>
+              <deckgo-highlight-code><code slot="code">{CODE_11}</code></deckgo-highlight-code>
 
               <p>Now we we’ll add methods for the Home view to communicate with the DataService. Update <code>src/app/home/home.page.ts</code> with the following code…</p>
 
-              <pre><code class="language-ts">{CODE_12}</code></pre>
+              <deckgo-highlight-code><code slot="code">{CODE_12}</code></deckgo-highlight-code>
 
               <p>Now if you run <code>ionic serve</code> and inspect the console, you should see that post items are being returned from WordPress and logged to the console…</p>
 
@@ -491,7 +473,7 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>Sweet! Now we’ll put those items into the view using&nbsp;<code>ion-list</code> and <code>ion-item</code>. Update <code>src/app/home/home.page.html</code> with the following code…</p>
 
-              <pre><code class="language-html">{CODE_13}</code></pre>
+              <deckgo-highlight-code language="html"><code slot="code">{CODE_13}</code></deckgo-highlight-code>
 
               <p>Now, when you run the app with <code>ionic serve</code>, you should see something similar to the following.</p>
 
@@ -501,11 +483,11 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
 
               <p>In <code>src/app/home/home.page.spec.ts</code>, import the <code>HTTPClientModule</code> and then add the <code>HttpClientModule</code> into an <code>imports</code> stanza in the <code>TestBed</code> configuration, similar to how it’s done in <code>app.module.ts</code>. When you’re done, the <code>home.page.spec.ts</code> file should look like this:</p>
 
-              <pre><code class="language-ts">{CODE_14}</code></pre>
+              <deckgo-highlight-code><code slot="code">{CODE_14}</code></deckgo-highlight-code>
 
               <p>We need to do the same for the <code>data.service.spec.ts</code> file. When you’re done, the file should look like this:</p>
 
-              <pre><code class="language-ts">{CODE_15}</code></pre>
+              <deckgo-highlight-code><code slot="code">{CODE_15}</code></deckgo-highlight-code>
 
               <p>Now, if you run ng test, all tests should pass. Great! It’s a good time to commit this stable check-point. I’m doing so with the following commit message:</p>
 
@@ -550,7 +532,7 @@ WORDPRESS_DB_PASSWORD: ChangeMeIfYouWant`}</code></pre>
                 </ion-card-content>
               </ion-card>
 
-              <gls-adsense-ad />
+
 
             </ion-col>
           </ion-row>

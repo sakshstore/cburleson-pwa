@@ -1,8 +1,8 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
+
+
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -12,29 +12,22 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageLoggingThroughWebsphere {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageLoggingThroughWebsphere.componentWillLoad');
+            console.log('>> PageLoggingThroughWebsphere.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -62,18 +55,18 @@ export class PageLoggingThroughWebsphere {
 
                             <p><strong>Imports</strong></p>
 
-                            <pre><code class="language-java">{`import java.util.logging.Level;
-import java.util.logging.Logger;`}</code></pre>
+                            <deckgo-highlight-code language="java"><code slot="code">{`import java.util.logging.Level;
+import java.util.logging.Logger;`}</code></deckgo-highlight-code>
 
                             <p><strong>Declare the Logger</strong></p>
 
-                            <pre><code class="language-java">{`public static final Logger LOG = Logger.getLogger(PDFUtils.class.getName());`}</code></pre>
+                            <deckgo-highlight-code language="java"><code slot="code">{`public static final Logger LOG = Logger.getLogger(PDFUtils.class.getName());`}</code></deckgo-highlight-code>
 
                             <p><strong>Use the Logger (well, attempt to&#8230;)</strong></p>
 
-                            <pre><code class="language-java">{`if(LOG.isLoggable(Level.FINEST)) {
+                            <deckgo-highlight-code language="java"><code slot="code">{`if(LOG.isLoggable(Level.FINEST)) {
     LOG.finest("HELLO WORLD!");
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>Problem</h2>
 
@@ -83,20 +76,20 @@ import java.util.logging.Logger;`}</code></pre>
 
                             <p>My final solution was to include an import for the WebSphere specific levels like so&#8230;</p>
 
-                            <pre><code class="language-java">{`import com.ibm.websphere.logging.WsLevel;`}</code></pre>
+                            <deckgo-highlight-code language="java"><code slot="code">{`import com.ibm.websphere.logging.WsLevel;`}</code></deckgo-highlight-code>
 
                             <p>.. and then modify my logging statements to key off of WsLevel.DETAIL, which FINE, FINER, and FINEST roll up into; like this:</p>
 
-                            <pre><code class="language-java">{`if (LOG.isLoggable(WsLevel.DETAIL)) {
+                            <deckgo-highlight-code language="java"><code slot="code">{`if (LOG.isLoggable(WsLevel.DETAIL)) {
     LOG.log(WsLevel.DETAIL,">> writePDFFromContentToOutputStream()");
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 
                             <p>Hopefully this will save you the time it took me to whittle trough it.</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

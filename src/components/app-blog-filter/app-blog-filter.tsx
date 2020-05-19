@@ -19,7 +19,7 @@ export class AppBlogFilter {
   async componentWillLoad() {
 
     if (isLocal()) {
-      console.log('> AppBlogFilter.componentWillLoad');
+      console.log('>> AppBlogFilter.componentWillLoad');
     }
 
     // passed in array of topic names that should be excluded (unchecked)
@@ -35,7 +35,7 @@ export class AppBlogFilter {
 
   dismiss(data?: any) {
     if (isLocal()) {
-      console.log('> AppBlogFilter.dismiss > data: %o', data);
+      console.log('>> AppBlogFilter.dismiss > data: %o', data);
     }
     // dismiss this modal and pass back data
     // This is captured, with the passed back data in page-blog.tsx under this annotation...
@@ -45,7 +45,7 @@ export class AppBlogFilter {
 
   applyFilters() {
     if (isLocal()) {
-      console.log('> AppBlogFilter.applyFilters');
+      console.log('>> AppBlogFilter.applyFilters');
     }
     // Pass back a new array of topic names to exclude
     const excludedTopicNames = this.topics.filter(c => !c.isChecked).map(c => c.name);
@@ -55,7 +55,7 @@ export class AppBlogFilter {
   // reset all of the toggles to be checked
   resetFilters() {
     if (isLocal()) {
-      console.log('> AppBlogFilter.resetFilters');
+      console.log('>> AppBlogFilter.resetFilters');
     }
     this.topics.forEach(topic => {
       topic.isChecked = true;

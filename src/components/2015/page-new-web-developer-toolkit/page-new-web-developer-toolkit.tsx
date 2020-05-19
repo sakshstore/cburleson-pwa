@@ -1,54 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-// Use this if using source code blocks to be formatted by prism.js...
-// import Prism from "prismjs"
-
-// And any, but ONLY the languages you need to use with prism...
-
-// import 'prismjs/components/prism-javascript.min.js';
-// import 'prismjs/components/prism-typescript.min';
-// import 'prismjs/components/prism-json.min';
-// import 'prismjs/components/prism-yaml.min';
-// import 'prismjs/components/prism-java.min';
-// These two both for SPARQL:
-// import 'prismjs/components/prism-turtle.min.js';
-// import 'prismjs/components/prism-sparql.min.js';
-// import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-new-web-developer-toolkit-for-ibm-digital-experience',
 })
 export class PageNewWebDeveloperToolkit {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageNewWebDeveloperToolkit.componentWillLoad');
+            console.log('>> PageNewWebDeveloperToolkit.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
     }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    // componentDidLoad() {
-    // setTimeout(() => Prism.highlightAll(), 0)
-    // }
 
     render() {
         return [
@@ -84,7 +58,7 @@ export class PageNewWebDeveloperToolkit {
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

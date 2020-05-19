@@ -14,24 +14,30 @@ export namespace Components {
     interface AppEntryMeta {
         "header": any;
     }
+    interface AppListMenu {
+        "items": Array<any>;
+        "lines": "full" | "inset" | "none";
+        "showMetadata": false;
+    }
     interface AppPhotoCard {
         "imagePath": string;
         "item": any;
     }
-    interface AppPhotos {
-        "name": string;
+    interface AppPhotoGrid {
+        /**
+          * imagePath is expected to be the URL path upon which to append all the image  file names in order to find the images (e.g. folder where the images are  located). In an AWS S3 bucket folder, for example: image-path="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-jack-depope/"
+         */
+        "imagePath": string;
+        /**
+          * photos property expects an array of photos with the given structure, for example:  "photos": [    {      "id": "jack-depope-2",      "subtitle": "Jack &quot;Doc&quot; DePope",      "content": "<p>2nd Platoon, Delta Company, 1st Battalion, 3rd Marines (1/3)</p>"    },    {      "id": "ch34-stirring-up-dust",      "subtitle": "CH34 Stirring up dust",      "content": ""    } ]  ...where id is expected to be the file name, without a jpg prefix. The component is  limited in use case, right now to images ending in .jpg, but yeah... that could be  revised easily.
+         */
+        "photos": any;
     }
     interface AppRoot {
     }
     interface AppSearch {
     }
     interface AppTabs {
-    }
-    interface GlsAdsenseAd {
-        /**
-          * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
-         */
-        "adFormat": string;
     }
     interface GlsGcseSearchboxOnly {
     }
@@ -259,6 +265,32 @@ export namespace Components {
     }
     interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {
     }
+    interface PagePhotosCavazosCenter {
+    }
+    interface PagePhotosCurtBruce {
+    }
+    interface PagePhotosDennisMannion {
+    }
+    interface PagePhotosEdKalwara {
+    }
+    interface PagePhotosGaryCulp {
+    }
+    interface PagePhotosJackDepope {
+    }
+    interface PagePhotosJamesHaight {
+    }
+    interface PagePhotosJimShipp {
+    }
+    interface PagePhotosKenHicks {
+    }
+    interface PagePhotosKevinBrooks {
+    }
+    interface PagePhotosRayKelley {
+    }
+    interface PagePhotosStanleyHall {
+    }
+    interface PagePhotosTomHarrison {
+    }
     interface PagePinkHearts {
     }
     interface PagePwaWithIonicAngularWordpressApi1 {
@@ -379,8 +411,6 @@ export namespace Components {
     }
     interface PageUseMicromeshInZbrush {
     }
-    interface PageUsePrismJsInIonicStencilApp {
-    }
     interface PageUseSpotlightToDisplayReferenceImagesInZbrush {
     }
     interface PageUseSpringForStardogInASpringBootApplication {
@@ -413,6 +443,8 @@ export namespace Components {
     }
     interface PageZbrushResourcesOnline {
     }
+    interface TemplatePage {
+    }
 }
 declare global {
     interface HTMLApp404PageNotFoundElement extends Components.App404PageNotFound, HTMLStencilElement {
@@ -433,17 +465,23 @@ declare global {
         prototype: HTMLAppEntryMetaElement;
         new (): HTMLAppEntryMetaElement;
     };
+    interface HTMLAppListMenuElement extends Components.AppListMenu, HTMLStencilElement {
+    }
+    var HTMLAppListMenuElement: {
+        prototype: HTMLAppListMenuElement;
+        new (): HTMLAppListMenuElement;
+    };
     interface HTMLAppPhotoCardElement extends Components.AppPhotoCard, HTMLStencilElement {
     }
     var HTMLAppPhotoCardElement: {
         prototype: HTMLAppPhotoCardElement;
         new (): HTMLAppPhotoCardElement;
     };
-    interface HTMLAppPhotosElement extends Components.AppPhotos, HTMLStencilElement {
+    interface HTMLAppPhotoGridElement extends Components.AppPhotoGrid, HTMLStencilElement {
     }
-    var HTMLAppPhotosElement: {
-        prototype: HTMLAppPhotosElement;
-        new (): HTMLAppPhotosElement;
+    var HTMLAppPhotoGridElement: {
+        prototype: HTMLAppPhotoGridElement;
+        new (): HTMLAppPhotoGridElement;
     };
     interface HTMLAppRootElement extends Components.AppRoot, HTMLStencilElement {
     }
@@ -462,12 +500,6 @@ declare global {
     var HTMLAppTabsElement: {
         prototype: HTMLAppTabsElement;
         new (): HTMLAppTabsElement;
-    };
-    interface HTMLGlsAdsenseAdElement extends Components.GlsAdsenseAd, HTMLStencilElement {
-    }
-    var HTMLGlsAdsenseAdElement: {
-        prototype: HTMLGlsAdsenseAdElement;
-        new (): HTMLGlsAdsenseAdElement;
     };
     interface HTMLGlsGcseSearchboxOnlyElement extends Components.GlsGcseSearchboxOnly, HTMLStencilElement {
     }
@@ -1141,6 +1173,84 @@ declare global {
         prototype: HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
         new (): HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
     };
+    interface HTMLPagePhotosCavazosCenterElement extends Components.PagePhotosCavazosCenter, HTMLStencilElement {
+    }
+    var HTMLPagePhotosCavazosCenterElement: {
+        prototype: HTMLPagePhotosCavazosCenterElement;
+        new (): HTMLPagePhotosCavazosCenterElement;
+    };
+    interface HTMLPagePhotosCurtBruceElement extends Components.PagePhotosCurtBruce, HTMLStencilElement {
+    }
+    var HTMLPagePhotosCurtBruceElement: {
+        prototype: HTMLPagePhotosCurtBruceElement;
+        new (): HTMLPagePhotosCurtBruceElement;
+    };
+    interface HTMLPagePhotosDennisMannionElement extends Components.PagePhotosDennisMannion, HTMLStencilElement {
+    }
+    var HTMLPagePhotosDennisMannionElement: {
+        prototype: HTMLPagePhotosDennisMannionElement;
+        new (): HTMLPagePhotosDennisMannionElement;
+    };
+    interface HTMLPagePhotosEdKalwaraElement extends Components.PagePhotosEdKalwara, HTMLStencilElement {
+    }
+    var HTMLPagePhotosEdKalwaraElement: {
+        prototype: HTMLPagePhotosEdKalwaraElement;
+        new (): HTMLPagePhotosEdKalwaraElement;
+    };
+    interface HTMLPagePhotosGaryCulpElement extends Components.PagePhotosGaryCulp, HTMLStencilElement {
+    }
+    var HTMLPagePhotosGaryCulpElement: {
+        prototype: HTMLPagePhotosGaryCulpElement;
+        new (): HTMLPagePhotosGaryCulpElement;
+    };
+    interface HTMLPagePhotosJackDepopeElement extends Components.PagePhotosJackDepope, HTMLStencilElement {
+    }
+    var HTMLPagePhotosJackDepopeElement: {
+        prototype: HTMLPagePhotosJackDepopeElement;
+        new (): HTMLPagePhotosJackDepopeElement;
+    };
+    interface HTMLPagePhotosJamesHaightElement extends Components.PagePhotosJamesHaight, HTMLStencilElement {
+    }
+    var HTMLPagePhotosJamesHaightElement: {
+        prototype: HTMLPagePhotosJamesHaightElement;
+        new (): HTMLPagePhotosJamesHaightElement;
+    };
+    interface HTMLPagePhotosJimShippElement extends Components.PagePhotosJimShipp, HTMLStencilElement {
+    }
+    var HTMLPagePhotosJimShippElement: {
+        prototype: HTMLPagePhotosJimShippElement;
+        new (): HTMLPagePhotosJimShippElement;
+    };
+    interface HTMLPagePhotosKenHicksElement extends Components.PagePhotosKenHicks, HTMLStencilElement {
+    }
+    var HTMLPagePhotosKenHicksElement: {
+        prototype: HTMLPagePhotosKenHicksElement;
+        new (): HTMLPagePhotosKenHicksElement;
+    };
+    interface HTMLPagePhotosKevinBrooksElement extends Components.PagePhotosKevinBrooks, HTMLStencilElement {
+    }
+    var HTMLPagePhotosKevinBrooksElement: {
+        prototype: HTMLPagePhotosKevinBrooksElement;
+        new (): HTMLPagePhotosKevinBrooksElement;
+    };
+    interface HTMLPagePhotosRayKelleyElement extends Components.PagePhotosRayKelley, HTMLStencilElement {
+    }
+    var HTMLPagePhotosRayKelleyElement: {
+        prototype: HTMLPagePhotosRayKelleyElement;
+        new (): HTMLPagePhotosRayKelleyElement;
+    };
+    interface HTMLPagePhotosStanleyHallElement extends Components.PagePhotosStanleyHall, HTMLStencilElement {
+    }
+    var HTMLPagePhotosStanleyHallElement: {
+        prototype: HTMLPagePhotosStanleyHallElement;
+        new (): HTMLPagePhotosStanleyHallElement;
+    };
+    interface HTMLPagePhotosTomHarrisonElement extends Components.PagePhotosTomHarrison, HTMLStencilElement {
+    }
+    var HTMLPagePhotosTomHarrisonElement: {
+        prototype: HTMLPagePhotosTomHarrisonElement;
+        new (): HTMLPagePhotosTomHarrisonElement;
+    };
     interface HTMLPagePinkHeartsElement extends Components.PagePinkHearts, HTMLStencilElement {
     }
     var HTMLPagePinkHeartsElement: {
@@ -1501,12 +1611,6 @@ declare global {
         prototype: HTMLPageUseMicromeshInZbrushElement;
         new (): HTMLPageUseMicromeshInZbrushElement;
     };
-    interface HTMLPageUsePrismJsInIonicStencilAppElement extends Components.PageUsePrismJsInIonicStencilApp, HTMLStencilElement {
-    }
-    var HTMLPageUsePrismJsInIonicStencilAppElement: {
-        prototype: HTMLPageUsePrismJsInIonicStencilAppElement;
-        new (): HTMLPageUsePrismJsInIonicStencilAppElement;
-    };
     interface HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement extends Components.PageUseSpotlightToDisplayReferenceImagesInZbrush, HTMLStencilElement {
     }
     var HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement: {
@@ -1603,16 +1707,22 @@ declare global {
         prototype: HTMLPageZbrushResourcesOnlineElement;
         new (): HTMLPageZbrushResourcesOnlineElement;
     };
+    interface HTMLTemplatePageElement extends Components.TemplatePage, HTMLStencilElement {
+    }
+    var HTMLTemplatePageElement: {
+        prototype: HTMLTemplatePageElement;
+        new (): HTMLTemplatePageElement;
+    };
     interface HTMLElementTagNameMap {
         "app-404-page-not-found": HTMLApp404PageNotFoundElement;
         "app-blog-filter": HTMLAppBlogFilterElement;
         "app-entry-meta": HTMLAppEntryMetaElement;
+        "app-list-menu": HTMLAppListMenuElement;
         "app-photo-card": HTMLAppPhotoCardElement;
-        "app-photos": HTMLAppPhotosElement;
+        "app-photo-grid": HTMLAppPhotoGridElement;
         "app-root": HTMLAppRootElement;
         "app-search": HTMLAppSearchElement;
         "app-tabs": HTMLAppTabsElement;
-        "gls-adsense-ad": HTMLGlsAdsenseAdElement;
         "gls-gcse-searchbox-only": HTMLGlsGcseSearchboxOnlyElement;
         "page-7-quintessential-brushes-for-zbrush-beginners": HTMLPage7QuintessentialBrushesForZbrushBeginnersElement;
         "page-7-reasons-why-typescript-helps-you-kick-ass": HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement;
@@ -1725,6 +1835,19 @@ declare global {
         "page-notes-on-zbrush-sculptris-pro": HTMLPageNotesOnZbrushSculptrisProElement;
         "page-notes-on-zbrush-slicecurve-brush": HTMLPageNotesOnZbrushSlicecurveBrushElement;
         "page-permitting-author-access-to-search-collection-in-wcm-search-component": HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement;
+        "page-photos-cavazos-center": HTMLPagePhotosCavazosCenterElement;
+        "page-photos-curt-bruce": HTMLPagePhotosCurtBruceElement;
+        "page-photos-dennis-mannion": HTMLPagePhotosDennisMannionElement;
+        "page-photos-ed-kalwara": HTMLPagePhotosEdKalwaraElement;
+        "page-photos-gary-culp": HTMLPagePhotosGaryCulpElement;
+        "page-photos-jack-depope": HTMLPagePhotosJackDepopeElement;
+        "page-photos-james-haight": HTMLPagePhotosJamesHaightElement;
+        "page-photos-jim-shipp": HTMLPagePhotosJimShippElement;
+        "page-photos-ken-hicks": HTMLPagePhotosKenHicksElement;
+        "page-photos-kevin-brooks": HTMLPagePhotosKevinBrooksElement;
+        "page-photos-ray-kelley": HTMLPagePhotosRayKelleyElement;
+        "page-photos-stanley-hall": HTMLPagePhotosStanleyHallElement;
+        "page-photos-tom-harrison": HTMLPagePhotosTomHarrisonElement;
         "page-pink-hearts": HTMLPagePinkHeartsElement;
         "page-pwa-with-ionic-angular-wordpress-api-1": HTMLPagePwaWithIonicAngularWordpressApi1Element;
         "page-pwa-with-ionic-angular-wordpress-api-2": HTMLPagePwaWithIonicAngularWordpressApi2Element;
@@ -1785,7 +1908,6 @@ declare global {
         "page-use-auto-masking-by-polygroups-in-zbrush": HTMLPageUseAutoMaskingByPolygroupsInZbrushElement;
         "page-use-fibermesh-in-zbrush": HTMLPageUseFibermeshInZbrushElement;
         "page-use-micromesh-in-zbrush": HTMLPageUseMicromeshInZbrushElement;
-        "page-use-prism-js-in-ionic-stencil-app": HTMLPageUsePrismJsInIonicStencilAppElement;
         "page-use-spotlight-to-display-reference-images-in-zbrush": HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement;
         "page-use-spring-for-stardog-in-a-spring-boot-application": HTMLPageUseSpringForStardogInASpringBootApplicationElement;
         "page-user-impersonation-in-websphere-portal-video-demo": HTMLPageUserImpersonationInWebspherePortalVideoDemoElement;
@@ -1802,6 +1924,7 @@ declare global {
         "page-xmlaccess-samples": HTMLPageXmlaccessSamplesElement;
         "page-zbrush-keyboard-shortcuts": HTMLPageZbrushKeyboardShortcutsElement;
         "page-zbrush-resources-online": HTMLPageZbrushResourcesOnlineElement;
+        "template-page": HTMLTemplatePageElement;
     }
 }
 declare namespace LocalJSX {
@@ -1813,24 +1936,30 @@ declare namespace LocalJSX {
     interface AppEntryMeta {
         "header"?: any;
     }
+    interface AppListMenu {
+        "items"?: Array<any>;
+        "lines"?: "full" | "inset" | "none";
+        "showMetadata"?: false;
+    }
     interface AppPhotoCard {
         "imagePath"?: string;
         "item"?: any;
     }
-    interface AppPhotos {
-        "name"?: string;
+    interface AppPhotoGrid {
+        /**
+          * imagePath is expected to be the URL path upon which to append all the image  file names in order to find the images (e.g. folder where the images are  located). In an AWS S3 bucket folder, for example: image-path="https://s3.us-east-2.amazonaws.com/codyburleson.com/images/vietnam-jack-depope/"
+         */
+        "imagePath"?: string;
+        /**
+          * photos property expects an array of photos with the given structure, for example:  "photos": [    {      "id": "jack-depope-2",      "subtitle": "Jack &quot;Doc&quot; DePope",      "content": "<p>2nd Platoon, Delta Company, 1st Battalion, 3rd Marines (1/3)</p>"    },    {      "id": "ch34-stirring-up-dust",      "subtitle": "CH34 Stirring up dust",      "content": ""    } ]  ...where id is expected to be the file name, without a jpg prefix. The component is  limited in use case, right now to images ending in .jpg, but yeah... that could be  revised easily.
+         */
+        "photos"?: any;
     }
     interface AppRoot {
     }
     interface AppSearch {
     }
     interface AppTabs {
-    }
-    interface GlsAdsenseAd {
-        /**
-          * Any of horizontal, vertical, rectangle or a comma separated list of multiple (e.g. rectangle, vertical)
-         */
-        "adFormat"?: string;
     }
     interface GlsGcseSearchboxOnly {
     }
@@ -2058,6 +2187,32 @@ declare namespace LocalJSX {
     }
     interface PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent {
     }
+    interface PagePhotosCavazosCenter {
+    }
+    interface PagePhotosCurtBruce {
+    }
+    interface PagePhotosDennisMannion {
+    }
+    interface PagePhotosEdKalwara {
+    }
+    interface PagePhotosGaryCulp {
+    }
+    interface PagePhotosJackDepope {
+    }
+    interface PagePhotosJamesHaight {
+    }
+    interface PagePhotosJimShipp {
+    }
+    interface PagePhotosKenHicks {
+    }
+    interface PagePhotosKevinBrooks {
+    }
+    interface PagePhotosRayKelley {
+    }
+    interface PagePhotosStanleyHall {
+    }
+    interface PagePhotosTomHarrison {
+    }
     interface PagePinkHearts {
     }
     interface PagePwaWithIonicAngularWordpressApi1 {
@@ -2178,8 +2333,6 @@ declare namespace LocalJSX {
     }
     interface PageUseMicromeshInZbrush {
     }
-    interface PageUsePrismJsInIonicStencilApp {
-    }
     interface PageUseSpotlightToDisplayReferenceImagesInZbrush {
     }
     interface PageUseSpringForStardogInASpringBootApplication {
@@ -2212,16 +2365,18 @@ declare namespace LocalJSX {
     }
     interface PageZbrushResourcesOnline {
     }
+    interface TemplatePage {
+    }
     interface IntrinsicElements {
         "app-404-page-not-found": App404PageNotFound;
         "app-blog-filter": AppBlogFilter;
         "app-entry-meta": AppEntryMeta;
+        "app-list-menu": AppListMenu;
         "app-photo-card": AppPhotoCard;
-        "app-photos": AppPhotos;
+        "app-photo-grid": AppPhotoGrid;
         "app-root": AppRoot;
         "app-search": AppSearch;
         "app-tabs": AppTabs;
-        "gls-adsense-ad": GlsAdsenseAd;
         "gls-gcse-searchbox-only": GlsGcseSearchboxOnly;
         "page-7-quintessential-brushes-for-zbrush-beginners": Page7QuintessentialBrushesForZbrushBeginners;
         "page-7-reasons-why-typescript-helps-you-kick-ass": Page7ReasonsWhyTypescriptHelpsYouKickAss;
@@ -2334,6 +2489,19 @@ declare namespace LocalJSX {
         "page-notes-on-zbrush-sculptris-pro": PageNotesOnZbrushSculptrisPro;
         "page-notes-on-zbrush-slicecurve-brush": PageNotesOnZbrushSlicecurveBrush;
         "page-permitting-author-access-to-search-collection-in-wcm-search-component": PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent;
+        "page-photos-cavazos-center": PagePhotosCavazosCenter;
+        "page-photos-curt-bruce": PagePhotosCurtBruce;
+        "page-photos-dennis-mannion": PagePhotosDennisMannion;
+        "page-photos-ed-kalwara": PagePhotosEdKalwara;
+        "page-photos-gary-culp": PagePhotosGaryCulp;
+        "page-photos-jack-depope": PagePhotosJackDepope;
+        "page-photos-james-haight": PagePhotosJamesHaight;
+        "page-photos-jim-shipp": PagePhotosJimShipp;
+        "page-photos-ken-hicks": PagePhotosKenHicks;
+        "page-photos-kevin-brooks": PagePhotosKevinBrooks;
+        "page-photos-ray-kelley": PagePhotosRayKelley;
+        "page-photos-stanley-hall": PagePhotosStanleyHall;
+        "page-photos-tom-harrison": PagePhotosTomHarrison;
         "page-pink-hearts": PagePinkHearts;
         "page-pwa-with-ionic-angular-wordpress-api-1": PagePwaWithIonicAngularWordpressApi1;
         "page-pwa-with-ionic-angular-wordpress-api-2": PagePwaWithIonicAngularWordpressApi2;
@@ -2394,7 +2562,6 @@ declare namespace LocalJSX {
         "page-use-auto-masking-by-polygroups-in-zbrush": PageUseAutoMaskingByPolygroupsInZbrush;
         "page-use-fibermesh-in-zbrush": PageUseFibermeshInZbrush;
         "page-use-micromesh-in-zbrush": PageUseMicromeshInZbrush;
-        "page-use-prism-js-in-ionic-stencil-app": PageUsePrismJsInIonicStencilApp;
         "page-use-spotlight-to-display-reference-images-in-zbrush": PageUseSpotlightToDisplayReferenceImagesInZbrush;
         "page-use-spring-for-stardog-in-a-spring-boot-application": PageUseSpringForStardogInASpringBootApplication;
         "page-user-impersonation-in-websphere-portal-video-demo": PageUserImpersonationInWebspherePortalVideoDemo;
@@ -2411,6 +2578,7 @@ declare namespace LocalJSX {
         "page-xmlaccess-samples": PageXmlaccessSamples;
         "page-zbrush-keyboard-shortcuts": PageZbrushKeyboardShortcuts;
         "page-zbrush-resources-online": PageZbrushResourcesOnline;
+        "template-page": TemplatePage;
     }
 }
 export { LocalJSX as JSX };
@@ -2420,12 +2588,12 @@ declare module "@stencil/core" {
             "app-404-page-not-found": LocalJSX.App404PageNotFound & JSXBase.HTMLAttributes<HTMLApp404PageNotFoundElement>;
             "app-blog-filter": LocalJSX.AppBlogFilter & JSXBase.HTMLAttributes<HTMLAppBlogFilterElement>;
             "app-entry-meta": LocalJSX.AppEntryMeta & JSXBase.HTMLAttributes<HTMLAppEntryMetaElement>;
+            "app-list-menu": LocalJSX.AppListMenu & JSXBase.HTMLAttributes<HTMLAppListMenuElement>;
             "app-photo-card": LocalJSX.AppPhotoCard & JSXBase.HTMLAttributes<HTMLAppPhotoCardElement>;
-            "app-photos": LocalJSX.AppPhotos & JSXBase.HTMLAttributes<HTMLAppPhotosElement>;
+            "app-photo-grid": LocalJSX.AppPhotoGrid & JSXBase.HTMLAttributes<HTMLAppPhotoGridElement>;
             "app-root": LocalJSX.AppRoot & JSXBase.HTMLAttributes<HTMLAppRootElement>;
             "app-search": LocalJSX.AppSearch & JSXBase.HTMLAttributes<HTMLAppSearchElement>;
             "app-tabs": LocalJSX.AppTabs & JSXBase.HTMLAttributes<HTMLAppTabsElement>;
-            "gls-adsense-ad": LocalJSX.GlsAdsenseAd & JSXBase.HTMLAttributes<HTMLGlsAdsenseAdElement>;
             "gls-gcse-searchbox-only": LocalJSX.GlsGcseSearchboxOnly & JSXBase.HTMLAttributes<HTMLGlsGcseSearchboxOnlyElement>;
             "page-7-quintessential-brushes-for-zbrush-beginners": LocalJSX.Page7QuintessentialBrushesForZbrushBeginners & JSXBase.HTMLAttributes<HTMLPage7QuintessentialBrushesForZbrushBeginnersElement>;
             "page-7-reasons-why-typescript-helps-you-kick-ass": LocalJSX.Page7ReasonsWhyTypescriptHelpsYouKickAss & JSXBase.HTMLAttributes<HTMLPage7ReasonsWhyTypescriptHelpsYouKickAssElement>;
@@ -2538,6 +2706,19 @@ declare module "@stencil/core" {
             "page-notes-on-zbrush-sculptris-pro": LocalJSX.PageNotesOnZbrushSculptrisPro & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSculptrisProElement>;
             "page-notes-on-zbrush-slicecurve-brush": LocalJSX.PageNotesOnZbrushSlicecurveBrush & JSXBase.HTMLAttributes<HTMLPageNotesOnZbrushSlicecurveBrushElement>;
             "page-permitting-author-access-to-search-collection-in-wcm-search-component": LocalJSX.PagePermittingAuthorAccessToSearchCollectionInWcmSearchComponent & JSXBase.HTMLAttributes<HTMLPagePermittingAuthorAccessToSearchCollectionInWcmSearchComponentElement>;
+            "page-photos-cavazos-center": LocalJSX.PagePhotosCavazosCenter & JSXBase.HTMLAttributes<HTMLPagePhotosCavazosCenterElement>;
+            "page-photos-curt-bruce": LocalJSX.PagePhotosCurtBruce & JSXBase.HTMLAttributes<HTMLPagePhotosCurtBruceElement>;
+            "page-photos-dennis-mannion": LocalJSX.PagePhotosDennisMannion & JSXBase.HTMLAttributes<HTMLPagePhotosDennisMannionElement>;
+            "page-photos-ed-kalwara": LocalJSX.PagePhotosEdKalwara & JSXBase.HTMLAttributes<HTMLPagePhotosEdKalwaraElement>;
+            "page-photos-gary-culp": LocalJSX.PagePhotosGaryCulp & JSXBase.HTMLAttributes<HTMLPagePhotosGaryCulpElement>;
+            "page-photos-jack-depope": LocalJSX.PagePhotosJackDepope & JSXBase.HTMLAttributes<HTMLPagePhotosJackDepopeElement>;
+            "page-photos-james-haight": LocalJSX.PagePhotosJamesHaight & JSXBase.HTMLAttributes<HTMLPagePhotosJamesHaightElement>;
+            "page-photos-jim-shipp": LocalJSX.PagePhotosJimShipp & JSXBase.HTMLAttributes<HTMLPagePhotosJimShippElement>;
+            "page-photos-ken-hicks": LocalJSX.PagePhotosKenHicks & JSXBase.HTMLAttributes<HTMLPagePhotosKenHicksElement>;
+            "page-photos-kevin-brooks": LocalJSX.PagePhotosKevinBrooks & JSXBase.HTMLAttributes<HTMLPagePhotosKevinBrooksElement>;
+            "page-photos-ray-kelley": LocalJSX.PagePhotosRayKelley & JSXBase.HTMLAttributes<HTMLPagePhotosRayKelleyElement>;
+            "page-photos-stanley-hall": LocalJSX.PagePhotosStanleyHall & JSXBase.HTMLAttributes<HTMLPagePhotosStanleyHallElement>;
+            "page-photos-tom-harrison": LocalJSX.PagePhotosTomHarrison & JSXBase.HTMLAttributes<HTMLPagePhotosTomHarrisonElement>;
             "page-pink-hearts": LocalJSX.PagePinkHearts & JSXBase.HTMLAttributes<HTMLPagePinkHeartsElement>;
             "page-pwa-with-ionic-angular-wordpress-api-1": LocalJSX.PagePwaWithIonicAngularWordpressApi1 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi1Element>;
             "page-pwa-with-ionic-angular-wordpress-api-2": LocalJSX.PagePwaWithIonicAngularWordpressApi2 & JSXBase.HTMLAttributes<HTMLPagePwaWithIonicAngularWordpressApi2Element>;
@@ -2598,7 +2779,6 @@ declare module "@stencil/core" {
             "page-use-auto-masking-by-polygroups-in-zbrush": LocalJSX.PageUseAutoMaskingByPolygroupsInZbrush & JSXBase.HTMLAttributes<HTMLPageUseAutoMaskingByPolygroupsInZbrushElement>;
             "page-use-fibermesh-in-zbrush": LocalJSX.PageUseFibermeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseFibermeshInZbrushElement>;
             "page-use-micromesh-in-zbrush": LocalJSX.PageUseMicromeshInZbrush & JSXBase.HTMLAttributes<HTMLPageUseMicromeshInZbrushElement>;
-            "page-use-prism-js-in-ionic-stencil-app": LocalJSX.PageUsePrismJsInIonicStencilApp & JSXBase.HTMLAttributes<HTMLPageUsePrismJsInIonicStencilAppElement>;
             "page-use-spotlight-to-display-reference-images-in-zbrush": LocalJSX.PageUseSpotlightToDisplayReferenceImagesInZbrush & JSXBase.HTMLAttributes<HTMLPageUseSpotlightToDisplayReferenceImagesInZbrushElement>;
             "page-use-spring-for-stardog-in-a-spring-boot-application": LocalJSX.PageUseSpringForStardogInASpringBootApplication & JSXBase.HTMLAttributes<HTMLPageUseSpringForStardogInASpringBootApplicationElement>;
             "page-user-impersonation-in-websphere-portal-video-demo": LocalJSX.PageUserImpersonationInWebspherePortalVideoDemo & JSXBase.HTMLAttributes<HTMLPageUserImpersonationInWebspherePortalVideoDemoElement>;
@@ -2615,6 +2795,7 @@ declare module "@stencil/core" {
             "page-xmlaccess-samples": LocalJSX.PageXmlaccessSamples & JSXBase.HTMLAttributes<HTMLPageXmlaccessSamplesElement>;
             "page-zbrush-keyboard-shortcuts": LocalJSX.PageZbrushKeyboardShortcuts & JSXBase.HTMLAttributes<HTMLPageZbrushKeyboardShortcutsElement>;
             "page-zbrush-resources-online": LocalJSX.PageZbrushResourcesOnline & JSXBase.HTMLAttributes<HTMLPageZbrushResourcesOnlineElement>;
+            "template-page": LocalJSX.TemplatePage & JSXBase.HTMLAttributes<HTMLTemplatePageElement>;
         }
     }
 }

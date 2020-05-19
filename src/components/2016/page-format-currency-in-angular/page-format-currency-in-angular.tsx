@@ -1,53 +1,31 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-//import Prism from "prismjs"
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-//import '@deckdeckgo/highlight-code';
-
-//import { defineCustomElements as deckDeckGoElement} from '@deckdeckgo/highlight-code/dist/loader';
-//deckDeckGoElement();
-
-/*
-const CODE_1 = `<tr *ngFor="#item of data">
-     <td><a href="#">{{ item.invoiceNo }}</a></td>
-     <td>{{ item.invoiceDate }}</td>
-     <td>{{ item.invoiceStatus }}</td>
-     <td class="right aligned">{{ item.invoiceTotal | currency:'USD':true:'1.2-2' }}</td>
-</tr>`;
-*/
 
 @Component({
     tag: 'page-format-currency-in-angular',
 })
 export class PageFormatCurrencyInAngular {
 
-    // All data from BlogService
-    //data: any;
-
     // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
         if (isLocal()) {
             console.log('-- PageFormatCurrencyInAngular.componentDidLoad > header by id: %o', BlogData.getPostHeaderById(id));
         }
-        // set internalk property for use inside the page content H1
+        // set internal property for use inside the page content H1
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
     }
-
-    /*
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
-    }*/
 
     render() {
         return [
@@ -69,7 +47,6 @@ export class PageFormatCurrencyInAngular {
                             <app-entry-meta header={this.header} />
 
                             <p>In Angular, to format a currency, use the currency pipe on a number as shown here.</p>
-                            {/* <pre><code class="language-html">{CODE_1}</code></pre> */}
 
 <deckgo-highlight-code language="html">
 <code slot="code">
@@ -94,7 +71,7 @@ export class PageFormatCurrencyInAngular {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

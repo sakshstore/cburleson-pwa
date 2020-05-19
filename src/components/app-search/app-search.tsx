@@ -8,19 +8,11 @@ export class AppSearch {
 
     title = 'Search';
 
-    // header for this individual item by id...
-    header: any;
-
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> AppSearch.componentWillLoad');
+            console.log('>> AppSearch.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        //let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
-        //this.header = BlogData.getPostHeaderById(id);
-
-        // set document title for browser / tab / bookmark
+        
         document.title = this.title + ' | ' + SITENAME;
     }
 

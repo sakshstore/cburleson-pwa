@@ -1,40 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-typescript.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-set-the-page-title-in-angular',
 })
 export class PageSetThePageTitleInAngular {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageSetThePageTitleInAngular.componentWillLoad');
+            console.log('>> PageSetThePageTitleInAngular.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -58,7 +46,7 @@ export class PageSetThePageTitleInAngular {
 
                             <p>Angular provides a Title service that you can use to set the title of a page. This is good, of course, for SEO. Here’s how to use it.</p>
 
-                            <pre><code class="language-ts">{`import { Component } from '@angular/core';
+                            <deckgo-highlight-code><code slot="code">{`import { Component } from '@angular/core';
 import { Title } from '@angular/platform-browser';
  
 @Component({
@@ -76,14 +64,14 @@ export class MyAppComponent {
     public setTitle( newTitle: string) {
         this.titleService.setTitle(newTitle);
     }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>The service automatically creates the title&nbsp;element in the head if needed and also sets the value. &nbsp;The service also has a getter method to get the title.</p>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

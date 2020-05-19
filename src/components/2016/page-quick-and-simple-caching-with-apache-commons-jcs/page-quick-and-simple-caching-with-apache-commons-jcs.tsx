@@ -1,42 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
-import 'prismjs/components/prism-properties.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-quick-and-simple-caching-with-apache-commons-jcs',
 })
 export class PageQuickAndSimpleCachingWithApacheCommonsJcs {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageQuickAndSimpleCachingWithApacheCommonsJcs.componentWillLoad');
+            console.log('>> PageQuickAndSimpleCachingWithApacheCommonsJcs.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    // Use this if using source code blocks to be formatted by prism.js...
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -62,15 +48,15 @@ export class PageQuickAndSimpleCachingWithApacheCommonsJcs {
 
                             <p>First, the Maven dependency…</p>
 
-                            <pre><code class="language-xml">{`<dependency>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<dependency>
      <groupId>org.apache.commons</groupId>
      <artifactId>commons-jcs-core</artifactId>
      <version>2.0-beta-1</version>
-</dependency>`}</code></pre>
+</dependency>`}</code></deckgo-highlight-code>
 
                             <p>Next, create the cache config file as follows. Name it cache.ccf and put it in your resources directory on the classpath. The first stanza is the default cache. The second is one I created, for example, to cache a list of people (active users) from an expensive API call into the cloud.</p>
 
-                            <pre><code class="language-properties">{`# DEFAULT CACHE REGION
+                            <deckgo-highlight-code language="properties"><code slot="code">{`# DEFAULT CACHE REGION
 jcs.default=DC
 jcs.default.cacheattributes=org.apache.commons.jcs.engine.CompositeCacheAttributes
 jcs.default.cacheattributes.MaxObjects=1000
@@ -96,17 +82,17 @@ jcs.region.peopleCache.cacheattributes.MaxMemoryIdleTime=3600
 jcs.region.peopleCache.cacheattributes.ShrinkerInterval=60
 jcs.region.peopleCache.cacheattributes.MaxSpoolPerRun=500
 jcs.region.peopleCache.elementattributes=org.apache.commons.jcs.engine.ElementAttributes
-jcs.region.peopleCache.elementattributes.IsEternal=false`}</code></pre>
+jcs.region.peopleCache.elementattributes.IsEternal=false`}</code></deckgo-highlight-code>
 
                             <p>You’ll need the following imports…</p>
 
-                            <pre><code class="language-java">{`import org.apache.commons.jcs.JCS;
+                            <deckgo-highlight-code language="java"><code slot="code">{`import org.apache.commons.jcs.JCS;
 import org.apache.commons.jcs.access.exception.CacheException;
-import org.apache.commons.jcs.access.CacheAccess;`}</code></pre>
+import org.apache.commons.jcs.access.CacheAccess;`}</code></deckgo-highlight-code>
 
                             <p>Get a handle on the cache by name like this…</p>
 
-                            <pre><code class="language-java">{`// String is the cache key, the second param is whatever object type you're caching...
+                            <deckgo-highlight-code language="java"><code slot="code">{`// String is the cache key, the second param is whatever object type you're caching...
 private CacheAccess<String, List<User>> cache = null;
  
 public MyService() {
@@ -120,11 +106,11 @@ public MyService() {
             LOG.error( String.format( "Problem initializing cache: %s", e.getMessage() ) );
      }
  
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>Finally, here’s an example of a fetch method that attempts to get resources from the cache before going back to the expensive API client request.</p>
 
-                            <pre><code class="language-java">{`public List getActiveUsers() {
+                            <deckgo-highlight-code language="java"><code slot="code">{`public List getActiveUsers() {
  
  // First, try to get the user list from the cache...
  List userList = cache.get("activeUserList");
@@ -149,7 +135,7 @@ public MyService() {
 
     return userList;
 
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>That’s all you need to do to setup a cache in your web app fast. But if you’re wondering if Commons JCS™ has the chops to handle something more sophisticated, here’s something to ease your concerns. Beyond simply caching objects in memory, it provides numerous additional features:</p>
                             <ul>
@@ -184,7 +170,7 @@ public MyService() {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

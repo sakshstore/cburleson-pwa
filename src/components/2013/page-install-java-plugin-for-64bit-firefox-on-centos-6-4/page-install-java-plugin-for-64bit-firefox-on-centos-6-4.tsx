@@ -1,41 +1,28 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
     tag: 'page-install-java-plugin-for-64bit-firefox-on-centos-6-4',
 })
 export class PageInstallJavaPluginFor64bitFirefoxOnCentos64 {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageInstallJavaPluginFor64bitFirefoxOnCentos64.componentWillLoad');
+            console.log('>> PageInstallJavaPluginFor64bitFirefoxOnCentos64.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        
+                let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -70,46 +57,46 @@ export class PageInstallJavaPluginFor64bitFirefoxOnCentos64 {
 
                             <p>Change to root user and enter password.</p>
 
-                            <pre><code class="language-bash">{`su`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`su`}</code></deckgo-highlight-code>
 
                             <p>Change directory to /usr/java. If it isn’t created, create it.</p>
 
-                            <pre><code class="language-bash">{`mkdir /usr/java
-cd /usr/java`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`mkdir /usr/java
+cd /usr/java`}</code></deckgo-highlight-code>
 
                             <p>Execute rpm on the Java RPM you just downloaded…</p>
 
-                            <pre><code class="language-bash">{`rpm -ivh /home/basejump/Downloads/jre-7u21-linux-x64.rpm`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`rpm -ivh /home/basejump/Downloads/jre-7u21-linux-x64.rpm`}</code></deckgo-highlight-code>
 
                             <p>Validate with:</p>
 
-                            <pre><code class="language-bash">{`java -version`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`java -version`}</code></deckgo-highlight-code>
 
                             <p>Delete the original RPM; you don’t need that anymore.</p>
 
-                            <pre><code class="language-bash">{`rm -rf /home/basejump/Downloads/jre-7u21-linux-x64.rpm`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`rm -rf /home/basejump/Downloads/jre-7u21-linux-x64.rpm`}</code></deckgo-highlight-code>
 
                             <p>From the /usr/java directory, Find the Firefox plugin (which gets installed with java):</p>
 
-                            <pre><code class="language-bash">{`find . | grep libnpjp`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`find . | grep libnpjp`}</code></deckgo-highlight-code>
 
                             <p>For me, that returned:</p>
 
-                            <pre><code class="language-bash">{`/usr/java/jre1.7.0_21/lib/amd64/libnpjp2.so`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`/usr/java/jre1.7.0_21/lib/amd64/libnpjp2.so`}</code></deckgo-highlight-code>
 
                             <p>Change to directory for Firefox plugins:</p>
 
-                            <pre><code class="language-bash">{`cd /usr/lib64/mozilla/plugins`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`cd /usr/lib64/mozilla/plugins`}</code></deckgo-highlight-code>
 
                             <p>Be careful. There is also a <code>/usr/lib/mozilla/plugins</code> directory. Be sure you’re in <code>lib64</code>!</p>
 
                             <p>Create symbolic link to the plugin:</p>
 
-                            <pre><code class="language-bash">{`ln -fs /usr/java/jre1.7.0_21/lib/amd64/libnpjp2.so libnpjp2.so`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`ln -fs /usr/java/jre1.7.0_21/lib/amd64/libnpjp2.so libnpjp2.so`}</code></deckgo-highlight-code>
 
                             <p>Exit the root user:</p>
 
-                            <pre><code class="language-bash">{`exit`}</code></pre>
+                            <deckgo-highlight-code language="bash"><code slot="code">{`exit`}</code></deckgo-highlight-code>
 
                             <p>Start Firefox and validate by going to Tools &gt; Addons &gt; Plugins. You should now see Java Plug-in 1.x.x enabled.</p>
 
@@ -117,7 +104,7 @@ cd /usr/java`}</code></pre>
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+                            
 
                         </ion-col>
                     </ion-row>

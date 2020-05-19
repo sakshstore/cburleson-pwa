@@ -1,7 +1,6 @@
-import { Component, h, Listen } from '@stencil/core';
+import { Build, Component, h, Listen } from '@stencil/core';
 import { isLocal, SITENAME } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
-// import { PageData } from '../../services/page-data';
 
 declare let gtag: Function;
 
@@ -22,7 +21,7 @@ export class AppRoot {
   routeDidChangeHandler(event: CustomEvent) {
 
     //if (isLocal()) {
-    //console.log('> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
+    //console.log('>> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
     //}
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
@@ -32,7 +31,9 @@ export class AppRoot {
       }
     });
 
-    if (!isLocal()) {
+    // Build.isBrowser is true when running in the
+    // browser and false when being prerendered
+    if (!isLocal() && Build.isBrowser) {
       if (event.detail.redirectedFrom !== null) {
         // We want to track what the user actually entered or clicked to get to the destination, not necessarily 
         // where they got redirected to (mainly '/' instead of 'blog'). If a redirection exists, take the redirectedFrom...
@@ -48,7 +49,7 @@ export class AppRoot {
   async componentWillLoad() {
 
     if (isLocal()) {
-      console.log('> AppRoot.componentWillLoad');
+      console.log('>> AppRoot.componentWillLoad');
     }
 
     //this.pageData = await PageData.load();
@@ -123,31 +124,32 @@ export class AppRoot {
       }
     });
 
-
     return (
       <ion-router useHash={false}>
 
         <ion-route component="app-tabs">
-
           {primaryNavRoutes}
-
           {pageRoutes}
-
-          <ion-route url="/photos" component="tab-books">
-            <ion-route url="/:name" component="app-photos"></ion-route>
-          </ion-route>
-          <ion-route url="/photos" component="tab-books">
-            <ion-route url="/:name/:any" component="app-404-page-not-found"></ion-route>
-          </ion-route>
-
           {blogPostRoutes}
-
         </ion-route>
 
         <ion-route url="/search" component="app-search" />
         <ion-route url=":any" component="app-404-page-not-found" />
 
         <ion-route-redirect from="/" to='/blog' />
+ 
+        <ion-route-redirect from="/photos/curt-bruce" to='/cage/photos-curt-bruce' />
+        <ion-route-redirect from="/photos/ed-kalwara" to='/cage/photos-ed-kalwara' />
+        <ion-route-redirect from="/photos/gary-culp" to='/cage/photos-gary-culp' />
+        <ion-route-redirect from="/photos/jack-depope" to='/cage/photos-jack-depope' />
+        <ion-route-redirect from="/photos/james-haight" to='/cage/photos-james-haight' />
+        <ion-route-redirect from="/photos/jim-shipp" to='/cage/photos-jim-shipp' />
+        <ion-route-redirect from="/photos/kevin-brooks" to='/cage/photos-kevin-brooks' />
+        <ion-route-redirect from="/photos/ray-kelley" to='/cage/photos-ray-kelley' />
+        <ion-route-redirect from="/photos/stanley-hall" to='/cage/photos-stanley-hall' />
+        <ion-route-redirect from="/photos/tom-harrison" to='/cage/photos-cavazos-center' />
+        <ion-route-redirect from="/photos/dennis-mannion" to='/cage/photos-dennis-mannion' />
+        <ion-route-redirect from="/photos/cavazos-center" to='/cage/photos-cavazos-center' />
 
         <ion-route-redirect from="/d-1-3-weapons-platoon" to='/cage/d-1-3-weapons-platoon' />
         <ion-route-redirect from="/marine-platoon-156-san-diego-1966" to='/cage/marine-platoon-156-san-diego-1966' />
@@ -157,20 +159,6 @@ export class AppRoot {
         <ion-route-redirect from="/beaver-cage-union-memorial" to='/cage/beaver-cage-union-memorial' />
         <ion-route-redirect from="/slf-after-action-cage-union" to='/cage/slf-after-action-cage-union' />
         <ion-route-redirect from="/beaver-cage-command-chron" to='/cage/beaver-cage-command-chron' />
-
-        {/* 
-        <ion-route-redirect from="/photos/curt-bruce" to='/cage/curt-bruce' />
-        <ion-route-redirect from="/photos/ed-kalwara" to='/cage/ed-kalwara' />
-        <ion-route-redirect from="/photos/gary-culp" to='/cage/gary-culp' />
-        <ion-route-redirect from="/photos/jack-depope" to='/cage/jack-depope' />
-        <ion-route-redirect from="/photos/james-haight" to='/cage/james-haight' />
-        <ion-route-redirect from="/photos/jim-shipp" to='/cage/jim-shipp' />
-        <ion-route-redirect from="/photos/kevin-brooks" to='/cage/kevin-brooks' />
-        <ion-route-redirect from="/photos/ray-kelley" to='/cage/ray-kelley' />
-        <ion-route-redirect from="/photos/stanley-hall" to='/cage/stanley-hall' />
-        <ion-route-redirect from="/photos/cavazos-center" to='/cage/cavazos-center' />
-        */}
-
         <ion-route-redirect from="/book-review-the-goldfinch" to='/books/book-review-the-goldfinch' />
         <ion-route-redirect from="/book-review-more-than-everything-by-vanessa-foster" to='/books/book-review-more-than-everything-by-vanessa-foster' />
         <ion-route-redirect from="/vietnam-war-reference-resources" to='/cage/vietnam-war-reference-resources' />

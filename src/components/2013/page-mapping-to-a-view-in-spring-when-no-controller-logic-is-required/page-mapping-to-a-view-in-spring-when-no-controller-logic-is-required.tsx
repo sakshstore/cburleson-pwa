@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -12,29 +8,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageMappingToAViewInSpringWhenNoControllerLogicIsRequired.componentWillLoad');
+            console.log('>> PageMappingToAViewInSpringWhenNoControllerLogicIsRequired.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -60,7 +48,7 @@ export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
 
                             <p>Since Spring 3.0, you can use the following tag in your XML configuration:</p>
 
-                            <pre><code class="language-xml">{`<mvc:view-controller path="/" view-name="home"/>`}</code></pre>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<mvc:view-controller path="/" view-name="home"/>`}</code></deckgo-highlight-code>
 
                             <p>That’s an example of a view-controller definition that forwards to a home page without any custom backing controller. The <a href="http://static.springsource.org/spring/docs/3.0.x/reference/mvc.html" rel="nofollow">Spring 3.0 documentation</a> describes the tag as follows:</p>
 
@@ -68,7 +56,7 @@ export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
 
                             <p>Following is an example of the full dispatcher-servlet.xml file that I’m using at the moment. You can see at the very bottom that I’ve mapped two of these. The path ‘/index’ routes to a <a href="http://freemarker.org/" rel="nofollow">FreeMarker</a> view I’ve defined in an index.ftl file and the path ‘/about’ routes to another FreeMarker view defined in the file, about.ftl.</p>
 
-                            <pre><code class="language-xml">{`<?xml version="1.0" encoding="UTF-8"?>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans" 
      xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
      xmlns:p="http://www.springframework.org/schema/p" 
@@ -110,11 +98,11 @@ export class PageMappingToAViewInSpringWhenNoControllerLogicIsRequired {
         <mvc:view-controller path="/index" view-name="index" />
         <mvc:view-controller path="/about" view-name="about" />
  
-</beans>`}</code></pre>
+</beans>`}</code></deckgo-highlight-code>
 
                             <p>If you prefer Java code configuration over XML files for Spring, you can do this:</p>
 
-                            <pre><code class="language-java">{`@Configuration
+                            <deckgo-highlight-code language="java"><code slot="code">{`@Configuration
 @EnableWebMvc
 public class WebConfig extends WebMvcConfigurerAdapter {
  
@@ -123,13 +111,13 @@ public class WebConfig extends WebMvcConfigurerAdapter {
     registry.addViewController("/").setViewName("home");
   }
  
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+
 
                         </ion-col>
                     </ion-row>

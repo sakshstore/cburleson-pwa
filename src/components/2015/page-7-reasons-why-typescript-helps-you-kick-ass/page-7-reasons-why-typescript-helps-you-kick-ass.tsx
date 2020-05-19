@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-typescript.min';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -11,28 +7,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
+        if (isLocal()) {
+            console.log('>> Page7ReasonsWhyTypescriptHelpsYouKickAss.componentWillLoad');
+        }
 
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -80,19 +69,19 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
                             <p>As you know, JavaScript is not a strongly typed language, which can be good in some cases, but bad in others. It’s bad for IDE’s for one thing. Without explicit types, developer tools don’t have the semantics they need to help you out. Tools that understand TypeScript can help you find errors in your code at compile time and they can employ techniques like intellisense to give you hints about what you can properly do. A lot of the best and most commonly used tools support TypeScript – Visual Studio, WebStorm, and Sublime Text to name just a few.</p>
                             <p>Your weakly typed code can also be error prone and difficult for other developers to use. Take the following function, which is intended to add two numbers, for example:</p>
 
-                            <pre><code class="language-js">{`function total(x, y) {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`function total(x, y) {
      alert( x + y );
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>There’s nothing in that code that says that the two parameters given to the function should be numbers and JavaScript won’t enforce it either. If you pass a number and a string, you’d get an unintended result. The result of the following function call would not give you 3, but 12.</p>
 
-                            <pre><code class="language-js">{`total('1',2);`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`total('1',2);`}</code></deckgo-highlight-code>
 
                             <p>In TypeScript, we can explicitly assign types to the function parameters like this:</p>
 
-                            <pre><code class="language-ts">{`function total(x: number, y: number) {
+                            <deckgo-highlight-code><code slot="code">{`function total(x: number, y: number) {
      alert( x + y );
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>When we explicitly assign types, developers and IDE’s can better understand the code and that can help us avoid problems before runtime.</p>
 
@@ -104,7 +93,7 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
 
                             <p>It’s pretty simple. Here’s a class in TypeScript, for example:</p>
 
-                            <pre><code class="language-ts">{`class Greeter {
+                            <deckgo-highlight-code><code slot="code">{`class Greeter {
  
     greeting: string;
  
@@ -116,11 +105,11 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
         return "Hello, " + this.greeting;
     }
  
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>We can instantiate that class using the following code:</p>
 
-                            <pre><code class="language-ts">{`var greeter = new Greeter("world");`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`var greeter = new Greeter("world");`}</code></deckgo-highlight-code>
 
                             <p>Pretty cool, huh? The makers of ES6/ECMAScript® 2015 seem to think so; classes are coming to JavaScript irregardless of TypeScript. Which brings me to the next point.</p>
 
@@ -152,7 +141,7 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
 
                             <p>To understand what I mean, take a look at the following class that simply manages a list of numbers.</p>
 
-                            <pre><code class="language-ts">{`class ListOfNumbers {
+                            <deckgo-highlight-code><code slot="code">{`class ListOfNumbers {
  
         _items: number[] = [];
  
@@ -164,11 +153,11 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
                 return this._items;
         }
  
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>Now, suppose someone comes along, looks at this code and decides they need to do something very similar. They want to manage a list of strings in the same way, so they copy the code, paste it, and change it up a bit by replacing all the number types with string types, like so…</p>
 
-                            <pre><code class="language-ts">{`class ListOfStrings {
+                            <deckgo-highlight-code><code slot="code">{`class ListOfStrings {
  
         _items: string[] = [];
  
@@ -180,15 +169,15 @@ export class Page7ReasonsWhyTypescriptHelpsYouKickAss {
                 return this._items;
         }
  
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <p>It has been said that duplicate code is the root of all evil in software design. This, being identical or nearly identical code, you might call it careless. If you’re in a bad mood, you might even say it’s just downright sloppy and unprofessional. Generics can help solve this by allowing the same class to handle both a list of numbers and a list of strings.</p>
 
                             <p>An easy metaphor for understanding how this works is to look at a kind of template we’re all familiar with – a mail merge template:</p>
 
-                            <pre><code>{`Dear <name>
+                            <deckgo-highlight-code><code slot="code">{`Dear <name>
 
-We have sent the info to <address>. Thanks, <from>`}</code></pre>
+We have sent the info to <address>. Thanks, <from>`}</code></deckgo-highlight-code>
 
                             <p>I can merge values into the placeholders for this template to get a unique letter for each person on my mailing list.</p>
 
@@ -196,11 +185,11 @@ We have sent the info to <address>. Thanks, <from>`}</code></pre>
 
                             <p>With generics we can have just one function, which can be called with a specified type for the type variable. For example:</p>
 
-                            <pre><code class="language-ts">{`var stringNumeric = new GenericNumber&lt;number&gt;();`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`var stringNumeric = new GenericNumber&lt;number&gt;();`}</code></deckgo-highlight-code>
 
                             <p>Or…</p>
 
-                            <pre><code class="language-ts">{`var stringNumeric = new GenericNumber&lt;string&gt;();`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`var stringNumeric = new GenericNumber&lt;string&gt;();`}</code></deckgo-highlight-code>
 
                             <p>In summary, a <em>generic</em> is a code template that relies on type variables: &lt;T&gt;. This allows you to create more generalized code while ensuring that it remains type-safe at compile time.</p>
 
@@ -214,7 +203,7 @@ We have sent the info to <address>. Thanks, <from>`}</code></pre>
 
                             <p>If you use Gulp, you’ve already used modules. Gulp and other Node.js applications use CommonJS to require and import modules:</p>
 
-                            <pre><code class="language-ts">{`var gulp = require('gulp-uglify');`}</code></pre>
+                            <deckgo-highlight-code><code slot="code">{`var gulp = require('gulp-uglify');`}</code></deckgo-highlight-code>
 
                             <h2>7. Interfaces</h2>
 
@@ -224,14 +213,14 @@ We have sent the info to <address>. Thanks, <from>`}</code></pre>
 
                             <p>Following is a TypeScript example of the interface for a class and the class itself.</p>
 
-                            <pre><code class="language-ts">{`interface IClock {
+                            <deckgo-highlight-code><code slot="code">{`interface IClock {
     currentTime: Date;
 }
  
 class Clock implements IClock {
     currentTime: Date;
     constructor(h: number, m: number) { }
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
                             <h2>Conclusion</h2>
 
@@ -244,7 +233,7 @@ class Clock implements IClock {
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-                            <gls-adsense-ad />
+
 
                         </ion-col>
                     </ion-row>

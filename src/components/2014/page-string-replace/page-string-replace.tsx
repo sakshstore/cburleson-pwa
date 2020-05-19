@@ -1,9 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-javascript.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -11,29 +7,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageStringReplace {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageStringReplace.componentWillLoad');
+            console.log('>> PageStringReplace.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -63,11 +51,11 @@ export class PageStringReplace {
 
                             <p>Usage example:</p>
 
-                            <pre><code class="language-js">{`{@replace str="{message}" search="." replace="-" trim="true" /}`}</code></pre>
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`{@replace str="{message}" search="." replace="-" trim="true" /}`}</code></deckgo-highlight-code>
 
                             <p>Here is the Replace Helper for Dust (<a href="https://gist.github.com/codyburleson/eb49a3f69de76e3d752a" rel="nofollow">also on GitHub Gist</a>)</p>
 
-                            <pre><code class="language-js">{`(function (dust) {
+                            <deckgo-highlight-code language="javascript"><code slot="code">{`(function (dust) {
  
  /**
   * Polyfill to create String.trim() if it's not natively available
@@ -120,11 +108,11 @@ export class PageStringReplace {
 
  }
 
-})(typeof exports !== 'undefined' ? module.exports = require('dustjs-linkedin') : dust);`}</code></pre>
+})(typeof exports !== 'undefined' ? module.exports = require('dustjs-linkedin') : dust);`}</code></deckgo-highlight-code>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

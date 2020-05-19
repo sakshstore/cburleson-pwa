@@ -1,42 +1,26 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-turtle.min.js';
-import 'prismjs/components/prism-sparql.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
-
-
 
 @Component({
 	tag: 'page-sparql-examples-filter',
 })
 export class PageSparqlExamplesFilter {
 
-	title = 'Blog';
-
-	// header for this individual item by id...
 	header: any;
 
 	async componentWillLoad() {
 		if (isLocal()) {
-			console.log('> PageSparqlExamplesFilter.componentWillLoad');
+			console.log('>> PageSparqlExamplesFilter.componentWillLoad');
 		}
-		// this.data = await BlogData.load();
-		// Get the id from the URL path (slug)
-		let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+		
+		let id = extractIdFromDocumentPath();
 		this.header = BlogData.getPostHeaderById(id);
 
-		// set document title for browser / tab / bookmark
 		document.title = this.header.title + ' | ' + SITENAME;
 		if (this.header.teaser) {
 			document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
 		}
-	}
-
-	componentDidLoad() {
-		setTimeout(() => Prism.highlightAll(), 0)
 	}
 
 	render() {
@@ -59,7 +43,7 @@ export class PageSparqlExamplesFilter {
 							<app-entry-meta header={this.header} />
 
 							<h3>Return items with recorded date less than given date</h3>
-							<pre><code class="language-sparql">{`PREFIX dcterms: <http://purl.org/dc/terms/>
+							<deckgo-highlight-code><code slot="code">{`PREFIX dcterms: <http://purl.org/dc/terms/>
 PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
 PREFIX web: <http://base22.com/ont/web#>
  
@@ -68,12 +52,12 @@ SELECT * WHERE {
     ?subject dcterms:abstract ?abstract.
     ?subject web:publishDate ?publishDate.
     FILTER (?publishDate < "2016-09-28T19:19:02.982Z"^^xsd:dateTime)
-}`}</code></pre>
+}`}</code></deckgo-highlight-code>
 
 						</ion-col>
 						<ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
 
-							<gls-adsense-ad />
+							
 
 						</ion-col>
 					</ion-row>

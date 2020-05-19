@@ -1,10 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { isLocal, SITENAME } from '../../../helpers/utils';
-
-import Prism from "prismjs"
-import 'prismjs/components/prism-java.min';
-import 'prismjs/components/prism-bash.min.js';
-
+import { extractIdFromDocumentPath, isLocal, SITENAME } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 
@@ -14,29 +9,21 @@ import { BlogData } from '../../../services/blog-data';
 })
 export class PageUseSpringForStardog {
 
-    title = 'Blog';
-
-    // header for this individual item by id...
     header: any;
 
     async componentWillLoad() {
         if (isLocal()) {
-            console.log('> PageUseSpringForStardog.componentWillLoad');
+            console.log('>> PageUseSpringForStardog.componentWillLoad');
         }
-        // this.data = await BlogData.load();
-        // Get the id from the URL path (slug)
-        let id = document.location.pathname.substring( document.location.pathname.lastIndexOf('/') + 1 );
+        
+        let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
 
-        // set document title for browser / tab / bookmark
+ 
         document.title = this.header.title + ' | ' + SITENAME;
         if (this.header.teaser) {
             document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
         }
-    }
-
-    componentDidLoad() {
-        setTimeout(() => Prism.highlightAll(), 0)
     }
 
     render() {
@@ -72,9 +59,8 @@ export class PageUseSpringForStardog {
 
                             <p>Next you need to set the STARDOG_HOME environment variable. You can do this by adding an export line to your .bash_profile.</p>
 
-
-                            <pre class="EnlighterJSRAW" data-enlighter-language="null">cd ~
-sudo nano .bash_profile</pre>
+<deckgo-highlight-code language="bash"><code slot="code">{`cd ~
+sudo nano .bash_profile`}</code></deckgo-highlight-code>
 
                             <p>Add the following line to .bash_profile:</p>
 
@@ -92,10 +78,10 @@ sudo nano .bash_profile</pre>
 
                             <p>If everything is working properly, you should get the following response.</p>
 
-                            <pre><code class="language-bash">{`Stardog server is listening on all network interfaces.
+                            <deckgo-highlight-code language="bash"><code slot="code">{`Stardog server is listening on all network interfaces.
 HTTP server available at http://localhost:5820.
  
-STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
+STARDOG_HOME=/Users/cburleson/stardog`}</code></deckgo-highlight-code>
 
                             <p>the server is running and can be accessed in a web browser at  <a class="external-link" href="http://localhost:5820/" rel="nofollow"><code>http://localhost:5820/</code></a></p>
 
@@ -126,7 +112,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p>In order to get the required dependencies, you need to add the Stardog public maven repository to your repositories defined in the Maven POM (pom.xml). Here&#8217;s how that section looks in my file:</p>
 
-                            <pre><code class="language-xml">{`<repositories>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<repositories>
  
  <repository>
      <id>spring-releases</id>
@@ -138,14 +124,14 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
      <url>http://maven.stardog.com</url>
  </repository>
 
-</repositories>`}</code></pre>
+</repositories>`}</code></deckgo-highlight-code>
 
 
                             <h2>Add Stardog dependencies to pom.xml</h2>
 
                             <p>Now, we can add the required dependencies. Notice that even though I installed Stardog 5 BETA, I&#8217;m using a different version number for various dependencies (<em>still, it works</em>).</p>
 
-                            <pre><code class="language-xml">{`<dependency>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<dependency>
     <groupId>com.complexible.stardog</groupId>
     <artifactId>client-snarl</artifactId>
     <version>4.2.4</version>
@@ -217,7 +203,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
     <groupId>org.apache.lucene</groupId>
     <artifactId>lucene-core</artifactId>
     <version>6.5.1</version>
-</dependency>`}</code></pre>
+</dependency>`}</code></deckgo-highlight-code>
 
                             <p>Notice that I&#8217;ve got stardog-spring-batch commented in the file, but commented out. I put it in the file incase I decide to use it in the future, but for now, I don&#8217;t need it.</p>
 
@@ -227,7 +213,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p><strong>applicationContext.xml</strong></p>
 
-                            <pre><code class="language-xml">{`<?xml version="1.0" encoding="UTF-8"?>
+                            <deckgo-highlight-code language="xml"><code slot="code">{`<?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
        xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
@@ -255,7 +241,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
         </property>
     </bean>
  
-</beans>`}</code></pre>
+</beans>`}</code></deckgo-highlight-code>
 
                             <p>Notice that the data importer bean is going to look for an RDF file in the classpath, which should exist in <code>src/main/resources/data.</code></p>
 
@@ -273,7 +259,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p>My main application class looks like this:</p>
 
-                            <pre><code class="language-java">{`package com.base22.rdfx;
+                            <deckgo-highlight-code language="java"><code slot="code">{`package com.base22.rdfx;
   
   import org.springframework.boot.SpringApplication;
   import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -287,7 +273,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
           SpringApplication.run(Platform.class, args);
       }
     
-  }`}</code></pre>
+  }`}</code></deckgo-highlight-code>
 
                             <h2>Create an EmbeddedProvider Java class</h2>
 
@@ -297,7 +283,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p><strong>EmbeddedProvider.java</strong></p>
 
-                            <pre><code class="language-java">{`package com.base22.rdfx.config;
+                            <deckgo-highlight-code language="java"><code slot="code">{`package com.base22.rdfx.config;
  
  import com.complexible.common.protocols.server.ServerException;
  import com.complexible.stardog.Stardog;
@@ -335,7 +321,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
        }
   
     }
- }`}</code></pre>
+ }`}</code></deckgo-highlight-code>
 
                             <h2>Use the Spring for Stardog SnarlTemplate in a controller</h2>
 
@@ -345,7 +331,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p><strong>TestController.java</strong></p>
 
-                            <pre><code class="language-java">{`package com.base22.rdfx.controllers;
+                            <deckgo-highlight-code language="java"><code slot="code">{`package com.base22.rdfx.controllers;
  
  import com.complexible.stardog.ext.spring.SnarlTemplate;
  import com.complexible.stardog.ext.spring.mapper.SimpleRowMapper;
@@ -397,7 +383,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
   
     }
   
- }`}</code></pre>
+ }`}</code></deckgo-highlight-code>
 
                             <p><strong>How to use the SnarlTemplate</strong></p>
 
@@ -407,7 +393,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                             <p>Now you should be able to run your Spring Boot application and hit the TestController (/test in your browser). When you hit the URL, you should see the following output logged to the console, which shows that you&#8217;ve successfully configured and used Spring for Stardog. As you can see, five triples were returned from the given LIMIT 5 SPARQL query&#8230;</p>
 
-                            <pre><code class="language-bash">{`14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > --------------------------
+                            <deckgo-highlight-code language="bash"><code slot="code">{`14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > --------------------------
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > p | http://www.w3.org/2000/01/rdf-schema#subClassOf
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > s | http://localhost/vocabulary/bench/Journal
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > o | http://xmlns.com/foaf/0.1/Document
@@ -426,7 +412,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > --------------------------
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > p | http://www.w3.org/2000/01/rdf-schema#subClassOf
 14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > s | http://localhost/vocabulary/bench/Www
-14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > o | http://xmlns.com/foaf/0.1/Document`}</code></pre>
+14:40:36.903 [http-nio-8080-exec-1] TRACE com.base22.rdfx.controllers.TestController - -- test() > o | http://xmlns.com/foaf/0.1/Document`}</code></deckgo-highlight-code>
 
                             <h2>Conclusion</h2>
 
@@ -437,7 +423,7 @@ STARDOG_HOME=/Users/cburleson/stardog`}</code></pre>
 
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            <gls-adsense-ad />
+                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>
