@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## [1.8.2 - May 20, 2020]
+
+- Fixed broken page: [/introduction-to-the-semantic-web-vision-and-technologies](https://codyburleson.com/introduction-to-the-semantic-web-vision-and-technologies); uploaded video version of presentation to YouTube and embedded it; uploaded zipped PowerPoint to Amazon S3 and linked to it.
+- Added try/catch error handling cod eto Blog Service; it only logs a fetch error to the console for now, but it's a step toward bubbling a potential HTTP fetch error up to the UI in order to notify the user of what's wrong.
+
 ## [1.8.1 - May 19, 2020]
 
 - Load DuckDuckGo Highlight Code component only on pages that use it (rather than global on `index.html`).

@@ -2,7 +2,6 @@ import { Component, Element, forceUpdate, h } from '@stencil/core';
 import { modalController } from '@ionic/core';
 import { BlogData } from '../../../services/blog-data';
 import { get, set } from '../../../services/storage';
-
 import { isLocal, SITENAME } from '../../../helpers/utils';
 
 const EXCLUDE_TOPICS = 'excludeTopics';
@@ -77,7 +76,7 @@ export class PageBlog {
     // I was accidentally listening to a whole other modal somewhere else in the app on accident
     // because I was using the @Listen annotation' it was causing me to listen to ANY modal!
     modal.onDidDismiss()
-    .then((data) => {
+      .then((data) => {
         //const user = data['data']; // Here's your selected user!
         console.log("-- PageLifetime.presentModal > modal.onDidDismiss() > data['data']: %o", data['data']);
         // When the modal is dismissed, we get back data and set properties local to this 
@@ -86,7 +85,7 @@ export class PageBlog {
         // Set the excluded topics in local storage
         set(EXCLUDE_TOPICS, data['data']);
         this.updateContentList();
-    });
+      });
 
     return await modal.present();
   }
@@ -113,14 +112,12 @@ export class PageBlog {
     return (item.menus.indexOf(menuName) > -1);
   }
 
-
   renderItem(item: any) {
     // Render only if the "menus" array of the given item exists and also contains the menu name "blog"
     if (item.menus && item.menus.indexOf('blog') > -1) {
 
-
       let itemHref = '/' + item.id + '/';
-      if(item.parent) {
+      if (item.parent) {
         itemHref = '/' + item.parent + itemHref;
       }
 
@@ -161,7 +158,6 @@ export class PageBlog {
         </ion-toolbar>
         <gls-gcse-searchbox-only id="searchbar" class="hidden" />
       </ion-header>,
-
 
       <ion-content class="ion-padding">
 

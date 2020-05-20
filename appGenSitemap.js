@@ -11,10 +11,9 @@ fs.readFile('./src/assets/data/site-data.json', (err, data) => {
     let siteData = JSON.parse(data);
 
     let siteMapText = '';
-    let count = 5;
+    let count = 4;
 
-    siteMapText += 'https://codyburleson.com\r\n';
-    siteMapText += 'https://codyburleson.com/blog\r\n';
+    siteMapText += 'https://codyburleson.com/\r\n'; // The canonical URL for https://codyburleson.com/blog
     siteMapText += 'https://codyburleson.com/books\r\n';
     siteMapText += 'https://codyburleson.com/about\r\n';
     siteMapText += 'https://codyburleson.com/contact\r\n';

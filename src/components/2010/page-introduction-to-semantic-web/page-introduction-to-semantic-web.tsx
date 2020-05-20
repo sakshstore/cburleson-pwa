@@ -1,8 +1,6 @@
 import { Component, h } from '@stencil/core';
 import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
-
 import { BlogData } from '../../../services/blog-data';
-
 
 @Component({
     tag: 'page-introduction-to-the-semantic-web-vision-and-technologies',
@@ -37,18 +35,16 @@ export class PageIntroductionToSemanticWeb {
                 <ion-grid>
                     <ion-row>
                         <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-                            
+
                             <h1>{this.header.title}</h1>
                             <app-entry-meta header={this.header} />
 
+                            <p>This is the video version of the PowerPoint presentation for a talk I gave at the IBM Technical Leadership Exchange in March, 2006. The presentation, which is now quite dated, provides a summary of the vision and technologies related to the Semantic Web, which was arguably considered to be emergent for the time. Related, but more modern concepts that have since surfaced include Linked Data, Linked Data Platform, and Graph Databases (e.g. Amazon Neptune, Blazegraph, Stardog,  Ontotext GraphDB).</p>
 
-                            <p>A presentation I gave in March, 2006 at the IBM Technical Leadership Exchange.</p>
+                            <div class="video-container"><iframe title="Introduction to the Semantic Web Vision and Technologies - March, 2006" class="video" src="https://www.youtube.com/embed/qHScuThR6aE" frameborder="0" data-allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowFullScreen></iframe></div>
 
-<p><iframe title="Introduction to the Semantic Web - Vision and Technologies" style={{border:`1px solid #CCC`, marginBottom: `5px`, maxWidth: `100%`}} src="//www.slideshare.net/slideshow/embed_code/key/4tGuGb2jgjTlIa" width="595" height="485" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowFullScreen> </iframe></p>
+                            <p>Download this presentation as a Microsoft PowerPoint file (1,881 KB zipped, 2,087 KB unzipped):<br/><br/><strong><a href="https://s3.us-east-2.amazonaws.com/codyburleson.com/files/emt-070_semantic-web-vision-and-tech_2006-03-08.zip">emt-070_semantic-web-vision-and-tech_2006-03-08.zip</a></strong></p>
 
-<div style={{marginBottom: `5px`}}><strong> <a title="Introduction to the Semantic Web - Vision and Technologies" href="//www.slideshare.net/CodyBurleson/introduction-to-the-semantic-web-vision-and-technologies" target="_blank" rel="noopener noreferrer">Introduction to the Semantic Web &#8211; Vision and Technologies</a> </strong> from <strong><a href="https://www.slideshare.net/CodyBurleson" target="_blank" rel="noopener noreferrer">Cody Burleson</a></strong></div>
-
-		
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
                         </ion-col>

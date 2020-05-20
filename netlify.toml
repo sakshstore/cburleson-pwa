@@ -3,15 +3,3 @@
   to = "/index.html"
   status = 200
 
-[[redirects]]
-  from = "/2013/05/06/installing-the-java-plugin-for-64bit-firefox-on-centos-6-4/"
-  to = "https://codyburleson.com/install-java-plugin-for-64bit-firefox-on-centos-6-4"
-  status = 301
-  force = true # COMMENT: ensure that we always redirect
-
-[[redirects]]
-  from = "/display/ZN/Mirror%20polygroup%20on%20a%20subtool"
-  to = "https://codyburleson.com/mirror-polygroup-on-subtool-in-zbrush"
-  status = 301
-  force = true # COMMENT: ensure that we always redirect
-

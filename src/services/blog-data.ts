@@ -1,4 +1,4 @@
-import { isLocal, SITEVERSION } from '../helpers/utils';
+import { handleFetchErrors, isLocal, SITEVERSION } from '../helpers/utils';
 
 
 class BlogDataService {
@@ -23,13 +23,19 @@ class BlogDataService {
             }
             return this.data;
         } else {
-            const rsp = await fetch('/assets/data/site-data.json?v=' + SITEVERSION);
-            const json = await rsp.json();
-            let data = this.processData(json);
-            if (isLocal()) {
-                console.log('< BlogDataService.load < returning newly loaded data: \n %o', this.data);
+            try {
+                const response = await fetch('/assets/data/site-data.json?v=' + SITEVERSION);
+                const json = await response.json();
+                handleFetchErrors(response);
+                let data = this.processData(json);
+                if (isLocal()) {
+                    console.log('< BlogDataService.load < returning newly loaded data: \n %o', this.data);
+                }
+                return data;
+            } catch (err) {
+                console.log("Error fetching data: %o", err);
+                return;
             }
-            return data;
         }
     }
 
