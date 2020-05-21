@@ -1,14 +1,14 @@
 {
   "name": "cburleson-pwa",
   "private": true,
-  "version": "1.8.3",
+  "version": "1.9.0",
   "description": "cburleson-pwa",
   "license": "MIT",
   "files": [
     "dist/"
   ],
   "scripts": {
-    "build": "stencil build",
+    "build": "stencil build --prerender",
     "start": "stencil build --dev --watch --serve",
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
