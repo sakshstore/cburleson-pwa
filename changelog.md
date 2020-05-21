@@ -4,6 +4,11 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
+## unreleased
+
+- Added new page: [/hide-gizmos-in-unity](https://codyburleson.com/hide-gizmos-in-unity)
+- Redirects added to router for some legacy URL patterns shown as Page Not Found in Google Analytics
+
 ## [1.9.0 - May 21, 2020 - PRERENDERED]
 
 - Update page: [/cage/vietnam-war-reference-resources](http://codyburleson.com/cage/vietnam-war-reference-resources); add reference to video documentary series on Tubi, US Marines in Vietnam.

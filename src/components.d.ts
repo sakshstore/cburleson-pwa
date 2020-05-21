@@ -161,6 +161,8 @@ export namespace Components {
     }
     interface PageGlossaryOfLdapAcronymsAndTerms {
     }
+    interface PageHideGizmosInUnity {
+    }
     interface PageHowToAdjustZsphereSketchDepthInZbrush {
     }
     interface PageHowToApplyTextureInZbrush {
@@ -864,6 +866,12 @@ declare global {
     var HTMLPageGlossaryOfLdapAcronymsAndTermsElement: {
         prototype: HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
         new (): HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
+    };
+    interface HTMLPageHideGizmosInUnityElement extends Components.PageHideGizmosInUnity, HTMLStencilElement {
+    }
+    var HTMLPageHideGizmosInUnityElement: {
+        prototype: HTMLPageHideGizmosInUnityElement;
+        new (): HTMLPageHideGizmosInUnityElement;
     };
     interface HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement extends Components.PageHowToAdjustZsphereSketchDepthInZbrush, HTMLStencilElement {
     }
@@ -1776,6 +1784,7 @@ declare global {
         "page-free-zbrush-asset-gamblers-hat": HTMLPageFreeZbrushAssetGamblersHatElement;
         "page-getting-parts-of-a-url-from-the-httpservletrequest-object": HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement;
         "page-glossary-of-ldap-acronyms-and-terms": HTMLPageGlossaryOfLdapAcronymsAndTermsElement;
+        "page-hide-gizmos-in-unity": HTMLPageHideGizmosInUnityElement;
         "page-how-to-adjust-zsphere-sketch-depth-in-zbrush": HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement;
         "page-how-to-apply-texture-in-zbrush": HTMLPageHowToApplyTextureInZbrushElement;
         "page-how-to-check-user-access-role-in-a-websphere-portal-theme": HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement;
@@ -2073,6 +2082,8 @@ declare namespace LocalJSX {
     interface PageGettingPartsOfAUrlFromTheHttpservletrequestObject {
     }
     interface PageGlossaryOfLdapAcronymsAndTerms {
+    }
+    interface PageHideGizmosInUnity {
     }
     interface PageHowToAdjustZsphereSketchDepthInZbrush {
     }
@@ -2427,6 +2438,7 @@ declare namespace LocalJSX {
         "page-free-zbrush-asset-gamblers-hat": PageFreeZbrushAssetGamblersHat;
         "page-getting-parts-of-a-url-from-the-httpservletrequest-object": PageGettingPartsOfAUrlFromTheHttpservletrequestObject;
         "page-glossary-of-ldap-acronyms-and-terms": PageGlossaryOfLdapAcronymsAndTerms;
+        "page-hide-gizmos-in-unity": PageHideGizmosInUnity;
         "page-how-to-adjust-zsphere-sketch-depth-in-zbrush": PageHowToAdjustZsphereSketchDepthInZbrush;
         "page-how-to-apply-texture-in-zbrush": PageHowToApplyTextureInZbrush;
         "page-how-to-check-user-access-role-in-a-websphere-portal-theme": PageHowToCheckUserAccessRoleInAWebspherePortalTheme;
@@ -2643,6 +2655,7 @@ declare module "@stencil/core" {
             "page-free-zbrush-asset-gamblers-hat": LocalJSX.PageFreeZbrushAssetGamblersHat & JSXBase.HTMLAttributes<HTMLPageFreeZbrushAssetGamblersHatElement>;
             "page-getting-parts-of-a-url-from-the-httpservletrequest-object": LocalJSX.PageGettingPartsOfAUrlFromTheHttpservletrequestObject & JSXBase.HTMLAttributes<HTMLPageGettingPartsOfAUrlFromTheHttpservletrequestObjectElement>;
             "page-glossary-of-ldap-acronyms-and-terms": LocalJSX.PageGlossaryOfLdapAcronymsAndTerms & JSXBase.HTMLAttributes<HTMLPageGlossaryOfLdapAcronymsAndTermsElement>;
+            "page-hide-gizmos-in-unity": LocalJSX.PageHideGizmosInUnity & JSXBase.HTMLAttributes<HTMLPageHideGizmosInUnityElement>;
             "page-how-to-adjust-zsphere-sketch-depth-in-zbrush": LocalJSX.PageHowToAdjustZsphereSketchDepthInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToAdjustZsphereSketchDepthInZbrushElement>;
             "page-how-to-apply-texture-in-zbrush": LocalJSX.PageHowToApplyTextureInZbrush & JSXBase.HTMLAttributes<HTMLPageHowToApplyTextureInZbrushElement>;
             "page-how-to-check-user-access-role-in-a-websphere-portal-theme": LocalJSX.PageHowToCheckUserAccessRoleInAWebspherePortalTheme & JSXBase.HTMLAttributes<HTMLPageHowToCheckUserAccessRoleInAWebspherePortalThemeElement>;

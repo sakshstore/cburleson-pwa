@@ -40,6 +40,19 @@
   ],
   "content": [
     {
+      "id": "hide-gizmos-in-unity",
+      "title": "How to Hide Gizmos in the Unity Editor Scene View",
+      "teaser": "A short demonstration of how to quickly hide gizmos in the Scene View of the Unity Editor.",
+      "thumbnail": "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/logo-unity.svg",
+      "datePublished": "2020/05/21",
+      "topics": [
+        "Game Dev"
+      ],
+      "menus": [
+        "blog"
+      ]
+    },
+    {
       "id": "cage",
       "title": "The Cage",
       "teaser": "The true story of the Special Landing Force of 1st Battalion, 3rd Marines in the Vietnam War.",

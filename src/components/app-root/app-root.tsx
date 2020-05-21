@@ -163,7 +163,13 @@ export class AppRoot {
         <ion-route-redirect from="/book-review-the-goldfinch" to='/books/book-review-the-goldfinch' />
         <ion-route-redirect from="/book-review-more-than-everything-by-vanessa-foster" to='/books/book-review-more-than-everything-by-vanessa-foster' />
         <ion-route-redirect from="/vietnam-war-reference-resources" to='/cage/vietnam-war-reference-resources' />
-
+        
+        <ion-route-redirect from="/2013/07/20/mapping-to-a-view-in-spring-with-no-controller" to='/mapping-to-a-view-in-spring-when-no-controller-logic-is-required' />
+        <ion-route-redirect from="/2013/01/24/xmlaccess-samples-in-ibm-websphere-portal" to='/xmlaccess-samples' />
+        <ion-route-redirect from="/2013/06/22/w3c-ldp-reframing-the-web" to='/w3c-linked-data-platform-aims-to-reframe-the-web' />
+        <ion-route-redirect from="/display/blog/2016/04/29/Format+Currency+in+Angular" to='/format-currency-in-angular' />
+        <ion-route-redirect from="/display/ldn/SPARQL+examples+-+federation" to='/sparql-examples-federation' />
+        
       </ion-router>
     );
   }
