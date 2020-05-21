@@ -1,5 +1,5 @@
 import { Component, h } from '@stencil/core';
-import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath } from '../../../helpers/utils';
 
 import { BlogData } from '../../../services/blog-data';
 
@@ -121,14 +121,19 @@ export class PageVietnamWarReferenceResources {
         }
     ]
 
+    videos = [
+        {
+            id: "https://tubitv.com/series/4286/us_marines_in_vietnam",
+            title: "US Marines in Vietnam, 15-Part Documentary on Tubi",
+            teaser: "1965: The American ground war in South East Asia, to protect US air bases in South Vietnam, leads to what will become the longest war for U.S. Marines.",
+            thumbnail: "https://s3.us-east-2.amazonaws.com/codyburleson.com/images/cage/us-marines-in-vietnam-documentary_thumb.jpg",
+            dateListed: "2020/05/20",
+        },
+    ]
+
     async componentWillLoad() {
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
-
-        document.title = this.header.title + ' | ' + SITENAME;
-        if (this.header.teaser) {
-            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
-        }
     }
 
     render() {
@@ -152,22 +157,6 @@ export class PageVietnamWarReferenceResources {
 
                             <p>As part of my research for a book I've been writing (working title: <a href="/cage">The Cage</a>), I've been collecting a variety of reference resources about the Vietnam War and especially those pertaining to the history of the 1st Battalion / 3rd Marines in the war. I've decided to post what I've found here in case these resources might also be useful to others. This list is by no means exhaustive, but I'll continue to expand it as I discover new things. If you would like to suggest something for the list, please <a href="/contact">contact me</a>.</p>
 
-                            <h2>Websites</h2>
-
-                            <ion-list>
-                                {this.webresources.map((item) =>
-                                    <ion-item href={item.id} lines="none">
-                                        <ion-thumbnail slot="start">
-                                            <ion-img src={item.thumbnail} />
-                                        </ion-thumbnail>
-                                        <ion-label text-wrap>
-                                            {item.title}
-                                            <p innerHTML={item.teaser}></p>
-                                        </ion-label>
-                                    </ion-item>
-                                )}
-                            </ion-list>
-
                             <h2>Books</h2>
 
                             <p><em>Note: For your convenience, books are linked for purchase from Amazon. As an Amazon Associate I earn from qualifying purchases.</em></p>
@@ -186,9 +175,32 @@ export class PageVietnamWarReferenceResources {
                                 )}
                             </ion-list>
 
+                            <h2>Videos</h2>
+
+                            <app-list-menu items={this.videos} />
+
+                            {/* 
+                            <ion-list>
+                                {this.webresources.map((item) =>
+                                    <ion-item href={item.id} lines="none">
+                                        <ion-thumbnail slot="start">
+                                            <ion-img src={item.thumbnail} />
+                                        </ion-thumbnail>
+                                        <ion-label text-wrap>
+                                            {item.title}
+                                            <p innerHTML={item.teaser}></p>
+                                        </ion-label>
+                                    </ion-item>
+                                )}
+                            </ion-list>
+                            */}
+
+                            <h2>Websites</h2>
+
+                            <app-list-menu items={this.webresources} />
+
                         </ion-col>
                         <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
                         </ion-col>
                     </ion-row>
                 </ion-grid>

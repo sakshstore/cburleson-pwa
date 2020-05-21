@@ -1,5 +1,5 @@
 import { Component, Element, h, State } from '@stencil/core';
-import { SITENAME } from '../../../helpers/utils';
+//import { SITENAME } from '../../../helpers/utils';
 
 @Component({
   tag: 'page-contact'
@@ -18,7 +18,7 @@ export class PageAbout {
   title = 'Contact Cody Burleson';
 
   async componentWillLoad() {
-    document.title = this.title + ' | ' + SITENAME;
+    // document.title = this.title + ' | ' + SITENAME;
   }
 
   toggleSearch() {

@@ -1,5 +1,5 @@
 import { Build, Component, h, Listen } from '@stencil/core';
-import { isLocal, SITENAME } from '../../helpers/utils';
+import { extractDocIdFromPath, isLocal, SITENAME } from '../../helpers/utils';
 import { BlogData } from '../../services/blog-data';
 
 declare let gtag: Function;
@@ -20,16 +20,25 @@ export class AppRoot {
   @Listen('ionRouteDidChange')
   routeDidChangeHandler(event: CustomEvent) {
 
-    //if (isLocal()) {
-    //console.log('>> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
-    //}
+    if (isLocal()) {
+      console.log('>> AppRoot.routeDidChangeHandler > event.detail: %o', event.detail);
+    }
 
     // Fix for Issue #5 - Switching main menu pages doesn't change page titles when clicking already loaded main page
-    this.data.pages.map((item) => {
-      if (event.detail.to == ('/' + item.id)) {
-        document.title = item.title + ' | ' + SITENAME;
+    // 2020-05-21: Modified again to handle setting titles also for posts (so that it can be done in one single place,
+    // rather than every page/post component). Also the meta tag(s). For some reason, when prerendering, these settings
+    // get prerendered properly on the page when set here, using this method.
+    let id = extractDocIdFromPath(event.detail.to);
+    let header = BlogData.getPageHeaderById( id );
+    if(! header) {
+      header = BlogData.getPostHeaderById( id );
+    }
+    if(header) {
+      document.title = header.title + ' | ' + SITENAME;
+      if (header.teaser) {
+        document.getElementById("meta-desc").setAttribute("content", header.teaser);
       }
-    });
+    }
 
     // Build.isBrowser is true when running in the
     // browser and false when being prerendered

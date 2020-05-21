@@ -1,6 +1,6 @@
 import { Component, Element, h } from '@stencil/core';
 import { BlogData } from '../../../services/blog-data';
-import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath } from '../../../helpers/utils';
 
 @Component({
   tag: 'page-books'
@@ -19,11 +19,6 @@ export class PageBooks {
   async componentWillLoad() {
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPageHeaderById(id);
-
-    document.title = this.header.title + ' | ' + SITENAME;
-    if (this.header.teaser) {
-      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
-    }
 
     this.writingItems = await BlogData.getPostsByMenu("books-i-am-writing");
     this.reviewedItems = await BlogData.getPostsByTopic("Book Reviews");

@@ -1,5 +1,5 @@
 import { Component, Element, h } from '@stencil/core';
-import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
@@ -15,12 +15,6 @@ export class PageRayKelleySilverStar {
   async componentWillLoad() {
     let id = extractIdFromDocumentPath();
     this.header = BlogData.getPostHeaderById(id);
-
-    // set document title for browser / tab / bookmark
-    document.title = this.header.title + ' | ' + SITENAME;
-    if (this.header.teaser) {
-      document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
-    }
   }
 
   toggleSearch() {

@@ -2,7 +2,7 @@ import { Component, Element, forceUpdate, h } from '@stencil/core';
 import { modalController } from '@ionic/core';
 import { BlogData } from '../../../services/blog-data';
 import { get, set } from '../../../services/storage';
-import { isLocal, SITENAME } from '../../../helpers/utils';
+import { isLocal } from '../../../helpers/utils';
 
 const EXCLUDE_TOPICS = 'excludeTopics';
 
@@ -25,7 +25,7 @@ export class PageBlog {
     if (isLocal()) {
       console.log('> PageBlog.componentWillLoad');
     }
-    document.title = this.title + ' | ' + SITENAME;
+    // document.title = this.title + ' | ' + SITENAME;
 
     this.data = await BlogData.load();
 

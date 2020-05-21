@@ -1,5 +1,5 @@
 // SITEVERSION must always be line #2 because it is replaced by line number
-export const SITEVERSION = "1.8.2";
+export const SITEVERSION = "1.8.3";
 export const SITENAME = "Cody Burleson";
 
 /**
@@ -66,4 +66,20 @@ export function handleFetchErrors(response) {
   if(!response.ok) {
       throw new Error(response.statusText);
   }
+}
+
+/**
+ * Extracts the id of a document (what I call, the slug) from a URL kind of path string.
+ * The resulting id can then be used to look up a doc header in site-data using the Blog 
+ * Service, for example.
+ * @param path
+ */
+export function extractDocIdFromPath(path:string) {
+      // Fist, if given path ends with fwd-slash, strip that off...
+      if(path.endsWith("/")) {
+        path = path.substring(0, path.length - 1);
+      }
+      // Now get the slug preceding the last slash remaining in the path...
+      let lastNdx = path.lastIndexOf('/');
+      return path.substring(lastNdx + 1);
 }

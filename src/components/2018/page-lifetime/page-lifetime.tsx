@@ -1,6 +1,6 @@
 import { Component, h, Element } from '@stencil/core';
 import { modalController } from '@ionic/core';
-import { extractIdFromDocumentPath, SITENAME } from '../../../helpers/utils';
+import { extractIdFromDocumentPath } from '../../../helpers/utils';
 
 import * as d3 from "d3";
 import d3Tip from "d3-tip"
@@ -66,21 +66,16 @@ export class PageLifetime {
     async componentWillLoad() {
         let id = extractIdFromDocumentPath();
         this.header = BlogData.getPostHeaderById(id);
-
-        document.title = this.header.title + ' | ' + SITENAME;
-        if(this.header.teaser) {
-            document.getElementById("meta-desc").setAttribute("content", this.header.teaser);
-        }
     }
 
     //windowResized() {
-       //console.log('window resized');
+    //console.log('window resized');
     //}
 
     componentDidRender() {
         //const graphContainerElement = this.el.querySelector('#graph');
         //if(isLocal()){
-          // console.log('- PageLifetime.componentDidRender #graph.clientWidth: ' + graphContainerElement.clientWidth);
+        // console.log('- PageLifetime.componentDidRender #graph.clientWidth: ' + graphContainerElement.clientWidth);
         //}
         this.renderGraph();
         //window.onresize = this.windowResized;
@@ -116,10 +111,10 @@ export class PageLifetime {
         // we should end up with 4,680 weeks total for "the lifetime". We should see 4,680 
         // total weeks logged to the console.
         //if (isLocal) {
-            //for (var i = 0; i < this.calendar.data.length; i++) {
-                //var aWeek = this.calendar.data[i];
-                //console.log(aWeek.weekNumber + " : " + aWeek.date.toString());
-            //}
+        //for (var i = 0; i < this.calendar.data.length; i++) {
+        //var aWeek = this.calendar.data[i];
+        //console.log(aWeek.weekNumber + " : " + aWeek.date.toString());
+        //}
         //}
 
     }
@@ -317,63 +312,53 @@ export class PageLifetime {
 
             <ion-content class="ion-padding">
 
-                <ion-grid>
-                    <ion-row>
-                        <ion-col size-xs="12" size-sm="12" size-md="8" size-lg="8" size-xl="7">
-                            <h1>{this.header.title}</h1>
-                            <app-entry-meta header={this.header} />
+                <h1>{this.header.title}</h1>
+                <app-entry-meta header={this.header} />
 
-                            <blockquote>Death is imminent. Life is awesome. Make it count.</blockquote>
+                <blockquote>Death is imminent. Life is awesome. Make it count.</blockquote>
 
-                            <p>There are 52 weeks in a year (left-to-right) and ninety {this.calendar.calendarYears} years (top to bottom).
+                <p>There are 52 weeks in a year (left-to-right) and ninety {this.calendar.calendarYears} years (top to bottom).
                             This is your whole life, in a sobering glance. <em>Best viewed on desktop resolution.</em></p>
 
-                            <p><ion-button onClick={() => this.presentModal()} size="small">
-                            <ion-icon slot="icon-only" name="options"></ion-icon>
+                <p><ion-button onClick={() => this.presentModal()} size="small">
+                    <ion-icon slot="icon-only" name="options"></ion-icon>
                             &nbsp;&nbsp;Personalize
                             </ion-button>
-                        </p>
+                </p>
 
-                        {/*
-                        <ion-range min={50} max={100} step={25} snaps pin style={{width:`50%`}}>
-                        </ion-range>
-                        */}
+                {/*
+                <ion-range min={50} max={100} step={25} snaps pin style={{width:`50%`}}>
+                </ion-range>
+                */}
 
-                            <div id="graph" style={{ overflow: `auto` }}></div>
+                <div id="graph" style={{ overflow: `auto` }}></div>
 
-                            <p style={{ paddingBottom: `10px` }}>
-                                <div class="float-left">Legend:&nbsp;&nbsp;</div>
-                                <div class="float-left">
-                                    <div class="legend"></div>
+                <p style={{ paddingBottom: `10px` }}>
+                    <div class="float-left">Legend:&nbsp;&nbsp;</div>
+                    <div class="float-left">
+                        <div class="legend"></div>
                                     A week,&nbsp;&nbsp;
                                 </div>
-                                <div class="float-left">
-                                    <div class="legend elapsed" style={{ width: `9px` }}></div>
+                    <div class="float-left">
+                        <div class="legend elapsed" style={{ width: `9px` }}></div>
                                     A week lived,&nbsp;&nbsp;
                                 </div>
-                                <div class="float-left">
-                                    <div class="legend expected" style={{ width: `9px` }}></div>
+                    <div class="float-left">
+                        <div class="legend expected" style={{ width: `9px` }}></div>
                                     Life expectancy by gender,&nbsp;&nbsp;
                                 </div>
-                                <div class="float-left">
-                                    <div class="legend expected elapsed" style={{ width: `9px` }}></div>
+                    <div class="float-left">
+                        <div class="legend expected elapsed" style={{ width: `9px` }}></div>
                                     A week lived in the life expectancy year
                                 </div>
-                            </p>
+                </p>
 
-                            <p class="clear entry-meta"><br />Inspired by Tim Urban's TED talk, <a href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator" rel="nofollow">Inside the mind of
+                <p class="clear entry-meta"><br />Inspired by Tim Urban's TED talk, <a href="https://www.ted.com/talks/tim_urban_inside_the_mind_of_a_master_procrastinator" rel="nofollow">Inside the mind of
             a master procrastinator</a>, as well as articles from his blog, <a href="http://waitbutwhy.com/">Wait But
             Why</a>.</p>
 
-                            <p class="entry-meta">Source of Life expectancy by gender: Centers for Disease Control and Prevention, 2012 (<em>Females: 81 years,
+                <p class="entry-meta">Source of Life expectancy by gender: Centers for Disease Control and Prevention, 2012 (<em>Females: 81 years,
             Males: 76 years</em>)</p>
-
-                        </ion-col>
-                        <ion-col size-xs="12" size-sm="12" size-md="4" size-lg="4" size-xl="5">
-                            
-                        </ion-col>
-                    </ion-row>
-                </ion-grid>
 
             </ion-content>
 
