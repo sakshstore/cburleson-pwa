@@ -32,7 +32,6 @@ export const config: PrerenderConfig = {
         return {
             prettyHtml: false
         };
-
     }
 
 };

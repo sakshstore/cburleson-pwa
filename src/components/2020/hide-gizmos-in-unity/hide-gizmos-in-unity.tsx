@@ -3,8 +3,7 @@ import { extractIdFromDocumentPath } from '../../../helpers/utils';
 import { BlogData } from '../../../services/blog-data';
 
 @Component({
-  tag: 'page-hide-gizmos-in-unity',
-  shadow: true,
+  tag: 'page-hide-gizmos-in-unity'
 })
 export class PageHideGizmosInUnity {
 

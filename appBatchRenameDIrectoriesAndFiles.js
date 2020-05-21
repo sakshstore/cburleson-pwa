@@ -52,12 +52,16 @@ allFiles.forEach(function(file) {
 
             console.log('RENAME F: ' + file + ' --to-> ' + path + "/" + newName);
 
+            fs.rename(file,  path + '/' + newName, function(err) {
+              if ( err ) console.log('ERROR: ' + err);
+            });
+
             // ...
 
             // Next we need to strip the file extension off newname...
 
             slug = slug.substring(0, slug.length - 4);
-            console.log (slug);
+            //console.log (slug);
 
             // ...
 
@@ -69,7 +73,12 @@ allFiles.forEach(function(file) {
             });
             */
            newName = newName.substring(0, newName.length - 4);
-           console.log('RENAME D: ' + strippedPath + slug + ' --to-> ' + strippedPath + newName);
+           console.log('RENAME D: ' + strippedPath + slug + ' --to-> ' + strippedPath + newName + '\n');
+
+           fs.rename(strippedPath + slug,  strippedPath + newName, function(err) {
+            if ( err ) console.log('ERROR: ' + err);
+           });
+
         
         }
 

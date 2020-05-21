@@ -8,6 +8,7 @@ The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/
 
 - Added new page: [/hide-gizmos-in-unity](https://codyburleson.com/hide-gizmos-in-unity)
 - Redirects added to router for some legacy URL patterns shown as Page Not Found in Google Analytics
+- Renamed all directories and component file names so that they are no longer prefixed with "page-". This just reduces some unnecessary visual noise in the IDE and hopefully also some bytes in the resulting build. The tag names for each component are still prefixed with "page-".
 
 ## [1.9.0 - May 21, 2020 - PRERENDERED]
 
