@@ -24,7 +24,7 @@ class BlogDataService {
             return this.data;
         } else {
             try {
-                const response = await fetch('/assets/data/site-data.json?v=' + SITEVERSION);
+                const response = await fetch('/assets/data/site-data.min.json?v=' + SITEVERSION);
                 const json = await response.json();
                 handleFetchErrors(response);
                 let data = this.processData(json);

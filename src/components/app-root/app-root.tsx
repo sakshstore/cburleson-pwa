@@ -99,7 +99,7 @@ export class AppRoot {
 
     // Primary nav routes are expected to have parent tabs with a corresponding id (i.e. the 'blog' page goes to the 'blog' tab)
     this.data.pages.map((item) => {
-      if (item.isTab) {
+      if (item.id == 'blog' || item.id == 'books' || item.id == 'about' || item.id == 'contact' ) {
         // The item is defined as a tab (primary item) because it has an "isTab" attribute and the value is `true`; thus, generate this...
         // <ion-route url="/blog" component="tab-blog">
         //    <ion-route component="page-blog"></ion-route>

@@ -25,7 +25,7 @@ export class AppTabs {
     const tabButtons = [];
 
     this.data.pages.map((item) => {
-      if(item.isTab) {
+      if(item.id == 'blog' || item.id == 'books' || item.id == 'about' || item.id == 'contact' ) {
         tabs.push( <ion-tab tab={'tab-' + item.id}><ion-nav></ion-nav></ion-tab>);
         tabButtons.push(  <ion-tab-button tab={'tab-' + item.id}><ion-icon name={item.icon}></ion-icon><ion-label>{item.title}</ion-label></ion-tab-button> );
       }

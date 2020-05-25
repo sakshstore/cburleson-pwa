@@ -4,17 +4,18 @@ All notable changes to this project will be documented in this file.
 
 The format is loosely based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/), and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
-## unreleased
+## [1.9.1 - May 24, 2020]
 
 - Added new page: [/hide-gizmos-in-unity](https://codyburleson.com/hide-gizmos-in-unity)
 - Redirects added to router for some legacy URL patterns shown as Page Not Found in Google Analytics
 - Renamed all directories and component file names so that they are no longer prefixed with "page-". This just reduces some unnecessary visual noise in the IDE and hopefully also some bytes in the resulting build. The tag names for each component are still prefixed with "page-".
+- Created a java utility to minify `site-data.json` and now use a minified version of it.
 
 ## [1.9.0 - May 21, 2020 - PRERENDERED]
 
 - Update page: [/cage/vietnam-war-reference-resources](http://codyburleson.com/cage/vietnam-war-reference-resources); add reference to video documentary series on Tubi, US Marines in Vietnam.
 - Update page: [/lifetime](https://codyburleson.com/lifetime); remove side column, allowing calendar to widen up on the screen.
-- Refactor so that the setting of page titles and meta tags are done all in one single place (in the app-root.tsx file). Before, ponly the pages were having titles set there and then the posts were doing it in each post's component. Now, this not only puts the code in one single place, but it seems to be the only place where it works effectively also when prerendering (and I am trying to head into a fully prerendered site, eventually).
+- Refactor so that the setting of page titles and meta tags are done all in one single place (in the app-root.tsx file). Before, only the pages were having titles set there and then the posts were doing it in each post's component. Now, this not only puts the code in one single place, but it seems to be the only place where it works effectively also when prerendering (and I am trying to head into a fully prerendered site, eventually).
 - Got prerendering working for at least the main pages and then, even when prerendered, the rest works as it normally did. So, this marks the first deployment of prerendered site!
 
 ## [1.8.2 - May 20, 2020]

@@ -1,7 +1,7 @@
 {
   "name": "cburleson-pwa",
   "private": true,
-  "version": "1.9.0",
+  "version": "1.9.1",
   "description": "cburleson-pwa",
   "license": "MIT",
   "files": [
@@ -13,8 +13,7 @@
     "test": "stencil test --spec --e2e",
     "test.watch": "stencil test --spec --e2e --watch",
     "generate": "stencil generate",
-    "prod": "node appGenSitemap.js && stencil build --watch --serve",
-    "prod.prerender": "node appGenSitemap.js && stencil build --prerender --watch --serve"
+    "prod": "node appGenSitemap.js && stencil build --prerender --watch --serve",
   },
   "dependencies": {
     "@deckdeckgo/highlight-code": "^1.0.5",

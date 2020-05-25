@@ -63,7 +63,7 @@ export class PageLoggingWithSpringBoot {
 
                             <h2>Configure Log Levels</h2>
 
-                            <p>The easiest way to configure logging levels is in the application.properties file. If you don’t already have one, create an application.properties file in the root of the resources folder. Then, simply prefix Java packages and classes with logging.level as shown below. Notice that you can configure the root logger at a specific level first, then get more specific with other loggers.</p>
+                            <p>The easiest way to configure logging levels is in the <code>application.properties</code> file. If you don’t already have one, create the file in the root of the <code>resources</code> folder. Then, simply prefix Java packages and classes with <code>logging.level</code> as shown below. Notice that you can configure the root logger at a specific level first, then get more specific with other loggers.</p>
 
                             <p><strong>application.properties</strong></p>
 
@@ -81,7 +81,7 @@ import org.slf4j.LoggerFactory;`}</code></deckgo-highlight-code>
 
                             <p>Add the following at the top of your class in the global section (just under the line that declares your class public class Whatever extends Whatever). Change the name of the class (MyClassName) in the getLogger method call, of course. Name it the same as the class you’re dropping this code into.</p>
 
-                            <p><code>static final Logger LOG = LoggerFactory.getLogger(MyClassName.class);</code></p>
+                            <deckgo-highlight-code language="java"><code slot="code">{`static final Logger LOG = LoggerFactory.getLogger(MyClassName.class);`}</code></deckgo-highlight-code>
 
                             <p>To test quickly, you can throw some logging statements in your code somewhere where you know they’ll be fired right away when you run your app. For example:</p>
 
@@ -95,7 +95,7 @@ LOG.error("I am programming.");`}</code></deckgo-highlight-code>
 
                             <h2>Log to a File</h2>
 
-                            <p>If you want to write log files in addition to the console, you can set a logging.file or logging.path property in your application.properties. For example…</p>
+                            <p>If you want to write log files in addition to the console, you can set a <code>logging.file</code> or <code>logging.path</code> property in your <code>application.properties</code> file. For example…</p>
 
                             <deckgo-highlight-code language="properties"><code slot="code">{`logging.level.root=INFO
 logging.level.com.cburleson.rdfx=TRACE

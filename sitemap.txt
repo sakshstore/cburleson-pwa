@@ -2,6 +2,7 @@ https://codyburleson.com/
 https://codyburleson.com/books
 https://codyburleson.com/about
 https://codyburleson.com/contact
+https://codyburleson.com/hide-gizmos-in-unity
 https://codyburleson.com/cage
 https://codyburleson.com/cage/beaver-cage-command-chron
 https://codyburleson.com/cage/slf-after-action-cage-union

@@ -13,4 +13,5 @@ Pushing to master deploys the app on Netlify. If the build fails on Netlify, it 
 - Complete spot check in Chrome, Firefox, and Edge (on PC).
 - Change the version number in `package.json`
 - Change the `SITEVERSION` const in `src/helpers/utils.ts`
+- Make sure to run the `SiteDataMinifier` java app that is in the `platform` java project.
 
